@@ -1,0 +1,3919 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- This grammar has been deprecated - use FMPXMLRESULT instead -->
+<FMPDSORESULT xmlns="http://www.filemaker.com/fmpdsoresult">
+    <ERRORCODE>0</ERRORCODE>
+    <DATABASE>MVA_25.03.2020.fmp12</DATABASE>
+    <LAYOUT>TBL_DETAILS_PEOPLE</LAYOUT>
+    <ROW MODID="32" RECORDID="80">
+        <ID_PERSON>79</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Alberti</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Perito alla Laguna</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes>Perito Ordinario ai Beni Inculti, engineer, and proto alla laguna. He was active beween 1648 and 1689.</Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="104">
+        <ID_PERSON>103</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Alberti</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Perito alla Laguna</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes>Perito Ordinario ai Beni Inculti, engineer, and proto alla laguna. He was active beween 1648 and 1689.</Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="122">
+        <ID_PERSON>121</ID_PERSON>
+        <Given_Name>Sebastiano</Given_Name>
+        <Surname>Alberti</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Perito alla Laguna</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Florence</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="78">
+        <ID_PERSON>77</ID_PERSON>
+        <Given_Name>Giovanni Battista</Given_Name>
+        <Surname>Albrizzi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Girolamo</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Publisher ; Printer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1698-12-29</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1777-03-20</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="164">
+        <ID_PERSON>163</ID_PERSON>
+        <Given_Name>Egidio</Given_Name>
+        <Surname>Antonini</Surname>
+        <Alias>Giles of Viterbo</Alias>
+        <Title>Cardinal and Bishop</Title>
+        <Patronymic>Lorenzo</Patronymic>
+        <Occupation>Augustinian</Occupation>
+        <Activities_Roles>Cardinal (1517-1532) ; Bishop of Viterbo and Tuscania (1523-1532) ; </Activities_Roles>
+        <Start_Activities_Roles>1517</Start_Activities_Roles>
+        <End_Activities_Roles>1532</End_Activities_Roles>
+        <Place_of_birth>Viterbo</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Rome</Work_location>
+        <Birth_Date_Earliest>1472</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1532-11-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="124">
+        <ID_PERSON>123</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Austrian Empire</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1815-06-09</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1866-10-21</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="40" RECORDID="17">
+        <ID_PERSON>16</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Baffo family</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Noble family</Occupation>
+        <Activities_Roles>Founder of the church and convent of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Trieste</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>11th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="190">
+        <ID_PERSON>189</ID_PERSON>
+        <Given_Name>Todero</Given_Name>
+        <Surname>Balbi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="149">
+        <ID_PERSON>148</ID_PERSON>
+        <Given_Name>Agostino</Given_Name>
+        <Surname>Barbarigo</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic>Francesco</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1486-1501)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1419-06-03</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1501-09-20</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="0" RECORDID="184">
+        <ID_PERSON>183</ID_PERSON>
+        <Given_Name>Gianfrancesco</Given_Name>
+        <Surname>Barbarigo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="53">
+        <ID_PERSON>52</ID_PERSON>
+        <Given_Name>Angelo</Given_Name>
+        <Surname>Baronio</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Vicario of the monastery of San Secondo ; Bishop of Cattaro (1604-1611); Bishop of Chioggia (starting from 1611)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Turn of the century (90-10)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="33" RECORDID="65">
+        <ID_PERSON>64</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Battaglioli</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Modena</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice ; Madrid</Work_location>
+        <Birth_Date_Earliest>1725</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1796</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="113">
+        <ID_PERSON>112</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Bencio</Surname>
+        <Alias></Alias>
+        <Title>Abbott</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Regular canon of Santo Spirito</Occupation>
+        <Activities_Roles>Abbott of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="38" RECORDID="19">
+        <ID_PERSON>18</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Benedictine nuns of San Secondo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1034</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1531</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="33" RECORDID="66">
+        <ID_PERSON>65</ID_PERSON>
+        <Given_Name>Giuseppe Bernardino</Given_Name>
+        <Surname>Bison</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Palmanova</Place_of_birth>
+        <Place_of_death>Milan</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1762-06-16</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1844-08-24</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="52">
+        <ID_PERSON>51</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Bon</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Vincenzo</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Merchant ; Guardian grando for the Scuola Grande di San Rocco (1607)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="41">
+        <ID_PERSON>40</ID_PERSON>
+        <Given_Name>Napoleone</Given_Name>
+        <Surname>Bonaparte</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Carlos</Patronymic>
+        <Occupation>Emperor of the French</Occupation>
+        <Activities_Roles>Politician</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Ajaccio</Place_of_birth>
+        <Place_of_death>Isola di Sant&apos;Elena</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1769-08-15</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1821-05-05</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="48" RECORDID="26">
+        <ID_PERSON>25</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Bondumier</Surname>
+        <Alias></Alias>
+        <Title>Patriarch</Title>
+        <Patronymic>Marino</Patronymic>
+        <Occupation>Regular canon of Sant&apos;Agostino</Occupation>
+        <Activities_Roles>Prior of Santo Spirito; Venice&apos;s Patriarch</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1464</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>Election as prior of the Augustinian community on December 15, 1425. Election as Venetian Patriarch on March 27, 1460. He is buried on the island of Santo Spirito</Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="70">
+        <ID_PERSON>69</ID_PERSON>
+        <Given_Name>Benedetto</Given_Name>
+        <Surname>Bordone</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Cartographer ; Miniaturist</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Padua</Place_of_birth>
+        <Place_of_death>Padua</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1450</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1530</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="48">
+        <ID_PERSON>47</ID_PERSON>
+        <Given_Name>Angelo</Given_Name>
+        <Surname>Bragadin</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Prior of San Domenico di Castello ; Bishop of Vicenza (17 marzo 1550-1560)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Vicenza</Place_of_death>
+        <Work_location>Venice ; Vicenza</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1560</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="188">
+        <ID_PERSON>187</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Brozio</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Notary</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="27" RECORDID="49">
+        <ID_PERSON>48</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Buonconsiglio</Surname>
+        <Alias>Marescalco</Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Montecchio Maggiore</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1465</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1535</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="108">
+        <ID_PERSON>107</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Camaldolese monks</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="185">
+        <ID_PERSON>184</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Camaldolese monks of Monte Rua</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Padua</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1530</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="74">
+        <ID_PERSON>73</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Candian Friars of Santo Spirito</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1670</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1806</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="134">
+        <ID_PERSON>133</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Canons regular of San Clemente</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="127">
+        <ID_PERSON>126</ID_PERSON>
+        <Given_Name>Girolamo</Given_Name>
+        <Surname>Capodivacca</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="169">
+        <ID_PERSON>168</ID_PERSON>
+        <Given_Name>Gian Pietro</Given_Name>
+        <Surname>Carafa</Surname>
+        <Alias>Pope Paul IV</Alias>
+        <Title>Pope</Title>
+        <Patronymic>Giovanni Antonio</Patronymic>
+        <Occupation>Theatine</Occupation>
+        <Activities_Roles>Cleric (1524-1559) ; Cardinal (1536-1559) ; Pope (1555-1559)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Capriglia Irpina (Avellino)</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Rome</Work_location>
+        <Birth_Date_Earliest>1476-06-28</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1559-08-18</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="112">
+        <ID_PERSON>111</ID_PERSON>
+        <Given_Name>Carlo</Given_Name>
+        <Surname>Carafa della Spina</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic>Girolamo</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Bishop of Aversa (1644-1665) ; </Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Rome</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1611-04-21</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1680-10-19</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="47" RECORDID="13">
+        <ID_PERSON>12</ID_PERSON>
+        <Given_Name>Marina</Given_Name>
+        <Surname>Celsi</Surname>
+        <Alias></Alias>
+        <Title>Abbess</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Noblewoman</Occupation>
+        <Activities_Roles>Abbess of the Benedictine convent of San Maffio di Murano ; Abbess of the Benedictine convent of Sant&apos;Eufemia di Mazzorbo ; Abbess of the Benedictine convent of SS. Cosma e Damiano</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1432</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1523</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>She was the great-great-granddaughter of Doge Lorenzo Celsi.</Notes>
+    </ROW>
+    <ROW MODID="32" RECORDID="79">
+        <ID_PERSON>78</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Chevalier</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Engraver</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Corfù</Place_of_birth>
+        <Place_of_death>Padua</Place_of_death>
+        <Work_location>Trieste ; Padua ; Venice</Work_location>
+        <Birth_Date_Earliest>1795</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1864</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="52" RECORDID="28">
+        <ID_PERSON>27</ID_PERSON>
+        <Given_Name>Fabio</Given_Name>
+        <Surname>Chigi</Surname>
+        <Alias>Pope Alexander VII</Alias>
+        <Title>Pope</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Pope (1655-1667)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Siena</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Rome</Work_location>
+        <Birth_Date_Earliest>1599-02-13</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1667-05-22</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>https://www.wikidata.org/wiki/Q127254</Notes>
+    </ROW>
+    <ROW MODID="26" RECORDID="42">
+        <ID_PERSON>41</ID_PERSON>
+        <Given_Name>Domenico</Given_Name>
+        <Surname>Codagli</Surname>
+        <Alias></Alias>
+        <Title>Prior</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Prior of the monastery of San Secondo ; Writer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Orzinuovi</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1562</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1610</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="9" RECORDID="98">
+        <ID_PERSON>97</ID_PERSON>
+        <Given_Name>Stefano</Given_Name>
+        <Surname>Codroipo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Pubblico perito ; Proto of the Procuratori di Supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="23" RECORDID="77">
+        <ID_PERSON>76</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Cominelli</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Stonemason ; Sculptor ; Architect</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>First half of the century (0-49)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="21" RECORDID="146">
+        <ID_PERSON>145</ID_PERSON>
+        <Given_Name>Gabriele</Given_Name>
+        <Surname>Condulmer</Surname>
+        <Alias>Pope Eugene IV</Alias>
+        <Title>Pope</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Canon Regular of San Giorgio in Alga ; Prior of San Clemente; Pope (1431-1447)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Venice ; Rome</Work_location>
+        <Birth_Date_Earliest>1383</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1447-02-23</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>14th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes>https://www.wikidata.org/wiki/Q167561</Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="110">
+        <ID_PERSON>109</ID_PERSON>
+        <Given_Name>Alvise</Given_Name>
+        <Surname>Contarini</Surname>
+        <Alias></Alias>
+        <Title>Cavaliere</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Procurator of St. Mark de supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="170">
+        <ID_PERSON>169</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Contarini</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Alvise Minotto</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="40" RECORDID="14">
+        <ID_PERSON>13</ID_PERSON>
+        <Given_Name>Antonio</Given_Name>
+        <Surname>Contarini</Surname>
+        <Alias></Alias>
+        <Title>Patriarch</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Patriarch of Venice (1508-1524)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1450</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1524</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="9" RECORDID="102">
+        <ID_PERSON>101</ID_PERSON>
+        <Given_Name>Giambattista Maria</Given_Name>
+        <Surname>Contarini</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Lecturer (lettore)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="54">
+        <ID_PERSON>53</ID_PERSON>
+        <Given_Name>Girolamo</Given_Name>
+        <Surname>Contarini</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Vicario of the monastery of San Secondo (August 1597-June 1598) ; Vicario of the monastery of San Pietro Martire di Murano ; Bishop of Capodistria (15 May 1600-9 October 1619)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Capodistria</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1619-10-09</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Turn of the century (90-10)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="30" RECORDID="47">
+        <ID_PERSON>46</ID_PERSON>
+        <Given_Name>Vincenzo Maria</Given_Name>
+        <Surname>Coronelli</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Franciscan friar</Occupation>
+        <Activities_Roles>Cosmographer ; Cartographer ; Historian</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1650-08-16</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1718-12-09</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="182">
+        <ID_PERSON>181</ID_PERSON>
+        <Given_Name>Agostino</Given_Name>
+        <Surname>Correggio</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Orazio</Patronymic>
+        <Occupation>Nobleman since 1646</Occupation>
+        <Activities_Roles>Merchant ; Art collector with the brother Giovan Donato</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1604</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1678</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="129">
+        <ID_PERSON>128</ID_PERSON>
+        <Given_Name>Niccolò</Given_Name>
+        <Surname>Corte</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="107">
+        <ID_PERSON>106</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Council of Ten </Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1310</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="160">
+        <ID_PERSON>159</ID_PERSON>
+        <Given_Name>Ercole</Given_Name>
+        <Surname>d&apos;Este</Surname>
+        <Alias>Ercole I</Alias>
+        <Title>Duke</Title>
+        <Patronymic>Nicolò III</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Duke of Ferrara</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Ferrara</Place_of_birth>
+        <Place_of_death>Ferrara</Place_of_death>
+        <Work_location>Ferrara</Work_location>
+        <Birth_Date_Earliest>1431-10-26</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1505-01-25</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="120">
+        <ID_PERSON>119</ID_PERSON>
+        <Given_Name>Nicolò</Given_Name>
+        <Surname>da Cortivo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="142">
+        <ID_PERSON>141</ID_PERSON>
+        <Given_Name>Egidio</Given_Name>
+        <Surname>da Ferrara</Surname>
+        <Alias>Patriarch</Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Patriarch of Grado (1296-1311) ; Patriarch of Alessandria (1311)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Ferrara</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>14th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="24" RECORDID="56">
+        <ID_PERSON>55</ID_PERSON>
+        <Given_Name>Zaccaria</Given_Name>
+        <Surname>da Luni</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Vicario generale of the monastery of San Secondo (1535)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="6" RECORDID="116">
+        <ID_PERSON>115</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>da Santa Croce</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Girolamo</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1516</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1584</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="115">
+        <ID_PERSON>114</ID_PERSON>
+        <Given_Name>Girolamo</Given_Name>
+        <Surname>da Santa Croce</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Santa Croce</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1480 - 1485</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1556</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="138">
+        <ID_PERSON>137</ID_PERSON>
+        <Given_Name>Daniele</Given_Name>
+        <Surname>da Selva di Boggion</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="137">
+        <ID_PERSON>136</ID_PERSON>
+        <Given_Name>Imizza</Given_Name>
+        <Surname>da Selva di Boggion</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Widow of Leone da Selva di Boggion</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="22" RECORDID="46">
+        <ID_PERSON>45</ID_PERSON>
+        <Given_Name>Gerardino</Given_Name>
+        <Surname>da Villanova</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Landowner</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Villanova</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="26" RECORDID="44">
+        <ID_PERSON>43</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>da Zon</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect ; Proto dei muratori at the Arsenale</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes>He was in contact with the Dominican friars of San Domenico di Castello in Venice. His body is buried in the church.</Notes>
+    </ROW>
+    <ROW MODID="27" RECORDID="75">
+        <ID_PERSON>74</ID_PERSON>
+        <Given_Name>Enrico</Given_Name>
+        <Surname>Dandolo</Surname>
+        <Alias></Alias>
+        <Title>Patriarch</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Patriarch of Grado (1130-1182)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1182</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="32" RECORDID="30">
+        <ID_PERSON>29</ID_PERSON>
+        <Given_Name>Daniele</Given_Name>
+        <Surname>Danieli</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Friar</Occupation>
+        <Activities_Roles>Friar of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="143">
+        <ID_PERSON>142</ID_PERSON>
+        <Given_Name>Nicolò</Given_Name>
+        <Surname>de Benvenutis</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Canon regular of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>14th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="6" RECORDID="119">
+        <ID_PERSON>118</ID_PERSON>
+        <Given_Name>Hugues</Given_Name>
+        <Surname>de Comminelles</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>French secretary of Alfonso, Duke of Calabria</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>France</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="147">
+        <ID_PERSON>146</ID_PERSON>
+        <Given_Name>Antonio</Given_Name>
+        <Surname>de Lusciano</Surname>
+        <Alias></Alias>
+        <Title>Prior</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Prior of San Clemente (since 1433)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="177">
+        <ID_PERSON>176</ID_PERSON>
+        <Given_Name>Alessandro</Given_Name>
+        <Surname>de Strigis</Surname>
+        <Alias></Alias>
+        <Title>Marquis</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Ambassador of the Duke of Mantua-Nevers, Carlo Gonzaga</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1630</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="30" RECORDID="59">
+        <ID_PERSON>58</ID_PERSON>
+        <Given_Name>Jacopo</Given_Name>
+        <Surname>de&apos; Barbari</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter ; Printmaker</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Nuremberg</Place_of_death>
+        <Work_location>Venice ; Nuremberg</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1516</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1511</Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="168">
+        <ID_PERSON>167</ID_PERSON>
+        <Given_Name>Gaetano</Given_Name>
+        <Surname>dei Conti di Thiene</Surname>
+        <Alias>Saint Cajetan</Alias>
+        <Title>Saint</Title>
+        <Patronymic>Gaspare</Patronymic>
+        <Occupation>Theatine</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Vicenza</Place_of_birth>
+        <Place_of_death>Naples</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1480-10-01</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1547-08-07</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="167">
+        <ID_PERSON>166</ID_PERSON>
+        <Given_Name>Francesco Maria</Given_Name>
+        <Surname>della Rovere</Surname>
+        <Alias>Francesco Maria I</Alias>
+        <Title>Duke</Title>
+        <Patronymic>Giovanni</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Duke of Urbino (1508-1516 and 1521-1538)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Senigallia</Place_of_birth>
+        <Place_of_death>Urbino</Place_of_death>
+        <Work_location>Urbino</Work_location>
+        <Birth_Date_Earliest>1490-03-22</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1538-10-20</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="123">
+        <ID_PERSON>122</ID_PERSON>
+        <Given_Name>Augusto</Given_Name>
+        <Surname>Denaix</Surname>
+        <Alias></Alias>
+        <Title>Captain</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="43">
+        <ID_PERSON>42</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Dominican Friars of San Secondo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1534</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1806-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="144">
+        <ID_PERSON>143</ID_PERSON>
+        <Given_Name>Jacques</Given_Name>
+        <Surname>Duèze</Surname>
+        <Alias>Pope John XXII</Alias>
+        <Title>Pope</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Pope (1316-1334)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Cahors</Place_of_birth>
+        <Place_of_death>Avignon</Place_of_death>
+        <Work_location>Avignon</Work_location>
+        <Birth_Date_Earliest>1249</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1334-12-04</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>13th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>https://www.wikidata.org/wiki/Q165568</Notes>
+    </ROW>
+    <ROW MODID="27" RECORDID="72">
+        <ID_PERSON>71</ID_PERSON>
+        <Given_Name>Anzolo</Given_Name>
+        <Surname>Emo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Esecutore of the Savi ed Esecutori alle Acque</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="45">
+        <ID_PERSON>44</ID_PERSON>
+        <Given_Name>Vitale</Given_Name>
+        <Surname>Falier</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge of Venice (December 1089-December 1095)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1096</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>11th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="118">
+        <ID_PERSON>117</ID_PERSON>
+        <Given_Name>Alessandro</Given_Name>
+        <Surname>Farnese</Surname>
+        <Alias></Alias>
+        <Title>Cardinal</Title>
+        <Patronymic>Pier Luigi</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Cardinal (1534-1589)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Castello Valentano (Tuscany)</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Rome</Work_location>
+        <Birth_Date_Earliest>1520-12-18</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1589-03-02</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="27" RECORDID="32">
+        <ID_PERSON>31</ID_PERSON>
+        <Given_Name>Elisabetta Graziosa</Given_Name>
+        <Surname>Ferri</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1742-12-26</Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>First half of the century (0-49)</Fraction_Century>
+        <Notes>She was buried in the church of San Secondo</Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="156">
+        <ID_PERSON>155</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Fondo territoriale</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1852</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1866</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="180">
+        <ID_PERSON>179</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Fornareto</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Antonio</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Master builder</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="151">
+        <ID_PERSON>150</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Foscari </Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1423-1457)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1373-06-19</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1457-11-01</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="109">
+        <ID_PERSON>108</ID_PERSON>
+        <Given_Name>Alvise</Given_Name>
+        <Surname>Foscarini</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Procurator of St. Mark de supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="150">
+        <ID_PERSON>149</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Frederick III</Surname>
+        <Alias></Alias>
+        <Title>Emperor of the Holy Roman Empire</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Holy Roman Emperor (1452-1493)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Innsbruck</Place_of_birth>
+        <Place_of_death>Linz</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1415-09-21</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1493-08-19</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="76">
+        <ID_PERSON>75</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Gattilesso</Surname>
+        <Alias>Raubato</Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Merchant</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="36" RECORDID="20">
+        <ID_PERSON>19</ID_PERSON>
+        <Given_Name>Angelo</Given_Name>
+        <Surname>Gavan</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Construction worker</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="30" RECORDID="35">
+        <ID_PERSON>34</ID_PERSON>
+        <Given_Name>Carlo</Given_Name>
+        <Surname>Gella</Surname>
+        <Alias>Domenico Maria del Rosario</Alias>
+        <Title>Father</Title>
+        <Patronymic>Fabrizio</Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Friar of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1663</Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>He was novizzo in the monastery of San Secondo. From his will we know that in the church there was an altar dedicated to the Madonna del Rosario.</Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="34">
+        <ID_PERSON>33</ID_PERSON>
+        <Given_Name>Domenico Maria</Given_Name>
+        <Surname>Gella</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Friar of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1664</Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>In his will he wrote that the monastery &quot;vive secondo il rigore dell’ordine dei predicatori e per questo si trova in uno stato di estrema povertà&quot;.</Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="94">
+        <ID_PERSON>93</ID_PERSON>
+        <Given_Name>Bernardin</Given_Name>
+        <Surname>Giacomazzi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Secretary of the monastery of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="9" RECORDID="117">
+        <ID_PERSON>116</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Giustinian</Surname>
+        <Alias>Lorenzo Giustinian</Alias>
+        <Title>Saint</Title>
+        <Patronymic>Bernardo di Piero</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Patriarch of Venice (1451)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1381</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1456-01-08</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>He mediated, along with the arcibishop Antonino Pierozzi from Florence, in the Peace of Lodi.
+He is buries in the church of San Pietro di Castello.</Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="174">
+        <ID_PERSON>173</ID_PERSON>
+        <Given_Name>Sebastiano</Given_Name>
+        <Surname>Giustinian</Surname>
+        <Alias></Alias>
+        <Title>Captain ; Knight</Title>
+        <Patronymic>Marino</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1459</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1543-03-13</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="154">
+        <ID_PERSON>153</ID_PERSON>
+        <Given_Name>Domenico</Given_Name>
+        <Surname>Graziussi</Surname>
+        <Alias></Alias>
+        <Title>Engineer</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="165">
+        <ID_PERSON>164</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Gritti</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic>Francesco</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1523-1538)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Bardolino</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1455-04-17</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1538-12-28</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="39" RECORDID="29">
+        <ID_PERSON>28</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Guardi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1712-10-05</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1793-01-01</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="36" RECORDID="31">
+        <ID_PERSON>30</ID_PERSON>
+        <Given_Name>Giacomo</Given_Name>
+        <Surname>Guardi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Francesco</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1764-04-13</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1835-11-03</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="32" RECORDID="18">
+        <ID_PERSON>17</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Holy See</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="157">
+        <ID_PERSON>156</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>John VIII Palaiologos</Surname>
+        <Alias></Alias>
+        <Title>Emperor</Title>
+        <Patronymic>Manuel II Palaiologos</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Emperor of the Byzantine Empire (1425-1448)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1392-12-18</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1448-10-31</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="183">
+        <ID_PERSON>182</ID_PERSON>
+        <Given_Name>Girolamo</Given_Name>
+        <Surname>Lando</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="6" RECORDID="103">
+        <ID_PERSON>102</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Lateran Canons of Santa Maria della Carità</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="36" RECORDID="25">
+        <ID_PERSON>24</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Lateran Canons of Santo Spirito</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Religious order</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1140</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1656</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="179">
+        <ID_PERSON>178</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Lazzaroni</Surname>
+        <Alias></Alias>
+        <Title>Monsignor</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Parish priest</Occupation>
+        <Activities_Roles>Parish priest of the church of Sant&apos;Angelo ; Patriarchal vicar</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="140">
+        <ID_PERSON>139</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Litaldo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="139">
+        <ID_PERSON>138</ID_PERSON>
+        <Given_Name>Spadaro</Given_Name>
+        <Surname>Litaldo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="12" RECORDID="85">
+        <ID_PERSON>84</ID_PERSON>
+        <Given_Name>Baldassare</Given_Name>
+        <Surname>Longhena</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Melchisedech</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect and sculptor</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1596</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1682-02-18</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="161">
+        <ID_PERSON>160</ID_PERSON>
+        <Given_Name>Leonardo</Given_Name>
+        <Surname>Loredan</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic>Gerolamo</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1501-1521)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1436-11-16</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1521-06-21</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="186">
+        <ID_PERSON>185</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Lorenzetto</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Stonecutter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="136">
+        <ID_PERSON>135</ID_PERSON>
+        <Given_Name>Alberico</Given_Name>
+        <Surname>Lottario</Surname>
+        <Alias>Bishop</Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Bishop of Rimini</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="67">
+        <ID_PERSON>66</ID_PERSON>
+        <Given_Name>Domenico</Given_Name>
+        <Surname>Lovisa</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Publisher ; Printer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1690</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1750</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>First half of the century (0-49)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="187">
+        <ID_PERSON>186</ID_PERSON>
+        <Given_Name>Zuanne</Given_Name>
+        <Surname>Lumi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Stonecutter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="133">
+        <ID_PERSON>132</ID_PERSON>
+        <Given_Name>Battista</Given_Name>
+        <Surname>Luran</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="25" RECORDID="38">
+        <ID_PERSON>37</ID_PERSON>
+        <Given_Name>Alessandro</Given_Name>
+        <Surname>Malerba</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Friar of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="132">
+        <ID_PERSON>131</ID_PERSON>
+        <Given_Name>Nicolò</Given_Name>
+        <Surname>Massa</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1504</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1569</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="24" RECORDID="40">
+        <ID_PERSON>39</ID_PERSON>
+        <Given_Name>Niccolò</Given_Name>
+        <Surname>Mauro</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Construction worker</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Mid-century (40-60)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="126">
+        <ID_PERSON>125</ID_PERSON>
+        <Given_Name>Girolamo</Given_Name>
+        <Surname>Mercuriale</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Padua</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="19" RECORDID="88">
+        <ID_PERSON>87</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Milizia da Mar</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1545</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="131">
+        <ID_PERSON>130</ID_PERSON>
+        <Given_Name>Alvise I</Given_Name>
+        <Surname>Mocenigo</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic>Tommaso</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Doge (1570-1577)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1507-10-26</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1577-06-04</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="181">
+        <ID_PERSON>180</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Mocenigo</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Camaldolese monk in Monte Rua</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="33">
+        <ID_PERSON>32</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Morani</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1729</Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>His will is preserved in the fondo of San Secondo.</Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="61">
+        <ID_PERSON>60</ID_PERSON>
+        <Given_Name>Marco</Given_Name>
+        <Surname>Moro</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter ; Lithographer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Zenson di Piave (Treviso)</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1817-12-09</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1885-02-25</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="152">
+        <ID_PERSON>151</ID_PERSON>
+        <Given_Name>Cristoforo</Given_Name>
+        <Surname>Moro </Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1423-1471)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1390</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1471-11-09</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="9" RECORDID="87">
+        <ID_PERSON>86</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Municipality of Venice</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="38" RECORDID="21">
+        <ID_PERSON>20</ID_PERSON>
+        <Given_Name>Agostino</Given_Name>
+        <Surname>Museo</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Heremitan preacher</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Treviso</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1550</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>Regular guest in the convent of the Lateran Canons of Santo Spirito.</Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="153">
+        <ID_PERSON>152</ID_PERSON>
+        <Given_Name>Antonio</Given_Name>
+        <Surname>Muzzani</Surname>
+        <Alias></Alias>
+        <Title>Count</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Consigliere di Luogotenenza</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="148">
+        <ID_PERSON>147</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Nani</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Friar in San Clemente</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>He was well known for being a predictor</Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="159">
+        <ID_PERSON>158</ID_PERSON>
+        <Given_Name>Amedea</Given_Name>
+        <Surname>Palaiologos</Surname>
+        <Alias></Alias>
+        <Title>Queen</Title>
+        <Patronymic>Giangiacomo</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Queen of Cyprus</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="130">
+        <ID_PERSON>129</ID_PERSON>
+        <Given_Name>Bernardino</Given_Name>
+        <Surname>Paterno</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="0" RECORDID="173">
+        <ID_PERSON>172</ID_PERSON>
+        <Given_Name>Alessandro</Given_Name>
+        <Surname>Pesaro</Surname>
+        <Alias></Alias>
+        <Title>Captain</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="111">
+        <ID_PERSON>110</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Pisani</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Procurator of St. Mark de supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="135">
+        <ID_PERSON>134</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Polani</Surname>
+        <Alias></Alias>
+        <Title>Bishop of Castello</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="175">
+        <ID_PERSON>174</ID_PERSON>
+        <Given_Name>Pietro</Given_Name>
+        <Surname>Polani</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge (1130-1148)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1098</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1148</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>12th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="24" RECORDID="99">
+        <ID_PERSON>98</ID_PERSON>
+        <Given_Name>Vincenzo</Given_Name>
+        <Surname>Polani</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Messer of the Procuratori di Supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="24" RECORDID="100">
+        <ID_PERSON>99</ID_PERSON>
+        <Given_Name>Domenico</Given_Name>
+        <Surname>Porta</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Friar in Santo Spirito</Occupation>
+        <Activities_Roles>Guardian of the monastery of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="114">
+        <ID_PERSON>113</ID_PERSON>
+        <Given_Name>Giuseppe</Given_Name>
+        <Surname>Porta</Surname>
+        <Alias>il Salviati</Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Castelnuovo di Garfagnana</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Rome; Florence; Bologna; Venice</Work_location>
+        <Birth_Date_Earliest>1520</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1575</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="158">
+        <ID_PERSON>157</ID_PERSON>
+        <Given_Name>Maria</Given_Name>
+        <Surname>Priuli</Surname>
+        <Alias>Dogaressa Foscari</Alias>
+        <Title>Dogaressa</Title>
+        <Patronymic>Andrea</Patronymic>
+        <Occupation>Noblewoman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="31" RECORDID="51">
+        <ID_PERSON>50</ID_PERSON>
+        <Given_Name>Matteo</Given_Name>
+        <Surname>Priuli</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic>Antonio</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Bishop of Cittanova (1561-1565) ; Bishop of Vicenza (1565-1595)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice ; Vicenza</Work_location>
+        <Birth_Date_Earliest>1528-03-30</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1595-04-03</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="11" RECORDID="95">
+        <ID_PERSON>94</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Procuratori de supra</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="125">
+        <ID_PERSON>124</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Provveditori alla Sanità</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1486-01-07</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="8" RECORDID="96">
+        <ID_PERSON>95</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Provveditori sopra monasteri</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1521</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="64">
+        <ID_PERSON>63</ID_PERSON>
+        <Given_Name>Luigi</Given_Name>
+        <Surname>Querena</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1824-05-30</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1887-04-03</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="55">
+        <ID_PERSON>54</ID_PERSON>
+        <Given_Name>Raffaele</Given_Name>
+        <Surname>Riva</Surname>
+        <Alias></Alias>
+        <Title>Bishop</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Bishop of Curzola (5 September 1605-19 July 1611)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1611-07-19</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="176">
+        <ID_PERSON>175</ID_PERSON>
+        <Given_Name>Pierre</Given_Name>
+        <Surname>Roger</Surname>
+        <Alias>Pope Clement VI</Alias>
+        <Title>Pope</Title>
+        <Patronymic>Guillaume</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Pope (1342-1352)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Rosiers-d&apos;Égletons</Place_of_birth>
+        <Place_of_death>Avignon</Place_of_death>
+        <Work_location>Avignon</Work_location>
+        <Birth_Date_Earliest>1291</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1352-12-06</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>14th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="5" RECORDID="141">
+        <ID_PERSON>140</ID_PERSON>
+        <Given_Name>Angelo</Given_Name>
+        <Surname>Rosso</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>13th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="71">
+        <ID_PERSON>70</ID_PERSON>
+        <Given_Name>Carlo</Given_Name>
+        <Surname>Ruzzini</Surname>
+        <Alias></Alias>
+        <Title>Doge</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Doge of Venice (2 June 1732-5 January 1735)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1653-11-11</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1735-01-05</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="68">
+        <ID_PERSON>67</ID_PERSON>
+        <Given_Name>Cristoforo</Given_Name>
+        <Surname>Sabbadino</Surname>
+        <Alias></Alias>
+        <Title>Proto</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Engineer ; Proto dei Savi ed Esecutori alle Acque</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Chioggia</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1489</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1560-03-03</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="90">
+        <ID_PERSON>89</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Savi ed esecutori alle acque</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="3" RECORDID="162">
+        <ID_PERSON>161</ID_PERSON>
+        <Given_Name>Matthäus</Given_Name>
+        <Surname>Schinner</Surname>
+        <Alias></Alias>
+        <Title>Cardinal</Title>
+        <Patronymic>Peter</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Cardinal (1511-1522)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Mühlebach</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1465</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1522-10-01</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="93">
+        <ID_PERSON>92</ID_PERSON>
+        <Given_Name>Vincenzo</Given_Name>
+        <Surname>Scutari</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Guardian of the monastery of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="1" RECORDID="155">
+        <ID_PERSON>154</ID_PERSON>
+        <Given_Name>Angelo</Given_Name>
+        <Surname>Seguso</Surname>
+        <Alias></Alias>
+        <Title>Architect</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>19th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="166">
+        <ID_PERSON>165</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Sforza</Surname>
+        <Alias>Francesco II</Alias>
+        <Title>Duke</Title>
+        <Patronymic>Ludovico</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Duke of Milan (1515-1535)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Milan</Place_of_birth>
+        <Place_of_death>Milan</Place_of_death>
+        <Work_location>Milan</Work_location>
+        <Birth_Date_Earliest>1495-02-04</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1535-11-02</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="30" RECORDID="69">
+        <ID_PERSON>68</ID_PERSON>
+        <Given_Name>Alessandro</Given_Name>
+        <Surname>Spaziani</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Friar of San Secondio ; Historian</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1710</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1787</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="128">
+        <ID_PERSON>127</ID_PERSON>
+        <Given_Name>Mariano</Given_Name>
+        <Surname>Stefanelli</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="58">
+        <ID_PERSON>57</ID_PERSON>
+        <Given_Name>Guglielmo</Given_Name>
+        <Surname>Stella</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter ; Writer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Milan</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1828-03-08</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1888</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="41" RECORDID="24">
+        <ID_PERSON>23</ID_PERSON>
+        <Given_Name>Jacopo</Given_Name>
+        <Surname>Tatti</Surname>
+        <Alias>Sansovino</Alias>
+        <Title></Title>
+        <Patronymic>Antonio</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect ; Sculptor</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Florence</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Florenze ; Venice</Work_location>
+        <Birth_Date_Earliest>1486-0-02</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1570-11-27</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="39">
+        <ID_PERSON>38</ID_PERSON>
+        <Given_Name>Tommaso</Given_Name>
+        <Surname>Temanza</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect ; Writer ; Idraulic engineer ; Art historian</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1705-03-05</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1789-06-14</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>He was the nephew of the architect Giovanni Antonio Scalfurotto.</Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="62">
+        <ID_PERSON>61</ID_PERSON>
+        <Given_Name>Andrea</Given_Name>
+        <Surname>Tirali</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Monselice (Padua)</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1657</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1737-06-28</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="4" RECORDID="178">
+        <ID_PERSON>177</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Tirinello</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Carpenter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1630-07</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="92">
+        <ID_PERSON>91</ID_PERSON>
+        <Given_Name>Francesco</Given_Name>
+        <Surname>Tironi</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1745</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-03-01</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="14" RECORDID="145">
+        <ID_PERSON>144</ID_PERSON>
+        <Given_Name>Piero</Given_Name>
+        <Surname>Tomacelli</Surname>
+        <Alias>Pope Boniface IX</Alias>
+        <Title>Pope</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles>Pope (1389-1404)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Naples</Place_of_birth>
+        <Place_of_death>Rome</Place_of_death>
+        <Work_location>Rome</Work_location>
+        <Birth_Date_Earliest>1350</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1404-10-10</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>14th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes>https://www.wikidata.org/wiki/Q165561</Notes>
+    </ROW>
+    <ROW MODID="30" RECORDID="50">
+        <ID_PERSON>49</ID_PERSON>
+        <Given_Name>Giovanni</Given_Name>
+        <Surname>Trevisan</Surname>
+        <Alias></Alias>
+        <Title>Patriarch</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Benedictine friar</Occupation>
+        <Activities_Roles>Patriarch of Venice (1560-1590)</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest>1503</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1590-08-05</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="38" RECORDID="27">
+        <ID_PERSON>26</ID_PERSON>
+        <Given_Name>Filippo</Given_Name>
+        <Surname>Tron</Surname>
+        <Alias></Alias>
+        <Title>Procurator</Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Procurator of St. Mark de supra</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date>1566</Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes>His house was located near the rio della Zecca, at the corner with the Terranova warehouses.</Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="97">
+        <ID_PERSON>96</ID_PERSON>
+        <Given_Name>Bonaventura Maria</Given_Name>
+        <Surname>Valerio</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation>Theologian</Occupation>
+        <Activities_Roles>Observant friar of Santo Spirito</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="0" RECORDID="172">
+        <ID_PERSON>171</ID_PERSON>
+        <Given_Name>Piero</Given_Name>
+        <Surname>Vallaresso</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Zaccaria</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="40" RECORDID="22">
+        <ID_PERSON>21</ID_PERSON>
+        <Given_Name>Tiziano</Given_Name>
+        <Surname>Vecellio</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Gregorio</Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Pieve di Cadore</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1488</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1576</Death_Date_Latest>
+        <Marriage_Date>1525</Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century>Entire century (0-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="2" RECORDID="171">
+        <ID_PERSON>170</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Vendramin</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic>Luca</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location></Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="6" RECORDID="89">
+        <ID_PERSON>88</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Venetian Republic</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>697</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="7" RECORDID="91">
+        <ID_PERSON>90</ID_PERSON>
+        <Given_Name></Given_Name>
+        <Surname>Venetian Senate</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Venetian Office</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1229</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1797-05-12</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century></Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="29" RECORDID="37">
+        <ID_PERSON>36</ID_PERSON>
+        <Given_Name>Jacometto</Given_Name>
+        <Surname>Veneziano</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Painter</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1472</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1497</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>15th cent.</Century>
+        <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="6" RECORDID="121">
+        <ID_PERSON>120</ID_PERSON>
+        <Given_Name>Antonio Girolamo</Given_Name>
+        <Surname>Vestri</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Perito alla Laguna</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>17th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="57">
+        <ID_PERSON>56</ID_PERSON>
+        <Given_Name>Teodoro</Given_Name>
+        <Surname>Viero</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Publisher ; Printer</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Bassano del Grappa</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1740-03-19</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1819-08-02</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes>He moved to Venice in 1755. His shop was in via Mercatoria &quot;vulgo dicta dell&apos;Orologio&quot;. He was the uncle of Luigi Schiavonetti on his mother&apos;s side, who sent him from London contemporary English prints for sale in Venice.</Notes>
+    </ROW>
+    <ROW MODID="41" RECORDID="23">
+        <ID_PERSON>22</ID_PERSON>
+        <Given_Name>Antonio</Given_Name>
+        <Surname>Visentini</Surname>
+        <Alias></Alias>
+        <Title></Title>
+        <Patronymic></Patronymic>
+        <Occupation></Occupation>
+        <Activities_Roles>Architect ; Painter ; Engraver</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death>Venice</Place_of_death>
+        <Work_location>Venice ; Vicenza</Work_location>
+        <Birth_Date_Earliest>1688-11-21</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1782-06-26</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+    <ROW MODID="28" RECORDID="36">
+        <ID_PERSON>35</ID_PERSON>
+        <Given_Name>Cherubino</Given_Name>
+        <Surname>Zeli</Surname>
+        <Alias></Alias>
+        <Title>Father</Title>
+        <Patronymic></Patronymic>
+        <Occupation>Dominican friar</Occupation>
+        <Activities_Roles>Friar of San Secondo</Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth></Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest></Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest></Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>18th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+</FMPDSORESULT>
