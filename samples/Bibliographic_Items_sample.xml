@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- This grammar has been deprecated - use FMPXMLRESULT instead -->
+<FMPDSORESULT xmlns="http://www.filemaker.com/fmpdsoresult">
+    <ERRORCODE>0</ERRORCODE>
+    <DATABASE>MVA_25.03.2020.fmp12</DATABASE>
+    <LAYOUT>BIBLIOGRAPHY</LAYOUT>
+    <ROW MODID="34" RECORDID="1">
+        <ID_BIBLIOGRAPHY>Bibl0001</ID_BIBLIOGRAPHY>
+        <Typology>Article</Typology>
+        <Author>Biferali, Fabrizio</Author>
+        <Title>Arte e riforma a Venezia. Tiziano in Santo Spirito in Isola</Title>
+        <Language>Italiano</Language>
+        <Curator></Curator>
+        <Publisher></Publisher>
+        <City></City>
+        <Date>2018</Date>
+        <Book_or_Journal_Title>«Ateneo Veneto»</Book_or_Journal_Title>
+        <Series></Series>
+        <Journal's_Number>CCV, terza serie 17/I</Journal's_Number>
+        <N_Volume></N_Volume>
+        <Volume_Title></Volume_Title>
+        <Pages>25-36</Pages>
+        <Subject>Tiziano Vecellio ; Church of Santo Spirito in Isola</Subject>
+    </ROW>
+</FMPDSORESULT>
