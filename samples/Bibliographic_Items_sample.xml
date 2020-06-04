@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?><!-- This grammar has been deprecated - use FMPXMLRESULT instead -->
-<FMPDSORESULT xmlns="http://www.filemaker.com/fmpdsoresult">
+<FMPDSORESULT>
     <ERRORCODE>0</ERRORCODE>
     <DATABASE>MVA_25.03.2020.fmp12</DATABASE>
     <LAYOUT>BIBLIOGRAPHY</LAYOUT>
