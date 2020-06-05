@@ -10,51 +10,51 @@
 
 	<!-- Event -->
 
-	<!-- Person -->
-	<generator name="300-person" prefix="arc">
-		<pattern>person/{person_id}</pattern>
+	<!-- Actor -->
+	<generator name="300-actor" prefix="arc">
+		<pattern>actor/{actor_id}</pattern>
 	</generator>
-	<generator name="310-person-identifier" prefix="arc">
-		<pattern>/person/{person_id}/identifier/{identifier_id}</pattern>
+	<generator name="310-actor-identifier" prefix="arc">
+		<pattern>identifier/{identifier_id}</pattern>
 	</generator>
-	<generator name="320-person-birth" prefix="arc">
-		<pattern>/person/{person_id}/birth</pattern>
+	<generator name="320-actor-birth" prefix="arc">
+		<pattern>birth</pattern>
 	</generator>
-	<generator name="323-person-birth-date" prefix="arc">
-		<pattern>/person/{person_id}/birth/date</pattern>
+	<generator name="323-actor-birth-date" prefix="arc">
+		<pattern>birth/date</pattern>
 	</generator>
-	<generator name="330-person-death" prefix="arc">
-		<pattern>/person/{person_id}/death</pattern>
+	<generator name="330-actor-death" prefix="arc">
+		<pattern>death</pattern>
 	</generator>
-	<generator name="333-person-death-date" prefix="arc">
-		<pattern>/person/{person_id}/death/date</pattern>
+	<generator name="333-actor-death-date" prefix="arc">
+		<pattern>death/date</pattern>
 	</generator>
-	<generator name="340-person-activity" prefix="arc">
-		<pattern>/person/{person_id}/activity/{activity_id}</pattern>
+	<generator name="340-actor-activity" prefix="arc">
+		<pattern>activity/{activity_id}</pattern>
 	</generator>
-	<generator name="341-person-activity-start" prefix="arc">
-		<pattern>/person/{person_id}/activity/{activity_id}/start</pattern>
+	<generator name="341-actor-activity-start" prefix="arc">
+		<pattern>activity/{activity_id}/start</pattern>
 	</generator>
-	<generator name="342-person-activity-end" prefix="arc">
-		<pattern>/person/{person_id}/activity/{activity_id}/end</pattern>
+	<generator name="342-actor-activity-end" prefix="arc">
+		<pattern>activity/{activity_id}/end</pattern>
 	</generator>
-	<generator name="350-person-marriage" prefix="arc">
-		<pattern>/person/{person_id}/marriage/{marriage_id}</pattern>
+	<generator name="350-actor-marriage" prefix="arc">
+		<pattern>marriage/{marriage_id}</pattern>
 	</generator>
-	<generator name="353-person-marriage-date" prefix="arc">
-		<pattern>/person/{person_id}/marriage/{marriage_id}/date</pattern>
+	<generator name="353-actor-marriage-date" prefix="arc">
+		<pattern>marriage/{marriage_id}/date</pattern>
 	</generator>
-	<generator name="360-person-will" prefix="arc">
-		<pattern>/person/{person_id}/will/{will_id}</pattern>
+	<generator name="360-actor-will" prefix="arc">
+		<pattern>will/{will_id}</pattern>
 	</generator>
-	<generator name="363-person-will-date" prefix="arc">
-		<pattern>/person/{person_id}/will/{will_id}/date</pattern>
+	<generator name="363-actor-will-date" prefix="arc">
+		<pattern>will/{will_id}/date</pattern>
 	</generator>
-	<generator name="370-person-biography" prefix="arc">
-		<pattern>/person/{person_id}/biography</pattern>
+	<generator name="370-actor-biography" prefix="arc">
+		<pattern>biography</pattern>
 	</generator>
-	<generator name="380-person-image" prefix="arc">
-		<pattern>/person/{person_id}/image</pattern>
+	<generator name="380-actor-image" prefix="arc">
+		<pattern>image</pattern>
 	</generator>
 
 	<!-- Source -->
