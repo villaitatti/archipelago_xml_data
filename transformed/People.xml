@@ -3,6 +3,7 @@
     <ERRORCODE>0</ERRORCODE>
     <DATABASE>MVA_25.03.2020.fmp12</DATABASE>
     <LAYOUT>TBL_DETAILS_PEOPLE</LAYOUT>
+    
     <ROW MODID="32" RECORDID="80">
         <ID_PERSON>79</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -27,6 +28,7 @@
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes>Perito Ordinario ai Beni Inculti, engineer, and proto alla laguna. He was active beween 1648 and 1689.</Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="104">
         <ID_PERSON>103</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -51,6 +53,7 @@
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes>Perito Ordinario ai Beni Inculti, engineer, and proto alla laguna. He was active beween 1648 and 1689.</Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="122">
         <ID_PERSON>121</ID_PERSON>
         <Given_Name>Sebastiano</Given_Name>
@@ -75,6 +78,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="78">
         <ID_PERSON>77</ID_PERSON>
         <Given_Name>Giovanni Battista</Given_Name>
@@ -99,6 +103,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="164">
         <ID_PERSON>163</ID_PERSON>
         <Given_Name>Egidio</Given_Name>
@@ -123,6 +128,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="124">
         <ID_PERSON>123</ID_PERSON>
         <Given_Name></Given_Name>
@@ -147,6 +153,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="40" RECORDID="17">
         <ID_PERSON>16</ID_PERSON>
         <Given_Name></Given_Name>
@@ -171,6 +178,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="190">
         <ID_PERSON>189</ID_PERSON>
         <Given_Name>Todero</Given_Name>
@@ -195,6 +203,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="149">
         <ID_PERSON>148</ID_PERSON>
         <Given_Name>Agostino</Given_Name>
@@ -219,6 +228,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="0" RECORDID="184">
         <ID_PERSON>183</ID_PERSON>
         <Given_Name>Gianfrancesco</Given_Name>
@@ -243,6 +253,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="53">
         <ID_PERSON>52</ID_PERSON>
         <Given_Name>Angelo</Given_Name>
@@ -267,6 +278,7 @@
         <Fraction_Century>Turn of the century (90-10)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="33" RECORDID="65">
         <ID_PERSON>64</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -291,6 +303,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="113">
         <ID_PERSON>112</ID_PERSON>
         <Given_Name></Given_Name>
@@ -315,6 +328,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="38" RECORDID="19">
         <ID_PERSON>18</ID_PERSON>
         <Given_Name></Given_Name>
@@ -339,6 +353,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="33" RECORDID="66">
         <ID_PERSON>65</ID_PERSON>
         <Given_Name>Giuseppe Bernardino</Given_Name>
@@ -363,6 +378,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="52">
         <ID_PERSON>51</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -387,6 +403,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="41">
         <ID_PERSON>40</ID_PERSON>
         <Given_Name>Napoleone</Given_Name>
@@ -411,6 +428,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="48" RECORDID="26">
         <ID_PERSON>25</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -435,6 +453,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>Election as prior of the Augustinian community on December 15, 1425. Election as Venetian Patriarch on March 27, 1460. He is buried on the island of Santo Spirito</Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="70">
         <ID_PERSON>69</ID_PERSON>
         <Given_Name>Benedetto</Given_Name>
@@ -459,6 +478,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="48">
         <ID_PERSON>47</ID_PERSON>
         <Given_Name>Angelo</Given_Name>
@@ -483,6 +503,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="188">
         <ID_PERSON>187</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -507,6 +528,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="27" RECORDID="49">
         <ID_PERSON>48</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -531,6 +553,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="108">
         <ID_PERSON>107</ID_PERSON>
         <Given_Name></Given_Name>
@@ -555,6 +578,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="185">
         <ID_PERSON>184</ID_PERSON>
         <Given_Name></Given_Name>
@@ -579,6 +603,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="74">
         <ID_PERSON>73</ID_PERSON>
         <Given_Name></Given_Name>
@@ -603,6 +628,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="134">
         <ID_PERSON>133</ID_PERSON>
         <Given_Name></Given_Name>
@@ -627,6 +653,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="127">
         <ID_PERSON>126</ID_PERSON>
         <Given_Name>Girolamo</Given_Name>
@@ -651,6 +678,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="169">
         <ID_PERSON>168</ID_PERSON>
         <Given_Name>Gian Pietro</Given_Name>
@@ -675,6 +703,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="112">
         <ID_PERSON>111</ID_PERSON>
         <Given_Name>Carlo</Given_Name>
@@ -699,6 +728,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="47" RECORDID="13">
         <ID_PERSON>12</ID_PERSON>
         <Given_Name>Marina</Given_Name>
@@ -723,6 +753,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>She was the great-great-granddaughter of Doge Lorenzo Celsi.</Notes>
     </ROW>
+
     <ROW MODID="32" RECORDID="79">
         <ID_PERSON>78</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -747,6 +778,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="52" RECORDID="28">
         <ID_PERSON>27</ID_PERSON>
         <Given_Name>Fabio</Given_Name>
@@ -771,6 +803,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>https://www.wikidata.org/wiki/Q127254</Notes>
     </ROW>
+
     <ROW MODID="26" RECORDID="42">
         <ID_PERSON>41</ID_PERSON>
         <Given_Name>Domenico</Given_Name>
@@ -795,6 +828,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="9" RECORDID="98">
         <ID_PERSON>97</ID_PERSON>
         <Given_Name>Stefano</Given_Name>
@@ -819,6 +853,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="23" RECORDID="77">
         <ID_PERSON>76</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -843,6 +878,7 @@
         <Fraction_Century>First half of the century (0-49)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="21" RECORDID="146">
         <ID_PERSON>145</ID_PERSON>
         <Given_Name>Gabriele</Given_Name>
@@ -867,6 +903,7 @@
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes>https://www.wikidata.org/wiki/Q167561</Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="110">
         <ID_PERSON>109</ID_PERSON>
         <Given_Name>Alvise</Given_Name>
@@ -891,6 +928,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="170">
         <ID_PERSON>169</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -915,6 +953,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="40" RECORDID="14">
         <ID_PERSON>13</ID_PERSON>
         <Given_Name>Antonio</Given_Name>
@@ -939,6 +978,7 @@
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="9" RECORDID="102">
         <ID_PERSON>101</ID_PERSON>
         <Given_Name>Giambattista Maria</Given_Name>
@@ -963,6 +1003,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="54">
         <ID_PERSON>53</ID_PERSON>
         <Given_Name>Girolamo</Given_Name>
@@ -987,6 +1028,7 @@
         <Fraction_Century>Turn of the century (90-10)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="30" RECORDID="47">
         <ID_PERSON>46</ID_PERSON>
         <Given_Name>Vincenzo Maria</Given_Name>
@@ -1011,6 +1053,7 @@
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="182">
         <ID_PERSON>181</ID_PERSON>
         <Given_Name>Agostino</Given_Name>
@@ -1035,6 +1078,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="129">
         <ID_PERSON>128</ID_PERSON>
         <Given_Name>Niccolò</Given_Name>
@@ -1059,6 +1103,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="107">
         <ID_PERSON>106</ID_PERSON>
         <Given_Name></Given_Name>
@@ -1083,6 +1128,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="160">
         <ID_PERSON>159</ID_PERSON>
         <Given_Name>Ercole</Given_Name>
@@ -1107,6 +1153,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="120">
         <ID_PERSON>119</ID_PERSON>
         <Given_Name>Nicolò</Given_Name>
@@ -1131,6 +1178,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="142">
         <ID_PERSON>141</ID_PERSON>
         <Given_Name>Egidio</Given_Name>
@@ -1155,6 +1203,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="24" RECORDID="56">
         <ID_PERSON>55</ID_PERSON>
         <Given_Name>Zaccaria</Given_Name>
@@ -1179,6 +1228,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="6" RECORDID="116">
         <ID_PERSON>115</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -1203,6 +1253,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="115">
         <ID_PERSON>114</ID_PERSON>
         <Given_Name>Girolamo</Given_Name>
@@ -1227,6 +1278,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="138">
         <ID_PERSON>137</ID_PERSON>
         <Given_Name>Daniele</Given_Name>
@@ -1251,6 +1303,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="137">
         <ID_PERSON>136</ID_PERSON>
         <Given_Name>Imizza</Given_Name>
@@ -1275,6 +1328,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="22" RECORDID="46">
         <ID_PERSON>45</ID_PERSON>
         <Given_Name>Gerardino</Given_Name>
@@ -1299,6 +1353,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="26" RECORDID="44">
         <ID_PERSON>43</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -1323,6 +1378,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes>He was in contact with the Dominican friars of San Domenico di Castello in Venice. His body is buried in the church.</Notes>
     </ROW>
+
     <ROW MODID="27" RECORDID="75">
         <ID_PERSON>74</ID_PERSON>
         <Given_Name>Enrico</Given_Name>
@@ -1347,6 +1403,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="32" RECORDID="30">
         <ID_PERSON>29</ID_PERSON>
         <Given_Name>Daniele</Given_Name>
@@ -1371,6 +1428,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="143">
         <ID_PERSON>142</ID_PERSON>
         <Given_Name>Nicolò</Given_Name>
@@ -1395,6 +1453,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="6" RECORDID="119">
         <ID_PERSON>118</ID_PERSON>
         <Given_Name>Hugues</Given_Name>
@@ -1419,6 +1478,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="147">
         <ID_PERSON>146</ID_PERSON>
         <Given_Name>Antonio</Given_Name>
@@ -1443,6 +1503,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="177">
         <ID_PERSON>176</ID_PERSON>
         <Given_Name>Alessandro</Given_Name>
@@ -1467,6 +1528,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="30" RECORDID="59">
         <ID_PERSON>58</ID_PERSON>
         <Given_Name>Jacopo</Given_Name>
@@ -1491,6 +1553,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="168">
         <ID_PERSON>167</ID_PERSON>
         <Given_Name>Gaetano</Given_Name>
@@ -1515,6 +1578,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="167">
         <ID_PERSON>166</ID_PERSON>
         <Given_Name>Francesco Maria</Given_Name>
@@ -1539,6 +1603,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="123">
         <ID_PERSON>122</ID_PERSON>
         <Given_Name>Augusto</Given_Name>
@@ -1563,6 +1628,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="43">
         <ID_PERSON>42</ID_PERSON>
         <Given_Name></Given_Name>
@@ -1587,6 +1653,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="144">
         <ID_PERSON>143</ID_PERSON>
         <Given_Name>Jacques</Given_Name>
@@ -1611,6 +1678,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>https://www.wikidata.org/wiki/Q165568</Notes>
     </ROW>
+
     <ROW MODID="27" RECORDID="72">
         <ID_PERSON>71</ID_PERSON>
         <Given_Name>Anzolo</Given_Name>
@@ -1635,6 +1703,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="45">
         <ID_PERSON>44</ID_PERSON>
         <Given_Name>Vitale</Given_Name>
@@ -1659,6 +1728,7 @@
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="118">
         <ID_PERSON>117</ID_PERSON>
         <Given_Name>Alessandro</Given_Name>
@@ -1683,6 +1753,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="27" RECORDID="32">
         <ID_PERSON>31</ID_PERSON>
         <Given_Name>Elisabetta Graziosa</Given_Name>
@@ -1707,6 +1778,7 @@
         <Fraction_Century>First half of the century (0-49)</Fraction_Century>
         <Notes>She was buried in the church of San Secondo</Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="156">
         <ID_PERSON>155</ID_PERSON>
         <Given_Name></Given_Name>
@@ -1731,6 +1803,7 @@
         <Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="180">
         <ID_PERSON>179</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -1755,6 +1828,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="151">
         <ID_PERSON>150</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -1779,6 +1853,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="109">
         <ID_PERSON>108</ID_PERSON>
         <Given_Name>Alvise</Given_Name>
@@ -1803,6 +1878,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="150">
         <ID_PERSON>149</ID_PERSON>
         <Given_Name></Given_Name>
@@ -1827,6 +1903,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="76">
         <ID_PERSON>75</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -1851,6 +1928,7 @@
         <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="36" RECORDID="20">
         <ID_PERSON>19</ID_PERSON>
         <Given_Name>Angelo</Given_Name>
@@ -1875,6 +1953,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="30" RECORDID="35">
         <ID_PERSON>34</ID_PERSON>
         <Given_Name>Carlo</Given_Name>
@@ -1899,6 +1978,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>He was novizzo in the monastery of San Secondo. From his will we know that in the church there was an altar dedicated to the Madonna del Rosario.</Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="34">
         <ID_PERSON>33</ID_PERSON>
         <Given_Name>Domenico Maria</Given_Name>
@@ -1923,6 +2003,7 @@
         <Fraction_Century></Fraction_Century>
         <Notes>In his will he wrote that the monastery &quot;vive secondo il rigore dell’ordine dei predicatori e per questo si trova in uno stato di estrema povertà&quot;.</Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="94">
         <ID_PERSON>93</ID_PERSON>
         <Given_Name>Bernardin</Given_Name>
@@ -1947,6 +2028,7 @@
         <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="9" RECORDID="117">
         <ID_PERSON>116</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -1969,9 +2051,9 @@
         <Will_Date></Will_Date>
         <Century>15th cent.</Century>
         <Fraction_Century></Fraction_Century>
-        <Notes>He mediated, along with the arcibishop Antonino Pierozzi from Florence, in the Peace of Lodi.
-He is buries in the church of San Pietro di Castello.</Notes>
+        <Notes>He mediated, along with the arcibishop Antonino Pierozzi from Florence, in the Peace of Lodi.He is buries in the church of San Pietro di Castello.</Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="174">
         <ID_PERSON>173</ID_PERSON>
         <Given_Name>Sebastiano</Given_Name>
@@ -1996,6 +2078,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="154">
         <ID_PERSON>153</ID_PERSON>
         <Given_Name>Domenico</Given_Name>
@@ -2020,6 +2103,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="165">
         <ID_PERSON>164</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -2044,6 +2128,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="39" RECORDID="29">
         <ID_PERSON>28</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -2068,6 +2153,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="36" RECORDID="31">
         <ID_PERSON>30</ID_PERSON>
         <Given_Name>Giacomo</Given_Name>
@@ -2092,6 +2178,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="32" RECORDID="18">
         <ID_PERSON>17</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2116,6 +2203,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="157">
         <ID_PERSON>156</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2140,6 +2228,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="183">
         <ID_PERSON>182</ID_PERSON>
         <Given_Name>Girolamo</Given_Name>
@@ -2164,6 +2253,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="6" RECORDID="103">
         <ID_PERSON>102</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2188,6 +2278,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="36" RECORDID="25">
         <ID_PERSON>24</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2212,6 +2303,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="179">
         <ID_PERSON>178</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -2236,6 +2328,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="140">
         <ID_PERSON>139</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -2260,6 +2353,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="139">
         <ID_PERSON>138</ID_PERSON>
         <Given_Name>Spadaro</Given_Name>
@@ -2284,6 +2378,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="12" RECORDID="85">
         <ID_PERSON>84</ID_PERSON>
         <Given_Name>Baldassare</Given_Name>
@@ -2308,6 +2403,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="161">
         <ID_PERSON>160</ID_PERSON>
         <Given_Name>Leonardo</Given_Name>
@@ -2332,6 +2428,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="186">
         <ID_PERSON>185</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -2356,6 +2453,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="136">
         <ID_PERSON>135</ID_PERSON>
         <Given_Name>Alberico</Given_Name>
@@ -2380,6 +2478,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="67">
         <ID_PERSON>66</ID_PERSON>
         <Given_Name>Domenico</Given_Name>
@@ -2404,6 +2503,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>First half of the century (0-49)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="187">
         <ID_PERSON>186</ID_PERSON>
         <Given_Name>Zuanne</Given_Name>
@@ -2428,6 +2528,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="133">
         <ID_PERSON>132</ID_PERSON>
         <Given_Name>Battista</Given_Name>
@@ -2452,6 +2553,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="25" RECORDID="38">
         <ID_PERSON>37</ID_PERSON>
         <Given_Name>Alessandro</Given_Name>
@@ -2476,6 +2578,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="132">
         <ID_PERSON>131</ID_PERSON>
         <Given_Name>Nicolò</Given_Name>
@@ -2500,6 +2603,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="24" RECORDID="40">
         <ID_PERSON>39</ID_PERSON>
         <Given_Name>Niccolò</Given_Name>
@@ -2524,6 +2628,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Mid-century (40-60)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="126">
         <ID_PERSON>125</ID_PERSON>
         <Given_Name>Girolamo</Given_Name>
@@ -2548,6 +2653,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="19" RECORDID="88">
         <ID_PERSON>87</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2572,6 +2678,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="131">
         <ID_PERSON>130</ID_PERSON>
         <Given_Name>Alvise I</Given_Name>
@@ -2596,6 +2703,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="181">
         <ID_PERSON>180</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -2620,6 +2728,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="33">
         <ID_PERSON>32</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -2644,6 +2753,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes>His will is preserved in the fondo of San Secondo.</Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="61">
         <ID_PERSON>60</ID_PERSON>
         <Given_Name>Marco</Given_Name>
@@ -2668,6 +2778,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="152">
         <ID_PERSON>151</ID_PERSON>
         <Given_Name>Cristoforo</Given_Name>
@@ -2692,6 +2803,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="9" RECORDID="87">
         <ID_PERSON>86</ID_PERSON>
         <Given_Name></Given_Name>
@@ -2716,6 +2828,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="38" RECORDID="21">
         <ID_PERSON>20</ID_PERSON>
         <Given_Name>Agostino</Given_Name>
@@ -2740,6 +2853,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes>Regular guest in the convent of the Lateran Canons of Santo Spirito.</Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="153">
         <ID_PERSON>152</ID_PERSON>
         <Given_Name>Antonio</Given_Name>
@@ -2764,6 +2878,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="148">
         <ID_PERSON>147</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -2788,6 +2903,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes>He was well known for being a predictor</Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="159">
         <ID_PERSON>158</ID_PERSON>
         <Given_Name>Amedea</Given_Name>
@@ -2812,6 +2928,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="130">
         <ID_PERSON>129</ID_PERSON>
         <Given_Name>Bernardino</Given_Name>
@@ -2836,6 +2953,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="0" RECORDID="173">
         <ID_PERSON>172</ID_PERSON>
         <Given_Name>Alessandro</Given_Name>
@@ -2860,6 +2978,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="111">
         <ID_PERSON>110</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -2884,6 +3003,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="135">
         <ID_PERSON>134</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -2908,6 +3028,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="175">
         <ID_PERSON>174</ID_PERSON>
         <Given_Name>Pietro</Given_Name>
@@ -2932,6 +3053,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="24" RECORDID="99">
         <ID_PERSON>98</ID_PERSON>
         <Given_Name>Vincenzo</Given_Name>
@@ -2956,6 +3078,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="24" RECORDID="100">
         <ID_PERSON>99</ID_PERSON>
         <Given_Name>Domenico</Given_Name>
@@ -2980,6 +3103,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="114">
         <ID_PERSON>113</ID_PERSON>
         <Given_Name>Giuseppe</Given_Name>
@@ -3004,6 +3128,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="158">
         <ID_PERSON>157</ID_PERSON>
         <Given_Name>Maria</Given_Name>
@@ -3028,6 +3153,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="31" RECORDID="51">
         <ID_PERSON>50</ID_PERSON>
         <Given_Name>Matteo</Given_Name>
@@ -3052,6 +3178,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="11" RECORDID="95">
         <ID_PERSON>94</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3076,6 +3203,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="125">
         <ID_PERSON>124</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3100,6 +3228,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="8" RECORDID="96">
         <ID_PERSON>95</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3124,6 +3253,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="64">
         <ID_PERSON>63</ID_PERSON>
         <Given_Name>Luigi</Given_Name>
@@ -3148,6 +3278,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="55">
         <ID_PERSON>54</ID_PERSON>
         <Given_Name>Raffaele</Given_Name>
@@ -3172,6 +3303,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="176">
         <ID_PERSON>175</ID_PERSON>
         <Given_Name>Pierre</Given_Name>
@@ -3196,6 +3328,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="5" RECORDID="141">
         <ID_PERSON>140</ID_PERSON>
         <Given_Name>Angelo</Given_Name>
@@ -3220,6 +3353,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="71">
         <ID_PERSON>70</ID_PERSON>
         <Given_Name>Carlo</Given_Name>
@@ -3244,6 +3378,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="68">
         <ID_PERSON>67</ID_PERSON>
         <Given_Name>Cristoforo</Given_Name>
@@ -3268,6 +3403,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="90">
         <ID_PERSON>89</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3292,6 +3428,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="3" RECORDID="162">
         <ID_PERSON>161</ID_PERSON>
         <Given_Name>Matthäus</Given_Name>
@@ -3316,6 +3453,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="93">
         <ID_PERSON>92</ID_PERSON>
         <Given_Name>Vincenzo</Given_Name>
@@ -3340,6 +3478,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="1" RECORDID="155">
         <ID_PERSON>154</ID_PERSON>
         <Given_Name>Angelo</Given_Name>
@@ -3364,6 +3503,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="166">
         <ID_PERSON>165</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -3388,6 +3528,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="30" RECORDID="69">
         <ID_PERSON>68</ID_PERSON>
         <Given_Name>Alessandro</Given_Name>
@@ -3412,6 +3553,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="128">
         <ID_PERSON>127</ID_PERSON>
         <Given_Name>Mariano</Given_Name>
@@ -3436,6 +3578,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="58">
         <ID_PERSON>57</ID_PERSON>
         <Given_Name>Guglielmo</Given_Name>
@@ -3460,6 +3603,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="41" RECORDID="24">
         <ID_PERSON>23</ID_PERSON>
         <Given_Name>Jacopo</Given_Name>
@@ -3484,6 +3628,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="39">
         <ID_PERSON>38</ID_PERSON>
         <Given_Name>Tommaso</Given_Name>
@@ -3508,6 +3653,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes>He was the nephew of the architect Giovanni Antonio Scalfurotto.</Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="62">
         <ID_PERSON>61</ID_PERSON>
         <Given_Name>Andrea</Given_Name>
@@ -3532,6 +3678,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="4" RECORDID="178">
         <ID_PERSON>177</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -3556,6 +3703,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="92">
         <ID_PERSON>91</ID_PERSON>
         <Given_Name>Francesco</Given_Name>
@@ -3580,6 +3728,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="14" RECORDID="145">
         <ID_PERSON>144</ID_PERSON>
         <Given_Name>Piero</Given_Name>
@@ -3604,6 +3753,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes>https://www.wikidata.org/wiki/Q165561</Notes>
     </ROW>
+
     <ROW MODID="30" RECORDID="50">
         <ID_PERSON>49</ID_PERSON>
         <Given_Name>Giovanni</Given_Name>
@@ -3628,6 +3778,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="38" RECORDID="27">
         <ID_PERSON>26</ID_PERSON>
         <Given_Name>Filippo</Given_Name>
@@ -3652,6 +3803,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes>His house was located near the rio della Zecca, at the corner with the Terranova warehouses.</Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="97">
         <ID_PERSON>96</ID_PERSON>
         <Given_Name>Bonaventura Maria</Given_Name>
@@ -3676,6 +3828,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="0" RECORDID="172">
         <ID_PERSON>171</ID_PERSON>
         <Given_Name>Piero</Given_Name>
@@ -3700,6 +3853,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="40" RECORDID="22">
         <ID_PERSON>21</ID_PERSON>
         <Given_Name>Tiziano</Given_Name>
@@ -3724,6 +3878,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Entire century (0-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="2" RECORDID="171">
         <ID_PERSON>170</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3748,6 +3903,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="6" RECORDID="89">
         <ID_PERSON>88</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3772,6 +3928,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="7" RECORDID="91">
         <ID_PERSON>90</ID_PERSON>
         <Given_Name></Given_Name>
@@ -3796,6 +3953,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="29" RECORDID="37">
         <ID_PERSON>36</ID_PERSON>
         <Given_Name>Jacometto</Given_Name>
@@ -3820,6 +3978,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century>Second half of the century (50-99)</Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="6" RECORDID="121">
         <ID_PERSON>120</ID_PERSON>
         <Given_Name>Antonio Girolamo</Given_Name>
@@ -3844,6 +4003,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="57">
         <ID_PERSON>56</ID_PERSON>
         <Given_Name>Teodoro</Given_Name>
@@ -3868,6 +4028,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes>He moved to Venice in 1755. His shop was in via Mercatoria &quot;vulgo dicta dell&apos;Orologio&quot;. He was the uncle of Luigi Schiavonetti on his mother&apos;s side, who sent him from London contemporary English prints for sale in Venice.</Notes>
     </ROW>
+
     <ROW MODID="41" RECORDID="23">
         <ID_PERSON>22</ID_PERSON>
         <Given_Name>Antonio</Given_Name>
@@ -3892,6 +4053,7 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
     <ROW MODID="28" RECORDID="36">
         <ID_PERSON>35</ID_PERSON>
         <Given_Name>Cherubino</Given_Name>
@@ -3916,4 +4078,5 @@ He is buries in the church of San Pietro di Castello.</Notes>
         <Fraction_Century></Fraction_Century>
         <Notes></Notes>
     </ROW>
+
 </FMPDSORESULT>
