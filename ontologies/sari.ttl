@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm: <http://http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix sari: <http://w3id.org/sari#> .
+ 
+sari:SRP1_used_language a rdf:Property ;
+rdfs:comment "This property identifies former or current instances of E56 Language known by an E39 Actor"@en ;
+rdfs:label "used language"@en ;
+rdfs:domain crm:E39_Actor ;
+rdfs:range crm:E56_Language ;
+rdfs:subPropertyOf crm:P75_possesses .
+ 
+sari:SRP1i_was_language_used_by a rdf:Property ;
+rdfs:comment "This property identifies former or current instances of E56 Language known by an E39 Actor"@en ;
+rdfs:label "was language used by"@en ;
+rdfs:domain crm:E56_Language ;
+rdfs:range crm:E39_Actor ;
+rdfs:subPropertyOf crm:P75i_is_possessed_by .
+ 
+sari:SRP2i_was_occupation_of a rdf:Property ;
+rdfs:comment "This field is used to indicate occupations/general roles that an E39 Actor has played in its life; This documentation is at the level of a general characteristic and is not the documentation of particular periods in which occupations/roles were undertaken"@en ;
+rdfs:label "was occupation of"@en ;
+rdfs:domain crm:E55_Type ;
+rdfs:range crm:E39_Actor ;
+rdfs:subPropertyOf crm:P2i_is_type_of .
+ 
+sari:SRP2_had_occupation a rdf:Property ;
+rdfs:comment "This relation is used to indicate occupations/general roles that an E39 Actor has played in its life; This documentation is at the level of a general characteristic and is not the documentation of particular periods in which occupations/roles were undertaken"@en ;
+rdfs:label "had occupation"@en ;
+rdfs:domain crm:E39_Actor ;
+rdfs:range crm:E55_Type ;
+rdfs:subPropertyOf crm:P2_has_type .
+ 
+sari:SRP2_has_generic_part_type a rdf:Property ;
+rdfs:comment "This property is used to indicate the relation between a documented object and generic parts that are attributed to it. It is specifically to be used just for the case when the identity of the individual parts of the objects are not of importance to the overall identity of the work, but only their contribution to it qua type. For example, in installation artwork, certain generic materials may be called for to constitute the piece." ;
+rdfs:label "has generic part type"@en ;
+rdfs:domain crm:E24_Physical_Man-Made_Thing ;
+rdfs:range crm:E55_Type .
+ 
+sari:SRPC3_in_social_relation a rdfs:Class ;
+rdfs:label "in social relation"@en ;
+rdfs:comment "The class SRPC3 materializes the SRP3 relation as a class. It does so to enable an n-ary construct used to indicate the nature of the relationship that holds between the instance of E21 person designated as its domain and the instance of E21 Person designated as its range. ie: if E55 instantiated as Father then the semantic interpretation of this is E21(a) \"has father\" E21(b), the relation is not symmetric. "@en .
+ 
+
+sari:SRP3_relation_type a rdf:Property ;
+rdfs:label "relation type"@en ;
+rdfs:domain sari:SRPC3_in_social_relation ;
+rdfs:range crm:E55_Type .
+ 
+sari:SRP3i_relation_type a rdf:Property ;
+rdfs:label "relation type"@en ;
+rdfs:domain crm:E55_Type ;
+rdfs:range sari:SRPC3_in_social_relation .
