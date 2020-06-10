@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- This grammar has been deprecated - use FMPXMLRESULT instead -->
+<FMPDSORESULT>
+    <ERRORCODE>0</ERRORCODE>
+    <DATABASE>MVA_25.03.2020.fmp12</DATABASE>
+    <LAYOUT>TBL_DETAILS_PEOPLE</LAYOUT>
+    <ROW MODID="32" RECORDID="80">
+        <ID_PERSON>173</ID_PERSON>
+        <Given_Name>Sebastiano</Given_Name>
+        <Surname>Giustinian</Surname>
+        <Alias></Alias>
+        <Title>Captain ; Knight</Title>
+        <Patronymic>Marino</Patronymic>
+        <Occupation>Nobleman</Occupation>
+        <Activities_Roles></Activities_Roles>
+        <Start_Activities_Roles></Start_Activities_Roles>
+        <End_Activities_Roles></End_Activities_Roles>
+        <Place_of_birth>Venice</Place_of_birth>
+        <Place_of_death></Place_of_death>
+        <Work_location>Venice</Work_location>
+        <Birth_Date_Earliest>1459</Birth_Date_Earliest>
+        <Birth_Date_Latest></Birth_Date_Latest>
+        <Death_Date_Earliest></Death_Date_Earliest>
+        <Death_Date_Latest>1543-03-13</Death_Date_Latest>
+        <Marriage_Date></Marriage_Date>
+        <Will_Date></Will_Date>
+        <Century>16th cent.</Century>
+        <Fraction_Century></Fraction_Century>
+        <Notes></Notes>
+    </ROW>
+</FMPDSORESULT>
