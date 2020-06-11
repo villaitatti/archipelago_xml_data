@@ -8,6 +8,91 @@
 
 	<!-- Built Work-->
 
+	<generator name="100-built_work" prefix="arc">
+		<pattern>built_work/{bw_id}</pattern>
+	</generator>
+
+	<generator name="110-built_work-identifier" prefix="arc">
+		<pattern>built_work/{bw_id}/identifier</pattern>
+	</generator>
+
+	<generator name="111-built_work-name" prefix="arc">
+		<pattern>built_work/{bw_id}/name</pattern>
+	</generator>
+
+	<generator name="120-built_work-construction" prefix="arc">
+		<pattern>built_work/{bw_id}/construction</pattern>
+	</generator>
+
+	<generator name="123-built_work-construction-date" prefix="arc">
+		<pattern>built_work/{bw_id}/construction/date</pattern>
+	</generator>
+
+	<generator name="125-built_work-measurement" prefix="arc">
+		<pattern>built_work/{bw_id}/construction/role_of/{role_id}</pattern>
+	</generator>
+
+	<generator name="130-built_work-destruction" prefix="arc">
+		<pattern>built_work/{bw_id}/destruction</pattern>
+	</generator>
+
+	<generator name="140-built_work-function" prefix="arc">
+		<pattern>built_work/{bw_id}/function/{func_id}</pattern>
+	</generator>
+
+	<generator name="150-built_work-use" prefix="arc">
+		<pattern>built_work/{bw_id}/use/{use_id}</pattern>
+	</generator>
+
+	<generator name="154-built_work-use-name" prefix="arc">
+		<pattern>built_work/{bw_id}/use/{use_id}/name</pattern>
+	</generator>
+
+	<generator name="153-built_work-use-date" prefix="arc">
+		<pattern>built_work/{bw_id}/use/{use_id}/date</pattern>
+	</generator>
+
+	<generator name="160-built_work-typology" prefix="arc">
+		<pattern>built_work/{bw_id}/typology/{typology_id}</pattern>
+	</generator>
+
+	<generator name="163-built_work-typology-date" prefix="arc">
+		<pattern>built_work/{bw_id}/typology/{typology_id}/date</pattern>
+	</generator>
+
+	<generator name="164-built_work-typology-name" prefix="arc">
+		<pattern>built_work/{bw_id}/typology/{typology_id}/name</pattern>
+	</generator>
+
+	<generator name="170-built_work-measurement" prefix="arc">
+		<pattern>built_work/{bw_id}/measurement/{m_id}</pattern>
+	</generator>
+
+	<generator name="171-built_work-measurement-dimension" prefix="arc">
+		<pattern>built_work/{bw_id}/measurement/{m_id}/dimension/{d_id}</pattern>
+	</generator>
+
+	<generator name="180-built_work-material" prefix="arc">
+		<pattern>built_work/{bw_id}/material/{m_id}</pattern>
+	</generator>
+
+	<generator name="190-built_work-acquisition" prefix="arc">
+		<pattern>built_work/{bw_id}/acquisition/{acquisition_id}</pattern>
+	</generator>
+
+	<generator name="193-built_work-acquisition-date" prefix="arc">
+		<pattern>built_work/{bw_id}/acquisition/{acquisition_id}/date</pattern>
+	</generator>
+
+	<generator name="1A0-built_work-transfer_custody" prefix="arc">
+		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}</pattern>
+	</generator>
+
+	<generator name="1A0-built_work-transfer_custody-date" prefix="arc">
+		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}/date</pattern>
+	</generator>
+
+
 	<!-- Event -->
 
 	<!-- Actor -->
