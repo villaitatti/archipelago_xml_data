@@ -14,7 +14,7 @@ geonames_dict = json.load(open(os.path.join(dir_path, 'geonames.json'),'r'))
 
 def write_file(row_id, text):
 
-  output_directory = os.path.join(dir_path, 'output')
+  output_directory = os.path.join(dir_path, '..', 'script' ,'data')
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
@@ -52,6 +52,7 @@ key_notes = 'Notes'
 key_titles = 'Titles'
 key_activities = 'Activities'
 key_activity = 'Activity'
+key_id = 'Id'
 key_start = 'Start'
 key_end = 'End'
 key_root = 'Root'
@@ -113,9 +114,13 @@ for row in tags:
 
       new_activities = et.SubElement(new_row, key_activities)
 
+      cnt = 1
+
       for activity in val_activities:
         new_activity = et.SubElement(new_activities, key_activity)
 
+        id_activity = et.SubElement(new_activity, key_id)
+        id_activity.text = str(cnt)
 
         new_title = et.SubElement(new_activity, key_title)
         new_title.text = re.sub(r'\([0-9-:]*\)', '', activity).strip()
@@ -131,6 +136,8 @@ for row in tags:
 
           if len(activity_date) > 1:
             new_end.text = activity_date[1]
+
+        cnt += 1
 
     # place of birth
     place_birth = et.SubElement(new_row, key_place_birth)
