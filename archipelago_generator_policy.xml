@@ -94,6 +94,39 @@
 
 
 	<!-- Event -->
+	<generator name="200-event" prefix="arc">
+		<pattern>event/{event_id}</pattern>
+	</generator>
+	<generator name="210-event-identifier" prefix="arc">
+		<pattern>event/{event_id}/identifier</pattern>
+	</generator>
+	<generator name="211-event-identifier-name" prefix="arc">
+		<pattern>event/{event_id}/name</pattern>
+	</generator>
+	<generator name="220-event-typology" prefix="arc">
+		<pattern>event/{event_id}/typology</pattern>
+	</generator>
+	<generator name="230-event-subtypology" prefix="arc">
+		<pattern>event/{event_id}/subtypology</pattern>
+	</generator>
+	<generator name="240-event-island" prefix="arc">
+		<pattern>event/{event_id}/island</pattern>
+	</generator>
+	<generator name="250-event-synopsis" prefix="arc">
+		<pattern>event/{event_id}/synopsis</pattern>
+	</generator>
+	<generator name="263-event-date" prefix="arc">
+		<pattern>event/{event_id}/date</pattern>
+	</generator>
+	<generator name="event/{event_id}/century" prefix="arc">
+		<pattern>event/{event_id}/century</pattern>
+	</generator>
+	<generator name="event/{event_id}/century_fraction" prefix="arc">
+		<pattern>event/{event_id}/century_fraction</pattern>
+	</generator>
+	<generator name="290-event-image" prefix="arc">
+		<pattern>event/{event_id}/image</pattern>
+	</generator>
 
 	<!-- Actor -->
 	<generator name="300-actor" prefix="arc">
@@ -173,6 +206,58 @@
 	<!-- Source -->
 
 	<!-- Bibliographic Item -->
+	<generator name="80000-bibliographic_item" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}</pattern>
+	</generator>
+	<generator name="80001-bibliographic_item-identifier" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/identifier</pattern>
+	</generator>
+	<generator name="80002-bibliographic_item-typology" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/typology</pattern>
+	</generator>
+	<generator name="80003-bibliographic_item-author" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/author</pattern>
+	</generator>
+	<generator name="80004-bibliographic_item-title" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/title</pattern>
+	</generator>
+	<generator name="80005-bibliographic_item-language" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/language</pattern>
+	</generator>
+	<generator name="80006-bibliographic_item-curator" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/curator</pattern>
+	</generator>
+	<generator name="80007-bibliographic_item-publisher" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/publisher</pattern>
+	</generator>
+	<generator name="80008-bibliographic_item-city" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/city</pattern>
+	</generator>
+	<generator name="80009-bibliographic_item-date" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/date</pattern>
+	</generator>
+	<generator name="80010-bibliographic_item-book_or_journal_title" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/book_or_journal_title</pattern>
+	</generator>
+	<generator name="80011-bibliographic_item-series" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/series</pattern>
+	</generator>
+	<generator name="80012-bibliographic_item-journals_number" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/journals_number</pattern>
+	</generator>
+	<generator name="80013-bibliographic_item-n_volume" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/n_volume</pattern>
+	</generator>
+	<generator name="80014-bibliographic_item-volume_title" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/volume_title</pattern>
+	</generator>
+	<generator name="80015-bibliographic_item-pages" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/pages</pattern>
+	</generator>
+	<generator name="80016-bibliographic_item-subject" prefix="arc">
+		<pattern>bibliographic_item/{bibliographic_item-id}/subject</pattern>
+	</generator>
+
 
 	<!-- Place -->
 	<generator name="600-place" prefix="arc">
