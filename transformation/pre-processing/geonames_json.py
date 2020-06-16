@@ -14,9 +14,9 @@ with open('geonames_it.tsv') as f:
         longitude = row["longitude"]
 
         #Get only geonames for:
-            #1: Islands in VE (Provincia di venezia)
+            #1: Islands or Lagoon in VE (Provincia di venezia)
             #2: Cities in italy = PPLA (città capoluoghi), PPLA2 (città capoluogo di provincia), PPLA3(città comune)
-        if (feature_code == "ISL" and admin2_code == "VE") or feature_code in accepted_feature_codes:
+        if ((feature_code == "ISL" or feature_code == "LGN") and admin2_code == "VE") or feature_code in accepted_feature_codes:
             if not name in jason:
                 jason[name] = {}
                 jason[name]["geoname_id"] = geoname_id
