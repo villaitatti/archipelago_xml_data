@@ -170,11 +170,8 @@
 	<generator name="340-actor-activity" prefix="arc">
 		<pattern>actor/{actor_id}/activity/{activity_id}</pattern>
 	</generator>
-	<generator name="341-actor-activity-start" prefix="arc">
-		<pattern>actor/{actor_id}/activity/{activity_id}/start</pattern>
-	</generator>
-	<generator name="342-actor-activity-end" prefix="arc">
-		<pattern>actor/{actor_id}/activity/{activity_id}/end</pattern>
+	<generator name="343-actor-activity-date" prefix="arc">
+		<pattern>actor/{actor_id}/activity/{activity_id}/date</pattern>
 	</generator>
 
 	<!-- Actor's marriage -->
@@ -267,6 +264,14 @@
 	<generator name="URIorUUID">
 		<custom generatorClass="gr.forth.URIorUUID">
 			<set-arg name="text"></set-arg>
+		</custom>
+	</generator>
+
+	<generator name="DateNormalizer">
+		<custom generatorClass="gr.forth.DateNormalizer">
+			<set-arg name="bound" type="constant"/>
+			<set-arg name="report" type="constant"/>
+			<set-arg name="text"/>
 		</custom>
 	</generator>
 	
