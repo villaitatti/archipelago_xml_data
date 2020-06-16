@@ -18,14 +18,13 @@ with open('geonames_it.tsv') as f:
             #2: Cities in italy = PPLA (città capoluoghi), PPLA2 (città capoluogo di provincia), PPLA3(città comune)
         if ((feature_code == "ISL" or feature_code == "LGN") and admin2_code == "VE") or feature_code in accepted_feature_codes:
             if not name in jason:
-                jason[name] = {}
-                jason[name]["geoname_id"] = geoname_id
-                jason[name]["feature_code"] = feature_code
-                jason[name]["latitude"] = latitude
-                jason[name]["longitude"] = longitude
-            else:
-                print("Duplicato: ")
-                print(name)
+                jason[name] = []
+            place_object = {}
+            place_object["geoname_id"] = geoname_id
+            place_object["feature_code"] = feature_code
+            place_object["latitude"] = latitude
+            place_object["longitude"] = longitude
+            jason[name].append(place_object)
 
 with open('archipelago_geonames.json', 'w') as fp:
     json.dump(jason, fp)
