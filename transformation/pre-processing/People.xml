@@ -487,7 +487,7 @@
         <Title>Bishop</Title>
         <Patronymic></Patronymic>
         <Occupation>Dominican friar</Occupation>
-        <Activities_Roles>Prior of San Domenico di Castello ; Bishop of Vicenza (17-03-1550:1560)</Activities_Roles>
+        <Activities_Roles>Prior of San Domenico di Castello ; Bishop of Vicenza (1550-03-17:1560)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth></Place_of_birth>
@@ -887,7 +887,7 @@
         <Title>Pope</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Canon Regular of San Giorgio in Alga ; Prior of San Clemente; Pope (1431-1447)</Activities_Roles>
+        <Activities_Roles>Canon Regular of San Giorgio in Alga ; Prior of San Clemente; Pope (1431:1447)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -1012,7 +1012,7 @@
         <Title>Bishop</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Vicario of the monastery of San Secondo (August 1597-June 1598) ; Vicario of the monastery of San Pietro Martire di Murano ; Bishop of Capodistria (15 May 1600-9 October 1619)</Activities_Roles>
+        <Activities_Roles>Vicario of the monastery of San Secondo (1597-09-01:1598-06-01) ; Vicario of the monastery of San Pietro Martire di Murano ; Bishop of Capodistria (1600-05-15:1619-10-9)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth></Place_of_birth>
@@ -1187,7 +1187,7 @@
         <Title></Title>
         <Patronymic></Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Patriarch of Grado (1296-1311) ; Patriarch of Alessandria (1311)</Activities_Roles>
+        <Activities_Roles>Patriarch of Grado (1296:1311) ; Patriarch of Alessandria (1311)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Ferrara</Place_of_birth>
@@ -1387,7 +1387,7 @@
         <Title>Patriarch</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Patriarch of Grado (1130-1182)</Activities_Roles>
+        <Activities_Roles>Patriarch of Grado (1130:1182)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -1487,7 +1487,7 @@
         <Title>Prior</Title>
         <Patronymic></Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Prior of San Clemente (since 1433)</Activities_Roles>
+        <Activities_Roles>Prior of San Clemente (1433)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth></Place_of_birth>
@@ -1587,7 +1587,7 @@
         <Title>Duke</Title>
         <Patronymic>Giovanni</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Duke of Urbino (1508-1516 and 1521-1538)</Activities_Roles>
+        <Activities_Roles>Duke of Urbino (1508:1516) ; Duke of Urbino (1521:1538)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Senigallia</Place_of_birth>
@@ -1662,7 +1662,7 @@
         <Title>Pope</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Pope (1316-1334)</Activities_Roles>
+        <Activities_Roles>Pope (1316:1334)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Cahors</Place_of_birth>
@@ -1712,7 +1712,7 @@
         <Title>Doge</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge of Venice (01-12-1089 ; 01-12-1095)</Activities_Roles>
+        <Activities_Roles>Doge of Venice (1089-12-01:1095-12-01)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -1737,7 +1737,7 @@
         <Title>Cardinal</Title>
         <Patronymic>Pier Luigi</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Cardinal (1534-1589)</Activities_Roles>
+        <Activities_Roles>Cardinal (1534:1589)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Castello Valentano (Tuscany)</Place_of_birth>
@@ -1837,7 +1837,7 @@
         <Title>Doge</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge (1423-1457)</Activities_Roles>
+        <Activities_Roles>Doge (1423:1457)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -1887,7 +1887,7 @@
         <Title>Emperor of the Holy Roman Empire</Title>
         <Patronymic></Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Holy Roman Emperor (1452-1493)</Activities_Roles>
+        <Activities_Roles>Holy Roman Emperor (1452:1493)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Innsbruck</Place_of_birth>
@@ -2112,7 +2112,7 @@
         <Title>Doge</Title>
         <Patronymic>Francesco</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge (1523-1538)</Activities_Roles>
+        <Activities_Roles>Doge (1523:1538)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Bardolino</Place_of_birth>
@@ -2212,7 +2212,7 @@
         <Title>Emperor</Title>
         <Patronymic>Manuel II Palaiologos</Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Emperor of the Byzantine Empire (1425-1448)</Activities_Roles>
+        <Activities_Roles>Emperor of the Byzantine Empire (1425:1448)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth></Place_of_birth>
@@ -2412,7 +2412,7 @@
         <Title>Doge</Title>
         <Patronymic>Gerolamo</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge (1501-1521)</Activities_Roles>
+        <Activities_Roles>Doge (1501:1521)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -2687,7 +2687,7 @@
         <Title>Doge</Title>
         <Patronymic>Tommaso</Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Doge (1570-1577)</Activities_Roles>
+        <Activities_Roles>Doge (1570:1577)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -2787,7 +2787,7 @@
         <Title>Doge</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge (1423-1471)</Activities_Roles>
+        <Activities_Roles>Doge (1423:1471)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -3037,7 +3037,7 @@
         <Title>Doge</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge (1130-1148)</Activities_Roles>
+        <Activities_Roles>Doge (1130:1148)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -3162,7 +3162,7 @@
         <Title>Bishop</Title>
         <Patronymic>Antonio</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Bishop of Cittanova (1561-1565) ; Bishop of Vicenza (1565-1595)</Activities_Roles>
+        <Activities_Roles>Bishop of Cittanova (1561:1565) ; Bishop of Vicenza (1565:1595)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -3287,7 +3287,7 @@
         <Title>Bishop</Title>
         <Patronymic></Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Bishop of Curzola (5 September 1605-19 July 1611)</Activities_Roles>
+        <Activities_Roles>Bishop of Curzola (1605-09-05:1611-07-19)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -3312,7 +3312,7 @@
         <Title>Pope</Title>
         <Patronymic>Guillaume</Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Pope (1342-1352)</Activities_Roles>
+        <Activities_Roles>Pope (1342:1352)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Rosiers-d&apos;Égletons</Place_of_birth>
@@ -3362,7 +3362,7 @@
         <Title>Doge</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Doge of Venice (2 June 1732-5 January 1735)</Activities_Roles>
+        <Activities_Roles>Doge of Venice (1732-06-02:1735-01-05)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
@@ -3437,7 +3437,7 @@
         <Title>Cardinal</Title>
         <Patronymic>Peter</Patronymic>
         <Occupation></Occupation>
-        <Activities_Roles>Cardinal (1511-1522)</Activities_Roles>
+        <Activities_Roles>Cardinal (1511:1522)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Mühlebach</Place_of_birth>
@@ -3512,7 +3512,7 @@
         <Title>Duke</Title>
         <Patronymic>Ludovico</Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Duke of Milan (1515-1535)</Activities_Roles>
+        <Activities_Roles>Duke of Milan (1515:1535)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Milan</Place_of_birth>
@@ -3737,7 +3737,7 @@
         <Title>Pope</Title>
         <Patronymic></Patronymic>
         <Occupation>Nobleman</Occupation>
-        <Activities_Roles>Pope (1389-1404)</Activities_Roles>
+        <Activities_Roles>Pope (1389:1404)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Naples</Place_of_birth>
@@ -3762,7 +3762,7 @@
         <Title>Patriarch</Title>
         <Patronymic></Patronymic>
         <Occupation>Benedictine friar</Occupation>
-        <Activities_Roles>Patriarch of Venice (1560-1590)</Activities_Roles>
+        <Activities_Roles>Patriarch of Venice (1560:1590)</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
