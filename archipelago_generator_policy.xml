@@ -266,5 +266,13 @@
 			<set-arg name="text"></set-arg>
 		</custom>
 	</generator>
+
+	<generator name="DateNormalizer">
+		<custom generatorClass="gr.forth.DateNormalizer">
+			<set-arg name="bound" type="constant"/>
+			<set-arg name="report" type="constant"/>
+			<set-arg name="text"/>
+		</custom>
+	</generator>
 	
 </generator_policy>
