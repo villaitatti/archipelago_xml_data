@@ -16479,9 +16479,7 @@
       "feature_code": "PPLA3",
       "latitude": "45.15756",
       "longitude": "9.39976"
-    }
-  ],
-  "Isola Santa Cristina": [
+    },
     {
       "geoname_id": "3167679",
       "feature_code": "ISL",
@@ -16545,7 +16543,7 @@
       "longitude": "16.1386"
     }
   ],
-  "Isola di San Servolo": [
+  "San Servolo": [
     {
       "geoname_id": "3167735",
       "feature_code": "ISL",
@@ -17679,6 +17677,14 @@
       "longitude": "9.73773"
     }
   ],
+  "Isola di San Giorgio Maggiore": [
+    {
+      "geoname_id": "3168290",
+      "feature_code": "ISL",
+      "latitude": "45.42833",
+      "longitude": "12.34417"
+    }
+  ],
   "San Giorgio Lucano": [
     {
       "geoname_id": "3168293",
@@ -17829,7 +17835,7 @@
       "longitude": "7.53285"
     }
   ],
-  "Isolotto di San Giacomo in Palude": [
+  "San Giacomo in Paludo": [
     {
       "geoname_id": "3168324",
       "feature_code": "ISL",
@@ -18165,15 +18171,13 @@
       "longitude": "9.49028"
     }
   ],
-  "Isola di San Clemente": [
+  "San Clemente": [
     {
       "geoname_id": "3168468",
       "feature_code": "ISL",
       "latitude": "45.41047",
       "longitude": "12.33535"
-    }
-  ],
-  "San Clemente": [
+    },
     {
       "geoname_id": "3168471",
       "feature_code": "PPLA3",
@@ -24281,6 +24285,14 @@
       "longitude": "14.75744"
     }
   ],
+  "Pellestrina": [
+    {
+      "geoname_id": "3171285",
+      "feature_code": "ISL",
+      "latitude": "45.28644",
+      "longitude": "12.30373"
+    }
+  ],
   "Pellegrino Parmense": [
     {
       "geoname_id": "3171289",
@@ -27047,7 +27059,7 @@
       "longitude": "8.01938"
     }
   ],
-  "Isola di Murano": [
+  "Murano": [
     {
       "geoname_id": "3172455",
       "feature_code": "ISL",
@@ -33155,7 +33167,7 @@
       "longitude": "9.13697"
     }
   ],
-  "La Giudecca": [
+  "Giudecca": [
     {
       "geoname_id": "3175266",
       "feature_code": "ISL",
@@ -40527,6 +40539,12 @@
       "feature_code": "PPLA3",
       "latitude": "45.21857",
       "longitude": "12.27774"
+    },
+    {
+      "geoname_id": "12172566",
+      "feature_code": "ISL",
+      "latitude": "45.21988",
+      "longitude": "12.27781"
     }
   ],
   "Chieuti": [
@@ -44395,6 +44413,12 @@
       "feature_code": "PPLA3",
       "latitude": "45.69182",
       "longitude": "12.28255"
+    },
+    {
+      "geoname_id": "7910739",
+      "feature_code": "ISL",
+      "latitude": "45.48123",
+      "longitude": "12.35241"
     }
   ],
   "Carbone": [
@@ -52355,7 +52379,7 @@
       "longitude": "9.37117"
     }
   ],
-  "Isola Campalto": [
+  "Campalto": [
     {
       "geoname_id": "3230837",
       "feature_code": "ISL",
@@ -52363,7 +52387,7 @@
       "longitude": "12.31927"
     }
   ],
-  "Isola San Secondo": [
+  "San Secondo": [
     {
       "geoname_id": "3230839",
       "feature_code": "ISL",
@@ -52371,7 +52395,7 @@
       "longitude": "12.30756"
     }
   ],
-  "Isola delle Tresse": [
+  "Le Tresse": [
     {
       "geoname_id": "3230844",
       "feature_code": "ISL",
@@ -52379,7 +52403,7 @@
       "longitude": "12.29769"
     }
   ],
-  "Isola Nuova del Tronchetto": [
+  "Tronchetto": [
     {
       "geoname_id": "3230845",
       "feature_code": "ISL",
@@ -65113,7 +65137,7 @@
       "longitude": "8.91377"
     }
   ],
-  "Isola di San Lazzaro degli Armeni": [
+  "San Lazzaro degli Armeni": [
     {
       "geoname_id": "7910519",
       "feature_code": "ISL",
@@ -65121,7 +65145,7 @@
       "longitude": "12.36112"
     }
   ],
-  "Isola del Lazzaretto Vecchio": [
+  "Lazzaretto Vecchio": [
     {
       "geoname_id": "7910520",
       "feature_code": "ISL",
@@ -65129,7 +65153,7 @@
       "longitude": "12.35919"
     }
   ],
-  "Sacca S. Biagio": [
+  "Sacca San Biagio": [
     {
       "geoname_id": "7910714",
       "feature_code": "ISL",
@@ -65153,7 +65177,7 @@
       "longitude": "12.43672"
     }
   ],
-  "Isola Buel del Lovo": [
+  "Buel del Lovo": [
     {
       "geoname_id": "7910738",
       "feature_code": "ISL",
@@ -65161,15 +65185,7 @@
       "longitude": "12.37627"
     }
   ],
-  "Isola di Carbonera": [
-    {
-      "geoname_id": "7910739",
-      "feature_code": "ISL",
-      "latitude": "45.48123",
-      "longitude": "12.35241"
-    }
-  ],
-  "Isola di Tessera": [
+  "Tessera": [
     {
       "geoname_id": "7910740",
       "feature_code": "ISL",
@@ -65177,7 +65193,7 @@
       "longitude": "12.34387"
     }
   ],
-  "Isola di Sant'Angelo": [
+  "Sant'Angelo della Polvere": [
     {
       "geoname_id": "7910741",
       "feature_code": "ISL",
@@ -65193,7 +65209,7 @@
       "longitude": "12.28568"
     }
   ],
-  "Isola Forte di Mezzo": [
+  "Ex Poveglia": [
     {
       "geoname_id": "7910743",
       "feature_code": "ISL",
@@ -65201,7 +65217,7 @@
       "longitude": "12.29267"
     }
   ],
-  "Isola Forte di Sotto": [
+  "Fisolo": [
     {
       "geoname_id": "7910744",
       "feature_code": "ISL",
@@ -65209,7 +65225,7 @@
       "longitude": "12.29087"
     }
   ],
-  "Isola Ottagono": [
+  "Ottagono abbandonato": [
     {
       "geoname_id": "7910745",
       "feature_code": "ISL",
@@ -65217,7 +65233,7 @@
       "longitude": "12.32177"
     }
   ],
-  "Isola Santo Spirito": [
+  "Santo Spirito": [
     {
       "geoname_id": "7910746",
       "feature_code": "ISL",
@@ -67193,7 +67209,7 @@
       "longitude": "12.30639"
     }
   ],
-  "Ottagono Alberoni": [
+  "Ottagono degli Alberoni": [
     {
       "geoname_id": "12104910",
       "feature_code": "ISL",
@@ -67201,7 +67217,7 @@
       "longitude": "12.30698"
     }
   ],
-  "Isola Motta San Lorenzo": [
+  "Motta San Lorenzo": [
     {
       "geoname_id": "12104911",
       "feature_code": "ISL",
@@ -67239,6 +67255,30 @@
       "feature_code": "ISL",
       "latitude": "45.51712",
       "longitude": "12.41624"
+    }
+  ],
+  "Mazzorbo": [
+    {
+      "geoname_id": "12172564",
+      "feature_code": "ISL",
+      "latitude": "45.48663",
+      "longitude": "12.40897"
+    }
+  ],
+  "San Francesco del Deserto": [
+    {
+      "geoname_id": "12172565",
+      "feature_code": "ISL",
+      "latitude": "45.473",
+      "longitude": "12.41624"
+    }
+  ],
+  "Ottagono di Ca' Roman": [
+    {
+      "geoname_id": "12172567",
+      "feature_code": "ISL",
+      "latitude": "45.24336",
+      "longitude": "12.28392"
     }
   ]
 }
