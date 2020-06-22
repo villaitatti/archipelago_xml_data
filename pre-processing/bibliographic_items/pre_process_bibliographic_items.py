@@ -94,7 +94,7 @@ for row in tags:
     date = et.SubElement(new_row, keys["date"])
     date_raw = row.find(f'ns:{keys["date"]}', ns).text
     print(f"Raw: {date_raw}")
-    date_clean = dateutil.parser.parse(date_raw)
+    date_clean = dateutil.parser.parse(date_raw).strftime("%m-%d-%YT%H:%M:%S")
     print(f"Clean: {date_clean}")
     date.text = date_clean
 
@@ -114,3 +114,4 @@ for row in tags:
 
 final = md.parseString(et.tostring(new_document_root, method='xml')).toprettyxml()
 write_file(final)
+print("Done.")
