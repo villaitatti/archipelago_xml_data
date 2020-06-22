@@ -6625,6 +6625,12 @@
       "feature_code": "PPLA3",
       "latitude": "39.4136",
       "longitude": "16.8222"
+    },
+    {
+      "geoname_id": "7910742",
+      "feature_code": "ISL",
+      "latitude": "45.3838",
+      "longitude": "12.28568"
     }
   ],
   "Cammarata": [
@@ -15845,15 +15851,13 @@
       "longitude": "14.4707"
     }
   ],
-  "Isola Sant'Elena": [
+  "Sant'Elena": [
     {
       "geoname_id": "3167343",
       "feature_code": "ISL",
       "latitude": "45.42766",
       "longitude": "12.36138"
-    }
-  ],
-  "Sant'Elena": [
+    },
     {
       "geoname_id": "3167345",
       "feature_code": "PPLA3",
@@ -65201,14 +65205,6 @@
       "longitude": "12.28314"
     }
   ],
-  "Isola Forte di Sopra": [
-    {
-      "geoname_id": "7910742",
-      "feature_code": "ISL",
-      "latitude": "45.3838",
-      "longitude": "12.28568"
-    }
-  ],
   "Ex Poveglia": [
     {
       "geoname_id": "7910743",
@@ -67279,6 +67275,14 @@
       "feature_code": "ISL",
       "latitude": "45.24336",
       "longitude": "12.28392"
+    }
+  ],
+  "Venetian Lagoon": [
+    {
+      "geoname_id": "12172719",
+      "feature_code": "LGN",
+      "latitude": "45.3662",
+      "longitude": "12.25136"
     }
   ]
 }

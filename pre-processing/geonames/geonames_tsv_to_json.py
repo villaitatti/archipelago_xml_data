@@ -26,5 +26,5 @@ with open('geonames_it.tsv') as f:
             place_object["longitude"] = longitude
             jason[name].append(place_object)
 
-with open('archipelago_geonames.json', 'w') as fp:
+with open('geonames.json', 'w') as fp:
     json.dump(jason, fp)
