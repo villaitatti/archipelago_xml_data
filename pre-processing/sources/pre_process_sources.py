@@ -66,7 +66,10 @@ custom_keys = {
     "date_latest": "Date_Latest",
 }
 
-exceptions = {}
+exceptions = {
+    "Lagoon": "Venetian Lagoon",
+    "San Giorgio Maggiore": "Isola di San Giorgio Maggiore"
+}
 
 tree = et.parse(filename)
 root = tree.getroot()
@@ -141,10 +144,12 @@ for row in tags:
 
     # Island
     island_found = row.find(f'ns:{keys["island"]}', ns).text
-    # TODO: better management of exceptions?
-    if island_found not in geonames_dict:
-        island_found = exceptions[island_found]
-    isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
+    if island_found is None:
+            isl_geoname_id = ""
+    else:
+        if island_found not in geonames_dict:
+            island_found = exceptions[island_found]
+        isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
     island = et.SubElement(new_row, keys["island"])
     island.text = isl_geoname_id
 
