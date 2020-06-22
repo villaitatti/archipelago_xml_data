@@ -1,0 +1,1 @@
+java -jar x3ml-engine-1.9.0-exejar.jar -i data/166.xml -x archipelago.x3ml -policy ../../archipelago_generator_policy.xml -o output.ttl -f text/turtle
