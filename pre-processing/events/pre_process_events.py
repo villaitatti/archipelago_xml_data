@@ -6,7 +6,7 @@ import json
 dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, 'Events.xml')
 # Geonames dictionary
-geonames_dict = json.load(open(os.path.join(dir_path, 'archipelago_geonames.json'), 'r'))
+geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
 
 
 def write_file(text):
@@ -43,7 +43,7 @@ custom_keys = {
 }
 
 exceptions = {
-    "Lagoon": "Lagoon of Venice, bassi fondali",
+    "Lagoon": "Venetian Lagoon",
     "San Giorgio Maggiore": "Isola di San Giorgio Maggiore"
  }
 
@@ -84,9 +84,9 @@ for row in tags:
     if month_earliest is None:
         month_earliest = "01"
     year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
-    # TODO: decide date format
+    # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
     date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
-    date_earliest.text = f'{day_earliest}-{month_earliest}-{year_earliest}'
+    date_earliest.text = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
 
     # Island
     island_found = row.find(f'ns:{keys["island"]}', ns).text
