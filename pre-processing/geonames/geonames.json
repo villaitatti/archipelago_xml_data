@@ -19433,6 +19433,14 @@
       "longitude": "15.44768"
     }
   ],
+  "Rome": [
+    {
+      "geoname_id": "3169070",
+      "feature_code": "PPLC",
+      "latitude": "41.89193",
+      "longitude": "12.51133"
+    }
+  ],
   "Rolo": [
     {
       "geoname_id": "3169072",
