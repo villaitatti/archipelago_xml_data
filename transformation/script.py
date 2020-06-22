@@ -5,6 +5,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 def base_path(name):
     return os.path.join(dir_path, name)
 
+#TODO: table should be inserted as cli parameter
 table_folder = base_path('people')
 table_folder_in = os.path.join(table_folder, 'data')
 table_folder_out = os.path.join(table_folder, 'out')
