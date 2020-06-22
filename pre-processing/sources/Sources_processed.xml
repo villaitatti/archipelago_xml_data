@@ -1,0 +1,4060 @@
+<?xml version="1.0" ?>
+<FMPDSORESULT ns="http://www.filemaker.com/fmpdsoresult">
+	<ROW>
+		<ID_SOURCE>1</ID_SOURCE>
+		<ID_SOURCE>1</ID_SOURCE>
+		<Title>Bird's-eye-view of the island of Sant'Andrea della Certosa</Title>
+		<Island>La Certosa</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>View of Sant'Andrea della Certosa with vineyards</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Entire century (0-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Miscellanea mappe</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 825</Drawing>
+		<Location/>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>695x1880 mm</Dimensions>
+		<Synopsis>Bird's-eye-view of the island of Sant'Andrea della Certosa.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3175329</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>2</ID_SOURCE>
+		<ID_SOURCE>2</ID_SOURCE>
+		<Title>Rental contract for the vineyards in the island of Sant'Andrea della Certosa</Title>
+		<Island>La Certosa</Island>
+		<Typology>Textual source</Typology>
+		<Format>Rental contract</Format>
+		<Language>Latin</Language>
+		<Author_Surname_Name>Ferrara : da, Bartolomeo</Author_Surname_Name>
+		<Role_Author>Prior of Sant'Andrea della Certosa</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Sant'Andrea della Certosa</Fondo>
+		<Busta>b. 25</Busta>
+		<Filza>filza 135</Filza>
+		<Title_Filza/>
+		<Folio>cc. 79v-80r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The document lists some rental contracts for the vineyards located in the island della Certosa. The &quot;casa dell'ortolano&quot; is mentioned for the first time. The text clarifies that rents consist also of vegetable's supply and services, such as washing textiles and giving the ash (cenere) for washing them.</Synopsis>
+		<Trascription>«domus, et habitationis noviter fabricatae per reverendos patres respicientis versus Venetias penes cavanas. [...] Item ultra dictum affictum teneatur conductor ipse prout promisit dare singulo anno ut supra pro honorantiis pepones et mellonos triginta sex bonos, nec non pro quatuor mensibus singulo anno fieri facere lisciam, seu bugatam de drapamentis monasterii absque praemio aliquo, dantibus reverendis locatoribus cinere sufficiente pro dictis bugatis»</Trascription>
+		<Date_Earliest>None-11-1564T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3175329</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>3</ID_SOURCE>
+		<ID_SOURCE>3</ID_SOURCE>
+		<Title>Casa dell'ortolano presso Sant'Andrea della Certosa</Title>
+		<Island>La Certosa</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century/>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Sant'Andrea della Certosa</Fondo>
+		<Busta>b. 10</Busta>
+		<Filza>processi n. 14-61</Filza>
+		<Title_Filza>Rifacimento della casa degli ortolani</Title_Filza>
+		<Folio>c. 1r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The building used as &quot;casa degli ortolani&quot; was in bad shape and needed restoration.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3175329</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>5</ID_SOURCE>
+		<ID_SOURCE>5</ID_SOURCE>
+		<Title>View of the island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language/>
+		<Author_Surname_Name>Visentini, Antonio</Author_Surname_Name>
+		<Role_Author>Engraver</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>British Royal Collection</Collection>
+		<Acronym>BRC</Acronym>
+		<Fondo>Venetian Islands</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>RCIN 907596</Location>
+		<Medium>Etching</Medium>
+		<Dimensions>130x225 mm</Dimensions>
+		<Synopsis>Drawing taken from &quot;Della Istoria d'Italia di M. Francesco Guicciardini gentiluomo fiorentino. Libri XX&quot;.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1738-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>7</ID_SOURCE>
+		<ID_SOURCE>7</ID_SOURCE>
+		<Title>Burial of Filippo Tron in the church of Sant'Andrea della Certosa</Title>
+		<Island>La Certosa</Island>
+		<Typology>Textual source</Typology>
+		<Format>Will</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tron, Filippo</Author_Surname_Name>
+		<Role_Author>Testamentary</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Francesco della Vigna</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza>fasc. 1</Filza>
+		<Title_Filza/>
+		<Folio>cc. 140-142</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The procurator of St. Mark, Filippo Tron, asks to be buried beneath the choir of the church. The tomb should cost around 80-100 ducats and it must be paid by the canons. This episode might prove the procurator to be the intermediary for the employment of Sansovino in the church's renovation.
+        </Synopsis>
+		<Trascription>[...] stando sentato nella mia camera cubicular che ha la fenestra sopra il rio (della Zecca) all'incontro dei magazeni de formenti della Signoria [...] che sia speso in el far di una sepoltura nella chiesa delli Reverendi Padri di San Spirito nel loco  che vien ad esser sotto il choro di detta chiesa  et sia speso in detta sepoltura da docati ottanta in cento, et non più delli miei beni, come per sua gracia essi Reverendi Padri mi hanno promesso di esser contenti che la sia fatta gratis</Trascription>
+		<Date_Earliest>1566-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3175329</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>18</ID_SOURCE>
+		<ID_SOURCE>18</ID_SOURCE>
+		<Title>The insland of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Veduta di San Secondo</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>Cl. III n. 6429</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>122x210 mm</Dimensions>
+		<Synopsis>View of the insland of San Secondo from the North-west.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>19</ID_SOURCE>
+		<ID_SOURCE>19</ID_SOURCE>
+		<Title>The island of San Giorgio Maggiore</Title>
+		<Island>San Giorgio Maggiore</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Giorgio in Venetia</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 27r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di San Giorgio in Veneti.
+Canale di S. Marco.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168290</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>20</ID_SOURCE>
+		<ID_SOURCE>20</ID_SOURCE>
+		<Title>The island of San Francesco del Deserto</Title>
+		<Island>San Francesco del Deserto</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Francesco del Deserto</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 36r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di San Francesco del Deserto.
+Laguna di Venetia.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172565</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>21</ID_SOURCE>
+		<ID_SOURCE>21</ID_SOURCE>
+		<Title>The insland of San Giacomo di Paludo</Title>
+		<Island>San Giacomo in Paludo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Giacomo di Paludo</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 36v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di San Giacomo di Paludo.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168324</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>22</ID_SOURCE>
+		<ID_SOURCE>22</ID_SOURCE>
+		<Title>View of the island of Murano</Title>
+		<Island>Murano</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Città di Murano</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 37v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3172455</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>23</ID_SOURCE>
+		<ID_SOURCE>23</ID_SOURCE>
+		<Title>View of the island of San Michele</Title>
+		<Island>San Michele</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Michele</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 38v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3167976</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>30</ID_SOURCE>
+		<ID_SOURCE>30</ID_SOURCE>
+		<Title>Portrait of a nun of San Secondo and view of the island</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Jacometto Veneziano</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>15th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Metropolitan Museum of Art</Collection>
+		<Acronym>MET</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Robert Lehman Collection, 1975</Location>
+		<Medium>Oil on wood</Medium>
+		<Dimensions>95x64 mm</Dimensions>
+		<Synopsis>Rossella Lauber proposed that the woman portrayed might be the widow of Alvise Contarini who, after the death of the husband, was guest in the nunnery of San Secondo. The painting is dated by the MET 1485-95.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>31</ID_SOURCE>
+		<ID_SOURCE>31</ID_SOURCE>
+		<Title>The fort of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Stella, Guglielmo</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. I n. 2378</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>250x450 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1849-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>32</ID_SOURCE>
+		<ID_SOURCE>32</ID_SOURCE>
+		<Title>Survey of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Church</Typology>
+		<Format>Private</Format>
+		<Language>Religious</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>Catasto austriaco</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Censo stabile</Fondo>
+		<Busta>Mappe austriache</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>f. 5</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>540x690 mm (entire sheet of paper)</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1839-05-29T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>33</ID_SOURCE>
+		<ID_SOURCE>33</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Venetie MD</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. XLIV n. 57</Location>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>1340x2808 mm (entire view)</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1500-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>35</ID_SOURCE>
+		<ID_SOURCE>35</ID_SOURCE>
+		<Title>Survey of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tirali, Andrea</Author_Surname_Name>
+		<Role_Author>Proto ai Lidi</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Atti</Fondo>
+		<Busta>b. 139</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 22</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>373x290 mm</Dimensions>
+		<Synopsis>Attached is the report by the Proto ai Lidi Andrea Tirali.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1688-12-11T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>36</ID_SOURCE>
+		<ID_SOURCE>36</ID_SOURCE>
+		<Title>The Punta di San Giobbe, with the Island of San Secondo in the Distance</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Veduta dalla Punta di San Girolamo alla Cereria di faccia San Secondo</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. III n. 6046</Location>
+		<Medium>Tempera and ink on paper</Medium>
+		<Dimensions>105x175 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Veduta dalla Punta di San Girolamo alla Cereria di faccia San Secondo.</Trascription>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>37</ID_SOURCE>
+		<ID_SOURCE>37</ID_SOURCE>
+		<Title>The fort of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Moro, Marco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Forte dei Veneziani a San Secondo</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>ST SC RIS 56</Location>
+		<Medium>Lithography</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Venezia 1849.
+Marco Moro dis.dal vero elit.
+Lit. Ripamonti Carpano Edit.
+Forte dei Veneziani a S. Secondo.
+        </Trascription>
+		<Date_Earliest>1849-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>40</ID_SOURCE>
+		<ID_SOURCE>40</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Querena, Luigi</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. I n. 1234</Location>
+		<Medium>Tempera on canvas</Medium>
+		<Dimensions>1040x16600 mm</Dimensions>
+		<Synopsis>View of the island of San Secondo from the East.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1848-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>41</ID_SOURCE>
+		<ID_SOURCE>41</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo>Reale Fotografia Giacomelli</Fondo>
+		<Busta>GN003244</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Gelatin silver bromide</Medium>
+		<Dimensions/>
+		<Synopsis>The lagoon bridge toward the island of San Secondo.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1933-03-28T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>43</ID_SOURCE>
+		<ID_SOURCE>43</ID_SOURCE>
+		<Title>View of the frozen lagoon with the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>Veduta della Laguna di Venezia ghiacciata</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Private Collection</Collection>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Veduta della Laguna di Venezia dalle porte di S. Giobbe verso Mestre aggiacciata li 30 Dicembre 1788 e resa praticabile dal popolo con il trasporto di comistibili durò sino li 9 Genaro 1789.</Trascription>
+		<Date_Earliest>1789-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>44</ID_SOURCE>
+		<ID_SOURCE>44</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Istituto Geografico Militare</Collection>
+		<Acronym>IGM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1945-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>45</ID_SOURCE>
+		<ID_SOURCE>45</ID_SOURCE>
+		<Title>Views of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Secondo nella Laguna di Venetia descritta dal Padre cosmografo Coronelli</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 51r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>46</ID_SOURCE>
+		<ID_SOURCE>46</ID_SOURCE>
+		<Title>Plan of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Secondo nella Laguna di Venetia</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 51v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di San Secondo nella Laguna di Venetia.
+1. Coperto per servitio della polve.
+2. Depositto publico di polve.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>48</ID_SOURCE>
+		<ID_SOURCE>48</ID_SOURCE>
+		<Title>View of Venice towards the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Bison, Giuseppe Bernardino</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+		<Collection>Royal Cornwall Museum</Collection>
+		<Acronym>RCM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>TRURI: 1947.8</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>465x785 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1800-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>49</ID_SOURCE>
+		<ID_SOURCE>49</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Bison, Giuseppe Bernardino</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Una gondola davanti all'isola di San Secondo</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+		<Collection>Private Collection</Collection>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>50</ID_SOURCE>
+		<ID_SOURCE>50</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Lovisa, Domenico</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Veduta di S. Secondo verso Lizza Fusina de PP. della Riforma di S. Domenico</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>First quarter of the century (0-24)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza>D. Lovisa, Il gran Teatro di Venezia</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location>ST.PAL.DUC.0601</Location>
+		<Medium>Engraving</Medium>
+		<Dimensions>345x465 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Veduta di S. Secondo verso Lizza Fusina de PP. della Riforma di S. Domenico.</Trascription>
+		<Date_Earliest>1717-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>51</ID_SOURCE>
+		<ID_SOURCE>51</ID_SOURCE>
+		<Title>View of the fort of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Moro, Marco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Forte dei Veneziani a San Secondo</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>220x296 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1849-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>52</ID_SOURCE>
+		<ID_SOURCE>52</ID_SOURCE>
+		<Title>Survey of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Austrian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>Plan Litt. A. Uibek den jetzigen Zustand der Befestigung der Insel S. Secondo</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Dipartimento del Genio militare a Venezia</Fondo>
+		<Busta>Serie II, b. 143</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 35</Drawing>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions>640x980 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1850-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>59</ID_SOURCE>
+		<ID_SOURCE>59</ID_SOURCE>
+		<Title>Aerial view of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Istituto Geografico Militare</Collection>
+		<Acronym>IGM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1943-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>60</ID_SOURCE>
+		<ID_SOURCE>60</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1929-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>61</ID_SOURCE>
+		<ID_SOURCE>61</ID_SOURCE>
+		<Title>Aerial view of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>First half of the century (0-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1975-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>62</ID_SOURCE>
+		<ID_SOURCE>62</ID_SOURCE>
+		<Title>Aerial view of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1978-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>63</ID_SOURCE>
+		<ID_SOURCE>63</ID_SOURCE>
+		<Title>Photo of the battery in the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1978-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>64</ID_SOURCE>
+		<ID_SOURCE>64</ID_SOURCE>
+		<Title>Photo of the battery in the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1978-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>65</ID_SOURCE>
+		<ID_SOURCE>65</ID_SOURCE>
+		<Title>Photo of the battery in the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1978-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>66</ID_SOURCE>
+		<ID_SOURCE>66</ID_SOURCE>
+		<Title>Aerial view of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio municipale di Venezia</Collection>
+		<Acronym>AMVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1970-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>67</ID_SOURCE>
+		<ID_SOURCE>67</ID_SOURCE>
+		<Title>Aerial view of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Photography</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>20th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Istituto Geografico Militare</Collection>
+		<Acronym>IGM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1982-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>68</ID_SOURCE>
+		<ID_SOURCE>68</ID_SOURCE>
+		<Title>The Punta di San Giobbe with the Island of San Secondo in the Distance</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Metropolitan Museum of Art</Collection>
+		<Acronym>MET</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>59.23.48</Location>
+		<Medium>Pen, brown ink, and gray wash on paper</Medium>
+		<Dimensions>126x199 mm</Dimensions>
+		<Synopsis>Annotated in pen and brown ink on verso: &quot;Veduta della Punta di San Giobe di facia S. 2do,&quot; and &quot;Giacomo de Guardi.&quot;</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1764-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>69</ID_SOURCE>
+		<ID_SOURCE>69</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language/>
+		<Author_Surname_Name>Visentini, Antonio</Author_Surname_Name>
+		<Role_Author>Engraver</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza>A. Visentini, Isolario veneto, 1738</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Etching</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1738-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>73</ID_SOURCE>
+		<ID_SOURCE>73</ID_SOURCE>
+		<Title>Plan of the first floor of cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 37</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>86</ID_SOURCE>
+		<ID_SOURCE>86</ID_SOURCE>
+		<Title>Pianta de Venetia</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Sabbadino, Cristoforo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 14</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>825x615 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1557-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>87</ID_SOURCE>
+		<ID_SOURCE>87</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Sabbadino, Cristoforo</Author_Surname_Name>
+		<Role_Author>Designer</Role_Author>
+		<Original_Title>Pianta de Venetia (detail)</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza>C. Sabbadino, Pianta de Venetia (detail)</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 14</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis>The ancient canal of San Secondo flows on the left side of the island of San Secondo.</Synopsis>
+		<Trascription>S. Segondo</Trascription>
+		<Date_Earliest>1557-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>88</ID_SOURCE>
+		<ID_SOURCE>88</ID_SOURCE>
+		<Title>Vinegia</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Bordone, Benedetto</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>E 564</Busta>
+		<Filza/>
+		<Title_Filza>B. Bordone, Isolario di Benedetto Bordone nel qual si ragiona di tutte l’isole del mondo […], 1534</Title_Filza>
+		<Folio>cc. XXIXv-XXXr</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Xilography</Medium>
+		<Dimensions>295x425 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Vinegia.
+Mestre ; Merghera ; S. Giuliano ; S. Segondo ; S. Michele ; Murano ; S. Nicolo ; Torcello ; Mazzorbo ; S. Iacomo di Paludo, S. Christophalo ; Buran ; Tre Porti ; Litto Maggiore ; S. Francesco dal Deserto ; Lazzaretto Novo ; L'Arsenal ; S. Erasmo ; S. Pietro ; Duo Castelli ; La Certosa : S. Helena ; S. Servolo ; S. Lazzaro ; Lazzaretto Vecchio ; S. Zorzi Maggiore ; S. Maria di Gratia ; S. Clemente ; S. Spirito ; Poveggia ; Il Litto ; Palificada ; Malamocco ; Porto di Malamocco ; Chiozza ; Giud[e]cca ; S. Agnolo de la Concordia ; Terra Ferma ; S. Zorzi d'Alega ; Lizzafusina ; S. Marta ; S. Chiara</Trascription>
+		<Date_Earliest>1534-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>92</ID_SOURCE>
+		<ID_SOURCE>92</ID_SOURCE>
+		<Title>The Lagoon of Venice</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Venetian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>15th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 128</Drawing>
+		<Location/>
+		<Medium>Watercolor, tempera, and ink on parchment</Medium>
+		<Dimensions>1090x1943 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1490-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>93</ID_SOURCE>
+		<ID_SOURCE>93</ID_SOURCE>
+		<Title>The Lagoon of Venice</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Emo, Anzolo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title>Disegno della Laguna di Venezia</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 167</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>645x1170 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Disegno della Laguna di Venezia formato, per Sovrano Decretto, nell’anno 1762 Presside Suo Eccellentissimo il Signor Angielo Emo Esecutor nel Magistrato Eccellentissimo all’Acque e Delegato alla formazione della presente Mappa.</Trascription>
+		<Date_Earliest>1763-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>95</ID_SOURCE>
+		<ID_SOURCE>95</ID_SOURCE>
+		<Title>The island of San Michele</Title>
+		<Island>San Michele</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Francesco</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Metropolitan Museum of Art</Collection>
+		<Acronym>MET</Acronym>
+		<Fondo>Bequest of Mrs. Charles Wrightsman 2019</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>2019.141.13</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>483x781 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3167976</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>96</ID_SOURCE>
+		<ID_SOURCE>96</ID_SOURCE>
+		<Title>View of the island of San Clemente</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Lovisa, Domenico</Author_Surname_Name>
+		<Role_Author>Publisher</Role_Author>
+		<Original_Title>Prospetto della Chiesa, et Isola di S. Clemente de' Padri Eremiti Camaldolesi di Monte Corona</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>First quarter of the century (0-24)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza>D. Lovisa, Il gran Teatro di Venezia</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1717-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>97</ID_SOURCE>
+		<ID_SOURCE>97</ID_SOURCE>
+		<Title>The insland of San Clemente</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>Cl. III n. 6432</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>115x155 mm</Dimensions>
+		<Synopsis>View of the insland of San Secondo from the North-west.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>98</ID_SOURCE>
+		<ID_SOURCE>98</ID_SOURCE>
+		<Title>Titian's paintings of the ceiling are moved to the church of Santa Maria della Salute</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format/>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Santa Maria della Salute</Fondo>
+		<Busta>b. 55</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>Under the supervision of Baldassare Longhena, all the paintings by Titian are moved from the sacristy of Santo Spirito to the church of Santa Maria della Salute.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1657-01-27T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>99</ID_SOURCE>
+		<ID_SOURCE>99</ID_SOURCE>
+		<Title>View of the island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta>Cl. III n. 51</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>205x300 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>100</ID_SOURCE>
+		<ID_SOURCE>100</ID_SOURCE>
+		<Title>View of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Guardi, Giacomo</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Veduta di San Spirito</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta>Cl. III n. 6046</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>107x175 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Veduta di San Spirito.
+Giacomo Guardi pin.</Trascription>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>101</ID_SOURCE>
+		<ID_SOURCE>101</ID_SOURCE>
+		<Title>The island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di Santo Spirito</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 57r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di Santo Spirito dedicata al Reverendissimo P.D. Pietro Alberto Gratioli Abbate Lateranense de Canonici regolati della Carità.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>102</ID_SOURCE>
+		<ID_SOURCE>102</ID_SOURCE>
+		<Title>View of the island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator ; Engraver</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Albertina Museum of Vienna</Collection>
+		<Acronym>Albertina</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Inv. 1850</Location>
+		<Medium>Engraving</Medium>
+		<Dimensions>281x416 mm</Dimensions>
+		<Synopsis>Ventiquattro prospettive delle isole della laguna di Venezia</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>103</ID_SOURCE>
+		<ID_SOURCE>103</ID_SOURCE>
+		<Title>View of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language/>
+		<Author_Surname_Name>Chevalier, Pietro</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1838-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>104</ID_SOURCE>
+		<ID_SOURCE>104</ID_SOURCE>
+		<Title>The island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>cat. 279</Drawing>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isle de St. Esprit des Freres Cordeliers. Isola di S. Spirito de P.P. Francescani</Trascription>
+		<Date_Earliest>1740-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>105</ID_SOURCE>
+		<ID_SOURCE>105</ID_SOURCE>
+		<Title>The cavana and canal of Santo Spirito are filled in and need excavation</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Alberti, Francesco</Author_Surname_Name>
+		<Role_Author>Perito alla Laguna</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle Acque, Disegni, Atti</Fondo>
+		<Busta>b. 139</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>c.s.n.</Folio>
+		<Drawing>dis. 14</Drawing>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The perito alla laguna Francesco Alberti reports that the public cavana along with the adjacent canal are filled in. He suggests to excavate them and to bring the excessed mud to the Lido di Malamocco.</Synopsis>
+		<Trascription>N. 16
+à 28 Luglio 1687
+Presentata e letta all’Eccellentissima Banca
+
+Illustrissimi et Eccellentissimi Signori et Pattroni […]
+
+Per eseguir li riveriti comandi di Vostre Eccellenze con l’ocasione, che ci siamo portati noi periti infrascritti à scandagliar il dosso del Canal di Malamocho, nel ritorno habbiamo fatto riflesso alla cavana publica di Santo Spirito, la qualle al presente è affato atterata come anco la canaleta per mezo essa cavana che viene al Canal maistro come dal presente disegno si vede, e mentre l’Eccellenze vostre volessero farla cavar, perché li viandanti in tempo di fortune potessero recoverarsi, bisognerebbe cavar circa 60 burchielle di fango, d’un passo cubbo l’una, qual fango si potrebbe impiegar sopra il Lido di Malamocho che non costerebbe più di quello si paga al presente, à quelli che cavano un zattare che vinti quatro o trenta soldi la burchiela, che per nostra opinione adesso è il tempo, per far detta operatione, con la minima spesa possibile che è quanto portiamo rapresentar à Vostre Eccellenze alle qualli humilmente gli inchiniamo.
+
+Terminata in Venetia li […] luglio 1687
+
+Francesco Alberti Perito alla Laguna</Trascription>
+		<Date_Earliest>1687-07-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>107</ID_SOURCE>
+		<ID_SOURCE>107</ID_SOURCE>
+		<Title>View of the Island of San Giacomo in Paludo</Title>
+		<Island>San Giacomo in Paludo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Metropolitan Museum of Art</Collection>
+		<Acronym>MET</Acronym>
+		<Fondo>Robert Lehman Collection, 1975</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>1975.1.294</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>275x415 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168324</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>108</ID_SOURCE>
+		<ID_SOURCE>108</ID_SOURCE>
+		<Title>View of the Island of San Clemente</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Albertina Museum of Vienna</Collection>
+		<Acronym>Albertina</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Inv. 1851</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>279x415 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>109</ID_SOURCE>
+		<ID_SOURCE>109</ID_SOURCE>
+		<Title>View of the Island of La Grazia</Title>
+		<Island>La Grazia</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Albertina Museum of Vienna</Collection>
+		<Acronym>Albertina</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Inv. 1852</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>282x415 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3175246</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>110</ID_SOURCE>
+		<ID_SOURCE>110</ID_SOURCE>
+		<Title>View of Murano from the Scuola di San Giovanni Battista</Title>
+		<Island>Murano</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Albertina Museum of Vienna</Collection>
+		<Acronym>Albertina</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Inv. 1853</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>279x414 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3172455</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>113</ID_SOURCE>
+		<ID_SOURCE>113</ID_SOURCE>
+		<Title>View of the Island of Lazzaretto Nuovo</Title>
+		<Island>Lazzaretto Nuovo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>National Gallery of Art</Collection>
+		<Acronym>NGA</Acronym>
+		<Fondo>Ailsa Mellon Bruce Fund</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>1971.70.1</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>284x421 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12104907</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>115</ID_SOURCE>
+		<ID_SOURCE>115</ID_SOURCE>
+		<Title>Reconstruction of the island's dock</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format/>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, de Citra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 8, proc. 405</Filza>
+		<Title_Filza>Pontile di Santo Spirito</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1725-05-17T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>116</ID_SOURCE>
+		<ID_SOURCE>116</ID_SOURCE>
+		<Title>Reconstruction of the roof above the kitchen and dormitory</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Conto di fabbrica</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tirali, Andrea</Author_Surname_Name>
+		<Role_Author>Proto</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 8, proc. 405</Filza>
+		<Title_Filza/>
+		<Folio>c. 5r-v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>List of the expenses for constructing a new wall and a roof above the kitchen and dormitory. According to the description, it seems that these spaces faced the lagoon. The decision is accepted on July 24, 1729.</Synopsis>
+		<Trascription>Adì 18 Luglio 1729
+
+Notta fatta da me Andrea Tiralli di quanto ochore per render rifatto un muro da novo sopra la cusina e dormitorio come pure altro coperto visino alla chieza e sopra la sagrestia, il tutto come segue e prima per rimediar al coperto è di necesità il disfar salvo? de luminal et schoprir il coperto de copi e rimetter da novo le quatro cadene in arcite? et tal nov à far il luminal da novo di muro con la sua alla? che sonno passa d.o 20 1/2 in ragion di L. 20 il passo. Val 410:–.
+Per il luminal metter due stafili in alteza di piedi d.o 7 e due erte di piedi d.o 5 oncie 3 e far due sogieri e tre piane da novo che tira in tutte piedi d.o 53 1/2 a L. 3 il piede. Val L. 172:10.
+Per far il coperto del luminal che sonno passi d.o 7 1/2 et farli il suo soffitto di cantinelle per passi d.o 6 di materialli è fatto? L. 247:–.
+Per disfar da novo passi d.o 57 di fattura? di murer e marangon a L. 8:– il passo con agiunta de materialli L. 496:–.
+Per d.o 8 schaloni di lungeza de piedi d.o 301
+Per il letto? delle cadene ingropatte a L. 40 sunno L 320:–.
+Chiodarie ? e minueta? L 38:–.
+Per moralli d.o 50 al --- L. 50:–.
+L 1693:10.
+Per la spesa della muraglia sopra la laguna nel sitto della cusina e dormitorii ---- travadure e coperto e disfar la muralglia con sua fondamenta al di sotto e prima far la fondamenta in longezza de piedi d.o 50 et di altezza de piedi d.o 5 di groseza come avuta de piedi 4 sono passa d.o 40 con metter li suoi ---- a L. 18 il passo fatta con malta di sabion.
+Val L 720:–.
+Per far il muro in lungezza de piedi d.o 50 et di altezza piedi d.o 29 e di groseza di due pietre sunno passa d.o 58 a L. 18 il passo. Val L 1044:–.
+Per una erta di pietra viva di largeza di piedi d.o 3. L 6:–.
+Per numero 8 arpesi ---- --- 240. L. 120:–.
+L. 1890:–.
+
+Andrea Tiralli proto
+
+24 luglio 1729
+Ballottato
+Sì 5
+No 0
+Astenuti 4</Trascription>
+		<Date_Earliest>1729-07-18T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>117</ID_SOURCE>
+		<ID_SOURCE>117</ID_SOURCE>
+		<Title>Petition for the reparation of the island's dock</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 8, proc. 405</Filza>
+		<Title_Filza/>
+		<Folio>c. 7r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 195 mm</Dimensions>
+		<Synopsis>The Cassier of the Senate ascertains that the dock needs urgent repair. He reminds the Senate decree (17 May 1726) that authorized the Regimento dell'Arsenal to provide the friars with materials for the reconstruction. He asked for a renewal of the former concession.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1732-09-27T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>120</ID_SOURCE>
+		<ID_SOURCE>120</ID_SOURCE>
+		<Title>Petition for the institution of a new Scuola devoted to San Diego</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Testimony (Deposizione)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Provveditori sopra monasteri</Author_Surname_Name>
+		<Role_Author>Segretario of the monastery</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>cc. 4r-5r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>The Provveditore sopra monasteri reports to the Procuratori di Supra the concessions given to the Scuola. These include the use of an altar devoted to the saint, the use of a chapel for storing stuff, as well as the possibility of building a new arca on the floor.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1729-05-06T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>121</ID_SOURCE>
+		<ID_SOURCE>121</ID_SOURCE>
+		<Title>Extract of the rules of the Scuola di San Diego established on 22 Febrarury 1719</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Petition (Supplica)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>cc. 6r-8r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>The Scuola is composed of a Guardiano, a Vicario, a Scrivano, and some Sindici who form the Banca.
+
+The number of the school's members is fixed to 63 confratelli and 63 consorelle. The number is a memory of the saint's age. The Scuola needs to elect 12 male and female candidates respectively who will replace any dead member (rules #1 and #2).
+
+The Scuola has been given a space to be used as sala dell'albergo (rule #15).</Synopsis>
+		<Trascription>Capitoli o siano regole con quali intendono dirigersi li confratelli della Scuola del glorioso San Diego eretta bella chiesa del Ducal Convento de RRPP minori osservanti in isola di Santo Spirito di Venezia l’anno 1729</Trascription>
+		<Date_Earliest>1729-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>122</ID_SOURCE>
+		<ID_SOURCE>122</ID_SOURCE>
+		<Title>List of concession given to the Scuola di San Diego</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Agreement</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>cc. 9r-13v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>The document enlists all the concessions given to the Scuola. These include the use of an altar and a chapel specifically devoted to the Saint. The members can also construct an arca on the floor to bury the members' remains.
+They are also given the chapel of the Nativity that is unused to store their objects. If this was not available, the observant fathers have to find another space for them. </Synopsis>
+		<Trascription/>
+		<Date_Earliest>1729-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>123</ID_SOURCE>
+		<ID_SOURCE>123</ID_SOURCE>
+		<Title>List of the Friars established in the island</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>List of people</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>c. 14r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 190 mm</Dimensions>
+		<Synopsis>The people established in the island are 33. This number includes a philosopher, 2 theologians, 4 passing foreigners, 4 students and 6 sicks.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1729-10-2T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>124</ID_SOURCE>
+		<ID_SOURCE>124</ID_SOURCE>
+		<Title>Report made by the Procuratori di Supra</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Procuratori di Supra</Author_Surname_Name>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>cc. 17r-18v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>The document sums up the concessions given to the Scuola di San Diego. It also recount the entire history of the settlement of the Observant Friars of Candia. It is related to the list of religious men (33) living in the island in 1729 because they are in excess. The Venetian decree of 3 July 1687 imposed 15 friars at maximum. The Procurators ask for the Doge's decision on this.</Synopsis>
+		<Trascription>[…] Aggiungiamo solo a pubblico lume, che ricoverati dalla Pubblica Pietà li Padri Osservanti di San Francesco della Provincia di Candia misero avanzo de monasteri di quel Regno sfortunato, li fu destinato in ospizio il monastero, et isola di Santo Spirito una volta della già soppressa Congregazione de Canonici, e che rimase invenduto. Ne appar decreto di Vostra Signoria 1670 8 Novembre, con condizione di non potersi da detti Reverendi Padri, né da quelli, che pro tempore vi si ritroveranno tenervi di soggiorno continuato maggior numero di quindici religiosi, di bem custodire li luochi stessi, di esimersi da maggiori pregiudicii, e di sistemare le stanze che si chiamano della Foresteria à Pubblica disposizione, per il ricevimento degli Ambasciatori. Et altri ministri de Prencipi esteri, appoggiata la sopraintendenza alla Procuratia nostra, con dar gli ordini et instruzioni, che fossero stimate necessarie, e convenienti, riconfermata ne casi accaduti la volontà Pubblica con Decreti 1678 8 Febraro, et 1680 6 Giugno. Anzi ridotto il monastero, e l’isola al ricetto di soli cinque sacerdoti beneficiati, fu presa parte con decreto si V.S. 29 giugno 1686, che ricevuti detti Padri con le loro reliquie, e sacre supelettili in uno delli due monasteri di questa città, avesse à restar libera a Pubblica disposizione l’Isola, incaricati li Precessori nostri à far custodir il luogo per renderlo immune da ogni pregiudicio sino ad altra Pubblica deliberazione. Ma ricorsi nuovamente li detti padri alla Pubblica Pietà, sopra giurate informazioni de Procuratori di questa Procuratia, così altro decreto 1687, 3 Luglio fu sospeso il precedente decreto 29 giugno 1686 antedetto, fino ad altro pubblico ordine; ad effetto che li Padri minori osservanti di San Francesco della Provincia di Candia supplicanti avessero a continuare nel godimento di detto convento, et isola, con obbligo preciso di dipendere nel regolare dagli ordini del loro Padre Generale, e con debito a superiori destinati pro tempore a reggere detto Convento di presentarsi in Colleggio per --- d’intraprenderne il Governo, come fanno li superiori del Convento di San Secondo: e quanto al temporale s’intendessero soggetti alla Procuratia Nostra, alla quale restò raccomandata la sopraintendenza per l’indennità di detto pubblico Juspatronato in conformità di detti Pubblici Sovrani decreti; il che anco sino al dì d’oggi restò pontualmente esseguito, e con visite, e con spese in restauri considerabili, e con tutto quel più che fu creduto necessario per la conservazione del Regio diritto di Vostra Serenità. Rillevatosi però l’accrescimento del numero de Religiosi dalli quindici à … [omissis] come appar della nota qui intesta del P. … [omissis].
+Da tali premesse storiche di detto convento et isola, potrà la Serenità Vostra prender misura à quelle deliberazioni, che crederà conformarsi alla Religione, e Pubblico serviggio.
+        </Trascription>
+		<Date_Earliest>1729-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>125</ID_SOURCE>
+		<ID_SOURCE>125</ID_SOURCE>
+		<Title>Petition for the institution of a new Scuola devoted to San Diego</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Petition (Supplica)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Valerio, Bonaventura Maria</Author_Surname_Name>
+		<Role_Author>Friar of Santo Spirito</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>First quarter of the century (0-24)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 195 mm</Dimensions>
+		<Synopsis>Fra Bonaventura Maria Valerio along with other friars asks for </Synopsis>
+		<Trascription>Sino da primi lustri di questo secolo compiacquesi il Divin Facitore con isforzo di strepitosi prodigi glorificare il fedele suo servo San Diego in una sua immagine, che nell’atrio della Chiesa Ducal di San Spirito conservavasi. La Pietà de’ Divoti sin da quel tempo eresse ivi provvisionalmente picciolo altare in onore di detto Santo, su cui da due anni sono, levato il quadro recente, fu esposta alla pubblica venerazione l’antica miracolosa sua immagine, come al presente con qualche decenza procurasi di custodirla. Come però di giorno in giorno con nuove grazie il beneficentissimo Iddio le glorie rinnova di questo Santo, eccitò, ne può negarsi, il Padre Fra Buonaventura Maria Valerio di Venezia lettor teologo, e missionario apostolico commorante in questo convento alcuni divoti a promuovere a loro spese l’erezione  di più decente capella, per cui umilmente richiedesi benigna permissione di Vostra Eccellenza dal dissegno, che a riflessi dell’Eccellenza Vostra rassegnasi, rileverà, che intatta del tutto restando la chiesa, non altro sia di mestieri, che l’apertura d’un arco nell’atrio della medesima dalla parte dell’orto, entro cui internandosi per il tratto di pochi piedi, l’erezione si faccia di nuovo muro, a cui appoggiarsi l’altare, con quell’altre più minute circostanze, che osservansi nel disegno, e di cui per non reccare ulteriore incommodo all’Eccellenza Vostra, si ommette la descrizione. Questa è la grazia, per cui umilmente viene supplicata la  bontà dell’Eccellenza Vostra dal Padre Guardiano, e Religiosi discreti del sopradetto convento, i quali sperano dall’innata Pietà dell’Eccellenza Vostra favorevole di conseguir il rescritto: anzi perché la presente sia certa del nostro consenso, ed ossequiosa istanza a Vostra Eccellenza: sarà ella munita col sigillo del nostro Officio, e di nostro pugno firmata, assicurandola nello stesso tempo della valida protezione del Glorioso San Diego, e della retribuzione di … [omissis] Signore, che nel fedele suo servo d’esser glorificato compiacersi. … della Grazia.
+F. Giuseppe di Verona Vicario e Discreto
+F. Giuseppe Maria di Venezia Discreto e Diffin. Ant.e
+F. Giacent’Antonio Moretti e Provinciale, Custode e Discreto
+Fra Bonaventura di Venezia già Provinciale, e Discreto
+F. Fortunato di Corfù et Provinciale, e Guardiano
+        </Trascription>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>126</ID_SOURCE>
+		<ID_SOURCE>126</ID_SOURCE>
+		<Title>List of the works needed to transport the altar of San Diego from the church's atrium to the room containing the Grotta di San Francesco</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Codroipo, Stefano</Author_Surname_Name>
+		<Role_Author>Proto of the Procuratori di Supra</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>280x 390 mm</Dimensions>
+		<Synopsis>Stefano Codroipo, proto of the Procuratori di Supra, examines and lists the works needed to transport the altar of San Diego from the atrium to the adjacent left room. This space was used for the so called &quot;Grotta di San Francesco&quot;. According to the expert, this grotta should have been moved to another room located in front of the former room. 
+        </Synopsis>
+		<Trascription>Illustrissimo et Eccellentissimo Signor Procurator Cassier della Procuratia Eccellentissima di San Marco di Supra
+In pronta obbedienza delli riveriti comandi dell’Eccellenza Vostra di dovermi conferire nell’isola de Santo Spirito, per ivi vedere, et esaminare con tutta diligenza se il trasporto dell’altare di San Diego, possi portar nessun pregiudizio alla fabrica della Chiesa sudetta facendo l’apertura delli due muri maistri possi pregiudicare il corro overo il rimanente della fabrica stessa, onde avendo il tutto rilevato come seguentemente resta dichiarito.
+L’altar di San Diego sono situato nell’attrito della chiesa disotto il corro dalla parte destra, onde desidera di trasportarlo nel luoco dalla parte sinistra ove vi è una Grotta, con San Francesco; qual Grotta desidera di trasportarla nell’altro luoco contiguo alla detta Grotta segnato nel mio dissegno con lettera A; et nel luoco della Grotta ove intende du trasportar il sudetto altar vuole far una apertura nel muro marcato B per trasportar infuori l’altar, e mensa in forma di capella mà si rende necessario di riffar da nuovo il sudetto muro B per esser in puoco buon stato, et in parte corroso, come anche far da nuovo il muro C essendo rovinoso, et vi sono anche un camin nel medesimo muro che si doverà disfarm e saldar il sfondro; come pure il portone che si doverà far à volto, con li due balconi latteralli nel muro maistro marcato D. Questo doverà essere costrutto tutto di pietra viva, con suoi stanti, e volto, et sua serraglia pure di pietra viva larghi oncie dodeci il davanti li stanti, et per il verso del muro grossi quanto è grosso il muro, e così anche le finestre, con sue erte, pianne, et sogieri pure di pietra viva, e suoi remenati sopra li sogieri delle finestre, e doverà esser fatto il tutto in buona forma, acciò in alcun tempo non possi pregiudicar, né il corro, né il rimanente della fabrica, facendo il simile anche nell’altro muro dirimpetto ove si leva l’altar di San Diego, con suoi portoni di ferro in tampogno, e sue ferriade di ferro nelle finestre il tutto à Dissegno, per dicorro della Fabrica.
+Tanto rifferisso in adempimento del mio dovere all’Eccellenza Vostra alla quale inchinandomi con tutto l’ossequio più profondo riverentemente bacio la veste.
+Terminata in Venezia li 24 Luglio 1760.
+D.V.E.
+Humilissimo devotissimo et ossequiosissimo servitore
+Steffano Codroipo Proto di detta Eccellentissima Procuratia con giuramento</Trascription>
+		<Date_Earliest>1760-07-24T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>127</ID_SOURCE>
+		<ID_SOURCE>127</ID_SOURCE>
+		<Title>Survey of the church of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Codroipo, Stefano</Author_Surname_Name>
+		<Role_Author>Proto of the Procuratori di Supra</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza>Scola di San Diego in Chiesa di Santo Spirito</Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Orto
+Chiesa di San Spirito
+Monastero
+Grotta di San Francesco che desidera di trasportarla nel luogo A; et in questo luogo ponervi l'altar di San Diego
+Atrio, e di sopra vi sono il corro
+Altar di San Diego che si deve trasportar nel luogo della Grotta di San Francesco
+Campazzo
+Monastero
+Orto
+Laus Deo Adì 24 Luglio 1760
+Steffano Codroipo Proto della Procuratia Eccellentissima di Supra</Trascription>
+		<Date_Earliest>1760-07-24T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>128</ID_SOURCE>
+		<ID_SOURCE>128</ID_SOURCE>
+		<Title>List of friars</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>List of people</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 5 proc. 405</Filza>
+		<Title_Filza>Padri di San Francesco. Santo Spirito</Title_Filza>
+		<Folio>c. 2r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The list enumerates 11 friars.</Synopsis>
+		<Trascription>Adì 17 Luglio 1688
+Nota delli Padri, e frati, che attualmente s'atrovano nel convento di Santo Spirito in Isola, parte di famiglia e parte di tratenimento 
+[...]
+        </Trascription>
+		<Date_Earliest>1688-07-17T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>130</ID_SOURCE>
+		<ID_SOURCE>130</ID_SOURCE>
+		<Title>The island of San Clemente</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Dell'isola di San Clemente</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 43r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di Santo Spirito dedicata al Reverendissimo P.D. Pietro Alberto Gratioli Abbate Lateranense de Canonici regolati della Carità.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>131</ID_SOURCE>
+		<ID_SOURCE>131</ID_SOURCE>
+		<Title>Survey of the island of San Clemente (Austrian cadaster)</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>S. Clemente</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Censo stabile, Mappe austriache</Fondo>
+		<Busta/>
+		<Filza>Cartella 7, fasc. A</Filza>
+		<Title_Filza/>
+		<Folio>f. IX</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis>Austrian cadaster (1830-1846).</Synopsis>
+		<Trascription>Isola di Santo Spirito dedicata al Reverendissimo P.D. Pietro Alberto Gratioli Abbate Lateranense de Canonici regolati della Carità.</Trascription>
+		<Date_Earliest>1831-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>132</ID_SOURCE>
+		<ID_SOURCE>132</ID_SOURCE>
+		<Title>Survey of the island of San Clemente (Updated Austrian cadaster)</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>S. Clemente</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Censo stabile, Mappe austriache</Fondo>
+		<Busta/>
+		<Filza>Cartella 7, fasc. A</Filza>
+		<Title_Filza/>
+		<Folio>f. IX</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis>Austrian cadaster (1830-1846).</Synopsis>
+		<Trascription>Isola di Santo Spirito dedicata al Reverendissimo P.D. Pietro Alberto Gratioli Abbate Lateranense de Canonici regolati della Carità.</Trascription>
+		<Date_Earliest>1839-05-29T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>134</ID_SOURCE>
+		<ID_SOURCE>134</ID_SOURCE>
+		<Title>View of the Island of Mazzorbo</Title>
+		<Island>San Giacomo in Paludo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Tironi, Francesco</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Metropolitan Museum of Art</Collection>
+		<Acronym>MET</Acronym>
+		<Fondo>Robert Lehman Collection, 1975</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>1975.1.294</Location>
+		<Medium>Pen and brown ink on paper</Medium>
+		<Dimensions>275x415 mm</Dimensions>
+		<Synopsis>This source provides one of the drawing for Antonio Sandi’s twenty-four engravings of islands in the Venetian Lagoon published in 1779 by Ludovico Furlanetto with the title Ventiquattro prospettive delle isole della laguna di Venezia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168324</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>136</ID_SOURCE>
+		<ID_SOURCE>136</ID_SOURCE>
+		<Title>Rules for the auction of the island of Santo Spirito</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Procuratori de supra</Author_Surname_Name>
+		<Role_Author>Decision maker</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 2 proc. 405</Filza>
+		<Title_Filza>Convento di San Spirito Supresso
+        </Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions>295x210 mm</Dimensions>
+		<Synopsis>The Procurators of St. Mark specify the rules for the auction of the island of Santo Spirito according to the decisions taken on May 24, 1651. 
+All the buildings, vegetable gardens, and open spaces will be sold apart from the church, sacristy, bell tower, cemetery, and all the other sacred spaces.
+The owner is en charged of the church maintenance, as well as the objects that it contains. The new owner must allow the mess celebration.</Synopsis>
+		<Trascription>Et si vende al pubblico incanto per gli Illustrissimi et Eccellentissimi Signori Procuratori de San Marco de Supra li sottoscritti Beni delle Religioni e Conventini già suppressi giusto il tenor della presente poliza d’incanto.
+L’isola di Santo Spirito posta nelle lagune di questa città verso Poveggia insieme con tutte le fabriche, horti, et altro che in essa s’attrovano loro ragioni, habentie, e proprietà et.
+Con dichiaratione espressa, che la chiesa, sacrestia, campanile, cimiterio, et altri lochi sacri che fossero non s’intendino compresi nella presente vendita et
+Et con obligo al compratore di conservar, et mantener sempre la detta chiesa et altro in conzo, et colmo, et proveduta di anco tutte le cose necessarie al culto divino appresso le sacre suppelletili che per inventario fia state consignate et.
+Essendo tenuto il compratore far celebrar in essa chiesa la santa messa da preti secolari pur che siano approvati giusto il stabilito da monsignor Illustrissimo Noncio, in conformità ancor dell’instrumento d’acquisto, circa la redutione delle messe da dirsi tutte le dominiche, et altre feste di precetto, et di consuetudine applicando il sacrificio secondo l’intentione de benefattori et.
+Et vendesi liberamente in perpetuo con l’obligatione della Serenissima Illustrissima quanto alla deffensione et manutentione di questa vendita et.
+Restando anco li compratori liberi et essenti dal pagamento di messetaria, et gramatici conforme il già praticato et.
+Dovendo il compratore nel termine de giorni otto dopo la deliberatione esborsar l’inportar della compreda in denari effettivi, e monetta corrente giusto la parte del eccellentissimo Senato 1651, 24 maggio, sotto pena de soldi quatro once ona, et d’esser reincantado à danno, spese, et interesse del compratore, qual esborso doverà esser fatto nella Procuratia nostra in tutto come sopra.
+Et perché nel corso degli incanti s’accetterano anco polize secrete, si dechiara che stante la deliberatione pur all’incanto ò afferirano le dette polize, quali  se contenirano prezzo maggiore di quello, che fosse stato essibito in voce resterà la vendita per la poliza, ma non versa se l’offerta in voce sarà maggiore resterà per conto suo, et.
+Dechiarandosi che le offerte sopra gl’incanti resterano ferme per quelli che haverano posto il maggior prezzo, et ciò sino alla delliberatione, et.
+Rimanendo espressamente dechiarito, che siano, et s’intendino sempre risservate le ragioni del publico se in alcun tempo, caso, et modo venissero altri beni, et offetti in luce perché si vendono solamente quelli che si vedono ut supra specificatamente dechiariti et.
+        </Trascription>
+		<Date_Earliest>1657-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>137</ID_SOURCE>
+		<ID_SOURCE>137</ID_SOURCE>
+		<Title>Last Supper</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Porta, Giuseppe</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Ultima Cena</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century/>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Venice, Santa Maria della Salute</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>2300x3950 mm</Dimensions>
+		<Synopsis>The painting was preserved in the refectory.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1545-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>1547-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>138</ID_SOURCE>
+		<ID_SOURCE>138</ID_SOURCE>
+		<Title>Crucifixion of Christ</Title>
+		<Island>San Giorgio in Alga</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>da Santa Croce, Girolamo</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Crocifissione di Cristo</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Venice, Scuola di San Marco, Chapter house</Location>
+		<Medium/>
+		<Dimensions>4100x7700 mm</Dimensions>
+		<Synopsis>It was located in the refectory. Until recently, it was attributed to Donato Veneziano.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168299</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>139</ID_SOURCE>
+		<ID_SOURCE>139</ID_SOURCE>
+		<Title>Views of the island of San Giorgio in Alga</Title>
+		<Island>San Giorgio in Alga</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+		<Role_Author>Cartographer and engraver</Role_Author>
+		<Original_Title>Isola di San Giorgio in Alga</Original_Title>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta>285.c.17</Busta>
+		<Filza/>
+		<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+		<Folio>f. 45r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Isola di Santo Spirito dedicata al Reverendissimo P.D. Pietro Alberto Gratioli Abbate Lateranense de Canonici regolati della Carità.</Trascription>
+		<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168299</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>140</ID_SOURCE>
+		<ID_SOURCE>140</ID_SOURCE>
+		<Title>Sacrifice of Isaac</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Vecellio, Tiziano</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Sacrificio di Isacco</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Venice, Santa Maria della Salute</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>3280x2850 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1542-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>1544-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>141</ID_SOURCE>
+		<ID_SOURCE>141</ID_SOURCE>
+		<Title>Cain and Abel</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Vecellio, Tiziano</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Caino e Abele</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Venice, Santa Maria della Salute</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>2980x2820 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1542-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>1544-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>142</ID_SOURCE>
+		<ID_SOURCE>142</ID_SOURCE>
+		<Title>David and Goliath</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language/>
+		<Author_Surname_Name>Vecellio, Tiziano</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title>Davide e Golia</Original_Title>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Venice, Santa Maria della Salute</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>3000x2850 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1542-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>1544-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>143</ID_SOURCE>
+		<ID_SOURCE>143</ID_SOURCE>
+		<Title>The Lagoon of Venice</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>French</Language>
+		<Author_Surname_Name>de Comminelles, Hugues</Author_Surname_Name>
+		<Role_Author>Illustrator</Role_Author>
+		<Original_Title>Venetia from Claudius Ptolomaeus, Cosmographia</Original_Title>
+		<Century>15th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Bibliothèque nationale de France</Collection>
+		<Acronym>BNF</Acronym>
+		<Fondo/>
+		<Busta>ms. Latino 4802</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>f. 132r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor and ink on parchment</Medium>
+		<Dimensions>540x415 mm</Dimensions>
+		<Synopsis>From Gallica: https://gallica.bnf.fr/ark:/12148/btv1b8454687p/f1.planchecontact.r=cosmographia%204802</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1470-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>144</ID_SOURCE>
+		<ID_SOURCE>144</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Sabbadino, Cristoforo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 9</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1547-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>145</ID_SOURCE>
+		<ID_SOURCE>145</ID_SOURCE>
+		<Title>Drawing of the Brenta delta and the adjacent islands</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>da Cortivo, Nicolò</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 5</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>850x575 mm</Dimensions>
+		<Synopsis>The date reported in the document is 21 February 1540 m.v.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1541-02-21T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>146</ID_SOURCE>
+		<ID_SOURCE>146</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon and Mainland</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Vestri, Antonio Girolamo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Diversi</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 109</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>750x535 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1709-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>147</ID_SOURCE>
+		<ID_SOURCE>147</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Sabbadino, Cristoforo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 168</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>415x565 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>148</ID_SOURCE>
+		<ID_SOURCE>148</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Alberti, Francesco</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title/>
+		<Century/>
+		<Fraction_Century/>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>ms. P.D. c 856/4</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Watercolor, tempera, and ink on paper</Medium>
+		<Dimensions>601x1109 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>All’Illustrissimo et Eccellentissimo Signor Antonio Grimani Cavaliere e Procuratore di San Marco. Consacro all’imortalità del nome dell’Eccellenza Vostra la presente coppia di dissegno della Laguna di Venetia, son sicuro che aggradirà questo picciol osequio, massime per esser l’Eccellenza Vostra uno dei sei, a’ quali è raccomandata dalla publica sapienza la redentione d’essa, cosa di tanto rimarco, dalla quale dipende l’eterna conservatione di questa Serenissima
+Dominante [...]</Trascription>
+		<Date_Earliest>1611-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>149</ID_SOURCE>
+		<ID_SOURCE>149</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Vestri, Antonio Girolamo</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title>Laguna di Venetia, nella quale si contengono tutte l’isole, paludi, canali, e coe, ghebbi, laghi e valli, avertendo che tutte li canali, e coe, nuovamente cavati sono segnati con color diferente dalli vechi, cioe rossi, e bianchi</Original_Title>
+		<Century/>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Laguna</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 68</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper mounted on a frame</Medium>
+		<Dimensions>1800x2325 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Quos decet esse hominum talli Sub Principe mores Qui docet ingenium mitius esse Mari. Disegno e scandaglio fatto d’ordine dell’Eccellentissimo Senato, et del
+Magistrato Eccellentissimo delle Aque, da me Antonio Gerolemo Vestri fiorentino, Perito del Magistrato l’anno MDCLXXXXII adì XX Dicembre</Trascription>
+		<Date_Earliest>1692-12-20T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>150</ID_SOURCE>
+		<ID_SOURCE>150</ID_SOURCE>
+		<Title>Map of the Venetian Lagoon</Title>
+		<Island>Lagoon</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Drawing</Format>
+		<Language/>
+		<Author_Surname_Name>Denaix, Augusto</Author_Surname_Name>
+		<Role_Author>Cartographer</Role_Author>
+		<Original_Title>Carta topografica idrografica militare della laguna di Venezia e del littorale compreso tra l’Adige e la Piave eseguita sotto i Ministeri de’ Signori Generali Divisionarj Conti Caffarelli e Fontanelli negli anni 1809, 10 e 11 dagl’Ingegneri Geografi del Regno diretti sul terreno dal Signor Capitano in 1a Augusto Denaix</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Ministero delle Infrastrutture e dei Trasporti, Provveditorato Interregionale alle OO.PP. del Veneto - Trentino Alto Adige - Friuli Venezia Giulia, Ufficio Salvaguardia</Collection>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Ministero delle Infrastrutture e dei Trasporti, Provveditorato Interregionale alle OO.PP. del Veneto - Trentino Alto Adige - Friuli Venezia Giulia, Ufficio Salvaguardia</Location>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>4050x3320 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1809-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>1811-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>151</ID_SOURCE>
+		<ID_SOURCE>151</ID_SOURCE>
+		<Title>Construction of the powderhouse</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Chronicle</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 2 </Busta>
+		<Filza/>
+		<Title_Filza>Instrumento ed altre carte concernenti la consegna dell'isola, monastero, e renditedi San Secondo ai religiosi di San Domenico con alcuni decreti attinenti allo stesso monastero</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1570-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>155</ID_SOURCE>
+		<ID_SOURCE>155</ID_SOURCE>
+		<Title>Drawing of a wooden fence around the canons' vegetable garden</Title>
+		<Island>San Clemente</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Luran, Battista</Author_Surname_Name>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Savi ed esecutori alle acque, Disegni, Atti</Fondo>
+		<Busta>b. 530</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing>dis. 4</Drawing>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions>308x210 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>In adì 21 auosto 1573
+
+Havendome comesso le Clarissime Signorie Vostre a mi Battista Luran che me debba transferir al monasterio de S. Chimento a tuor le mesure dove era una palada atorno l'orto del suditto monesterio la qual esta brusada et ruvinada dali soldadi et al presente li Reverendi padri vol far far una fondamenta et muro et vuol lasar el sudetto orto atorno atorno.
+Le qual mesure sono le infrascritte come si vede per il sotto scritto desegnio.
+
+Drawing
+
+1573 adi 2 settembrio
+Li Clarissimi ser Nicolò C[...], ser Andrea [...]nardo savii, li nodari ser Francesco Querini, ser Andrea Zorzi, ser Beneto Moro signori hanno concesso licentia alli Reverendi Padri de far la fondamenta sopradetta.</Trascription>
+		<Date_Earliest>1573-08-21T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>162</ID_SOURCE>
+		<ID_SOURCE>162</ID_SOURCE>
+		<Title/>
+		<Island/>
+		<Typology/>
+		<Format/>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century/>
+		<Fraction_Century/>
+		<Collection/>
+		<Acronym/>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island/>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>29</ID_SOURCE>
+		<ID_SOURCE>29</ID_SOURCE>
+		<Title>Cronica delle famiglie nobili venete</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Chronicle</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>ms. 3625</Busta>
+		<Filza/>
+		<Title_Filza>Cronica delle famiglie nobili venete</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>156</ID_SOURCE>
+		<ID_SOURCE>156</ID_SOURCE>
+		<Title>The Patriarch Egidio da Ferrara donates his apartment on the island to the Canons regular of San Clemente</Title>
+		<Island>San Clemente</Island>
+		<Typology>Textual source</Typology>
+		<Format>Notary deed (Atto notarile)</Format>
+		<Language>Latin</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>14th cent.</Century>
+		<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Santa Maria della Carità</Fondo>
+		<Busta>b. 4</Busta>
+		<Filza/>
+		<Title_Filza>Atti di Nicolò da Riva</Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1314-07-12T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>154</ID_SOURCE>
+		<ID_SOURCE>154</ID_SOURCE>
+		<Title>Foundation of the Provveditori alla Sanità</Title>
+		<Island>Lagoon</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Latin</Language>
+		<Author_Surname_Name>Venetian Senate</Author_Surname_Name>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>15th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Senato, Terra</Fondo>
+		<Busta>reg. 9</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>c.168r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1486-01-07T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>12172719</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>157</ID_SOURCE>
+		<ID_SOURCE>157</ID_SOURCE>
+		<Title>Papal edict in which Eugene IV moves the Lateran canons to the island </Title>
+		<Island>San Clemente</Island>
+		<Typology>Textual source</Typology>
+		<Format>Papal edict</Format>
+		<Language/>
+		<Author_Surname_Name>Condulmer, Gabriele</Author_Surname_Name>
+		<Role_Author>Pope</Role_Author>
+		<Original_Title/>
+		<Century/>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Santa Maria della Carità</Fondo>
+		<Busta>b. 2</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1432-12-02T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>159</ID_SOURCE>
+		<ID_SOURCE>159</ID_SOURCE>
+		<Title>Doge Agostino Barbarigo and Senate donate a galea to the canons for the renovation of their monastery</Title>
+		<Island>San Clemente</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century/>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Santa Maria della Carità</Fondo>
+		<Busta>b. 20</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>«[...] che ai venerabili religiosi di San Clemente di questa città dare dovessero una delle prime galie vecchie nostre, sotil, che vanno alla marza, per riparation del suo monasterio et vale uno semel»</Trascription>
+		<Date_Earliest>1488-04-23T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>80</ID_SOURCE>
+		<ID_SOURCE>80</ID_SOURCE>
+		<Title>Storia dell'isola e monastero di San Secondo colla vita e martirio del Santo titolare di F.A.S.D.O.D.P.</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Chronicle</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author>Author</Role_Author>
+		<Original_Title>Storia dell'isola e monastero di San Secondo colla vita e martirio del Santo titolare di Frate Alessandro Spaziani Domenicano dell'Ordine dei Predicatori</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Entire century (0-99)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>ms. Cicogna 2833</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>85</ID_SOURCE>
+		<ID_SOURCE>85</ID_SOURCE>
+		<Title>Chronicle of the history of the island</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Chronicle</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 2 </Busta>
+		<Filza/>
+		<Title_Filza>Instrumento ed altre carte concernenti la consegna dell'isola, monastero, e renditedi San Secondo ai religiosi di San Domenico con alcuni decreti attinenti allo stesso monastero</Title_Filza>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1535-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>152</ID_SOURCE>
+		<ID_SOURCE>152</ID_SOURCE>
+		<Title>List of architectural works done in 1518</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Building costs (Conto di fabbrica)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>16th cent.</Century>
+		<Fraction_Century>First quarter of the century (0-24)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 4</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1518-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>53</ID_SOURCE>
+		<ID_SOURCE>53</ID_SOURCE>
+		<Title>Survey of the church's portal of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 10</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>395x277 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>54</ID_SOURCE>
+		<ID_SOURCE>54</ID_SOURCE>
+		<Title>Survey of the church of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 11</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>142x226 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>55</ID_SOURCE>
+		<ID_SOURCE>55</ID_SOURCE>
+		<Title>Project for the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 21</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>142x226 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>56</ID_SOURCE>
+		<ID_SOURCE>56</ID_SOURCE>
+		<Title>Plan of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 22</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>70</ID_SOURCE>
+		<ID_SOURCE>70</ID_SOURCE>
+		<Title>Plan of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 23</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>71</ID_SOURCE>
+		<ID_SOURCE>71</ID_SOURCE>
+		<Title>Elevation of the loggia of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 26</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>72</ID_SOURCE>
+		<ID_SOURCE>72</ID_SOURCE>
+		<Title>Plan of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 33</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>74</ID_SOURCE>
+		<ID_SOURCE>74</ID_SOURCE>
+		<Title>Plan of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 38</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>75</ID_SOURCE>
+		<ID_SOURCE>75</ID_SOURCE>
+		<Title>Plan of the mezzanine of cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 39</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription>Scala di passi n. 6.</Trascription>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>76</ID_SOURCE>
+		<ID_SOURCE>76</ID_SOURCE>
+		<Title>Entrance of the cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Project</Format>
+		<Language/>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>End of the century (90-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 1</Busta>
+		<Filza/>
+		<Title_Filza>Nuovo catastico del convento di San Secondo Martire</Title_Filza>
+		<Folio/>
+		<Drawing>dis. 40</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions>240x350 mm</Dimensions>
+		<Synopsis>The drawing is part of a set of documents related to the catastico made by padre Daniele Danieli in 1694.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>90</ID_SOURCE>
+		<ID_SOURCE>90</ID_SOURCE>
+		<Title>Receipt for the works done in the church and monastery</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Building costs (Conto di fabbrica)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Gavan, Angelo</Author_Surname_Name>
+		<Role_Author>Construction worker</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 5</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>373x290 mm</Dimensions>
+		<Synopsis>Angelo Garavan receives 20 cecchini for the restoration of the chapel of San Secondo, as well as some works done in the monastery.</Synopsis>
+		<Trascription>Adi 31 ottobre 1672
+Ricevo io Anzolo Gavan murer dal Padre Priore di San Secondo a conto delle fatture fatte nella capella del santo, et altra fabrica cechini 20.
+        </Trascription>
+		<Date_Earliest>1672-10-31T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>129</ID_SOURCE>
+		<ID_SOURCE>129</ID_SOURCE>
+		<Title>Deliberation for removing four novices and their teacher from the island</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Polani, Vincenzo</Author_Surname_Name>
+		<Role_Author>Masser of the Procuratori di Supra</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 5 proc. 405</Filza>
+		<Title_Filza>Padri di San Francesco. Santo Spirito</Title_Filza>
+		<Folio>c. 3r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The Procuratori di Supra order Domenico Porta, guardian of the monastery, to remove from the island the teacher and his four novices (two seculars and two religious) within three days.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1688-07-24T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>133</ID_SOURCE>
+		<ID_SOURCE>133</ID_SOURCE>
+		<Title>The guardian of the monastery reports the removal of four novices and their teacher from the island</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Porta, Domenico</Author_Surname_Name>
+		<Role_Author>Guardian of the monastery</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 5 proc. 405</Filza>
+		<Title_Filza>Padri di San Francesco. Santo Spirito</Title_Filza>
+		<Folio>c. 4r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>Domenico Porta executed the Procuratori di Supra's order of removing the teacher and his four novices from the island.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1688-07-27T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>135</ID_SOURCE>
+		<ID_SOURCE>135</ID_SOURCE>
+		<Title>Baldassare Longhena surveys the island</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Technical report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Longhena, Baldassare</Author_Surname_Name>
+		<Role_Author>Expert (perito)</Role_Author>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century/>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 2 proc. 405</Filza>
+		<Title_Filza>Convento di San Spirito Supresso
+        </Title_Filza>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions>295x210 mm</Dimensions>
+		<Synopsis>Asked by the Procurators of St. Mark, Baldassare Longhena surveys the vegetable gardens, convent, cloisters, refectories, walls, and infrastructure existing in the island of Santo Spirito (apart from the church, bell tower, and the other sacred places). He estimates the cost of these places up to 13,000 ducats.</Synopsis>
+		<Trascription>Laus Deo, 1657 adì 21 giugno
+
+In esecuzione di commissione impostami da Monsignor Illustrissimo et Reverendissimo Veschovo di Anversa Nontio Apostolico in questo Serenissimo Dominio, Delegato dalla Santità di Nostro Signor Papa Alessandro Settimo, Assistenti Illustrissimi et Eccellentissimi Signori Alvise Foscharini, Alvise Contarini Cavalier et Andrea Pisani, Procuratori di San Marcho, Deputato dal Eccellentissimo Senato.
+
+Che trasferirvi mi debi me Baldisera Longhena Peritto, nel Isola che fu della soppres[s]a Congregazione di Santo Spirito et quella estimare tutti li suoi orti convento et fabbriche di ogni sorte eccetuatta solamente la chiesa campanile e lochi sacri, et chosi mi son trasferito sopra locho una et più volte visto revisto con ogni essatta diligenza, il tutto misuratto, si orti come tutti li altri fondi et portichatte, et chosi ancho tutte le muralgie et fondamente girano atorno atorno detta isola cortili inclaustri calle coridori forestarie pilgiato alteze larghe di muralgie refetorio con salegii banchi in esso et havendo posto in pianta tutta detta isola come gli la rapresento a Vostra Illustrissima et Reverendissima et loro Eccellenze Illustrissime et chosi stimo detta Isola, ecetuatto pero li lochi impostomi come ho di sopra detto, il valor di essi duchatti tredeci milia, et questo è quanto dicho a Vostra Signoria Illustrissima et Reverendissima e Vostre Eccellenze Illustrissime per mia perizia et conscienza et con mio giuramento; et chosi devotamente minchino.
+
+Baldisera Longhena Peritto sudetto afermo quanto di sopra</Trascription>
+		<Date_Earliest>1657-06-21T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>160</ID_SOURCE>
+		<ID_SOURCE>160</ID_SOURCE>
+		<Title>The Lateran Canons report to the Senate about the bad conditions of the island after its use as a plague hospital</Title>
+		<Island>San Clemente</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Denuncia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Lateran Canons of Santa Maria della Carità</Author_Surname_Name>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Clemente</Fondo>
+		<Busta>b. 5</Busta>
+		<Filza>filza 1</Filza>
+		<Title_Filza>Acquisto dell'isola di San Clemente</Title_Filza>
+		<Folio>c. 23r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis>The Lateran Canons cannot live in the island because of its state of disrepair but they send evry Sunday a priest to celebrate the mess.</Synopsis>
+		<Trascription>« [...] non potiamo mantener Canonici a San Clemente per la officiatura di quella chiesa; oltre che la chiesa, monastero, et fabriche sono così disruppate et dal tempo, et dalla indescrettione di quelli, che colà habitarono per la contumacia nel contaggio passato di dolorosa memoria, che alla nostra povertà si rende impossibile non solo il risarcircle, ma etiandio il mantenerle».</Trascription>
+		<Date_Earliest>1645-07-25T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>161</ID_SOURCE>
+		<ID_SOURCE>161</ID_SOURCE>
+		<Title>Negotiations for the sale of the island to the Camaldolese monks</Title>
+		<Island>San Clemente</Island>
+		<Typology>Textual source</Typology>
+		<Format>Letter</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>17th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Clemente</Fondo>
+		<Busta>b. 5</Busta>
+		<Filza>filza 1</Filza>
+		<Title_Filza>Acquisto dell'isola di San Clemente</Title_Filza>
+		<Folio>ff. 1r-</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Pen on paper</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1644-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3168468</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>17</ID_SOURCE>
+		<ID_SOURCE>17</ID_SOURCE>
+		<Title>The freezing of the lagoon and the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Viero, Teodoro</Author_Surname_Name>
+		<Role_Author>Engraver</Role_Author>
+		<Original_Title>Veduta dell’isola di San Secondo col numeroso concorso di persone </Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>British Museum</Collection>
+		<Acronym>BM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>1878,1214.642</Location>
+		<Medium>Engraving</Medium>
+		<Dimensions>335x445 mm</Dimensions>
+		<Synopsis>View of the frozen lagoon in 1789 with the island of San Secondo on the background.</Synopsis>
+		<Trascription>Veduta dell'Isola di San Secondo col numeroso concorso di Persone, le quali dal dì 29 dicembre 1788 fino ai 11 Gennaro 89, andavano, e venivano a piedi sopra il Ghiaccio da Mestre a Venezia, portando quantità di commestibili alla Dominante, essendo alla sovrana clemenza tollerata l'introduzione senza pagar gabella, Cominciò a gelarsi la Laguna ai 27 dicembre 88, ed alcuni passeggeri nel dì 28 suddetto trovaronsi con la gondola chiusi nel ghiaccio vicino a San Secondo, e per sottarrsi al pericolo furono i primi a camminarvi sopra ritornando in Mestre.
+1. Corriere di Vienna che fa condurre la valigua delle lettere ed altro.
+2. Corriere di Treviso con valigia e tramessi.
+3. Uomo che vendeva zaletti.
+4. Luogo ove incautamente si annegò un chierico li 2 Gennaro 1789.
+5. Facchino che nella notte delle 3 suddetto morì sopra il ghiaccio strasinando due barili di vino.
+6. Altro che morì nella notte de' 6 predetto portando altro barile di vino. </Trascription>
+		<Date_Earliest>1789-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>28</ID_SOURCE>
+		<ID_SOURCE>28</ID_SOURCE>
+		<Title>Description of the freezing of the lagoon between December 1788 and January 1789</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Letter</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Zeli, Cherubino</Author_Surname_Name>
+		<Role_Author>Author</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Biblioteca del Museo Correr</Collection>
+		<Acronym>BMCVe</Acronym>
+		<Fondo/>
+		<Busta>ms. Cicogna 2039</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>cc. 589-608</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium>Ink on paper</Medium>
+		<Dimensions>205x300 mm</Dimensions>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1789-03-05T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>34</ID_SOURCE>
+		<ID_SOURCE>34</ID_SOURCE>
+		<Title>Plan of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>German</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
+		<Collection>Roma, Istituto Storico di Cultura dell’Arma del Genio</Collection>
+		<Acronym>ISCAG</Acronym>
+		<Fondo>Disegni</Fondo>
+		<Busta/>
+		<Filza/>
+		<Title_Filza>Forti e Castelli</Title_Filza>
+		<Folio/>
+		<Drawing>X A 630</Drawing>
+		<Location/>
+		<Medium>Watercolor and ink on paper</Medium>
+		<Dimensions/>
+		<Synopsis>Survey of the island with the orchards and vegetable gardens.</Synopsis>
+		<Trascription>Plan und Profil der Insel St. Secondo</Trascription>
+		<Date_Earliest>1801-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>38</ID_SOURCE>
+		<ID_SOURCE>38</ID_SOURCE>
+		<Title>View of the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Print</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Viero, Teodoro</Author_Surname_Name>
+		<Role_Author>Illustrator ; Engraver</Role_Author>
+		<Original_Title>Ventiquattro prospettive delle isole della laguna di Venezia</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Biblioteca Nazionale Marciana</Collection>
+		<Acronym>BNM</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium>Engraving</Medium>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>39</ID_SOURCE>
+		<ID_SOURCE>39</ID_SOURCE>
+		<Title>View of the frozen lagoon with the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>View of the frozen lagoon with the island of San Secondo</Original_Title>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Museo Correr</Collection>
+		<Acronym>MCVe</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. I n. 566</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>530x700 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Veduta della laguna di Venezia da San Secondo a Marghera presa dall'imboccatura del rio di Cannaregio e restò agghiacetata dal giorno 27 decembre 1788 sino al 5 Genaro asseguente [...]</Trascription>
+		<Date_Earliest>1788-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>42</ID_SOURCE>
+		<ID_SOURCE>42</ID_SOURCE>
+		<Title>View of the frozen lagoon with the island of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Painting</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Battaglioli, Francesco</Author_Surname_Name>
+		<Role_Author>Painter</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Last quarter of the century (75-99)</Fraction_Century>
+		<Collection>Museo di Ca' Rezzonico</Collection>
+		<Acronym>Museo di Ca' Rezzonico</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location>Cl. I n. 1433</Location>
+		<Medium>Oil on canvas</Medium>
+		<Dimensions>1050x1400 mm</Dimensions>
+		<Synopsis/>
+		<Trascription>Del mille settecento e ottanta otto nel mese appunto, che l'anno finiva s'incominciò a gelar ai vintiotto continuando nel mese che seguiva sino li dieci, che d'allor fu rotto il passaggio dall'una, all'altra riva e affin che la memoria non sia spenta, ciascun sucesso, qui si rappresenta.</Trascription>
+		<Date_Earliest>1788-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>57</ID_SOURCE>
+		<ID_SOURCE>57</ID_SOURCE>
+		<Title>Project design for the private cavana of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Letter</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Contarini, Giambattista Maria</Author_Surname_Name>
+		<Role_Author>Prior of San Secondo</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Biblioteca del Seminario Patriarcale</Collection>
+		<Acronym>BSPVe</Acronym>
+		<Fondo/>
+		<Busta>ms. 981.3</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>Io Fra Giambattista M.a Contarini dell'Ordine de' Predicatori, che essendo priore del convento di S. Secondo, feci fare nel 1753 la nuova cavana per uso de nostri religiosi, osservai cogli occhi propri, quanto mistro Niccolò Mauro muratore, che la fabbricò, espone in questa sua relazione e disegno.
+Forma de fabricha che sen trova soto tera nela isola de san segondo nel chavar le fondamene della chavana del monastero è questa gera tre pi[e] soto comun dela[c]qua.
+A fondamenta de muro trovata infuora del muro presente piedi due e soto comun piedi tre.
+B riva trovata nel sopradeto muro con [s]chalini numero cinque largo piedi cinque.
+C due quariseli che formava porta con sue fiube.
+E altro muro trovato dala parte del campo con volti soto è questi dipinti à fresco con fog[li]ami e vari oseleti con sopra il suo salizo da chaminar.
+F piano interno e questo gera di terazo marmorin ma desina.
+G testadura dela fab[r]ica qual mostrava che g[h]e fussi altri volti ma questi logi che se podeva dir volti finnhae.</Trascription>
+		<Date_Earliest>1753-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>81</ID_SOURCE>
+		<ID_SOURCE>81</ID_SOURCE>
+		<Title>Approval of the exemption from the payment of the tansa degli ortolani</Title>
+		<Island>San Secondo</Island>
+		<Typology>Textual source</Typology>
+		<Format>Deliberation (Delibera)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Second quarter of the century (25-49)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>San Secondo</Fondo>
+		<Busta>b. 2</Busta>
+		<Filza/>
+		<Title_Filza/>
+		<Folio>c. 28r</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription>23 dicembre 1732 
+Gl’illustrissimi et eccellentissimi Signori Presidenti et Aggiunto al Collegio della Militia da Mar, sopra l’istanza a loro eccellenze umiliata per parte, e nome delli Reverendi Padri Domenicani dell’Isola di San Secondo dimandanti che resti terminato che il suo orto abbia ad esser depenato dalla Tansa degl’Ortolani non essendo giusto ch’essi concorrino al pagamento della tansa insieme e taglioni fissate sopra le persone, che esercitano l’arti. Sue Eccellenze havuti anco riflesso, che l’isola è ius regio del Prencipe, et all’incomodo che giornalmente soffrono per allogiare le persone che capitano in quell’isola nella pubblica forestaria, hanno comandato che resti l’orto de Padri sudetti depenato dalla tansa dell’Arte stessa, non dovendo mai in alcun tempo esser posto nelle tanse degl’ortolani et sic.
+        </Trascription>
+		<Date_Earliest>1732-11-23T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>118</ID_SOURCE>
+		<ID_SOURCE>118</ID_SOURCE>
+		<Title>Partial ruin of the island's dock</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Report (Perizia)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Scutari, Vincenzo</Author_Surname_Name>
+		<Role_Author>Guardian of the monastery</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 8, proc. 405</Filza>
+		<Title_Filza/>
+		<Folio>c.s.n.</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The Guardian of the monastery writes to the Cassieri della Procuratoria de Supra in order to inform that on January 3 the dock of the island had partially collapsed due to a violent storm.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1767-01-07T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>119</ID_SOURCE>
+		<ID_SOURCE>119</ID_SOURCE>
+		<Title>Petition for the institution of a new Scuola devoted to San Diego</Title>
+		<Island>Santo Spirito</Island>
+		<Typology>Textual source</Typology>
+		<Format>Petition (Supplica)</Format>
+		<Language>Italian</Language>
+		<Author_Surname_Name>Giacomazzi, Bernardin</Author_Surname_Name>
+		<Role_Author>Segretario of the monastery</Role_Author>
+		<Original_Title/>
+		<Century>18th cent.</Century>
+		<Fraction_Century>First quarter of the century (0-24)</Fraction_Century>
+		<Collection>Archivio di Stato di Venezia</Collection>
+		<Acronym>ASVe</Acronym>
+		<Fondo>Procuratori di San Marco, De Supra</Fondo>
+		<Busta>b. 200</Busta>
+		<Filza>fasc. 7, proc. 405</Filza>
+		<Title_Filza/>
+		<Folio>c. 1r-v</Folio>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis>The Procuratia de Supra accepts the petition presented by the Secretary of the monastery on behalf of some devotees of San Diego who wanted to establish a Scuola (a secular confraternity) devoted to the saint. This was formerly located in the church of Poveglia.</Synopsis>
+		<Trascription/>
+		<Date_Earliest>1719-02-22T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>7910746</Island>
+	</ROW>
+	<ROW>
+		<ID_SOURCE>77</ID_SOURCE>
+		<ID_SOURCE>77</ID_SOURCE>
+		<Title>Plan of the fort of San Secondo</Title>
+		<Island>San Secondo</Island>
+		<Typology>Iconographic source</Typology>
+		<Format>Survey</Format>
+		<Language>Austrian</Language>
+		<Author_Surname_Name/>
+		<Role_Author/>
+		<Original_Title>Forte S. Secondo</Original_Title>
+		<Century>19th cent.</Century>
+		<Fraction_Century>Mid-century (40-60)</Fraction_Century>
+		<Collection>Municipal and Provincial Archives of Vienna</Collection>
+		<Acronym>MPAW</Acronym>
+		<Fondo/>
+		<Busta/>
+		<Filza/>
+		<Title_Filza/>
+		<Folio/>
+		<Drawing/>
+		<Location/>
+		<Medium/>
+		<Dimensions/>
+		<Synopsis/>
+		<Trascription/>
+		<Date_Earliest>1852-01-01T00:00:00</Date_Earliest>
+		<Date_Latest>None-01-01T00:00:00</Date_Latest>
+		<Island>3230839</Island>
+	</ROW>
+</FMPDSORESULT>
