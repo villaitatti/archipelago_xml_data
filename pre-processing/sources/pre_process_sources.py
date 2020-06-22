@@ -92,7 +92,6 @@ for row in tags:
     id_source.text = row_id
 
     # Add clean fields
-    add_clean_field(keys["id_source"])
     add_clean_field(keys["title"])
     add_clean_field(keys["island"])
     add_clean_field(keys["typology"])
@@ -126,9 +125,12 @@ for row in tags:
     if month_earliest is None:
         month_earliest = "01"
     year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
+    date_earliest_pretty = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
+    if year_earliest is None:
+        date_earliest_pretty = ""
     # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
     date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
-    date_earliest.text = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
+    date_earliest.text = date_earliest_pretty
 
     # Date_Latest
     day_latest = row.find(f'ns:{keys["day_latest"]}', ns).text
@@ -138,9 +140,12 @@ for row in tags:
     if month_latest is None:
         month_latest = "01"
     year_latest = row.find(f'ns:{keys["year_latest"]}', ns).text
+    date_latest_pretty = f'{year_latest}-{month_latest}-{day_latest}T00:00:00'
+    if year_latest is None:
+        date_latest_pretty = ""
     # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
     date_latest = et.SubElement(new_row, custom_keys["date_latest"])
-    date_latest.text = f'{year_latest}-{month_latest}-{day_latest}T00:00:00'
+    date_latest.text = date_latest_pretty
 
     # Island
     island_found = row.find(f'ns:{keys["island"]}', ns).text
