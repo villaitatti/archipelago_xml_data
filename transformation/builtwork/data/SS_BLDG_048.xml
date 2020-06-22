@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370037.090316220186651 5692866.705697351135314,1370032.942925840383396 5692870.254917985759676,1370042.036195389227942 5692880.969222342595458,1370046.515391815220937 5692877.467275371775031,1370037.090316220186651 5692866.705697351135314)))</WKT>
+	<BW_ID>SS_BLDG_048</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1717</Date>
+	<Start_Earliest>1500-01-01</Start_Earliest>
+	<End_Latest>1788-12-31</End_Latest>
+	<Name>Deposito</Name>
+	<Function>Private</Function>
+	<Start_Function>1500-01-01</Start_Function>
+	<End_Function>1788-12-31</End_Function>
+	<Use>Service</Use>
+	<Start_Use>1500-01-01</Start_Use>
+	<End_Use>1788-12-31</End_Use>
+	<Typology>Storage facility</Typology>
+	<Start_Typology>1500-01-01</Start_Typology>
+	<End_Typology>1788-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Benedectine Nuns of San Secondo</Patron>
+	<Owner>Dominican Friars of San Secondo</Owner>
+	<Start_Owner>1534-01-01</Start_Owner>
+	<End_Owner>1806-07-27</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>277.107.714.310.967</SHP_Lenght>
+	<SHP_Area>388.536.479.159.915</SHP_Area>
+</row>

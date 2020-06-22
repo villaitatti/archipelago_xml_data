@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370063.172822354128584 5692879.834305885247886,1370064.686421459307894 5692875.123347248882055,1370054.159350599395111 5692872.275040860287845,1370052.412565282080323 5692877.204890912398696,1370063.172822354128584 5692879.834305885247886)))</WKT>
+	<BW_ID>SS_BLDG_005</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1945</Date>
+	<Start_Earliest>1852-01-01</Start_Earliest>
+	<End_Latest>31/12/81</End_Latest>
+	<Name>Deposito</Name>
+	<Function>Public</Function>
+	<Start_Function>1852-01-01</Start_Function>
+	<End_Function>31/12/81</End_Function>
+	<Use>Military</Use>
+	<Start_Use>1852-01-01</Start_Use>
+	<End_Use>08/09/45</End_Use>
+	<Typology>Storage facility</Typology>
+	<Start_Typology>1852-01-01</Start_Typology>
+	<End_Typology>31/12/81</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Austrian Empire</Patron>
+	<Owner>Venice Municipality</Owner>
+	<Start_Owner>1866-10-21</Start_Owner>
+	<End_Owner>31/12/81</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>225.752.803.200.677</SHP_Lenght>
+	<SHP_Area>274.489.846.516.082</SHP_Area>
+</row>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370129.847634987905622 5692917.515068436041474,1370123.788153927074745 5692906.372751082293689,1370119.147569426335394 5692908.849258878268301,1370103.331266987603158 5692917.467074777930975,1370110.233629218535498 5692928.940827442333102,1370114.700652094790712 5692926.338793434202671,1370116.995405212510377 5692925.001963176764548,1370128.443452370353043 5692918.333152862265706,1370129.847634987905622 5692917.515068436041474)))</WKT>
+	<BW_ID>SS_BLDG_034</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1717</Date>
+	<Start_Earliest>1563-01-01</Start_Earliest>
+	<End_Latest>1716-12-31</End_Latest>
+	<Name>Legnaia</Name>
+	<Function>Private</Function>
+	<Start_Function>1563-01-01</Start_Function>
+	<End_Function>1716-12-31</End_Function>
+	<Use>Service</Use>
+	<Start_Use>1563-01-01</Start_Use>
+	<End_Use>1716-12-31</End_Use>
+	<Typology>Woodshed</Typology>
+	<Start_Typology>1563-01-01</Start_Typology>
+	<End_Typology>1716-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Dominican Friars of San Secondo</Patron>
+	<Owner>Dominican Friars of San Secondo</Owner>
+	<Start_Owner>1534-01-01</Start_Owner>
+	<End_Owner>1806-07-27</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>505.547.986.809.831</SHP_Lenght>
+	<SHP_Area>147.634.113.159.661</SHP_Area>
+</row>

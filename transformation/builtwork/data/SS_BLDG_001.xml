@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370165.882123852148652 5692874.707694075070322,1370170.754743829369545 5692884.508746800012887,1370180.73811100423336 5692879.613652613945305,1370175.679210340371355 5692869.755747240968049,1370165.882123852148652 5692874.707694075070322),(1370168.417443039361387 5692875.582633956335485,1370174.810505046509206 5692872.363471410237253,1370178.034337591379881 5692878.727538282983005,1370171.690508617088199 5692881.928815271705389,1370168.417443039361387 5692875.582633956335485)))</WKT>
+	<BW_ID>SS_BLDG_001</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>2019</Date>
+	<Start_Earliest>1570-01-01</Start_Earliest>
+	<End_Latest>31/12/19</End_Latest>
+	<Name>Polveriera</Name>
+	<Function>Public</Function>
+	<Start_Function>1570-01-01</Start_Function>
+	<End_Function>31/12/19</End_Function>
+	<Use>Abandoned</Use>
+	<Start_Use>01/01/61</Start_Use>
+	<End_Use>31/12/19</End_Use>
+	<Typology>Ex powderhouse</Typology>
+	<Start_Typology>01/01/61</Start_Typology>
+	<End_Typology>31/12/19</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Istrian marble</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Venetian Senate</Patron>
+	<Owner>Venice Municipality</Owner>
+	<Start_Owner>1866-10-21</Start_Owner>
+	<End_Owner>31/12/19</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>509.750.232.192.258</SHP_Lenght>
+	<SHP_Area>348.314.778.282.299</SHP_Area>
+</row>
