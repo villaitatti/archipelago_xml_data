@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370039.044039654312655 5692836.239462117664516,1370035.369139637798071 5692839.687159794382751,1370030.358320140745491 5692844.398612172342837,1370044.116314106853679 5692860.692833538167179,1370053.169023683061823 5692852.945578905753791,1370039.044039654312655 5692836.239462117664516)))</WKT>
+	<BW_ID>SS_BLDG_024</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1789</Date>
+	<Start_Earliest>1500-01-01</Start_Earliest>
+	<End_Latest>1838-12-31</End_Latest>
+	<Name>Foresteria</Name>
+	<Function>Public</Function>
+	<Start_Function>1500-01-01</Start_Function>
+	<End_Function>1838-12-31</End_Function>
+	<Use>Accomodation</Use>
+	<Start_Use>1500-01-01</Start_Use>
+	<End_Use>1838-12-31</End_Use>
+	<Typology>Guest house</Typology>
+	<Start_Typology>1500-01-01</Start_Typology>
+	<End_Typology>1838-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Istrian marble</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Venetian Senate</Patron>
+	<Owner>Venetian Republic</Owner>
+	<Start_Owner>1500-01-01</Start_Owner>
+	<End_Owner>1797-05-11</End_Owner>
+	<Tenant>Dominican Friars of San Secondo</Tenant>
+	<Start_Tenant>1534-01-01</Start_Tenant>
+	<End_Tenant>1806-07-27</End_Tenant>
+	<SHP_Lenght>4.702.302.017.324.130</SHP_Lenght>
+	<SHP_Area>1.266.098.617.935.720</SHP_Area>
+</row>

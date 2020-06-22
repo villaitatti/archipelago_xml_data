@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370035.867696359753609 5692831.872436144389212,1370039.044039654312655 5692836.239462117664516,1370053.169023683061823 5692852.945578905753791,1370063.812058169860393 5692868.420617199502885,1370074.490670974366367 5692863.834879170171916,1370072.600603372324258 5692858.656797204166651,1370052.520911050960422 5692830.285595670342445,1370045.443532411707565 5692822.781773924827576,1370043.827145856106654 5692824.284515322186053,1370035.867696359753609 5692831.872436144389212)))</WKT>
+	<BW_ID>SS_BLDG_036</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1500</Date>
+	<Start_Earliest>1500-01-01</Start_Earliest>
+	<End_Latest>1562-12-31</End_Latest>
+	<Name>Monastero</Name>
+	<Function>Private</Function>
+	<Start_Function>1500-01-01</Start_Function>
+	<End_Function>1562-12-31</End_Function>
+	<Use>Religious</Use>
+	<Start_Use>1500-01-01</Start_Use>
+	<End_Use>1562-12-31</End_Use>
+	<Typology>Convent</Typology>
+	<Start_Typology>1500-01-01</Start_Typology>
+	<End_Typology>1562-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Stone</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Baffo family</Patron>
+	<Owner>Benedectine nuns of San Secondo</Owner>
+	<Start_Owner>1500-01-01</Start_Owner>
+	<End_Owner>1531-12-31</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>851.940.171.636.558</SHP_Lenght>
+	<SHP_Area>311.056.242.245.962</SHP_Area>
+</row>

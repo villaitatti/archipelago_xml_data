@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370140.501356378430501 5692899.114810009486973,1370151.47553240461275 5692892.70897276327014,1370142.638433892279863 5692876.409880150109529,1370130.910820509539917 5692883.008813749998808,1370136.607206655200571 5692892.748994532041252,1370137.855855066562071 5692894.672142278403044,1370140.501356378430501 5692899.114810009486973)))</WKT>
+	<BW_ID>SS_BLDG_033</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1717</Date>
+	<Start_Earliest>1563-01-01</Start_Earliest>
+	<End_Latest>1788-12-31</End_Latest>
+	<Name>Cucina</Name>
+	<Function>Private</Function>
+	<Start_Function>1563-01-01</Start_Function>
+	<End_Function>1788-12-31</End_Function>
+	<Use>Service</Use>
+	<Start_Use>1563-01-01</Start_Use>
+	<End_Use>1788-12-31</End_Use>
+	<Typology>Kitchen</Typology>
+	<Start_Typology>1563-01-01</Start_Typology>
+	<End_Typology>1788-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Istrian marble</Material>
+	</Materials>
+	<Architect>Giovanni da Zon</Architect>
+	<Patron>Dominican Friars of San Secondo</Patron>
+	<Owner>Dominican Friars of San Secondo</Owner>
+	<Start_Owner>1563-01-01</Start_Owner>
+	<End_Owner>1806-07-27</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>445.075.106.907.333</SHP_Lenght>
+	<SHP_Area>120.296.543.357.416</SHP_Area>
+</row>

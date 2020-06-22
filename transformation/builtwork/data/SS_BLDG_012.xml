@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370105.708426217082888 5692814.460227020084858,1370110.381148339482024 5692826.805173899978399,1370120.61202790774405 5692853.735652959905565,1370127.592015851056203 5692851.135906852781773,1370112.628040808718652 5692811.971841593272984,1370105.708426217082888 5692814.460227020084858)))</WKT>
+	<BW_ID>SS_BLDG_012</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1850</Date>
+	<Start_Earliest>1848-01-01</Start_Earliest>
+	<End_Latest>1851-12-31</End_Latest>
+	<Name>Deposito</Name>
+	<Function>Public</Function>
+	<Start_Function>1848-01-01</Start_Function>
+	<End_Function>1851-12-31</End_Function>
+	<Use>Military</Use>
+	<Start_Use>1848-01-01</Start_Use>
+	<End_Use>1851-12-31</End_Use>
+	<Typology>Storage facility</Typology>
+	<Start_Typology>1848-01-01</Start_Typology>
+	<End_Typology>1851-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Austrian Empire</Patron>
+	<Owner>Austrian Empire</Owner>
+	<Start_Owner>1814-04-20</Start_Owner>
+	<End_Owner>1866-10-20</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>6.920.826.128.658.820</SHP_Lenght>
+	<SHP_Area>1.529.685.881.294.500</SHP_Area>
+</row>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370065.645747299073264 5692867.650791059248149,1370071.264200798468664 5692881.525554503314197,1370100.35444685514085 5692867.719156426377594,1370094.920171775389463 5692855.030239274725318,1370065.645747299073264 5692867.650791059248149)))</WKT>
+	<BW_ID>SS_BLDG_035</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1500</Date>
+	<Start_Earliest>1500-01-01</Start_Earliest>
+	<End_Latest>1607-12-31</End_Latest>
+	<Name>Chiesa</Name>
+	<Function>Private</Function>
+	<Start_Function>1500-01-01</Start_Function>
+	<End_Function>1607-12-31</End_Function>
+	<Use>Religious</Use>
+	<Start_Use>1500-01-01</Start_Use>
+	<End_Use>1607-12-31</End_Use>
+	<Typology>Church</Typology>
+	<Start_Typology>1500-01-01</Start_Typology>
+	<End_Typology>1607-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Stone</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Baffo family</Patron>
+	<Owner>Benedectine nuns of San Secondo</Owner>
+	<Start_Owner>1500-01-01</Start_Owner>
+	<End_Owner>1531-12-31</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>651.657.669.977.359</SHP_Lenght>
+	<SHP_Area>226.718.730.191.543</SHP_Area>
+</row>

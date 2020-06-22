@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370128.443452370353043 5692918.333152862265706,1370136.45480437297374 5692932.686272524297237,1370140.8712451714091 5692930.204729179851711,1370132.821334429783747 5692915.782933914102614,1370128.443452370353043 5692918.333152862265706)))</WKT>
+	<BW_ID>SS_BLDG_029</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1789</Date>
+	<Start_Earliest>1777-01-01</Start_Earliest>
+	<End_Latest>1838-12-31</End_Latest>
+	<Name>Pontile</Name>
+	<Function>Public</Function>
+	<Start_Function>1777-01-01</Start_Function>
+	<End_Function>1838-12-31</End_Function>
+	<Use>Service</Use>
+	<Start_Use>1777-01-01</Start_Use>
+	<End_Use>1838-12-31</End_Use>
+	<Typology>Dock</Typology>
+	<Start_Typology>1777-01-01</Start_Typology>
+	<End_Typology>1838-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Wood</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Office of the Savi ed esecutori alle acque</Patron>
+	<Owner>Venetian Republic</Owner>
+	<Start_Owner>1777-01-01</Start_Owner>
+	<End_Owner>1797-05-11</End_Owner>
+	<Tenant>Dominican Friars of San Secondo</Tenant>
+	<Start_Tenant>1777-01-01</Start_Tenant>
+	<End_Tenant>1806-07-27</End_Tenant>
+	<SHP_Lenght>302.128.088.199.057</SHP_Lenght>
+	<SHP_Area>4.108.079.980.254.820</SHP_Area>
+</row>

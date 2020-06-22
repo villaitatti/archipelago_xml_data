@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370055.572034131735563 5692896.833440265618265,1370061.065077860374004 5692903.224071209318936,1370061.362618046812713 5692903.560304843820632,1370081.146520339883864 5692895.326267559081316,1370081.496021624887362 5692896.141007656231523,1370082.644508031429723 5692895.645317518152297,1370078.293492702301592 5692885.629816976375878,1370073.728361896937713 5692887.880919397808611,1370073.566737342858687 5692887.411800518631935,1370055.572034131735563 5692896.833440265618265)))</WKT>
+	<BW_ID>SS_BLDG_021</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1789</Date>
+	<Start_Earliest>1777-01-01</Start_Earliest>
+	<End_Latest>1838-12-31</End_Latest>
+	<Name>Cavana</Name>
+	<Function>Private</Function>
+	<Start_Function>1777-01-01</Start_Function>
+	<End_Function>1806-07-27</End_Function>
+	<Use>Service</Use>
+	<Start_Use>1777-01-01</Start_Use>
+	<End_Use>1838-12-31</End_Use>
+	<Typology>Shelter for boats</Typology>
+	<Start_Typology>1777-01-01</Start_Typology>
+	<End_Typology>1838-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Istrian marble</Material>
+	</Materials>
+	<Architect>Tommaso Temanza</Architect>
+	<Patron>Dominican Friars of San Secondo</Patron>
+	<Owner>Dominican Friars of San Secondo</Owner>
+	<Start_Owner>1777-01-01</Start_Owner>
+	<End_Owner>1806-07-27</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>4.861.354.561.561.520</SHP_Lenght>
+	<SHP_Area>1.126.518.529.004.940</SHP_Area>
+</row>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<row>
+	<WKT>MULTIPOLYGON (((1370076.975557637866586 5692849.702854204922915,1370079.666183890309185 5692855.131383202038705,1370080.775703168008476 5692857.532648172229528,1370088.242438359418884 5692854.492014672607183,1370085.908689949661493 5692849.048883803188801,1370084.715092997066677 5692846.548538017086685,1370083.419230103725567 5692847.085025697015226,1370076.975557637866586 5692849.702854204922915)))</WKT>
+	<BW_ID>SS_BLDG_025</BW_ID>
+	<IslandName>San Secondo</IslandName>
+	<Date>1789</Date>
+	<Start_Earliest>1734-01-01</Start_Earliest>
+	<End_Latest>1820-12-31</End_Latest>
+	<Name>Campanile</Name>
+	<Function>Private</Function>
+	<Start_Function>1734-01-01</Start_Function>
+	<End_Function>1806-07-27</End_Function>
+	<Use>Religious</Use>
+	<Start_Use>1734-01-01</Start_Use>
+	<End_Use>1806-07-27</End_Use>
+	<Typology>Bell tower</Typology>
+	<Start_Typology>1734-01-01</Start_Typology>
+	<End_Typology>1820-12-31</End_Typology>
+	<Height/>
+	<Materials>
+		<Material>Bricks</Material>
+		<Material>Istrian marble</Material>
+	</Materials>
+	<Architect/>
+	<Patron>Dominican Friars of San Secondo</Patron>
+	<Owner>Dominican Friars of San Secondo</Owner>
+	<Start_Owner>1734-01-01</Start_Owner>
+	<End_Owner>1806-07-27</End_Owner>
+	<Tenant/>
+	<Start_Tenant/>
+	<End_Tenant/>
+	<SHP_Lenght>2.372.471.214.544.330</SHP_Lenght>
+	<SHP_Area>3.513.659.110.763.560</SHP_Area>
+</row>
