@@ -176,28 +176,28 @@
 
 	<!-- Actor's marriage -->
 	<generator name="350-actor-marriage" prefix="arc">
-		<pattern>marriage/{marriage_id}</pattern>
+		<pattern>actor/{actor_id}/marriage/</pattern>
 	</generator>
 	<generator name="353-actor-marriage-date" prefix="arc">
-		<pattern>marriage/{marriage_id}/date</pattern>
+		<pattern>actor/{actor_id}marriage/date</pattern>
 	</generator>
 
 	<!-- Actor's will -->
 	<generator name="360-actor-will" prefix="arc">
-		<pattern>will/{will_id}</pattern>
+		<pattern>actor/{actor_id}will</pattern>
 	</generator>
 	<generator name="363-actor-will-date" prefix="arc">
-		<pattern>will/{will_id}/date</pattern>
+		<pattern>actor/{actor_id}/will/date</pattern>
 	</generator>
 
 	<!-- Actor's biography -->
 	<generator name="370-actor-biography" prefix="arc">
-		<pattern>biography</pattern>
+		<pattern>actor/{actor_id}biography</pattern>
 	</generator>
 
 	<!-- Actor's image -->
 	<generator name="380-actor-image" prefix="arc">
-		<pattern>image</pattern>
+		<pattern>actor/{actor_id}image</pattern>
 	</generator>
 
 	<!-- Source -->
