@@ -465,8 +465,8 @@
         <Activities_Roles>Cartographer ; Miniaturist</Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
-        <Place_of_birth>Padua</Place_of_birth>
-        <Place_of_death>Padua</Place_of_death>
+        <Place_of_birth>Padova</Place_of_birth>
+        <Place_of_death>Padova</Place_of_death>
         <Work_location>Venice</Work_location>
         <Birth_Date_Earliest>1450</Birth_Date_Earliest>
         <Birth_Date_Latest></Birth_Date_Latest>
@@ -590,7 +590,7 @@
         <Activities_Roles></Activities_Roles>
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
-        <Place_of_birth>Padua</Place_of_birth>
+        <Place_of_birth>Padova</Place_of_birth>
         <Place_of_death></Place_of_death>
         <Work_location></Work_location>
         <Birth_Date_Earliest>1530</Birth_Date_Earliest>
@@ -766,8 +766,8 @@
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Corfù</Place_of_birth>
-        <Place_of_death>Padua</Place_of_death>
-        <Work_location>Trieste ; Padua ; Venice</Work_location>
+        <Place_of_death>Padova</Place_of_death>
+        <Work_location>Trieste ; Padova ; Venice</Work_location>
         <Birth_Date_Earliest>1795</Birth_Date_Earliest>
         <Birth_Date_Latest></Birth_Date_Latest>
         <Death_Date_Earliest></Death_Date_Earliest>
@@ -2642,7 +2642,7 @@
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth></Place_of_birth>
         <Place_of_death></Place_of_death>
-        <Work_location>Padua</Work_location>
+        <Work_location>Padova</Work_location>
         <Birth_Date_Earliest></Birth_Date_Earliest>
         <Birth_Date_Latest></Birth_Date_Latest>
         <Death_Date_Earliest></Death_Date_Earliest>
@@ -3617,7 +3617,7 @@
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Florence</Place_of_birth>
         <Place_of_death>Venice</Place_of_death>
-        <Work_location>Florenze ; Venice</Work_location>
+        <Work_location>Florence ; Venice</Work_location>
         <Birth_Date_Earliest>1486-0-02</Birth_Date_Earliest>
         <Birth_Date_Latest></Birth_Date_Latest>
         <Death_Date_Earliest></Death_Date_Earliest>
@@ -3666,7 +3666,7 @@
         <Start_Activities_Roles></Start_Activities_Roles>
         <End_Activities_Roles></End_Activities_Roles>
         <Place_of_birth>Venice</Place_of_birth>
-        <Place_of_death>Monselice (Padua)</Place_of_death>
+        <Place_of_death>Monselice</Place_of_death>
         <Work_location>Venice</Work_location>
         <Birth_Date_Earliest>1657</Birth_Date_Earliest>
         <Birth_Date_Latest></Birth_Date_Latest>

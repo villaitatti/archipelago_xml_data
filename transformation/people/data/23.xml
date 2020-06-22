@@ -20,11 +20,11 @@
 			<End/>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Florence</Place_of_birth>
-	<Place_of_death>Venice</Place_of_death>
+	<Place_of_birth>3176959</Place_of_birth>
+	<Place_of_death>3164603</Place_of_death>
 	<Work_locations>
-		<Work_location>Florenze</Work_location>
-		<Work_location>Venice</Work_location>
+		<Work_location>3176959</Work_location>
+		<Work_location>3164603</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1486-0-02</Birth_Date_Earliest>
 	<Death_Date_Latest>1570-11-27</Death_Date_Latest>

@@ -10,11 +10,11 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, 'People.xml')
 
 # Geonames dictionary
-geonames_dict = json.load(open(os.path.join(dir_path, 'geonames.json'),'r'))
+geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
 
 def write_file(row_id, text):
 
-  output_directory = os.path.join(dir_path, '..', 'script' ,'data')
+  output_directory = os.path.join(dir_path, '../..', 'transformation/people/' ,'data')
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
@@ -141,11 +141,25 @@ for row in tags:
 
     # place of birth
     place_birth = et.SubElement(new_row, key_place_birth)
-    place_birth.text = row.find(f'ns:{key_place_birth}', ns).text
-    
+    place = row.find(f'ns:{key_place_birth}', ns).text
+
+    try:
+      location_id = geonames_dict[place][0]["geoname_id"]
+      place_birth.text = location_id
+
+    except:
+      place_birth.text = place 
+
     # place of death
     place_death = et.SubElement(new_row, key_place_death)
-    place_death.text = row.find(f'ns:{key_place_death}', ns).text
+    place = row.find(f'ns:{key_place_death}', ns).text
+
+    try:
+      location_id = geonames_dict[place][0]["geoname_id"]
+      place_death.text = location_id
+
+    except:
+      place_death.text = place 
 
     # work location
     if row.find(f'ns:{key_work_location}', ns).text is not None:
@@ -153,11 +167,20 @@ for row in tags:
       work_locations = et.SubElement(new_row, key_work_locations)
 
       locations = row.find(f'ns:{key_work_location}', ns).text
-      locations = locations.split(' ; ')
+      locations = locations.split(';')
       
       for location in locations:
         work_location = et.SubElement(work_locations, key_work_location)
-        work_location.text = location
+
+        location = location.strip()
+
+        try:
+          location_id = geonames_dict[location][0]["geoname_id"]
+          work_location.text = location_id
+
+        except:
+          work_location.text = location 
+        
 
     # birthdate earliest
     birthdate_earliest = et.SubElement(new_row, key_birthdate_earliest)
