@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,11 +11,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/given_name>
         a                crm:E41_Appellation ;
@@ -41,10 +37,6 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/130/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/130/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Mocenigo"@it ;
@@ -53,7 +45,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/130/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/130/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
@@ -81,3 +73,6 @@
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it , "3164603"@en .

@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -13,14 +13,13 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1530"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Padua"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/184/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Camaldolese monks of Monte Rua"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+geonames:3171728  a  crm:E53_Place ;
+        rdfs:label  "3171728"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184>
         a                        crm:E39_Actor ;
@@ -36,4 +35,4 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/184/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3171728 .

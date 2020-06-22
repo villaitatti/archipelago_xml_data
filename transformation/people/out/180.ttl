@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -24,9 +24,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/180/activity/1/date>
-        a       crm:E52_Time-Span .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
@@ -41,9 +38,8 @@
         rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Camaldolese monk in Monte Rua"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/180/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Camaldolese monk in Monte Rua"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180/given_name>
         a                crm:E41_Appellation ;

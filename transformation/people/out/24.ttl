@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -19,23 +19,14 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/24/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/24/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Lateran Canons of Santo Spirito"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Religious order"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/24/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@en .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Religious order"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/birth/date>
         a                            crm:E52_Time-Span ;
@@ -44,15 +35,15 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/24/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/24/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/24/activity/1/date>
-        a       crm:E52_Time-Span .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it , "3164603"@en .

@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,6 +8,9 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+geonames:3172394  a  crm:E53_Place ;
+        rdfs:label  "3172394"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/144/given_name>
         a                crm:E41_Appellation ;
@@ -23,10 +26,13 @@
         crm:P82a_begin_of_the_begin  "1389"@en ;
         crm:P82b_end_of_the_end      "1404"@en .
 
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "3169070"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/144/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/144/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3172394 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/144/surname>
         a                crm:E41_Appellation ;
@@ -36,10 +42,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/144/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1350"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Naples"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/144>
         a                           crm:E39_Actor ;
@@ -59,7 +61,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/144/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Rome> .
+        crm:P7_took_place_at  geonames:3169070 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -75,10 +77,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/144/alias>
         a           crm:E41_Appellation ;
         rdfs:label  "Pope Boniface IX"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Rome>
-        a           crm:E53_Place ;
-        rdfs:label  "Rome"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

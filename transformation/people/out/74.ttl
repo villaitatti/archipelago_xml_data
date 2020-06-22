@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,6 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/activity/1>
         a                     frbr:F51_Pursuit ;
@@ -27,13 +23,9 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/74/birth>
         a                     crm:E67_Birth ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -41,7 +33,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/given_name>
         a                crm:E41_Appellation ;
@@ -71,3 +63,6 @@
                 <https://archipelago.itatti.harvard.edu/resource/actor/74/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/74/death> .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it , "3164603"@en .

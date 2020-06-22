@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,12 +9,8 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/23/activity/2/date>
-        a       crm:E52_Time-Span .
+geonames:3176959  a  crm:E53_Place ;
+        rdfs:label  "3176959"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23/given_name>
         a                crm:E41_Appellation ;
@@ -29,31 +25,23 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Florence"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/23/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/23/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  geonames:3176959 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/23/activity/1/date>
-        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1486-0-02"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Architect"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/23/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23>
         a                        crm:E39_Actor ;
@@ -73,12 +61,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/23/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Tatti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/23/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Sculptor"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/23/activity/2/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Sculptor"@en .

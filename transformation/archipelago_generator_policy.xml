@@ -257,8 +257,8 @@
 
 
 	<!-- Place -->
-	<generator name="600-place" prefix="arc">
-		<pattern>place/{place_id}</pattern>
+	<generator name="600-place" prefix="geonames">
+		<pattern>{geonames_id}</pattern>
 	</generator>
 
 	<generator name="URIorUUID">

@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -17,7 +17,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/40/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/40/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  geonames:Ajaccio ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
@@ -28,13 +28,13 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1769-08-15"@en .
 
+<https://www.geonames.org/Isola%20di%20Sant%27Elena>
+        a           crm:E53_Place ;
+        rdfs:label  "Isola di Sant'Elena"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/40/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Isola%20di%20Sant%27Elena> .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Ajaccio"@en .
+        crm:P7_took_place_at  <https://www.geonames.org/Isola%20di%20Sant%27Elena> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/surname>
         a                crm:E41_Appellation ;
@@ -42,9 +42,8 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Politician"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Politician"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40>
         a                        crm:E39_Actor ;
@@ -60,13 +59,9 @@
         a           crm:E21_Person ;
         rdfs:label  "Carlos"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Isola%20di%20Sant%27Elena>
-        a           crm:E53_Place ;
-        rdfs:label  "Isola di Sant'Elena"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/activity/1/date>
-        a       crm:E52_Time-Span .
-
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+geonames:Ajaccio  a  crm:E53_Place ;
+        rdfs:label  "Ajaccio"@en .

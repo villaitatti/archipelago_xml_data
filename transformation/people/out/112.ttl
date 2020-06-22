@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -19,12 +19,8 @@
         rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/112/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Abbott of Santo Spirito"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/112/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/112/activity/1/date>
-        a       crm:E52_Time-Span .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Abbott of Santo Spirito"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

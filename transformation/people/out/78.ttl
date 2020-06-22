@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -13,10 +13,14 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1795"@en .
 
+<https://www.geonames.org/Corf%C3%B9>
+        a           crm:E53_Place ;
+        rdfs:label  "Corfù"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/78/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/78/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  <https://www.geonames.org/Corf%C3%B9> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -24,14 +28,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/78/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Padua> .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Corfù"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/78/activity/1/date>
-        a       crm:E52_Time-Span .
+        crm:P7_took_place_at  geonames:3171728 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/78>
         a                        crm:E39_Actor ;
@@ -43,14 +40,13 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/78/death> .
 
+geonames:3171728  a  crm:E53_Place ;
+        rdfs:label  "3171728"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/78/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Chevalier"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Padua>
-        a           crm:E53_Place ;
-        rdfs:label  "Padua"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/78/given_name>
         a                crm:E41_Appellation ;
@@ -58,9 +54,8 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/78/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Engraver"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/78/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engraver"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

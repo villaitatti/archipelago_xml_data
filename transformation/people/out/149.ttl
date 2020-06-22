@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -13,6 +13,9 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1452"@en ;
         crm:P82b_end_of_the_end      "1493"@en .
+
+geonames:Innsbruck  a  crm:E53_Place ;
+        rdfs:label  "Innsbruck"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/birth/date>
         a                            crm:E52_Time-Span ;
@@ -31,19 +34,11 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/149/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/149/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Linz>
-        a           crm:E53_Place ;
-        rdfs:label  "Linz"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Innsbruck"@en .
+        crm:P7_took_place_at  geonames:Innsbruck .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Linz> .
+        crm:P7_took_place_at  geonames:Linz .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149>
         a                        crm:E39_Actor ;
@@ -58,6 +53,9 @@
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
+
+geonames:Linz  a    crm:E53_Place ;
+        rdfs:label  "Linz"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

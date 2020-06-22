@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,11 +11,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/50/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/50>
         a                        crm:E39_Actor ;
@@ -55,10 +51,6 @@
         rdfs:label            "Bishop of Cittanova"@en ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/50/activity/1/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
@@ -75,7 +67,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/50/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/50/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
@@ -86,6 +78,9 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Matteo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it , "3164603"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/50/title/1>
         a                crm:E35_Title ;

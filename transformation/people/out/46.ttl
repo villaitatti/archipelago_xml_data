@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,70 +9,60 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/3>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Historian"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/46/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1650-08-16"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/46/birth>
-        a                     crm:E67_Birth ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/1>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cosmographer"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/1/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Father"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Venice> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/2/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/3>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Historian"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/3/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
+<https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Vincenzo Maria"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Venice>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Cartographer"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/2/date> .
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/46/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Coronelli"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/46/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1650-08-16"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/2>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cartographer"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Cosmographer"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/actor/46/birth>
+        a                     crm:E67_Birth ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/birth/date> ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/46/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Father"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/46/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Vincenzo Maria"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/46/death>
+        a                     crm:E69_Death ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "3164603"@it , "3164603"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/46>
         a                        crm:E39_Actor ;
@@ -83,10 +73,3 @@
                 <https://archipelago.itatti.harvard.edu/resource/actor/46/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/46/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/activity/3/date>
-        a       crm:E52_Time-Span .
