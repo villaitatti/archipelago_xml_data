@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>164</ID_PERSON>
+	<Given_Name>Andrea</Given_Name>
+	<Surname>Gritti</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Doge</Title>
+	</Titles>
+	<Patronymic>Francesco</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Doge</Title>
+			<Start>1523</Start>
+			<End>1538</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Bardolino</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1455-04-17</Birth_Date_Earliest>
+	<Death_Date_Latest>1538-12-28</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

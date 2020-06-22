@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>168</ID_PERSON>
+	<Given_Name>Gian Pietro</Given_Name>
+	<Surname>Carafa</Surname>
+	<Alias>Pope Paul IV</Alias>
+	<Titles>
+		<Title>Pope</Title>
+	</Titles>
+	<Patronymic>Giovanni Antonio</Patronymic>
+	<Occupation>Theatine</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Cleric</Title>
+			<Start>1524</Start>
+			<End>1559</End>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Cardinal</Title>
+			<Start>1536</Start>
+			<End>1559</End>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Pope</Title>
+			<Start>1555</Start>
+			<End>1559</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Capriglia Irpina (Avellino)</Place_of_birth>
+	<Place_of_death>Rome</Place_of_death>
+	<Work_locations>
+		<Work_location>Rome</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1476-06-28</Birth_Date_Earliest>
+	<Death_Date_Latest>1559-08-18</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

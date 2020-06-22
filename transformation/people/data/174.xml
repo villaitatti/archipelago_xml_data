@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>174</ID_PERSON>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Polani</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Doge</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Doge</Title>
+			<Start>1130</Start>
+			<End>1148</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1098</Birth_Date_Earliest>
+	<Death_Date_Latest>1148</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>12th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>23</ID_PERSON>
+	<Given_Name>Jacopo</Given_Name>
+	<Surname>Tatti</Surname>
+	<Alias>Sansovino</Alias>
+	<Patronymic>Antonio</Patronymic>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Architect</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Sculptor</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Florence</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Florenze</Work_location>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1486-0-02</Birth_Date_Earliest>
+	<Death_Date_Latest>1570-11-27</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>161</ID_PERSON>
+	<Given_Name>Matthäus</Given_Name>
+	<Surname>Schinner</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Cardinal</Title>
+	</Titles>
+	<Patronymic>Peter</Patronymic>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Cardinal</Title>
+			<Start>1511</Start>
+			<End>1522</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Mühlebach</Place_of_birth>
+	<Place_of_death/>
+	<Birth_Date_Earliest>1465</Birth_Date_Earliest>
+	<Death_Date_Latest>1522-10-01</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>43</ID_PERSON>
+	<Given_Name>Giovanni</Given_Name>
+	<Surname>da Zon</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Architect</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Proto dei muratori at the Arsenale</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century>Entire century (0-99)</Fraction_Century>
+	<Notes>He was in contact with the Dominican friars of San Domenico di Castello in Venice. His body is buried in the church.</Notes>
+</ROW>

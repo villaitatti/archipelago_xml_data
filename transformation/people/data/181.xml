@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>181</ID_PERSON>
+	<Given_Name>Agostino</Given_Name>
+	<Surname>Correggio</Surname>
+	<Alias/>
+	<Patronymic>Orazio</Patronymic>
+	<Occupation>Nobleman since 1646</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Merchant</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Art collector with the brother Giovan Donato</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1604</Birth_Date_Earliest>
+	<Death_Date_Latest>1678</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

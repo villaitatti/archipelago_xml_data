@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>176</ID_PERSON>
+	<Given_Name>Alessandro</Given_Name>
+	<Surname>de Strigis</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Marquis</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Ambassador of the Duke of Mantua-Nevers, Carlo Gonzaga</Title>
+			<Start>-</Start>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1630</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>41</ID_PERSON>
+	<Given_Name>Domenico</Given_Name>
+	<Surname>Codagli</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Prior</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Dominican friar</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Prior of the monastery of San Secondo</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Writer</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Orzinuovi</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1562</Birth_Date_Earliest>
+	<Death_Date_Latest>1610</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

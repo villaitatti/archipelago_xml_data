@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>135</ID_PERSON>
+	<Given_Name>Alberico</Given_Name>
+	<Surname>Lottario</Surname>
+	<Alias>Bishop</Alias>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Bishop of Rimini</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

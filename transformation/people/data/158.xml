@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>158</ID_PERSON>
+	<Given_Name>Amedea</Given_Name>
+	<Surname>Palaiologos</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Queen</Title>
+	</Titles>
+	<Patronymic>Giangiacomo</Patronymic>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Queen of Cyprus</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

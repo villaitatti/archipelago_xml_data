@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>47</ID_PERSON>
+	<Given_Name>Angelo</Given_Name>
+	<Surname>Bragadin</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Bishop</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Dominican friar</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Prior of San Domenico di Castello</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Bishop of Vicenza</Title>
+			<Start>1550-03-17</Start>
+			<End>1560</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death>Vicenza</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+		<Work_location>Vicenza</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1560</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

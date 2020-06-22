@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>34</ID_PERSON>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Gella</Surname>
+	<Alias>Domenico Maria del Rosario</Alias>
+	<Titles>
+		<Title>Father</Title>
+	</Titles>
+	<Patronymic>Fabrizio</Patronymic>
+	<Occupation>Dominican friar</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Friar of San Secondo</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date>1663</Will_Date>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes>He was novizzo in the monastery of San Secondo. From his will we know that in the church there was an altar dedicated to the Madonna del Rosario.</Notes>
+</ROW>

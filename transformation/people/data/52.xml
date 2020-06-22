@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>52</ID_PERSON>
+	<Given_Name>Angelo</Given_Name>
+	<Surname>Baronio</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Bishop</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Vicario of the monastery of San Secondo</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Bishop of Cattaro</Title>
+			<Start>1604</Start>
+			<End>1611</End>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Bishop of Chioggia</Title>
+			<Start>1611</Start>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century>Turn of the century (90-10)</Fraction_Century>
+	<Notes/>
+</ROW>

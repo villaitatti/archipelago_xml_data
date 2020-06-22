@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>172</ID_PERSON>
+	<Given_Name>Alessandro</Given_Name>
+	<Surname>Pesaro</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Captain</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

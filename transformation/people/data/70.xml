@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>70</ID_PERSON>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Ruzzini</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Doge</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Doge of Venice</Title>
+			<Start>1732-06-02</Start>
+			<End>1735-01-05</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1653-11-11</Birth_Date_Earliest>
+	<Death_Date_Latest>1735-01-05</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

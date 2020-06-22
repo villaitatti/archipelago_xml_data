@@ -1,0 +1,34 @@
+@prefix geo:   <https://www.geonames.org/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/170>
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  "170"@it ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/170/surname> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/170/birth> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/170/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Vendramin"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/170/birth>
+        a                    crm:E67_Birth ;
+        crm:P97_from_father  <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a           crm:E21_Person ;
+        rdfs:label  "Luca"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>46</ID_PERSON>
+	<Given_Name>Vincenzo Maria</Given_Name>
+	<Surname>Coronelli</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Father</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Franciscan friar</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Cosmographer</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Cartographer</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Historian</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1650-08-16</Birth_Date_Earliest>
+	<Death_Date_Latest>1718-12-09</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+	<Notes/>
+</ROW>

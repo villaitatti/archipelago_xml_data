@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>143</ID_PERSON>
+	<Given_Name>Jacques</Given_Name>
+	<Surname>Duèze</Surname>
+	<Alias>Pope John XXII</Alias>
+	<Titles>
+		<Title>Pope</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Pope</Title>
+			<Start>1316</Start>
+			<End>1334</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Cahors</Place_of_birth>
+	<Place_of_death>Avignon</Place_of_death>
+	<Work_locations>
+		<Work_location>Avignon</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1249</Birth_Date_Earliest>
+	<Death_Date_Latest>1334-12-04</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>13th cent.</Century>
+	<Fraction_Century/>
+	<Notes>https://www.wikidata.org/wiki/Q165568</Notes>
+</ROW>

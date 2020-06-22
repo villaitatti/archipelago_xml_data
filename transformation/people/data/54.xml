@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>54</ID_PERSON>
+	<Given_Name>Raffaele</Given_Name>
+	<Surname>Riva</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Bishop</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Bishop of Curzola</Title>
+			<Start>1605-09-05</Start>
+			<End>1611-07-19</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1611-07-19</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

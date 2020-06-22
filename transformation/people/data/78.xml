@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>78</ID_PERSON>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Chevalier</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Engraver</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Corfù</Place_of_birth>
+	<Place_of_death>Padua</Place_of_death>
+	<Work_locations>
+		<Work_location>Trieste</Work_location>
+		<Work_location>Padua</Work_location>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1795</Birth_Date_Earliest>
+	<Death_Date_Latest>1864</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>19th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

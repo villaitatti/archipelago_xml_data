@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>61</ID_PERSON>
+	<Given_Name>Andrea</Given_Name>
+	<Surname>Tirali</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Architect</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Monselice (Padua)</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1657</Birth_Date_Earliest>
+	<Death_Date_Latest>1737-06-28</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

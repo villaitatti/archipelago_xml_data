@@ -1,0 +1,42 @@
+@prefix geo:   <https://www.geonames.org/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/110>
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/110/activity/1> ;
+        crm:P1_is_identified_by  "110"@it ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/110/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/110/given_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/110/activity/1/date>
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/110/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Andrea"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/110/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Pisani"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/110/activity/1>
+        a                     frbr:F51_Pursuit ;
+        rdfs:label            "Procurator of St. Mark de supra"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/110/activity/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .

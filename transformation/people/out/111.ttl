@@ -1,0 +1,90 @@
+@prefix geo:   <https://www.geonames.org/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/activity/2/date>
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Carafa della Spina"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/birth>
+        a                     crm:E67_Birth ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/111/birth/date> ;
+        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/activity/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1644"@en ;
+        crm:P82b_end_of_the_end      "1665"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
+        a           crm:E53_Place ;
+        rdfs:label  "Rome"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Bishop"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/activity/1>
+        a                     frbr:F51_Pursuit ;
+        rdfs:label            "Bishop of Aversa"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Carlo"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/death>
+        a                     crm:E69_Death ;
+        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Rome> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111>
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/1> ;
+        crm:P1_is_identified_by  "111"@it ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/111/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/111/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/111/given_name> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/111/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/111/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1611-04-21"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a           crm:E21_Person ;
+        rdfs:label  "Girolamo"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/Rome>
+        a           crm:E53_Place ;
+        rdfs:label  "Rome"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/activity/2>
+        a                     frbr:F51_Pursuit ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/2/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .

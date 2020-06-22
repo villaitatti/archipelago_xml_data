@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>38</ID_PERSON>
+	<Given_Name>Tommaso</Given_Name>
+	<Surname>Temanza</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Architect</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Writer</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Idraulic engineer</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>4</Id>
+			<Title>Art historian</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1705-03-05</Birth_Date_Earliest>
+	<Death_Date_Latest>1789-06-14</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Notes>He was the nephew of the architect Giovanni Antonio Scalfurotto.</Notes>
+</ROW>

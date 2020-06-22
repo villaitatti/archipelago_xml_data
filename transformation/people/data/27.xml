@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>27</ID_PERSON>
+	<Given_Name>Fabio</Given_Name>
+	<Surname>Chigi</Surname>
+	<Alias>Pope Alexander VII</Alias>
+	<Titles>
+		<Title>Pope</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Pope</Title>
+			<Start>1655</Start>
+			<End>1667</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Siena</Place_of_birth>
+	<Place_of_death>Rome</Place_of_death>
+	<Work_locations>
+		<Work_location>Rome</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1599-02-13</Birth_Date_Earliest>
+	<Death_Date_Latest>1667-05-22</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes>https://www.wikidata.org/wiki/Q127254</Notes>
+</ROW>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>148</ID_PERSON>
+	<Given_Name>Agostino</Given_Name>
+	<Surname>Barbarigo</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Doge</Title>
+	</Titles>
+	<Patronymic>Francesco</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Doge</Title>
+			<Start>1486</Start>
+			<End>1501</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1419-06-03</Birth_Date_Earliest>
+	<Death_Date_Latest>1501-09-20</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

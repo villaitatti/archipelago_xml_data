@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>152</ID_PERSON>
+	<Given_Name>Antonio</Given_Name>
+	<Surname>Muzzani</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Count</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Consigliere di Luogotenenza</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>19th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

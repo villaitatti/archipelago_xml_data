@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>149</ID_PERSON>
+	<Given_Name/>
+	<Surname>Frederick III</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Emperor of the Holy Roman Empire</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Holy Roman Emperor</Title>
+			<Start>1452</Start>
+			<End>1493</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Innsbruck</Place_of_birth>
+	<Place_of_death>Linz</Place_of_death>
+	<Birth_Date_Earliest>1415-09-21</Birth_Date_Earliest>
+	<Death_Date_Latest>1493-08-19</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

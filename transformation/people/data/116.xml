@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>116</ID_PERSON>
+	<Given_Name>Giovanni</Given_Name>
+	<Surname>Giustinian</Surname>
+	<Alias>Lorenzo Giustinian</Alias>
+	<Titles>
+		<Title>Saint</Title>
+	</Titles>
+	<Patronymic>Bernardo di Piero</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Patriarch of Venice</Title>
+			<Start>1451</Start>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1381</Birth_Date_Earliest>
+	<Death_Date_Latest>1456-01-08</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes>He mediated, along with the arcibishop Antonino Pierozzi from Florence, in the Peace of Lodi.He is buries in the church of San Pietro di Castello.</Notes>
+</ROW>

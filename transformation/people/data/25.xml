@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>25</ID_PERSON>
+	<Given_Name>Andrea</Given_Name>
+	<Surname>Bondumier</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Patriarch</Title>
+	</Titles>
+	<Patronymic>Marino</Patronymic>
+	<Occupation>Regular canon of Sant'Agostino</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Prior of Santo Spirito</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Venice's Patriarch</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1464</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes>Election as prior of the Augustinian community on December 15, 1425. Election as Venetian Patriarch on March 27, 1460. He is buried on the island of Santo Spirito</Notes>
+</ROW>

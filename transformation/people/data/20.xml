@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>20</ID_PERSON>
+	<Given_Name>Agostino</Given_Name>
+	<Surname>Museo</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Heremitan preacher</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Treviso</Place_of_birth>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1550</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes>Regular guest in the convent of the Lateran Canons of Santo Spirito.</Notes>
+</ROW>

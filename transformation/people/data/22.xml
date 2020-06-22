@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>22</ID_PERSON>
+	<Given_Name>Antonio</Given_Name>
+	<Surname>Visentini</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Architect</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Painter</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Engraver</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+		<Work_location>Vicenza</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1688-11-21</Birth_Date_Earliest>
+	<Death_Date_Latest>1782-06-26</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>18th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

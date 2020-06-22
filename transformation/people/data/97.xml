@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>97</ID_PERSON>
+	<Given_Name>Stefano</Given_Name>
+	<Surname>Codroipo</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Pubblico perito</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Proto of the Procuratori di Supra</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>18th cent.</Century>
+	<Fraction_Century>Entire century (0-99)</Fraction_Century>
+	<Notes/>
+</ROW>

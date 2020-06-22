@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>173</ID_PERSON>
+	<Given_Name>Sebastiano</Given_Name>
+	<Surname>Giustinian</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Captain</Title>
+		<Title>Knight</Title>
+	</Titles>
+	<Patronymic>Marino</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1459</Birth_Date_Earliest>
+	<Death_Date_Latest>1543-03-13</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

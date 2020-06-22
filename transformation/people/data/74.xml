@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>74</ID_PERSON>
+	<Given_Name>Enrico</Given_Name>
+	<Surname>Dandolo</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Patriarch</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Patriarch of Grado</Title>
+			<Start>1130</Start>
+			<End>1182</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest>1182</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>12th cent.</Century>
+	<Fraction_Century>Entire century (0-99)</Fraction_Century>
+	<Notes/>
+</ROW>

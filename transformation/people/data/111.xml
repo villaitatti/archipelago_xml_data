@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>111</ID_PERSON>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Carafa della Spina</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Bishop</Title>
+	</Titles>
+	<Patronymic>Girolamo</Patronymic>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Bishop of Aversa</Title>
+			<Start>1644</Start>
+			<End>1665</End>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title/>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Rome</Place_of_birth>
+	<Place_of_death>Rome</Place_of_death>
+	<Birth_Date_Earliest>1611-04-21</Birth_Date_Earliest>
+	<Death_Date_Latest>1680-10-19</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

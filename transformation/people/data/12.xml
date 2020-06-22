@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>12</ID_PERSON>
+	<Given_Name>Marina</Given_Name>
+	<Surname>Celsi</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Abbess</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Noblewoman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Abbess of the Benedictine convent of San Maffio di Murano</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Abbess of the Benedictine convent of Sant'Eufemia di Mazzorbo</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Abbess of the Benedictine convent of SS. Cosma e Damiano</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1432</Birth_Date_Earliest>
+	<Death_Date_Latest>1523</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Notes>She was the great-great-granddaughter of Doge Lorenzo Celsi.</Notes>
+</ROW>

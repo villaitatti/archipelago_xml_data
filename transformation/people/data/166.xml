@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>166</ID_PERSON>
+	<Given_Name>Francesco Maria</Given_Name>
+	<Surname>della Rovere</Surname>
+	<Alias>Francesco Maria I</Alias>
+	<Titles>
+		<Title>Duke</Title>
+	</Titles>
+	<Patronymic>Giovanni</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Duke of Urbino</Title>
+			<Start>1508</Start>
+			<End>1516</End>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Duke of Urbino</Title>
+			<Start>1521</Start>
+			<End>1538</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Senigallia</Place_of_birth>
+	<Place_of_death>Urbino</Place_of_death>
+	<Work_locations>
+		<Work_location>Urbino</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1490-03-22</Birth_Date_Earliest>
+	<Death_Date_Latest>1538-10-20</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>96</ID_PERSON>
+	<Given_Name>Bonaventura Maria</Given_Name>
+	<Surname>Valerio</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation>Theologian</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Observant friar of Santo Spirito</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>18th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

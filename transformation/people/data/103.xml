@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>103</ID_PERSON>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Alberti</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Perito alla Laguna</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>17th cent.</Century>
+	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+	<Notes>Perito Ordinario ai Beni Inculti, engineer, and proto alla laguna. He was active beween 1648 and 1689.</Notes>
+</ROW>

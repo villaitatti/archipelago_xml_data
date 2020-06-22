@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>155</ID_PERSON>
+	<Given_Name/>
+	<Surname>Fondo territoriale</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1852</Birth_Date_Earliest>
+	<Death_Date_Latest>1866</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>19th cent.</Century>
+	<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
+	<Notes/>
+</ROW>

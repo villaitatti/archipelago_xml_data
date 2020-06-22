@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>145</ID_PERSON>
+	<Given_Name>Gabriele</Given_Name>
+	<Surname>Condulmer</Surname>
+	<Alias>Pope Eugene IV</Alias>
+	<Titles>
+		<Title>Pope</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Canon Regular of San Giorgio in Alga</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>2</Id>
+			<Title>Prior of San Clemente</Title>
+			<Start/>
+			<End/>
+		</Activity>
+		<Activity>
+			<Id>3</Id>
+			<Title>Pope</Title>
+			<Start>1431</Start>
+			<End>1447</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Venice</Place_of_birth>
+	<Place_of_death>Rome</Place_of_death>
+	<Work_locations>
+		<Work_location>Venice</Work_location>
+		<Work_location>Rome</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1383</Birth_Date_Earliest>
+	<Death_Date_Latest>1447-02-23</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>14th cent.</Century>
+	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
+	<Notes>https://www.wikidata.org/wiki/Q167561</Notes>
+</ROW>

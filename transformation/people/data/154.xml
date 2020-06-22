@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>154</ID_PERSON>
+	<Given_Name>Angelo</Given_Name>
+	<Surname>Seguso</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Architect</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>19th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

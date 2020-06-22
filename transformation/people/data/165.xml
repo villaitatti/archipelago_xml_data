@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>165</ID_PERSON>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Sforza</Surname>
+	<Alias>Francesco II</Alias>
+	<Titles>
+		<Title>Duke</Title>
+	</Titles>
+	<Patronymic>Ludovico</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Duke of Milan</Title>
+			<Start>1515</Start>
+			<End>1535</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Milan</Place_of_birth>
+	<Place_of_death>Milan</Place_of_death>
+	<Work_locations>
+		<Work_location>Milan</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1495-02-04</Birth_Date_Earliest>
+	<Death_Date_Latest>1535-11-02</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

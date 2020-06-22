@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>114</ID_PERSON>
+	<Given_Name>Girolamo</Given_Name>
+	<Surname>da Santa Croce</Surname>
+	<Alias/>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Painter</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Santa Croce</Place_of_birth>
+	<Place_of_death>Venice</Place_of_death>
+	<Birth_Date_Earliest>1480 - 1485</Birth_Date_Earliest>
+	<Death_Date_Latest>1556</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

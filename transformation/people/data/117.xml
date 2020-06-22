@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>117</ID_PERSON>
+	<Given_Name>Alessandro</Given_Name>
+	<Surname>Farnese</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Cardinal</Title>
+	</Titles>
+	<Patronymic>Pier Luigi</Patronymic>
+	<Occupation>Nobleman</Occupation>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Cardinal</Title>
+			<Start>1534</Start>
+			<End>1589</End>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Castello Valentano (Tuscany)</Place_of_birth>
+	<Place_of_death>Rome</Place_of_death>
+	<Work_locations>
+		<Work_location>Rome</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest>1520-12-18</Birth_Date_Earliest>
+	<Death_Date_Latest>1589-03-02</Death_Date_Latest>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes/>
+</ROW>

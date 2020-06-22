@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>26</ID_PERSON>
+	<Given_Name>Filippo</Given_Name>
+	<Surname>Tron</Surname>
+	<Alias/>
+	<Titles>
+		<Title>Procurator</Title>
+	</Titles>
+	<Patronymic/>
+	<Occupation/>
+	<Activities>
+		<Activity>
+			<Id>1</Id>
+			<Title>Procurator of St. Mark de supra</Title>
+			<Start/>
+			<End/>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date>1566</Will_Date>
+	<Century>16th cent.</Century>
+	<Fraction_Century>Entire century (0-99)</Fraction_Century>
+	<Notes>His house was located near the rio della Zecca, at the corner with the Terranova warehouses.</Notes>
+</ROW>
