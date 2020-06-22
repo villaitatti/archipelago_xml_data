@@ -6,7 +6,7 @@
     <ROW MODID="193" RECORDID="4">
         <ID_SOURCE>1</ID_SOURCE>
         <Title>Bird&apos;s-eye-view of the island of Sant&apos;Andrea della Certosa</Title>
-        <Island>Sant&apos;Andrea della Certosa</Island>
+        <Island>La Certosa</Island>
         <Typology>Iconographic source</Typology>
         <Format>Drawing</Format>
         <Language>Italian</Language>
@@ -38,7 +38,7 @@
     <ROW MODID="168" RECORDID="5">
         <ID_SOURCE>2</ID_SOURCE>
         <Title>Rental contract for the vineyards in the island of Sant&apos;Andrea della Certosa</Title>
-        <Island>Sant&apos;Andrea della Certosa</Island>
+        <Island>La Certosa</Island>
         <Typology>Textual source</Typology>
         <Format>Rental contract</Format>
         <Language>Latin</Language>
@@ -70,7 +70,7 @@
     <ROW MODID="141" RECORDID="6">
         <ID_SOURCE>3</ID_SOURCE>
         <Title>Casa dell&apos;ortolano presso Sant&apos;Andrea della Certosa</Title>
-        <Island>Sant&apos;Andrea della Certosa</Island>
+        <Island>La Certosa</Island>
         <Typology>Textual source</Typology>
         <Format>Report (Perizia)</Format>
         <Language></Language>
@@ -134,7 +134,7 @@
     <ROW MODID="85" RECORDID="10">
         <ID_SOURCE>7</ID_SOURCE>
         <Title>Burial of Filippo Tron in the church of Sant&apos;Andrea della Certosa</Title>
-        <Island>Sant&apos;Andrea della Certosa</Island>
+        <Island>La Certosa</Island>
         <Typology>Textual source</Typology>
         <Format>Will</Format>
         <Language>Italian</Language>
