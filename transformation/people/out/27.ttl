@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -22,7 +22,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/27/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3166548 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/given_name>
         a                crm:E41_Appellation ;
@@ -44,9 +44,8 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/27/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Siena"@en .
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "3169070"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/surname>
         a                crm:E41_Appellation ;
@@ -56,6 +55,9 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1599-02-13"@en .
+
+geonames:3166548  a  crm:E53_Place ;
+        rdfs:label  "3166548"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -71,11 +73,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Rome> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Rome>
-        a           crm:E53_Place ;
-        rdfs:label  "Rome"@it .
+        crm:P7_took_place_at  geonames:3169070 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27biography>
         a                crm:E73_Information_Object ;

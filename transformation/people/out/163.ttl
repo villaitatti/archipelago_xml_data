@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -18,10 +18,6 @@
         rdfs:label       "Egidio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Rome>
-        a           crm:E53_Place ;
-        rdfs:label  "Rome"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/163/title/1>
         a                crm:E35_Title ;
         rdfs:label       "Cardinal and Bishop"@en ;
@@ -31,6 +27,9 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1523"@en ;
         crm:P82b_end_of_the_end      "1532"@en .
+
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "3169070"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163>
         a                        crm:E39_Actor ;
@@ -54,21 +53,13 @@
         a           crm:E41_Appellation ;
         rdfs:label  "Giles of Viterbo"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Viterbo"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/3>
-        a                     frbr:F51_Pursuit ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/3/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/163/activity/3/date>
-        a       crm:E52_Time-Span .
+        a       frbr:F51_Pursuit .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/163/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  geonames:3164039 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/2>
@@ -78,7 +69,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Rome> .
+        crm:P7_took_place_at  geonames:3169070 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -88,6 +79,9 @@
         a                     frbr:F51_Pursuit ;
         rdfs:label            "Cardinal"@en ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/1/date> .
+
+geonames:3164039  a  crm:E53_Place ;
+        rdfs:label  "3164039"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a           crm:E21_Person ;

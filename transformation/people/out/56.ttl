@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -19,28 +19,20 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Publisher"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Publisher"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/56/activity/1/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/56/activity/2/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Bassano del Grappa"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/56/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/56/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3182297 .
+
+geonames:3182297  a  crm:E53_Place ;
+        rdfs:label  "3182297"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/Biography>
         a       crm:E55_Type .
@@ -55,9 +47,8 @@
                 <https://archipelago.itatti.harvard.edu/resource/actor/56/birth> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Printer"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/2/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Printer"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/given_name>
         a                crm:E41_Appellation ;

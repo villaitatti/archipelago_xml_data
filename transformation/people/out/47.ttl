@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -21,15 +21,11 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/47/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Vicenza> .
+        crm:P7_took_place_at  geonames:3164419 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Vicenza>
-        a           crm:E53_Place ;
-        rdfs:label  "Vicenza"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/2>
         a                     frbr:F51_Pursuit ;
@@ -48,6 +44,9 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+geonames:3164419  a  crm:E53_Place ;
+        rdfs:label  "3164419"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/47/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Bragadin"@it ;
@@ -57,15 +56,11 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/47/activity/1/date>
-        a       crm:E52_Time-Span .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/47/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Angelo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Prior of San Domenico di Castello"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Prior of San Domenico di Castello"@en .

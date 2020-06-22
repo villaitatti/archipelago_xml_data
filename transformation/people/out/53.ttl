@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,7 +11,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Capodistria> .
+        crm:P7_took_place_at  geonames:Capodistria .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/3>
         a                     frbr:F51_Pursuit ;
@@ -45,26 +45,21 @@
         crm:P82a_begin_of_the_begin  "1600-05-15"@en ;
         crm:P82b_end_of_the_end      "1619-10-9"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Capodistria>
-        a           crm:E53_Place ;
-        rdfs:label  "Capodistria"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Vicario of the monastery of San Pietro Martire di Murano"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/2/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Vicario of the monastery of San Pietro Martire di Murano"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1597-09-01"@en ;
         crm:P82b_end_of_the_end      "1598-06-01"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/2/date>
-        a       crm:E52_Time-Span .
+geonames:Capodistria  a  crm:E53_Place ;
+        rdfs:label  "Capodistria"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/given_name>
         a                crm:E41_Appellation ;

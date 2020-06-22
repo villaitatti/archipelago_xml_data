@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -30,10 +30,6 @@
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/141/birth> .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Ferrara"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/141/activity/2/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1311"@en .
@@ -50,12 +46,15 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141/birth>
         a                     crm:E67_Birth ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3177090 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141/activity/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1296"@en ;
         crm:P82b_end_of_the_end      "1311"@en .
+
+geonames:3177090  a  crm:E53_Place ;
+        rdfs:label  "3177090"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

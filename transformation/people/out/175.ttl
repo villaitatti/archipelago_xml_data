@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -18,10 +18,6 @@
         rdfs:label       "Roger"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Avignon>
-        a           crm:E53_Place ;
-        rdfs:label  "Avignon"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -31,23 +27,26 @@
         rdfs:label            "Pope"@en ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/175/activity/1/date> .
 
+geonames:Avignon  a  crm:E53_Place ;
+        rdfs:label  "Avignon"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/175/alias>
         a           crm:E41_Appellation ;
         rdfs:label  "Pope Clement VI"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Rosiers-d'Égletons"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/175/title/1>
         a                crm:E35_Title ;
         rdfs:label       "Pope"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
+<https://www.geonames.org/Rosiers-d%27%C3%89gletons>
+        a           crm:E53_Place ;
+        rdfs:label  "Rosiers-d'Égletons"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/175/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/175/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  <https://www.geonames.org/Rosiers-d%27%C3%89gletons> ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
@@ -66,7 +65,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/175/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Avignon> .
+        crm:P7_took_place_at  geonames:Avignon .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/175/activity/1/date>
         a                            crm:E52_Time-Span ;

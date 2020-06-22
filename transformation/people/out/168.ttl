@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -27,14 +27,13 @@
         crm:P82a_begin_of_the_begin  "1524"@en ;
         crm:P82b_end_of_the_end      "1559"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Rome>
-        a           crm:E53_Place ;
-        rdfs:label  "Rome"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/2/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1536"@en ;
         crm:P82b_end_of_the_end      "1559"@en .
+
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "3169070"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -45,14 +44,14 @@
         rdfs:label       "Gian Pietro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Capriglia Irpina (Avellino)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/168/title/1>
         a                crm:E35_Title ;
         rdfs:label       "Pope"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://www.geonames.org/Capriglia%20Irpina%20%28Avellino%29>
+        a           crm:E53_Place ;
+        rdfs:label  "Capriglia Irpina (Avellino)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168>
         a                        crm:E39_Actor ;
@@ -67,12 +66,12 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/168/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/168/birth/date> ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> ;
+        crm:P7_took_place_at  <https://www.geonames.org/Capriglia%20Irpina%20%28Avellino%29> ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/type/Rome> .
+        crm:P7_took_place_at  geonames:3169070 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/birth/date>
         a                            crm:E52_Time-Span ;

@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -14,9 +14,8 @@
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/39/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Construction worker"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/39/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Construction worker"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/39/surname>
         a                crm:E41_Appellation ;
@@ -28,9 +27,6 @@
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/39/activity/1> ;
         crm:P1_is_identified_by  "39"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/39/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/39/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/39/activity/1/date>
-        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

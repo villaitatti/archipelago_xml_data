@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,9 +8,6 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/136/activity/1/date>
-        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/136/surname>
         a                crm:E41_Appellation ;
@@ -22,9 +19,8 @@
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/136/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Widow of Leone da Selva di Boggion"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/136/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Widow of Leone da Selva di Boggion"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/136>
         a                        crm:E39_Actor ;

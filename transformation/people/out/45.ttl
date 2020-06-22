@@ -1,5 +1,5 @@
-@prefix geo:   <https://www.geonames.org/> .
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -15,21 +15,16 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Landowner"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1/date> .
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Landowner"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__>
-        a           crm:E53_Place ;
-        rdfs:label  "Villanova"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth>
         a                     crm:E67_Birth ;
-        crm:P7_took_place_at  <https://archipelago.itatti.harvard.edu/resource/place/__PLACEHOLDER__> .
+        crm:P7_took_place_at  geonames:3164175 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45>
         a                        crm:E39_Actor ;
@@ -39,8 +34,8 @@
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1/date>
-        a       crm:E52_Time-Span .
+geonames:3164175  a  crm:E53_Place ;
+        rdfs:label  "3164175"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name>
         a                crm:E41_Appellation ;
