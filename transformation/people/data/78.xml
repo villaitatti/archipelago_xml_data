@@ -15,11 +15,11 @@
 		</Activity>
 	</Activities>
 	<Place_of_birth>Corfù</Place_of_birth>
-	<Place_of_death>Padua</Place_of_death>
+	<Place_of_death>3171728</Place_of_death>
 	<Work_locations>
-		<Work_location>Trieste</Work_location>
-		<Work_location>Padua</Work_location>
-		<Work_location>Venice</Work_location>
+		<Work_location>3165185</Work_location>
+		<Work_location>3171728</Work_location>
+		<Work_location>3164603</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1795</Birth_Date_Earliest>
 	<Death_Date_Latest>1864</Death_Date_Latest>
