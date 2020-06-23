@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>47</ID_EVENT>
+	<Name_Event>Construction of a powderhouse</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Construction</Subtypology>
+	<Synopsis>After the fire in the Arsenal, the Senate decides to locate some powderhouses on the islands of the lagoon. The first one to be built is in San Secondo.</Synopsis>
+	<Century>16th cent.</Century>
+	<Fraction_century>Third quarter of the century (50-74)</Fraction_century>
+	<Date_Earliest>1570-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

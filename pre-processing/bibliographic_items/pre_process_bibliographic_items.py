@@ -13,10 +13,10 @@ geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.
 
 
 def write_file(text):
-    output_directory = os.path.join(dir_path)
+    output_directory = os.path.join(dir_path, '../..', 'transformation/bibliographic_items/' ,'data')
     if not os.path.isdir(output_directory):
         os.mkdir(output_directory)
-    output_filename = os.path.join(output_directory, 'Bibliographic_Items_processed.xml')
+    output_filename = os.path.join(output_directory, f'{row_id}.xml')
     with open(output_filename, 'w') as f:
         f.write(text)
 
@@ -60,7 +60,7 @@ tags = root.findall(f'ns:{keys["row"]}', ns)
 
 doc = md.Document()
 
-new_document_root = et.Element('FMPDSORESULT', ns)
+#new_document_root = et.Element('FMPDSORESULT', ns)
 
 # Iterate each ROW
 for row in tags:
@@ -93,9 +93,9 @@ for row in tags:
     # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
     date = et.SubElement(new_row, keys["date"])
     date_raw = row.find(f'ns:{keys["date"]}', ns).text
-    print(f"Raw: {date_raw}")
+    #print(f"Raw: {date_raw}")
     date_clean = dateutil.parser.parse(date_raw).strftime("%m-%d-%YT%H:%M:%S")
-    print(f"Clean: {date_clean}")
+    #print(f"Clean: {date_clean}")
     date.text = date_clean
 
     # City
@@ -109,9 +109,8 @@ for row in tags:
     city = et.SubElement(new_row, keys["city"])
     city.text = city_geoname_id
 
-    new_document_root.append(new_row)
 
-
-final = md.parseString(et.tostring(new_document_root, method='xml')).toprettyxml()
-write_file(final)
+    #new_document_root.append(new_row)
+    final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
+    write_file(final)
 print("Done.")

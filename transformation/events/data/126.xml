@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>126</ID_EVENT>
+	<Name_Event>The monastery is enlarged and enriched with a new cloister</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Enlargment</Subtypology>
+	<Synopsis>The monastery is enlarged to house 17 new canons. A new cloister on two levels with arcades and marble columns is built.</Synopsis>
+	<Century>15th cent.</Century>
+	<Fraction_century>Last quarter of the century (75-99)</Fraction_century>
+	<Date_Earliest>1475-01-01T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>125</ID_EVENT>
+	<Name_Event>Significant renovation works to the romanic church</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Renovation</Subtypology>
+	<Synopsis>The works focused on the main facade. Father Davide Maria da Portogruaro attributed the works to the Lombardo family.</Synopsis>
+	<Century>15th cent.</Century>
+	<Fraction_century>End of the century (90-99)</Fraction_century>
+	<Date_Earliest>1490-01-01T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

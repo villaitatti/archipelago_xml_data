@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>13</ID_EVENT>
+	<Name_Event>Restoration of the public shelter for boats</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Restoration</Subtypology>
+	<Synopsis>The Senate imposes the reconstruction of the public cavana located in the island.</Synopsis>
+	<Century>17th cent.</Century>
+	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
+	<Date_Earliest>1631-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

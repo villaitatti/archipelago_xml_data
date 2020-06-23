@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_SOURCE>20</ID_SOURCE>
+	<Title>The island of San Francesco del Deserto</Title>
+	<Island>San Francesco del Deserto</Island>
+	<Typology>Iconographic source</Typology>
+	<Format>Print</Format>
+	<Language>Italian</Language>
+	<Author_Surname_Name>Coronelli, Vincenzo Maria</Author_Surname_Name>
+	<Role_Author>Cartographer and engraver</Role_Author>
+	<Original_Title>Isola di San Francesco del Deserto</Original_Title>
+	<Century>17th cent.</Century>
+	<Fraction_Century>End of the century (90-99)</Fraction_Century>
+	<Collection>Biblioteca Nazionale Marciana</Collection>
+	<Acronym>BNM</Acronym>
+	<Fondo/>
+	<Busta>285.c.17</Busta>
+	<Filza/>
+	<Title_Filza>V.M. Coronelli, Isolario dell'Atlante Veneto, 1697</Title_Filza>
+	<Folio>f. 36r</Folio>
+	<Drawing/>
+	<Location/>
+	<Medium>Engraving</Medium>
+	<Dimensions/>
+	<Synopsis/>
+	<Trascription>Isola di San Francesco del Deserto.
+Laguna di Venetia.</Trascription>
+	<Date_Earliest>1697-01-01T00:00:00</Date_Earliest>
+	<Date_Latest/>
+	<Island>12172565</Island>
+</ROW>

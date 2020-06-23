@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>56</ID_EVENT>
+	<Name_Event>The gunpowder preserved in the powderhouse is removed</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Transfer (goods)</Subtypology>
+	<Synopsis>After the petition presented by the Dominican Friars to the Senate, the gunpowder in the torresin da polvere is replaced by sulphur.</Synopsis>
+	<Century>18th cent.</Century>
+	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
+	<Date_Earliest>1734-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

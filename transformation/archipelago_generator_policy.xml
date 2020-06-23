@@ -202,6 +202,7 @@
 
 	<!-- Source -->
 
+
 	<!-- Bibliographic Item -->
 	<generator name="80000-bibliographic_item" prefix="arc">
 		<pattern>bibliographic_item/{bibliographic_item-id}</pattern>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>8</ID_EVENT>
+	<Name_Event>The island is used as lazzaretto</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Adaptive reuse (i.e. lazaretto)</Subtypology>
+	<Synopsis>The Dominican friars are removed and transferred to the monastery of San Domenico di Castello. The island is transformed into a lazzaretto for people infected with plague. The friars' goods are moved to the library and the chapel of the Cross or to the church of San Giobbe in Venice.</Synopsis>
+	<Century>16th cent.</Century>
+	<Fraction_century>Last quarter of the century (75-99)</Fraction_century>
+	<Date_Earliest>1576-03-23T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

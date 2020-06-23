@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>19</ID_EVENT>
+	<Name_Event>Restoration of the church's interior</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Restoration</Subtypology>
+	<Synopsis>The interior of the church is completely demolished. A new choir and a pendentive dome are constructed by the murer Angelo Garavan under the supervision of the architect Baldassare Longhena.</Synopsis>
+	<Century>17th cent.</Century>
+	<Fraction_century>Third quarter of the century (50-74)</Fraction_century>
+	<Date_Earliest>1672-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

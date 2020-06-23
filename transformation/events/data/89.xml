@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>89</ID_EVENT>
+	<Name_Event>Construction of a new dormitory</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Construction</Subtypology>
+	<Synopsis/>
+	<Century>16th cent.</Century>
+	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
+	<Date_Earliest>1518-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

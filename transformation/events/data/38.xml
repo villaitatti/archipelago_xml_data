@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>38</ID_EVENT>
+	<Name_Event>Reconstruction of the loggia</Name_Event>
+	<Typology>Architectural</Typology>
+	<Subtypology>Construction</Subtypology>
+	<Synopsis>The loggia facing the garden of the friars is reconstructed following the design provided by friar Alessandro Malerba.</Synopsis>
+	<Century>17th cent.</Century>
+	<Fraction_century>Beginning of the century (0-10)</Fraction_century>
+	<Date_Earliest>1607-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

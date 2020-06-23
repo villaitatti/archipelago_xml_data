@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>111</ID_EVENT>
+	<Name_Event>Alberico Lottario, Bishop of Rimini, donates to the canons the church of San Giacomo in Rimini, alongside its properties</Name_Event>
+	<Typology>Economic</Typology>
+	<Subtypology>Donation</Subtypology>
+	<Synopsis>Every year, the church of San Giacomo must donate a pound (libbra) of pepper, a pound of incense, and, on the fest of the saint, half of the lamn donated to the church.</Synopsis>
+	<Century>12th cent.</Century>
+	<Fraction_century>Third quarter of the century (50-74)</Fraction_century>
+	<Date_Earliest>1173-01-10T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

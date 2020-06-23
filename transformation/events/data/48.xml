@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>48</ID_EVENT>
+	<Name_Event>The Dominican Friars return to the island</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Religious order's transfer</Subtypology>
+	<Synopsis>Following the restoration of the several island's places (buildings, gardens, and orchards) damaged during the plague, the Friars take again possession of their monastery.</Synopsis>
+	<Century>16th cent.</Century>
+	<Fraction_century>Last quarter of the century (75-99)</Fraction_century>
+	<Date_Earliest>1577-05-16T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

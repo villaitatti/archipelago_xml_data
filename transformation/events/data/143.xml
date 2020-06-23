@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>143</ID_EVENT>
+	<Name_Event>The Cardinal Schinner is received by the Doge Loredan in the island</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Visit of state</Subtypology>
+	<Synopsis/>
+	<Century>16th cent.</Century>
+	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
+	<Date_Earliest>1512-03-26T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

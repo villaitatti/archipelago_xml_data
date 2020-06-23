@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>77</ID_EVENT>
+	<Name_Event>The island passes to the Lateran Canons of Santa Maria della Carità</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Religious order's transfer</Subtypology>
+	<Synopsis>Pope Eugene IV joins the monastery of San Clemente to that of Santa Maria della Carità.</Synopsis>
+	<Century>15th cent.</Century>
+	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
+	<Date_Earliest>1432-12-02T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

@@ -13,10 +13,10 @@ geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.
 
 
 def write_file(text):
-    output_directory = os.path.join(dir_path)
+    output_directory = os.path.join(dir_path, '../..', 'transformation/sources/' ,'data')
     if not os.path.isdir(output_directory):
         os.mkdir(output_directory)
-    output_filename = os.path.join(output_directory, 'Sources_processed.xml')
+    output_filename = os.path.join(output_directory, f'{row_id}.xml')
     with open(output_filename, 'w') as f:
         f.write(text)
 
@@ -79,7 +79,7 @@ tags = root.findall(f'ns:{keys["row"]}', ns)
 
 doc = md.Document()
 
-new_document_root = et.Element('FMPDSORESULT', ns)
+#new_document_root = et.Element('FMPDSORESULT', ns)
 
 # Iterate each ROW
 for row in tags:
@@ -158,9 +158,7 @@ for row in tags:
     island = et.SubElement(new_row, keys["island"])
     island.text = isl_geoname_id
 
-    new_document_root.append(new_row)
-
-
-final = md.parseString(et.tostring(new_document_root, method='xml')).toprettyxml()
-write_file(final)
+    #new_document_root.append(new_row)
+    final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
+    write_file(final)
 print("Done.")

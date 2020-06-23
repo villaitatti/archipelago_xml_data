@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_SOURCE>143</ID_SOURCE>
+	<Title>The Lagoon of Venice</Title>
+	<Island>Lagoon</Island>
+	<Typology>Iconographic source</Typology>
+	<Format>Drawing</Format>
+	<Language>French</Language>
+	<Author_Surname_Name>de Comminelles, Hugues</Author_Surname_Name>
+	<Role_Author>Illustrator</Role_Author>
+	<Original_Title>Venetia from Claudius Ptolomaeus, Cosmographia</Original_Title>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Collection>Bibliothèque nationale de France</Collection>
+	<Acronym>BNF</Acronym>
+	<Fondo/>
+	<Busta>ms. Latino 4802</Busta>
+	<Filza/>
+	<Title_Filza/>
+	<Folio>f. 132r</Folio>
+	<Drawing/>
+	<Location/>
+	<Medium>Watercolor and ink on parchment</Medium>
+	<Dimensions>540x415 mm</Dimensions>
+	<Synopsis>From Gallica: https://gallica.bnf.fr/ark:/12148/btv1b8454687p/f1.planchecontact.r=cosmographia%204802</Synopsis>
+	<Trascription/>
+	<Date_Earliest>1470-01-01T00:00:00</Date_Earliest>
+	<Date_Latest/>
+	<Island>12172719</Island>
+</ROW>

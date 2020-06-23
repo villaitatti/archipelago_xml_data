@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>80</ID_EVENT>
+	<Name_Event>The Camaldolese monks move temporarily to the island</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Religious order's transfer</Subtypology>
+	<Synopsis>The Camaldolese monks of San Michele di Murano arrived in San Secondo but the Council of Ten forces the nuns to come back to their original island.</Synopsis>
+	<Century>16th cent.</Century>
+	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
+	<Date_Earliest>1524-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

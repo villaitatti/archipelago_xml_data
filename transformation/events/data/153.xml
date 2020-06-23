@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>153</ID_EVENT>
+	<Name_Event>The island is administered by the Papacy</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Regime change</Subtypology>
+	<Synopsis>In 1357, the Pope elected Franchino da Bologna as new prior.</Synopsis>
+	<Century>14th cent.</Century>
+	<Fraction_century>Mid-century (40-60)</Fraction_century>
+	<Date_Earliest>1344-02-15T00:00:00</Date_Earliest>
+	<Island>3168468</Island>
+</ROW>

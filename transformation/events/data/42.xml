@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>42</ID_EVENT>
+	<Name_Event>Donations to the Benedectine nuns</Name_Event>
+	<Typology>Economic</Typology>
+	<Subtypology>Donation</Subtypology>
+	<Synopsis>The Benedictine nuns were donated some fields in the Trevigiano area because of the poor economic conditions of their convent.</Synopsis>
+	<Century>11th cent.</Century>
+	<Fraction_century>End of the century (90-99)</Fraction_century>
+	<Date_Earliest>1099-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

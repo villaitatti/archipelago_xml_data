@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>44</ID_EVENT>
+	<Name_Event>The Benedictine nuns move to the Giudecca bringing the relics of the saint</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Religious order's transfer</Subtypology>
+	<Synopsis>The nuns move to the convent of Santi Cosma e Damiano and bring with them the body of San Secondo.</Synopsis>
+	<Century>16th cent.</Century>
+	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
+	<Date_Earliest>1524-01-01T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>

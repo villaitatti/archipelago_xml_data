@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_EVENT>39</ID_EVENT>
+	<Name_Event>Consecration of the new church</Name_Event>
+	<Typology>Social</Typology>
+	<Subtypology>Consecration</Subtypology>
+	<Synopsis>After the massive restoration campaign started in 1563, the new church of San Secondo is consecrated.</Synopsis>
+	<Century>17th cent.</Century>
+	<Fraction_century>Beginning of the century (0-10)</Fraction_century>
+	<Date_Earliest>1608-08-06T00:00:00</Date_Earliest>
+	<Island>3230839</Island>
+</ROW>
