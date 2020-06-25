@@ -94,10 +94,11 @@ for row in tags:
     # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
     date = et.SubElement(new_row, keys["date"])
     date_raw = row.find(f'ns:{keys["date"]}', ns).text
-    #print(f"Raw: {date_raw}")
-    date_clean = dateutil.parser.parse(date_raw).strftime("%m-%d-%YT%H:%M:%S")
-    #print(f"Clean: {date_clean}")
-    date.text = date_clean
+    if len(date_raw) == 4:
+        date.text = dateutil.parser.parse(f'1 January {date_raw}').strftime("%m-%d-%YT%H:%M:%S")
+    else:
+        date_clean = dateutil.parser.parse(date_raw).strftime("%m-%d-%YT%H:%M:%S")
+        date.text = date_clean
 
     # City
     city_found = row.find(f'ns:{keys["city"]}', ns).text
@@ -124,7 +125,6 @@ for row in tags:
             date.text = v["Date"]
             pages = et.SubElement(event, "Pages")
             pages.text = v["Pages"]
-            print(row_id)
 
     #new_document_root.append(new_row)
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
