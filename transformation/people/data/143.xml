@@ -29,4 +29,11 @@
 	<Century>13th cent.</Century>
 	<Fraction_Century/>
 	<Notes>https://www.wikidata.org/wiki/Q165568</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>119</ID_EVENT>
+			<Role>Pope John XXII</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

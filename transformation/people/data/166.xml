@@ -35,4 +35,11 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>146</ID_EVENT>
+			<Role>Guest</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

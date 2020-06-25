@@ -9,4 +9,38 @@
 	<Fraction_century>Third quarter of the century (50-74)</Fraction_century>
 	<Date_Earliest>1563-06-11T00:00:00</Date_Earliest>
 	<Island>3230839</Island>
+	<People>
+		<Person>
+			<ID_PERSON>43</ID_PERSON>
+			<Role>Architect</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>42</ID_PERSON>
+			<Role>Patrons</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0020</ID_BIBLIOGRAPHY>
+			<Date>December 1971</Date>
+			<Pages>I, p. 295</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0007</ID_BIBLIOGRAPHY>
+			<Date>2007</Date>
+			<Pages>p. 48</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>15</ID_PLACE>
+			<Date>1697</Date>
+		</Place>
+	</Places>
+	<Sources>
+		<Source>
+			<ID_SOURCE>80</ID_SOURCE>
+			<Event>Beginning of the restoration of the Dominican monastery</Event>
+		</Source>
+	</Sources>
 </ROW>

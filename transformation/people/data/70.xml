@@ -29,4 +29,17 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>57</ID_EVENT>
+			<Role>Wittness</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Carlo</Name>
+			<Surname>Ruzzini</Surname>
+		</Source>
+	</Sources>
 </ROW>

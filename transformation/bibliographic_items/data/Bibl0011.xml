@@ -15,6 +15,23 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>History of the island of San Secondo</Subject>
-	<Date>06-22-1609T00:00:00</Date>
+	<Date>06-25-1609T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>48</ID_EVENT>
+			<Date>1609</Date>
+			<Pages>pp. 35v-36r</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>8</ID_EVENT>
+			<Date>1609</Date>
+			<Pages>cc. 34v-35r</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>49</ID_EVENT>
+			<Date>1609</Date>
+			<Pages>cc. 36v-37r</Pages>
+		</Event>
+	</Events>
 </ROW>

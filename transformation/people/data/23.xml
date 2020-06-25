@@ -33,4 +33,17 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>25</ID_EVENT>
+			<Role>Architect involved in the church's restoration</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Jacopo</Name>
+			<Surname>Tatti</Surname>
+		</Source>
+	</Sources>
 </ROW>

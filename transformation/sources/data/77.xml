@@ -27,4 +27,11 @@
 	<Date_Earliest>1852-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>86</ID_EVENT>
+			<Event>Reshape of the island into an octagon</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

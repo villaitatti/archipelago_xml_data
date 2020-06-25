@@ -27,4 +27,47 @@
 	<Date_Earliest>1644-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3168468</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>164</ID_EVENT>
+			<Event>Francesco Lazzaroni together with other Venetians noblemen mediates between the Lateran Canons of Carità and the Camaldolese monks of Monte Rua for the island's sale</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>178</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>182</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>183</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>181</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>189</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>184</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>102</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

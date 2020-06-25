@@ -27,4 +27,17 @@
 	<Date_Earliest>1767-01-07T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>7910746</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>73</ID_EVENT>
+			<Event>Partial ruin of the dock</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>92</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

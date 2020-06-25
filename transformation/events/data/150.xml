@@ -9,4 +9,24 @@
 	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
 	<Date_Earliest>1523-09-20T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>173</ID_PERSON>
+			<Role>Recovered person</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1980</Date>
+			<Pages>p. 25</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0044</ID_BIBLIOGRAPHY>
+			<Date>1969-1979</Date>
+			<Pages>t. XXXIV, col. 433, 456</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

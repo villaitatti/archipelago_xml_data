@@ -15,6 +15,53 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject/>
-	<Date>06-22-1969T00:00:00</Date>
+	<Date>06-25-1969T00:00:00</Date>
 	<City>3181928</City>
+	<Events>
+		<Event>
+			<ID_EVENT>142</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. II, col. 529-530</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>143</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. XIV, col. 53-56</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>144</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. LIV, col. 7, 22, 37, 43</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>145</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. LIV, col. 1, 22, 37, 43</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>146</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. LVI, col. 160-161</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>147</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. XLV, col. 343 ; t. XLVI, col. 333</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>148</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. XXXIII, col. 258</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>149</ID_EVENT>
+			<Date>2018</Date>
+			<Pages>t. XXXIII, col. 328</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>150</ID_EVENT>
+			<Date>1969-1979</Date>
+			<Pages>t. XXXIV, col. 433, 456</Pages>
+		</Event>
+	</Events>
 </ROW>

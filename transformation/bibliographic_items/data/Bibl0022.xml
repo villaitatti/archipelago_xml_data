@@ -15,6 +15,78 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>San Clemente ; History</Subject>
-	<Date>06-22-1995T00:00:00</Date>
+	<Date>06-25-1995T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Date>1758</Date>
+			<Pages>p. 17</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>77</ID_EVENT>
+			<Date>1995</Date>
+			<Pages/>
+		</Event>
+		<Event>
+			<ID_EVENT>96</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 4</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>97</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 4</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>98</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>99</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>pp. 6-7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>100</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>101</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>102</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>103</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>104</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>pp. 8-10</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>106</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>pp. 11-12</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>107</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>p. 12</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>108</ID_EVENT>
+			<Date>1995</Date>
+			<Pages>pp. 14-15</Pages>
+		</Event>
+	</Events>
 </ROW>

@@ -23,4 +23,11 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>155</ID_EVENT>
+			<Role>Carpenter infected</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

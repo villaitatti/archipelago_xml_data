@@ -9,4 +9,22 @@
 	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
 	<Date_Earliest>1719-02-22T00:00:00</Date_Earliest>
 	<Island>7910746</Island>
+	<People>
+		<Person>
+			<ID_PERSON>93</ID_PERSON>
+			<Role>Secretary of the monastery who reported the petition</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>94</ID_PERSON>
+			<Role>Office in charge of the new scuola</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items/>
+	<Places/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>119</ID_SOURCE>
+			<Event>Establishment of the Scuola di San Diego within the church</Event>
+		</Source>
+	</Sources>
 </ROW>

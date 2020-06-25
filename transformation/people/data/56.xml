@@ -32,4 +32,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes>He moved to Venice in 1755. His shop was in via Mercatoria &quot;vulgo dicta dell'Orologio&quot;. He was the uncle of Luigi Schiavonetti on his mother's side, who sent him from London contemporary English prints for sale in Venice.</Notes>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>17</ID_SOURCE>
+			<Name>Cherubino</Name>
+			<Surname>Zeli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>38</ID_SOURCE>
+			<Name>Teodoro</Name>
+			<Surname>Viero</Surname>
+		</Source>
+	</Sources>
 </ROW>

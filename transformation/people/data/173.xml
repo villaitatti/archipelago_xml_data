@@ -22,4 +22,11 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>150</ID_EVENT>
+			<Role>Recovered person</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

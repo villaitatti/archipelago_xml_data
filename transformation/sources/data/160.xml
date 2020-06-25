@@ -27,4 +27,17 @@
 	<Date_Earliest>1645-07-25T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3168468</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>159</ID_EVENT>
+			<Event>According to descriptions, the island is in a state of disrepair and the Lateran Canons cannot live in there</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>102</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

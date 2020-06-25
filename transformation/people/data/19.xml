@@ -26,4 +26,27 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>19</ID_EVENT>
+			<Role>Construction worker</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Angelo</Name>
+			<Surname>Garavan</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>84</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>90</ID_SOURCE>
+			<Name>Angelo</Name>
+			<Surname>Gavan</Surname>
+		</Source>
+	</Sources>
 </ROW>

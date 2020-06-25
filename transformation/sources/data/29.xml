@@ -27,4 +27,11 @@
 	<Date_Earliest/>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>15</ID_EVENT>
+			<Event>Foundation of the church and convent</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

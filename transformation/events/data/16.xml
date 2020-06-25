@@ -9,4 +9,32 @@
 	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
 	<Date_Earliest>1519-01-01T00:00:00</Date_Earliest>
 	<Island>3230839</Island>
+	<People>
+		<Person>
+			<ID_PERSON>13</ID_PERSON>
+			<Role>Decision maker</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>12</ID_PERSON>
+			<Role>Order's reformer</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>18</ID_PERSON>
+			<Role>Reformed order</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0007</ID_BIBLIOGRAPHY>
+			<Date>2007</Date>
+			<Pages>p. 46</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>11</ID_PLACE>
+			<Date>1500</Date>
+		</Place>
+	</Places>
+	<Sources/>
 </ROW>

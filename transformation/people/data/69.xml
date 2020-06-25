@@ -32,4 +32,12 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>88</ID_SOURCE>
+			<Name>Benedetto</Name>
+			<Surname>Bordone</Surname>
+		</Source>
+	</Sources>
 </ROW>

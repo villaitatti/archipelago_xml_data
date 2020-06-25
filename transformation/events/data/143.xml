@@ -9,4 +9,28 @@
 	<Fraction_century>First quarter of the century (0-24)</Fraction_century>
 	<Date_Earliest>1512-03-26T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>160</ID_PERSON>
+			<Role>Doge</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>161</ID_PERSON>
+			<Role>Guest</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>p. 23</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0044</ID_BIBLIOGRAPHY>
+			<Date>1969-1979</Date>
+			<Pages>t. XIV, col. 53-56</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

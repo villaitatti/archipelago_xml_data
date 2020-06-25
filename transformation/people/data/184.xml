@@ -15,4 +15,25 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>80</ID_EVENT>
+			<Role>Transferred order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>163</ID_EVENT>
+			<Role>New owners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>164</ID_EVENT>
+			<Role>Potential buyers</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>161</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

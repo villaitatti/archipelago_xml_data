@@ -41,4 +41,57 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>23</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>19</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>20</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>21</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>22</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>45</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>46</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>101</ID_SOURCE>
+			<Name>Vincenzo Maria</Name>
+			<Surname>Coronelli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>130</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>139</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

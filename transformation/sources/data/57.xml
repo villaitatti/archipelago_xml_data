@@ -34,4 +34,22 @@ G testadura dela fab[r]ica qual mostrava che g[h]e fussi altri volti ma questi l
 	<Date_Earliest>1753-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>37</ID_EVENT>
+			<Event>Design of a second private shelter for boats</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>101</ID_PERSON>
+			<Name>Giambattista Maria</Name>
+			<Surname>Contarini</Surname>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>39</ID_PERSON>
+			<Name>Niccolò</Name>
+			<Surname>Mauro</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

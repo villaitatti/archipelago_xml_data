@@ -23,4 +23,45 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>41</ID_EVENT>
+			<Role>Beneficiary</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>15</ID_EVENT>
+			<Role>Beneficiary</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>16</ID_EVENT>
+			<Role>Reformed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>17</ID_EVENT>
+			<Role>Suppressed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>42</ID_EVENT>
+			<Role>Beneficiary</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>44</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>43</ID_EVENT>
+			<Role>Beneficiary</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>89</ID_EVENT>
+			<Role>Patron</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Benedictine nuns of San Secondo</Surname>
+		</Source>
+	</Sources>
 </ROW>

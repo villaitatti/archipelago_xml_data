@@ -32,4 +32,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century>First half of the century (0-49)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>50</ID_SOURCE>
+			<Name>Domenico</Name>
+			<Surname>Lovisa</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>96</ID_SOURCE>
+			<Name>Domenico</Name>
+			<Surname>Lovisa</Surname>
+		</Source>
+	</Sources>
 </ROW>

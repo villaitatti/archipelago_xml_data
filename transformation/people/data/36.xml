@@ -26,4 +26,12 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>30</ID_SOURCE>
+			<Name>Jacometto</Name>
+			<Surname>Veneziano</Surname>
+		</Source>
+	</Sources>
 </ROW>

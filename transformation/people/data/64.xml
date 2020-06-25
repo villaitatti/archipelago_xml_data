@@ -27,4 +27,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>64</ID_EVENT>
+			<Role/>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>42</ID_SOURCE>
+			<Name>Francesco</Name>
+			<Surname>Battaglioli</Surname>
+		</Source>
+	</Sources>
 </ROW>

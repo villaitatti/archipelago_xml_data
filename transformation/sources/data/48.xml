@@ -27,4 +27,12 @@
 	<Date_Earliest>1800-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>65</ID_PERSON>
+			<Name>Giuseppe Bernardino</Name>
+			<Surname>Bison</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

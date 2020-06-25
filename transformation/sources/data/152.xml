@@ -27,4 +27,11 @@
 	<Date_Earliest>1518-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>89</ID_EVENT>
+			<Event>Construction of a new dormitory</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

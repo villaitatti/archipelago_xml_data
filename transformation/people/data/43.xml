@@ -32,4 +32,17 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes>He was in contact with the Dominican friars of San Domenico di Castello in Venice. His body is buried in the church.</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>7</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Giovanni</Name>
+			<Surname>da Zon</Surname>
+		</Source>
+	</Sources>
 </ROW>

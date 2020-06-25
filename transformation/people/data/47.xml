@@ -36,4 +36,17 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>45</ID_EVENT>
+			<Role>Prior of San Secondo</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Angelo</Name>
+			<Surname>Bragadin</Surname>
+		</Source>
+	</Sources>
 </ROW>

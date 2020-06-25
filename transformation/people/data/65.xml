@@ -23,4 +23,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>48</ID_SOURCE>
+			<Name>Giuseppe Bernardino</Name>
+			<Surname>Bison</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>49</ID_SOURCE>
+			<Name>Giuseppe Bernardino</Name>
+			<Surname>Bison</Surname>
+		</Source>
+	</Sources>
 </ROW>

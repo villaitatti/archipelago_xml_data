@@ -26,4 +26,108 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>8</ID_EVENT>
+			<Role>Removed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>10</ID_EVENT>
+			<Role>Reformed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>7</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>11</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>12</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>13</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>14</ID_EVENT>
+			<Role>Founders</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>35</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>37</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>39</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>48</ID_EVENT>
+			<Role>Transferred order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>50</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>52</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>53</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>54</ID_EVENT>
+			<Role>Beneficiary</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>56</ID_EVENT>
+			<Role>Petitioners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>38</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>40</ID_EVENT>
+			<Role>Suppressed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>47</ID_EVENT>
+			<Role>Tenant</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>85</ID_EVENT>
+			<Role>Patron</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>28</ID_SOURCE>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>85</ID_SOURCE>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>53</ID_SOURCE>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</Source>
+	</Sources>
 </ROW>

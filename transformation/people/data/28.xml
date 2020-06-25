@@ -26,4 +26,12 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>95</ID_SOURCE>
+			<Name>Francesco</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+	</Sources>
 </ROW>

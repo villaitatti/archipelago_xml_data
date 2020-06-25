@@ -9,4 +9,24 @@
 	<Fraction_century>Mid-century (40-60)</Fraction_century>
 	<Date_Earliest>1660-11-11T00:00:00</Date_Earliest>
 	<Island>3230839</Island>
+	<People>
+		<Person>
+			<ID_PERSON>42</ID_PERSON>
+			<Role>Reformed order</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0015</ID_BIBLIOGRAPHY>
+			<Date/>
+			<Pages>I, p. 295</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>15</ID_PLACE>
+			<Date>1697</Date>
+		</Place>
+	</Places>
+	<Sources/>
 </ROW>

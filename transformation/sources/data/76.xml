@@ -27,4 +27,11 @@
 	<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>87</ID_EVENT>
+			<Event>Project for a new private shelter for boats</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

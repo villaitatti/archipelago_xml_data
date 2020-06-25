@@ -26,4 +26,17 @@
 	<Century>12th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Role>Donor</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Pietro</Name>
+			<Surname>Gattilesso</Surname>
+		</Source>
+	</Sources>
 </ROW>

@@ -35,4 +35,27 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>87</ID_SOURCE>
+			<Name>Cristoforo</Name>
+			<Surname>Sabbadino</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>144</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>147</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>86</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

@@ -26,4 +26,47 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>19</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>32</ID_EVENT>
+			<Role>Surveyor</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>33</ID_EVENT>
+			<Role>Architect in charged of the inventory</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>78</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>65</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>82</ID_EVENT>
+			<Role>Surveyor</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>90</ID_SOURCE>
+			<Name>Angelo</Name>
+			<Surname>Gavan</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>98</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>135</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

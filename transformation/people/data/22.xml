@@ -39,4 +39,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>69</ID_SOURCE>
+			<Name>Antonio</Name>
+			<Surname>Visentini</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>5</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

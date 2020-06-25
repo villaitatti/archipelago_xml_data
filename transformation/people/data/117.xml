@@ -29,4 +29,11 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>83</ID_EVENT>
+			<Role>Letter's recipient</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

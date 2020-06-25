@@ -1,4 +1,3 @@
-import pandas as pd
 import xml.dom.minidom as md
 import xml.etree.ElementTree as et
 import os
@@ -8,6 +7,8 @@ import json
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, 'People.xml')
+
+association_tables = json.load(open(os.path.join(dir_path, '../association_tables/', 'association_tables.json'), 'r'))
 
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
@@ -57,6 +58,10 @@ key_start = 'Start'
 key_end = 'End'
 key_root = 'Root'
 key_work_locations = 'Work_locations'
+
+key_events = "Events"
+key_event = "Event"
+key_role = "Role"
 
 tree = et.parse(filename)
 root = tree.getroot()
@@ -209,6 +214,32 @@ for row in tags:
     # notes
     notes = et.SubElement(new_row, key_notes)
     notes.text = row.find(f'ns:{key_notes}', ns).text
+
+    #ASSOCIATIONS
+
+    #Events
+    events = et.SubElement(new_row, key_events)
+    if row_id in association_tables['people']:
+        for k,v in association_tables['people'][row_id]['events'].items():
+            event = et.SubElement(events, key_event)
+            event_id = et.SubElement(event, "ID_EVENT")
+            event_id.text = k
+
+            role = et.SubElement(event, key_role)
+            role.text = v[key_role]
+
+    #Sources
+    sources = et.SubElement(new_row, "Sources")
+    if row_id in association_tables['people']:
+        for k,v in association_tables['people'][row_id]['sources'].items():
+            source = et.SubElement(sources, 'Source')
+            source_id = et.SubElement(source, "ID_SOURCE")
+            source_id.text = k
+
+            name = et.SubElement(source, "Name")
+            name.text = v["Name"]
+            surname = et.SubElement(source, "Surname")
+            surname.text = v["Surname"]
 
     final = md.parseString(et.tostring(
         new_row, method='xml')).toprettyxml()

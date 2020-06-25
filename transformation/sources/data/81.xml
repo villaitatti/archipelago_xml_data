@@ -29,4 +29,11 @@ Gl’illustrissimi et eccellentissimi Signori Presidenti et Aggiunto al Collegio
 	<Date_Earliest>1732-11-23T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>54</ID_EVENT>
+			<Event>The Dominican Friars are exempt from the tansa degli ortolani</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

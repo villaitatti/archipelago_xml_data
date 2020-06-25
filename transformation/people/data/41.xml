@@ -35,4 +35,21 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>73</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>53</ID_EVENT>
+			<Role>Chronicler</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Domenico</Name>
+			<Surname>Codagli</Surname>
+		</Source>
+	</Sources>
 </ROW>

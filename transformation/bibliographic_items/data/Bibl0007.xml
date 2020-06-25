@@ -15,6 +15,118 @@
 	<Volume_Title/>
 	<Pages>23-75</Pages>
 	<Subject>The island of San Secondo</Subject>
-	<Date>06-22-2007T00:00:00</Date>
+	<Date>06-25-2007T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>37</ID_EVENT>
+			<Date/>
+			<Pages>p. 23</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>40</ID_EVENT>
+			<Date/>
+			<Pages>p. 24</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>36</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 24</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>15</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>pp. 24-25</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>41</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 26</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>42</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 26</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>16</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 46</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>44</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 46</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>17</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>pp. 46-47</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>46</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>pp. 47-48</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>7</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 48</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>8</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>pp. 48-49</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>48</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 49</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>49</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 49</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>43</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 27</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>45</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 47</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>50</ID_EVENT>
+			<Date>1806</Date>
+			<Pages>pp. 48-50</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>80</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 46</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>14</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 51</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>53</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>pp. 51-52</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>11</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 52</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>35</ID_EVENT>
+			<Date>2007</Date>
+			<Pages>p. 52</Pages>
+		</Event>
+	</Events>
 </ROW>

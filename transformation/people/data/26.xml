@@ -26,4 +26,22 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes>His house was located near the rio della Zecca, at the corner with the Terranova warehouses.</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>63</ID_EVENT>
+			<Role/>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>7</ID_SOURCE>
+			<Name>Filippo</Name>
+			<Surname>Tron</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Filippo</Name>
+			<Surname>Tron</Surname>
+		</Source>
+	</Sources>
 </ROW>

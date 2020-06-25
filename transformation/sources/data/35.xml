@@ -27,4 +27,17 @@
 	<Date_Earliest>1688-12-11T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>61</ID_PERSON>
+			<Name>Andrea</Name>
+			<Surname>Tirali</Surname>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>89</ID_PERSON>
+			<Name/>
+			<Surname>Savi ed esecutori alle acque</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

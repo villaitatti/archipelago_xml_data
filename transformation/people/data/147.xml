@@ -26,4 +26,11 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes>He was well known for being a predictor</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>124</ID_EVENT>
+			<Role>Predictor and friar inhabiting the island</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

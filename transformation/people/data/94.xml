@@ -26,4 +26,51 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>74</ID_EVENT>
+			<Role>Office in charge of the new scuola</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>79</ID_EVENT>
+			<Role>Mandating office</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>124</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>120</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>126</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>127</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>116</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>128</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>136</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

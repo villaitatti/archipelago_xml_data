@@ -18,4 +18,15 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>8</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>47</ID_EVENT>
+			<Role>Owner</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

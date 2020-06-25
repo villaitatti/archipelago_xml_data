@@ -27,4 +27,17 @@
 	<Date_Earliest>1545-01-01T00:00:00</Date_Earliest>
 	<Date_Latest>1547-01-01T00:00:00</Date_Latest>
 	<Island>7910746</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>113</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>24</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

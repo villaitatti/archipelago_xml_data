@@ -26,4 +26,12 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>57</ID_SOURCE>
+			<Name>Giambattista Maria</Name>
+			<Surname>Contarini</Surname>
+		</Source>
+	</Sources>
 </ROW>

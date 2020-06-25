@@ -15,6 +15,13 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>Venice ; Architecture ; Urban history</Subject>
-	<Date>06-22-1988T00:00:00</Date>
+	<Date>06-25-1988T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>40</ID_EVENT>
+			<Date/>
+			<Pages>pp. 112-113</Pages>
+		</Event>
+	</Events>
 </ROW>

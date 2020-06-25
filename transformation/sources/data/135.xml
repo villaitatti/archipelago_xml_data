@@ -34,4 +34,32 @@ Baldisera Longhena Peritto sudetto afermo quanto di sopra</Trascription>
 	<Date_Earliest>1657-06-21T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>7910746</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>82</ID_EVENT>
+			<Event>Survey of the entire island</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>84</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>109</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>108</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>110</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

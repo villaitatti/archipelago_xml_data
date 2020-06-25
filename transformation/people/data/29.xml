@@ -26,4 +26,26 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>87</ID_EVENT>
+			<Role>Designer</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>88</ID_EVENT>
+			<Role>Surveyor</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>53</ID_SOURCE>
+			<Name>Daniele</Name>
+			<Surname>Danieli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>54</ID_SOURCE>
+			<Name>Daniele</Name>
+			<Surname>Danieli</Surname>
+		</Source>
+	</Sources>
 </ROW>

@@ -10,6 +10,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, '../../export/transformed/Sources.xml')
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+association_tables = json.load(open(os.path.join(dir_path, '../association_tables/', 'association_tables.json'), 'r'))
 
 
 def write_file(text):
@@ -157,6 +158,30 @@ for row in tags:
         isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
     island = et.SubElement(new_row, keys["island"])
     island.text = isl_geoname_id
+
+    #ASSOCIATIONS
+
+    #Events
+    events = et.SubElement(new_row, "EVENTS")
+    if row_id in association_tables['sources']:
+        for k,v in association_tables['sources'][row_id]['events'].items():
+            event = et.SubElement(events, "EVENT")
+            event_id = et.SubElement(event, "ID_EVENT")
+            event_id.text = k
+            event_description = et.SubElement(event, "Event")
+            event_description.text = v["Event"]
+
+    #People
+    people = et.SubElement(new_row, "PEOPLE")
+    if row_id in association_tables['sources']:
+        for k,v in association_tables['sources'][row_id]['people'].items():
+            person = et.SubElement(people, "PERSON")
+            person_id = et.SubElement(person, "ID_PERSON")
+            person_id.text = k
+            name = et.SubElement(person, "Name")
+            name.text = v["Name"]
+            surname = et.SubElement(person, "Surname")
+            surname.text = v["Surname"]
 
     #new_document_root.append(new_row)
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()

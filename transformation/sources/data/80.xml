@@ -27,4 +27,23 @@
 	<Date_Earliest/>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>7</ID_EVENT>
+			<Event>Beginning of the restoration of the Dominican monastery</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>8</ID_EVENT>
+			<Event>The island is used as lazzaretto</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>48</ID_EVENT>
+			<Event>The Dominican Friars return to the island</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>49</ID_EVENT>
+			<Event>Restoration of the chapel of San Secondo</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

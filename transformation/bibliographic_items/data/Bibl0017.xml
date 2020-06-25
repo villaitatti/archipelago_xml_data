@@ -15,6 +15,33 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>Island of San Clemente</Subject>
-	<Date>06-22-2003T00:00:00</Date>
+	<Date>06-25-2003T00:00:00</Date>
 	<City>3171168</City>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>110</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>116</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>125</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>131</ID_EVENT>
+			<Date>2003</Date>
+			<Pages>pp. 30-32</Pages>
+		</Event>
+	</Events>
 </ROW>

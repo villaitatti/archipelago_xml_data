@@ -29,4 +29,29 @@
 	<Century>12th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Role>Chronicler and Patriarch</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>60</ID_EVENT>
+			<Role>Blessing Patriarch</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>109</ID_EVENT>
+			<Role>Island's administrator</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>110</ID_EVENT>
+			<Role>Island's administrator</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Enrico</Name>
+			<Surname>Dandolo</Surname>
+		</Source>
+	</Sources>
 </ROW>

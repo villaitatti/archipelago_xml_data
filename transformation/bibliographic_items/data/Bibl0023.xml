@@ -15,6 +15,13 @@
 	<Volume_Title/>
 	<Pages>online</Pages>
 	<Subject/>
-	<Date>06-22-2017T00:00:00</Date>
+	<Date>06-25-2017T00:00:00</Date>
 	<City/>
+	<Events>
+		<Event>
+			<ID_EVENT>34</ID_EVENT>
+			<Date>2017</Date>
+			<Pages/>
+		</Event>
+	</Events>
 </ROW>

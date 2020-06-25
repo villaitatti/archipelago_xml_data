@@ -27,4 +27,12 @@
 	<Date_Earliest/>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>30</ID_PERSON>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

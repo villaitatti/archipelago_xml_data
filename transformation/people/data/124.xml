@@ -18,4 +18,31 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>94</ID_EVENT>
+			<Role>Office involved</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>95</ID_EVENT>
+			<Role>Office involved</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>149</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>154</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>155</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>158</ID_EVENT>
+			<Role>Decision makers</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

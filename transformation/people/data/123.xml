@@ -15,4 +15,21 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>86</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>131</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>32</ID_SOURCE>
+			<Name>Enrico</Name>
+			<Surname>Dandolo</Surname>
+		</Source>
+	</Sources>
 </ROW>

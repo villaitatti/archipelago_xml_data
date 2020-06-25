@@ -15,6 +15,13 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>Venice ; Churches ; Monasteries</Subject>
-	<Date>06-22-1581T00:00:00</Date>
+	<Date>06-25-1581T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Date>1581</Date>
+			<Pages>p. 83</Pages>
+		</Event>
+	</Events>
 </ROW>

@@ -29,4 +29,15 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>128</ID_EVENT>
+			<Role>Doge</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>139</ID_EVENT>
+			<Role>Doge</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

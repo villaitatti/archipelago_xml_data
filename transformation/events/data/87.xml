@@ -9,4 +9,53 @@
 	<Fraction_century>End of the century (90-99)</Fraction_century>
 	<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
 	<Island>3230839</Island>
+	<People>
+		<Person>
+			<ID_PERSON>29</ID_PERSON>
+			<Role>Designer</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0021</ID_BIBLIOGRAPHY>
+			<Date>2015</Date>
+			<Pages>222</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>18</ID_PLACE>
+			<Date>1789</Date>
+		</Place>
+	</Places>
+	<Sources>
+		<Source>
+			<ID_SOURCE>55</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>56</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>70</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>72</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>74</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>75</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+		<Source>
+			<ID_SOURCE>76</ID_SOURCE>
+			<Event>Project for a new private shelter for boats</Event>
+		</Source>
+	</Sources>
 </ROW>

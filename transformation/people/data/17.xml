@@ -15,4 +15,17 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>17</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Holy See</Surname>
+		</Source>
+	</Sources>
 </ROW>

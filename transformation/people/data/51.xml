@@ -32,4 +32,21 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>51</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>70</ID_EVENT>
+			<Role>Donor for the restoration</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Pietro</Name>
+			<Surname>Bon </Surname>
+		</Source>
+	</Sources>
 </ROW>

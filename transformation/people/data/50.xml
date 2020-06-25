@@ -36,4 +36,17 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>49</ID_EVENT>
+			<Role>Donor</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Matteo</Name>
+			<Surname>Priuli</Surname>
+		</Source>
+	</Sources>
 </ROW>

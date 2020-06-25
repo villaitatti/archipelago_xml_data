@@ -29,4 +29,22 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>34</ID_EVENT>
+			<Role>Witness</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Cherubino</Name>
+			<Surname>Zeli</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>28</ID_SOURCE>
+			<Name>Cherubino</Name>
+			<Surname>Zeli</Surname>
+		</Source>
+	</Sources>
 </ROW>

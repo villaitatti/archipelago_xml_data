@@ -27,4 +27,17 @@
 	<Date_Earliest>1779-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>35</ID_EVENT>
+			<Event>Construction of a second private shelter for boats</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>56</ID_PERSON>
+			<Name>Teodoro</Name>
+			<Surname>Viero</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

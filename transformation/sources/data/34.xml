@@ -27,4 +27,11 @@
 	<Date_Earliest>1801-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>35</ID_EVENT>
+			<Event>Construction of a second private shelter for boats</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE/>
 </ROW>

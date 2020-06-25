@@ -44,4 +44,21 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes>He was the nephew of the architect Giovanni Antonio Scalfurotto.</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>35</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>37</ID_EVENT>
+			<Role>Architect</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Tommaso</Name>
+			<Surname>Temanza</Surname>
+		</Source>
+	</Sources>
 </ROW>

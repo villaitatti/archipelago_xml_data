@@ -26,4 +26,17 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>74</ID_EVENT>
+			<Role>Secretary of the monastery who reported the petition</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>119</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

@@ -26,4 +26,11 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>54</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

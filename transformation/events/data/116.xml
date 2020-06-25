@@ -9,4 +9,24 @@
 	<Fraction_century>Last quarter of the century (75-99)</Fraction_century>
 	<Date_Earliest>1288-01-01T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>133</ID_PERSON>
+			<Role>Recipient</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>p. 16</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0017</ID_BIBLIOGRAPHY>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

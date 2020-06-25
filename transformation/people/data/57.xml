@@ -29,4 +29,12 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>31</ID_SOURCE>
+			<Name>Guglielmo</Name>
+			<Surname>Stella</Surname>
+		</Source>
+	</Sources>
 </ROW>

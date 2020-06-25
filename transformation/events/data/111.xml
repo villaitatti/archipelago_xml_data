@@ -9,4 +9,23 @@
 	<Fraction_century>Third quarter of the century (50-74)</Fraction_century>
 	<Date_Earliest>1173-01-10T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>133</ID_PERSON>
+			<Role>Recipient</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>135</ID_PERSON>
+			<Role>Donator</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>p. 14</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

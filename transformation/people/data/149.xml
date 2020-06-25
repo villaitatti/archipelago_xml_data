@@ -26,4 +26,19 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>128</ID_EVENT>
+			<Role>Holy Roman Emperor visiting Venice</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>129</ID_EVENT>
+			<Role>Holy Roman Emperor visiting Venice</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>130</ID_EVENT>
+			<Role>Guest</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

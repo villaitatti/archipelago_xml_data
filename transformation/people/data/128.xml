@@ -15,4 +15,11 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>92</ID_EVENT>
+			<Role>Physician</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

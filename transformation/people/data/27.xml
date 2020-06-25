@@ -29,4 +29,17 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes>https://www.wikidata.org/wiki/Q127254</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>30</ID_EVENT>
+			<Role>Decision maker</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Alessandro VII</Surname>
+		</Source>
+	</Sources>
 </ROW>

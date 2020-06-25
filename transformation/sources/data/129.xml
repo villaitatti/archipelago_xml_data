@@ -27,4 +27,27 @@
 	<Date_Earliest>1688-07-24T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>7910746</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>79</ID_EVENT>
+			<Event>The teacher and his four novices are removed from the island</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>98</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>99</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>73</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

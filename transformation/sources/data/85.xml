@@ -27,4 +27,25 @@
 	<Date_Earliest>1535-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>47</ID_EVENT>
+			<Event>Construction of a powderhouse</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>56</ID_EVENT>
+			<Event>The gunpowder preserved in the powderhouse is removed</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>57</ID_EVENT>
+			<Event>Two bolts of lightning strike the island</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>42</ID_PERSON>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

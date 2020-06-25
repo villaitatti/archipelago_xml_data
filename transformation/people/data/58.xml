@@ -33,4 +33,12 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>33</ID_SOURCE>
+			<Name>Jacopo</Name>
+			<Surname>de' Barbari</Surname>
+		</Source>
+	</Sources>
 </ROW>

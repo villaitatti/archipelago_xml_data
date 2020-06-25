@@ -9,4 +9,27 @@
 	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
 	<Date_Earliest>1630-06-01T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>124</ID_PERSON>
+			<Role>Decision maker</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>176</ID_PERSON>
+			<Role>Quarantined person</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>177</ID_PERSON>
+			<Role>Carpenter infected</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>p. 26</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

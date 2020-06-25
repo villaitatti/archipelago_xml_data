@@ -26,4 +26,19 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>154</ID_EVENT>
+			<Role>Quarantined person</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>155</ID_EVENT>
+			<Role>Quarantined person</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>156</ID_EVENT>
+			<Role/>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

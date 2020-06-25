@@ -26,4 +26,12 @@
 	<Century>18th cent.</Century>
 	<Fraction_Century>Mid-century (40-60)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>57</ID_SOURCE>
+			<Name>Niccolò</Name>
+			<Surname>Mauro</Surname>
+		</Source>
+	</Sources>
 </ROW>

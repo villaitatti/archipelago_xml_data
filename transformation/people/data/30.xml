@@ -26,4 +26,37 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>18</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>36</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>68</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>97</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>99</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>100</ID_SOURCE>
+			<Name>Giacomo</Name>
+			<Surname>Guardi</Surname>
+		</Source>
+	</Sources>
 </ROW>

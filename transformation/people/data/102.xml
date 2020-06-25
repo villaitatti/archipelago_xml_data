@@ -26,4 +26,71 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>76</ID_EVENT>
+			<Role>New owners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>77</ID_EVENT>
+			<Role>New owners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>122</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>123</ID_EVENT>
+			<Role>New inhabitants</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>125</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>126</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>127</ID_EVENT>
+			<Role>Recipients</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>128</ID_EVENT>
+			<Role>Host</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>148</ID_EVENT>
+			<Role>Decision makers</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>159</ID_EVENT>
+			<Role>Owners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>160</ID_EVENT>
+			<Role>Decision makers</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>164</ID_EVENT>
+			<Role>Potential sellers</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>157</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>160</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>161</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

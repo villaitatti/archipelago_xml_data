@@ -38,4 +38,12 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century>Turn of the century (90-10)</Fraction_Century>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Angelo</Name>
+			<Surname>Baronio</Surname>
+		</Source>
+	</Sources>
 </ROW>

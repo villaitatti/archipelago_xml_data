@@ -9,4 +9,35 @@
 	<Fraction_century/>
 	<Date_Earliest>1576-06-10T00:00:00</Date_Earliest>
 	<Island>12172719</Island>
+	<People>
+		<Person>
+			<ID_PERSON>125</ID_PERSON>
+			<Role>Professor at the University of Padua</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>126</ID_PERSON>
+			<Role>Professor at the University of Padua</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>127</ID_PERSON>
+			<Role>Physician</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>128</ID_PERSON>
+			<Role>Physician</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>130</ID_PERSON>
+			<Role>Doge</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0037</ID_BIBLIOGRAPHY>
+			<Date>1979</Date>
+			<Pages>p. 26</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

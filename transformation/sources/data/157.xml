@@ -27,4 +27,26 @@
 	<Date_Earliest>1432-12-02T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3168468</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>77</ID_EVENT>
+			<Event>The island passes to the Lateran Canons of Santa Maria della Carità</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>122</ID_EVENT>
+			<Event>The Lateran Canons set up in the island while all the properties of San Clemente, including archival documents and relics, are transferred to Santa Maria della Carità</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>145</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>102</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

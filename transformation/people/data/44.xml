@@ -29,4 +29,17 @@
 	<Century>11th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>41</ID_EVENT>
+			<Role>Donor</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Vitale</Name>
+			<Surname>Falier</Surname>
+		</Source>
+	</Sources>
 </ROW>

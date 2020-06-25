@@ -29,4 +29,11 @@
 	<Century>14th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>153</ID_EVENT>
+			<Role>Island's ruler</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

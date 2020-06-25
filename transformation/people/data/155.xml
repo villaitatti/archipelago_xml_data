@@ -18,4 +18,11 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century>Third quarter of the century (50-74)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>132</ID_EVENT>
+			<Role>Island's owner</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

@@ -26,4 +26,48 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>20</ID_EVENT>
+			<Role>Painter</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>26</ID_EVENT>
+			<Role>Artisted appointed</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>27</ID_EVENT>
+			<Role>Painter</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>25</ID_EVENT>
+			<Role>Artist involved in the church's decoration</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>83</ID_EVENT>
+			<Role>Letter's sender</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Tiziano</Name>
+			<Surname>Vecellio</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>140</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>141</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+		<Source>
+			<ID_SOURCE>142</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

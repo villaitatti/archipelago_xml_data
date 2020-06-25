@@ -29,4 +29,17 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>38</ID_EVENT>
+			<Role>Designer</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Alessandro</Name>
+			<Surname>Malerba</Surname>
+		</Source>
+	</Sources>
 </ROW>

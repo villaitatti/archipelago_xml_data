@@ -32,4 +32,17 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>37</ID_SOURCE>
+			<Name>Marco</Name>
+			<Surname>Moro</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>51</ID_SOURCE>
+			<Name>Marco</Name>
+			<Surname>Moro</Surname>
+		</Source>
+	</Sources>
 </ROW>

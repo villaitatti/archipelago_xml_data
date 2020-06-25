@@ -9,4 +9,53 @@
 	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
 	<Date_Earliest>1131-01-01T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>75</ID_PERSON>
+			<Role>Donor</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>74</ID_PERSON>
+			<Role>Chronicler and Patriarch</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0022</ID_BIBLIOGRAPHY>
+			<Date>1758</Date>
+			<Pages>p. 17</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0017</ID_BIBLIOGRAPHY>
+			<Date>2003</Date>
+			<Pages>p. 11</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>pp. 6-7</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0016</ID_BIBLIOGRAPHY>
+			<Date>1581</Date>
+			<Pages>p. 83</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0014</ID_BIBLIOGRAPHY>
+			<Date>1697</Date>
+			<Pages>p. 49</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0045</ID_BIBLIOGRAPHY>
+			<Date>1873</Date>
+			<Pages>p. 7</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>11</ID_PLACE>
+			<Date>1500</Date>
+		</Place>
+	</Places>
+	<Sources/>
 </ROW>

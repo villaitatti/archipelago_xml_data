@@ -15,6 +15,18 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>Venice ; Lagoon ; Water and food supply</Subject>
-	<Date>06-22-2015T00:00:00</Date>
+	<Date>06-25-2015T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>87</ID_EVENT>
+			<Date>2015</Date>
+			<Pages>222</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>88</ID_EVENT>
+			<Date>2015</Date>
+			<Pages>p. 222</Pages>
+		</Event>
+	</Events>
 </ROW>

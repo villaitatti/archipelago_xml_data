@@ -26,4 +26,12 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>40</ID_SOURCE>
+			<Name>Luigi</Name>
+			<Surname>Querena</Surname>
+		</Source>
+	</Sources>
 </ROW>

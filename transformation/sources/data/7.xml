@@ -28,4 +28,17 @@
 	<Date_Earliest>1566-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3175329</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>26</ID_PERSON>
+			<Name>Filippo</Name>
+			<Surname>Tron</Surname>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>null</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

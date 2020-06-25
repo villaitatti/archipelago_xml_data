@@ -28,4 +28,12 @@ Mestre ; Merghera ; S. Giuliano ; S. Segondo ; S. Michele ; Murano ; S. Nicolo ;
 	<Date_Earliest>1534-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>12172719</Island>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>69</ID_PERSON>
+			<Name>Benedetto</Name>
+			<Surname>Bordone</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

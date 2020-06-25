@@ -27,4 +27,22 @@
 	<Date_Earliest>1789-03-05T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>34</ID_EVENT>
+			<Event>Freezing of the lagoon waters</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>35</ID_PERSON>
+			<Name>Cherubino</Name>
+			<Surname>Zeli</Surname>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>42</ID_PERSON>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

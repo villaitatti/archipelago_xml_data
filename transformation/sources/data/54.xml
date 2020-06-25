@@ -27,4 +27,17 @@
 	<Date_Earliest>1694-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>88</ID_EVENT>
+			<Event>Father Daniele Danieli draws up a Catastico of the monastery</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>29</ID_PERSON>
+			<Name>Daniele</Name>
+			<Surname>Danieli</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

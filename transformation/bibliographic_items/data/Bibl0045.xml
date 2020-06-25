@@ -15,6 +15,23 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject/>
-	<Date>06-22-1873T00:00:00</Date>
+	<Date>06-25-1873T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Date>1873</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>152</ID_EVENT>
+			<Date>1873</Date>
+			<Pages>p. 7</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>110</ID_EVENT>
+			<Date>1873</Date>
+			<Pages>p. 8</Pages>
+		</Event>
+	</Events>
 </ROW>

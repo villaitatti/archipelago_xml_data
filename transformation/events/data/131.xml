@@ -9,4 +9,28 @@
 	<Fraction_century>Mid-century (40-60)</Fraction_century>
 	<Date_Earliest>1855-01-01T00:00:00</Date_Earliest>
 	<Island>3168468</Island>
+	<People>
+		<Person>
+			<ID_PERSON>152</ID_PERSON>
+			<Role>Proponent</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>123</ID_PERSON>
+			<Role>Decision maker</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0018</ID_BIBLIOGRAPHY>
+			<Date>1934</Date>
+			<Pages>p. 59</Pages>
+		</Bibliographic_Item>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0017</ID_BIBLIOGRAPHY>
+			<Date>2003</Date>
+			<Pages>pp. 30-32</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

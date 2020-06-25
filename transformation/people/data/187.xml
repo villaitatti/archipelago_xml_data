@@ -26,4 +26,11 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>163</ID_EVENT>
+			<Role>Notary</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

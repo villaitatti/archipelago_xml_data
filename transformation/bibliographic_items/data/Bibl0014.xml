@@ -15,6 +15,18 @@
 	<Volume_Title>Dell'Atlante Veneto</Volume_Title>
 	<Pages/>
 	<Subject>Book of islands</Subject>
-	<Date>06-22-1697T00:00:00</Date>
+	<Date>06-25-1697T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>126</ID_EVENT>
+			<Date>1697</Date>
+			<Pages>p. 49</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>59</ID_EVENT>
+			<Date>1697</Date>
+			<Pages>p. 49</Pages>
+		</Event>
+	</Events>
 </ROW>

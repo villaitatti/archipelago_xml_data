@@ -27,4 +27,22 @@
 	<Date_Earliest>1488-04-23T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3168468</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>127</ID_EVENT>
+			<Event>Doge Agostino Barbarigo and Senate donate an old galea to the Canons whose timber could be used for renovating their monastery</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>148</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>90</ID_PERSON>
+			<Name/>
+			<Surname/>
+		</PERSON>
+	</PEOPLE>
 </ROW>

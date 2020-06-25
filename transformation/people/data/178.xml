@@ -35,4 +35,25 @@
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>160</ID_EVENT>
+			<Role>Patron</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>161</ID_EVENT>
+			<Role>Patron</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>164</ID_EVENT>
+			<Role>Mediator</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>161</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

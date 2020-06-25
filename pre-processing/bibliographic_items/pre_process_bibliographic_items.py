@@ -10,6 +10,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, '../../export/transformed/Bibliographic_Items.xml')
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+association_tables = json.load(open(os.path.join(dir_path, '../association_tables/', 'association_tables.json'), 'r'))
 
 
 def write_file(text):
@@ -109,6 +110,21 @@ for row in tags:
     city = et.SubElement(new_row, keys["city"])
     city.text = city_geoname_id
 
+    #ASSOCIATIONS
+
+    #Events
+    events = et.SubElement(new_row, "Events")
+    if row_id in association_tables['bibliography']:
+        for k,v in association_tables['bibliography'][row_id]['events'].items():
+            event = et.SubElement(events, "Event")
+            event_id = et.SubElement(event, "ID_EVENT")
+            event_id.text = k
+
+            date = et.SubElement(event, "Date")
+            date.text = v["Date"]
+            pages = et.SubElement(event, "Pages")
+            pages.text = v["Pages"]
+            print(row_id)
 
     #new_document_root.append(new_row)
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()

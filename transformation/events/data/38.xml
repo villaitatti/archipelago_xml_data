@@ -9,4 +9,33 @@
 	<Fraction_century>Beginning of the century (0-10)</Fraction_century>
 	<Date_Earliest>1607-01-01T00:00:00</Date_Earliest>
 	<Island>3230839</Island>
+	<People>
+		<Person>
+			<ID_PERSON>37</ID_PERSON>
+			<Role>Designer</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>42</ID_PERSON>
+			<Role>Patrons</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0015</ID_BIBLIOGRAPHY>
+			<Date/>
+			<Pages>I, p. 302</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places>
+		<Place>
+			<ID_PLACE>20</ID_PLACE>
+			<Date>1697</Date>
+		</Place>
+	</Places>
+	<Sources>
+		<Source>
+			<ID_SOURCE>71</ID_SOURCE>
+			<Event>Reconstruction of the loggia</Event>
+		</Source>
+	</Sources>
 </ROW>

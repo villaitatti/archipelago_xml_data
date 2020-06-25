@@ -18,4 +18,11 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>141</ID_EVENT>
+			<Role>Dogaressa</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

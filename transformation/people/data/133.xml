@@ -15,4 +15,49 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>109</ID_EVENT>
+			<Role>Inhabitants</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>111</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>112</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>113</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>114</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>115</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>117</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>118</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>116</ID_EVENT>
+			<Role>Recipient</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>156</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

@@ -33,4 +33,17 @@
 	<Date_Earliest>1789-01-01T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>34</ID_EVENT>
+			<Event>Freezing of the lagoon waters</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>56</ID_PERSON>
+			<Name>Cherubino</Name>
+			<Surname>Zeli</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

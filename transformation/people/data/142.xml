@@ -23,4 +23,11 @@
 	<Century>14th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>119</ID_EVENT>
+			<Role>New administrator of the island coming from Santo Spirito</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

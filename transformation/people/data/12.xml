@@ -41,4 +41,17 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes>She was the great-great-granddaughter of Doge Lorenzo Celsi.</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>16</ID_EVENT>
+			<Role>Order's reformer</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Marina</Name>
+			<Surname>Celsi</Surname>
+		</Source>
+	</Sources>
 </ROW>

@@ -26,4 +26,17 @@
 	<Century>11th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>15</ID_EVENT>
+			<Role>Founder</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Basso family</Surname>
+		</Source>
+	</Sources>
 </ROW>

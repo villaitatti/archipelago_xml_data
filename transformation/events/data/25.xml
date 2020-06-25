@@ -9,4 +9,17 @@
 	<Fraction_century>Mid-century (40-60)</Fraction_century>
 	<Date_Earliest>None-01-01T00:00:00</Date_Earliest>
 	<Island>7910746</Island>
+	<People>
+		<Person>
+			<ID_PERSON>23</ID_PERSON>
+			<Role>Architect involved in the church's restoration</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>21</ID_PERSON>
+			<Role>Artist involved in the church's decoration</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items/>
+	<Places/>
+	<Sources/>
 </ROW>

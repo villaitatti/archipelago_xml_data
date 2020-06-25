@@ -28,4 +28,12 @@
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events/>
+	<Sources>
+		<Source>
+			<ID_SOURCE>103</ID_SOURCE>
+			<Name>Pietro</Name>
+			<Surname>Chevalier</Surname>
+		</Source>
+	</Sources>
 </ROW>

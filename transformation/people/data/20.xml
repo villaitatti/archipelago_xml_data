@@ -26,4 +26,17 @@
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
 	<Notes>Regular guest in the convent of the Lateran Canons of Santo Spirito.</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>21</ID_EVENT>
+			<Role/>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Agostino</Name>
+			<Surname>Museo</Surname>
+		</Source>
+	</Sources>
 </ROW>

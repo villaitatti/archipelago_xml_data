@@ -15,6 +15,13 @@
 	<Volume_Title/>
 	<Pages>734-735</Pages>
 	<Subject/>
-	<Date>12-22-1971T00:00:00</Date>
+	<Date>12-25-1971T00:00:00</Date>
 	<City/>
+	<Events>
+		<Event>
+			<ID_EVENT>7</ID_EVENT>
+			<Date>December 1971</Date>
+			<Pages>I, p. 295</Pages>
+		</Event>
+	</Events>
 </ROW>

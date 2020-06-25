@@ -15,6 +15,33 @@
 	<Volume_Title/>
 	<Pages/>
 	<Subject>Plague</Subject>
-	<Date>06-22-1979T00:00:00</Date>
+	<Date>06-25-1979T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>92</ID_EVENT>
+			<Date>1979</Date>
+			<Pages>p. 26</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>93</ID_EVENT>
+			<Date>1979</Date>
+			<Pages>p. 84</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>91</ID_EVENT>
+			<Date>1979</Date>
+			<Pages>p. 92</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>94</ID_EVENT>
+			<Date>1979</Date>
+			<Pages>p. 92</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>95</ID_EVENT>
+			<Date>1979</Date>
+			<Pages>p. 92</Pages>
+		</Event>
+	</Events>
 </ROW>

@@ -15,6 +15,23 @@
 	<Volume_Title>1423-1457</Volume_Title>
 	<Pages/>
 	<Subject/>
-	<Date>06-22-1999T00:00:00</Date>
+	<Date>06-25-1999T00:00:00</Date>
 	<City>3164603</City>
+	<Events>
+		<Event>
+			<ID_EVENT>139</ID_EVENT>
+			<Date>1999</Date>
+			<Pages>p. 260</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>140</ID_EVENT>
+			<Date>1999</Date>
+			<Pages>p. 260</Pages>
+		</Event>
+		<Event>
+			<ID_EVENT>141</ID_EVENT>
+			<Date>1999</Date>
+			<Pages>pp. 320-321</Pages>
+		</Event>
+	</Events>
 </ROW>

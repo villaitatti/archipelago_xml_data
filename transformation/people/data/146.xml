@@ -29,4 +29,11 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>123</ID_EVENT>
+			<Role>New prior of the island</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

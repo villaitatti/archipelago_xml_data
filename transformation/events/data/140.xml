@@ -9,4 +9,19 @@
 	<Fraction_century>Second quarter of the century (25-49)</Fraction_century>
 	<Date_Earliest>1439-09-06T00:00:00</Date_Earliest>
 	<Island>3168290</Island>
+	<People>
+		<Person>
+			<ID_PERSON>156</ID_PERSON>
+			<Role>Guest</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0042</ID_BIBLIOGRAPHY>
+			<Date>1999</Date>
+			<Pages>p. 260</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

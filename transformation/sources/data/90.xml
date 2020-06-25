@@ -29,4 +29,26 @@ Ricevo io Anzolo Gavan murer dal Padre Priore di San Secondo a conto delle fattu
 	<Date_Earliest>1672-10-31T00:00:00</Date_Earliest>
 	<Date_Latest/>
 	<Island>3230839</Island>
+	<EVENTS>
+		<EVENT>
+			<ID_EVENT>19</ID_EVENT>
+			<Event>Restoration of the church's interior</Event>
+		</EVENT>
+		<EVENT>
+			<ID_EVENT>13</ID_EVENT>
+			<Event>Restoration of the public shelter for boats</Event>
+		</EVENT>
+	</EVENTS>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>19</ID_PERSON>
+			<Name>Angelo</Name>
+			<Surname>Gavan</Surname>
+		</PERSON>
+		<PERSON>
+			<ID_PERSON>84</ID_PERSON>
+			<Name>Angelo</Name>
+			<Surname>Gavan</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>

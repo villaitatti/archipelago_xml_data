@@ -32,4 +32,17 @@
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
 	<Notes>Election as prior of the Augustinian community on December 15, 1425. Election as Venetian Patriarch on March 27, 1460. He is buried on the island of Santo Spirito</Notes>
+	<Events>
+		<Event>
+			<ID_EVENT>23</ID_EVENT>
+			<Role/>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name>Andrea</Name>
+			<Surname>Bondumier</Surname>
+		</Source>
+	</Sources>
 </ROW>

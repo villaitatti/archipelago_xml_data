@@ -7,6 +7,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, 'Events.xml')
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+association_tables = json.load(open(os.path.join(dir_path, '../association_tables/', 'association_tables.json'), 'r'))
 
 
 def write_file(text):
@@ -35,7 +36,27 @@ keys = {
     "fraction_century": "Fraction_century",
     "year_earliest": "Year_Earliest",
     "month_earliest": "Month_Earliest",
-    "day_earliest": "Day_Earliest"
+    "day_earliest": "Day_Earliest",
+
+    "people" : "People",
+    "person" : "Person",
+    "id_person" : "ID_PERSON",
+    "role": "Role",
+
+    "bibliographic_items": "Bibliographic_Items",
+    "bibliographic_item": "Bibliographic_Item",
+    "id_bibliography": "ID_BIBLIOGRAPHY",
+    "date": "Date",
+    "pages": "Pages",
+
+    "places": "Places",
+    "place" : "Place",
+    "id_place":"ID_PLACE",
+
+    "sources": "Sources",
+    "source": "Source",
+    "id_source": "ID_SOURCE",
+    "event": "Event"
 }
 
 custom_keys = {
@@ -96,6 +117,52 @@ for row in tags:
     isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
     island = et.SubElement(new_row, keys["island"])
     island.text = isl_geoname_id
+
+    #ASSOCIATIONS
+
+    #People
+    people = et.SubElement(new_row, keys["people"])
+    if row_id in association_tables['events']:
+        for k,v in association_tables['events'][row_id]['people'].items():
+            person = et.SubElement(people, keys["person"])
+            person_id = et.SubElement(person, keys["id_person"])
+            person_id.text = k
+            role = et.SubElement(person, keys["role"])
+            role.text = v[keys['role']]
+
+    #Bibliograpic items
+    bibliographic_items = et.SubElement(new_row, keys["bibliographic_items"])
+    if row_id in association_tables['events']:
+        for k,v in association_tables['events'][row_id]['bibliography'].items():
+            bibliographic_item = et.SubElement(bibliographic_items, keys["bibliographic_item"])
+            bibliography_id = et.SubElement(bibliographic_item, keys["id_bibliography"])
+            bibliography_id.text = k
+            date = et.SubElement(bibliographic_item, keys["date"])
+            date.text = v[keys['date']]
+            pages = et.SubElement(bibliographic_item, keys["pages"])
+            pages.text = v[keys['pages']]
+
+    #Places
+    places = et.SubElement(new_row, keys["places"])
+    if row_id in association_tables['events']:
+        for k,v in association_tables['events'][row_id]['places'].items():
+            place = et.SubElement(places, keys["place"])
+            place_id = et.SubElement(place, keys["id_place"])
+            place_id.text = k
+
+            date = et.SubElement(place, keys["date"])
+            date.text = v[keys['date']]
+
+    #Sources
+    sources = et.SubElement(new_row, keys["sources"])
+    if row_id in association_tables['events']:
+        for k,v in association_tables['events'][row_id]['sources'].items():
+            source = et.SubElement(sources, keys["source"])
+            source_id = et.SubElement(source, keys["id_source"])
+            source_id.text = k
+
+            event = et.SubElement(source, keys["event"])
+            event.text = v[keys['event']]
 
     #new_document_root.append(new_row)
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()

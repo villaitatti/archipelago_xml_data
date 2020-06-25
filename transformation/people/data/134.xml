@@ -18,4 +18,11 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>110</ID_EVENT>
+			<Role>Bishop of Castello</Role>
+		</Event>
+	</Events>
+	<Sources/>
 </ROW>

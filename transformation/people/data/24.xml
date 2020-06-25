@@ -26,4 +26,58 @@
 	<Century/>
 	<Fraction_Century/>
 	<Notes/>
+	<Events>
+		<Event>
+			<ID_EVENT>20</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>22</ID_EVENT>
+			<Role>New owners</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>24</ID_EVENT>
+			<Role/>
+		</Event>
+		<Event>
+			<ID_EVENT>28</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>29</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>30</ID_EVENT>
+			<Role>Suppressed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>62</ID_EVENT>
+			<Role>Reformed order</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>66</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>27</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+		<Event>
+			<ID_EVENT>26</ID_EVENT>
+			<Role>Patrons</Role>
+		</Event>
+	</Events>
+	<Sources>
+		<Source>
+			<ID_SOURCE>null</ID_SOURCE>
+			<Name/>
+			<Surname>Lateran Canons of Santo Spirito</Surname>
+		</Source>
+		<Source>
+			<ID_SOURCE>137</ID_SOURCE>
+			<Name/>
+			<Surname/>
+		</Source>
+	</Sources>
 </ROW>

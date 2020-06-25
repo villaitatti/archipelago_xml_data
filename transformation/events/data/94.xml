@@ -9,4 +9,23 @@
 	<Fraction_century>End of the century (90-99)</Fraction_century>
 	<Date_Earliest>1490-01-01T00:00:00</Date_Earliest>
 	<Island>12172719</Island>
+	<People>
+		<Person>
+			<ID_PERSON>124</ID_PERSON>
+			<Role>Office involved</Role>
+		</Person>
+		<Person>
+			<ID_PERSON>90</ID_PERSON>
+			<Role>Decision maker</Role>
+		</Person>
+	</People>
+	<Bibliographic_Items>
+		<Bibliographic_Item>
+			<ID_BIBLIOGRAPHY>Bibl0037</ID_BIBLIOGRAPHY>
+			<Date>1979</Date>
+			<Pages>p. 92</Pages>
+		</Bibliographic_Item>
+	</Bibliographic_Items>
+	<Places/>
+	<Sources/>
 </ROW>

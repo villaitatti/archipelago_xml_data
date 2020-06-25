@@ -27,4 +27,12 @@
 	<Date_Earliest/>
 	<Date_Latest/>
 	<Island/>
+	<EVENTS/>
+	<PEOPLE>
+		<PERSON>
+			<ID_PERSON>null</ID_PERSON>
+			<Name/>
+			<Surname>Dominican Friars of San Secondo</Surname>
+		</PERSON>
+	</PEOPLE>
 </ROW>
