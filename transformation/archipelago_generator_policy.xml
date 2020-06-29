@@ -201,7 +201,87 @@
 	</generator>
 
 	<!-- Source -->
-
+	<generator name="400-source" prefix="arc">
+		<pattern>source/{source-id}</pattern>
+	</generator>
+	<generator name="410-source-identifier" prefix="arc">
+		<pattern>source/{source-id}/identifier</pattern>
+	</generator>
+	<generator name="411-source-title" prefix="arc">
+		<pattern>source/{source-id}/title</pattern>
+	</generator>
+	<generator name="420-source-typology" prefix="arc">
+		<pattern>source/{source-id}/typology</pattern>
+	</generator>
+	<generator name="430-source-format" prefix="arc">
+		<pattern>source/{source-id}/format</pattern>
+	</generator>
+	<generator name="431-source-language" prefix="arc">
+		<pattern>source/{source-id}/language</pattern>
+	</generator>
+	<generator name="440-source-author_surname_name" prefix="arc">
+		<pattern>source/{source-id}/surname_name</pattern>
+	</generator>
+	<generator name="441-source-role_author" prefix="arc">
+		<pattern>source/{source-id}/role_author</pattern>
+	</generator>
+	<generator name="450-source-original_title" prefix="arc">
+		<pattern>source/{source-id}/original_title</pattern>
+	</generator>
+	<generator name="460-source-date_earliest" prefix="arc">
+		<pattern>source/{source-id}/date_earliest</pattern>
+	</generator>
+	<generator name="461-source-date_latest" prefix="arc">
+		<pattern>source/{source-id}/date_latest</pattern>
+	</generator>
+	<generator name="462-source-century" prefix="arc">
+		<pattern>source/{source-id}/century</pattern>
+	</generator>
+	<generator name="463-source-fraction_century" prefix="arc">
+		<pattern>source/{source-id}/fraction_century</pattern>
+	</generator>
+	<generator name="470-source-collection" prefix="arc">
+		<pattern>source/{source-id}/collection</pattern>
+	</generator>
+	<generator name="471-source-acronym" prefix="arc">
+		<pattern>source/{source-id}/acronym</pattern>
+	</generator>
+	<generator name="472-source-fondo" prefix="arc">
+		<pattern>source/{source-id}/fondo</pattern>
+	</generator>
+	<generator name="473-source-busta" prefix="arc">
+		<pattern>source/{source-id}/busta</pattern>
+	</generator>
+	<generator name="474-source-filza" prefix="arc">
+		<pattern>source/{source-id}/filza</pattern>
+	</generator>
+	<generator name="475-source-title_filza" prefix="arc">
+		<pattern>source/{source-id}/title_filza</pattern>
+	</generator>
+	<generator name="476-source-folio" prefix="arc">
+		<pattern>source/{source-id}/folio</pattern>
+	</generator>
+	<generator name="477-source-drawing" prefix="arc">
+		<pattern>source/{source-id}/drawing</pattern>
+	</generator>
+	<generator name="478-source-location" prefix="arc">
+		<pattern>source/{source-id}/location</pattern>
+	</generator>
+	<generator name="480-source-medium" prefix="arc">
+		<pattern>source/{source-id}/medium</pattern>
+	</generator>
+	<generator name="481-source-dimensions" prefix="arc">
+		<pattern>source/{source-id}/dimensions</pattern>
+	</generator>
+	<generator name="482-source-synopsis" prefix="arc">
+		<pattern>source/{source-id}/synopsis</pattern>
+	</generator>
+	<generator name="483-source-transcription" prefix="arc">
+		<pattern>source/{source-id}/transcription</pattern>
+	</generator>
+	<generator name="484-source-image_container" prefix="arc">
+		<pattern>source/{source-id}/image_container</pattern>
+	</generator>
 
 	<!-- Bibliographic Item -->
 	<generator name="80000-bibliographic_item" prefix="arc">

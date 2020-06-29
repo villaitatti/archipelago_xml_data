@@ -74,7 +74,6 @@ for row in tags:
     id_event.text = row_id
 
     # Add clean fields
-    add_clean_field(keys["id_event"])
     add_clean_field(keys["typology"])
     add_clean_field(keys["author"])
     add_clean_field(keys["title"])
