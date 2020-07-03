@@ -128,6 +128,11 @@
 		<pattern>event/{event_id}/image</pattern>
 	</generator>
 
+	<generator name="291-event-source-event" prefix="arc">
+		<pattern>event/{event_id}/source/{source_id}/event</pattern>
+	</generator>
+
+
 	<!-- Actor -->
 	<generator name="300-actor" prefix="arc">
 		<pattern>actor/{actor_id}</pattern>
@@ -199,6 +204,25 @@
 	<generator name="380-actor-image" prefix="arc">
 		<pattern>actor/{actor_id}image</pattern>
 	</generator>
+
+	<generator name="391-actor-source" prefix="arc">
+		<pattern>actor/{actor_id}/source/{source_id}</pattern>
+	</generator>
+	<generator name="392-actor-source-name" prefix="arc">
+		<pattern>actor/{actor_id}/source/{source_id}/name</pattern>
+	</generator>
+	<generator name="393-actor-source-surname" prefix="arc">
+		<pattern>actor/{actor_id}/source/{source_id}/name</pattern>
+	</generator>
+
+	<generator name="394-actor-event" prefix="arc">
+		<pattern>actor/{actor_id}/event/{event_id}/</pattern>
+	</generator>
+	<generator name="394-actor-event-role" prefix="arc">
+		<pattern>actor/{actor_id}/event/{event_id}/role</pattern>
+	</generator>
+
+
 
 	<!-- Source -->
 	<generator name="400-source" prefix="arc">
