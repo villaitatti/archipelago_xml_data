@@ -25,6 +25,14 @@ def write_file(row_id, text):
   with open(output_filename, 'w') as f:
     f.write(text)
 
+regex_square = r'[\[\]]'
+regex_curly = r'[\{\}]'
+regex_round = r'[\(\)]'
+
+regex_aat = r'\[[0-9]+\]'
+regex_ita = r'\{[A-z\s]+\}'
+regex_date = r'\([0-9\-]+\)'
+
 # Input keys
 key_row = 'ROW'
 key_id_person = 'ID_PERSON'
@@ -59,6 +67,10 @@ key_end = 'End'
 key_root = 'Root'
 key_work_locations = 'Work_locations'
 
+key_aat = 'aat'
+key_ita = 'ita'
+key_eng = 'eng'
+
 key_events = "Events"
 key_event = "Event"
 key_role = "Role"
@@ -81,6 +93,8 @@ for row in tags:
     id_person = et.SubElement(new_row, key_id_person)
     id_person.text = row_id
 
+    #TODO Actor type
+
     # given name 
     given_name = et.SubElement(new_row, key_given_name)
     given_name.text = row.find(f'ns:{key_given_name}', ns).text
@@ -94,15 +108,37 @@ for row in tags:
     alias.text = row.find(f'ns:{key_alias}', ns).text
 
     # Titles
+    # If the text is not empty
     if row.find(f'ns:{key_title}', ns).text is not None:
       val_titles = row.find(f'ns:{key_title}', ns)
-      val_titles = val_titles.text.split(' ; ')
+      val_titles = val_titles.text.split(';')
 
       titles = et.SubElement(new_row, key_titles)
 
       for title in val_titles:
+
         new_title = et.SubElement(titles, key_title)
-        new_title.text = title.strip()
+
+        if re.search(regex_square, title):
+          aat = re.findall(regex_aat, title)[0]
+          aat = re.sub(regex_square, '', aat, re.S)
+
+          new_aat = et.SubElement(new_title, key_aat)
+          new_aat.text = aat.strip()
+
+          title = re.sub(regex_aat, '', title)
+
+        if re.search(regex_curly, title):
+          ita = re.findall(regex_ita, title)[0]
+          ita = re.sub(regex_curly, '', ita)
+
+          new_ita = et.SubElement(new_title, key_ita)
+          new_ita.text = ita.strip()
+
+          title = re.sub(regex_ita, '', title)
+
+        eng = et.SubElement(new_title, key_eng)
+        eng.text = title.strip()
 
     # patronymic
     patronymic = et.SubElement(new_row, key_patronymic)
