@@ -82,6 +82,36 @@ ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
 
 tags = root.findall(f'ns:{key_row}', ns)
 
+def explode_text(s, parent, current):
+
+  try:
+    tag = et.SubElement(parent, current)
+
+    # AAT
+    if re.search(regex_square, s):
+      aat = re.findall(regex_aat, s)[0]
+      aat = re.sub(regex_square, '', aat, re.S)
+
+      new_aat = et.SubElement(tag, key_aat)
+      new_aat.text = aat.strip()
+
+      s = re.sub(regex_aat, '', s)
+
+    if re.search(regex_curly, s):
+      ita = re.findall(regex_ita, s)[0]
+      ita = re.sub(regex_curly, '', ita)
+
+      new_ita = et.SubElement(tag, key_ita)
+      new_ita.text = ita.strip()
+
+      s = re.sub(regex_ita, '', s)
+
+    eng = et.SubElement(tag, key_eng)
+    eng.text = s.strip()
+
+  except TypeError as identifier:
+    pass
+
 # Iterate each ROW
 for row in tags:
 
@@ -115,38 +145,14 @@ for row in tags:
 
       titles = et.SubElement(new_row, key_titles)
 
-      for title in val_titles:
-
-        new_title = et.SubElement(titles, key_title)
-
-        if re.search(regex_square, title):
-          aat = re.findall(regex_aat, title)[0]
-          aat = re.sub(regex_square, '', aat, re.S)
-
-          new_aat = et.SubElement(new_title, key_aat)
-          new_aat.text = aat.strip()
-
-          title = re.sub(regex_aat, '', title)
-
-        if re.search(regex_curly, title):
-          ita = re.findall(regex_ita, title)[0]
-          ita = re.sub(regex_curly, '', ita)
-
-          new_ita = et.SubElement(new_title, key_ita)
-          new_ita.text = ita.strip()
-
-          title = re.sub(regex_ita, '', title)
-
-        eng = et.SubElement(new_title, key_eng)
-        eng.text = title.strip()
-
+      [explode_text(title, titles, key_title) for title in val_titles]
+    
     # patronymic
     patronymic = et.SubElement(new_row, key_patronymic)
     patronymic.text = row.find(f'ns:{key_patronymic}', ns).text
 
     # occupation
-    occupation = et.SubElement(new_row, key_occuption)
-    occupation.text = row.find(f'ns:{key_occuption}', ns).text
+    explode_text(row.find(f'ns:{key_occuption}', ns).text, new_row, key_occuption)
 
     # activities
     if row.find(f'ns:{key_activities_role}', ns).text is not None:
