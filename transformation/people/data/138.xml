@@ -1,11 +1,19 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>138</ID_PERSON>
-	<Given_Name>Spadaro</Given_Name>
-	<Surname>Litaldo</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Spadaro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Litaldo</eng>
+	</Surname>
+	<Activities>
+		<Activity>
+			<aat>300230871</aat>
+			<ita>Proprietario terriero</ita>
+			<eng>Landowner</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -14,7 +22,6 @@
 	<Will_Date/>
 	<Century>12th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>113</ID_EVENT>

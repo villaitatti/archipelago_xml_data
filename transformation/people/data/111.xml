@@ -1,37 +1,93 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>111</ID_PERSON>
-	<Given_Name>Carlo</Given_Name>
-	<Surname>Carafa della Spina</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Carlo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Carafa della Spina</eng>
+	</Surname>
 	<Titles>
-		<Title>Bishop</Title>
+		<Title>
+			<aat>300025756</aat>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300417572</aat>
+			<eng>Apostolic nuncio</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300417572</aat>
+			<ita>Nunzio Apostolico</ita>
+			<eng>Apostolic nuncio</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Girolamo</Patronymic>
-	<Occupation/>
+	<Patronymic>
+		<eng>Girolamo</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Bishop of Aversa</Title>
-			<Start>1644</Start>
-			<End>1665</End>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title/>
-			<Start/>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<Start>1664</Start>
 			<End/>
+			<eng>Cardinal  (1664)</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340019</aat>
+			<ita>Vescovo di Aversa</ita>
+			<Start>1644</Start>
+			<End>1665</End>
+			<eng>Bishop of Aversa</eng>
+		</Activity>
+		<Activity>
+			<aat>300417572</aat>
+			<ita>Nunzio apostolico</ita>
+			<Start>1653</Start>
+			<End>1664</End>
+			<eng>Apostolic nuncio</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3169070</Place_of_birth>
 	<Place_of_death>3169070</Place_of_death>
+	<Work_locations>
+		<Work_location>3169070</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest>1611-04-21</Birth_Date_Earliest>
 	<Death_Date_Latest>1680-10-19</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

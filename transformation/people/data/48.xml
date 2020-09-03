@@ -1,17 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>48</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Buonconsiglio</Surname>
-	<Alias>Marescalco</Alias>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Giovanni</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Buonconsiglio</eng>
+	</Surname>
+	<Alias>
+		<eng>Marescalco</eng>
+	</Alias>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Montecchio Maggiore</Place_of_birth>
@@ -25,7 +28,6 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>46</ID_EVENT>

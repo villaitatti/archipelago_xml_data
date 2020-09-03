@@ -1,17 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>93</ID_PERSON>
-	<Given_Name>Bernardin</Given_Name>
-	<Surname>Giacomazzi</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Bernardin</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Giacomazzi</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Secretary of the monastery of Santo Spirito</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340056</aat>
+			<ita>Segretario di Santo Spirito</ita>
+			<eng>Secretary of Santo Spirito</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +37,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>74</ID_EVENT>

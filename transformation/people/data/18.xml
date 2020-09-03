@@ -1,19 +1,10 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>18</ID_PERSON>
-	<Given_Name/>
-	<Surname>Benedictine nuns of San Secondo</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
-	<Activities>
-		<Activity>
-			<Id>1</Id>
-			<Title>Religious order</Title>
-			<Start/>
-			<End/>
-		</Activity>
-	</Activities>
+	<Surname>
+		<ita>Monache benedettine di San Secondo</ita>
+		<eng>Benedictine nuns of San Secondo</eng>
+	</Surname>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest>1034</Birth_Date_Earliest>
@@ -22,7 +13,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>41</ID_EVENT>

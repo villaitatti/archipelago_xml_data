@@ -1,20 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>17</ID_PERSON>
-	<Given_Name/>
-	<Surname>Holy See</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
-	<Place_of_birth/>
+	<Surname>
+		<ita>Santa Sede</ita>
+		<eng>Holy See</eng>
+	</Surname>
+	<Place_of_birth>Vatican City</Place_of_birth>
 	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Vatican City</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>17</ID_EVENT>

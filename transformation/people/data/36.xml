@@ -1,17 +1,22 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>36</ID_PERSON>
-	<Given_Name>Jacometto</Given_Name>
-	<Surname>Veneziano</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Jacometto</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Veneziano</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
+		</Activity>
+		<Activity>
+			<aat>300154329</aat>
+			<ita>Miniatore</ita>
+			<eng>Miniaturist</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +30,6 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

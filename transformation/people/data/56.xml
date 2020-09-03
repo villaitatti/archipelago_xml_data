@@ -1,23 +1,27 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>56</ID_PERSON>
-	<Given_Name>Teodoro</Given_Name>
-	<Surname>Viero</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Teodoro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Viero</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Publisher</Title>
-			<Start/>
-			<End/>
+			<aat>300239410</aat>
+			<ita>Incisore</ita>
+			<eng>Engraver</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Printer</Title>
-			<Start/>
-			<End/>
+			<aat>300025574</aat>
+			<ita>Editore</ita>
+			<eng>Publisher</eng>
+		</Activity>
+		<Activity>
+			<aat>300025164</aat>
+			<ita>Tipografo</ita>
+			<eng>Printmaker</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3182297</Place_of_birth>
@@ -31,7 +35,10 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes>He moved to Venice in 1755. His shop was in via Mercatoria &quot;vulgo dicta dell'Orologio&quot;. He was the uncle of Luigi Schiavonetti on his mother's side, who sent him from London contemporary English prints for sale in Venice.</Notes>
+	<Notes>
+		<ita>Si trasferì a Venezia nel 1755 e la sua bottega era in calle delle Mercerie. Luigi Schiavonetti, cugino da parte di madre, era solito inviargli da Londra stampe inglesi dell'epoca da vendere a Venezia</ita>
+		<eng>He moved to Venice in 1755 and his shop was in calle delle Mercerie. He was the uncle of Luigi Schiavonetti on his mother's side, who sent him from London contemporary English prints for sale in Venice</eng>
+	</Notes>
 	<Events/>
 	<Sources>
 		<Source>

@@ -1,11 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>171</ID_PERSON>
-	<Given_Name>Piero</Given_Name>
-	<Surname>Vallaresso</Surname>
-	<Alias/>
-	<Patronymic>Zaccaria</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Given_Name>
+		<eng>Piero</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Vallaresso</eng>
+	</Surname>
+	<Patronymic>
+		<eng>Zaccaria</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -14,7 +23,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>148</ID_EVENT>

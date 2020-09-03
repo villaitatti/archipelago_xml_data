@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>91</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Tironi</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Francesco</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Tironi</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -23,9 +23,8 @@
 	<Death_Date_Latest>1797-03-01</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

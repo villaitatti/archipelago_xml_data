@@ -1,14 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>172</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>Pesaro</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alessandro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Pesaro</eng>
+	</Surname>
 	<Titles>
-		<Title>Captain</Title>
+		<Title>
+			<eng>Captain</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>300236171</aat>
+			<ita>Capitano</ita>
+			<eng>Captain</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -17,7 +32,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>149</ID_EVENT>

@@ -1,11 +1,24 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>31</ID_PERSON>
-	<Given_Name>Elisabetta Graziosa</Given_Name>
-	<Surname>Ferri</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Elisabetta Graziosa</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Ferri</eng>
+	</Surname>
+	<Occupation>
+		<aat>300236548</aat>
+		<ita>Nobildonna</ita>
+		<eng>Noblewoman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>300115251</aat>
+			<ita>Committente</ita>
+			<eng>Patron</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death>3164603</Place_of_death>
 	<Work_locations>
@@ -17,7 +30,10 @@
 	<Will_Date>1742-12-26</Will_Date>
 	<Century>18th cent.</Century>
 	<Fraction_Century>First half of the century (0-49)</Fraction_Century>
-	<Notes>She was buried in the church of San Secondo</Notes>
+	<Notes>
+		<ita>Era seppellita all'interno della chiesa di San Secondo</ita>
+		<eng>She was buried in the church of San Secondo</eng>
+	</Notes>
 	<Events/>
 	<Sources/>
 </ROW>

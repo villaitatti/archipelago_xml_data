@@ -1,32 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>53</ID_PERSON>
-	<Given_Name>Girolamo</Given_Name>
-	<Surname>Contarini</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Girolamo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Contarini</eng>
+	</Surname>
 	<Titles>
-		<Title>Bishop</Title>
+		<Title>
+			<eng>Bishop</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Vicario of the monastery of San Secondo</Title>
-			<Start>1597-09-01</Start>
-			<End>1598-06-01</End>
+			<aat>OCC340006</aat>
+			<ita>Vicario di San Secondo</ita>
+			<Start>1597</Start>
+			<End>1598</End>
+			<eng>Vicar of San Secondo</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Vicario of the monastery of San Pietro Martire di Murano</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340032</aat>
+			<ita>Vicario di San Pietro Martire di Murano</ita>
+			<eng>Vicar of San Pietro Martire di Murano</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Bishop of Capodistria</Title>
-			<Start>1600-05-15</Start>
-			<End>1619-10-9</End>
+			<aat>OCC340033</aat>
+			<ita>Vescovo di Capodistria</ita>
+			<Start>1600</Start>
+			<End>1619</End>
+			<eng>Bishop of Capodistria</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -37,7 +46,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Turn of the century (90-10)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>97</ID_EVENT>

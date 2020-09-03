@@ -1,26 +1,52 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>166</ID_PERSON>
-	<Given_Name>Francesco Maria</Given_Name>
-	<Surname>della Rovere</Surname>
-	<Alias>Francesco Maria I</Alias>
+	<Given_Name>
+		<eng>Francesco Maria</eng>
+	</Given_Name>
+	<Surname>
+		<eng>della Rovere</eng>
+	</Surname>
+	<Alias>
+		<eng>Francesco Maria I</eng>
+	</Alias>
 	<Titles>
-		<Title>Duke</Title>
+		<Title>
+			<eng>Duke</eng>
+		</Title>
+		<Title>
+			<aat>300132247</aat>
+			<ita>Duca</ita>
+			<eng>Duke</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Giovanni</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Giovanni</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025474</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Politician</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Duke of Urbino</Title>
+			<aat>OCC340043</aat>
+			<ita>Duca di Urbino</ita>
 			<Start>1508</Start>
 			<End>1516</End>
+			<eng>Duke of Urbino</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Duke of Urbino</Title>
+			<aat>OCC340043</aat>
+			<ita>Duca di Urbino</ita>
 			<Start>1521</Start>
 			<End>1538</End>
+			<eng>Duke of Urbino</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340042</aat>
+			<ita>Condottiero</ita>
+			<eng>Condottiero</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3166740</Place_of_birth>
@@ -34,7 +60,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>146</ID_EVENT>

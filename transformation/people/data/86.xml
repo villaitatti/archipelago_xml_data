@@ -1,11 +1,10 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>86</ID_PERSON>
-	<Given_Name/>
-	<Surname>Municipality of Venice</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Surname>
+		<ita>Comune di Venezia</ita>
+		<eng>Municipality of Venice</eng>
+	</Surname>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -14,7 +13,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>36</ID_EVENT>

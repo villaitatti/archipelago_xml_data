@@ -1,17 +1,34 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>147</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Nani</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Nani</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
+		<Title>
+			<aat>300025757</aat>
+			<ita>Canonico</ita>
+			<eng>Canon</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Friar in San Clemente</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340063</aat>
+			<ita>Canonico regolare di San Clemente</ita>
+			<eng>Canon regular of San Clemente</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +42,9 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes>He was well known for being a predictor</Notes>
+	<Notes>
+		<eng>He was well known for being a predictor</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>124</ID_EVENT>

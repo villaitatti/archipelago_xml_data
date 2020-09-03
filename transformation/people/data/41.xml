@@ -1,26 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>41</ID_PERSON>
-	<Given_Name>Domenico</Given_Name>
-	<Surname>Codagli</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Domenico</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Codagli</eng>
+	</Surname>
 	<Titles>
-		<Title>Prior</Title>
+		<Title>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<ita>Priore</ita>
+			<eng>Prior</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Dominican friar</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Prior of the monastery of San Secondo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340025</aat>
+			<ita>Priore di San Secondo</ita>
+			<eng>Prior of San Secondo</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Writer</Title>
-			<Start/>
-			<End/>
+			<aat>300025496</aat>
+			<ita>Cronista</ita>
+			<eng>Chronicler</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3171869</Place_of_birth>
@@ -34,7 +49,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>73</ID_EVENT>

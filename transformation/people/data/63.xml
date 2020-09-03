@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>63</ID_PERSON>
-	<Given_Name>Luigi</Given_Name>
-	<Surname>Querena</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Luigi</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Querena</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +25,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

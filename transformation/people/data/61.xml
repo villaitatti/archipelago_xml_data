@@ -1,17 +1,24 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>61</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Tirali</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Andrea</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Tirali</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Title>
+	</Titles>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Architect</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -23,9 +30,8 @@
 	<Death_Date_Latest>1737-06-28</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

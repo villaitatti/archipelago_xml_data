@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>185</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Lorenzetto</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Lorenzetto</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Stonecutter</Title>
-			<Start/>
-			<End/>
+			<aat>300025039</aat>
+			<ita>Scalpellino</ita>
+			<eng>Stonecutter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +25,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

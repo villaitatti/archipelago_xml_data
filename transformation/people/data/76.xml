@@ -1,29 +1,34 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>76</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Cominelli</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Andrea</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Cominelli</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Title>
+	</Titles>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Stonemason</Title>
-			<Start/>
-			<End/>
+			<aat>300025045</aat>
+			<ita>Tagliapietre</ita>
+			<eng>Stonemason</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Sculptor</Title>
-			<Start/>
-			<End/>
+			<aat>300025181</aat>
+			<ita>Scultore</ita>
+			<eng>Sculptor</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Architect</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -37,7 +42,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century>First half of the century (0-49)</Fraction_Century>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

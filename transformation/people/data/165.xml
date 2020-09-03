@@ -1,20 +1,40 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>165</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Sforza</Surname>
-	<Alias>Francesco II</Alias>
+	<Given_Name>
+		<eng>Francesco</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Sforza</eng>
+	</Surname>
+	<Alias>
+		<eng>Francesco II</eng>
+	</Alias>
 	<Titles>
-		<Title>Duke</Title>
+		<Title>
+			<eng>Duke</eng>
+		</Title>
+		<Title>
+			<aat>300132247</aat>
+			<ita>Duca</ita>
+			<eng>Duke</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Ludovico</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Ludovico</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Duke of Milan</Title>
+			<aat>OCC340065</aat>
+			<ita>Duca di Milano</ita>
 			<Start>1515</Start>
 			<End>1535</End>
+			<eng>Duke of Milan</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3173435</Place_of_birth>
@@ -28,7 +48,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>145</ID_EVENT>

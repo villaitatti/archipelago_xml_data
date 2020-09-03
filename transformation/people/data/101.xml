@@ -1,17 +1,34 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>101</ID_PERSON>
-	<Given_Name>Giambattista Maria</Given_Name>
-	<Surname>Contarini</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation>Dominican friar</Occupation>
+	<Given_Name>
+		<eng>Giambattista Maria</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Contarini</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Lecturer (lettore)</Title>
-			<Start/>
-			<End/>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Activity>
+		<Activity>
+			<aat>300136462</aat>
+			<ita>Lettore</ita>
+			<eng>Lecturer</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +42,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

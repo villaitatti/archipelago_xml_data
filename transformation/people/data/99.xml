@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>99</ID_PERSON>
-	<Given_Name>Domenico</Given_Name>
-	<Surname>Porta</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Domenico</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Porta</eng>
+	</Surname>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Friar in Santo Spirito</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Guardian of the monastery of Santo Spirito</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340051</aat>
+			<ita>Guardiano di Santo Spirito</ita>
+			<eng>Guardian of Santo Spirito</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -27,8 +39,7 @@
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
-	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
+	<Fraction_Century/>
 	<Events>
 		<Event>
 			<ID_EVENT>79</ID_EVENT>

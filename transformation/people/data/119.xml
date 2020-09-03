@@ -1,11 +1,19 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>119</ID_PERSON>
-	<Given_Name>Nicolò</Given_Name>
-	<Surname>da Cortivo</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Nicolò</eng>
+	</Given_Name>
+	<Surname>
+		<eng>dal Cortivo</eng>
+	</Surname>
+	<Activities>
+		<Activity>
+			<aat>300025593</aat>
+			<ita>Cartografo</ita>
+			<eng>Cartographer</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Work_locations>
@@ -17,7 +25,10 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
+	<Notes>
+		<ita>Era il nipote del cartografo Angelo dal Cortivo</ita>
+		<eng>He was the nephew of the cartographer Angelo dal Cortivo</eng>
+	</Notes>
 	<Events/>
 	<Sources>
 		<Source>

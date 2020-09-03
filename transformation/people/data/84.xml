@@ -1,17 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>84</ID_PERSON>
-	<Given_Name>Baldassare</Given_Name>
-	<Surname>Longhena</Surname>
-	<Alias/>
-	<Patronymic>Melchisedech</Patronymic>
-	<Occupation/>
+	<Given_Name>
+		<eng>Baldassare</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Longhena</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Title>
+	</Titles>
+	<Patronymic>
+		<eng>Melchisedech</eng>
+	</Patronymic>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Architect and sculptor</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Activity>
+		<Activity>
+			<aat>300025181</aat>
+			<ita>Scultore</ita>
+			<eng>Sculptor</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +40,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>19</ID_EVENT>

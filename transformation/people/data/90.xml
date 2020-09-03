@@ -1,17 +1,13 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>90</ID_PERSON>
-	<Given_Name/>
-	<Surname>Venetian Senate</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Surname>
+		<ita>Senato veneziano</ita>
+		<eng>Venetian Senate</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Venetian Office</Title>
-			<Start/>
-			<End/>
+			<eng>Venetian Office</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +21,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>47</ID_EVENT>

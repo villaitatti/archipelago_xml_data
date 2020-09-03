@@ -1,23 +1,38 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>125</ID_PERSON>
-	<Given_Name>Girolamo</Given_Name>
-	<Surname>Mercuriale</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Given_Name>
+		<eng>Girolamo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Mercuriale</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300025809</aat>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Title>
+	</Titles>
+	<Activities>
+		<Activity>
+			<aat>300025809</aat>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Activity>
+	</Activities>
+	<Place_of_birth>3176746</Place_of_birth>
+	<Place_of_death>3176746</Place_of_death>
 	<Work_locations>
-		<Work_location>3171728</Work_location>
+		<Work_location>Padua</Work_location>
+		<Work_location>3169070</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest/>
-	<Death_Date_Latest/>
+	<Birth_Date_Earliest>1530-09-30</Birth_Date_Earliest>
+	<Death_Date_Latest>1606-11-08</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>92</ID_EVENT>

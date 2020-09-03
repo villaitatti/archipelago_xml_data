@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>136</ID_PERSON>
-	<Given_Name>Imizza</Given_Name>
-	<Surname>da Selva di Boggion</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Imizza</eng>
+	</Given_Name>
+	<Surname>
+		<eng>da Selva di Boggion</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Widow of Leone da Selva di Boggion</Title>
-			<Start/>
-			<End/>
+			<aat>300230871</aat>
+			<ita>Proprietario terriero</ita>
+			<eng>Landowner</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -22,7 +22,10 @@
 	<Will_Date/>
 	<Century>12th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
+	<Notes>
+		<ita>Era la vedova di Leone da Selva di Boggion</ita>
+		<eng>She was the widow of Leone da Selva di Boggion</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>112</ID_EVENT>

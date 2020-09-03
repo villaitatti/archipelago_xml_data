@@ -1,31 +1,56 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>156</ID_PERSON>
-	<Given_Name/>
-	<Surname>John VIII Palaiologos</Surname>
-	<Alias/>
+	<Given_Name>
+		<ita>Giovanni</ita>
+		<eng>John</eng>
+	</Given_Name>
+	<Surname>
+		<ita>Paleologo</ita>
+		<eng>Palaiologos</eng>
+	</Surname>
+	<Alias>
+		<ita>Giovanni VIII Paleologo</ita>
+		<eng>John VIII Palaiologos</eng>
+	</Alias>
 	<Titles>
-		<Title>Emperor</Title>
+		<Title>
+			<eng>Emperor</eng>
+		</Title>
+		<Title>
+			<aat>300025480</aat>
+			<ita>Imperatore</ita>
+			<eng>Emperor</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Manuel II Palaiologos</Patronymic>
-	<Occupation/>
+	<Patronymic>
+		<eng>Manuel II Palaiologos</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Emperor of the Byzantine Empire</Title>
+			<aat>OCC340048</aat>
+			<ita>Imperatore bizantino</ita>
 			<Start>1425</Start>
 			<End>1448</End>
+			<eng>Byzantine Emperor</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>Constantinople</Place_of_birth>
+	<Place_of_death>Constantinople</Place_of_death>
+	<Work_locations>
+		<Work_location>Constantinople</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest>1392-12-18</Birth_Date_Earliest>
 	<Death_Date_Latest>1448-10-31</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>139</ID_EVENT>

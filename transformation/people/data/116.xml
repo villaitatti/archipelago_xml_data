@@ -1,20 +1,37 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>116</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Giustinian</Surname>
-	<Alias>Lorenzo Giustinian</Alias>
+	<Given_Name>
+		<eng>Lorenzo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Giustinian</eng>
+	</Surname>
 	<Titles>
-		<Title>Saint</Title>
+		<Title>
+			<eng>Saint</eng>
+		</Title>
+		<Title>
+			<aat>300025772</aat>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Bernardo di Piero</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Bernardo di Piero</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Patriarch of Venice</Title>
+			<aat>OCC340015</aat>
+			<ita>Patriarca di Venezia</ita>
 			<Start>1451</Start>
-			<End/>
+			<End>1456</End>
+			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -22,13 +39,16 @@
 	<Work_locations>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest>1381</Birth_Date_Earliest>
+	<Birth_Date_Earliest>1381-07-01</Birth_Date_Earliest>
 	<Death_Date_Latest>1456-01-08</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes>He mediated, along with the arcibishop Antonino Pierozzi from Florence, in the Peace of Lodi.He is buries in the church of San Pietro di Castello.</Notes>
+	<Notes>
+		<ita>Insieme all'arcivescovo di Firenze Antonino Pierozzi fu mediatore nella pace di Lodi. è seppellito nella chiesa di San Pietro di Castello</ita>
+		<eng>Together with the Arcibishop of Florenze, Antonino Pierozzi, he played as mediator in the peace of Lodi. He is buried in the church of San Pietro di Castello</eng>
+	</Notes>
 	<Events/>
 	<Sources/>
 </ROW>

@@ -1,20 +1,39 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>130</ID_PERSON>
-	<Given_Name>Alvise I</Given_Name>
-	<Surname>Mocenigo</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alvise</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Mocenigo</eng>
+	</Surname>
+	<Alias>
+		<eng>Alvise I Mocenigo</eng>
+	</Alias>
 	<Titles>
-		<Title>Doge</Title>
+		<Title>
+			<eng>Doge</eng>
+		</Title>
+		<Title>
+			<aat>300025463</aat>
+			<ita>Doge</ita>
+			<eng>Doge</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Tommaso</Patronymic>
-	<Occupation/>
+	<Patronymic>
+		<eng>Tommaso</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Doge</Title>
+			<ita>Doge di Venezia</ita>
 			<Start>1570</Start>
 			<End>1577</End>
+			<eng>Doge of Venice</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -28,7 +47,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>92</ID_EVENT>

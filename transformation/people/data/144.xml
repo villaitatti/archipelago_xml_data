@@ -1,20 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>144</ID_PERSON>
-	<Given_Name>Piero</Given_Name>
-	<Surname>Tomacelli</Surname>
-	<Alias>Pope Boniface IX</Alias>
+	<Given_Name>
+		<eng>Piero</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Tomacelli</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Bonifacio IX</ita>
+		<eng>Pope Boniface IX</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Giacomo</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Pope</Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1389</Start>
 			<End>1404</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3172394</Place_of_birth>
@@ -28,7 +49,6 @@
 	<Will_Date/>
 	<Century>14th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
-	<Notes>https://www.wikidata.org/wiki/Q165561</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>120</ID_EVENT>

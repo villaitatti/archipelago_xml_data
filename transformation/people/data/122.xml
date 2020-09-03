@@ -1,23 +1,47 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>122</ID_PERSON>
-	<Given_Name>Augusto</Given_Name>
-	<Surname>Denaix</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Augusto</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Denaix</eng>
+	</Surname>
 	<Titles>
-		<Title>Captain</Title>
+		<Title>
+			<eng>Captain</eng>
+		</Title>
+		<Title>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Engineer</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
-	<Place_of_birth/>
+	<Activities>
+		<Activity>
+			<aat>300236171</aat>
+			<ita>Capitano</ita>
+			<eng>Captain</eng>
+		</Activity>
+		<Activity>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Egineer</eng>
+		</Activity>
+		<Activity>
+			<aat>300025593</aat>
+			<ita>Cartografo</ita>
+			<eng>Cartographer</eng>
+		</Activity>
+	</Activities>
+	<Place_of_birth>France</Place_of_birth>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

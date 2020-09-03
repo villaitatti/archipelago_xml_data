@@ -1,11 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>169</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Contarini</Surname>
-	<Alias/>
-	<Patronymic>Alvise Minotto</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Given_Name>
+		<eng>Andrea</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Contarini</eng>
+	</Surname>
+	<Patronymic>
+		<eng>Alvise Minotto</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -14,7 +23,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>148</ID_EVENT>

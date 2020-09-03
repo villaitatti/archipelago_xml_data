@@ -1,23 +1,64 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>167</ID_PERSON>
-	<Given_Name>Gaetano</Given_Name>
-	<Surname>dei Conti di Thiene</Surname>
-	<Alias>Saint Cajetan</Alias>
+	<Given_Name>
+		<eng>Gaetano</eng>
+	</Given_Name>
+	<Surname>
+		<eng>dei Conti di Thiene</eng>
+	</Surname>
+	<Alias>
+		<ita>San Gaetano</ita>
+		<eng>Saint Cajetan</eng>
+	</Alias>
 	<Titles>
-		<Title>Saint</Title>
+		<Title>
+			<eng>Saint</eng>
+		</Title>
+		<Title>
+			<aat>300251948</aat>
+			<ita>Conte</ita>
+			<eng>Count</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Gaspare</Patronymic>
-	<Occupation>Theatine</Occupation>
+	<Patronymic>
+		<eng>Gaspare</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340041</aat>
+			<ita>Canonico regolare teatino</ita>
+			<eng>Canon regular theatine</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth>3164419</Place_of_birth>
 	<Place_of_death>3172394</Place_of_death>
+	<Work_locations>
+		<Work_location>3169070</Work_location>
+		<Work_location>3164603</Work_location>
+		<Work_location>3172394</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest>1480-10-01</Birth_Date_Earliest>
 	<Death_Date_Latest>1547-08-07</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>147</ID_EVENT>

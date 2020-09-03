@@ -1,20 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>146</ID_PERSON>
-	<Given_Name>Antonio</Given_Name>
-	<Surname>de Lusciano</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Antonio</eng>
+	</Given_Name>
+	<Surname>
+		<eng>de Lusciano</eng>
+	</Surname>
 	<Titles>
-		<Title>Prior</Title>
+		<Title>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<ita>Priore</ita>
+			<eng>Prior</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Prior of San Clemente</Title>
+			<aat>OCC340028</aat>
+			<ita>Priore di San Clemente</ita>
 			<Start>1433</Start>
 			<End/>
+			<eng>Prior of San Clemente  (1433)</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -28,7 +37,6 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>123</ID_EVENT>

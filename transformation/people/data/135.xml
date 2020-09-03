@@ -1,17 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>135</ID_PERSON>
-	<Given_Name>Alberico</Given_Name>
-	<Surname>Lottario</Surname>
-	<Alias>Bishop</Alias>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Alberico</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Lottario</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Bishop of Rimini</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340059</aat>
+			<ita>Vescovo di Rimini</ita>
+			<eng>Bishop of Rimini</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -22,7 +34,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>111</ID_EVENT>

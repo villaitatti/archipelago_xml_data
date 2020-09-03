@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>33</ID_PERSON>
-	<Given_Name>Domenico Maria</Given_Name>
-	<Surname>Gella</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Domenico Maria</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Gella</eng>
+	</Surname>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Dominican friar</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Friar of San Secondo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340038</aat>
+			<ita>Frate di San Secondo</ita>
+			<eng>Friar of San Secondo</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -28,7 +40,10 @@
 	<Will_Date>1664</Will_Date>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes>In his will he wrote that the monastery &quot;vive secondo il rigore dell’ordine dei predicatori e per questo si trova in uno stato di estrema povertà&quot;.</Notes>
+	<Notes>
+		<ita>Ne suo testamento scrisse che all'interno del convento &quot;si vive secondo il rigore dell’ordine dei predicatori e per questo si trova in uno stato di estrema povertà&quot;</ita>
+		<eng>In his will he wrote that the life in the monastery follows the rigor of the Order of Preachers and thus the convent is in a state of great poverty</eng>
+	</Notes>
 	<Events/>
 	<Sources/>
 </ROW>

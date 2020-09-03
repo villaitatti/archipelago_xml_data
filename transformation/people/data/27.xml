@@ -1,20 +1,93 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>27</ID_PERSON>
-	<Given_Name>Fabio</Given_Name>
-	<Surname>Chigi</Surname>
-	<Alias>Pope Alexander VII</Alias>
+	<Given_Name>
+		<eng>Fabio</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Chigi</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Alessandro VII</ita>
+		<eng>Pope Alexander VII</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Prete</ita>
+			<eng>Priest</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Pope</Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<Start>1634</Start>
+			<End/>
+			<eng>Priest  (1634)</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340023</aat>
+			<ita>Vescovo di Nardò</ita>
+			<Start>1635</Start>
+			<End/>
+			<eng>Bishop of Nardò  (1635)</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340024</aat>
+			<ita>Vescovo di Imola</ita>
+			<Start>1652</Start>
+			<End/>
+			<eng>Bishop of Imola  (1652)</eng>
+		</Activity>
+		<Activity>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<Start>1652</Start>
+			<End>1667</End>
+			<eng>Cardinal</eng>
+		</Activity>
+		<Activity>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1655</Start>
 			<End>1667</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3166548</Place_of_birth>
@@ -28,7 +101,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes>https://www.wikidata.org/wiki/Q127254</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>30</ID_EVENT>

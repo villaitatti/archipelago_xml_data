@@ -1,23 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>51</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Bon</Surname>
-	<Alias/>
-	<Patronymic>Vincenzo</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Bon</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<eng>Guardian grando</eng>
+		</Title>
+		<Title>
+			<ita>Guardian Grando</ita>
+			<eng>Guardian grando</eng>
+		</Title>
+	</Titles>
+	<Patronymic>
+		<eng>Vincenzo</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Merchant</Title>
-			<Start/>
-			<End/>
+			<aat>300025245</aat>
+			<ita>Mercante</ita>
+			<eng>Merchant</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Guardian grando for the Scuola Grande di San Rocco</Title>
+			<aat>OCC340010</aat>
+			<ita>Guardian grando della Scuola grande di San Rocco</ita>
 			<Start>1607</Start>
 			<End/>
+			<eng>Guardian grando of the Scuola grande di San Rocco  (1607)</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -31,7 +49,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>51</ID_EVENT>

@@ -1,17 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>108</ID_PERSON>
-	<Given_Name>Alvise</Given_Name>
-	<Surname>Foscarini</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Given_Name>
+		<eng>Alvise</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Foscarini</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300025471</aat>
+			<ita>Procuratore</ita>
+			<eng>Procurator</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Procurator of St. Mark de supra</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340030</aat>
+			<ita>Procuratore di San Marco de supra</ita>
+			<eng>Procurator of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -22,7 +34,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

@@ -1,32 +1,46 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>12</ID_PERSON>
-	<Given_Name>Marina</Given_Name>
-	<Surname>Celsi</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Marina</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Celsi</eng>
+	</Surname>
 	<Titles>
-		<Title>Abbess</Title>
+		<Title>
+			<eng>Abbess</eng>
+		</Title>
+		<Title>
+			<aat>300236003</aat>
+			<eng>Abbess</eng>
+		</Title>
+		<Title>
+			<aat>300236003</aat>
+			<ita>Badessa</ita>
+			<eng>Abbess</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Noblewoman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Abbess of the Benedictine convent of San Maffio di Murano</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340020</aat>
+			<ita>Badessa di San Maffio di Murano</ita>
+			<eng>Abbess of San Maffio di Murano</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Abbess of the Benedictine convent of Sant'Eufemia di Mazzorbo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340021</aat>
+			<ita>Badessa di Sant'Eufemia di Mazzorbo</ita>
+			<eng>Abbess of Sant'Eufemia di Mazzorbo</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Abbess of the Benedictine convent of SS. Cosma e Damiano</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340022</aat>
+			<ita>Badessa dei SS. Cosma e Damiano</ita>
+			<eng>Abbess of SS. Cosma e Damiano</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -40,7 +54,10 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes>She was the great-great-granddaughter of Doge Lorenzo Celsi.</Notes>
+	<Notes>
+		<ita>Marina Celsi era la bisnipote del doge Lorenzo Celsi</ita>
+		<eng>Marina Celsi was the great-great-granddaughter of Doge Lorenzo Celsi</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>16</ID_EVENT>

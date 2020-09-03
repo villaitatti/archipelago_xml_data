@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>198</ID_PERSON>
+	<Given_Name>
+		<eng>Bartolomeo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Gualtierotti</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300188587</aat>
+			<ita>Ambasciatore</ita>
+			<eng>Ambassador</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>OCC340070</aat>
+			<ita>Ambasciatore toscano</ita>
+			<eng>Tuscan ambassador</eng>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>16th cent.</Century>
+	<Fraction_Century/>
+	<Notes>
+		<ita>Fu agente di Cosimo I de' Medici</ita>
+		<eng>He was the agent of Cosimo I de' Medici</eng>
+	</Notes>
+	<Events/>
+	<Sources/>
+</ROW>

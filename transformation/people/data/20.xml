@@ -1,17 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>20</ID_PERSON>
-	<Given_Name>Agostino</Given_Name>
-	<Surname>Museo</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Agostino</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Museo</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Heremitan preacher</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340061</aat>
+			<ita>Predicatore eremita</ita>
+			<eng>Heremitan preacher</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3165201</Place_of_birth>
@@ -19,13 +31,16 @@
 	<Work_locations>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest/>
-	<Death_Date_Latest>1550</Death_Date_Latest>
+	<Birth_Date_Earliest>1490 ca.</Birth_Date_Earliest>
+	<Death_Date_Latest>1550 ca.</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes>Regular guest in the convent of the Lateran Canons of Santo Spirito.</Notes>
+	<Notes>
+		<ita>Ospite abituale del convento di Santo Spirito</ita>
+		<eng>Regular guest in the monastery of Santo Spirito</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>21</ID_EVENT>

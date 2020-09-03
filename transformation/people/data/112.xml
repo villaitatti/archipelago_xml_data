@@ -1,22 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>112</ID_PERSON>
-	<Given_Name/>
-	<Surname>Bencio</Surname>
-	<Alias/>
+	<Surname>
+		<eng>Bencio</eng>
+	</Surname>
 	<Titles>
-		<Title>Abbott</Title>
+		<Title>
+			<aat>300162118</aat>
+			<eng>Abbott</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Regular canon of Santo Spirito</Occupation>
-	<Activities>
-		<Activity>
-			<Id>1</Id>
-			<Title>Abbott of Santo Spirito</Title>
-			<Start/>
-			<End/>
-		</Activity>
-	</Activities>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Work_locations>
@@ -28,7 +26,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>
