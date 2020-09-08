@@ -1,15 +1,40 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>173</ID_PERSON>
-	<Given_Name>Sebastiano</Given_Name>
-	<Surname>Giustinian</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Sebastiano</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Giustinian</eng>
+	</Surname>
 	<Titles>
-		<Title>Captain</Title>
-		<Title>Knight</Title>
+		<Title>
+			<eng>Captain</eng>
+		</Title>
+		<Title>
+			<eng>Knight</eng>
+		</Title>
+		<Title>
+			<aat>300230874</aat>
+			<ita>Cavaliere</ita>
+			<eng>Knight</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Marino</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Marino</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>300236171</aat>
+			<ita>Capitano</ita>
+			<eng>Captain</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
 	<Place_of_death/>
 	<Work_locations>
@@ -21,7 +46,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>150</ID_EVENT>

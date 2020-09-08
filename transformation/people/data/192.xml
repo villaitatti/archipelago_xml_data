@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>192</ID_PERSON>
+	<Surname>
+		<ita>Eremitani di Santa Giustina a Padova</ita>
+		<eng>Hermits of Santa Giustina in Padua</eng>
+	</Surname>
+	<Place_of_birth>Padua</Place_of_birth>
+	<Place_of_death>Padua</Place_of_death>
+	<Work_locations>
+		<Work_location>Padua</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century/>
+	<Fraction_Century/>
+	<Events/>
+	<Sources/>
+</ROW>

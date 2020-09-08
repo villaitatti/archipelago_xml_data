@@ -1,17 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>30</ID_PERSON>
-	<Given_Name>Giacomo</Given_Name>
-	<Surname>Guardi</Surname>
-	<Alias/>
-	<Patronymic>Francesco</Patronymic>
-	<Occupation/>
+	<Given_Name>
+		<eng>Giacomo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Guardi</eng>
+	</Surname>
+	<Patronymic>
+		<eng>Francesco</eng>
+	</Patronymic>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +28,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

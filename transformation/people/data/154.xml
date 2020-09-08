@@ -1,14 +1,24 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>154</ID_PERSON>
-	<Given_Name>Angelo</Given_Name>
-	<Surname>Seguso</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Angelo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Seguso</eng>
+	</Surname>
 	<Titles>
-		<Title>Architect</Title>
+		<Title>
+			<eng>Architect</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Activities>
+		<Activity>
+			<aat>300386353</aat>
+			<ita>Capomastro</ita>
+			<eng>Master builder</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
@@ -17,7 +27,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>133</ID_EVENT>

@@ -1,32 +1,72 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>145</ID_PERSON>
-	<Given_Name>Gabriele</Given_Name>
-	<Surname>Condulmer</Surname>
-	<Alias>Pope Eugene IV</Alias>
+	<Given_Name>
+		<eng>Gabriele</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Condulmer</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Eugenio IV</ita>
+		<eng>Pope Eugene IV</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025757</aat>
+			<ita>Canonico</ita>
+			<eng>Canon</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<ita>Priore</ita>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Canon Regular of San Giorgio in Alga</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340029</aat>
+			<ita>Canonico regolare di San Giorgio in Alga</ita>
+			<eng>Canon regular of San Giorgio in Alga</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Prior of San Clemente</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340028</aat>
+			<ita>Priore di San Clemente</ita>
+			<eng>Prior of San Clemente</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Pope</Title>
+			<aat>OCC340027</aat>
+			<ita>Vescovo di Siena</ita>
+			<Start>1407</Start>
+			<End>1408</End>
+			<eng>Bishop of Siena</eng>
+		</Activity>
+		<Activity>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<Start>1408</Start>
+			<End>1447</End>
+			<eng>Cardinal</eng>
+		</Activity>
+		<Activity>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1431</Start>
 			<End>1447</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -41,7 +81,10 @@
 	<Will_Date/>
 	<Century>14th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
-	<Notes>https://www.wikidata.org/wiki/Q167561</Notes>
+	<Notes>
+		<ita>Era il nipote di Papa Gregorio XII</ita>
+		<eng>He was the nephew of Pope Gregory XII</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>77</ID_EVENT>

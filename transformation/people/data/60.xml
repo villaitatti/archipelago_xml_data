@@ -1,23 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>60</ID_PERSON>
-	<Given_Name>Marco</Given_Name>
-	<Surname>Moro</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Marco</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Moro</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
-		</Activity>
-		<Activity>
-			<Id>2</Id>
-			<Title>Lithographer</Title>
-			<Start/>
-			<End/>
+			<aat>300025175</aat>
+			<ita>Litografo</ita>
+			<eng>Lithographer</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Zenson di Piave (Treviso)</Place_of_birth>
@@ -31,7 +25,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

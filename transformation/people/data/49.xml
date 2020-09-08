@@ -1,31 +1,59 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>49</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Trevisan</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Giovanni</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Trevisan</eng>
+	</Surname>
 	<Titles>
-		<Title>Patriarch</Title>
+		<Title>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300025772</aat>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300162118</aat>
+			<ita>Abate</ita>
+			<eng>Abbott</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Benedictine friar</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Patriarch of Venice</Title>
+			<aat>OCC340067</aat>
+			<ita>Abate di San Cipriano di Murano</ita>
+			<Start>1530</Start>
+			<End>1560</End>
+			<eng>Abbott of San Cipriano in Murano</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340015</aat>
+			<ita>Patriarca di Venezia</ita>
 			<Start>1560</Start>
 			<End>1590</End>
+			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
 	<Place_of_death>3164603</Place_of_death>
+	<Work_locations>
+		<Work_location>3164603</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest>1503</Birth_Date_Earliest>
 	<Death_Date_Latest>1590-08-05</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>49</ID_EVENT>

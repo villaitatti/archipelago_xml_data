@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>45</ID_PERSON>
-	<Given_Name>Gerardino</Given_Name>
-	<Surname>da Villanova</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Gerardino</eng>
+	</Given_Name>
+	<Surname>
+		<eng>da Villanova</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Landowner</Title>
-			<Start/>
-			<End/>
+			<aat>300230871</aat>
+			<ita>Proprietario terriero</ita>
+			<eng>Landowner</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164175</Place_of_birth>
@@ -24,8 +24,7 @@
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>12th cent.</Century>
-	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
+	<Fraction_Century/>
 	<Events>
 		<Event>
 			<ID_EVENT>43</ID_EVENT>

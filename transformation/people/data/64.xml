@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>64</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Battaglioli</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Francesco</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Battaglioli</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3173331</Place_of_birth>
@@ -26,7 +26,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>64</ID_EVENT>

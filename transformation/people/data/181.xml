@@ -1,23 +1,30 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>181</ID_PERSON>
-	<Given_Name>Agostino</Given_Name>
-	<Surname>Correggio</Surname>
-	<Alias/>
-	<Patronymic>Orazio</Patronymic>
-	<Occupation>Nobleman since 1646</Occupation>
+	<Given_Name>
+		<eng>Agostino</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Correggio</eng>
+	</Surname>
+	<Patronymic>
+		<eng>Orazio</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Merchant</Title>
-			<Start/>
-			<End/>
+			<aat>300025245</aat>
+			<ita>Mercante</ita>
+			<eng>Merchant</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Art collector with the brother Giovan Donato</Title>
-			<Start/>
-			<End/>
+			<aat>300435149</aat>
+			<ita>Collezionista d'arte</ita>
+			<eng>Art collector</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -31,7 +38,10 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
+	<Notes>
+		<ita>Acquisì il titolo di nobile nel 1646. Fu, insieme al fratello Giovan Donato, un collezionista d'arte</ita>
+		<eng>He became a nobleman in 1646. He was an art collector along with his brother Giovan Donato</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>163</ID_EVENT>

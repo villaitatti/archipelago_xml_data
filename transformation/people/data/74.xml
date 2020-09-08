@@ -1,20 +1,37 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>74</ID_PERSON>
-	<Given_Name>Enrico</Given_Name>
-	<Surname>Dandolo</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Enrico</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Dandolo</eng>
+	</Surname>
 	<Titles>
-		<Title>Patriarch</Title>
+		<Title>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300025772</aat>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Domenico</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Patriarch of Grado</Title>
+			<aat>OCC340035</aat>
+			<ita>Patriarca di Grado</ita>
 			<Start>1130</Start>
 			<End>1182</End>
+			<eng>Patriarch of Grado</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -22,13 +39,16 @@
 	<Work_locations>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest/>
+	<Birth_Date_Earliest>1100</Birth_Date_Earliest>
 	<Death_Date_Latest>1182</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>12th cent.</Century>
-	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
+	<Fraction_Century/>
+	<Notes>
+		<ita>Fu lo zio del Doge veneziano Enrico Dandolo</ita>
+		<eng>He was the uncle of the Doge of Venice Enrico Dandolo</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>59</ID_EVENT>

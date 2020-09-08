@@ -1,20 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>149</ID_PERSON>
-	<Given_Name/>
-	<Surname>Frederick III</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Friedrich</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Habsburg</eng>
+	</Surname>
+	<Alias>
+		<ita>Federico III</ita>
+		<eng>Frederick III</eng>
+	</Alias>
 	<Titles>
-		<Title>Emperor of the Holy Roman Empire</Title>
+		<Title>
+			<eng>Emperor of the Holy Roman Empire</eng>
+		</Title>
+		<Title>
+			<aat>300025480</aat>
+			<ita>Imperatore</ita>
+			<eng>Emperor</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Patronymic>
+		<eng>Ernest</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Holy Roman Emperor</Title>
+			<aat>OCC340047</aat>
+			<ita>Imperatore del Sacro Romano Impero</ita>
 			<Start>1452</Start>
 			<End>1493</End>
+			<eng>Holy Roman Emperor</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Innsbruck</Place_of_birth>
@@ -25,7 +46,6 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>128</ID_EVENT>

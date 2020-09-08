@@ -1,26 +1,36 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>67</ID_PERSON>
-	<Given_Name>Cristoforo</Given_Name>
-	<Surname>Sabbadino</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Cristoforo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Sabbadino</eng>
+	</Surname>
 	<Titles>
-		<Title>Proto</Title>
+		<Title>
+			<eng>Proto</eng>
+		</Title>
+		<Title>
+			<ita>Proto</ita>
+			<eng>Proto</eng>
+		</Title>
+		<Title>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Engineer</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Engineer</Title>
-			<Start/>
-			<End/>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Engineer</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Proto dei Savi ed Esecutori alle Acque</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340001</aat>
+			<ita>Proto alla laguna</ita>
+			<eng>Lagoon chief surveyor</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3178784</Place_of_birth>
@@ -34,7 +44,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

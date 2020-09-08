@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<ROW>
+	<ID_PERSON>194</ID_PERSON>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Maffei</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300000645</aat>
+			<ita>Priore</ita>
+			<eng>Prior</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>OCC340069</aat>
+			<ita>Priore di Santa Maria della Carità</ita>
+			<eng>Prior of Santa Maria della Carità</eng>
+		</Activity>
+	</Activities>
+	<Place_of_birth/>
+	<Place_of_death/>
+	<Work_locations>
+		<Work_location>3164527</Work_location>
+	</Work_locations>
+	<Birth_Date_Earliest/>
+	<Death_Date_Latest/>
+	<Marriage_Date/>
+	<Will_Date/>
+	<Century>15th cent.</Century>
+	<Fraction_Century/>
+	<Events/>
+	<Sources/>
+</ROW>

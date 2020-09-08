@@ -1,26 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>178</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Lazzaroni</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Francesco</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Lazzaroni</eng>
+	</Surname>
 	<Titles>
-		<Title>Monsignor</Title>
+		<Title>
+			<eng>Vicar</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Title>
+		<Title>
+			<ita>Vicario</ita>
+			<eng>Vicar</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Parish priest</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Parish priest of the church of Sant'Angelo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340057</aat>
+			<ita>Parroco di Sant'Angelo</ita>
+			<eng>Parish priest of Sant'Angelo</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Patriarchal vicar</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340058</aat>
+			<ita>Vicario patriarcale</ita>
+			<eng>Patriarchal vicar</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -34,7 +49,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>160</ID_EVENT>

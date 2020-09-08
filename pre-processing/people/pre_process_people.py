@@ -25,6 +25,14 @@ def write_file(row_id, text):
   with open(output_filename, 'w') as f:
     f.write(text)
 
+regex_square = r'[\[\]]'
+regex_curly = r'[\{\}]'
+regex_round = r'[\(\)]'
+
+regex_aat = r'\[[A-Z0-9]+\]'
+regex_ita = r'{.*}'
+regex_date = r'\([0-9\-]+\)'
+
 # Input keys
 key_row = 'ROW'
 key_id_person = 'ID_PERSON'
@@ -59,6 +67,10 @@ key_end = 'End'
 key_root = 'Root'
 key_work_locations = 'Work_locations'
 
+key_aat = 'aat'
+key_ita = 'ita'
+key_eng = 'eng'
+
 key_events = "Events"
 key_event = "Event"
 key_role = "Role"
@@ -69,6 +81,71 @@ root = tree.getroot()
 ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
 
 tags = root.findall(f'ns:{key_row}', ns)
+
+
+def explode_text(s, parent, current, id=None):
+
+  if s is None:
+    return 
+
+  tag = et.SubElement(parent, current)
+
+  # AAT
+  try:
+    if re.search(regex_square, s):
+      aat = re.findall(regex_aat, s)[0]
+      aat = re.sub(regex_square, '', aat, re.S)
+
+      new_aat = et.SubElement(tag, key_aat)
+      new_aat.text = aat.strip()
+
+      s = re.sub(regex_aat, '', s)
+    
+  except TypeError as err:
+    pass
+
+
+  # ITA
+  try:
+    if re.search(regex_curly, s):
+      ita = re.findall(regex_ita, s)[0]
+      ita = re.sub(regex_curly, '', ita)
+
+      new_ita = et.SubElement(tag, key_ita)
+      new_ita.text = ita.strip()
+
+      s = re.sub(regex_ita, '', s)
+
+  except TypeError as err:
+    pass
+
+  # DATE
+  try:
+    if re.search(regex_date, s):
+      date = re.findall(regex_date, s)[0]
+      date = re.sub(regex_round, '', date)
+
+      dates = date.split('-')
+
+      new_start = et.SubElement(tag, key_start)
+      new_start.text = dates[0]
+
+      new_end = et.SubElement(tag, key_end)
+      new_end.text = dates[1]
+      
+      s = re.sub(regex_date, '', s)
+
+  except (TypeError, IndexError) as err:
+    pass
+
+  # ENG
+  try:
+    eng = et.SubElement(tag, key_eng)
+    eng.text = s.strip()
+
+  except TypeError as err:
+    pass
+
 
 # Iterate each ROW
 for row in tags:
@@ -81,36 +158,32 @@ for row in tags:
     id_person = et.SubElement(new_row, key_id_person)
     id_person.text = row_id
 
+    #TODO Actor type
+
     # given name 
-    given_name = et.SubElement(new_row, key_given_name)
-    given_name.text = row.find(f'ns:{key_given_name}', ns).text
+    explode_text(row.find(f'ns:{key_given_name}', ns).text, new_row, key_given_name)
 
     # surname
-    surname = et.SubElement(new_row, key_surname)
-    surname.text = row.find(f'ns:{key_surname}', ns).text
+    explode_text(row.find(f'ns:{key_surname}', ns).text, new_row, key_surname)
 
     # alias
-    alias = et.SubElement(new_row, key_alias)
-    alias.text = row.find(f'ns:{key_alias}', ns).text
+    explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)
 
     # Titles
+    # If the text is not empty
     if row.find(f'ns:{key_title}', ns).text is not None:
       val_titles = row.find(f'ns:{key_title}', ns)
-      val_titles = val_titles.text.split(' ; ')
+      val_titles = val_titles.text.split(';')
 
       titles = et.SubElement(new_row, key_titles)
 
-      for title in val_titles:
-        new_title = et.SubElement(titles, key_title)
-        new_title.text = title.strip()
-
+      [explode_text(title, titles, key_title) for title in val_titles]
+    
     # patronymic
-    patronymic = et.SubElement(new_row, key_patronymic)
-    patronymic.text = row.find(f'ns:{key_patronymic}', ns).text
+    explode_text(row.find(f'ns:{key_patronymic}', ns).text, new_row, key_patronymic)
 
     # occupation
-    occupation = et.SubElement(new_row, key_occuption)
-    occupation.text = row.find(f'ns:{key_occuption}', ns).text
+    explode_text(row.find(f'ns:{key_occuption}', ns).text, new_row, key_occuption)
 
     # activities
     if row.find(f'ns:{key_activities_role}', ns).text is not None:
@@ -122,6 +195,10 @@ for row in tags:
       cnt = 1
 
       for activity in val_activities:
+
+        explode_text(activity, new_activities, key_activity)
+
+        """
         new_activity = et.SubElement(new_activities, key_activity)
 
         id_activity = et.SubElement(new_activity, key_id)
@@ -141,7 +218,7 @@ for row in tags:
 
           if len(activity_date) > 1:
             new_end.text = activity_date[1]
-
+        """
         cnt += 1
 
     # place of birth
@@ -212,8 +289,7 @@ for row in tags:
     fraction_century.text = row.find(f'ns:{key_fraction_century}', ns).text
 
     # notes
-    notes = et.SubElement(new_row, key_notes)
-    notes.text = row.find(f'ns:{key_notes}', ns).text
+    explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
 
     #ASSOCIATIONS
 

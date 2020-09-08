@@ -1,20 +1,38 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>34</ID_PERSON>
-	<Given_Name>Carlo</Given_Name>
-	<Surname>Gella</Surname>
-	<Alias>Domenico Maria del Rosario</Alias>
+	<Given_Name>
+		<eng>Carlo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Gella</eng>
+	</Surname>
+	<Alias>
+		<eng>Domenico Maria del Rosario</eng>
+	</Alias>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Fabrizio</Patronymic>
-	<Occupation>Dominican friar</Occupation>
+	<Patronymic>
+		<eng>Fabrizio</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Friar of San Secondo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340038</aat>
+			<ita>Frate di San Secondo</ita>
+			<eng>Friar of San Secondo</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -28,7 +46,10 @@
 	<Will_Date>1663</Will_Date>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes>He was novizzo in the monastery of San Secondo. From his will we know that in the church there was an altar dedicated to the Madonna del Rosario.</Notes>
+	<Notes>
+		<ita>Fu novizzo nel monastero di San Secondo. Dal suo testamento si evince che all'interno della chiesa vi era un altare dedicato alla Madonna del Rosario</ita>
+		<eng>He was novice in the monastery of San Secondo. From his will it is understood that in the church there was an altar dedicated to the Lady of the Rosary</eng>
+	</Notes>
 	<Events/>
 	<Sources/>
 </ROW>

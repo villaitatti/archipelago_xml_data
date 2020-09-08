@@ -1,28 +1,30 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>177</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Tirinello</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Giovanni</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Tirinello</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Carpenter</Title>
-			<Start/>
-			<End/>
+			<aat>300025008</aat>
+			<ita>Falegname</ita>
+			<eng>Carpenter</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
+	<Work_locations>
+		<Work_location>3164603</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest>1630-07</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>155</ID_EVENT>

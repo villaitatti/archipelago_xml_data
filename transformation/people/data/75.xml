@@ -1,17 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>75</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Gattilesso</Surname>
-	<Alias>Raubato</Alias>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Gattilesso</eng>
+	</Surname>
+	<Alias>
+		<eng>Raubato</eng>
+	</Alias>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Merchant</Title>
-			<Start/>
-			<End/>
+			<aat>300025245</aat>
+			<ita>Mercante</ita>
+			<eng>Merchant</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +28,6 @@
 	<Will_Date/>
 	<Century>12th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>59</ID_EVENT>

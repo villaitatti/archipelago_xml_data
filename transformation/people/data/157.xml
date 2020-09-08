@@ -1,23 +1,53 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>157</ID_PERSON>
-	<Given_Name>Maria</Given_Name>
-	<Surname>Priuli</Surname>
-	<Alias>Dogaressa Foscari</Alias>
+	<Given_Name>
+		<eng>Maria</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Priuli</eng>
+	</Surname>
+	<Alias>
+		<eng>Dogaressa Foscari</eng>
+	</Alias>
 	<Titles>
-		<Title>Dogaressa</Title>
+		<Title>
+			<eng>Dogaressa</eng>
+		</Title>
+		<Title>
+			<ita>Dogaressa</ita>
+			<eng>Dogaressa</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Andrea</Patronymic>
-	<Occupation>Noblewoman</Occupation>
+	<Patronymic>
+		<eng>Andrea</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300236548</aat>
+		<ita>Nobildonna</ita>
+		<eng>Noblewoman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>OCC340052</aat>
+			<ita>Dogaressa</ita>
+			<eng>Dogaressa</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
+	<Notes>
+		<ita>Fu la moglie del doge Jacopo Foscari (1416-1457)</ita>
+		<Start>1416</Start>
+		<End>1457</End>
+		<eng>She was the wife of Doge Jacopo Foscari</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>141</ID_EVENT>

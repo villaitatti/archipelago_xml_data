@@ -1,17 +1,20 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>179</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Fornareto</Surname>
-	<Alias/>
-	<Patronymic>Antonio</Patronymic>
-	<Occupation/>
+	<Given_Name>
+		<eng>Giovanni</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Fornareto</eng>
+	</Surname>
+	<Patronymic>
+		<eng>Antonio</eng>
+	</Patronymic>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Master builder</Title>
-			<Start/>
-			<End/>
+			<aat>300386353</aat>
+			<ita>Capomastro</ita>
+			<eng>Master builder</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +28,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>161</ID_EVENT>

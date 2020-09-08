@@ -1,20 +1,58 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>126</ID_PERSON>
-	<Given_Name>Girolamo</Given_Name>
-	<Surname>Capodivacca</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Given_Name>
+		<eng>Girolamo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Capivaccio</eng>
+	</Surname>
+	<Alias>
+		<eng>Capodivacca</eng>
+	</Alias>
+	<Titles>
+		<Title>
+			<aat>300025809</aat>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Title>
+		<Title>
+			<aat>300025533</aat>
+			<ita>Professore</ita>
+			<eng>Professor</eng>
+		</Title>
+	</Titles>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
+	<Activities>
+		<Activity>
+			<aat>300025809</aat>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340018</aat>
+			<ita>Professore di medicina</ita>
+			<Start>1553</Start>
+			<End>1586</End>
+			<eng>Professor of medicine</eng>
+		</Activity>
+	</Activities>
+	<Place_of_birth>Padua</Place_of_birth>
+	<Place_of_death>Mantua</Place_of_death>
+	<Work_locations>
+		<Work_location>Padua</Work_location>
+		<Work_location>3164603</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest/>
-	<Death_Date_Latest/>
+	<Death_Date_Latest>1586-03-04</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>92</ID_EVENT>

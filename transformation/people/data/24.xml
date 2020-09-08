@@ -1,31 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>24</ID_PERSON>
-	<Given_Name/>
-	<Surname>Lateran Canons of Santo Spirito</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
-	<Activities>
-		<Activity>
-			<Id>1</Id>
-			<Title>Religious order</Title>
-			<Start/>
-			<End/>
-		</Activity>
-	</Activities>
+	<Surname>
+		<ita>Canonici regolari di Santo Spirito</ita>
+		<eng>Canons regular of Santo Spirito</eng>
+	</Surname>
 	<Place_of_birth>3164603</Place_of_birth>
 	<Place_of_death>3164603</Place_of_death>
 	<Work_locations>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1140</Birth_Date_Earliest>
-	<Death_Date_Latest>1656</Death_Date_Latest>
+	<Death_Date_Latest>1656-04-29</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>20</ID_EVENT>

@@ -1,23 +1,22 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>58</ID_PERSON>
-	<Given_Name>Jacopo</Given_Name>
-	<Surname>de' Barbari</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Jacopo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>de' Barbari</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Printmaker</Title>
-			<Start/>
-			<End/>
+			<aat>300239410</aat>
+			<ita>Incisore</ita>
+			<eng>Engraver</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -26,13 +25,12 @@
 		<Work_location>3164603</Work_location>
 		<Work_location>Nuremberg</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest/>
+	<Birth_Date_Earliest>1475</Birth_Date_Earliest>
 	<Death_Date_Latest>1516</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date>1511</Will_Date>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

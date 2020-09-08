@@ -1,29 +1,27 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>22</ID_PERSON>
-	<Given_Name>Antonio</Given_Name>
-	<Surname>Visentini</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Antonio</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Visentini</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Architect</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Painter</Title>
-			<Start/>
-			<End/>
+			<aat>300025136</aat>
+			<ita>Pittore</ita>
+			<eng>Painter</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Engraver</Title>
-			<Start/>
-			<End/>
+			<aat>300239410</aat>
+			<ita>Incisore</ita>
+			<eng>Engraver</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -38,7 +36,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

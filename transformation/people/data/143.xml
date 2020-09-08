@@ -1,20 +1,69 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>143</ID_PERSON>
-	<Given_Name>Jacques</Given_Name>
-	<Surname>Duèze</Surname>
-	<Alias>Pope John XXII</Alias>
+	<Given_Name>
+		<eng>Jacques</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Duèze</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Giovanni XXII</ita>
+		<eng>Pope John XXII</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Pope</Title>
+			<aat>OCC340044</aat>
+			<ita>Vescovo di Fréjus-Toulon</ita>
+			<Start>1300</Start>
+			<End>1310</End>
+			<eng>Bishop of Fréjus-Toulon</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340045</aat>
+			<ita>Vescovo di Avignone</ita>
+			<Start>1310</Start>
+			<End>1312</End>
+			<eng>Bishop of Avignon</eng>
+		</Activity>
+		<Activity>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<Start>1312</Start>
+			<End>1334</End>
+			<eng>Cardinal</eng>
+		</Activity>
+		<Activity>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1316</Start>
 			<End>1334</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Cahors</Place_of_birth>
@@ -22,13 +71,12 @@
 	<Work_locations>
 		<Work_location>Avignon</Work_location>
 	</Work_locations>
-	<Birth_Date_Earliest>1249</Birth_Date_Earliest>
+	<Birth_Date_Earliest>1244</Birth_Date_Earliest>
 	<Death_Date_Latest>1334-12-04</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>13th cent.</Century>
 	<Fraction_Century/>
-	<Notes>https://www.wikidata.org/wiki/Q165568</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>119</ID_EVENT>

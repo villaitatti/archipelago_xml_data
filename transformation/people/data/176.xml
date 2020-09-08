@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>176</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>de Strigis</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alessandro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>de Strigis</eng>
+	</Surname>
 	<Titles>
-		<Title>Marquis</Title>
+		<Title>
+			<eng>Marquis</eng>
+		</Title>
+		<Title>
+			<aat>300188587</aat>
+			<ita>Ambasciatore</ita>
+			<eng>Ambassador</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Ambassador of the Duke of Mantua-Nevers, Carlo Gonzaga</Title>
-			<Start>-</Start>
-			<End/>
+			<aat>OCC340009</aat>
+			<ita>Ambasciatore del duca di Mantova e Nevers Carlo Gonzaga</ita>
+			<eng>Ambassador of the Duke of Mantua and Nevers Carlo Gonzaga</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +37,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>154</ID_EVENT>

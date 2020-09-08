@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>180</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Mocenigo</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Andrea</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Mocenigo</eng>
+	</Surname>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300025765</aat>
+			<ita>Monaco</ita>
+			<eng>Monk</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Camaldolese monk in Monte Rua</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340060</aat>
+			<ita>Monaco camaldolense di Monte Rua</ita>
+			<eng>Camaldolese monk in Monte Rua</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +37,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

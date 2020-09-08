@@ -1,35 +1,39 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>38</ID_PERSON>
-	<Given_Name>Tommaso</Given_Name>
-	<Surname>Temanza</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Tommaso</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Temanza</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Title>
+		<Title>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Engineer</eng>
+		</Title>
+	</Titles>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Architect</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Writer</Title>
-			<Start/>
-			<End/>
+			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
+			<eng>Engineer</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Idraulic engineer</Title>
-			<Start/>
-			<End/>
-		</Activity>
-		<Activity>
-			<Id>4</Id>
-			<Title>Art historian</Title>
-			<Start/>
-			<End/>
+			<aat>300025541</aat>
+			<ita>Storico dell'arte</ita>
+			<eng>Art historian</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -43,7 +47,10 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes>He was the nephew of the architect Giovanni Antonio Scalfurotto.</Notes>
+	<Notes>
+		<ita>Fu nipote dell'architetto Giovanni Antonio Scalfurotto</ita>
+		<eng>He was the nephew of the architect Giovanni Antonio Scalfurotto</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>35</ID_EVENT>

@@ -1,32 +1,70 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>168</ID_PERSON>
-	<Given_Name>Gian Pietro</Given_Name>
-	<Surname>Carafa</Surname>
-	<Alias>Pope Paul IV</Alias>
+	<Given_Name>
+		<eng>Gian Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Carafa</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Paolo IV</ita>
+		<eng>Pope Paul IV</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<aat>300025773</aat>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Giovanni Antonio</Patronymic>
-	<Occupation>Theatine</Occupation>
+	<Patronymic>
+		<eng>Giovanni Antonio</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Cleric</Title>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
 			<Start>1524</Start>
 			<End>1559</End>
+			<eng>Priest</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Cardinal</Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
 			<Start>1536</Start>
 			<End>1559</End>
+			<eng>Cardinal</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Pope</Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1555</Start>
 			<End>1559</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Capriglia Irpina (Avellino)</Place_of_birth>
@@ -40,7 +78,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>147</ID_EVENT>

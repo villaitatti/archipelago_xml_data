@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>19</ID_PERSON>
-	<Given_Name>Angelo</Given_Name>
-	<Surname>Gavan</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Angelo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Gavan</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Construction worker</Title>
-			<Start/>
-			<End/>
+			<aat>300025001</aat>
+			<ita>Muratore</ita>
+			<eng>Construction worker</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +25,6 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>19</ID_EVENT>

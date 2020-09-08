@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>26</ID_PERSON>
-	<Given_Name>Filippo</Given_Name>
-	<Surname>Tron</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Filippo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Tron</eng>
+	</Surname>
 	<Titles>
-		<Title>Procurator</Title>
+		<Title>
+			<eng>Procurator</eng>
+		</Title>
+		<Title>
+			<aat>300025471</aat>
+			<ita>Procuratore</ita>
+			<eng>Procurator</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Procurator of St. Mark de supra</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340030</aat>
+			<ita>Procuratore di San Marco de supra</ita>
+			<eng>Procurator of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +37,10 @@
 	<Will_Date>1566</Will_Date>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes>His house was located near the rio della Zecca, at the corner with the Terranova warehouses.</Notes>
+	<Notes>
+		<ita>La sua casa si trovava vicino al rio della Zecca, all'angolo dei Magazzini di Terranova</ita>
+		<eng>His house was located near the rio della Zecca, at the corner with the Terranova warehouses</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>63</ID_EVENT>

@@ -1,20 +1,41 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>175</ID_PERSON>
-	<Given_Name>Pierre</Given_Name>
-	<Surname>Roger</Surname>
-	<Alias>Pope Clement VI</Alias>
+	<Given_Name>
+		<eng>Pierre</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Roger</eng>
+	</Surname>
+	<Alias>
+		<ita>Papa Clemente VI</ita>
+		<eng>Pope Clement VI</eng>
+	</Alias>
 	<Titles>
-		<Title>Pope</Title>
+		<Title>
+			<eng>Pope</eng>
+		</Title>
+		<Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Guillaume</Patronymic>
-	<Occupation/>
+	<Patronymic>
+		<eng>Guillaume</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Pope</Title>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
 			<Start>1342</Start>
 			<End>1352</End>
+			<eng>Pope</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Rosiers-d'Égletons</Place_of_birth>
@@ -28,7 +49,6 @@
 	<Will_Date/>
 	<Century>14th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>153</ID_EVENT>

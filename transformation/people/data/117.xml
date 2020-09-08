@@ -1,20 +1,42 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>117</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>Farnese</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alessandro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Farnese</eng>
+	</Surname>
 	<Titles>
-		<Title>Cardinal</Title>
+		<Title>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Pier Luigi</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Pier Luigi</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Cardinal</Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
 			<Start>1534</Start>
 			<End>1589</End>
+			<eng>Cardinal</eng>
+		</Activity>
+		<Activity>
+			<aat>300025462</aat>
+			<ita>Diplomatico</ita>
+			<eng>Diplomat</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>Castello Valentano (Tuscany)</Place_of_birth>
@@ -28,7 +50,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>83</ID_EVENT>

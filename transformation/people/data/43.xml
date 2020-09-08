@@ -1,23 +1,33 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>43</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>da Zon</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Giovanni</eng>
+	</Given_Name>
+	<Surname>
+		<eng>da Zon</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
+		</Title>
+		<Title>
+			<ita>Proto</ita>
+			<eng>Proto</eng>
+		</Title>
+	</Titles>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Architect</Title>
-			<Start/>
-			<End/>
+			<aat>300024987</aat>
+			<ita>Architetto</ita>
+			<eng>Architect</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Proto dei muratori at the Arsenale</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340037</aat>
+			<ita>Proto dei muratori all'Arsenale</ita>
+			<eng>Proto of the construction workers in the Venetian Arsenal</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -31,7 +41,10 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes>He was in contact with the Dominican friars of San Domenico di Castello in Venice. His body is buried in the church.</Notes>
+	<Notes>
+		<ita>Era in contatto con i frati di San Domenico di Castello a Venezia. Il suo corpo è seppellito all'interno della chiesa domenicana</ita>
+		<eng>He was in contact with the friars of San Domenico di Castello in Venice. His body is buried in the Dominican church</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>7</ID_EVENT>

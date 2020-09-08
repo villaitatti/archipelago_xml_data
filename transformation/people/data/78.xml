@@ -1,24 +1,29 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>78</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Chevalier</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Pietro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Chevalier</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Engraver</Title>
-			<Start/>
-			<End/>
+			<aat>300239410</aat>
+			<ita>Incisore</ita>
+			<eng>Engraver</eng>
+		</Activity>
+		<Activity>
+			<aat>300025123</aat>
+			<ita>Disegnatore</ita>
+			<eng>Illustrator</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Corfù</Place_of_birth>
-	<Place_of_death>3171728</Place_of_death>
+	<Place_of_birth>Corfu</Place_of_birth>
+	<Place_of_death>Padua</Place_of_death>
 	<Work_locations>
 		<Work_location>3165185</Work_location>
-		<Work_location>3171728</Work_location>
+		<Work_location>Padua</Work_location>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1795</Birth_Date_Earliest>
@@ -27,7 +32,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

@@ -1,17 +1,22 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>98</ID_PERSON>
-	<Given_Name>Vincenzo</Given_Name>
-	<Surname>Polani</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Vincenzo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Polani</eng>
+	</Surname>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Messer of the Procuratori di Supra</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340050</aat>
+			<ita>Messer dei Procuratori di San Marco de supra</ita>
+			<eng>Messer of the Procurators of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -24,8 +29,7 @@
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
-	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Notes/>
+	<Fraction_Century/>
 	<Events/>
 	<Sources>
 		<Source>

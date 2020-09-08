@@ -1,37 +1,84 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>25</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Bondumier</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Andrea</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Bondumier</eng>
+	</Surname>
 	<Titles>
-		<Title>Patriarch</Title>
+		<Title>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<aat>300025757</aat>
+			<ita>Canonico</ita>
+			<eng>Canon</eng>
+		</Title>
+		<Title>
+			<aat>300000645</aat>
+			<ita>Priore</ita>
+			<eng>Prior</eng>
+		</Title>
+		<Title>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300025772</aat>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Marino</Patronymic>
-	<Occupation>Regular canon of Sant'Agostino</Occupation>
+	<Patronymic>
+		<eng>Marino</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Prior of Santo Spirito</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340013</aat>
+			<ita>Canonico regolare di Sant'Agostino</ita>
+			<eng>Canon regular of Sant'Agostino</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Venice's Patriarch</Title>
-			<Start/>
+			<aat>OCC340014</aat>
+			<ita>Priore di Santo Spirito</ita>
+			<Start>1425</Start>
 			<End/>
+			<eng>Prior of Santo Spirito  (1425)</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340015</aat>
+			<ita>Patriarca di Venezia</ita>
+			<Start>1460</Start>
+			<End>1464</End>
+			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
 	<Place_of_death>3164603</Place_of_death>
+	<Work_locations>
+		<Work_location>3164603</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest/>
-	<Death_Date_Latest>1464</Death_Date_Latest>
+	<Death_Date_Latest>1464-08-06</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes>Election as prior of the Augustinian community on December 15, 1425. Election as Venetian Patriarch on March 27, 1460. He is buried on the island of Santo Spirito</Notes>
+	<Notes>
+		<ita>È sepolto nell'isola di Santo Spirito</ita>
+		<eng>He is buried on the island of Santo Spirito</eng>
+	</Notes>
 	<Events>
 		<Event>
 			<ID_EVENT>23</ID_EVENT>

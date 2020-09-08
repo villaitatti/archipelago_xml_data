@@ -1,20 +1,37 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>160</ID_PERSON>
-	<Given_Name>Leonardo</Given_Name>
-	<Surname>Loredan</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Leonardo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Loredan</eng>
+	</Surname>
 	<Titles>
-		<Title>Doge</Title>
+		<Title>
+			<eng>Doge</eng>
+		</Title>
+		<Title>
+			<aat>300025463</aat>
+			<ita>Doge</ita>
+			<eng>Doge</eng>
+		</Title>
 	</Titles>
-	<Patronymic>Gerolamo</Patronymic>
-	<Occupation>Nobleman</Occupation>
+	<Patronymic>
+		<eng>Gerolamo</eng>
+	</Patronymic>
+	<Occupation>
+		<aat>300025484</aat>
+		<ita>Uomo di stato</ita>
+		<eng>Stateman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Doge</Title>
+			<aat>OCC340005</aat>
+			<ita>Doge di Venezia</ita>
 			<Start>1501</Start>
 			<End>1521</End>
+			<eng>Doge of Venice</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -28,7 +45,6 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>143</ID_EVENT>

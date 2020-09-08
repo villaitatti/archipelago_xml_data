@@ -1,23 +1,22 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>66</ID_PERSON>
-	<Given_Name>Domenico</Given_Name>
-	<Surname>Lovisa</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Domenico</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Lovisa</eng>
+	</Surname>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Publisher</Title>
-			<Start/>
-			<End/>
+			<aat>300025574</aat>
+			<ita>Editore</ita>
+			<eng>Publisher</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Printer</Title>
-			<Start/>
-			<End/>
+			<aat>300025732</aat>
+			<ita>Stampatore</ita>
+			<eng>Printer</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -31,7 +30,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century>First half of the century (0-49)</Fraction_Century>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

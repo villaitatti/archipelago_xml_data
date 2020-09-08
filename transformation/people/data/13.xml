@@ -1,34 +1,61 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>13</ID_PERSON>
-	<Given_Name>Antonio</Given_Name>
-	<Surname>Contarini</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Antonio</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Contarini</eng>
+	</Surname>
 	<Titles>
-		<Title>Patriarch</Title>
+		<Title>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300025772</aat>
+			<ita>Patriarca</ita>
+			<eng>Patriarch</eng>
+		</Title>
+		<Title>
+			<aat>300025757</aat>
+			<ita>Canonico</ita>
+			<eng>Canon</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Patriarch of Venice</Title>
+			<aat>OCC340031</aat>
+			<ita>Canonico di San Salvador</ita>
+			<eng>Canon of San Salvador</eng>
+		</Activity>
+		<Activity>
+			<aat>OCC340015</aat>
+			<ita>Patriarca di Venezia</ita>
 			<Start>1508</Start>
 			<End>1524</End>
+			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
+	<Place_of_birth>3164603</Place_of_birth>
 	<Place_of_death>3164603</Place_of_death>
 	<Work_locations>
 		<Work_location>3164603</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1450</Birth_Date_Earliest>
-	<Death_Date_Latest>1524</Death_Date_Latest>
+	<Death_Date_Latest>1524-11-07</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>16</ID_EVENT>

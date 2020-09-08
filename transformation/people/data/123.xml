@@ -1,11 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>123</ID_PERSON>
-	<Given_Name/>
-	<Surname>Austrian Empire</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Surname>
+		<eng>Kingdom of Lombardy–Venetia</eng>
+	</Surname>
 	<Place_of_birth/>
 	<Place_of_death/>
 	<Birth_Date_Earliest>1815-06-09</Birth_Date_Earliest>
@@ -14,7 +12,6 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>86</ID_EVENT>

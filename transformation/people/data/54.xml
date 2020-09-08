@@ -1,20 +1,34 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>54</ID_PERSON>
-	<Given_Name>Raffaele</Given_Name>
-	<Surname>Riva</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Raffaele</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Riva</eng>
+	</Surname>
 	<Titles>
-		<Title>Bishop</Title>
+		<Title>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Bishop of Curzola</Title>
-			<Start>1605-09-05</Start>
-			<End>1611-07-19</End>
+			<aat>OCC340055</aat>
+			<ita>Vescovo di Curzola</ita>
+			<Start>1605</Start>
+			<End>1611</End>
+			<eng>Bishop of Curzola</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -25,7 +39,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

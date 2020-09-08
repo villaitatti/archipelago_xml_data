@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>109</ID_PERSON>
-	<Given_Name>Alvise</Given_Name>
-	<Surname>Contarini</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alvise</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Contarini</eng>
+	</Surname>
 	<Titles>
-		<Title>Cavaliere</Title>
+		<Title>
+			<eng>Cavaliere</eng>
+		</Title>
+		<Title>
+			<aat>300025471</aat>
+			<ita>Procuratore</ita>
+			<eng>Procurator</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Nobleman</Occupation>
+	<Occupation>
+		<aat>300236547</aat>
+		<ita>Nobiluomo</ita>
+		<eng>Nobleman</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Procurator of St. Mark de supra</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340030</aat>
+			<ita>Procuratore di San Marco de supra</ita>
+			<eng>Procurator of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -25,7 +37,6 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

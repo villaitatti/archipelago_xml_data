@@ -1,32 +1,47 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>52</ID_PERSON>
-	<Given_Name>Angelo</Given_Name>
-	<Surname>Baronio</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Angelo</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Baronio</eng>
+	</Surname>
 	<Titles>
-		<Title>Bishop</Title>
+		<Title>
+			<aat>300025756</aat>
+			<eng>Bishop</eng>
+		</Title>
+		<Title>
+			<aat>300025756</aat>
+			<ita>Vescovo</ita>
+			<eng>Bishop</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation/>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Vicario of the monastery of San Secondo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340006</aat>
+			<ita>Vicario del convento di San Secondo</ita>
+			<eng>Vicar of San Secondo</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Bishop of Cattaro</Title>
+			<aat>OCC340007</aat>
+			<ita>Vescovo di Cattaro</ita>
 			<Start>1604</Start>
 			<End>1611</End>
+			<eng>Bishop of Cattaro</eng>
 		</Activity>
 		<Activity>
-			<Id>3</Id>
-			<Title>Bishop of Chioggia</Title>
+			<aat>OCC340008</aat>
+			<ita>Vescovo di Chioggia</ita>
 			<Start>1611</Start>
 			<End/>
+			<eng>Bishop of Chioggia  (1611)</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -37,7 +52,6 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Turn of the century (90-10)</Fraction_Century>
-	<Notes/>
 	<Events/>
 	<Sources>
 		<Source>

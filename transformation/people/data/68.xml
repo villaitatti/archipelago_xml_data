@@ -1,26 +1,37 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>68</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>Spaziani</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Alessandro</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Spaziani</eng>
+	</Surname>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Dominican friar</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Friar of San Secondio</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340038</aat>
+			<ita>Frate di San Secondo</ita>
+			<eng>Friar of San Secondo</eng>
 		</Activity>
 		<Activity>
-			<Id>2</Id>
-			<Title>Historian</Title>
-			<Start/>
-			<End/>
+			<aat>300025539</aat>
+			<ita>Storico</ita>
+			<eng>Historian</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth>3164603</Place_of_birth>
@@ -34,7 +45,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events/>
 	<Sources/>
 </ROW>

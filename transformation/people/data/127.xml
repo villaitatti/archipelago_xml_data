@@ -1,20 +1,36 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>127</ID_PERSON>
-	<Given_Name>Mariano</Given_Name>
-	<Surname>Stefanelli</Surname>
-	<Alias/>
-	<Patronymic/>
-	<Occupation/>
+	<Given_Name>
+		<eng>Mariano</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Stefanelli</eng>
+	</Surname>
+	<Titles>
+		<Title>
+			<aat>300025809</aat>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Title>
+	</Titles>
+	<Activities>
+		<Activity>
+			<ita>Medico</ita>
+			<eng>Physician</eng>
+		</Activity>
+	</Activities>
 	<Place_of_birth/>
 	<Place_of_death/>
+	<Work_locations>
+		<Work_location>Padua</Work_location>
+	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
-	<Century/>
+	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>92</ID_EVENT>

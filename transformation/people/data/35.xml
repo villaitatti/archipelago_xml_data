@@ -1,20 +1,32 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>35</ID_PERSON>
-	<Given_Name>Cherubino</Given_Name>
-	<Surname>Zeli</Surname>
-	<Alias/>
+	<Given_Name>
+		<eng>Cherubino</eng>
+	</Given_Name>
+	<Surname>
+		<eng>Zeli</eng>
+	</Surname>
 	<Titles>
-		<Title>Father</Title>
+		<Title>
+			<eng>Father</eng>
+		</Title>
+		<Title>
+			<aat>300266789</aat>
+			<ita>Frate</ita>
+			<eng>Friar</eng>
+		</Title>
 	</Titles>
-	<Patronymic/>
-	<Occupation>Dominican friar</Occupation>
+	<Occupation>
+		<aat>300411986</aat>
+		<ita>Ecclesiastico</ita>
+		<eng>Ecclesiastic</eng>
+	</Occupation>
 	<Activities>
 		<Activity>
-			<Id>1</Id>
-			<Title>Friar of San Secondo</Title>
-			<Start/>
-			<End/>
+			<aat>OCC340038</aat>
+			<ita>Frate di San Secondo</ita>
+			<eng>Friar of San Secondo</eng>
 		</Activity>
 	</Activities>
 	<Place_of_birth/>
@@ -28,7 +40,6 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Notes/>
 	<Events>
 		<Event>
 			<ID_EVENT>34</ID_EVENT>
