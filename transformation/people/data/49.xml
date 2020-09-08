@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>49</ID_PERSON>
-	<Given_Name>
-		<eng>Giovanni</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Trevisan</eng>
-	</Surname>
+	<Given_Name>Giovanni</Given_Name>
+	<Surname>Trevisan</Surname>
 	<Titles>
 		<Title>
 			<eng>Patriarch</eng>

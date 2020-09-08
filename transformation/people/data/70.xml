@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>70</ID_PERSON>
-	<Given_Name>
-		<eng>Carlo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Ruzzini</eng>
-	</Surname>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Ruzzini</Surname>
 	<Titles>
 		<Title>
 			<eng>Doge</eng>

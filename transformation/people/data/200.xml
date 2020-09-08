@@ -1,9 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>200</ID_PERSON>
-	<Surname>
-		<eng>Carthusian monks of Sant'Andrea della Certosa</eng>
-	</Surname>
+	<Given_Name/>
+	<Surname>Carthusian monks of Sant'Andrea della Certosa</Surname>
 	<Occupation>
 		<aat>300411986</aat>
 		<ita>Ecclesiastico</ita>

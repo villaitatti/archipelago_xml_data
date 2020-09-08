@@ -161,10 +161,12 @@ for row in tags:
     #TODO Actor type
 
     # given name 
-    explode_text(row.find(f'ns:{key_given_name}', ns).text, new_row, key_given_name)
+    given_name = et.SubElement(new_row, key_given_name)
+    given_name.text = row.find(f'ns:{key_given_name}', ns).text
 
     # surname
-    explode_text(row.find(f'ns:{key_surname}', ns).text, new_row, key_surname)
+    surname = et.SubElement(new_row, key_surname)
+    surname.text = row.find(f'ns:{key_surname}', ns).text
 
     # alias
     explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)

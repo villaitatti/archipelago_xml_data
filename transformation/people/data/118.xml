@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>118</ID_PERSON>
-	<Given_Name>
-		<eng>Hugues</eng>
-	</Given_Name>
-	<Surname>
-		<eng>de Comminelles</eng>
-	</Surname>
+	<Given_Name>Hugues</Given_Name>
+	<Surname>de Comminelles</Surname>
 	<Activities>
 		<Activity>
 			<aat>OCC340040</aat>

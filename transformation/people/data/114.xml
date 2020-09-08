@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>114</ID_PERSON>
-	<Given_Name>
-		<eng>Girolamo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>da Santacroce</eng>
-	</Surname>
+	<Given_Name>Girolamo</Given_Name>
+	<Surname>da Santacroce</Surname>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>

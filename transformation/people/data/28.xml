@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>28</ID_PERSON>
-	<Given_Name>
-		<eng>Francesco</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Guardi</eng>
-	</Surname>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Guardi</Surname>
 	<Patronymic>
 		<eng>Domenico</eng>
 	</Patronymic>

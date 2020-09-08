@@ -1,9 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>193</ID_PERSON>
-	<Surname>
-		<eng>Friars of Santissima Trinità in Brondolo</eng>
-	</Surname>
+	<Given_Name/>
+	<Surname>Friars of Santissima Trinità in Brondolo</Surname>
 	<Occupation>
 		<aat>300411986</aat>
 		<ita>Ecclesiastico</ita>

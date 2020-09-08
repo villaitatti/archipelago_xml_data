@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>142</ID_PERSON>
-	<Given_Name>
-		<eng>Nicolò</eng>
-	</Given_Name>
-	<Surname>
-		<eng>de Benvenutis</eng>
-	</Surname>
+	<Given_Name>Nicolò</Given_Name>
+	<Surname>de Benvenutis</Surname>
 	<Titles>
 		<Title>
 			<aat>300025757</aat>

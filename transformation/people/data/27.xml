@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>27</ID_PERSON>
-	<Given_Name>
-		<eng>Fabio</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Chigi</eng>
-	</Surname>
+	<Given_Name>Fabio</Given_Name>
+	<Surname>Chigi</Surname>
 	<Alias>
 		<ita>Papa Alessandro VII</ita>
 		<eng>Pope Alexander VII</eng>

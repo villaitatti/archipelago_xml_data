@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>168</ID_PERSON>
-	<Given_Name>
-		<eng>Gian Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Carafa</eng>
-	</Surname>
+	<Given_Name>Gian Pietro</Given_Name>
+	<Surname>Carafa</Surname>
 	<Alias>
 		<ita>Papa Paolo IV</ita>
 		<eng>Pope Paul IV</eng>

@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>130</ID_PERSON>
-	<Given_Name>
-		<eng>Alvise</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Mocenigo</eng>
-	</Surname>
+	<Given_Name>Alvise</Given_Name>
+	<Surname>Mocenigo</Surname>
 	<Alias>
 		<eng>Alvise I Mocenigo</eng>
 	</Alias>

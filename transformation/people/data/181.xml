@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>181</ID_PERSON>
-	<Given_Name>
-		<eng>Agostino</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Correggio</eng>
-	</Surname>
+	<Given_Name>Agostino</Given_Name>
+	<Surname>Correggio</Surname>
 	<Patronymic>
 		<eng>Orazio</eng>
 	</Patronymic>

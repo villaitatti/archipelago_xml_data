@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>159</ID_PERSON>
-	<Given_Name>
-		<eng>Ercole</eng>
-	</Given_Name>
-	<Surname>
-		<eng>d'Este</eng>
-	</Surname>
+	<Given_Name>Ercole</Given_Name>
+	<Surname>d'Este</Surname>
 	<Alias>
 		<eng>Ercole I d'Este</eng>
 	</Alias>

@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>113</ID_PERSON>
-	<Given_Name>
-		<eng>Giuseppe</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Porta</eng>
-	</Surname>
+	<Given_Name>Giuseppe</Given_Name>
+	<Surname>Porta</Surname>
 	<Alias>
 		<eng>il Salviati</eng>
 	</Alias>

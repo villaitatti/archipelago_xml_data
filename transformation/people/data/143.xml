@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>143</ID_PERSON>
-	<Given_Name>
-		<eng>Jacques</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Duèze</eng>
-	</Surname>
+	<Given_Name>Jacques</Given_Name>
+	<Surname>Duèze</Surname>
 	<Alias>
 		<ita>Papa Giovanni XXII</ita>
 		<eng>Pope John XXII</eng>

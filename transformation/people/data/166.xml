@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>166</ID_PERSON>
-	<Given_Name>
-		<eng>Francesco Maria</eng>
-	</Given_Name>
-	<Surname>
-		<eng>della Rovere</eng>
-	</Surname>
+	<Given_Name>Francesco Maria</Given_Name>
+	<Surname>della Rovere</Surname>
 	<Alias>
 		<eng>Francesco Maria I</eng>
 	</Alias>

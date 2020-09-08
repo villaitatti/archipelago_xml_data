@@ -1,9 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>197</ID_PERSON>
-	<Surname>
-		<eng>Benedictine nuns of Corpus Domini</eng>
-	</Surname>
+	<Given_Name/>
+	<Surname>Benedictine nuns of Corpus Domini</Surname>
 	<Occupation>
 		<aat>300411986</aat>
 		<ita>Ecclesiastico</ita>
