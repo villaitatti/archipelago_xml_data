@@ -178,6 +178,9 @@
 	<generator name="343-actor-activity-date" prefix="arc">
 		<pattern>actor/{actor_id}/activity/{activity_id}/date</pattern>
 	</generator>
+	<generator name="349-actor-activity-OOC" prefix="arc">
+		<pattern>activity/{activity_id}</pattern>
+	</generator>	
 
 	<!-- Actor's marriage -->
 	<generator name="350-actor-marriage" prefix="arc">
