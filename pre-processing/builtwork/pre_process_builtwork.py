@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import xml.dom.minidom as md
 import xml.etree.ElementTree as et
 import os
@@ -7,26 +8,26 @@ import json
 
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.join(dir_path, 'builtwork.xml')
+filename = os.path.join(dir_path, 'BuiltWork_Buildings.csv')
 
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
 
-def write_file(row_id, text):
+def write_file(name, text, ext='xml'):
 
   output_directory = os.path.join(dir_path, '../..', 'transformation/builtwork/' ,'data')
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
 
-  output_filename = os.path.join(output_directory, f'{row_id}.xml')
+  output_filename = os.path.join(output_directory, f'{name}.{ext}')
 
   with open(output_filename, 'w') as f:
     f.write(text)
 
-def base_tag(parent, key, row):
+def base_tag(parent, key, text):
   tmp = et.SubElement(parent, key)
-  tmp.text = row.find(key).text 
+  tmp.text = text
 
 # Input keys
 key_root = 'root'
@@ -69,113 +70,170 @@ key_shape_area = 'SHP_Area'
 
 # Custom created keys
 key_materials = 'Materials'
+key_uses = 'Uses'
+key_typologies = 'Typologies'
+key_owners = 'Owners'
+key_tenants = 'Tenants'
 
-tree = et.parse(filename)
-root = tree.getroot()
+df = pd.read_csv(filename, sep=';')
 
-tags = root.findall(key_row)
+builtworks = {}
 
-# Iterate each ROW
-for row in tags:
+# Create a dict with an array containing every bw as json object
+for i in range(len(df)) :
+  row_id = df.loc[i, key_bw_id]
+  new_row = {}
 
-    # Copy the current row
-    new_row = et.Element(key_row)
-    row_id = row.find(key_bw_id).text 
+  if row_id not in builtworks:
+    builtworks[row_id] = []
 
-    # WKT 
-    base_tag(new_row, key_wkt, row)
+  for y in range(1, len(df.columns)):
+    val = df.iloc[i, y]
+    col = df.columns[y]
+    
+    if val is np.nan or val == 'nan' or col == key_height: 
+      val = ""
+      
+    new_row[col] = val
+  
+  builtworks.get(row_id).append(new_row)
 
-    # BW_ID
-    base_tag(new_row, key_bw_id, row)
+#print(builtworks)
+#write_file('output', json.dumps(builtworks), ext='json')
 
-    # IslandName 
-    base_tag(new_row, key_islandname, row)
+cnt_id = 1
+bw_id = f'SS_BLDG_{cnt_id:03d}'
 
-    # Date 
-    base_tag(new_row, key_date, row)
+while bw_id in builtworks:
 
-    # Start_Earliest 
-    base_tag(new_row, key_start, row)
+  first = builtworks.get(bw_id)[0]
 
-    # End_Latest 
-    base_tag(new_row, key_end, row)
+  # Create the current row
+  xml_row = et.Element(key_row)
 
-    # Name 
-    base_tag(new_row, key_name, row)
+  row_date = first[key_date]
 
-    # Function 
-    base_tag(new_row, key_function, row)
+  # Shared elements
 
-    # Start_Function 
-    base_tag(new_row, key_function_start, row)
+  # bw id
+  base_tag(xml_row, key_bw_id, bw_id)
 
-    # End_Function
-    base_tag(new_row, key_function_end, row)
+  # IslandName 
+  base_tag(xml_row, key_islandname,  first[key_islandname])
+
+  # Start_Earliest 
+  base_tag(xml_row, key_start,  first[key_start])
+
+  # End_Latest 
+  base_tag(xml_row, key_end,  first[key_end])
+
+  # Name 
+  base_tag(xml_row, key_name,  first[key_name])
+
+  # Function 
+  base_tag(xml_row, key_function,  first[key_function])
+
+  # Start_Function 
+  base_tag(xml_row, key_function_start,  first[key_function_start])
+
+  # End_Function
+  base_tag(xml_row, key_function_end,  first[key_function_end])
+
+  # Height
+  base_tag(xml_row, key_height,  first[key_height])
+
+  # Material
+  text_materials = first[key_material] 
+
+  if text_materials is not None:
+    text_materials = text_materials.split(';')
+
+    materials = et.SubElement(xml_row, key_materials)
+
+    for text_material in text_materials:
+      base_tag(materials, key_material, text_material.strip())
+
+  # Architect
+  base_tag(xml_row, key_architect,  first[key_architect])
+
+  # Patron
+  base_tag(xml_row, key_patron,  first[key_patron])
+
+  # SHP_Lenght
+  base_tag(xml_row, key_shape_lenght,  first[key_shape_lenght])
+
+  # SHP_Area
+  base_tag(xml_row, key_shape_area,  first[key_shape_area])
+
+  set_uses = dict()
+  set_typologies = dict()
+  set_owners = dict()
+  set_tenants = dict()
+
+  # Not shared elements
+  for current_bw in builtworks[bw_id]:
 
     # Use
-    base_tag(new_row, key_use, row)
+    if current_bw[key_use] not in set_uses:
+      set_uses[current_bw[key_use]] = {key_use_start: current_bw[key_use_start], key_use_end: current_bw[key_use_end]}
 
-    # Start_Use
-    base_tag(new_row, key_use_start, row)
+    # Typologies
+    if current_bw[key_typology] not in set_typologies:
+      set_typologies[current_bw[key_typology]] = {key_typology_start: current_bw[key_typology_start], key_typology_end: current_bw[key_typology_end]}
 
-    # End_Use
-    base_tag(new_row, key_use_end, row)
+    # Owners
+    if current_bw[key_owner] not in set_owners:
+      set_owners[current_bw[key_owner]] = {key_owner_start: current_bw[key_owner_start], key_owner_end: current_bw[key_owner_end]}
 
-    # Typology
-    base_tag(new_row, key_typology, row)
+    # Tenants
+    if current_bw[key_tenant] not in set_tenants:
+      set_tenants[current_bw[key_tenant]] = {key_tenant_start: current_bw[key_tenant_start], key_tenant_end: current_bw[key_tenant_end]}
 
-    # Start_Typology
-    base_tag(new_row, key_typology_start, row)
+  # Use
+  uses = et.SubElement(xml_row, key_uses)
+  for key, use in set_uses.items():
 
-    # End_Typology
-    base_tag(new_row, key_typology_end, row)
+    use_tag = et.SubElement(uses, key_use)
 
-    # Height
-    base_tag(new_row, key_height, row)
+    base_tag(use_tag, key_name, key)
+    base_tag(use_tag, key_use_start, use[key_use_start])
+    base_tag(use_tag, key_use_end, use[key_use_end])
 
-    # Material
-    text_materials = row.find(key_material).text 
+  # Typologies
+  typologies = et.SubElement(xml_row, key_typologies)
+  for key, typology in set_typologies.items():
 
-    if text_materials is not None:
-      text_materials = text_materials.split(';')
+    typology_tag = et.SubElement(typologies, key_typology)
 
-      materials = et.SubElement(new_row, key_materials)
+    base_tag(typology_tag, key_name, key)
+    base_tag(typology_tag, key_use_start, typology[key_typology_start])
+    base_tag(typology_tag, key_use_end, typology[key_typology_end])
 
-      for text_material in text_materials:
-        material = et.SubElement(materials, key_material)
-        material.text = text_material.strip()
+  # Owners
+  owners = et.SubElement(xml_row, key_owners)
+  for key, owner in set_owners.items():
 
-    # Architect
-    base_tag(new_row, key_architect, row)
+    owner_tag = et.SubElement(owners, key_owner)
 
-    # Patron
-    base_tag(new_row, key_patron, row)
+    base_tag(owner_tag, key_name, key)
+    base_tag(owner_tag, key_owner_start, owner[key_owner_start])
+    base_tag(owner_tag, key_owner_end, owner[key_owner_end])
 
-    # Owner
-    base_tag(new_row, key_owner, row)
+  # Tenants
+  tenants = et.SubElement(xml_row, key_tenants)
+  for key, tenant in set_tenants.items():
 
-    # Start_Owner
-    base_tag(new_row, key_owner_start, row)
+    tenant_tag = et.SubElement(tenants, key_tenant)
 
-    # End_Owner
-    base_tag(new_row, key_owner_end, row)
+    base_tag(tenant_tag, key_name, key)
+    base_tag(tenant_tag, key_tenant_start, tenant[key_tenant_start])
+    base_tag(tenant_tag, key_tenant_end, tenant[key_tenant_end])
 
-    # Tenant
-    base_tag(new_row, key_tenant, row)
+  final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
-    # Start_Tenant
-    base_tag(new_row, key_tenant_start, row)
+  write_file(bw_id, final)
 
-    # End_Tenant
-    base_tag(new_row, key_tenant_end, row)
+  break
 
-    # SHP_Lenght
-    base_tag(new_row, key_shape_lenght, row)
-
-    # SHP_Area
-    base_tag(new_row, key_shape_area, row)
-
-    final = md.parseString(et.tostring(
-        new_row, method='xml')).toprettyxml()
-
-    write_file(row_id, final)
+  cnt_id += 1
+  bw_id = f'SS_BLDG_{cnt_id:03d}'
