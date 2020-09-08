@@ -9,8 +9,7 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-geonames:3173435  a  crm:E53_Place ;
-        rdfs:label  "3173435"@it .
+geonames:3173435  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/65/death>
         a                     crm:E69_Death ;
@@ -20,16 +19,18 @@ geonames:3173435  a  crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-geonames:3171573  a  crm:E53_Place ;
-        rdfs:label  "3171573"@en .
+geonames:3171573  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/65/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1762-06-16"@en .
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/65>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/65/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
         crm:P1_is_identified_by  "65"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/65/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/65/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -55,7 +56,3 @@ geonames:3171573  a  crm:E53_Place ;
         a                crm:E41_Appellation ;
         rdfs:label       "Giuseppe Bernardino"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/65/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .

@@ -1,0 +1,83 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191>
+        a                           crm:E39_Actor ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340066> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340015> ;
+        crm:P1_is_identified_by     "191"@it ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/191/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/191/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/191/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/191/title/2> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/191biography> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/191/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/191/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/birth>
+        a                     crm:E67_Birth ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/191/birth/date> ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Patriarca"@it , "Patriarch"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/death>
+        a                     crm:E69_Death ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/birth/date>
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340015>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Patriarch of Venice  (1504–1508)"@en , "Patriarca di Venezia"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Surian"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/Biography>
+        a       crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "He is buried in the church of Sant'Andrea della Certosa."@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340066>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Prior of the Certosa di Vigodarzere  (1484)"@en , "Priore della Certosa di Vigodarzere"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Priore"@it , "Prior"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+geonames:3164603  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/191/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Andrea"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

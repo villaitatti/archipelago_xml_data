@@ -23,16 +23,16 @@
         rdfs:label       "Vestri"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/120/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Perito alla Laguna"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/120>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/120/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340003> ;
         crm:P1_is_identified_by  "120"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/120/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/120/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340003>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Lagoon surveyor"@en , "Perito alla laguna"@it .

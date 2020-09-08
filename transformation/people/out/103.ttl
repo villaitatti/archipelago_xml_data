@@ -27,7 +27,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/103>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/103/activity/1> ;
         crm:P1_is_identified_by     "103"@it ;
         crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/103/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/103/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/103biography> .

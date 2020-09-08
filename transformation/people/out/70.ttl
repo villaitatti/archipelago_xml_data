@@ -14,30 +14,26 @@
         rdfs:label       "Ruzzini"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/70/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Doge of Venice"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/70/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/70/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1732-06-02"@en ;
-        crm:P82b_end_of_the_end      "1735-01-05"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/57>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/70/event/57/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/70/birth/date> ;
-        crm:P7_took_place_at  geonames:3164603 .
+        crm:P7_took_place_at  geonames:3164603 ;
+        crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/70>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/70/activity/1> ;
-        crm:P1_is_identified_by  "70"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/70/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/70/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/70/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/57> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340005> ;
+        crm:P1_is_identified_by   "70"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/70/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/70/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/70/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -45,12 +41,11 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/70/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Doge"@en ;
+        rdfs:label       "Doge"@it , "Doge"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1653-11-11"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -61,13 +56,27 @@
         rdfs:label       "Carlo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/70/event/57/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Wittness"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340005>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Doge of Venice"@en , "Doge di Venezia"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a       crm:E21_Person .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/70/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/70/event/57/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/70/event/57/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+geonames:3164603  a  crm:E53_Place .

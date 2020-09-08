@@ -9,39 +9,46 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/61/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Architetto"@it , "Architect"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/61>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/61/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300024987> ;
         crm:P1_is_identified_by  "61"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/61/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/61/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/61/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/61/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/61/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/61/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/61/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/61/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1657"@en .
+        a       crm:E52_Time-Span .
 
-geonames:3173124  a  crm:E53_Place ;
-        rdfs:label  "3173124"@it .
+geonames:3173124  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/61/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3173124 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/61/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Architect"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/61/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Tirali"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/61/birth>
         a                     crm:E67_Birth ;
@@ -57,5 +64,4 @@ geonames:3173124  a  crm:E53_Place ;
         rdfs:label       "Andrea"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+geonames:3164603  a  crm:E53_Place .

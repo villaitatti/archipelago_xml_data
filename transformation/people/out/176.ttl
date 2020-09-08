@@ -9,37 +9,65 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Quarantined person"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/155>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Quarantined person"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "de Strigis"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/176/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340009>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Ambassador of the Duke of Mantua and Nevers Carlo Gonzaga"@en , "Ambasciatore del duca di Mantova e Nevers Carlo Gonzaga"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/176/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "-"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/156>
+        a       crm:E5_Event .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/176/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Ambassador of the Duke of Mantua-Nevers, Carlo Gonzaga"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/176/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/event/154>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/176/activity/1> ;
-        crm:P1_is_identified_by  "176"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/176/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/176/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/156> , <https://archipelago.itatti.harvard.edu/resource/event/154> , <https://archipelago.itatti.harvard.edu/resource/event/155> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340009> ;
+        crm:P1_is_identified_by   "176"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/176/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/176/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/176/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name>
         a                crm:E41_Appellation ;
@@ -48,5 +76,5 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Marquis"@en ;
+        rdfs:label       "Marchese"@it , "Marquis"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .

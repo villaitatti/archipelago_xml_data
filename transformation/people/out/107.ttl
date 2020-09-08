@@ -20,7 +20,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/107>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/107/activity/1> ;
         crm:P1_is_identified_by  "107"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/107/surname> .
 

@@ -9,52 +9,71 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/117/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:3169070 .
+<https://archipelago.itatti.harvard.edu/resource/actor/117/event/83/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/117/event/83/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/117/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Farnese"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://www.geonames.org/Castello%20Valentano%20%28Tuscany%29>
+        a       crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinale"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/117>
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/83> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/activity/300025462> ;
+        crm:P1_is_identified_by   "117"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/117/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/117/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/117/given_name> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/117/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/117/death> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-geonames:3169070  a  crm:E53_Place ;
-        rdfs:label  "3169070"@it .
+<https://archipelago.itatti.harvard.edu/resource/event/83>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/117/event/83/> .
+
+geonames:3169070  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025462>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Diplomat"@en , "Diplomatico"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/117/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/117/event/83/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Letter's recipient"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/117/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Alessandro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/117/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Cardinal"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/117/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/117/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1534"@en ;
-        crm:P82b_end_of_the_end      "1589"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
-<https://www.geonames.org/Castello%20Valentano%20%28Tuscany%29>
-        a           crm:E53_Place ;
-        rdfs:label  "Castello Valentano (Tuscany)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/117/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Cardinal"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/117/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1520-12-18"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Pier Luigi"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/117/birth>
         a                     crm:E67_Birth ;
@@ -62,21 +81,9 @@ geonames:3169070  a  crm:E53_Place ;
         crm:P7_took_place_at  <https://www.geonames.org/Castello%20Valentano%20%28Tuscany%29> ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/117/death>
+        a                     crm:E69_Death ;
+        crm:P7_took_place_at  geonames:3169070 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/117>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/117/activity/1> ;
-        crm:P1_is_identified_by  "117"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/117/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/117/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/117/given_name> ;
-        crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/117/birth> ;
-        crm:P93i_was_taken_out_of_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/117/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/117/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Farnese"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+<https://archipelago.itatti.harvard.edu/resource/actor/117/birth/date>
+        a       crm:E52_Time-Span .

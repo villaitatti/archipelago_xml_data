@@ -10,18 +10,20 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1383"@en .
+        a       crm:E52_Time-Span .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145/activity/3>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Pope"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/3/date> .
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340029>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Canon regular of San Giorgio in Alga"@en , "Canonico regolare di San Giorgio in Alga"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/145/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinale"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/death>
         a                     crm:E69_Death ;
@@ -33,27 +35,30 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/1> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/3> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/2> ;
+        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/121> , <https://archipelago.itatti.harvard.edu/resource/event/122> , <https://archipelago.itatti.harvard.edu/resource/event/77> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340027> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340029> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340028> ;
         crm:P1_is_identified_by     "145"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/145/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/145/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/145/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/145/surname> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/145/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/145/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/145/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/145/title/3> , <https://archipelago.itatti.harvard.edu/resource/actor/145/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/145/surname> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/145biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/145/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/145/death> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/77/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/type/Biography>
         a       crm:E55_Type .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145/activity/2>
+geonames:3164603  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340028>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Prior of San Clemente"@en .
+        rdfs:label  "Prior of San Clemente"@en , "Priore di San Clemente"@it .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
-
-geonames:3169070  a  crm:E53_Place ;
-        rdfs:label  "3169070"@it .
+geonames:3169070  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -64,33 +69,75 @@ geonames:3169070  a  crm:E53_Place ;
         rdfs:label       "Condulmer"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/122/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/145/title/3>
+        a                crm:E35_Title ;
+        rdfs:label       "Papa"@it , "Pope"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/145biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Era il nipote di Papa Gregorio XII"@it , "He was the nephew of Pope Gregory XII"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/event/122>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/122/> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340027>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Canon Regular of San Giorgio in Alga"@en .
+        rdfs:label  "Bishop of Siena"@en , "Vescovo di Siena"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/145/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Priore"@it , "Prior"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/121>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/121/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/77/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/77/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/77>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/77/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Pope"@en ;
+        rdfs:label       "Canonico"@it , "Canon"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145/activity/3/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1431"@en ;
-        crm:P82b_end_of_the_end      "1447"@en .
+<https://archipelago.itatti.harvard.edu/resource/activity/300025773>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Pope"@en , "Papa"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/122/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/122/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Gabriele"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/121/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Pope"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/145/event/121/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/145/event/121/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/145/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Pope Eugene IV"@it .
+        rdfs:label  "Papa Eugenio IV"@it , "Pope Eugene IV"@en .

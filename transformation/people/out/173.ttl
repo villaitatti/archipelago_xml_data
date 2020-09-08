@@ -14,24 +14,34 @@
         rdfs:label       "Sebastiano"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/173/title/2>
-        a                crm:E35_Title ;
-        rdfs:label       "Knight"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/173/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/173/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Recovered person"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/150>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300236171>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Captain"@en , "Capitano"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/173/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1459"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173/surname>
         a                crm:E41_Appellation ;
@@ -44,23 +54,23 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Captain"@en ;
+        rdfs:label       "Cavaliere"@it , "Knight"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "173"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/173/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/173/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/173/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/173/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/150> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300236171> ;
+        crm:P1_is_identified_by   "173"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/173/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/173/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/173/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/173/birth> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Marino"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+geonames:3164603  a  crm:E53_Place .

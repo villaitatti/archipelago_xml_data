@@ -9,6 +9,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/141>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/157/event/141/> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/157/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Priuli"@it ;
@@ -19,20 +23,31 @@
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/157>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "157"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/157/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/157/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/157/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/157/given_name> ;
+        a                           crm:E39_Actor ;
+        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/141> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340052> ;
+        crm:P1_is_identified_by     "157"@it ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/157/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/157/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/157/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/157/title/1> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/157biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/157/birth> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/157/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Dogaressa Foscari"@it .
+        rdfs:label  "Dogaressa Foscari"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/157/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Dogaressa"@en ;
+        rdfs:label       "Dogaressa"@it , "Dogaressa"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340052>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Dogaressa"@en , "Dogaressa"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/157/event/141/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/157/event/141/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/157/birth>
         a                    crm:E67_Birth ;
@@ -42,9 +57,15 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/type/Biography>
+        a       crm:E55_Type .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Andrea"@it .
+        a       crm:E21_Person .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/157/event/141/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Dogaressa"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/157/given_name>
         a                crm:E41_Appellation ;
@@ -54,3 +75,8 @@
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/157biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Fu la moglie del doge Jacopo Foscari (1416-1457)"@it , "She was the wife of Doge Jacopo Foscari"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .

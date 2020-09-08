@@ -11,11 +11,20 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Era in contatto con i frati di San Domenico di Castello a Venezia. Il suo corpo è seppellito all'interno della chiesa domenicana"@it , "He was in contact with the friars of San Domenico di Castello in Venice. His body is buried in the Dominican church"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340037>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Proto of the construction workers in the Venetian Arsenal"@en , "Proto dei muratori all'Arsenale"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43/surname>
         a                crm:E41_Appellation ;
@@ -26,22 +35,36 @@
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/43/activity/1>
-        a           frbr:F51_Pursuit ;
+<https://archipelago.itatti.harvard.edu/resource/actor/43/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Architetto"@it , "Architect"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/43/event/7/role>
+        a           crm:E55_Type ;
         rdfs:label  "Architect"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/Biography>
         a       crm:E55_Type .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/43/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Proto dei muratori at the Arsenale"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/7>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/43/event/7/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/43/event/7/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/43/event/7/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/43/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/43/activity/1> ;
+        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/7> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/300024987> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340037> ;
         crm:P1_is_identified_by     "43"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/43/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/43/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/43/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/43/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/43/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/43/title/1> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/43biography> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/43/death> .
@@ -50,10 +73,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Giovanni"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/43/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Proto"@it , "Proto"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .

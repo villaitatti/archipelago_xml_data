@@ -9,13 +9,17 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025593>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cartographer"@en , "Cartografo"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300154329> , <https://archipelago.itatti.harvard.edu/resource/activity/300025593> ;
         crm:P1_is_identified_by  "69"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/69/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/69/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -23,30 +27,24 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/69/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/69/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Miniaturist"@en .
+geonames:Padua  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Benedetto"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-geonames:3171728  a  crm:E53_Place ;
-        rdfs:label  "3171728"@it , "3171728"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/69/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/69/birth/date> ;
-        crm:P7_took_place_at  geonames:3171728 .
+        crm:P7_took_place_at  geonames:Padua .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1450"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:3171728 .
+        crm:P7_took_place_at  geonames:Padua .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/surname>
         a                crm:E41_Appellation ;
@@ -57,6 +55,6 @@ geonames:3171728  a  crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/69/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/activity/300154329>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Cartographer"@en .
+        rdfs:label  "Miniaturist"@en , "Miniatore"@it .

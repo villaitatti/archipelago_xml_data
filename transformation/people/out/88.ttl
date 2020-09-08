@@ -9,10 +9,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/8>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/88/event/8/> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/88>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "88"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/88/surname> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/47> , <https://archipelago.itatti.harvard.edu/resource/event/8> ;
+        crm:P1_is_identified_by   "88"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/88/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/88/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -20,24 +25,42 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Venetian Republic"@it ;
+        rdfs:label       "Venetian Republic {Repubblica di Venezia}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/88/event/8/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/88/event/8/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/88/event/47/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/88/event/47/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/47>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/88/event/47/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/88/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/88/event/8/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/88/event/47/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Owner"@en .
+
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "697"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/death>
         a                     crm:E69_Death ;

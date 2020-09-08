@@ -9,6 +9,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/127/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Medico"@it , "Physician"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/127/activity/1>
+        a       frbr:F51_Pursuit .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/127/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Mariano"@it ;
@@ -18,10 +26,27 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/127/event/92/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/127/event/92/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/92>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/127/event/92/> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/127>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "127"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/127/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/127/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/92> ;
+        crm:P1_is_identified_by   "127"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/127/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/127/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/127/given_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/127/event/92/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Physician"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/127/surname>
         a                crm:E41_Appellation ;

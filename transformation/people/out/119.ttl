@@ -14,19 +14,33 @@
         rdfs:label       "Nicolò"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025593>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cartographer"@en , "Cartografo"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/119biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Era il nipote del cartografo Angelo dal Cortivo"@it , "He was the nephew of the cartographer Angelo dal Cortivo"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/Biography>
+        a       crm:E55_Type .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/119/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "da Cortivo"@it ;
+        rdfs:label       "dal Cortivo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/119>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "119"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/119/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/119/given_name> .
+        a                           crm:E39_Actor ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/300025593> ;
+        crm:P1_is_identified_by     "119"@it ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/119/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/119/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/119biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

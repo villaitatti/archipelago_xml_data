@@ -14,6 +14,10 @@
         rdfs:label       "Angelo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/140/event/115/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/140/event/115/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -23,11 +27,25 @@
         rdfs:label       "Rosso"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/140/event/115/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Donator"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300230871>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Landowner"@en , "Proprietario terriero"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/140>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "140"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/140/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/140/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/115> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300230871> ;
+        crm:P1_is_identified_by   "140"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/140/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/140/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/115>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/140/event/115/> .

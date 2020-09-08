@@ -16,16 +16,17 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/33/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Father"@en ;
+        rdfs:label       "Frate"@it , "Friar"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/33biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Ne suo testamento scrisse che all'interno del convento \"si vive secondo il rigore dell’ordine dei predicatori e per questo si trova in uno stato di estrema povertà\""@it , "In his will he wrote that the life in the monastery follows the rigor of the Order of Preachers and thus the convent is in a state of great poverty"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/33>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/33/activity/1> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340038> ;
         crm:P1_is_identified_by     "33"@it ;
         crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/33/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/33/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/33/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/33biography> ;
@@ -40,16 +41,16 @@
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/33/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Friar of San Secondo"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/Biography>
         a       crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340038>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Friar of San Secondo"@en , "Frate di San Secondo"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/33/surname>
         a                crm:E41_Appellation ;
@@ -60,5 +61,4 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+geonames:3164603  a  crm:E53_Place .

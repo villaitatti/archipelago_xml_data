@@ -18,21 +18,34 @@
         rdfs:label       "Contarini"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/101/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Giambattista Maria"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/101/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/activity/300136462>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Lecturer (lettore)"@en .
+        rdfs:label  "Lecturer"@en , "Lettore"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300266789>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Friar"@en , "Frate"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/101/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Frate"@it , "Friar"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/101>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/101/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300136462> , <https://archipelago.itatti.harvard.edu/resource/activity/300266789> ;
         crm:P1_is_identified_by  "101"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/101/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/101/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/101/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/101/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/101/given_name> .

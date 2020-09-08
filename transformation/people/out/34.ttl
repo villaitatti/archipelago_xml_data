@@ -11,16 +11,12 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Domenico Maria del Rosario"@it .
+        rdfs:label  "Domenico Maria del Rosario"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Carlo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/34/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Friar of San Secondo"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -43,11 +39,12 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Fu novizzo nel monastero di San Secondo. Dal suo testamento si evince che all'interno della chiesa vi era un altare dedicato alla Madonna del Rosario"@it , "He was novice in the monastery of San Secondo. From his will it is understood that in the church there was an altar dedicated to the Lady of the Rosary"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/34/activity/1> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340038> ;
         crm:P1_is_identified_by     "34"@it ;
         crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/34/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/34/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/34/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/34/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/34biography> ;
@@ -58,19 +55,21 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Father"@en ;
+        rdfs:label       "Frate"@it , "Friar"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340038>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Friar of San Secondo"@en , "Frate di San Secondo"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Fabrizio"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/34/surname>
         a                crm:E41_Appellation ;

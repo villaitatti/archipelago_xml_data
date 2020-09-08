@@ -9,24 +9,28 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/49/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1503"@en .
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340067>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Abbott of San Cipriano in Murano"@en , "Abate di San Cipriano di Murano"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/49/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Patriarch of Venice"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/49/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/actor/49/birth/date>
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/49/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Patriarca"@it , "Patriarch"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/49>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/49/activity/1> ;
-        crm:P1_is_identified_by  "49"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/49/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/49/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/49/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/49> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340015> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340067> ;
+        crm:P1_is_identified_by   "49"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/49/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/49/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/49/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/49/title/2> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/49/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -37,10 +41,17 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/49/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/49/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1560"@en ;
-        crm:P82b_end_of_the_end      "1590"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/49/event/49/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Donor"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340015>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Patriarch of Venice"@en , "Patriarca di Venezia"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/event/49>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/49/event/49/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/49/death>
         a                     crm:E69_Death ;
@@ -57,7 +68,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/49/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Patriarch"@en ;
+        rdfs:label       "Abate"@it , "Abbott"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/49/given_name>
@@ -69,5 +80,8 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/49/event/49/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/49/event/49/role> .
+
+geonames:3164603  a  crm:E53_Place .

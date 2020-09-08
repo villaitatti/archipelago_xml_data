@@ -14,17 +14,20 @@
         rdfs:label       "Filippo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/26/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Procurator of St. Mark de supra"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/63>
+        a       crm:E5_Event .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340030>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Procurator of St Mark's de supra"@en , "Procuratore di San Marco de supra"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/26/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Procurator"@en ;
+        rdfs:label       "Procuratore"@it , "Procurator"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
@@ -41,7 +44,8 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/26>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/26/activity/1> ;
+        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/63> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340030> ;
         crm:P1_is_identified_by     "26"@it ;
         crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/26/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/26/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/26/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/26biography> .
@@ -52,4 +56,5 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/26biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "La sua casa si trovava vicino al rio della Zecca, all'angolo dei Magazzini di Terranova"@it , "His house was located near the rio della Zecca, at the corner with the Terranova warehouses"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .

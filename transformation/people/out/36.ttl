@@ -14,20 +14,19 @@
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/36/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1472"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/36/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/36>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/36/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300154329> , <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
         crm:P1_is_identified_by  "36"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/36/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/36/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/36/birth> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/36/birth>
         a                     crm:E67_Birth ;
@@ -43,8 +42,11 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+<https://archipelago.itatti.harvard.edu/resource/activity/300154329>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Miniaturist"@en , "Miniatore"@it .
+
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/36/given_name>
         a                crm:E41_Appellation ;

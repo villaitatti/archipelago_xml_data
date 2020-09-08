@@ -11,17 +11,17 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/185>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/185/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025039> ;
         crm:P1_is_identified_by  "185"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/185/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/185/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/185/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Stonecutter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025039>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Stonecutter"@en , "Scalpellino"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/185/surname>
         a                crm:E41_Appellation ;

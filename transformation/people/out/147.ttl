@@ -9,6 +9,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/124>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/147/event/124/> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -18,19 +22,37 @@
         rdfs:label       "Nani"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/147/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340063>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Friar in San Clemente"@en .
+        rdfs:label  "Canon regular of San Clemente"@en , "Canonico regolare di San Clemente"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/Biography>
         a       crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/147>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/147/activity/1> ;
+        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/124> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340063> ;
         crm:P1_is_identified_by     "147"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/147/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/147/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/147/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/147/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/147/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/147biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/147/event/124/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Predictor and friar inhabiting the island"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/147/event/124/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/147/event/124/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/147/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Canonico"@it , "Canon"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -38,6 +60,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/147biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "He was well known for being a predictor"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/147/given_name>

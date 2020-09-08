@@ -14,28 +14,36 @@
         rdfs:label       "da Villanova"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Landowner"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/45/event/43/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Donor"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/45/event/43/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/45/event/43/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300230871>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Landowner"@en , "Proprietario terriero"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth>
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3164175 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1> ;
-        crm:P1_is_identified_by  "45"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/45/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/43> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300230871> ;
+        crm:P1_is_identified_by   "45"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/45/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth> .
 
-geonames:3164175  a  crm:E53_Place ;
-        rdfs:label  "3164175"@en .
+geonames:3164175  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name>
         a                crm:E41_Appellation ;
@@ -45,3 +53,7 @@ geonames:3164175  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/43>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/45/event/43/> .

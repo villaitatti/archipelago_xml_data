@@ -14,9 +14,16 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/155/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/155/event/132/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Island's owner"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/155/event/132/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/155/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1852"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/155/death>
         a                     crm:E69_Death ;
@@ -28,17 +35,21 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/155>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "155"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/155/surname> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/132> ;
+        crm:P1_is_identified_by   "155"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/155/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/155/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/155/death> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/132>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132/> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+geonames:3164603  a  crm:E53_Place .

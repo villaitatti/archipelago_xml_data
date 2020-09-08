@@ -9,6 +9,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/131/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Medico"@it , "Physician"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -18,14 +23,21 @@
         rdfs:label       "Nicolò"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025809>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Physician"@en , "Medico"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/131/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Massa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/131/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1504"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/131/birth>
         a                     crm:E67_Birth ;
@@ -33,8 +45,9 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/131>
         a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025809> ;
         crm:P1_is_identified_by  "131"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/131/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/131/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/131/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/131/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/131/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/131/birth> .
 

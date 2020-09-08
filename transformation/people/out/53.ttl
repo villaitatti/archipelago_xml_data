@@ -13,10 +13,9 @@
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:Capodistria .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/3>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Bishop of Capodistria"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/3/date> .
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340006>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Vicar of San Secondo"@en , "Vicario di San Secondo"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -27,39 +26,31 @@
         rdfs:label       "Contarini"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Vicario of the monastery of San Secondo"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340032>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Vicar of San Pietro Martire di Murano"@en , "Vicario di San Pietro Martire di Murano"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/3> , <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/53/activity/1> ;
-        crm:P1_is_identified_by  "53"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/53/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/53/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/53/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/97> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340006> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340033> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340032> ;
+        crm:P1_is_identified_by   "53"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/53/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/53/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/53/title/1> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/53/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/3/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1600-05-15"@en ;
-        crm:P82b_end_of_the_end      "1619-10-9"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/97>
+        a       crm:E5_Event .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/2>
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340033>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Vicario of the monastery of San Pietro Martire di Murano"@en .
+        rdfs:label  "Bishop of Capodistria"@en , "Vescovo di Capodistria"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/53/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1597-09-01"@en ;
-        crm:P82b_end_of_the_end      "1598-06-01"@en .
-
-geonames:Capodistria  a  crm:E53_Place ;
-        rdfs:label  "Capodistria"@it .
+geonames:Capodistria  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/given_name>
         a                crm:E41_Appellation ;
@@ -68,7 +59,7 @@ geonames:Capodistria  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/53/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Bishop"@en ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>

@@ -11,7 +11,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/152/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Count"@en ;
+        rdfs:label       "Conte"@it , "Count"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name>
@@ -19,19 +19,20 @@
         rdfs:label       "Antonio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/152/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Consigliere di Luogotenenza"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/152>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/152/activity/1> ;
-        crm:P1_is_identified_by  "152"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/152/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/152/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/131> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340062> ;
+        crm:P1_is_identified_by   "152"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/152/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/152/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/131>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/152/event/131/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/152/surname>
         a                crm:E41_Appellation ;
@@ -42,6 +43,18 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/152/event/131/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/152/event/131/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/152/event/131/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Proponent"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340062>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Council member of the Luogotenenza delle province venete"@en , "Consigliere di luogotenenza"@it .

@@ -9,10 +9,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/66/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Publisher"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/66/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/66/birth/date> ;
@@ -20,7 +16,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/66>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/66/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/66/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025732> , <https://archipelago.itatti.harvard.edu/resource/activity/300025574> ;
         crm:P1_is_identified_by  "66"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/66/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/66/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -36,9 +32,13 @@
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/66/activity/2>
+<https://archipelago.itatti.harvard.edu/resource/activity/300025574>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Printer"@en .
+        rdfs:label  "Publisher"@en , "Editore"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025732>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Printer"@en , "Stampatore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/66/given_name>
         a                crm:E41_Appellation ;
@@ -49,12 +49,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/66/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1690"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/66/surname>
         a                crm:E41_Appellation ;

@@ -9,12 +9,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-geonames:3176959  a  crm:E53_Place ;
-        rdfs:label  "3176959"@en .
+geonames:3176959  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/121>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/121/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340003> ;
         crm:P1_is_identified_by  "121"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/121/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/121/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -29,10 +28,6 @@ geonames:3176959  a  crm:E53_Place ;
         rdfs:label       "Sebastiano"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/121/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Perito alla Laguna"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/121/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Alberti"@it ;
@@ -45,3 +40,7 @@ geonames:3176959  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/121/birth>
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3176959 .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340003>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Lagoon surveyor"@en , "Perito alla laguna"@it .

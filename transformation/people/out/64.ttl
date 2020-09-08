@@ -10,16 +10,11 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/64/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1725"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/64/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/64/surname>
         a                crm:E41_Appellation ;
@@ -27,22 +22,29 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/64>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/64/activity/1> ;
-        crm:P1_is_identified_by  "64"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/64/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/64/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/64> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
+        crm:P1_is_identified_by   "64"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/64/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/64/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/64/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/64/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/64>
+        a       crm:E5_Event .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/64/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/64/birth/date> ;
         crm:P7_took_place_at  geonames:3173331 .
 
-geonames:3173331  a  crm:E53_Place ;
-        rdfs:label  "3173331"@en .
+geonames:3173331  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/64/given_name>
         a                crm:E41_Appellation ;
@@ -57,5 +59,4 @@ geonames:3173331  a  crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+geonames:3164603  a  crm:E53_Place .

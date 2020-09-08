@@ -9,6 +9,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340040>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "French secretary of Alfonso, Duke of Calabria"@en , "Segretario francese del Duca di Calabria Alfonso"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/118/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "de Comminelles"@it ;
@@ -20,13 +24,9 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/118>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/118/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340040> ;
         crm:P1_is_identified_by  "118"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/118/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/118/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/118/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "French secretary of Alfonso, Duke of Calabria"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

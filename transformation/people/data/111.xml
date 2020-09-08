@@ -5,21 +5,9 @@
 	<Surname>Carafa della Spina</Surname>
 	<Titles>
 		<Title>
-			<aat>300025756</aat>
-			<eng>Bishop</eng>
-		</Title>
-		<Title>
-			<aat>300417572</aat>
-			<eng>Apostolic nuncio</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<eng>Cardinal</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<ita>Cardinale</ita>
-			<eng>Cardinal</eng>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
 		</Title>
 		<Title>
 			<aat>300025756</aat>
@@ -27,14 +15,14 @@
 			<eng>Bishop</eng>
 		</Title>
 		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
 			<aat>300417572</aat>
 			<ita>Nunzio Apostolico</ita>
 			<eng>Apostolic nuncio</eng>
-		</Title>
-		<Title>
-			<aat>300025774</aat>
-			<ita>Sacerdote</ita>
-			<eng>Priest</eng>
 		</Title>
 	</Titles>
 	<Patronymic>

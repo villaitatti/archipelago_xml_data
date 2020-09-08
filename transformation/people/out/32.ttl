@@ -11,6 +11,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/32biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Il suo testamento è conservato nel fondo del monastero di San Secondo"@it , "His will is preserved in the private archive of the monastery of San Secondo"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>

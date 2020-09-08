@@ -13,9 +13,12 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/58/birth/date>
+        a       crm:E52_Time-Span .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/58>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/58/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/58/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300239410> , <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
         crm:P1_is_identified_by  "58"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/58/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/58/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -23,17 +26,22 @@
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/58/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/58/activity/2>
+<https://archipelago.itatti.harvard.edu/resource/activity/300239410>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Printmaker"@en .
+        rdfs:label  "Engraver"@en , "Incisore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/58/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Jacopo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/58/birth>
         a                     crm:E67_Birth ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/58/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/58/surname>
@@ -41,20 +49,14 @@
         rdfs:label       "de' Barbari"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-geonames:Nuremberg  a  crm:E53_Place ;
-        rdfs:label  "Nuremberg"@it .
+geonames:Nuremberg  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/58/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:Nuremberg .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/58/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .

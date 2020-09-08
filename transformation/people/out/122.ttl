@@ -9,6 +9,16 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025593>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cartographer"@en , "Cartografo"@it .
+
+geonames:France  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/122/birth>
+        a                     crm:E67_Birth ;
+        crm:P7_took_place_at  geonames:France .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -18,9 +28,13 @@
         rdfs:label       "Denaix"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300236171>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Captain"@en , "Capitano"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/122/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Captain"@en ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/122/given_name>
@@ -30,8 +44,15 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/122>
         a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025593> , <https://archipelago.itatti.harvard.edu/resource/activity/300025063> , <https://archipelago.itatti.harvard.edu/resource/activity/300236171> ;
         crm:P1_is_identified_by  "122"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/122/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/122/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/122/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/122/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/122/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/122/given_name> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/122/birth> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025063>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Egineer"@en , "Ingegnere"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;

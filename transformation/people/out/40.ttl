@@ -9,10 +9,80 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/40>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/40/event/40/> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/40/given_name>
         a                crm:E41_Appellation ;
-        rdfs:label       "Napoleone"@it ;
+        rdfs:label       "Napoléon"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340012>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Monarch of Italy"@en , "Re d'Italia"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/event/40/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/40/event/40/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/alias>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Napoleon"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/birth/date>
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Bonaparte"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340011>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Emperor of the French  (1815)"@en , "Emperor of the French"@en , "Imperatore dei francesi"@it .
+
+geonames:Ajaccio  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40>
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/40> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340012> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340011> ;
+        crm:P1_is_identified_by   "40"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/40/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/40/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/40/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/40/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/40/title/2> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/40/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/40/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Imperatore"@it , "Emperor"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/event/40/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a       crm:E21_Person .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Re"@it , "King"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/birth>
         a                     crm:E67_Birth ;
@@ -20,48 +90,9 @@
         crm:P7_took_place_at  geonames:Ajaccio ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1769-08-15"@en .
-
-<https://www.geonames.org/Isola%20di%20Sant%27Elena>
-        a           crm:E53_Place ;
-        rdfs:label  "Isola di Sant'Elena"@it .
+<https://www.geonames.org/Island%20of%20Saint%20Helena>
+        a       crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  <https://www.geonames.org/Isola%20di%20Sant%27Elena> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bonaparte"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Politician"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/1> ;
-        crm:P1_is_identified_by  "40"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/40/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/40/given_name> ;
-        crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/40/birth> ;
-        crm:P93i_was_taken_out_of_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/40/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Carlos"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-geonames:Ajaccio  a  crm:E53_Place ;
-        rdfs:label  "Ajaccio"@en .
+        crm:P7_took_place_at  <https://www.geonames.org/Island%20of%20Saint%20Helena> .

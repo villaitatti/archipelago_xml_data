@@ -10,17 +10,12 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1740-03-19"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Viero"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/56/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Publisher"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -31,24 +26,31 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/56/birth/date> ;
         crm:P7_took_place_at  geonames:3182297 .
 
-geonames:3182297  a  crm:E53_Place ;
-        rdfs:label  "3182297"@en .
+geonames:3182297  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
+<https://archipelago.itatti.harvard.edu/resource/activity/300025574>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Publisher"@en , "Editore"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300239410>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engraver"@en , "Incisore"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025164>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Printmaker"@en , "Tipografo"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/56/activity/1> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/300025164> , <https://archipelago.itatti.harvard.edu/resource/activity/300025574> , <https://archipelago.itatti.harvard.edu/resource/activity/300239410> ;
         crm:P1_is_identified_by     "56"@it ;
         crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/56/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/56/given_name> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/56biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/56/birth> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/56/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Printer"@en .
+<https://archipelago.itatti.harvard.edu/resource/type/Biography>
+        a       crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56/given_name>
         a                crm:E41_Appellation ;
@@ -57,6 +59,7 @@ geonames:3182297  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/56biography>
         a                crm:E73_Information_Object ;
+        rdfs:label       "Si trasferì a Venezia nel 1755 e la sua bottega era in calle delle Mercerie. Luigi Schiavonetti, cugino da parte di madre, era solito inviargli da Londra stampe inglesi dell'epoca da vendere a Venezia"@it , "He moved to Venice in 1755 and his shop was in calle delle Mercerie. He was the uncle of Luigi Schiavonetti on his mother's side, who sent him from London contemporary English prints for sale in Venice"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>

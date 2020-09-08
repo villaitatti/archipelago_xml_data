@@ -11,52 +11,57 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/114/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "da Santa Croce"@it ;
+        rdfs:label       "da Santacroce"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+geonames:3167875  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/114/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/114/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Girolamo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://www.geonames.org/Santa%20Croce>
-        a           crm:E53_Place ;
-        rdfs:label  "Santa Croce"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/114/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
+<https://archipelago.itatti.harvard.edu/resource/type/Biography>
+        a       crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/114/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1480 - 1485"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/114>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/114/activity/1> ;
-        crm:P1_is_identified_by  "114"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/114/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/114/given_name> ;
+        a                           crm:E39_Actor ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
+        crm:P1_is_identified_by     "114"@it ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/114/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/114/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/114biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/114/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/114/death> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/114biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "A Venezia divenne allievo del pittore Gentile Bellini"@it , "He became in Venice a pupil of the painter Gentile Bellini"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/114/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/114/birth/date> ;
-        crm:P7_took_place_at  <https://www.geonames.org/Santa%20Croce> .
+        crm:P7_took_place_at  geonames:3167875 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+geonames:3164603  a  crm:E53_Place .

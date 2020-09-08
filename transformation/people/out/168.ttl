@@ -11,33 +11,40 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Pope Paul IV"@it .
+        rdfs:label  "Papa Paolo IV"@it , "Pope Paul IV"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Carafa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinale"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/168/title/3>
+        a                crm:E35_Title ;
+        rdfs:label       "Papa"@it , "Pope"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1524"@en ;
-        crm:P82b_end_of_the_end      "1559"@en .
+geonames:3169070  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/2/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1536"@en ;
-        crm:P82b_end_of_the_end      "1559"@en .
-
-geonames:3169070  a  crm:E53_Place ;
-        rdfs:label  "3169070"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/168/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/147>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/168/event/147/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/given_name>
         a                crm:E41_Appellation ;
@@ -46,18 +53,18 @@ geonames:3169070  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Pope"@en ;
+        rdfs:label       "Sacerdote"@it , "Priest"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://www.geonames.org/Capriglia%20Irpina%20%28Avellino%29>
-        a           crm:E53_Place ;
-        rdfs:label  "Capriglia Irpina (Avellino)"@en .
+        a       crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/3> , <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/1> ;
-        crm:P1_is_identified_by  "168"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/168/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/168/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/168/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/168/given_name> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/147> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025774> , <https://archipelago.itatti.harvard.edu/resource/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/activity/300025758> ;
+        crm:P1_is_identified_by   "168"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/168/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/168/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/168/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/168/title/3> , <https://archipelago.itatti.harvard.edu/resource/actor/168/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/168/title/2> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/168/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -69,38 +76,32 @@ geonames:3169070  a  crm:E53_Place ;
         crm:P7_took_place_at  <https://www.geonames.org/Capriglia%20Irpina%20%28Avellino%29> ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/168/event/147/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/168/event/147/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/168/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3169070 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1476-06-28"@en .
+        a       crm:E52_Time-Span .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/3>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Pope"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/3/date> .
+<https://archipelago.itatti.harvard.edu/resource/activity/300025774>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Priest"@en , "Sacerdote"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/3/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1555"@en ;
-        crm:P82b_end_of_the_end      "1559"@en .
+<https://archipelago.itatti.harvard.edu/resource/activity/300025773>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Pope"@en , "Papa"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Cardinal"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/2/date> .
+<https://archipelago.itatti.harvard.edu/resource/actor/168/event/147/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Guest"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Giovanni Antonio"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/168/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Cleric"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/1/date> .
+        a       crm:E21_Person .

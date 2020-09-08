@@ -9,33 +9,38 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/97/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Proto"@it , "Proto"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/97>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/97/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/97/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340026> ;
         crm:P1_is_identified_by  "97"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/97/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/97/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/97/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/97/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/97/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/97/activity/2>
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340026>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Proto of the Procuratori di Supra"@en .
+        rdfs:label  "Proto of the Procurators of St Mark's de supra"@en , "Proto dei Procuratori di San Marco de supra"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/97/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Stefano"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/97/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Codroipo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/97/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Pubblico perito"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

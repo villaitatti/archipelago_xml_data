@@ -9,30 +9,65 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/80>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/80/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/164/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/164/role> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1530"@en .
+        a       crm:E52_Time-Span .
+
+geonames:Padua  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/164>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/164/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Camaldolese monks of Monte Rua"@it ;
+        rdfs:label       "Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-geonames:3171728  a  crm:E53_Place ;
-        rdfs:label  "3171728"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/163/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/163/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/80/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/80/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "184"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/184/surname> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/164> , <https://archipelago.itatti.harvard.edu/resource/event/163> , <https://archipelago.itatti.harvard.edu/resource/event/80> ;
+        crm:P1_is_identified_by   "184"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/184/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/80/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Transferred order"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/163/role>
+        a           crm:E55_Type ;
+        rdfs:label  "New owners"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/184/event/164/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Potential buyers"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/event/163>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/184/event/163/> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/184/birth/date> ;
-        crm:P7_took_place_at  geonames:3171728 .
+        crm:P7_took_place_at  geonames:Padua .

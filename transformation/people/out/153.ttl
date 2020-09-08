@@ -9,34 +9,97 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/134/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/134/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/133>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/133/> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/153/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Engineer"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/title>
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/134/role>
         a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
+        rdfs:label  "Engineer"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/133/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/133/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/135/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Engineer"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "153"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/153/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/153/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/134> , <https://archipelago.itatti.harvard.edu/resource/event/133> , <https://archipelago.itatti.harvard.edu/resource/event/136> , <https://archipelago.itatti.harvard.edu/resource/event/135> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025063> , <https://archipelago.itatti.harvard.edu/resource/activity/300024987> ;
+        crm:P1_is_identified_by   "153"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/153/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/153/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/153/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Graziussi"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/136>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/136/> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/136/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Engineer"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/133/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Engineer"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Domenico"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/135>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/135/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/title/2>
+        a                crm:E35_Title ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/activity/300025063>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engineer"@en , "Ingegnere"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/136/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/136/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/134>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/134/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Architetto"@it , "Architect"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/event/135/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/153/event/135/role> .

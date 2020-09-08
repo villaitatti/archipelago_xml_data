@@ -9,31 +9,61 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/73/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Religious order"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/73/birth>
         a                     crm:E67_Birth ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/73/birth/date> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/73/birth/date> ;
+        crm:P7_took_place_at  geonames:Heraklion .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/73/event/58/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/73/event/58/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/73/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1670"@en .
+        a       crm:E52_Time-Span .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/73/death>
+        a                     crm:E69_Death ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/73/event/58/role>
+        a           crm:E55_Type ;
+        rdfs:label  "New owners"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/73>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/73/activity/1> ;
-        crm:P1_is_identified_by  "73"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/73/surname> ;
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/73> , <https://archipelago.itatti.harvard.edu/resource/event/58> ;
+        crm:P1_is_identified_by   "73"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/73/surname> ;
         crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/73/birth> .
+                <https://archipelago.itatti.harvard.edu/resource/actor/73/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/73/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/58>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/73/event/58/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/73/event/73/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/73/event/73/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/73>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/73/event/73/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/73/event/73/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Guardian of the monastery who reported the damages"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+geonames:Heraklion  a  crm:E53_Place .
+
+geonames:3164603  a  crm:E53_Place .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/73/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Candian Friars of Santo Spirito"@it ;
+        rdfs:label       "Candian friars of Santo Spirito {Frati minori osservanti della Provincia di Candia stabiliti a Santo Spirito}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

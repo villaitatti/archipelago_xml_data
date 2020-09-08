@@ -9,6 +9,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340039>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Canon regular of Santo Spirito"@en , "Canonico regolare di Santo Spirito"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/142/title/1>
+        a                crm:E35_Title ;
+        rdfs:label       "Canonico"@it , "Canon"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -18,9 +27,17 @@
         rdfs:label       "Nicolò"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/142/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Canon regular of Santo Spirito"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/142/event/119/>
+        a                crm:E39_Actor ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/142/event/119/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/119>
+        a                        crm:E5_Event ;
+        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/142/event/119/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/142/surname>
         a                crm:E41_Appellation ;
@@ -28,10 +45,15 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/142>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/142/activity/1> ;
-        crm:P1_is_identified_by  "142"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/142/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/142/given_name> .
+        a                         crm:E39_Actor ;
+        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/119> ;
+        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340039> ;
+        crm:P1_is_identified_by   "142"@it ;
+        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/142/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/142/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/142/given_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/142/event/119/role>
+        a           crm:E55_Type ;
+        rdfs:label  "New administrator of the island coming from Santo Spirito"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

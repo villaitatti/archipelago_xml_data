@@ -9,6 +9,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340008>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Chioggia  (1611)"@en , "Vescovo di Chioggia"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/52/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Baronio"@it ;
@@ -19,9 +23,9 @@
         rdfs:label       "Angelo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/52/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340006>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Vicario of the monastery of San Secondo"@en .
+        rdfs:label  "Vicar of San Secondo"@en , "Vicario del convento di San Secondo"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -33,43 +37,27 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/52/title/1>
         a                crm:E35_Title ;
-        rdfs:label       "Bishop"@en ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/52/activity/3/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1611"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/52/activity/2>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Bishop of Cattaro"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/52/activity/2/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/52/activity/2/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1604"@en ;
-        crm:P82b_end_of_the_end      "1611"@en .
+<https://archipelago.itatti.harvard.edu/resource/activity/OCC340007>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Cattaro"@en , "Vescovo di Cattaro"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/52>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/52/activity/3> , <https://archipelago.itatti.harvard.edu/resource/actor/52/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/52/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340008> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340007> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340006> ;
         crm:P1_is_identified_by  "52"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/52/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/52/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/52/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/52/birth> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/52/activity/3>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Bishop of Chioggia"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/52/activity/3/date> .

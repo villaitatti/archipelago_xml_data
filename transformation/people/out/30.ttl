@@ -19,8 +19,7 @@
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/30/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1764-04-13"@en .
+        a       crm:E52_Time-Span .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/30/birth>
         a                     crm:E67_Birth ;
@@ -28,24 +27,22 @@
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/30/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
+        rdfs:label  "Painter"@en , "Pittore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/30/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Francesco"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/30/surname>
         a                crm:E41_Appellation ;
@@ -54,7 +51,7 @@ geonames:3164603  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/30>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/30/activity/1> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300025136> ;
         crm:P1_is_identified_by  "30"@it ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/30/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/30/given_name> ;
         crm:P92i_was_brought_into_existence_by
