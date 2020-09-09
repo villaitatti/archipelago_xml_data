@@ -151,8 +151,9 @@
 	<generator name="313-actor-identifier-alias" prefix="arc">
 		<pattern>actor/{actor_id}/alias</pattern>
 	</generator>
-	<generator name="314-actor-identifier-title" prefix="arc">
-		<pattern>actor/{actor_id}/title/{title_id}</pattern>
+
+	<generator name="314-actor-identifier-title" prefix="aat">
+		<pattern>/{aat}</pattern>
 	</generator>
 
 	<!-- Actor's birth -->
