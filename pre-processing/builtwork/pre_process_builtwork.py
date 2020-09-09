@@ -26,6 +26,7 @@ def write_file(name, text, ext='xml'):
     f.write(text)
 
 def base_tag(parent, key, text):
+
   tmp = et.SubElement(parent, key)
   tmp.text = text
 
@@ -70,6 +71,7 @@ key_shape_area = 'SHP_Area'
 
 # Custom created keys
 key_materials = 'Materials'
+key_functions = 'Functions'
 key_uses = 'Uses'
 key_typologies = 'Typologies'
 key_owners = 'Owners'
@@ -130,6 +132,7 @@ while bw_id in builtworks:
   # Name 
   base_tag(xml_row, key_name,  first[key_name])
 
+  """
   # Function 
   base_tag(xml_row, key_function,  first[key_function])
 
@@ -138,6 +141,7 @@ while bw_id in builtworks:
 
   # End_Function
   base_tag(xml_row, key_function_end,  first[key_function_end])
+  """
 
   # Height
   base_tag(xml_row, key_height,  first[key_height])
@@ -169,25 +173,41 @@ while bw_id in builtworks:
   set_typologies = dict()
   set_owners = dict()
   set_tenants = dict()
+  set_functions = dict()
 
   # Not shared elements
   for current_bw in builtworks[bw_id]:
 
+    # Function
+    if current_bw[key_function] not in set_functions:
+      set_functions[current_bw[key_function]] = {key_function_start: current_bw[key_function_start], key_function_end: current_bw[key_function_end]}
+
     # Use
-    if current_bw[key_use] not in set_uses:
+    if current_bw[key_use] not in set_uses and current_bw[key_use]:
       set_uses[current_bw[key_use]] = {key_use_start: current_bw[key_use_start], key_use_end: current_bw[key_use_end]}
 
     # Typologies
-    if current_bw[key_typology] not in set_typologies:
+    if current_bw[key_typology] not in set_typologies and current_bw[key_typology]:
       set_typologies[current_bw[key_typology]] = {key_typology_start: current_bw[key_typology_start], key_typology_end: current_bw[key_typology_end]}
 
     # Owners
-    if current_bw[key_owner] not in set_owners:
+    if current_bw[key_owner] not in set_owners and current_bw[key_owner]:
       set_owners[current_bw[key_owner]] = {key_owner_start: current_bw[key_owner_start], key_owner_end: current_bw[key_owner_end]}
 
     # Tenants
-    if current_bw[key_tenant] not in set_tenants:
+    if current_bw[key_tenant] not in set_tenants and current_bw[key_tenant]:
       set_tenants[current_bw[key_tenant]] = {key_tenant_start: current_bw[key_tenant_start], key_tenant_end: current_bw[key_tenant_end]}
+
+  # Function
+  functions = et.SubElement(xml_row, key_functions)
+  for key, function in set_functions.items():
+
+    function_tag = et.SubElement(functions, key_function)
+
+    base_tag(function_tag, key_name, key)
+    base_tag(function_tag, key_function_start, function[key_function_start])
+    base_tag(function_tag, key_function_end, function[key_function_end])
+
 
   # Use
   uses = et.SubElement(xml_row, key_uses)
@@ -206,8 +226,8 @@ while bw_id in builtworks:
     typology_tag = et.SubElement(typologies, key_typology)
 
     base_tag(typology_tag, key_name, key)
-    base_tag(typology_tag, key_use_start, typology[key_typology_start])
-    base_tag(typology_tag, key_use_end, typology[key_typology_end])
+    base_tag(typology_tag, key_typology_start, typology[key_typology_start])
+    base_tag(typology_tag, key_typology_end, typology[key_typology_end])
 
   # Owners
   owners = et.SubElement(xml_row, key_owners)
