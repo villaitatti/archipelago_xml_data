@@ -3,10 +3,19 @@
 	<ID_PERSON>133</ID_PERSON>
 	<Given_Name/>
 	<Surname>Canons regular of San Clemente {Canonici regolari di San Clemente}</Surname>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -14,49 +23,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>109</ID_EVENT>
-			<Role>Inhabitants</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>111</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>112</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>113</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>114</ID_EVENT>
-			<Role/>
-		</Event>
-		<Event>
-			<ID_EVENT>115</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>117</ID_EVENT>
-			<Role/>
-		</Event>
-		<Event>
-			<ID_EVENT>118</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>116</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>156</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

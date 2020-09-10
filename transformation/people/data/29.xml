@@ -22,10 +22,18 @@
 			<eng>Friar of San Secondo</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -33,26 +41,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>87</ID_EVENT>
-			<Role>Designer</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>88</ID_EVENT>
-			<Role>Surveyor</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>53</ID_SOURCE>
-			<Name>Daniele</Name>
-			<Surname>Danieli</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>54</ID_SOURCE>
-			<Name>Daniele</Name>
-			<Surname>Danieli</Surname>
-		</Source>
-	</Sources>
 </ROW>

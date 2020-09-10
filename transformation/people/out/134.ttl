@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,14 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/134/event/110/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/134/event/110/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/134/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Vescovo"@it , "Bishop"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/134/activity/OCC340049>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Castello"@en , "Vescovo di Castello"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/134/given_name>
         a                crm:E41_Appellation ;
@@ -27,10 +23,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/134/event/110/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Bishop of Castello"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/134/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Polani"@it ;
@@ -40,21 +32,19 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340049>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Bishop of Castello"@en , "Vescovo di Castello"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/134/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "134" .
+
+aat:300025756  a         crm:E41_Appellation ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/134>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/110> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340049> ;
-        crm:P1_is_identified_by   "134"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/134/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/134/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/134/given_name> .
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/134/activity/OCC340049> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/134/identifier> , aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/134/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/134/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/110>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/134/event/110/> .

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,37 +11,21 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17/birth>
-        a                     crm:E67_Birth ;
-        crm:P7_took_place_at  <https://www.geonames.org/Vatican%20City> .
+        a       crm:E67_Birth .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Holy See {Santa Sede}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/17/event/17/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/17/event/17/role> .
+<https://archipelago.itatti.harvard.edu/resource/actor/17/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "17" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/17> ;
-        crm:P1_is_identified_by   "17"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/17/surname> ;
-        crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/17/birth> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/17/event/17/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/17>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/17/event/17/> .
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/17/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/17/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
-
-<https://www.geonames.org/Vatican%20City>
-        a       crm:E53_Place .

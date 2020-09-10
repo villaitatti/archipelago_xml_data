@@ -27,20 +27,16 @@
 			<eng>Cartographer</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>France</Place_of_birth>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label>France</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>150</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

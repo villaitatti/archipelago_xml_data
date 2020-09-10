@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,17 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/80>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/106/event/80/> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/106/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/106/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/106/event/80/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/106/event/80/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/106/birth>
         a                     crm:E67_Birth ;
@@ -27,11 +21,12 @@
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/106/birth/date>
-        a       crm:E52_Time-Span .
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1310-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/106/event/80/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/106/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1797-05-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -42,13 +37,16 @@
         rdfs:label       "Council of Ten {Consiglio dei Dieci}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/106/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "106" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/106>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/80> ;
-        crm:P1_is_identified_by   "106"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/106/surname> ;
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/106/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/106/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/106/birth> ;
         crm:P93i_was_taken_out_of_existence_by

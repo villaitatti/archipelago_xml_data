@@ -61,10 +61,19 @@
 			<eng>Apostolic nuncio</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3169070</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1611-04-21</Birth_Date_Earliest>
 	<Death_Date_Latest>1680-10-19</Death_Date_Latest>
@@ -72,6 +81,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources/>
 </ROW>

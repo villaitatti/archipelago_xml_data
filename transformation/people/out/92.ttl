@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,27 +10,29 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340051>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Guardian of Santo Spirito"@en , "Guardiano di Santo Spirito"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/92>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340051> ;
-        crm:P1_is_identified_by  "92"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/92/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/92/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/92/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/92/activity/OCC340051> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/92/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/92/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/92/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/92/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Scutari"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/92/title/1>
-        a                crm:E35_Title ;
+<https://archipelago.itatti.harvard.edu/resource/actor/92/activity/OCC340051>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Guardian of Santo Spirito"@en , "Guardiano di Santo Spirito"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/92/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "92" .
+
+aat:300266789  a         crm:E41_Appellation ;
         rdfs:label       "Frate"@it , "Friar"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 

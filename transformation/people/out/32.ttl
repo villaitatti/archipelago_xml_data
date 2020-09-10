@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,11 +9,6 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/32biography>
-        a                crm:E73_Information_Object ;
-        rdfs:label       "Il suo testamento è conservato nel fondo del monastero di San Secondo"@it , "His will is preserved in the private archive of the monastery of San Secondo"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -23,14 +19,18 @@
         rdfs:label       "Morani"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
+<https://archipelago.itatti.harvard.edu/resource/actor/32/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "32" .
+
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/32>
         a                           crm:E39_Actor ;
-        crm:P1_is_identified_by     "32"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/32/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/32/given_name> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/32biography> .
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/32/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/32/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/32/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/32/biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -40,3 +40,8 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Pietro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/32/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Il suo testamento è conservato nel fondo del monastero di San Secondo"@it , "His will is preserved in the private archive of the monastery of San Secondo"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .

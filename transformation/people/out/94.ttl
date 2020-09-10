@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,30 +11,20 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/79> , <https://archipelago.itatti.harvard.edu/resource/event/74> ;
-        crm:P1_is_identified_by   "94"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/94/surname> ;
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/94/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/94/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/94/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/94/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/74>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/94/event/74/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/94/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "94" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/79>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/94/event/79/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/94/event/79/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/94/event/79/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/94/event/74/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/94/event/74/role> .
+<https://archipelago.itatti.harvard.edu/resource/actor/94/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1797-05-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94/surname>
         a                crm:E41_Appellation ;
@@ -44,20 +35,14 @@
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/94/event/74/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Office in charge of the new scuola"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/94/event/79/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Mandating office"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/94/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .

@@ -42,10 +42,19 @@
 			<eng>Condottiero</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3166740</Place_of_birth>
-	<Place_of_death>3165035</Place_of_death>
+	<Place_of_birth>
+		<geo>3166740</geo>
+		<label>Senigallia</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3165035</geo>
+		<label>Urbino</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3165035</Work_location>
+		<Work_location>
+			<geo>3165035</geo>
+			<label>Urbino</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1490-03-22</Birth_Date_Earliest>
 	<Death_Date_Latest>1538-10-20</Death_Date_Latest>
@@ -53,11 +62,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>146</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

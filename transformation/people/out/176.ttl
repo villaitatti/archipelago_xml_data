@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,72 +10,55 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Quarantined person"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/176/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "176" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/155>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/event/155/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Quarantined person"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/176/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1630-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "de Strigis"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/176/title/2>
-        a                crm:E35_Title ;
-        rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340009>
+<https://archipelago.itatti.harvard.edu/resource/actor/176/activity/OCC340009>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Ambassador of the Duke of Mantua and Nevers Carlo Gonzaga"@en , "Ambasciatore del duca di Mantova e Nevers Carlo Gonzaga"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/156>
-        a       crm:E5_Event .
+aat:300250804  a         crm:E41_Appellation ;
+        rdfs:label       "Marchese"@it , "Marquis"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/154>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/176/event/154/> .
+aat:300188587  a         crm:E41_Appellation ;
+        rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/176/death/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/156> , <https://archipelago.itatti.harvard.edu/resource/event/154> , <https://archipelago.itatti.harvard.edu/resource/event/155> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340009> ;
-        crm:P1_is_identified_by   "176"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/176/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/176/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/176/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name> .
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/176/activity/OCC340009> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/176/identifier> , aat:300188587 , aat:300250804 , <https://archipelago.itatti.harvard.edu/resource/actor/176/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/176/death> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Alessandro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Marchese"@it , "Marquis"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .

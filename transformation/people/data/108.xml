@@ -22,20 +22,16 @@
 			<eng>Procurator of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>135</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

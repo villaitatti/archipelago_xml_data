@@ -62,11 +62,23 @@
 			<eng>Pope</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1383</Birth_Date_Earliest>
 	<Death_Date_Latest>1447-02-23</Death_Date_Latest>
@@ -78,25 +90,4 @@
 		<ita>Era il nipote di Papa Gregorio XII</ita>
 		<eng>He was the nephew of Pope Gregory XII</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>77</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>121</ID_EVENT>
-			<Role>Pope</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>122</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>157</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

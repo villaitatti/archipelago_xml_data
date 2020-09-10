@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -16,11 +17,10 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340060> ;
-        crm:P1_is_identified_by  "180"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/180/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/180/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/180/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/180/activity/OCC340060> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/180/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/180/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/180/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340060>
+<https://archipelago.itatti.harvard.edu/resource/actor/180/activity/OCC340060>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Camaldolese monk in Monte Rua"@en , "Monaco camaldolense di Monte Rua"@it .
 
@@ -32,14 +32,17 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/180/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Monaco"@it , "Monk"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/180/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "180" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+aat:300025765  a         crm:E41_Appellation ;
+        rdfs:label       "Monaco"@it , "Monk"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180/given_name>
         a                crm:E41_Appellation ;

@@ -3,53 +3,16 @@
 	<ID_PERSON>18</ID_PERSON>
 	<Given_Name/>
 	<Surname>Benedictine nuns of San Secondo {Monache benedettine di San Secondo}</Surname>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest>1034</Birth_Date_Earliest>
 	<Death_Date_Latest>1531</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>41</ID_EVENT>
-			<Role>Beneficiary</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>15</ID_EVENT>
-			<Role>Beneficiary</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>16</ID_EVENT>
-			<Role>Reformed order</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>17</ID_EVENT>
-			<Role>Suppressed order</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>42</ID_EVENT>
-			<Role>Beneficiary</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>44</ID_EVENT>
-			<Role/>
-		</Event>
-		<Event>
-			<ID_EVENT>43</ID_EVENT>
-			<Role>Beneficiary</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>89</ID_EVENT>
-			<Role>Patron</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name/>
-			<Surname>Benedictine nuns of San Secondo</Surname>
-		</Source>
-	</Sources>
 </ROW>

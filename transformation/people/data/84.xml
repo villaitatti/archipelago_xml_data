@@ -25,10 +25,19 @@
 			<eng>Sculptor</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1596</Birth_Date_Earliest>
 	<Death_Date_Latest>1682-02-18</Death_Date_Latest>
@@ -36,47 +45,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Events>
-		<Event>
-			<ID_EVENT>19</ID_EVENT>
-			<Role>Architect</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>32</ID_EVENT>
-			<Role>Surveyor</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>33</ID_EVENT>
-			<Role>Architect in charged of the inventory</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>78</ID_EVENT>
-			<Role>Architect</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>65</ID_EVENT>
-			<Role>Architect</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>82</ID_EVENT>
-			<Role>Surveyor</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>90</ID_SOURCE>
-			<Name>Angelo</Name>
-			<Surname>Gavan</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>98</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>135</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

@@ -3,10 +3,16 @@
 	<ID_PERSON>17</ID_PERSON>
 	<Given_Name/>
 	<Surname>Holy See {Santa Sede}</Surname>
-	<Place_of_birth>Vatican City</Place_of_birth>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label>Vatican City</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Vatican City</Work_location>
+		<Work_location>
+			<label>Vatican City</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -14,17 +20,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>17</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name/>
-			<Surname>Holy See</Surname>
-		</Source>
-	</Sources>
 </ROW>

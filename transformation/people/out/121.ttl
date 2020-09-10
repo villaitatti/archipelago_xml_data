@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,13 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-geonames:3176959  a  crm:E53_Place .
+geonames:3176959  a  crm:E53_Place ;
+        rdfs:label  "Florence"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/121>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340003> ;
-        crm:P1_is_identified_by  "121"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/121/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/121/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/121/activity/OCC340003> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/121/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/121/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/121/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/121/birth> .
 
@@ -33,6 +34,10 @@ geonames:3176959  a  crm:E53_Place .
         rdfs:label       "Alberti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/121/activity/OCC340003>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Lagoon surveyor"@en , "Perito alla laguna"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
@@ -41,6 +46,6 @@ geonames:3176959  a  crm:E53_Place .
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3176959 .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340003>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Lagoon surveyor"@en , "Perito alla laguna"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/121/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "121" .

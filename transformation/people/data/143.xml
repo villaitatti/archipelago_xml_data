@@ -59,10 +59,16 @@
 			<eng>Pope</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Cahors</Place_of_birth>
-	<Place_of_death>Avignon</Place_of_death>
+	<Place_of_birth>
+		<label>Cahors</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label>Avignon</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Avignon</Work_location>
+		<Work_location>
+			<label>Avignon</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1244</Birth_Date_Earliest>
 	<Death_Date_Latest>1334-12-04</Death_Date_Latest>
@@ -70,11 +76,4 @@
 	<Will_Date/>
 	<Century>13th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>119</ID_EVENT>
-			<Role>Pope John XXII</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

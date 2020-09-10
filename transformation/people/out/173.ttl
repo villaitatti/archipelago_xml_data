@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -20,28 +21,25 @@
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Recovered person"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/150>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/300236171>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Captain"@en , "Capitano"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/173/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "173" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150/role> .
+<https://archipelago.itatti.harvard.edu/resource/actor/173/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/173/death/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173/birth/date>
-        a       crm:E52_Time-Span .
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1459-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/173/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1543-03-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173/surname>
         a                crm:E41_Appellation ;
@@ -52,19 +50,22 @@
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/173/title/1>
-        a                crm:E35_Title ;
+aat:300230874  a         crm:E41_Appellation ;
         rdfs:label       "Cavaliere"@it , "Knight"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/173/activity/300236171>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Captain"@en , "Capitano"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/173>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/150> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300236171> ;
-        crm:P1_is_identified_by   "173"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/173/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/173/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/173/given_name> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/173/activity/300236171> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/173/identifier> , aat:300230874 , <https://archipelago.itatti.harvard.edu/resource/actor/173/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/173/given_name> ;
         crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/173/birth> .
+                <https://archipelago.itatti.harvard.edu/resource/actor/173/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/173/death> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
@@ -73,4 +74,5 @@
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -19,11 +20,6 @@
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/51/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Guardian Grando"@it , "Guardian grando"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -32,54 +28,38 @@
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/51/event/70/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/51/event/70/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340010>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Guardian grando of the Scuola grande di San Rocco  (1607)"@en , "Guardian grando della Scuola grande di San Rocco"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/300025245>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Merchant"@en , "Mercante"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/event/70>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/51/event/70/> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/51/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Bon"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/51>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/70> , <https://archipelago.itatti.harvard.edu/resource/event/51> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025245> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340010> ;
-        crm:P1_is_identified_by   "51"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/51/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/51/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/51/given_name> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/51/activity/OCC340010> , <https://archipelago.itatti.harvard.edu/resource/actor/51/activity/300025245> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/51/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/51/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/51/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/51/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/51/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/51/event/70/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donor for the restoration"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/51/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "51" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/51>
-        a       crm:E5_Event .
+<https://archipelago.itatti.harvard.edu/resource/actor/51/activity/OCC340010>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Guardian grando of the Scuola grande di San Rocco  (1607)"@en , "Guardian grando della Scuola grande di San Rocco"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/51/activity/300025245>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Merchant"@en , "Mercante"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .

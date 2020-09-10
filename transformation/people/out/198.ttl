@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,15 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/198biography>
+<https://archipelago.itatti.harvard.edu/resource/actor/198/biography>
         a                crm:E73_Information_Object ;
         rdfs:label       "Fu agente di Cosimo I de' Medici"@it , "He was the agent of Cosimo I de' Medici"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/198/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/198/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "198" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -37,12 +37,13 @@
         rdfs:label       "Bartolomeo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
+aat:300188587  a         crm:E41_Appellation ;
+        rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340070>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Tuscan ambassador"@en , "Ambasciatore toscano"@it .
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -50,7 +51,10 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/198>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340070> ;
-        crm:P1_is_identified_by     "198"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/198/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/198/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/198/given_name> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/198biography> .
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/198/activity/OCC340070> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/198/identifier> , aat:300188587 , <https://archipelago.itatti.harvard.edu/resource/actor/198/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/198/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/198/biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/198/activity/OCC340070>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Tuscan ambassador"@en , "Ambasciatore toscano"@it .

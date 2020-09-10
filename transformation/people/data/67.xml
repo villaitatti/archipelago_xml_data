@@ -26,10 +26,19 @@
 			<eng>Lagoon chief surveyor</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3178784</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3178784</geo>
+		<label>Chioggia</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1489</Birth_Date_Earliest>
 	<Death_Date_Latest>1560-03-03</Death_Date_Latest>
@@ -37,27 +46,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>87</ID_SOURCE>
-			<Name>Cristoforo</Name>
-			<Surname>Sabbadino</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>144</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>147</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>86</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

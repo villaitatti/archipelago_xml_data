@@ -16,10 +16,16 @@
 			<eng>Physician</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Padua</Work_location>
+		<Work_location>
+			<label>Padua</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -27,11 +33,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>92</ID_EVENT>
-			<Role>Physician</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

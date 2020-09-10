@@ -31,10 +31,17 @@
 			<eng>Engineer</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -46,12 +53,4 @@
 		<ita>Fu attivo tra il 1648 e il 1689</ita>
 		<eng>He was active beween 1648 and 1689</eng>
 	</Notes>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>105</ID_SOURCE>
-			<Name>Francesco</Name>
-			<Surname>Alberti</Surname>
-		</Source>
-	</Sources>
 </ROW>

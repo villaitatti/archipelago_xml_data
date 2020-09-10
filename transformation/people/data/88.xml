@@ -3,10 +3,19 @@
 	<ID_PERSON>88</ID_PERSON>
 	<Given_Name/>
 	<Surname>Venetian Republic {Repubblica di Venezia}</Surname>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>697</Birth_Date_Earliest>
 	<Death_Date_Latest>1797-05-12</Death_Date_Latest>
@@ -14,15 +23,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>8</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>47</ID_EVENT>
-			<Role>Owner</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

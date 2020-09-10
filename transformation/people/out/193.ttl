@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,8 +12,11 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/193>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "193"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/193/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/193/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/193/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/193/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "193" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/193/surname>
         a                crm:E41_Appellation ;

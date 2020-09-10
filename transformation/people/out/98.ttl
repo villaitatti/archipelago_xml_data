@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,6 +9,10 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/98/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "98" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -18,15 +23,14 @@
         rdfs:label       "Vincenzo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340050>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Messer of the Procurators of St Mark's de supra"@en , "Messer dei Procuratori di San Marco de supra"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/98>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/OCC340050> ;
-        crm:P1_is_identified_by  "98"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/98/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/98/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/98/activity/OCC340050> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/98/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/98/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/98/given_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/98/activity/OCC340050>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Messer of the Procurators of St Mark's de supra"@en , "Messer dei Procuratori di San Marco de supra"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

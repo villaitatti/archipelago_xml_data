@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,19 +9,6 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/163/title/2>
-        a                crm:E35_Title ;
-        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340004>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Bishop of Viterbo and Tuscania"@en , "Vescovo di Viterbo e Tuscania"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/300025758>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Cardinal"@en , "Cardinal"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -31,23 +19,13 @@
         rdfs:label       "Egidio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/163/event/144/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/163/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Vescovo"@it , "Bishop"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-geonames:3169070  a  crm:E53_Place .
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "Rome"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/144> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340004> , <https://archipelago.itatti.harvard.edu/resource/activity/300025758> ;
-        crm:P1_is_identified_by   "163"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/163/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/163/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/163/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/163/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/163/title/2> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/OCC340004> , <https://archipelago.itatti.harvard.edu/resource/actor/163/activity/300025758> ;
+        crm:P1_is_identified_by  aat:300025758 , aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/163/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/163/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/163/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/163/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/163/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -58,7 +36,12 @@ geonames:3169070  a  crm:E53_Place .
         rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/birth/date>
-        a       crm:E52_Time-Span .
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1472-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/163/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "163" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/alias>
         a           crm:E41_Appellation ;
@@ -72,26 +55,40 @@ geonames:3169070  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/163/death/date> ;
         crm:P7_took_place_at  geonames:3169070 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/163/event/144/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/163/event/144/role> .
+aat:300025758  a         crm:E41_Appellation ;
+        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-geonames:3164039  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/actor/163/activity/OCC340004>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Viterbo and Tuscania"@en , "Vescovo di Viterbo e Tuscania"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/163/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinal"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
-<https://archipelago.itatti.harvard.edu/resource/event/144>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/163/event/144/> .
+geonames:3164039  a  crm:E53_Place ;
+        rdfs:label  "Viterbo"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/163/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1532-11-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Antonini"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+aat:300025756  a         crm:E41_Appellation ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .

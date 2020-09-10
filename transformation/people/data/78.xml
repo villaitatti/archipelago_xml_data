@@ -15,12 +15,24 @@
 			<eng>Illustrator</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Corfu</Place_of_birth>
-	<Place_of_death>Padua</Place_of_death>
+	<Place_of_birth>
+		<label>Corfu</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label>Padua</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3165185</Work_location>
-		<Work_location>Padua</Work_location>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3165185</geo>
+			<label>Trieste</label>
+		</Work_location>
+		<Work_location>
+			<label>Padua</label>
+		</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1795</Birth_Date_Earliest>
 	<Death_Date_Latest>1864</Death_Date_Latest>
@@ -28,12 +40,4 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>103</ID_SOURCE>
-			<Name>Pietro</Name>
-			<Surname>Chevalier</Surname>
-		</Source>
-	</Sources>
 </ROW>

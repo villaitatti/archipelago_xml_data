@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -8,15 +9,6 @@
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340059>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Bishop of Rimini"@en , "Vescovo di Rimini"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/135/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Vescovo"@it , "Bishop"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -28,31 +20,29 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/135>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/111> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340059> ;
-        crm:P1_is_identified_by   "135"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/135/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/135/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/135/given_name> .
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/135/activity/OCC340059> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/135/identifier> , aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/135/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/135/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/111>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/135/event/111/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/135/activity/OCC340059>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Rimini"@en , "Vescovo di Rimini"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/135/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "135" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/135/event/111/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/135/event/111/role> .
+aat:300025756  a         crm:E41_Appellation ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/135/event/111/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donator"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/135/surname>
         a                crm:E41_Appellation ;

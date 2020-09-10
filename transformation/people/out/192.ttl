@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,23 +11,18 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/192/birth>
-        a                     crm:E67_Birth ;
-        crm:P7_took_place_at  geonames:Padua .
+        a       crm:E67_Birth .
 
-geonames:Padua  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/actor/192/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "192" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/192>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "192"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/192/surname> ;
-        crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/192/birth> ;
-        crm:P93i_was_taken_out_of_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/192/death> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/192/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/192/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/192/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:Padua .
+        a       crm:E69_Death .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/192/surname>
         a                crm:E41_Appellation ;

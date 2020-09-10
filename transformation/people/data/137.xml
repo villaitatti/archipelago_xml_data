@@ -10,19 +10,16 @@
 			<eng>Landowner</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>12th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>112</ID_EVENT>
-			<Role>Donator</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

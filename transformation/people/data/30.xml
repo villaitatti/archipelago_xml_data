@@ -13,10 +13,19 @@
 			<eng>Painter</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1764-04-13</Birth_Date_Earliest>
 	<Death_Date_Latest>1835-11-03</Death_Date_Latest>
@@ -24,37 +33,4 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>18</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>36</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>68</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>97</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>99</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>100</ID_SOURCE>
-			<Name>Giacomo</Name>
-			<Surname>Guardi</Surname>
-		</Source>
-	</Sources>
 </ROW>

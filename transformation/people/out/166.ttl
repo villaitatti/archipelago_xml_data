@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,16 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340042>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Condottiero"@en , "Condottiero"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/166/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "della Rovere"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-geonames:3165035  a  crm:E53_Place .
+geonames:3165035  a  crm:E53_Place ;
+        rdfs:label  "Urbino"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -39,27 +37,33 @@ geonames:3165035  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/166/activity/OCC340043>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Duke of Urbino"@en , "Duca di Urbino"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/166/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/166/death/date> ;
         crm:P7_took_place_at  geonames:3165035 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/166/birth/date>
-        a       crm:E52_Time-Span .
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1490-03-22T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/166/title/1>
-        a                crm:E35_Title ;
+<https://archipelago.itatti.harvard.edu/resource/actor/166/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "166" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/166/activity/OCC340042>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Condottiero"@en , "Condottiero"@it .
+
+aat:300132247  a         crm:E41_Appellation ;
         rdfs:label       "Duca"@it , "Duke"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/146>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/166/event/146/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/166/event/146/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/166/event/146/role> .
-
-geonames:3166740  a  crm:E53_Place .
+geonames:3166740  a  crm:E53_Place ;
+        rdfs:label  "Senigallia"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -69,11 +73,9 @@ geonames:3166740  a  crm:E53_Place .
         a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/166>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/146> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340043> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340042> ;
-        crm:P1_is_identified_by   "166"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/166/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/166/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/166/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/166/title/1> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/166/activity/OCC340043> , <https://archipelago.itatti.harvard.edu/resource/actor/166/activity/OCC340042> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/166/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/166/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/166/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/166/given_name> , aat:300132247 ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/166/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -83,10 +85,6 @@ geonames:3166740  a  crm:E53_Place .
         a           crm:E41_Appellation ;
         rdfs:label  "Francesco Maria I"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340043>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Duke of Urbino"@en , "Duca di Urbino"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/166/event/146/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/166/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1538-10-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

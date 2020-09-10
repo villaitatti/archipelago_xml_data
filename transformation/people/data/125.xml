@@ -17,11 +17,22 @@
 			<eng>Physician</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3176746</Place_of_birth>
-	<Place_of_death>3176746</Place_of_death>
+	<Place_of_birth>
+		<geo>3176746</geo>
+		<label>Forlì</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3176746</geo>
+		<label>Forlì</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Padua</Work_location>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<label>Padua</label>
+		</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1530-09-30</Birth_Date_Earliest>
 	<Death_Date_Latest>1606-11-08</Death_Date_Latest>
@@ -29,11 +40,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>92</ID_EVENT>
-			<Role>Professor at the University of Padua</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

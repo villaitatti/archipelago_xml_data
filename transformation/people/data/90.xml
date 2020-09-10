@@ -8,10 +8,19 @@
 			<eng>Venetian Office</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1229</Birth_Date_Earliest>
 	<Death_Date_Latest>1797-05-12</Death_Date_Latest>
@@ -19,33 +28,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>47</ID_EVENT>
-			<Role>Patron</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>56</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>94</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>95</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>127</ID_EVENT>
-			<Role>Donator</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>159</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,138 +10,74 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/300024987>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Architect"@en , "Architetto"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/65/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/65/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Longhena"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/82/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/82/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/65>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/65/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/65/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Baldassare"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/84/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/84/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/19/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/84/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Longhena"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-geonames:3164603  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/84/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/84/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/82/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Surveyor"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/19/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/19/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/birth/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/event/82>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/82/> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/78>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/78/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/84/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "84" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/84>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/19> , <https://archipelago.itatti.harvard.edu/resource/event/33> , <https://archipelago.itatti.harvard.edu/resource/event/82> , <https://archipelago.itatti.harvard.edu/resource/event/65> , <https://archipelago.itatti.harvard.edu/resource/event/32> , <https://archipelago.itatti.harvard.edu/resource/event/78> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025181> , <https://archipelago.itatti.harvard.edu/resource/activity/300024987> ;
-        crm:P1_is_identified_by   "84"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/84/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/84/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/84/surname> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/84/activity/300025181> , <https://archipelago.itatti.harvard.edu/resource/actor/84/activity/300024987> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/84/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/84/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/84/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/84/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/84/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/78/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/78/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/33/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/33/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/32/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Surveyor"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/78/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/84/title/1>
-        a                crm:E35_Title ;
+<https://archipelago.itatti.harvard.edu/resource/actor/84/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/84/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Baldassare"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+aat:300024987  a         crm:E41_Appellation ;
         rdfs:label       "Architetto"@it , "Architect"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/33>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/33/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/32/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/32/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/84/event/33/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect in charged of the inventory"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/300025181>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Sculptor"@en , "Scultore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
-<https://archipelago.itatti.harvard.edu/resource/event/32>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/32/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/84/activity/300025181>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Sculptor"@en , "Scultore"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/event/19>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/84/event/19/> .
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/84/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1596-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/84/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1682-02-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

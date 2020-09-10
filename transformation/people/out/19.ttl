@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -14,10 +15,6 @@
         rdfs:label       "Angelo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/19/event/19/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/19/event/19/role> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -27,24 +24,18 @@
         rdfs:label       "Gavan"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/300025001>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Construction worker"@en , "Muratore"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/19/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "19" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/19>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/19> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/300025001> ;
-        crm:P1_is_identified_by   "19"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/19/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/19/given_name> .
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/19/activity/300025001> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/19/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/19/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/19/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/19>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/19/event/19/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/19/event/19/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Construction worker"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/19/activity/300025001>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Construction worker"@en , "Muratore"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

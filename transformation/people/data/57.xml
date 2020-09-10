@@ -15,10 +15,19 @@
 			<eng>Critic</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3173435</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3173435</geo>
+		<label>Milan</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1828-03-08</Birth_Date_Earliest>
 	<Death_Date_Latest>1888</Death_Date_Latest>
@@ -26,12 +35,4 @@
 	<Will_Date/>
 	<Century>19th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>31</ID_SOURCE>
-			<Name>Guglielmo</Name>
-			<Surname>Stella</Surname>
-		</Source>
-	</Sources>
 </ROW>

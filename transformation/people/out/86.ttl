@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,40 +11,18 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/86>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/81> , <https://archipelago.itatti.harvard.edu/resource/event/36> ;
-        crm:P1_is_identified_by   "86"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/86/surname> .
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/86/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/86/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/86/event/81/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/81>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/86/event/81/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/86/event/36/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Owner"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/36>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/86/event/36/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/86/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "86" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/86/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Municipality of Venice {Comune di Venezia}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/86/event/36/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/86/event/36/role> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/86/event/81/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/86/event/81/role> .

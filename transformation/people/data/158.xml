@@ -29,8 +29,13 @@
 			<eng>Queen of Cyprus</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death>2524009</Place_of_death>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>2524009</geo>
+		<label>Nicosia</label>
+	</Place_of_death>
 	<Birth_Date_Earliest>1418</Birth_Date_Earliest>
 	<Death_Date_Latest>1440-09-13</Death_Date_Latest>
 	<Marriage_Date/>
@@ -41,11 +46,4 @@
 		<ita>Fu la moglie del re di Cipro Giovanni II</ita>
 		<eng>She was the wife of King John II of Cyprus</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>141</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

@@ -27,8 +27,12 @@
 			<eng>Dogaressa</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
@@ -41,11 +45,4 @@
 		<End>1457</End>
 		<eng>She was the wife of Doge Jacopo Foscari</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>141</ID_EVENT>
-			<Role>Dogaressa</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

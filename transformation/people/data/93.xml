@@ -22,10 +22,17 @@
 			<eng>Secretary of Santo Spirito</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -33,17 +40,4 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century>Beginning of the century (0-10)</Fraction_Century>
-	<Events>
-		<Event>
-			<ID_EVENT>74</ID_EVENT>
-			<Role>Secretary of the monastery who reported the petition</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>119</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

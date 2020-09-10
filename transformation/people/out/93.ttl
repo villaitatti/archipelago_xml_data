@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,22 +10,21 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/93/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Frate"@it , "Friar"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340056>
+<https://archipelago.itatti.harvard.edu/resource/actor/93/activity/OCC340056>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Secretary of Santo Spirito"@en , "Segretario di Santo Spirito"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/event/74>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/93/event/74/> .
+<https://archipelago.itatti.harvard.edu/resource/actor/93/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "93" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+aat:300266789  a         crm:E41_Appellation ;
+        rdfs:label       "Frate"@it , "Friar"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/93/surname>
         a                crm:E41_Appellation ;
@@ -36,11 +36,9 @@
         rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/93>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/74> ;
-        crm:P14i_performed        <https://archipelago.itatti.harvard.edu/resource/activity/OCC340056> ;
-        crm:P1_is_identified_by   "93"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/93/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/93/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/93/given_name> .
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/93/activity/OCC340056> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/93/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/93/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/93/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/93/given_name>
         a                crm:E41_Appellation ;
@@ -50,11 +48,3 @@
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/93/event/74/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Secretary of the monastery who reported the petition"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/93/event/74/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/93/event/74/role> .

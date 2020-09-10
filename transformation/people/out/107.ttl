@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,9 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/107/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Religious order"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/107/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "107" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/107/surname>
         a                crm:E41_Appellation ;
@@ -20,8 +21,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/107>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "107"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/107/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/107/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/107/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

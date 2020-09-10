@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -14,7 +15,7 @@
         rdfs:label       "Antonio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/300024987>
+<https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300024987>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Architect"@en , "Architetto"@it .
 
@@ -29,36 +30,46 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/22>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/activity/300239410> , <https://archipelago.itatti.harvard.edu/resource/activity/300025136> , <https://archipelago.itatti.harvard.edu/resource/activity/300024987> ;
-        crm:P1_is_identified_by  "22"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/22/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/22/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300239410> , <https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300025136> , <https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300024987> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/22/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/22/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/22/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/22/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/22/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/22/birth/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/22/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/300239410>
+<https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300239410>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Engraver"@en , "Incisore"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/300025136>
+<https://archipelago.itatti.harvard.edu/resource/actor/22/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1688-11-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/22/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/22/death/date> ;
+        crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/22/activity/300025136>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Painter"@en , "Pittore"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/22/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "22" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/22/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Visentini"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/22/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1782-06-26T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .

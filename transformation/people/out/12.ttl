@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,27 +10,21 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/12/event/16/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/12/event/16/role> .
+<https://archipelago.itatti.harvard.edu/resource/actor/12/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "12" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/12/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Marina"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340022>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Abbess of SS. Cosma e Damiano"@en , "Badessa dei SS. Cosma e Damiano"@it .
-
-geonames:3164603  a  crm:E53_Place .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/12/surname>
         a                crm:E41_Appellation ;
@@ -40,42 +35,45 @@ geonames:3164603  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340021>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Abbess of Sant'Eufemia di Mazzorbo"@en , "Badessa di Sant'Eufemia di Mazzorbo"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/12/birth/date>
-        a       crm:E52_Time-Span .
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1432-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/16>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/12/event/16/> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/12biography>
-        a                crm:E73_Information_Object ;
-        rdfs:label       "Marina Celsi era la bisnipote del doge Lorenzo Celsi"@it , "Marina Celsi was the great-great-granddaughter of Doge Lorenzo Celsi"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
-
-<https://archipelago.itatti.harvard.edu/resource/activity/OCC340020>
+<https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340022>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Abbess of San Maffio di Murano"@en , "Badessa di San Maffio di Murano"@it .
+        rdfs:label  "Abbess of SS. Cosma e Damiano"@en , "Badessa dei SS. Cosma e Damiano"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/12>
         a                           crm:E39_Actor ;
-        crm:P11i_participated_in    <https://archipelago.itatti.harvard.edu/resource/event/16> ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/activity/OCC340020> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340022> , <https://archipelago.itatti.harvard.edu/resource/activity/OCC340021> ;
-        crm:P1_is_identified_by     "12"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/12/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/12/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/12/given_name> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/12biography> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340020> , <https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340022> , <https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340021> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/12/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/12/identifier> , aat:300236003 , <https://archipelago.itatti.harvard.edu/resource/actor/12/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/12/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/12/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/12/death> .
 
+aat:300236003  a         crm:E41_Appellation ;
+        rdfs:label       "Badessa"@it , "Abbess"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340021>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Abbess of Sant'Eufemia di Mazzorbo"@en , "Badessa di Sant'Eufemia di Mazzorbo"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/12/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/12/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/12/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Marina Celsi era la bisnipote del doge Lorenzo Celsi"@it , "Marina Celsi was the great-great-granddaughter of Doge Lorenzo Celsi"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -83,13 +81,13 @@ geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/12/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/12/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/12/event/16/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Order's reformer"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/12/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1523-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/12/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Badessa"@it , "Abbess"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/12/activity/OCC340020>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Abbess of San Maffio di Murano"@en , "Badessa di San Maffio di Murano"@it .

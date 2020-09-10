@@ -30,10 +30,19 @@
 			<eng>Duke of Ferrara</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3177090</Place_of_birth>
-	<Place_of_death>3177090</Place_of_death>
+	<Place_of_birth>
+		<geo>3177090</geo>
+		<label>Ferrara</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3177090</geo>
+		<label>Ferrara</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3177090</Work_location>
+		<Work_location>
+			<geo>3177090</geo>
+			<label>Ferrara</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1431-10-26</Birth_Date_Earliest>
 	<Death_Date_Latest>1505-01-25</Death_Date_Latest>
@@ -41,11 +50,4 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>142</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

@@ -49,10 +49,19 @@
 			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest>1464-08-06</Death_Date_Latest>
@@ -64,17 +73,4 @@
 		<ita>È sepolto nell'isola di Santo Spirito</ita>
 		<eng>He is buried on the island of Santo Spirito</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>23</ID_EVENT>
-			<Role/>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Andrea</Name>
-			<Surname>Bondumier</Surname>
-		</Source>
-	</Sources>
 </ROW>

@@ -55,10 +55,18 @@
 			<eng>Pope</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Capriglia Irpina (Avellino)</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<label>Capriglia Irpina (Avellino)</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1476-06-28</Birth_Date_Earliest>
 	<Death_Date_Latest>1559-08-18</Death_Date_Latest>
@@ -66,11 +74,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>147</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

@@ -31,29 +31,17 @@
 			<eng>Patriarch of Alexandria</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3177090</Place_of_birth>
-	<Place_of_death/>
+	<Place_of_birth>
+		<geo>3177090</geo>
+		<label>Ferrara</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest>1323</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>14th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>117</ID_EVENT>
-			<Role>Patriarch of Grado</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>118</ID_EVENT>
-			<Role>Donator</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>156</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

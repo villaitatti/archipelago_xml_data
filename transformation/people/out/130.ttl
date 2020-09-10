@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,71 +10,40 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/130/title/2>
-        a                crm:E35_Title ;
-        rdfs:label       "Doge"@it , "Doge"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/130>
-        a                         crm:E39_Actor ;
-        crm:P11i_participated_in  <https://archipelago.itatti.harvard.edu/resource/event/92> ;
-        crm:P1_is_identified_by   "130"@it ;
-        crm:P1_is_identified_by   <https://archipelago.itatti.harvard.edu/resource/actor/130/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/130/title/2> , <https://archipelago.itatti.harvard.edu/resource/actor/130/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/130/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/130/title/1> ;
-        crm:P92i_was_brought_into_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/130/birth> ;
-        crm:P93i_was_taken_out_of_existence_by
-                <https://archipelago.itatti.harvard.edu/resource/actor/130/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/130/birth/date>
-        a       crm:E52_Time-Span .
-
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/130/alias>
-        a           crm:E41_Appellation ;
-        rdfs:label  "Alvise I Mocenigo"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/130/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Doge"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/130/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/130/death/date> ;
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Alvise"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-geonames:3164603  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/92>
-        a                        crm:E5_Event ;
-        crm:P11_had_participant  <https://archipelago.itatti.harvard.edu/resource/actor/130/event/92/> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+        rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/130/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:3164603 .
+<https://archipelago.itatti.harvard.edu/resource/actor/130>
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/130/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/130/alias> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/130/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/130/given_name> ;
+        crm:P92i_was_brought_into_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/130/birth> ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/130/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/130/activity/1>
-        a       frbr:F51_Pursuit .
+<https://archipelago.itatti.harvard.edu/resource/actor/130/alias>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Alvise I Mocenigo"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Mocenigo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/130/event/92/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Doge"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/130/event/92/>
-        a                crm:E39_Actor ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/actor/130/event/92/role> .
+aat:300025463  a         crm:E41_Appellation ;
+        rdfs:label       "Doge"@it , "Doge"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/birth>
         a                     crm:E67_Birth ;
@@ -87,3 +57,22 @@ geonames:3164603  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/130/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "130" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/130/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1577-06-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/130/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1507-10-26T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .
