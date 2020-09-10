@@ -52,8 +52,8 @@
         <example_data_info>
             <example_data_from/>
             <example_data_contact_person/>
-            <example_data_source_record xml_link="12___08-09-2020101031___1345.xml"/>
-            <generator_policy_info generator_link="archipelago_generator_policy___08-09-2020133128___6020.xml"/>
+            <example_data_source_record xml_link="12___10-09-2020105208___2642.xml"/>
+            <generator_policy_info generator_link="archipelago_generator_policy___10-09-2020124426___7731.xml"/>
             <example_data_target_record/>
             <thesaurus_info/>
         </example_data_info>
@@ -61,6 +61,7 @@
     <namespaces>
         <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/"/>
         <namespace prefix="geonames" uri="https://www.geonames.org/"/>
+        <namespace prefix="aat" uri="http://vocab.getty.edu/aat/"/>
     </namespaces>
     <mappings>
         <mapping>
@@ -188,10 +189,9 @@
                             <exists>text()</exists>
                         </if>
                         <entity>
-                            <type>crm:E35_Title</type>
+                            <type>crm:E41_Appellation</type>
                             <instance_generator name="314-actor-identifier-title">
-                                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
-                                <arg name="title_id" type="xpathPosition">../Title</arg>
+                                <arg name="aat" type="xpath">aat/text()</arg>
                             </instance_generator>
                             <label_generator name="Literal">
                                 <arg name="text" type="xpath">eng/text()</arg>
@@ -270,10 +270,12 @@
                     <target_node>
                         <entity>
                             <type>crm:E42_Identifier</type>
-                            <instance_generator name="Literal">
-                                <arg name="text" type="xpath">text()</arg>
-                                <arg name="language" type="constant">it</arg>
+                            <instance_generator name="310-actor-identifier">
+                                <arg name="actor_id" type="xpath">text()</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">text()</arg>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -323,7 +325,7 @@
                     </source_relation>
                     <target_relation>
                         <if>
-                            <exists>text()</exists>
+                            <exists>label/text()</exists>
                         </if>
                         <relationship>crm:P92i_was_brought_into_existence_by</relationship>
                         <entity variable="birth">
@@ -339,13 +341,17 @@
                     <source_node>Place_of_birth</source_node>
                     <target_node>
                         <if>
-                            <exists>text()</exists>
+                            <exists>label/text()</exists>
                         </if>
                         <entity>
                             <type>crm:E53_Place</type>
                             <instance_generator name="600-place">
-                                <arg name="geonames_id" type="xpath">text()</arg>
+                                <arg name="geonames_id" type="xpath">geo/text()</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">label/text()</arg>
+                                <arg name="language" type="xpath">en</arg>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -357,7 +363,7 @@
                     </source_relation>
                     <target_relation>
                         <if>
-                            <exists>text()</exists>
+                            <exists>label/text()</exists>
                         </if>
                         <relationship>crm:P93i_was_taken_out_of_existence_by</relationship>
                         <entity variable="death">
@@ -373,13 +379,17 @@
                     <source_node>Place_of_death</source_node>
                     <target_node>
                         <if>
-                            <exists>text()</exists>
+                            <exists>label/text()</exists>
                         </if>
                         <entity>
                             <type>crm:E53_Place</type>
                             <instance_generator name="600-place">
-                                <arg name="geonames_id" type="xpath">text()</arg>
+                                <arg name="geonames_id" type="xpath">geo/text()</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">label/text()</arg>
+                                <arg name="language" type="constant">en</arg>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -421,9 +431,8 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="DateNormalizer">
-                                        <arg name="bound" type="xpath">text()</arg>
-                                        <arg name="report" type="xpath">text()</arg>
+                                    <instance_generator name="GermanDateTime">
+                                        <arg name="bound" type="constant">Lower</arg>
                                         <arg name="text" type="xpath">text()</arg>
                                     </instance_generator>
                                 </entity>
@@ -435,14 +444,14 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>Death_Date_Earliest</relation>
+                        <relation>Death_Date_Latest</relation>
                     </source_relation>
                     <target_relation>
                         <if>
                             <exists>text()</exists>
                         </if>
                         <relationship>crm:P93i_was_taken_out_of_existence_by</relationship>
-                        <entity variable="death">
+                        <entity>
                             <type>crm:E69_Death</type>
                             <instance_generator name="330-actor-death">
                                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
@@ -452,7 +461,7 @@
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>Death_Date_Earliest</source_node>
+                    <source_node>Death_Date_Latest</source_node>
                     <target_node>
                         <if>
                             <exists>text()</exists>
@@ -469,9 +478,9 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="Literal">
+                                    <instance_generator name="GermanDateTime">
+                                        <arg name="bound" type="constant">Lower</arg>
                                         <arg name="text" type="xpath">text()</arg>
-                                        <arg name="language" type="constant">en</arg>
                                     </instance_generator>
                                 </entity>
                             </additional>
@@ -500,6 +509,7 @@
                         <entity>
                             <type>frbr:F51_Pursuit</type>
                             <instance_generator name="349-actor-activity-OOC">
+                                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
                                 <arg name="activity_id" type="xpath">aat/text()</arg>
                             </instance_generator>
                             <label_generator name="Literal">
@@ -663,198 +673,14 @@
                                         <constant/>
                                     </instance_info>
                                     <instance_generator name="000-type">
-                                        <arg name="type_id" type="constant">Biography</arg>
+                                        <arg name="type_id" type="constant">biography</arg>
                                     </instance_generator>
+                                    <label_generator name="Constant">
+                                        <arg name="text" type="constant">Biography</arg>
+                                        <arg name="language" type="constant">en</arg>
+                                    </label_generator>
                                 </entity>
                             </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>../Source</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P70i_is_documented_in</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>../Source</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crm:E31_Document</type>
-                            <instance_generator name="391-actor-source">
-                                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
-                                <arg name="source_id" type="xpath">./ID_SOURCE/text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Events/Event</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P11i_participated_in</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Events/Event</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crm:E5_Event</type>
-                            <instance_generator name="200-event">
-                                <arg name="event_id" type="xpath">./ID_EVENT/text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>/ROW/Events/Event</source_node>
-                <target_node>
-                    <if>
-                        <exists>text()</exists>
-                    </if>
-                    <entity>
-                        <type>crm:E5_Event</type>
-                        <instance_generator name="200-event">
-                            <arg name="event_id" type="xpath">./ID_EVENT/text()</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Role</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P11_had_participant</relationship>
-                        <entity>
-                            <type>crm:E39_Actor</type>
-                            <instance_generator name="394-actor-event">
-                                <arg name="actor_id" type="xpath">../../../ID_PERSON/text()</arg>
-                                <arg name="event_id" type="xpath">../ID_EVENT/text()</arg>
-                            </instance_generator>
-                        </entity>
-                        <relationship>crm:P2_has_type</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Role</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crm:E55_Type</type>
-                            <instance_generator name="394-actor-event-role">
-                                <arg name="actor_id" type="xpath">../../../ID_PERSON/text()</arg>
-                                <arg name="event_id" type="xpath">../ID_EVENT/text()</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">text()</arg>
-                                <arg name="language" type="constant">en</arg>
-                            </label_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>../Sources</source_node>
-                <target_node>
-                    <if>
-                        <exists>text()</exists>
-                    </if>
-                    <entity>
-                        <type>crm:E31_Document</type>
-                        <instance_generator name="391-actor-source">
-                            <arg name="actor_id" type="xpath">../../../../ID_PERSON/text()</arg>
-                            <arg name="source_id" type="xpath">../ID_SOURCE/text()</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Name</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P70_documents</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Name</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crmdig:D21_Person_Name</type>
-                            <instance_generator name="392-actor-source-name">
-                                <arg name="actor_id" type="xpath">../../../ID_PERSON/text()</arg>
-                                <arg name="source_id" type="xpath">../../ID_SOURCE/text()</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">text()</arg>
-                                <arg name="language" type="constant">en</arg>
-                            </label_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Surname</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P70_documents</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Surname</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crmdig:D21_Person_Name</type>
-                            <instance_generator name="393-actor-source-surname">
-                                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
-                                <arg name="source_id" type="xpath">../../ID_SOURCE/text()</arg>
-                            </instance_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -869,12 +695,11 @@
                     </if>
                     <entity>
                         <type>frbr:F51_Pursuit</type>
-                        <instance_generator name="340-actor-activity">
-                            <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
-                            <arg name="activity_id" type="xpathPosition">Id/text()</arg>
+                        <instance_generator name="349-actor-activity-OOC">
+                            <arg name="activity_id" type="xpath">aat/text()</arg>
                         </instance_generator>
                         <label_generator name="Literal">
-                            <arg name="text" type="xpath">Title/text()</arg>
+                            <arg name="text" type="xpath">eng/text()</arg>
                             <arg name="language" type="constant">en</arg>
                         </label_generator>
                     </entity>

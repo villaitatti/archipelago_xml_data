@@ -66,6 +66,8 @@ key_start = 'Start'
 key_end = 'End'
 key_root = 'Root'
 key_work_locations = 'Work_locations'
+key_geo = 'geo'
+key_label = 'label'
 
 key_aat = 'aat'
 key_ita = 'ita'
@@ -146,6 +148,18 @@ def explode_text(s, parent, current, id=None):
   except TypeError as err:
     pass
 
+def explode_place(parent, text):
+  try:
+      location_id = geonames_dict[text][0]["geoname_id"]
+      
+      place_birth_id = et.SubElement(parent, key_geo)
+      place_birth_id.text = location_id
+  except:
+    pass
+
+  place_birth_name = et.SubElement(parent, key_label)
+  place_birth_name.text = text
+
 
 # Iterate each ROW
 for row in tags:
@@ -199,51 +213,13 @@ for row in tags:
       for activity in val_activities:
 
         explode_text(activity, new_activities, key_activity)
-
-        """
-        new_activity = et.SubElement(new_activities, key_activity)
-
-        id_activity = et.SubElement(new_activity, key_id)
-        id_activity.text = str(cnt)
-
-        new_title = et.SubElement(new_activity, key_title)
-        new_title.text = re.sub(r'\([0-9-:]*\)', '', activity).strip()
-
-        new_start = et.SubElement(new_activity, key_start)
-        new_end = et.SubElement(new_activity, key_end)
-        activity_dates = re.sub(r'[^0-9-:]', '', activity)
-
-        if len(activity_dates) > 0:
-          activity_date = activity_dates.split(':')
-
-          new_start.text = activity_date[0]
-
-          if len(activity_date) > 1:
-            new_end.text = activity_date[1]
-        """
         cnt += 1
 
     # place of birth
-    place_birth = et.SubElement(new_row, key_place_birth)
-    place = row.find(f'ns:{key_place_birth}', ns).text
-
-    try:
-      location_id = geonames_dict[place][0]["geoname_id"]
-      place_birth.text = location_id
-
-    except:
-      place_birth.text = place 
+    explode_place(et.SubElement(new_row, key_place_birth), row.find(f'ns:{key_place_birth}', ns).text)
 
     # place of death
-    place_death = et.SubElement(new_row, key_place_death)
-    place = row.find(f'ns:{key_place_death}', ns).text
-
-    try:
-      location_id = geonames_dict[place][0]["geoname_id"]
-      place_death.text = location_id
-
-    except:
-      place_death.text = place 
+    explode_place(et.SubElement(new_row, key_place_death), row.find(f'ns:{key_place_death}', ns).text)
 
     # work location
     if row.find(f'ns:{key_work_location}', ns).text is not None:
@@ -254,16 +230,7 @@ for row in tags:
       locations = locations.split(';')
       
       for location in locations:
-        work_location = et.SubElement(work_locations, key_work_location)
-
-        location = location.strip()
-
-        try:
-          location_id = geonames_dict[location][0]["geoname_id"]
-          work_location.text = location_id
-
-        except:
-          work_location.text = location 
+        explode_place(et.SubElement(work_locations, key_work_location), location.strip())
         
 
     # birthdate earliest
@@ -292,32 +259,6 @@ for row in tags:
 
     # notes
     explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
-
-    #ASSOCIATIONS
-
-    #Events
-    events = et.SubElement(new_row, key_events)
-    if row_id in association_tables['people']:
-        for k,v in association_tables['people'][row_id]['events'].items():
-            event = et.SubElement(events, key_event)
-            event_id = et.SubElement(event, "ID_EVENT")
-            event_id.text = k
-
-            role = et.SubElement(event, key_role)
-            role.text = v[key_role]
-
-    #Sources
-    sources = et.SubElement(new_row, "Sources")
-    if row_id in association_tables['people']:
-        for k,v in association_tables['people'][row_id]['sources'].items():
-            source = et.SubElement(sources, 'Source')
-            source_id = et.SubElement(source, "ID_SOURCE")
-            source_id.text = k
-
-            name = et.SubElement(source, "Name")
-            name.text = v["Name"]
-            surname = et.SubElement(source, "Surname")
-            surname.text = v["Surname"]
 
     final = md.parseString(et.tostring(
         new_row, method='xml')).toprettyxml()

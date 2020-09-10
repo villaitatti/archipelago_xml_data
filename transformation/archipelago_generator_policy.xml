@@ -88,7 +88,7 @@
 		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}</pattern>
 	</generator>
 
-	<generator name="1A0-built_work-transfer_custody-date" prefix="arc">
+	<generator name="1A3-built_work-transfer_custody-date" prefix="arc">
 		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}/date</pattern>
 	</generator>
 
@@ -153,7 +153,7 @@
 	</generator>
 
 	<generator name="314-actor-identifier-title" prefix="aat">
-		<pattern>/{aat}</pattern>
+		<pattern>{aat}</pattern>
 	</generator>
 
 	<!-- Actor's birth -->
@@ -180,7 +180,7 @@
 		<pattern>actor/{actor_id}/activity/{activity_id}/date</pattern>
 	</generator>
 	<generator name="349-actor-activity-OOC" prefix="arc">
-		<pattern>activity/{activity_id}</pattern>
+		<pattern>actor/{actor_id}/activity/{activity_id}</pattern>
 	</generator>	
 
 	<!-- Actor's marriage -->
@@ -201,7 +201,7 @@
 
 	<!-- Actor's biography -->
 	<generator name="370-actor-biography" prefix="arc">
-		<pattern>actor/{actor_id}biography</pattern>
+		<pattern>actor/{actor_id}/biography</pattern>
 	</generator>
 
 	<!-- Actor's image -->
@@ -376,10 +376,9 @@
 		</custom>
 	</generator>
 
-	<generator name="DateNormalizer">
-		<custom generatorClass="gr.forth.DateNormalizer">
+	<generator name="GermanDateTime">
+		<custom generatorClass="gr.forth.GermanDate">
 			<set-arg name="bound" type="constant"/>
-			<set-arg name="report" type="constant"/>
 			<set-arg name="text"/>
 		</custom>
 	</generator>
