@@ -84,6 +84,7 @@ ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
 
 tags = root.findall(f'ns:{key_row}', ns)
 
+all_people = []
 
 def explode_text(s, parent, current, id=None):
 
@@ -260,7 +261,15 @@ for row in tags:
     # notes
     explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
 
+    all_people.append({
+      key_given_name: given_name.text,
+      key_surname: surname.text,
+      key_id_person: id_person.text 
+    })
+
     final = md.parseString(et.tostring(
         new_row, method='xml')).toprettyxml()
 
     write_file(row_id, final)
+
+open(os.path.join(dir_path, 'people.json'), 'w').write(json.dumps(all_people, indent=4))
