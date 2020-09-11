@@ -216,7 +216,7 @@
 	</generator>
 
 	<generator name="394-actor-event" prefix="arc">
-		<pattern>actor/{actor_id}/event/{event_id}/</pattern>
+		<pattern>actor/{actor_id}/event/{event_id}</pattern>
 	</generator>
 	<generator name="394-actor-event-role" prefix="arc">
 		<pattern>actor/{actor_id}/event/{event_id}/role</pattern>
