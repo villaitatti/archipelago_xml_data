@@ -2,8 +2,13 @@
 <generator_policy>
 
 	<!-- Type -->
+	
 	<generator name="000-type" prefix="arc">
 		<pattern>type/{type_id}</pattern>
+	</generator>
+
+	<generator name="010-type-aat" prefix="aat">
+		<pattern>{aat}</pattern>
 	</generator>
 
 	<!-- Built Work-->

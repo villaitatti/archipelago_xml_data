@@ -8,10 +8,20 @@ import json
 
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.join(dir_path, 'BuiltWork_Buildings.csv')
+filename = os.path.join(dir_path, 'SS_BLDG_01.csv')
+
+bw_typologies_filename = os.path.join(dir_path, 'dict', 'bw_typologies.tsv')
+bw_uses_filename = os.path.join(dir_path, 'dict', 'bw_uses.tsv')
+bw_materials_filename = os.path.join(dir_path, 'dict', 'bw_materials.tsv')
+bw_islands_filename = os.path.join(dir_path, 'dict', 'bw_islands.tsv')
 
 # Geonames dictionary
 geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+
+bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
+bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
+bw_materials = pd.read_csv(bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
+bw_islands = pd.read_csv(bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
 
 def write_file(name, text, ext='xml'):
 
@@ -26,9 +36,38 @@ def write_file(name, text, ext='xml'):
     f.write(text)
 
 def base_tag(parent, key, text):
-
+  text = str(text)
   tmp = et.SubElement(parent, key)
-  tmp.text = text
+  if not re.match(r'^2019-12-31$', text):
+    tmp.text = text
+
+def get_bw_use(name):
+  for bw_use in json.loads(bw_uses):
+    if name == bw_use.get(key_json_name):
+      return bw_use
+
+  return None
+
+def get_bw_typology(name):
+  for bw_typology in json.loads(bw_typologies):
+    if name == bw_typology.get(key_json_name):
+      return bw_typology
+
+  return None
+
+def get_bw_material(name):
+  for bw_material in json.loads(bw_materials):
+    if name == bw_material.get(key_json_name):
+      return bw_material
+
+  return None
+
+def get_bw_island(name):
+  for bw_island in json.loads(bw_islands):
+    if name == bw_island.get(key_json_name):
+      return bw_island
+
+  return None
 
 # Input keys
 key_root = 'root'
@@ -37,8 +76,8 @@ key_wkt = 'WKT'
 key_bw_id = 'BW_ID'
 key_islandname = 'IslandName'
 key_date = 'Date'
-key_start = 'Start_Earliest'
-key_end = 'End_Latest'
+key_start = 'Start'
+key_end = 'End'
 key_name = 'Name'
 
 key_function = 'Function'
@@ -76,8 +115,19 @@ key_uses = 'Uses'
 key_typologies = 'Typologies'
 key_owners = 'Owners'
 key_tenants = 'Tenants'
+key_eng = 'eng'
+key_ita = 'ita'
+key_aat = 'aat'
+key_geo = 'geo'
 
-df = pd.read_csv(filename, sep=';')
+# JSON keys
+key_json_aat = 'AAT ID'
+key_json_name = 'NAME'
+key_json_url = 'URL'
+key_json_ita = 'ITA'
+key_json_geonames = 'Geonames ID'
+
+df = pd.read_csv(filename, sep='\t')
 
 builtworks = {}
 
@@ -120,8 +170,13 @@ while bw_id in builtworks:
   # bw id
   base_tag(xml_row, key_bw_id, bw_id)
 
-  # IslandName 
-  base_tag(xml_row, key_islandname,  first[key_islandname])
+  # IslandName
+  island = et.SubElement(xml_row, key_islandname)
+
+  current_island = get_bw_island(first[key_islandname])
+
+  base_tag(island, key_ita,  current_island.get(key_json_name))
+  base_tag(island, key_geo,  current_island.get(key_json_geonames))
 
   # Start_Earliest 
   base_tag(xml_row, key_start,  first[key_start])
@@ -155,7 +210,13 @@ while bw_id in builtworks:
     materials = et.SubElement(xml_row, key_materials)
 
     for text_material in text_materials:
-      base_tag(materials, key_material, text_material.strip())
+      material = et.SubElement(materials, key_material)
+
+      current_material = get_bw_material(text_material)
+
+      base_tag(material, key_eng, current_material.get(key_json_name))
+      base_tag(material, key_ita, current_material.get(key_json_ita))
+      base_tag(material, key_aat, current_material.get(key_json_aat))
 
   # Architect
   base_tag(xml_row, key_architect,  first[key_architect])
@@ -164,10 +225,10 @@ while bw_id in builtworks:
   base_tag(xml_row, key_patron,  first[key_patron])
 
   # SHP_Lenght
-  base_tag(xml_row, key_shape_lenght,  first[key_shape_lenght])
+  # base_tag(xml_row, key_shape_lenght,  first[key_shape_lenght])
 
   # SHP_Area
-  base_tag(xml_row, key_shape_area,  first[key_shape_area])
+  # base_tag(xml_row, key_shape_area,  first[key_shape_area])
 
   set_uses = dict()
   set_typologies = dict()
@@ -215,7 +276,12 @@ while bw_id in builtworks:
 
     use_tag = et.SubElement(uses, key_use)
 
-    base_tag(use_tag, key_name, key)
+    current_use = get_bw_use(key)
+
+    base_tag(use_tag, key_eng, current_use.get(key_json_name))
+    base_tag(use_tag, key_ita, current_use.get(key_json_ita))
+    base_tag(use_tag, key_aat, current_use.get(key_json_aat))
+
     base_tag(use_tag, key_use_start, use[key_use_start])
     base_tag(use_tag, key_use_end, use[key_use_end])
 
@@ -225,7 +291,12 @@ while bw_id in builtworks:
 
     typology_tag = et.SubElement(typologies, key_typology)
 
-    base_tag(typology_tag, key_name, key)
+    current_typology = get_bw_typology(key)
+
+    base_tag(typology_tag, key_eng, current_typology.get(key_json_name))
+    base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
+    base_tag(typology_tag, key_aat, current_typology.get(key_json_aat))
+
     base_tag(typology_tag, key_typology_start, typology[key_typology_start])
     base_tag(typology_tag, key_typology_end, typology[key_typology_end])
 
