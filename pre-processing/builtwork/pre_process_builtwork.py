@@ -49,6 +49,7 @@ def get_bw_use(name):
   return None
 
 def get_bw_typology(name):
+
   for bw_typology in json.loads(bw_typologies):
     if name == bw_typology.get(key_json_name):
       return bw_typology
@@ -295,7 +296,7 @@ while bw_id in builtworks:
 
     base_tag(typology_tag, key_eng, current_typology.get(key_json_name))
     base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
-    base_tag(typology_tag, key_aat, current_typology.get(key_json_aat))
+    base_tag(typology_tag, key_aat, str(int(current_typology.get(key_json_aat))))
 
     base_tag(typology_tag, key_typology_start, typology[key_typology_start])
     base_tag(typology_tag, key_typology_end, typology[key_typology_end])
