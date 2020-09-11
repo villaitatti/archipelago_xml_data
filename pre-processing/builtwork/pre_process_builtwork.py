@@ -16,7 +16,8 @@ bw_materials_filename = os.path.join(dir_path, 'dict', 'bw_materials.tsv')
 bw_islands_filename = os.path.join(dir_path, 'dict', 'bw_islands.tsv')
 
 # Geonames dictionary
-geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+geonames_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'geonames', 'geonames.json'), 'r'))
+people_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'people', 'people.json'), 'r'))
 
 bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
 bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
@@ -70,6 +71,19 @@ def get_bw_island(name):
 
   return None
 
+def get_person(name):
+  for person in people_dict:
+    current_name = re.sub(r'{.*}','',person.get(key_surname)).strip()
+    if name.lower() == current_name.lower():
+      return person
+
+  return None
+
+def add_person(parent, key):
+  current_person = get_person(key)
+  if current_person is not None:
+    base_tag(parent, key_person_id, current_person.get(key_person_id))
+
 # Input keys
 key_root = 'root'
 key_row = 'row'
@@ -116,10 +130,13 @@ key_uses = 'Uses'
 key_typologies = 'Typologies'
 key_owners = 'Owners'
 key_tenants = 'Tenants'
+key_architects = 'Architects'
+key_patrons = 'Patrons'
 key_eng = 'eng'
 key_ita = 'ita'
 key_aat = 'aat'
 key_geo = 'geo'
+key_person_id = 'ID_PERSON'
 
 # JSON keys
 key_json_aat = 'AAT ID'
@@ -127,6 +144,7 @@ key_json_name = 'NAME'
 key_json_url = 'URL'
 key_json_ita = 'ITA'
 key_json_geonames = 'Geonames ID'
+key_surname = 'Surname'
 
 df = pd.read_csv(filename, sep='\t')
 
@@ -188,17 +206,6 @@ while bw_id in builtworks:
   # Name 
   base_tag(xml_row, key_name,  first[key_name])
 
-  """
-  # Function 
-  base_tag(xml_row, key_function,  first[key_function])
-
-  # Start_Function 
-  base_tag(xml_row, key_function_start,  first[key_function_start])
-
-  # End_Function
-  base_tag(xml_row, key_function_end,  first[key_function_end])
-  """
-
   # Height
   base_tag(xml_row, key_height,  first[key_height])
 
@@ -232,6 +239,8 @@ while bw_id in builtworks:
   # base_tag(xml_row, key_shape_area,  first[key_shape_area])
 
   set_uses = dict()
+  set_patrons = dict()
+  set_architects = dict()
   set_typologies = dict()
   set_owners = dict()
   set_tenants = dict()
@@ -260,6 +269,14 @@ while bw_id in builtworks:
     if current_bw[key_tenant] not in set_tenants and current_bw[key_tenant]:
       set_tenants[current_bw[key_tenant]] = {key_tenant_start: current_bw[key_tenant_start], key_tenant_end: current_bw[key_tenant_end]}
 
+    # Architect
+    if current_bw[key_architect] not in set_architects and current_bw[key_architect]:
+      set_architects[current_bw[key_architect]] = current_bw[key_architect]
+
+    # Patrons
+    if current_bw[key_patron] not in set_patrons and current_bw[key_patron]:
+      set_patrons[current_bw[key_patron]] = current_bw[key_patron]
+
   # Function
   functions = et.SubElement(xml_row, key_functions)
   for key, function in set_functions.items():
@@ -269,7 +286,6 @@ while bw_id in builtworks:
     base_tag(function_tag, key_name, key)
     base_tag(function_tag, key_function_start, function[key_function_start])
     base_tag(function_tag, key_function_end, function[key_function_end])
-
 
   # Use
   uses = et.SubElement(xml_row, key_uses)
@@ -307,6 +323,8 @@ while bw_id in builtworks:
 
     owner_tag = et.SubElement(owners, key_owner)
 
+    add_person(owner_tag, key)
+
     base_tag(owner_tag, key_name, key)
     base_tag(owner_tag, key_owner_start, owner[key_owner_start])
     base_tag(owner_tag, key_owner_end, owner[key_owner_end])
@@ -317,9 +335,27 @@ while bw_id in builtworks:
 
     tenant_tag = et.SubElement(tenants, key_tenant)
 
+    add_person(tenant_tag, key)
+
     base_tag(tenant_tag, key_name, key)
     base_tag(tenant_tag, key_tenant_start, tenant[key_tenant_start])
     base_tag(tenant_tag, key_tenant_end, tenant[key_tenant_end])
+
+  # Architects
+  architects = et.SubElement(xml_row, key_architects)
+  for key, architect in set_architects.items():
+    architect = et.SubElement(architects, key_architect)
+
+    add_person(architect, key)
+    base_tag(architect, key_name, key)
+
+  # Patrons
+  patrons = et.SubElement(xml_row, key_patrons)
+  for key, patron in set_patrons.items():
+    patron = et.SubElement(patrons, key_patron)
+
+    add_person(patron, key)
+    base_tag(patron, key_name, key)
 
   final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
