@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>64</ID_PERSON>
-	<Given_Name>
-		<eng>Francesco</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Battaglioli</eng>
-	</Surname>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Battaglioli</Surname>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>
@@ -14,11 +10,22 @@
 			<eng>Painter</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3173331</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3173331</geo>
+		<label>Modena</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
-		<Work_location>Madrid</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
+		<Work_location>
+			<label>Madrid</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1725</Birth_Date_Earliest>
 	<Death_Date_Latest>1796</Death_Date_Latest>
@@ -26,17 +33,4 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>64</ID_EVENT>
-			<Role/>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>42</ID_SOURCE>
-			<Name>Francesco</Name>
-			<Surname>Battaglioli</Surname>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -13,6 +14,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/171/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "171" .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/171/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Vallaresso"@it ;
@@ -23,8 +28,7 @@
         crm:P97_from_father  <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Zaccaria"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/171/given_name>
         a                crm:E41_Appellation ;
@@ -37,7 +41,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/171>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "171"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/171/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/171/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/171/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/171/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/171/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/171/birth> .

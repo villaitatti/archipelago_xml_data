@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,17 +12,20 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/185>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/185/activity/1> ;
-        crm:P1_is_identified_by  "185"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/185/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/185/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/185/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Stonecutter"@en .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/185/activity/300025039> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/185/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/185/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/185/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/185/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "185" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/185/activity/300025039>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Stonecutter"@en , "Scalpellino"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/185/surname>
         a                crm:E41_Appellation ;

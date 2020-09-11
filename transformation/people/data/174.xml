@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>174</ID_PERSON>
-	<Given_Name>
-		<eng>Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Polani</eng>
-	</Surname>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Polani</Surname>
 	<Titles>
-		<Title>
-			<eng>Doge</eng>
-		</Title>
 		<Title>
 			<aat>300025463</aat>
 			<ita>Doge</ita>
@@ -31,10 +24,19 @@
 			<eng>Doge of Venice</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1098</Birth_Date_Earliest>
 	<Death_Date_Latest>1148</Death_Date_Latest>
@@ -42,11 +44,4 @@
 	<Will_Date/>
 	<Century>12th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>152</ID_EVENT>
-			<Role>Doge</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

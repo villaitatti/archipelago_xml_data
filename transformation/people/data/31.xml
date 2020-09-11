@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>31</ID_PERSON>
-	<Given_Name>
-		<eng>Elisabetta Graziosa</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Ferri</eng>
-	</Surname>
+	<Given_Name>Elisabetta Graziosa</Given_Name>
+	<Surname>Ferri</Surname>
 	<Occupation>
 		<aat>300236548</aat>
 		<ita>Nobildonna</ita>
@@ -19,10 +15,18 @@
 			<eng>Patron</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -34,6 +38,4 @@
 		<ita>Era seppellita all'interno della chiesa di San Secondo</ita>
 		<eng>She was buried in the church of San Secondo</eng>
 	</Notes>
-	<Events/>
-	<Sources/>
 </ROW>

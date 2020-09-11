@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>70</ID_PERSON>
-	<Given_Name>
-		<eng>Carlo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Ruzzini</eng>
-	</Surname>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Ruzzini</Surname>
 	<Titles>
-		<Title>
-			<eng>Doge</eng>
-		</Title>
 		<Title>
 			<aat>300025463</aat>
 			<ita>Doge</ita>
@@ -34,10 +27,19 @@
 			<eng>Doge of Venice</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1653-11-11</Birth_Date_Earliest>
 	<Death_Date_Latest>1735-01-05</Death_Date_Latest>
@@ -45,17 +47,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>57</ID_EVENT>
-			<Role>Wittness</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Carlo</Name>
-			<Surname>Ruzzini</Surname>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>35</ID_PERSON>
-	<Given_Name>
-		<eng>Cherubino</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Zeli</eng>
-	</Surname>
+	<Given_Name>Cherubino</Given_Name>
+	<Surname>Zeli</Surname>
 	<Titles>
-		<Title>
-			<eng>Father</eng>
-		</Title>
 		<Title>
 			<aat>300266789</aat>
 			<ita>Frate</ita>
@@ -29,10 +22,17 @@
 			<eng>Friar of San Secondo</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -40,22 +40,4 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>34</ID_EVENT>
-			<Role>Witness</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Cherubino</Name>
-			<Surname>Zeli</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>28</ID_SOURCE>
-			<Name>Cherubino</Name>
-			<Surname>Zeli</Surname>
-		</Source>
-	</Sources>
 </ROW>

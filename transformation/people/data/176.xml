@@ -1,14 +1,12 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>176</ID_PERSON>
-	<Given_Name>
-		<eng>Alessandro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>de Strigis</eng>
-	</Surname>
+	<Given_Name>Alessandro</Given_Name>
+	<Surname>de Strigis</Surname>
 	<Titles>
 		<Title>
+			<aat>300250804</aat>
+			<ita>Marchese</ita>
 			<eng>Marquis</eng>
 		</Title>
 		<Title>
@@ -29,27 +27,16 @@
 			<eng>Ambassador of the Duke of Mantua and Nevers Carlo Gonzaga</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest>1630</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>154</ID_EVENT>
-			<Role>Quarantined person</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>155</ID_EVENT>
-			<Role>Quarantined person</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>156</ID_EVENT>
-			<Role/>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

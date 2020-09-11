@@ -1,19 +1,12 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>165</ID_PERSON>
-	<Given_Name>
-		<eng>Francesco</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Sforza</eng>
-	</Surname>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Sforza</Surname>
 	<Alias>
 		<eng>Francesco II</eng>
 	</Alias>
 	<Titles>
-		<Title>
-			<eng>Duke</eng>
-		</Title>
 		<Title>
 			<aat>300132247</aat>
 			<ita>Duca</ita>
@@ -37,10 +30,19 @@
 			<eng>Duke of Milan</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3173435</Place_of_birth>
-	<Place_of_death>3173435</Place_of_death>
+	<Place_of_birth>
+		<geo>3173435</geo>
+		<label>Milan</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3173435</geo>
+		<label>Milan</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3173435</Work_location>
+		<Work_location>
+			<geo>3173435</geo>
+			<label>Milan</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1495-02-04</Birth_Date_Earliest>
 	<Death_Date_Latest>1535-11-02</Death_Date_Latest>
@@ -48,11 +50,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>145</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

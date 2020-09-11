@@ -1,0 +1,50 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+aat:300000645  a         crm:E41_Appellation ;
+        rdfs:label       "Priore"@it , "Prior"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/194/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "194" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/194/activity/OCC340069>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Prior of Santa Maria della Carità"@en , "Priore di Santa Maria della Carità"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/194>
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/194/activity/OCC340069> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/194/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/194/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/194/given_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/194/surname>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Maffei"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/194/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Pietro"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,53 +10,63 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/149/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1452"@en ;
-        crm:P82b_end_of_the_end      "1493"@en .
-
-geonames:Innsbruck  a  crm:E53_Place ;
-        rdfs:label  "Innsbruck"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/149/alias>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Federico III"@it , "Frederick III"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1415-09-21"@en .
+        crm:P82a_begin_of_the_begin  "1415-09-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/149/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Emperor of the Holy Roman Empire"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/149/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Holy Roman Emperor"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/149/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/149/birth/date> ;
-        crm:P7_took_place_at  geonames:Innsbruck .
+        crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/149/activity/OCC340047>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Holy Roman Emperor"@en , "Imperatore del Sacro Romano Impero"@it .
+
+aat:300025480  a         crm:E41_Appellation ;
+        rdfs:label       "Imperatore"@it , "Emperor"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/death>
         a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:Linz .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/149/death/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/149/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "149" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/149/activity/1> ;
-        crm:P1_is_identified_by  "149"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/149/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/149/surname> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/149/activity/OCC340047> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/149/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/149/alias> , aat:300025480 , <https://archipelago.itatti.harvard.edu/resource/actor/149/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/149/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/149/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/149/death> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/149/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1493-08-19T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-geonames:Linz  a    crm:E53_Place ;
-        rdfs:label  "Linz"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a       crm:E21_Person .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/149/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Friedrich"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -63,5 +74,5 @@ geonames:Linz  a    crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Frederick III"@it ;
+        rdfs:label       "Habsburg"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

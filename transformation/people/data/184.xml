@@ -1,37 +1,18 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>184</ID_PERSON>
-	<Surname>
-		<ita>Monaci camaldolesi del Monte Rua</ita>
-		<eng>Camaldolese monks of Monte Rua</eng>
-	</Surname>
-	<Place_of_birth>Padua</Place_of_birth>
-	<Place_of_death/>
+	<Given_Name/>
+	<Surname>Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}</Surname>
+	<Place_of_birth>
+		<label>Padua</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest>1530</Birth_Date_Earliest>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>80</ID_EVENT>
-			<Role>Transferred order</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>163</ID_EVENT>
-			<Role>New owners</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>164</ID_EVENT>
-			<Role>Potential buyers</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>161</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>185</ID_PERSON>
-	<Given_Name>
-		<eng>Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Lorenzetto</eng>
-	</Surname>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Lorenzetto</Surname>
 	<Activities>
 		<Activity>
 			<aat>300025039</aat>
@@ -14,10 +10,17 @@
 			<eng>Stonecutter</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -25,6 +28,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources/>
 </ROW>

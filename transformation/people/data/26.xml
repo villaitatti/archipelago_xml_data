@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>26</ID_PERSON>
-	<Given_Name>
-		<eng>Filippo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Tron</eng>
-	</Surname>
+	<Given_Name>Filippo</Given_Name>
+	<Surname>Tron</Surname>
 	<Titles>
-		<Title>
-			<eng>Procurator</eng>
-		</Title>
 		<Title>
 			<aat>300025471</aat>
 			<ita>Procuratore</ita>
@@ -29,8 +22,12 @@
 			<eng>Procurator of St Mark's de supra</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
@@ -41,22 +38,4 @@
 		<ita>La sua casa si trovava vicino al rio della Zecca, all'angolo dei Magazzini di Terranova</ita>
 		<eng>His house was located near the rio della Zecca, at the corner with the Terranova warehouses</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>63</ID_EVENT>
-			<Role/>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>7</ID_SOURCE>
-			<Name>Filippo</Name>
-			<Surname>Tron</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Filippo</Name>
-			<Surname>Tron</Surname>
-		</Source>
-	</Sources>
 </ROW>

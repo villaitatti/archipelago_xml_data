@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>92</ID_PERSON>
-	<Given_Name>
-		<eng>Vincenzo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Scutari</eng>
-	</Surname>
+	<Given_Name>Vincenzo</Given_Name>
+	<Surname>Scutari</Surname>
 	<Titles>
 		<Title>
 			<aat>300266789</aat>
@@ -26,10 +22,17 @@
 			<eng>Guardian of Santo Spirito</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -37,12 +40,4 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>118</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

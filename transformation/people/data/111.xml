@@ -1,29 +1,13 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>111</ID_PERSON>
-	<Given_Name>
-		<eng>Carlo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Carafa della Spina</eng>
-	</Surname>
+	<Given_Name>Carlo</Given_Name>
+	<Surname>Carafa della Spina</Surname>
 	<Titles>
 		<Title>
-			<aat>300025756</aat>
-			<eng>Bishop</eng>
-		</Title>
-		<Title>
-			<aat>300417572</aat>
-			<eng>Apostolic nuncio</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<eng>Cardinal</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<ita>Cardinale</ita>
-			<eng>Cardinal</eng>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
 		</Title>
 		<Title>
 			<aat>300025756</aat>
@@ -31,14 +15,14 @@
 			<eng>Bishop</eng>
 		</Title>
 		<Title>
+			<aat>300025758</aat>
+			<ita>Cardinale</ita>
+			<eng>Cardinal</eng>
+		</Title>
+		<Title>
 			<aat>300417572</aat>
 			<ita>Nunzio Apostolico</ita>
 			<eng>Apostolic nuncio</eng>
-		</Title>
-		<Title>
-			<aat>300025774</aat>
-			<ita>Sacerdote</ita>
-			<eng>Priest</eng>
 		</Title>
 	</Titles>
 	<Patronymic>
@@ -77,10 +61,19 @@
 			<eng>Apostolic nuncio</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3169070</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1611-04-21</Birth_Date_Earliest>
 	<Death_Date_Latest>1680-10-19</Death_Date_Latest>
@@ -88,6 +81,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources/>
 </ROW>

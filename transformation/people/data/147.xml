@@ -1,18 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>147</ID_PERSON>
-	<Given_Name>
-		<eng>Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Nani</eng>
-	</Surname>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Nani</Surname>
 	<Titles>
-		<Title>
-			<aat>300266789</aat>
-			<ita>Frate</ita>
-			<eng>Friar</eng>
-		</Title>
 		<Title>
 			<aat>300025757</aat>
 			<ita>Canonico</ita>
@@ -31,10 +22,17 @@
 			<eng>Canon regular of San Clemente</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -45,11 +43,4 @@
 	<Notes>
 		<eng>He was well known for being a predictor</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>124</ID_EVENT>
-			<Role>Predictor and friar inhabiting the island</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

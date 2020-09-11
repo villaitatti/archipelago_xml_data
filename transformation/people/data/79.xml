@@ -1,28 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>79</ID_PERSON>
-	<Given_Name>
-		<eng>Francesco</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Alberti</eng>
-	</Surname>
+	<Given_Name>Francesco</Given_Name>
+	<Surname>Alberti</Surname>
 	<Titles>
 		<Title>
-			<eng>Proto</eng>
-		</Title>
-		<Title>
 			<aat>300025063</aat>
+			<ita>Ingegnere</ita>
 			<eng>Engineer</eng>
 		</Title>
 		<Title>
 			<ita>Proto</ita>
 			<eng>Proto</eng>
-		</Title>
-		<Title>
-			<aat>300025063</aat>
-			<ita>Ingegnere</ita>
-			<eng>Engineer</eng>
 		</Title>
 	</Titles>
 	<Activities>
@@ -42,10 +31,17 @@
 			<eng>Engineer</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -57,12 +53,4 @@
 		<ita>Fu attivo tra il 1648 e il 1689</ita>
 		<eng>He was active beween 1648 and 1689</eng>
 	</Notes>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>105</ID_SOURCE>
-			<Name>Francesco</Name>
-			<Surname>Alberti</Surname>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>198</ID_PERSON>
-	<Given_Name>
-		<eng>Bartolomeo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Gualtierotti</eng>
-	</Surname>
+	<Given_Name>Bartolomeo</Given_Name>
+	<Surname>Gualtierotti</Surname>
 	<Titles>
 		<Title>
 			<aat>300188587</aat>
@@ -26,8 +22,12 @@
 			<eng>Tuscan ambassador</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
@@ -38,6 +38,4 @@
 		<ita>Fu agente di Cosimo I de' Medici</ita>
 		<eng>He was the agent of Cosimo I de' Medici</eng>
 	</Notes>
-	<Events/>
-	<Sources/>
 </ROW>

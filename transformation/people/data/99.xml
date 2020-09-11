@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>99</ID_PERSON>
-	<Given_Name>
-		<eng>Domenico</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Porta</eng>
-	</Surname>
+	<Given_Name>Domenico</Given_Name>
+	<Surname>Porta</Surname>
 	<Titles>
-		<Title>
-			<eng>Father</eng>
-		</Title>
 		<Title>
 			<aat>300266789</aat>
 			<ita>Frate</ita>
@@ -29,10 +22,17 @@
 			<eng>Guardian of Santo Spirito</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -40,22 +40,4 @@
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>79</ID_EVENT>
-			<Role>Guardian of the monastery</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>129</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>133</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

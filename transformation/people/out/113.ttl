@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -15,6 +16,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/113/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113/given_name>
@@ -24,33 +26,36 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/113/activity/1> ;
-        crm:P1_is_identified_by  "113"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/113/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/113/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/113/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/113/activity/300025136> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/113/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/113/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/113/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/113/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/113/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/113/death> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/113/activity/300025136>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Painter"@en , "Pittore"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/113/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "il Salviati"@it .
+        rdfs:label  "il Salviati"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1520"@en .
+        crm:P82a_begin_of_the_begin  "1520-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/113/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1575-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/113/birth/date> ;
         crm:P7_took_place_at  geonames:3179523 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/113/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
-
 geonames:3179523  a  crm:E53_Place ;
-        rdfs:label  "3179523"@en .
+        rdfs:label  "Castelnuovo di Garfagnana"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -61,5 +66,9 @@ geonames:3179523  a  crm:E53_Place ;
         rdfs:label       "Porta"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/113/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "113" .
+
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+        rdfs:label  "Venice"@en .

@@ -1,18 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>161</ID_PERSON>
-	<Given_Name>
-		<ita>Matteo</ita>
-		<eng>Matthäus</eng>
-	</Given_Name>
-	<Surname>
-		<ita>Schiner</ita>
-		<eng>Schinner</eng>
-	</Surname>
+	<Given_Name>Matthäus {Matteo}</Given_Name>
+	<Surname>Schinner {Schiner}</Surname>
 	<Titles>
-		<Title>
-			<eng>Cardinal</eng>
-		</Title>
 		<Title>
 			<aat>300025758</aat>
 			<ita>Cardinale</ita>
@@ -36,19 +27,17 @@
 			<eng>Cardinal</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Mühlebach</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<label>Mühlebach</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Birth_Date_Earliest>1465</Birth_Date_Earliest>
 	<Death_Date_Latest>1522-10-01</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>143</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

@@ -1,20 +1,13 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>175</ID_PERSON>
-	<Given_Name>
-		<eng>Pierre</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Roger</eng>
-	</Surname>
+	<Given_Name>Pierre</Given_Name>
+	<Surname>Roger</Surname>
 	<Alias>
 		<ita>Papa Clemente VI</ita>
 		<eng>Pope Clement VI</eng>
 	</Alias>
 	<Titles>
-		<Title>
-			<eng>Pope</eng>
-		</Title>
 		<Title>
 			<aat>300025773</aat>
 			<ita>Papa</ita>
@@ -38,10 +31,16 @@
 			<eng>Pope</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Rosiers-d'Égletons</Place_of_birth>
-	<Place_of_death>Avignon</Place_of_death>
+	<Place_of_birth>
+		<label>Rosiers-d'Égletons</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label>Avignon</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Avignon</Work_location>
+		<Work_location>
+			<label>Avignon</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1291</Birth_Date_Earliest>
 	<Death_Date_Latest>1352-12-06</Death_Date_Latest>
@@ -49,11 +48,4 @@
 	<Will_Date/>
 	<Century>14th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>153</ID_EVENT>
-			<Role>Island's ruler</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

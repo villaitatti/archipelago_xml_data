@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>116</ID_PERSON>
-	<Given_Name>
-		<eng>Lorenzo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Giustinian</eng>
-	</Surname>
+	<Given_Name>Lorenzo</Given_Name>
+	<Surname>Giustinian</Surname>
 	<Titles>
-		<Title>
-			<eng>Saint</eng>
-		</Title>
 		<Title>
 			<aat>300025772</aat>
 			<ita>Patriarca</ita>
@@ -34,10 +27,19 @@
 			<eng>Patriarch of Venice</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1381-07-01</Birth_Date_Earliest>
 	<Death_Date_Latest>1456-01-08</Death_Date_Latest>
@@ -49,6 +51,4 @@
 		<ita>Insieme all'arcivescovo di Firenze Antonino Pierozzi fu mediatore nella pace di Lodi. è seppellito nella chiesa di San Pietro di Castello</ita>
 		<eng>Together with the Arcibishop of Florenze, Antonino Pierozzi, he played as mediator in the peace of Lodi. He is buried in the church of San Pietro di Castello</eng>
 	</Notes>
-	<Events/>
-	<Sources/>
 </ROW>

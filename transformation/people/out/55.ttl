@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,34 +10,34 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+aat:300025765  a         crm:E41_Appellation ;
+        rdfs:label       "Monaco"@it , "Monk"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/55/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Zaccaria"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/55/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Vicario generale of the monastery of San Secondo"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/55/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/55/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1535"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/55>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/55/activity/1> ;
-        crm:P1_is_identified_by  "55"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/55/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/55/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/55/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/55/activity/OCC340006> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/55/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/55/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/55/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/55/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Father"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/55/birth>
+        a       crm:E67_Birth .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/55/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "55" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/55/activity/OCC340006>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Vicar of San Secondo  (1535)"@en , "Vicario di San Secondo"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;

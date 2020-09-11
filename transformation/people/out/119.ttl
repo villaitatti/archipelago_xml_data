@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -18,15 +19,33 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/119/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "da Cortivo"@it ;
+        rdfs:label       "dal Cortivo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/119/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "119" .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/119>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "119"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/119/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/119/given_name> .
+        a                           crm:E39_Actor ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/119/activity/300025593> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/119/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/119/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/119/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/119/biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/119/activity/300025593>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cartographer"@en , "Cartografo"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/119/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Era il nipote del cartografo Angelo dal Cortivo"@it , "He was the nephew of the cartographer Angelo dal Cortivo"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

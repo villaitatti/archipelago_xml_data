@@ -2,8 +2,13 @@
 <generator_policy>
 
 	<!-- Type -->
+	
 	<generator name="000-type" prefix="arc">
 		<pattern>type/{type_id}</pattern>
+	</generator>
+
+	<generator name="010-type-aat" prefix="aat">
+		<pattern>{aat}</pattern>
 	</generator>
 
 	<!-- Built Work-->
@@ -88,7 +93,7 @@
 		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}</pattern>
 	</generator>
 
-	<generator name="1A0-built_work-transfer_custody-date" prefix="arc">
+	<generator name="1A3-built_work-transfer_custody-date" prefix="arc">
 		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}/date</pattern>
 	</generator>
 
@@ -151,8 +156,9 @@
 	<generator name="313-actor-identifier-alias" prefix="arc">
 		<pattern>actor/{actor_id}/alias</pattern>
 	</generator>
-	<generator name="314-actor-identifier-title" prefix="arc">
-		<pattern>actor/{actor_id}/title/{title_id}</pattern>
+
+	<generator name="314-actor-identifier-title" prefix="aat">
+		<pattern>{aat}</pattern>
 	</generator>
 
 	<!-- Actor's birth -->
@@ -178,6 +184,9 @@
 	<generator name="343-actor-activity-date" prefix="arc">
 		<pattern>actor/{actor_id}/activity/{activity_id}/date</pattern>
 	</generator>
+	<generator name="349-actor-activity-OOC" prefix="arc">
+		<pattern>actor/{actor_id}/activity/{activity_id}</pattern>
+	</generator>	
 
 	<!-- Actor's marriage -->
 	<generator name="350-actor-marriage" prefix="arc">
@@ -197,7 +206,7 @@
 
 	<!-- Actor's biography -->
 	<generator name="370-actor-biography" prefix="arc">
-		<pattern>actor/{actor_id}biography</pattern>
+		<pattern>actor/{actor_id}/biography</pattern>
 	</generator>
 
 	<!-- Actor's image -->
@@ -372,10 +381,9 @@
 		</custom>
 	</generator>
 
-	<generator name="DateNormalizer">
-		<custom generatorClass="gr.forth.DateNormalizer">
+	<generator name="GermanDateTime">
+		<custom generatorClass="gr.forth.GermanDate">
 			<set-arg name="bound" type="constant"/>
-			<set-arg name="report" type="constant"/>
 			<set-arg name="text"/>
 		</custom>
 	</generator>

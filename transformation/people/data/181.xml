@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>181</ID_PERSON>
-	<Given_Name>
-		<eng>Agostino</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Correggio</eng>
-	</Surname>
+	<Given_Name>Agostino</Given_Name>
+	<Surname>Correggio</Surname>
 	<Patronymic>
 		<eng>Orazio</eng>
 	</Patronymic>
@@ -27,10 +23,19 @@
 			<eng>Art collector</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1604</Birth_Date_Earliest>
 	<Death_Date_Latest>1678</Death_Date_Latest>
@@ -42,21 +47,4 @@
 		<ita>Acquisì il titolo di nobile nel 1646. Fu, insieme al fratello Giovan Donato, un collezionista d'arte</ita>
 		<eng>He became a nobleman in 1646. He was an art collector along with his brother Giovan Donato</eng>
 	</Notes>
-	<Events>
-		<Event>
-			<ID_EVENT>163</ID_EVENT>
-			<Role>Nominal buyer</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>164</ID_EVENT>
-			<Role>Mediator</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>161</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

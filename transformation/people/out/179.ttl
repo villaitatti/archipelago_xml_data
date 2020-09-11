@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,11 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/179/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "179" .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/179>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/179/activity/1> ;
-        crm:P1_is_identified_by  "179"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/179/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/179/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/179/activity/300386353> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/179/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/179/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/179/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/179/birth> .
 
@@ -30,13 +34,12 @@
         a                    crm:E67_Birth ;
         crm:P97_from_father  <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Antonio"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/179/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/actor/179/activity/300386353>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Master builder"@en .
+        rdfs:label  "Master builder"@en , "Capomastro"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/179/given_name>
         a                crm:E41_Appellation ;

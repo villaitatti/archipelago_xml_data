@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>113</ID_PERSON>
-	<Given_Name>
-		<eng>Giuseppe</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Porta</eng>
-	</Surname>
+	<Given_Name>Giuseppe</Given_Name>
+	<Surname>Porta</Surname>
 	<Alias>
 		<eng>il Salviati</eng>
 	</Alias>
@@ -17,13 +13,31 @@
 			<eng>Painter</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3179523</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3179523</geo>
+		<label>Castelnuovo di Garfagnana</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
-		<Work_location>3176959</Work_location>
-		<Work_location>3181928</Work_location>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
+		<Work_location>
+			<geo>3176959</geo>
+			<label>Florence</label>
+		</Work_location>
+		<Work_location>
+			<geo>3181928</geo>
+			<label>Bologna</label>
+		</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1520</Birth_Date_Earliest>
 	<Death_Date_Latest>1575</Death_Date_Latest>
@@ -31,12 +45,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>137</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

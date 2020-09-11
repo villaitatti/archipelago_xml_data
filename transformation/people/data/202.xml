@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>202</ID_PERSON>
-	<Surname>
-		<ita>Scuola di San Diego</ita>
-		<eng>Secular confraternity of San Diego</eng>
-	</Surname>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Given_Name/>
+	<Surname>Secular confraternity of San Diego {Scuola di San Diego}</Surname>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest>1719-02-22</Birth_Date_Earliest>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources/>
 </ROW>

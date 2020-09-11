@@ -1,29 +1,17 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>168</ID_PERSON>
-	<Given_Name>
-		<eng>Gian Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Carafa</eng>
-	</Surname>
+	<Given_Name>Gian Pietro</Given_Name>
+	<Surname>Carafa</Surname>
 	<Alias>
 		<ita>Papa Paolo IV</ita>
 		<eng>Pope Paul IV</eng>
 	</Alias>
 	<Titles>
 		<Title>
-			<aat>300025773</aat>
-			<eng>Pope</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<eng>Cardinal</eng>
-		</Title>
-		<Title>
-			<aat>300025773</aat>
-			<ita>Papa</ita>
-			<eng>Pope</eng>
+			<aat>300025774</aat>
+			<ita>Sacerdote</ita>
+			<eng>Priest</eng>
 		</Title>
 		<Title>
 			<aat>300025758</aat>
@@ -31,9 +19,9 @@
 			<eng>Cardinal</eng>
 		</Title>
 		<Title>
-			<aat>300025774</aat>
-			<ita>Sacerdote</ita>
-			<eng>Priest</eng>
+			<aat>300025773</aat>
+			<ita>Papa</ita>
+			<eng>Pope</eng>
 		</Title>
 	</Titles>
 	<Patronymic>
@@ -67,10 +55,18 @@
 			<eng>Pope</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Capriglia Irpina (Avellino)</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<label>Capriglia Irpina (Avellino)</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1476-06-28</Birth_Date_Earliest>
 	<Death_Date_Latest>1559-08-18</Death_Date_Latest>
@@ -78,11 +74,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>147</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

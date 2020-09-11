@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>32</ID_PERSON>
-	<Given_Name>
-		<eng>Pietro</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Morani</eng>
-	</Surname>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Given_Name>Pietro</Given_Name>
+	<Surname>Morani</Surname>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
@@ -19,6 +19,4 @@
 		<ita>Il suo testamento è conservato nel fondo del monastero di San Secondo</ita>
 		<eng>His will is preserved in the private archive of the monastery of San Secondo</eng>
 	</Notes>
-	<Events/>
-	<Sources/>
 </ROW>

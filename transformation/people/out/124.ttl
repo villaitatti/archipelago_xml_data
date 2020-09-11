@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -15,8 +16,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/124>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "124"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/124/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/124/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/124/surname> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/124/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -24,21 +24,25 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/124/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1486-01-07"@en .
+        crm:P82a_begin_of_the_begin  "1486-01-07T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/124/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Provveditori alla Sanità"@it ;
+        rdfs:label       "Magistrate for Health {Provveditori e Sopraprovveditori alla Sanità}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/124/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "124" .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/124/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/124/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
-
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .

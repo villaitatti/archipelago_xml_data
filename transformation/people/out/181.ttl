@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,17 +10,22 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/181/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Merchant"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/181/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "181" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/181/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Acquisì il titolo di nobile nel 1646. Fu, insieme al fratello Giovan Donato, un collezionista d'arte"@it , "He became a nobleman in 1646. He was an art collector along with his brother Giovan Donato"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/181/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1604"@en .
+        crm:P82a_begin_of_the_begin  "1604-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/birth>
         a                     crm:E67_Birth ;
@@ -27,19 +33,19 @@
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/181/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1678-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/181>
-        a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/1> ;
-        crm:P1_is_identified_by  "181"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/181/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/181/given_name> ;
+        a                           crm:E39_Actor ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300435149> , <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300025245> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/181/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/181/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/181/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/181/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/181/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/181/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/181/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Art collector with the brother Giovan Donato"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/surname>
         a                crm:E41_Appellation ;
@@ -48,7 +54,16 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/181/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
+
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300025245>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Merchant"@en , "Mercante"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/given_name>
         a                crm:E41_Appellation ;
@@ -56,12 +71,15 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Orazio"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300435149>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Art collector"@en , "Collezionista d'arte"@it .
+
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+        rdfs:label  "Venice"@en .

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -14,13 +15,13 @@
         rdfs:label       "da Villanova"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Landowner"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/45/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "45" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth>
         a                     crm:E67_Birth ;
@@ -28,19 +29,22 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/45/activity/1> ;
-        crm:P1_is_identified_by  "45"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/45/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/45/activity/300230871> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/45/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/45/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/45/birth> .
 
 geonames:3164175  a  crm:E53_Place ;
-        rdfs:label  "3164175"@en .
+        rdfs:label  "Villanova"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Gerardino"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/45/activity/300230871>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Landowner"@en , "Proprietario terriero"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

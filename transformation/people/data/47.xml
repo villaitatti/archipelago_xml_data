@@ -1,24 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>47</ID_PERSON>
-	<Given_Name>
-		<eng>Angelo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Bragadin</eng>
-	</Surname>
+	<Given_Name>Angelo</Given_Name>
+	<Surname>Bragadin</Surname>
 	<Titles>
-		<Title>
-			<eng>Bishop</eng>
-		</Title>
-		<Title>
-			<aat>300025756</aat>
-			<eng>Bishop</eng>
-		</Title>
-		<Title>
-			<aat>300000645</aat>
-			<eng>Prior</eng>
-		</Title>
 		<Title>
 			<aat>300000645</aat>
 			<ita>Priore</ita>
@@ -49,11 +34,22 @@
 			<eng>Bishop of Vicenza</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death>3164419</Place_of_death>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164419</geo>
+		<label>Vicenza</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
-		<Work_location>3164419</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
+		<Work_location>
+			<geo>3164419</geo>
+			<label>Vicenza</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest>1560</Death_Date_Latest>
@@ -61,17 +57,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>45</ID_EVENT>
-			<Role>Prior of San Secondo</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Angelo</Name>
-			<Surname>Bragadin</Surname>
-		</Source>
-	</Sources>
 </ROW>

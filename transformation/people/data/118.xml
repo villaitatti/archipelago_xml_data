@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>118</ID_PERSON>
-	<Given_Name>
-		<eng>Hugues</eng>
-	</Given_Name>
-	<Surname>
-		<eng>de Comminelles</eng>
-	</Surname>
+	<Given_Name>Hugues</Given_Name>
+	<Surname>de Comminelles</Surname>
 	<Activities>
 		<Activity>
 			<aat>OCC340040</aat>
@@ -14,10 +10,16 @@
 			<eng>French secretary of Alfonso, Duke of Calabria</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>France</Work_location>
+		<Work_location>
+			<label>France</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -25,12 +27,4 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>143</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

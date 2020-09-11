@@ -1,22 +1,13 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>156</ID_PERSON>
-	<Given_Name>
-		<ita>Giovanni</ita>
-		<eng>John</eng>
-	</Given_Name>
-	<Surname>
-		<ita>Paleologo</ita>
-		<eng>Palaiologos</eng>
-	</Surname>
+	<Given_Name>John {Giovanni}</Given_Name>
+	<Surname>Palaiologos {Paleologo}</Surname>
 	<Alias>
 		<ita>Giovanni VIII Paleologo</ita>
 		<eng>John VIII Palaiologos</eng>
 	</Alias>
 	<Titles>
-		<Title>
-			<eng>Emperor</eng>
-		</Title>
 		<Title>
 			<aat>300025480</aat>
 			<ita>Imperatore</ita>
@@ -40,10 +31,16 @@
 			<eng>Byzantine Emperor</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Constantinople</Place_of_birth>
-	<Place_of_death>Constantinople</Place_of_death>
+	<Place_of_birth>
+		<label>Constantinople</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label>Constantinople</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Constantinople</Work_location>
+		<Work_location>
+			<label>Constantinople</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1392-12-18</Birth_Date_Earliest>
 	<Death_Date_Latest>1448-10-31</Death_Date_Latest>
@@ -51,15 +48,4 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>139</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>140</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

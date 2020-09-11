@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,28 +10,43 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+aat:300025063  a         crm:E41_Appellation ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/153/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Engineer"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/153/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/153/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "153" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/153/activity/300025063>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engineer"@en , "Ingegnere"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/153>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "153"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/153/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/153/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/153/activity/300025063> , <https://archipelago.itatti.harvard.edu/resource/actor/153/activity/300024987> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/153/identifier> , aat:300025063 , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/153/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Graziussi"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+aat:300024987  a         crm:E41_Appellation ;
+        rdfs:label       "Architetto"@it , "Architect"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153/given_name>
         a                crm:E41_Appellation ;

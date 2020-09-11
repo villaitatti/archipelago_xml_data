@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -16,8 +17,14 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/126>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "126"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/126/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/126/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/126/activity/OCC340018> , <https://archipelago.itatti.harvard.edu/resource/actor/126/activity/300025809> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/126/given_name> , aat:300025533 , <https://archipelago.itatti.harvard.edu/resource/actor/126/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/126/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/126/alias> , aat:300025809 ;
+        crm:P93i_was_taken_out_of_existence_by
+                <https://archipelago.itatti.harvard.edu/resource/actor/126/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/activity/300025809>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Physician"@en , "Medico"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -25,8 +32,43 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/126/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Capodivacca"@it ;
+        rdfs:label       "Capivaccio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/birth>
+        a       crm:E67_Birth .
+
+aat:300025533  a         crm:E41_Appellation ;
+        rdfs:label       "Professore"@it , "Professor"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1586-03-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/activity/OCC340018>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Professor of medicine"@en , "Professore di medicina"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/126/death/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "126" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/alias>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Capodivacca"@en .
+
+aat:300025809  a         crm:E41_Appellation ;
+        rdfs:label       "Medico"@it , "Physician"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

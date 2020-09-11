@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,25 +10,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/152/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Count"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Antonio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/152/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Consigliere di Luogotenenza"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/152>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/152/activity/1> ;
-        crm:P1_is_identified_by  "152"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/152/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/152/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/152/activity/OCC340062> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/152/identifier> , aat:300251948 , <https://archipelago.itatti.harvard.edu/resource/actor/152/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/152/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -38,9 +29,21 @@
         rdfs:label       "Muzzani"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+aat:300251948  a         crm:E41_Appellation ;
+        rdfs:label       "Conte"@it , "Count"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/152/activity/OCC340062>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Council member of the Luogotenenza delle province venete"@en , "Consigliere di luogotenenza"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/152/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "152" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

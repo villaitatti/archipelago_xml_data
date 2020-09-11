@@ -1,14 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>24</ID_PERSON>
-	<Surname>
-		<ita>Canonici regolari di Santo Spirito</ita>
-		<eng>Canons regular of Santo Spirito</eng>
-	</Surname>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Given_Name/>
+	<Surname>Canons regular of Santo Spirito {Canonici regolari di Santo Spirito}</Surname>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1140</Birth_Date_Earliest>
 	<Death_Date_Latest>1656-04-29</Death_Date_Latest>
@@ -16,58 +23,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>20</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>22</ID_EVENT>
-			<Role>New owners</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>24</ID_EVENT>
-			<Role/>
-		</Event>
-		<Event>
-			<ID_EVENT>28</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>29</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>30</ID_EVENT>
-			<Role>Suppressed order</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>62</ID_EVENT>
-			<Role>Reformed order</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>66</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>27</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>26</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name/>
-			<Surname>Lateran Canons of Santo Spirito</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>137</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

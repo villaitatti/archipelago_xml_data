@@ -1,14 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>124</ID_PERSON>
-	<Surname>
-		<ita>Provveditori e Sopraprovveditori alla Sanità</ita>
-		<eng>Magistrate for Health</eng>
-	</Surname>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Given_Name/>
+	<Surname>Magistrate for Health {Provveditori e Sopraprovveditori alla Sanità}</Surname>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1486-01-07</Birth_Date_Earliest>
 	<Death_Date_Latest/>
@@ -16,31 +23,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>94</ID_EVENT>
-			<Role>Office involved</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>95</ID_EVENT>
-			<Role>Office involved</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>149</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>154</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>155</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>158</ID_EVENT>
-			<Role>Decision makers</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

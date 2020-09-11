@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -22,20 +23,27 @@
         rdfs:label       "Valerio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
+aat:300266789  a         crm:E41_Appellation ;
+        rdfs:label       "Frate"@it , "Friar"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/96/activity/OCC340068>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Observant friar of Santo Spirito"@en , "Frate osservante di Santo Spirito"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/96/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Bonaventura Maria"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/96/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Observant friar of Santo Spirito"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/96>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/96/activity/1> ;
-        crm:P1_is_identified_by  "96"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/96/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/96/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/96/activity/OCC340068> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/96/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/96/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/96/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/96/birth> .
 
@@ -44,4 +52,8 @@
         rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@en .
+        rdfs:label  "Venice"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/96/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "96" .

@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>23</ID_PERSON>
-	<Given_Name>
-		<eng>Jacopo</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Tatti</eng>
-	</Surname>
+	<Given_Name>Jacopo</Given_Name>
+	<Surname>Tatti</Surname>
 	<Alias>
 		<eng>Jacopo Sansovino</eng>
 	</Alias>
@@ -32,11 +28,22 @@
 			<eng>Sculptor</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3176959</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3176959</geo>
+		<label>Florence</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>Florenze</Work_location>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<label>Florenze</label>
+		</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1486-0-02</Birth_Date_Earliest>
 	<Death_Date_Latest>1570-11-27</Death_Date_Latest>
@@ -44,17 +51,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>25</ID_EVENT>
-			<Role>Architect involved in the church's restoration</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Jacopo</Name>
-			<Surname>Tatti</Surname>
-		</Source>
-	</Sources>
 </ROW>

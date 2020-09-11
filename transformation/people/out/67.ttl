@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,33 +10,50 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+aat:300025063  a         crm:E41_Appellation ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/67/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1489"@en .
+        crm:P82a_begin_of_the_begin  "1489-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/67/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1560-03-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/67/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Sabbadino"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/67/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Engineer"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/67/activity/300025063>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engineer"@en , "Ingegnere"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/67/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/67/birth/date> ;
         crm:P7_took_place_at  geonames:3178784 .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/67/activity/OCC340001>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Lagoon chief surveyor"@en , "Proto alla laguna"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/67/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "67" .
+
 geonames:3178784  a  crm:E53_Place ;
-        rdfs:label  "3178784"@en .
+        rdfs:label  "Chioggia"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/67/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/67/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
@@ -44,31 +62,21 @@ geonames:3178784  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/67>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/1> ;
-        crm:P1_is_identified_by  "67"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/67/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/67/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/67/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/OCC340001> , <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/300025063> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/67/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/67/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/67/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/67/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/67/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/67/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Proto dei Savi ed Esecutori alle Acque"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/67/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Cristoforo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/67/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Proto"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+        rdfs:label  "Venice"@en .

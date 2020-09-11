@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -14,18 +15,21 @@
         rdfs:label       "Lazzaroni"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/178/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Patriarchal vicar"@en .
+aat:300025774  a         crm:E41_Appellation ;
+        rdfs:label       "Sacerdote"@it , "Priest"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/178/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Monsignor"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340057>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Parish priest of Sant'Angelo"@en , "Parroco di Sant'Angelo"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/178/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "178" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -38,13 +42,12 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/178>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/1> ;
-        crm:P1_is_identified_by  "178"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/178/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/178/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/178/given_name> .
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340058> , <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340057> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/178/identifier> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/178/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/178/given_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/178/activity/1>
+<https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340058>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Parish priest of the church of Sant'Angelo"@en .
+        rdfs:label  "Patriarchal vicar"@en , "Vicario patriarcale"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;

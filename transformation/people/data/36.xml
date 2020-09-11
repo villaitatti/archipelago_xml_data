@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>36</ID_PERSON>
-	<Given_Name>
-		<eng>Jacometto</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Veneziano</eng>
-	</Surname>
+	<Given_Name>Jacometto</Given_Name>
+	<Surname>Veneziano</Surname>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>
@@ -19,10 +15,18 @@
 			<eng>Miniaturist</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death/>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1472</Birth_Date_Earliest>
 	<Death_Date_Latest>1497</Death_Date_Latest>
@@ -30,12 +34,4 @@
 	<Will_Date/>
 	<Century>15th cent.</Century>
 	<Fraction_Century>Second half of the century (50-99)</Fraction_Century>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>30</ID_SOURCE>
-			<Name>Jacometto</Name>
-			<Surname>Veneziano</Surname>
-		</Source>
-	</Sources>
 </ROW>

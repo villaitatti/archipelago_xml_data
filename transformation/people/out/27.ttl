@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,80 +10,101 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/1/date>
+<https://archipelago.itatti.harvard.edu/resource/actor/27/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1655"@en ;
-        crm:P82b_end_of_the_end      "1667"@en .
+        crm:P82a_begin_of_the_begin  "1599-02-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Pope"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/1/date> .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "27" .
+
+aat:300025774  a         crm:E41_Appellation ;
+        rdfs:label       "Sacerdote"@it , "Priest"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinale"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/27/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/27/death/date> ;
+        crm:P7_took_place_at  geonames:3169070 .
+
+aat:300025773  a         crm:E41_Appellation ;
+        rdfs:label       "Papa"@it , "Pope"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+geonames:3169070  a  crm:E53_Place ;
+        rdfs:label  "Rome"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/surname>
+        a           crm:E55_Type ;
+        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/27/birth/date> ;
         crm:P7_took_place_at  geonames:3166548 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/27/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Fabio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1667-05-22T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+geonames:3166548  a  crm:E53_Place ;
+        rdfs:label  "Siena"@en .
+
+aat:300025758  a         crm:E41_Appellation ;
+        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025774>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Priest  (1634)"@en , "Sacerdote"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340024>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Imola  (1652)"@en , "Vescovo di Imola"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27>
-        a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/1> ;
-        crm:P1_is_identified_by     "27"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/27/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/27/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/27/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/27/title/1> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/27biography> ;
+        a                        crm:E39_Actor ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340023> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340024> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025774> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/27/surname> , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/27/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/27/alias> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/27/given_name> , aat:300025756 , aat:300025773 ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/27/death> .
-
-geonames:3169070  a  crm:E53_Place ;
-        rdfs:label  "3169070"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Chigi"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/27/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1599-02-13"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025773>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Pope"@en , "Papa"@it .
 
-geonames:3166548  a  crm:E53_Place ;
-        rdfs:label  "3166548"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340023>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Nardò  (1635)"@en , "Vescovo di Nardò"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/given_name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Fabio"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/27/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Pope"@en ;
+aat:300025756  a         crm:E41_Appellation ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/27/death>
-        a                     crm:E69_Death ;
-        crm:P7_took_place_at  geonames:3169070 .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/27biography>
-        a                crm:E73_Information_Object ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Pope Alexander VII"@it .
+        rdfs:label  "Papa Alessandro VII"@it , "Pope Alexander VII"@en .

@@ -1,36 +1,23 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>189</ID_PERSON>
-	<Given_Name>
-		<eng>Todero</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Balbi</eng>
-	</Surname>
+	<Given_Name>Todero</Given_Name>
+	<Surname>Balbi</Surname>
 	<Occupation>
 		<aat>300236547</aat>
 		<ita>Nobiluomo</ita>
 		<eng>Nobleman</eng>
 	</Occupation>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>164</ID_EVENT>
-			<Role>Mediator</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>161</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

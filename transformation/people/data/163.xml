@@ -1,33 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>163</ID_PERSON>
-	<Given_Name>
-		<eng>Egidio</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Antonini</eng>
-	</Surname>
+	<Given_Name>Egidio</Given_Name>
+	<Surname>Antonini</Surname>
 	<Alias>
 		<eng>Giles of Viterbo</eng>
 	</Alias>
 	<Titles>
 		<Title>
 			<aat>300025756</aat>
+			<ita>Vescovo</ita>
 			<eng>Bishop</eng>
-		</Title>
-		<Title>
-			<aat>300025758</aat>
-			<eng>Cardinal</eng>
 		</Title>
 		<Title>
 			<aat>300025758</aat>
 			<ita>Cardinale</ita>
 			<eng>Cardinal</eng>
-		</Title>
-		<Title>
-			<aat>300025756</aat>
-			<ita>Vescovo</ita>
-			<eng>Bishop</eng>
 		</Title>
 	</Titles>
 	<Patronymic>
@@ -54,10 +42,19 @@
 			<eng>Bishop of Viterbo and Tuscania</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164039</Place_of_birth>
-	<Place_of_death>3169070</Place_of_death>
+	<Place_of_birth>
+		<geo>3164039</geo>
+		<label>Viterbo</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3169070</geo>
+		<label>Rome</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3169070</Work_location>
+		<Work_location>
+			<geo>3169070</geo>
+			<label>Rome</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1472</Birth_Date_Earliest>
 	<Death_Date_Latest>1532-11-12</Death_Date_Latest>
@@ -65,11 +62,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>144</ID_EVENT>
-			<Role>Guest</Role>
-		</Event>
-	</Events>
-	<Sources/>
 </ROW>

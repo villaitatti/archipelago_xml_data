@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>55</ID_PERSON>
-	<Given_Name>
-		<eng>Zaccaria</eng>
-	</Given_Name>
-	<Surname>
-		<eng>da Luni</eng>
-	</Surname>
+	<Given_Name>Zaccaria</Given_Name>
+	<Surname>da Luni</Surname>
 	<Titles>
-		<Title>
-			<eng>Father</eng>
-		</Title>
 		<Title>
 			<aat>300025765</aat>
 			<ita>Monaco</ita>
@@ -31,10 +24,17 @@
 			<eng>Vicar of San Secondo  (1535)</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Luni</Place_of_birth>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label>Luni</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
@@ -42,21 +42,4 @@
 	<Will_Date/>
 	<Century>16th cent.</Century>
 	<Fraction_Century>Entire century (0-99)</Fraction_Century>
-	<Events>
-		<Event>
-			<ID_EVENT>18</ID_EVENT>
-			<Role>Order's new vicary</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>55</ID_EVENT>
-			<Role/>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Zaccaria</Name>
-			<Surname>da Luni</Surname>
-		</Source>
-	</Sources>
 </ROW>

@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,6 +12,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/160/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/given_name>
@@ -22,28 +24,29 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/160/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Doge"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/160/activity/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/160/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Doge"@en ;
+aat:300025463  a         crm:E41_Appellation ;
+        rdfs:label       "Doge"@it , "Doge"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/160/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1501"@en ;
-        crm:P82b_end_of_the_end      "1521"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/160/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "160" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/160/activity/OCC340005>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Doge of Venice"@en , "Doge di Venezia"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1436-11-16"@en .
+        crm:P82a_begin_of_the_begin  "1436-11-16T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/160/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1521-06-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/surname>
         a                crm:E41_Appellation ;
@@ -51,8 +54,7 @@
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Gerolamo"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/birth>
         a                     crm:E67_Birth ;
@@ -65,13 +67,12 @@
         rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it , "3164603"@en .
+        rdfs:label  "Venice"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/160/activity/1> ;
-        crm:P1_is_identified_by  "160"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/160/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/160/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/160/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/160/activity/OCC340005> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/160/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/160/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/160/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/160/birth> ;
         crm:P93i_was_taken_out_of_existence_by

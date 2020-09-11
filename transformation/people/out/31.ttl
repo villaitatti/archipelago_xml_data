@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -23,20 +24,30 @@
         rdfs:label       "Elisabetta Graziosa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/31biography>
-        a                crm:E73_Information_Object ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/31>
         a                           crm:E39_Actor ;
-        crm:P1_is_identified_by     "31"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/31/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/31/given_name> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/31biography> ;
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/31/activity/300115251> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/31/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/31/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/31/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/31/biography> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/31/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
+<https://archipelago.itatti.harvard.edu/resource/actor/31/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "31" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/31/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Era seppellita all'interno della chiesa di San Secondo"@it , "She was buried in the church of San Secondo"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/31/activity/300115251>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Patron"@en , "Committente"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/31/death>
         a                     crm:E69_Death ;
@@ -47,4 +58,4 @@
         rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+        rdfs:label  "Venice"@en .

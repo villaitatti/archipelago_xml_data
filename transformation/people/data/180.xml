@@ -1,16 +1,9 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>180</ID_PERSON>
-	<Given_Name>
-		<eng>Andrea</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Mocenigo</eng>
-	</Surname>
+	<Given_Name>Andrea</Given_Name>
+	<Surname>Mocenigo</Surname>
 	<Titles>
-		<Title>
-			<eng>Father</eng>
-		</Title>
 		<Title>
 			<aat>300025765</aat>
 			<ita>Monaco</ita>
@@ -29,14 +22,16 @@
 			<eng>Camaldolese monk in Monte Rua</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth/>
-	<Place_of_death/>
+	<Place_of_birth>
+		<label/>
+	</Place_of_birth>
+	<Place_of_death>
+		<label/>
+	</Place_of_death>
 	<Birth_Date_Earliest/>
 	<Death_Date_Latest/>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>17th cent.</Century>
 	<Fraction_Century/>
-	<Events/>
-	<Sources/>
 </ROW>

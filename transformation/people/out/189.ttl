@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -20,8 +21,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/189>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  "189"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/189/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/189/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/189/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/189/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/189/given_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/189/given_name>
         a                crm:E41_Appellation ;
@@ -31,3 +31,7 @@
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/189/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "189" .

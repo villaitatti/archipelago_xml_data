@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -11,10 +12,15 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/165/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/165/death/date> ;
         crm:P7_took_place_at  geonames:3173435 .
 
 geonames:3173435  a  crm:E53_Place ;
-        rdfs:label  "3173435"@it , "3173435"@en .
+        rdfs:label  "Milan"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/165/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1535-11-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -22,34 +28,31 @@ geonames:3173435  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/165/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1495-02-04"@en .
+        crm:P82a_begin_of_the_begin  "1495-02-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/165/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Sforza"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/165/activity/1/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1515"@en ;
-        crm:P82b_end_of_the_end      "1535"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/165/title/1>
-        a                crm:E35_Title ;
-        rdfs:label       "Duke"@en ;
+aat:300132247  a         crm:E41_Appellation ;
+        rdfs:label       "Duca"@it , "Duke"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/165/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "165" .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/165/alias>
         a           crm:E41_Appellation ;
-        rdfs:label  "Francesco II"@it .
+        rdfs:label  "Francesco II"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a           crm:E21_Person ;
-        rdfs:label  "Ludovico"@it .
+        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/165/birth>
         a                     crm:E67_Birth ;
@@ -61,11 +64,6 @@ geonames:3173435  a  crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Surname"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/165/activity/1>
-        a                     frbr:F51_Pursuit ;
-        rdfs:label            "Duke of Milan"@en ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/165/activity/1/date> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/165/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Francesco"@it ;
@@ -73,10 +71,13 @@ geonames:3173435  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/165>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/165/activity/1> ;
-        crm:P1_is_identified_by  "165"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/165/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/165/title/1> , <https://archipelago.itatti.harvard.edu/resource/actor/165/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/165/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/165/activity/OCC340065> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/165/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/165/alias> , aat:300132247 , <https://archipelago.itatti.harvard.edu/resource/actor/165/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/165/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/165/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/165/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/165/activity/OCC340065>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Duke of Milan"@en , "Duca di Milano"@it .

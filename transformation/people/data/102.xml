@@ -1,14 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>102</ID_PERSON>
-	<Surname>
-		<ita>Canonici lateranensi di Santa Maria della Carità</ita>
-		<eng>Lateran Canons of Santa Maria della Carità</eng>
-	</Surname>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Given_Name/>
+	<Surname>Lateran Canons of Santa Maria della Carità {Canonici lateranensi di Santa Maria della Carità}</Surname>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1121</Birth_Date_Earliest>
 	<Death_Date_Latest>1791-08-05</Death_Date_Latest>
@@ -16,71 +23,4 @@
 	<Will_Date/>
 	<Century/>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>76</ID_EVENT>
-			<Role>New owners</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>77</ID_EVENT>
-			<Role>New owners</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>122</ID_EVENT>
-			<Role>Recipient</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>123</ID_EVENT>
-			<Role>New inhabitants</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>125</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>126</ID_EVENT>
-			<Role>Patrons</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>127</ID_EVENT>
-			<Role>Recipients</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>128</ID_EVENT>
-			<Role>Host</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>148</ID_EVENT>
-			<Role>Decision makers</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>159</ID_EVENT>
-			<Role>Owners</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>160</ID_EVENT>
-			<Role>Decision makers</Role>
-		</Event>
-		<Event>
-			<ID_EVENT>164</ID_EVENT>
-			<Role>Potential sellers</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>157</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>160</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-		<Source>
-			<ID_SOURCE>161</ID_SOURCE>
-			<Name/>
-			<Surname/>
-		</Source>
-	</Sources>
 </ROW>

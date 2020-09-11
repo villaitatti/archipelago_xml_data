@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,30 +10,48 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+aat:300025063  a         crm:E41_Appellation ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/79/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "79" .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/79biography>
-        a                crm:E73_Information_Object ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/Biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/79/given_name>
         a                crm:E41_Appellation ;
         rdfs:label       "Francesco"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/Biography>
-        a       crm:E55_Type .
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/biography>
+        a           crm:E55_Type ;
+        rdfs:label  "Biography"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/79/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Fu attivo tra il 1648 e il 1689"@it , "He was active beween 1648 and 1689"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/79/activity/300025063>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Engineer"@en , "Ingegnere"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/79/activity/OCC340001>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Expert to the Provveditori sopra beni inculti"@en , "Perito dei Provveditori sopra beni inculti"@it , "Lagoon chief surveyor"@en , "Proto alla laguna"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/79/surname>
         a                crm:E41_Appellation ;
         rdfs:label       "Alberti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/79/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Perito alla Laguna"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>
         a           crm:E55_Type ;
@@ -40,7 +59,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/79>
         a                           crm:E39_Actor ;
-        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/79/activity/1> ;
-        crm:P1_is_identified_by     "79"@it ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/79/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/79/given_name> ;
-        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/79biography> .
+        crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/79/activity/300025063> , <https://archipelago.itatti.harvard.edu/resource/actor/79/activity/OCC340001> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/79/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/79/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/79/given_name> ;
+        crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/79/biography> .

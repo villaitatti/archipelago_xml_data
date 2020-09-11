@@ -1,12 +1,8 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>66</ID_PERSON>
-	<Given_Name>
-		<eng>Domenico</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Lovisa</eng>
-	</Surname>
+	<Given_Name>Domenico</Given_Name>
+	<Surname>Lovisa</Surname>
 	<Activities>
 		<Activity>
 			<aat>300025574</aat>
@@ -19,10 +15,19 @@
 			<eng>Printer</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>3164603</Place_of_birth>
-	<Place_of_death>3164603</Place_of_death>
+	<Place_of_birth>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<geo>3164603</geo>
+		<label>Venice</label>
+	</Place_of_death>
 	<Work_locations>
-		<Work_location>3164603</Work_location>
+		<Work_location>
+			<geo>3164603</geo>
+			<label>Venice</label>
+		</Work_location>
 	</Work_locations>
 	<Birth_Date_Earliest>1690</Birth_Date_Earliest>
 	<Death_Date_Latest>1750</Death_Date_Latest>
@@ -30,17 +35,4 @@
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century>First half of the century (0-49)</Fraction_Century>
-	<Events/>
-	<Sources>
-		<Source>
-			<ID_SOURCE>50</ID_SOURCE>
-			<Name>Domenico</Name>
-			<Surname>Lovisa</Surname>
-		</Source>
-		<Source>
-			<ID_SOURCE>96</ID_SOURCE>
-			<Name>Domenico</Name>
-			<Surname>Lovisa</Surname>
-		</Source>
-	</Sources>
 </ROW>

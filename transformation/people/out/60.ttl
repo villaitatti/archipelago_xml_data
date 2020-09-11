@@ -1,5 +1,6 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <https://www.geonames.org/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -9,8 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/60/activity/300025175>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Lithographer"@en , "Litografo"@it .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/60/death>
         a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/60/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
@@ -22,32 +28,26 @@
         rdfs:label       "Moro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/60/activity/1>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Painter"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/60/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "60" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/60/birth/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1817-12-09"@en .
-
-<https://www.geonames.org/Zenson%20di%20Piave%20%28Treviso%29>
-        a           crm:E53_Place ;
-        rdfs:label  "Zenson di Piave (Treviso)"@en .
+        crm:P82a_begin_of_the_begin  "1817-12-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/60/birth>
         a                     crm:E67_Birth ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/60/birth/date> ;
-        crm:P7_took_place_at  <https://www.geonames.org/Zenson%20di%20Piave%20%28Treviso%29> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/60/birth/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/60/activity/2>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Lithographer"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/60/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1885-02-25T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/60>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/60/activity/2> , <https://archipelago.itatti.harvard.edu/resource/actor/60/activity/1> ;
-        crm:P1_is_identified_by  "60"@it ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/60/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/60/given_name> ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/60/activity/300025175> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/60/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/60/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/60/given_name> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/60/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -63,4 +63,4 @@
         rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "3164603"@it .
+        rdfs:label  "Venice"@en .

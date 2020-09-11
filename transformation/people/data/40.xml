@@ -1,29 +1,21 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>40</ID_PERSON>
-	<Given_Name>
-		<eng>Napoléon</eng>
-	</Given_Name>
-	<Surname>
-		<eng>Bonaparte</eng>
-	</Surname>
+	<Given_Name>Napoléon</Given_Name>
+	<Surname>Bonaparte</Surname>
 	<Alias>
 		<eng>Napoleon</eng>
 	</Alias>
 	<Titles>
 		<Title>
-			<aat>300025480</aat>
-			<eng>Emperor</eng>
+			<aat>300025481</aat>
+			<ita>Re</ita>
+			<eng>King</eng>
 		</Title>
 		<Title>
 			<aat>300025480</aat>
 			<ita>Imperatore</ita>
 			<eng>Emperor</eng>
-		</Title>
-		<Title>
-			<aat>300025481</aat>
-			<ita>Re</ita>
-			<eng>King</eng>
 		</Title>
 	</Titles>
 	<Patronymic>
@@ -57,25 +49,16 @@
 			<eng>Monarch of Italy</eng>
 		</Activity>
 	</Activities>
-	<Place_of_birth>Ajaccio</Place_of_birth>
-	<Place_of_death>Island of Saint Helena</Place_of_death>
+	<Place_of_birth>
+		<label>Ajaccio</label>
+	</Place_of_birth>
+	<Place_of_death>
+		<label>Island of Saint Helena</label>
+	</Place_of_death>
 	<Birth_Date_Earliest>1769-08-15</Birth_Date_Earliest>
 	<Death_Date_Latest>1821-05-05</Death_Date_Latest>
 	<Marriage_Date/>
 	<Will_Date/>
 	<Century>18th cent.</Century>
 	<Fraction_Century/>
-	<Events>
-		<Event>
-			<ID_EVENT>40</ID_EVENT>
-			<Role>Decision maker</Role>
-		</Event>
-	</Events>
-	<Sources>
-		<Source>
-			<ID_SOURCE>null</ID_SOURCE>
-			<Name>Napoleone</Name>
-			<Surname>Bonaparte</Surname>
-		</Source>
-	</Sources>
 </ROW>
