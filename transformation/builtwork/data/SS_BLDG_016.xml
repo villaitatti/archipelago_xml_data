@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_016</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1500-01-01</Start>
+	<End>1849-12-31</End>
+	<Name>Magazzino</Name>
+	<SHP_Lenght>33.9415656530877</SHP_Lenght>
+	<SHP_Area>43.1375600670842</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Private</Function>
+			<Start_Function>1563-01-01</Start_Function>
+			<End_Function>1806-07-27</End_Function>
+		</Function>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1806-07-28</Start_Function>
+			<End_Function>1849-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Service</eng>
+			<ita>Infrastrutture di servizio</ita>
+			<aat>300008553</aat>
+			<Start_Use>1563-01-01</Start_Use>
+			<End_Use>1849-12-31</End_Use>
+		</Use>
+		<Use>
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1806-07-28</Start_Use>
+			<End_Use>1849-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Warehouse</eng>
+			<ita>Magazzino</ita>
+			<aat>300007722</aat>
+			<Start_Typology>1563-01-01</Start_Typology>
+			<End_Typology>1849-12-31</End_Typology>
+		</Typology>
+		<Typology>
+			<eng>Warehouse</eng>
+			<ita>Magazzino</ita>
+			<aat>300007722</aat>
+			<Start_Typology>1500-01-01</Start_Typology>
+			<End_Typology>1849-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<End_Owner>33.9028463184265</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Owner>1534-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner>
+			<Name>Austrian Empire</Name>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
+	</Owners>
+	<Tenants>
+		<Tenant>
+			<Name>43.0848513789424</Name>
+			<Start_Tenant>1563-01-01</Start_Tenant>
+			<End_Tenant>1806-07-27</End_Tenant>
+		</Tenant>
+		<Tenant/>
+	</Tenants>
+</row>

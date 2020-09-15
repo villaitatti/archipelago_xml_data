@@ -37,7 +37,7 @@
                 </namespaces>
             </target_info>
             <target_info>
-                <target_schema schema_file="CRMpc_v1.1_0.rdfs___10-09-2020104102___12162.rdfs" type="rdfs" version="1.1">CRMpc</target_schema>
+                <target_schema schema_file="http://www.cidoc-crm.org/sites/default/files/CRMpc_v1.1_0.rdfs" type="rdfs" version="1.1">CRMpc</target_schema>
                 <namespaces>
                     <namespace prefix="crmpc" uri="http://www.cidoc-crm.org/crmpc/"/>
                 </namespaces>
@@ -92,6 +92,9 @@
                             <instance_generator name="110-built_work-identifier">
                                 <arg name="bw_id" type="xpath">text()</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">text()</arg>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -606,6 +609,90 @@
                             <instance_generator name="153-built_work-use-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="use_id" type="xpathPosition">../</arg>
+                            </instance_generator>
+                            <additional>
+                                <relationship>crm:P82b_end_of_the_end</relationship>
+                                <entity>
+                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                    <instance_info>
+                                        <constant/>
+                                    </instance_info>
+                                    <instance_generator name="GermanDateTime">
+                                        <arg name="bound" type="constant">Upper</arg>
+                                        <arg name="text" type="xpath">text()</arg>
+                                    </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+        </mapping>
+        <mapping>
+            <domain>
+                <source_node>/row/Typologies/Typology</source_node>
+                <target_node>
+                    <entity>
+                        <type>crm:E5_Event</type>
+                        <instance_generator name="160-built_work-typology">
+                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                            <arg name="typology_id" type="xpathPosition">.</arg>
+                        </instance_generator>
+                    </entity>
+                </target_node>
+            </domain>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Start_Typology</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>crm:P4_has_time-span</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Start_Typology</source_node>
+                    <target_node>
+                        <entity>
+                            <type>crm:E52_Time-Span</type>
+                            <instance_generator name="163-built_work-typology-date">
+                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                                <arg name="typology_id" type="xpathPosition">../</arg>
+                            </instance_generator>
+                            <additional>
+                                <relationship>crm:P82a_begin_of_the_begin</relationship>
+                                <entity>
+                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                    <instance_info>
+                                        <constant/>
+                                    </instance_info>
+                                    <instance_generator name="GermanDateTime">
+                                        <arg name="bound" type="constant">Lower</arg>
+                                        <arg name="text" type="xpath">text()</arg>
+                                    </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>End_Typology</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>crm:P4_has_time-span</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>End_Typology</source_node>
+                    <target_node>
+                        <entity>
+                            <type>crm:E52_Time-Span</type>
+                            <instance_generator name="163-built_work-typology-date">
+                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                                <arg name="typology_id" type="xpathPosition">../</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82b_end_of_the_end</relationship>

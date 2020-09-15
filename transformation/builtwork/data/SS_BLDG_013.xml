@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_013</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1848-01-01</Start>
+	<End>1851-12-31</End>
+	<Name>Deposito</Name>
+	<SHP_Lenght>13.1317811323526</SHP_Lenght>
+	<SHP_Area>1.02881358410444</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1848-01-01</Start_Function>
+			<End_Function>1851-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1848-01-01</Start_Use>
+			<End_Use>1851-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Storage facility</eng>
+			<ita>Deposito</ita>
+			<aat>300007700</aat>
+			<Start_Typology>1848-01-01</Start_Typology>
+			<End_Typology>1851-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<Name>Austrian Empire</Name>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<Name>Austrian Empire</Name>
+		</Patron>
+	</Patrons>
+</row>

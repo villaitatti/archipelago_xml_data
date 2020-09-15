@@ -126,7 +126,7 @@ def get_bw_island(name):
 def get_person(name):
   if name is not None:
     for person in people_dict:
-      current_name = re.sub(r'{.*}','',person.get(key_surname)).strip()
+      current_name = re.sub(r'[\[{].*}','',person.get(key_surname)).strip()
       if name.lower() == current_name.lower():
         return person
 

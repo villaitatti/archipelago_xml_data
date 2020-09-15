@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_008</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1563-01-01</Start>
+	<End>1851-12-31</End>
+	<Name>Vera da pozzo</Name>
+	<SHP_Lenght>4.28726950969252</SHP_Lenght>
+	<SHP_Area>1.14420085667466</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Private</Function>
+			<Start_Function>1563-01-01</Start_Function>
+			<End_Function>1806-7-27</End_Function>
+		</Function>
+		<Function>
+			<Function>Private</Function>
+			<Start_Function>1563-01-01</Start_Function>
+			<End_Function>1806-07-27</End_Function>
+		</Function>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1806-07-28</Start_Function>
+			<End_Function>1851-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Water supply</eng>
+			<ita>Approvvigionamento idrico</ita>
+			<aat>300008618</aat>
+			<Start_Use>1563-01-01</Start_Use>
+			<End_Use>1851-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Wellhead</eng>
+			<ita>Vera da pozzo</ita>
+			<aat>300052558</aat>
+			<Start_Typology>1563-01-01</Start_Typology>
+			<End_Typology>1851-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<End_Owner>4.28726950969252</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner>
+			<Name>Austrian Empire</Name>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
+	</Owners>
+	<Tenants>
+		<Tenant>
+			<Name>1.14420085667466</Name>
+			<Start_Tenant>1563-01-01</Start_Tenant>
+			<End_Tenant>1806-07-27</End_Tenant>
+		</Tenant>
+		<Tenant/>
+	</Tenants>
+	<Architects>
+		<Architect>
+			<Name>Giovanni da Zon</Name>
+		</Architect>
+	</Architects>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+		</Patron>
+	</Patrons>
+</row>

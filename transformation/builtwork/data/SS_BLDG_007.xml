@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_007</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1852-01-01</Start>
+	<End>1981-12-31</End>
+	<Name>Deposito</Name>
+	<SHP_Lenght>21.0654630025655</SHP_Lenght>
+	<SHP_Area>24.2528865808452</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1852-01-01</Start_Function>
+			<End_Function>1981-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1852-01-01</Start_Use>
+			<End_Use>1945-09-08</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Storage facility</eng>
+			<ita>Deposito</ita>
+			<aat>300007700</aat>
+			<Start_Typology>1852-01-01</Start_Typology>
+			<End_Typology>1981-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>86</ID_PERSON>
+			<Name>Venice Municipality</Name>
+			<Start_Owner>1866-10-21</Start_Owner>
+			<End_Owner>1981-12-31</End_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<Name>Austrian Empire</Name>
+		</Patron>
+	</Patrons>
+</row>

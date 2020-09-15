@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_002</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1770-01-01</Start>
+	<Name>Muro di cinta</Name>
+	<SHP_Lenght>157.253618745244</SHP_Lenght>
+	<SHP_Area>46.8268003164156</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1777-01-01</Start_Function>
+			<End_Function>1849-12-31</End_Function>
+		</Function>
+		<Function>
+			<Function>Public</Function>
+			<Start_Function>1770-01-01</Start_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1770-01-01</Start_Use>
+			<End_Use>1849-12-31</End_Use>
+		</Use>
+		<Use>
+			<eng>Abandoned</eng>
+			<ita>Abbandonato</ita>
+			<aat>300008347</aat>
+			<Start_Use>1961-01-01</Start_Use>
+		</Use>
+		<Use>
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1770-01-01</Start_Use>
+			<End_Use>1960-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Walls</eng>
+			<ita>Muro di cinta</ita>
+			<aat>300100558</aat>
+			<Start_Typology>1770-01-01</Start_Typology>
+			<End_Typology>1849-12-31</End_Typology>
+		</Typology>
+		<Typology>
+			<eng>Walls</eng>
+			<ita>Muro di cinta</ita>
+			<aat>300100558</aat>
+			<Start_Typology>1770-01-01</Start_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>88</ID_PERSON>
+			<Name>Venetian Republic</Name>
+			<Start_Owner>1770-01-01</Start_Owner>
+			<End_Owner>1797-05-11</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>86</ID_PERSON>
+			<Name>Venice Municipality</Name>
+			<Start_Owner>1866-10-21</Start_Owner>
+		</Owner>
+	</Owners>
+	<Tenants>
+		<Tenant>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Tenant>1770-01-01</Start_Tenant>
+			<End_Tenant>1806-07-28</End_Tenant>
+		</Tenant>
+		<Tenant/>
+	</Tenants>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+		</Patron>
+	</Patrons>
+</row>

@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_048</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1500-01-01</Start>
+	<End>1788-12-31</End>
+	<Name>Deposito</Name>
+	<SHP_Lenght>27.7107714310967</SHP_Lenght>
+	<SHP_Area>38.8536479159915</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Private</Function>
+			<Start_Function>1500-01-01</Start_Function>
+			<End_Function>1788-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Service</eng>
+			<ita>Infrastrutture di servizio</ita>
+			<aat>300008553</aat>
+			<Start_Use>1500-01-01</Start_Use>
+			<End_Use>1788-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Storage facility</eng>
+			<ita>Deposito</ita>
+			<aat>300007700</aat>
+			<Start_Typology>1500-01-01</Start_Typology>
+			<End_Typology>1788-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Owner>1534-01-01</Start_Owner>
+			<End_Owner>1788-12-31</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<End_Owner>27.7107714310967</End_Owner>
+		</Owner>
+		<Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Name>Dominican Friars of San Secondo</Name>
+			<Start_Owner>1534-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+	</Owners>
+	<Tenants>
+		<Tenant>
+			<Name>38.8536479159915</Name>
+			<Start_Tenant>1500-01-01</Start_Tenant>
+			<End_Tenant>1806-07-27</End_Tenant>
+		</Tenant>
+		<Tenant/>
+	</Tenants>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>18</ID_PERSON>
+			<Name>Benedectine Nuns of San Secondo</Name>
+		</Patron>
+	</Patrons>
+</row>

@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_039</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1500-01-01</Start>
+	<End>1517-12-31</End>
+	<Name>Dormitorio</Name>
+	<SHP_Lenght>83.3933846001496</SHP_Lenght>
+	<SHP_Area>366.681593736883</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Stone</eng>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function>
+			<Function>Private</Function>
+			<Start_Function>1500-01-01</Start_Function>
+			<End_Function>1517-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use>
+			<eng>Religious</eng>
+			<ita>Religioso</ita>
+			<aat>300120364</aat>
+			<Start_Use>1500-01-01</Start_Use>
+			<End_Use>1517-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology>
+			<eng>Dormitory</eng>
+			<ita>Dormitorio</ita>
+			<aat>300005668</aat>
+			<Start_Typology>1500-01-01</Start_Typology>
+			<End_Typology>1517-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner>
+			<ID_PERSON>18</ID_PERSON>
+			<Name>Benedectine nuns of San Secondo</Name>
+			<Start_Owner>1500-01-01</Start_Owner>
+			<End_Owner>1531-12-31</End_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>16</ID_PERSON>
+			<Name>Baffo family</Name>
+		</Patron>
+	</Patrons>
+</row>
