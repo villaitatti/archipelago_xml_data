@@ -239,6 +239,8 @@ for i in range(len(df)) :
   tenant_dict = {}
 
   material_set = set()
+  architect_set = set()
+  patron_set = set()
 
   # create the current bw if not already in the main dict
   if row_id not in builtworks:
@@ -333,6 +335,20 @@ for i in range(len(df)) :
       elif col == key_tenant_end:
         tenant_dict[key_tenant_end] = val
 
+      # Architect
+      elif col == key_architect:
+        if builtworks[row_id].get(key_architect) is None:
+          builtworks[row_id][key_architect] = set()
+        
+        architect_set.add(val)
+
+      # Patron
+      elif col == key_patron:
+        if builtworks[row_id].get(key_patron) is None:
+          builtworks[row_id][key_patron] = set()
+        
+        patron_set.add(val)
+
       # Residual columns
       else:
         builtworks[row_id][col] = val
@@ -360,6 +376,8 @@ for i in range(len(df)) :
     pass
 
   builtworks[row_id][key_material] = material_set
+  builtworks[row_id][key_architect] = architect_set
+  builtworks[row_id][key_patron] = patron_set
 
 for bw_id, bw in builtworks.items():
 
@@ -496,23 +514,27 @@ for bw_id, bw in builtworks.items():
       base_tag(tenant_tag, key_tenant_start, current_tenant.get(key_tenant_start))
       base_tag(tenant_tag, key_tenant_end, current_tenant.get(key_tenant_end))
 
-  """
   # Architects
-  architects = et.SubElement(xml_row, key_architects)
-  for key, architect in set_architects.items():
-    architect = et.SubElement(architects, key_architect)
+  if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:  
 
-    add_person(architect, key)
-    base_tag(architect, key_name, key)
+    architects = et.SubElement(xml_row, key_architects)
+    for current_architect in bw.get(key_architect):
+
+      architect_tag = et.SubElement(architects, key_architect)
+
+      add_person(architect_tag, current_architect)
+      base_tag(architect_tag, key_name, current_architect)
 
   # Patrons
-  patrons = et.SubElement(xml_row, key_patrons)
-  for key in bw.get(key_patron):
-    patron = et.SubElement(patrons, key_patron)
+  if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
+    
+    patrons = et.SubElement(xml_row, key_patrons)
+    for current_patron in bw.get(key_patron):
+      
+      patron_tag = et.SubElement(patrons, key_patron)
 
-    add_person(patron, key)
-    base_tag(patron, key_name, key)
-  """
+      add_person(patron_tag, current_patron)
+      base_tag(patron_tag, key_name, current_patron)
 
   final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
