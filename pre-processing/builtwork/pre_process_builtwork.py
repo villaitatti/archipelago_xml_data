@@ -37,17 +37,35 @@ def write_file(name, text, ext='xml'):
     f.write(text)
 
 def base_tag(parent, key, text):
+  # Block empty and wrong end
   text = str(text)
-  tmp = et.SubElement(parent, key)
-  if not re.match(r'^2019-12-31$', text):
-    tmp.text = text
 
-def get_bw_use(name):
+  if not text or re.match(r'^2019-12-31$', text):
+    return
+  tag = et.SubElement(parent, key)
+  tag.text = text
+
+def get_bw_use(current_use):
+  
+  if current_use.get(key_use) is not None:
+    name = current_use.get(key_use) 
+  
   for bw_use in json.loads(bw_uses):
     if name == bw_use.get(key_json_name):
-      return bw_use
 
-  return None
+      try:
+          current_use[key_json_aat] = str(int(bw_use.get(key_json_aat)))
+      except AttributeError:
+        pass
+      except TypeError:
+        pass
+      
+      try:
+        current_use[key_json_ita] = bw_use.get(key_json_ita)
+      except AttributeError:
+        pass
+
+  return current_use
 
 def get_bw_typology(current_typology):
 
@@ -72,12 +90,28 @@ def get_bw_typology(current_typology):
 
   return current_typology
 
-def get_bw_material(name):
-  for bw_material in json.loads(bw_materials):
-    if name == bw_material.get(key_json_name):
-      return bw_material
+def get_bw_material(current_material):
 
-  return None
+  name =  current_material
+  current_material = {key_material: current_material}
+
+  for bw_material in json.loads(bw_materials):
+
+    if name.lower() == bw_material.get(key_json_name).lower():
+      
+      try:
+        current_material[key_json_aat] = str(int(bw_material.get(key_json_aat)))
+      except AttributeError:
+        pass
+      except TypeError:
+        pass
+      
+      try:
+        current_material[key_json_ita] = bw_material.get(key_json_ita)
+      except AttributeError:
+        pass 
+
+  return current_material
 
 def get_bw_island(name):
   for bw_island in json.loads(bw_islands):
@@ -166,8 +200,10 @@ df = pd.read_csv(filename, sep='\t')
 builtworks = {}
 
 def clear(val):
-  if val is np.nan or val == 'nan': 
-    val = ""
+  # Clear nan words
+  if (type(val) is np.int64 or type(val) is np.float64) and np.isnan(val): 
+    return ''
+    
   return val
 
 def add_to_set(key, bw_dict, id, val):
@@ -191,52 +227,94 @@ def insert_in_list(l, to_insert):
 for i in range(len(df)) :
   row_id = df.loc[i, key_bw_id]
 
+  # Instantiate dictionaries
   typology_dict = {}
+  use_dict = {}
+  function_dict = {}
 
+  set_material = set()
+
+  # create the current bw if not already in the main dict
   if row_id not in builtworks:
     builtworks[row_id] = {}
 
+  # iterate all columns
   for y in range(1, len(df.columns)):
+
+    # save value and the column name
     val = clear(df.iloc[i, y])
     col = df.columns[y]
 
-    # Append material as set
-    if col == key_material:
-      add_to_set(key_material, builtworks, row_id, val)
+    if val is not None and type(val) is str:
 
-    elif col == key_function:
-      add_to_set(key_function, builtworks, row_id, val) 
+      # Material
+      if col == key_material:
 
-    # Append typology as set
-    elif col == key_typology:
+        if builtworks[row_id].get(key_material) is None:
+          builtworks[row_id][key_material] = set()
 
-      if builtworks[row_id].get(key_typology) is None:
-        builtworks[row_id][key_typology] = []
+        for material in val.split(';'):
+          set_material.add(material.strip())
 
-      typology_dict[key_typology] = val
+      # Function
+      elif col == key_function:
 
-    elif col == key_typology_start:
-      typology_dict[key_typology_start] = val
+        if builtworks[row_id].get(key_function) is None:
+          builtworks[row_id][key_function] = []
+        
+        function_dict[key_function] = val
 
-    elif col == key_typology_end:
-      typology_dict[key_typology_end] = val
-    
-    elif col == key_use:
-      add_to_set(key_use, builtworks, row_id, val)
-    
-    else:
-      builtworks[row_id][col] = val
+      elif col == key_function_start:
+        function_dict[key_function_start] = val
 
+      elif col == key_function_end:
+        function_dict[key_function_end] = val
+
+      # Typology
+      elif col == key_typology:
+
+        if builtworks[row_id].get(key_typology) is None:
+          builtworks[row_id][key_typology] = []
+
+        typology_dict[key_typology] = val
+
+      elif col == key_typology_start:
+        typology_dict[key_typology_start] = val
+
+      elif col == key_typology_end:
+        typology_dict[key_typology_end] = val
+      
+      # Use
+      elif col == key_use:
+
+        # Create the list if doesn't exist
+        if builtworks[row_id].get(key_use) is None:
+          builtworks[row_id][key_use] = []
+
+        use_dict[key_use] = val
+      
+      elif col == key_use_start:
+        use_dict[key_use_start] = val
+      
+      elif col == key_use_end:
+        use_dict[key_use_end] = val
+
+      # Residual columns
+      else:
+        builtworks[row_id][col] = val
+
+  # Append dictionaries only if not equal
   insert_in_list(builtworks[row_id][key_typology], typology_dict)
+  insert_in_list(builtworks[row_id][key_use], use_dict)
+  insert_in_list(builtworks[row_id][key_function], function_dict)
+
+  builtworks[row_id][key_material] = set_material 
+
 
 for bw_id, bw in builtworks.items():
 
   # Create the current row
   xml_row = et.Element(key_row)
-
-  row_date = bw.get(key_date)
-
-  # Shared elements
 
   # bw id
   base_tag(xml_row, key_bw_id, bw_id)
@@ -261,108 +339,75 @@ for bw_id, bw in builtworks.items():
   # Height
   base_tag(xml_row, key_height,  bw.get(key_height))
 
-  # Material
-  text_materials = bw.get(key_material)
-
-  if text_materials is not None:
-
-    for material in text_materials:
-      text_materials = material.split(';')
-
-      materials = et.SubElement(xml_row, key_materials)
-
-      for text_material in material:
-        material = et.SubElement(materials, key_material)
-
-        current_material = get_bw_material(text_material)
-
-        try:
-          base_tag(material, key_eng, current_material.get(key_json_name))
-        except AttributeError as err:
-          pass
-        
-        try:
-          base_tag(material, key_ita, current_material.get(key_json_ita))
-        except AttributeError as err:
-          pass
-
-        try:
-          base_tag(material, key_aat, current_material.get(key_json_aat))
-        except AttributeError as err:
-          pass
-
   # SHP_Lenght
   # base_tag(xml_row, key_shape_lenght,  bw[key_shape_lenght])
 
   # SHP_Area
   # base_tag(xml_row, key_shape_area,  bw[key_shape_area])
 
-  set_uses = dict()
-  set_patrons = dict()
-  set_architects = dict()
-  set_typologies = dict()
-  set_owners = dict()
-  set_tenants = dict()
-  set_functions = dict()
+  # Materials
+  if bw.get(key_material) is not None and len(bw.get(key_material)) > 0:
 
-  """
-  # Function
-  if type(bw.get(key_function)) is str and bw.get(key_function) not in set_functions:
-    set_functions[bw.get(key_function)] = {key_function_start: bw.get(key_function_start), key_function_end: bw.get(key_function_end)}
+    # Get the set of materials
+    text_materials = bw.get(key_material)
 
-  # Use
-  if type(bw.get(key_use)) is str and bw.get(key_use) not in set_uses :
-    set_uses[bw.get(key_use)] = {key_use_start: bw.get(key_use_start), key_use_end: bw.get(key_use_end)}
+    # Create the tag Materials
+    materials = et.SubElement(xml_row, key_materials)
 
-  # Typologies
-  if type(bw.get(key_typology)) is str and bw.get(key_typology) not in set_typologies:
-    set_typologies[bw.get(key_typology)] = {key_typology_start: bw.get(key_typology_start), key_typology_end: bw.get(key_typology_end)}
+    for current_material in text_materials:
 
-  # Owners
-  if type(bw.get(key_owner)) is str and bw.get(key_owner) not in set_owners:
-    set_owners[bw.get(key_owner)] = {key_owner_start: bw.get(key_owner_start), key_owner_end: bw.get(key_owner_end)}
+      # Create the tag Material
+      material = et.SubElement(materials, key_material)
 
-  # Tenants
-  if type(bw.get(key_tenant)) is str and bw.get(key_tenant) not in set_tenants:
-    set_tenants[bw.get(key_tenant)] = {key_tenant_start: bw.get(key_tenant_start), key_tenant_end: bw.get(key_tenant_end)}
+      current_material = get_bw_material(current_material)
 
-  # Architect
-  if type(bw.get(key_architect)) is str and bw.get(key_architect) not in set_architects:
-    set_architects[bw.get(key_architect)] = bw.get(key_architect)
-  """
-  # Function
-  # TODO accepts multiple functions but there's no mechanism to handle multiple dates
+      # Set eng name
+      base_tag(material, key_eng, current_material.get(key_material))   
+
+      if current_material.get(key_json_ita) is not None:
+        base_tag(material, key_ita, current_material.get(key_json_ita))
+
+      if current_material.get(key_json_aat) is not None:
+        base_tag(material, key_aat, current_material.get(key_json_aat))
+
+  # Functions
   if bw.get(key_function) is not None and len(bw.get(key_function)) > 0:
 
     functions = et.SubElement(xml_row, key_functions)
-    for key in bw.get(key_function):
+    for current_function in bw.get(key_function):
 
       function_tag = et.SubElement(functions, key_function)
 
-      base_tag(function_tag, key_name, key)
-      base_tag(function_tag, key_function_start, bw.get(key_function_start))
-      base_tag(function_tag, key_function_end, bw.get(key_function_end))
+      base_tag(function_tag, key_function, current_function.get(key_function))
+      base_tag(function_tag, key_function_start, current_function.get(key_function_start))
+      base_tag(function_tag, key_function_end, current_function.get(key_function_end))
 
-  # Use
-
+  # Uses
   if bw.get(key_use) is not None and len(bw.get(key_use)) > 0:
 
     uses = et.SubElement(xml_row, key_uses)
-    for key in bw.get(key_use):
+    for current_use in bw.get(key_use):
 
+      # create xml tag
       use_tag = et.SubElement(uses, key_use)
 
-      current_use = get_bw_use(key)
+      # update current_use with data from uses list
+      current_use = get_bw_use(current_use)
 
-      base_tag(use_tag, key_eng, current_use.get(key_json_name))
-      base_tag(use_tag, key_ita, current_use.get(key_json_ita))
-      base_tag(use_tag, key_aat, current_use.get(key_json_aat))
+      # Set eng name
+      base_tag(use_tag, key_eng, current_use.get(key_use))
 
-      #base_tag(use_tag, key_use_start, use[key_use_start])
-      #base_tag(use_tag, key_use_end, use[key_use_end])
+      if current_use.get(key_json_ita) is not None:
+        base_tag(use_tag, key_ita, current_use.get(key_json_ita))
 
-  if bw_id == 'SS_BLDG_008':
-    print(row_id)
+      if current_use.get(key_json_aat) is not None:
+        base_tag(use_tag, key_aat, current_use.get(key_json_aat))
+
+      if current_use.get(key_use_start) is not None:
+        base_tag(use_tag, key_use_start, current_use.get(key_use_start))
+
+      if current_use.get(key_use_end) is not None:
+        base_tag(use_tag, key_use_end, current_use.get(key_use_end))
 
   # Typologies
   if bw.get(key_typology) is not None and len(bw.get(key_typology)) > 0:
