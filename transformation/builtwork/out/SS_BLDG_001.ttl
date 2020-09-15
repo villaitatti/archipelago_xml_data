@@ -1,0 +1,153 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+aat:300006921  a  crm:E55_Type .
+
+aat:300008347  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/2>
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001>
+        a                          crm:E22_Man-Made_Object ;
+        crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/construction> ;
+        crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/1> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/identifier> ;
+        crm:P30i_custody_transferred_through
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/3> ;
+        crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/material/1> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1534-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1570-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:p82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1797-05-11T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/90>
+        a       crm:E29_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/construction/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1570-01-01"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1961-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1570-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1960-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1>
+        a                     crm:E10_Transfer_of_Custody ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/role_patron/1>
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/90> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1>
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/86>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/2>
+        a                     crm:E5_Event ;
+        rdfs:label            "Ex powderhouse"@en ;
+        crm:P2_has_type       <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/function/1>
+        a       crm:E5_Event .
+
+aat:300120590  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/construction>
+        a                     crm:E12_Production ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/construction/date> ;
+        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/role_patron/1> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/1>
+        a                     crm:E5_Event ;
+        rdfs:label            "Polveriera"@it , "Powderhouse"@en ;
+        crm:P2_has_type       aat:300006921 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/typology/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1866-10-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1570-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "Unknown-Format"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1797-05-11T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "Unknown-Format"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/material/1>
+        a                crm:E57_Material ;
+        rdfs:label       "Pietra d'Istria"@it , "Istrian marble"@en ;
+        crm:P2_has_type  aat:300011584 .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "SS_BLDG_001" .
+
+<https://archipelago.itatti.harvard.edu/resource/type/patron>
+        a           crm:E55_Type ;
+        rdfs:label  "Patron"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/4>
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/86> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/3>
+        a       crm:E10_Transfer_of_Custody .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/2>
+        a                     crm:E5_Event ;
+        rdfs:label            "Abbandonato"@it , "Abandoned"@en ;
+        crm:P2_has_type       aat:300008347 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/use>
+        a           crm:E55_Type ;
+        rdfs:label  "Use"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/3>
+        a                     crm:E8_Acquisition ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/88>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1961-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "1570-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1960-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+aat:300011584  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/type/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Typology"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/2>
+        a                            crm:E10_Transfer_of_Custody ;
+        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crm:P4_has_time-span         <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/1>
+        a                     crm:E5_Event ;
+        rdfs:label            "Militare"@it , "Military"@en ;
+        crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/use/1/date> .
