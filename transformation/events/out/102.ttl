@@ -1,0 +1,58 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/102/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/102/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/102/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/102/typology> , <https://archipelago.itatti.harvard.edu/resources/event/102/subtypology> ;
+        crm:P4_has_time-span       <urn:uuid:c1872bd4-bfe9-484d-8482-603a9f145086> , <https://archipelago.itatti.harvard.edu/resources/event/102/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The women mental hospital is closed"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The formal dismission is issued by the Unità Sanitaria Locale (deliberation n. 1099)."@en .
+
+<urn:uuid:c1872bd4-bfe9-484d-8482-603a9f145086>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "102" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Transfer (property)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/102/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+geonames:3168468  a  crm:E53_Place .

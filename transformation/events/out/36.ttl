@@ -1,0 +1,78 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/86/event/36>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/86> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/86/event/36/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "36" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/86/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/86/event/36> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/36/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/36/name> , <https://archipelago.itatti.harvard.edu/resources/event/36/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/36/typology> , <https://archipelago.itatti.harvard.edu/resources/event/36/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/36/date> , <urn:uuid:faa5851f-1a9f-424f-adc3-f808dcaabcae> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
+        crm:P7_took_place_at       geonames:3230839 .
+
+<urn:uuid:faa5851f-1a9f-424f-adc3-f808dcaabcae>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
+geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
+        crm:P1_is_identified_by  geonames:19 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/86/event/36/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Owner"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The island is definitively abandoned"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Abandonment"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/86>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/86/identifier> .
+
+geonames:3230839  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/36/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "After the II World War the island is used by private citizens and then abandoned."@en .

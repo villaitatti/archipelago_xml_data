@@ -1,0 +1,103 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Artistic"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The Lateran Canons set up in the island while all the properties of San Clemente, including archival documents and relics, are transferred to Santa Maria della Carità"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/102/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/145/event/122>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/145> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/145/event/122/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/145/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/145>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/145/identifier> .
+
+<urn:uuid:5c83944c-0226-49c2-9b6c-8400549793fd>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/157/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/145/event/122/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/event/122/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Recipient"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/157>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/157/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/122/source/157/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/102/event/122> , <https://archipelago.itatti.harvard.edu/resources/actor/145/event/122> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/122/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/122/name> , <https://archipelago.itatti.harvard.edu/resources/event/122/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/122/typology> , <https://archipelago.itatti.harvard.edu/resources/event/122/subtypology> ;
+        crm:P4_has_time-span       <urn:uuid:5c83944c-0226-49c2-9b6c-8400549793fd> , <https://archipelago.itatti.harvard.edu/resources/event/122/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/157> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The relics of Sant'Aniano are brought to the church of Santa Maria della Carità and install on the main altar in 1453."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/event/122>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/122/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Transfer (goods or people)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "122" .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/122/source/157/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "The Lateran Canons set up in the island while all the properties of San Clemente, including archival documents and relics, are transferred to Santa Maria della Carità"@en .

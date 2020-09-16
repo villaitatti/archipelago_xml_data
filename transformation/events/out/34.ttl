@@ -1,0 +1,118 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/source/39/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Freezing of the lagoon waters"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/28>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/28/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/34/source/28/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/35/identifier>
+        a       crm:E42_Identifier .
+
+<urn:uuid:26b0b49d-e7bc-4dae-96fa-fb2c2453a46e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Freezing of the lagoon waters"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0023>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0023/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/source/17/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Freezing of the lagoon waters"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/17>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/17/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/34/source/17/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/35/event/34> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/34/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/34/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/34/typology> , <https://archipelago.itatti.harvard.edu/resources/event/34/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/34/date> , <urn:uuid:26b0b49d-e7bc-4dae-96fa-fb2c2453a46e> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/39> , <https://archipelago.itatti.harvard.edu/resources/source/28> , <https://archipelago.itatti.harvard.edu/resources/source/42> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0023> , <https://archipelago.itatti.harvard.edu/resources/source/17> ;
+        crm:P7_took_place_at       geonames:12172719 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0023/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/source/17/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/source/42/identifier>
+        a       crm:E42_Identifier .
+
+geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Freezing of the lagoon"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/35/event/34/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Witness"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/35/event/34>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/35> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/35/event/34/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/source/39/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/source/28/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Freezing of the lagoon waters"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "34" .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/35>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/35/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/source/42/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Freezing of the lagoon waters"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Urban"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/39>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/39/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/34/source/39/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/source/42>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/42/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/34/source/42/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/34/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "18th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/28/identifier>
+        a       crm:E42_Identifier .

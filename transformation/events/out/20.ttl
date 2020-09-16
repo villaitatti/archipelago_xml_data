@@ -1,0 +1,83 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "Titian delivers the first version of the altarpiece Discesa dello Spirito Santo for the main chapel of the church."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/24/event/20>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/20/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Installation"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20>
+        a                        crm:E5_Event ;
+        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/21/event/20> , <https://archipelago.itatti.harvard.edu/resources/actor/24/event/20> ;
+        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/20/synopsis> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/20/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/20/name> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/20/typology> , <https://archipelago.itatti.harvard.edu/resources/event/20/subtypology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/20/date> , <urn:uuid:0e9300f5-9aa9-4075-9b94-5651b4a3debb> ;
+        crm:P7_took_place_at     geonames:7910746 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "20" .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/21>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/24/event/20/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patrons"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Delivering of the altarpiece Discesa dello Spirito Santo"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Artistic"@en .
+
+geonames:7910746  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/24>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/21/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/20/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/21/event/20>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/21> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/21/event/20/role> .
+
+<urn:uuid:0e9300f5-9aa9-4075-9b94-5651b4a3debb>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/21/event/20/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Painter"@en .

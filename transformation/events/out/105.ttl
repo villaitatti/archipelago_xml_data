@@ -1,0 +1,45 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Artistic"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "105" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Transfer (goods or people)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105>
+        a                        crm:E5_Event ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/105/name> , <https://archipelago.itatti.harvard.edu/resources/event/105/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/105/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/105/typology> ;
+        crm:P4_has_time-span     <urn:uuid:105ca5aa-0239-4f9b-8bbf-49079a34785c> , <https://archipelago.itatti.harvard.edu/resources/event/105/date> ;
+        crm:P7_took_place_at     geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The wooden choir of the sacristy is transferred to the sacristy of Ognissanti"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<urn:uuid:105ca5aa-0239-4f9b-8bbf-49079a34785c>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/105/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
+
+geonames:3168468  a  crm:E53_Place .
