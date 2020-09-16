@@ -45,8 +45,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/construction/date> .
 
 aat:300008553  a  crm:E55_Type .
 
@@ -75,10 +74,6 @@ aat:300008553  a  crm:E55_Type .
         crm:P2_has_type       <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/typology/2/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/typology/1>
         a                     crm:E5_Event ;
         rdfs:label            "Lavatorio"@it , "Washhouse"@en ;
@@ -90,9 +85,7 @@ aat:300008553  a  crm:E55_Type .
         rdfs:label  "Use"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_026/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 aat:300008016  a  crm:E55_Type .
 

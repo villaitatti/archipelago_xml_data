@@ -38,8 +38,7 @@ aat:300120364  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18>
         a       crm:E39_Actor .
@@ -57,9 +56,7 @@ aat:300120364  a  crm:E55_Type .
         a       crm:E5_Event .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/material/2>
         a                crm:E57_Material ;
@@ -71,10 +68,6 @@ aat:300120364  a  crm:E55_Type .
         rdfs:label            "Sacrestia"@it , "Sacristy"@en ;
         crm:P2_has_type       aat:300004631 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/typology/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/typology/1/date>
         a                            crm:E52_Time-Span ;
@@ -96,9 +89,6 @@ aat:300120364  a  crm:E55_Type .
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_038/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1500-01-01"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
 
 aat:300011584  a  crm:E55_Type .
 

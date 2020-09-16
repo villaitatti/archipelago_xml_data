@@ -43,9 +43,7 @@
         a       crm:E5_Event .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/89> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/transfer_custody/1>
         a                            crm:E10_Transfer_of_Custody ;
@@ -96,16 +94,9 @@ aat:300008553  a  crm:E55_Type .
         crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/measurement/height> ;
         crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/material/1> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/measurement/height>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/measurement/height/dimension> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/89>
-        a       crm:E39_Actor .
 
 aat:300404856  a  crm:E55_Type .
 
@@ -120,8 +111,7 @@ aat:300011914  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_028/typology/1/date>
         a                            crm:E52_Time-Span ;

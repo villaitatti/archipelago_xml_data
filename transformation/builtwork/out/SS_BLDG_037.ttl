@@ -41,8 +41,7 @@ aat:300000635  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/use/1>
         a                     crm:E5_Event ;
@@ -52,10 +51,6 @@ aat:300000635  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/function/1>
         a       crm:E5_Event .
-
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/material/2>
         a           crm:E57_Material ;
@@ -71,9 +66,7 @@ aat:300000635  a  crm:E55_Type .
         crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/material/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/material/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/typology/1>
         a                     crm:E5_Event ;
@@ -93,9 +86,6 @@ aat:300000635  a  crm:E55_Type .
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_037/material/1>
         a           crm:E57_Material ;
         rdfs:label  "Stone"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>
         a           crm:E55_Type ;

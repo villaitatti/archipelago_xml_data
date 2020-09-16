@@ -61,10 +61,6 @@ aat:300004848  a  crm:E55_Type .
         crm:P2_has_type       aat:300120364 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/use/1/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1500-01-01"@en .
@@ -83,9 +79,7 @@ aat:300004848  a  crm:E55_Type .
         rdfs:label  "SS_BLDG_032" .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;
@@ -101,11 +95,7 @@ aat:300004848  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/role_patron/1> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_032/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>
         a           crm:E55_Type ;

@@ -233,9 +233,8 @@
                     <target_node>
                         <entity>
                             <type>crm:E57_Material</type>
-                            <instance_generator name="180-built_work-material">
-                                <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                                <arg name="m_id" type="xpathPosition">.</arg>
+                            <instance_generator name="010-type-aat">
+                                <arg name="aat" type="xpath">aat/text()</arg>
                             </instance_generator>
                             <label_generator name="Literal">
                                 <arg name="text" type="xpath">eng/text()</arg>
@@ -245,18 +244,6 @@
                                 <arg name="text" type="xpath">ita/text()</arg>
                                 <arg name="language" type="constant">it</arg>
                             </label_generator>
-                            <additional>
-                                <relationship>crm:P2_has_type</relationship>
-                                <entity>
-                                    <type>crm:E55_Type</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="010-type-aat">
-                                        <arg name="aat" type="xpath">aat/text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
                         </entity>
                     </target_node>
                 </range>
