@@ -1,0 +1,91 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "To fulfil a vow made during the plague epidemic in 1630, Monsignor Lazzaroni built an image of the Virgin on cedar wood. He exposed it in his church of Sant'Angelo while waiting for building a new chapel, modelled on the Holy House of Loreto. After several attempts to locate the Holy House in the churches of Sant'Angelo, San Lazzaro, and Tolentini, he was finally granted the space in the church of San Clemente."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/102/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/event/160/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision makers"@en .
+
+<urn:uuid:71018c7d-ac62-4962-9094-c4406cbb7f05>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Public deliberation"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/178/event/160>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/178> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/178/event/160/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/178/event/160> , <https://archipelago.itatti.harvard.edu/resources/actor/102/event/160> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/160/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/160/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/160/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/160/typology> , <https://archipelago.itatti.harvard.edu/resources/event/160/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/160/date> , <urn:uuid:71018c7d-ac62-4962-9094-c4406cbb7f05> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/178/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/178>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/178/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "160" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/event/160>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/160/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/178/event/160/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patron"@en .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/160/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The Lateran Canons accept the proposal of Monsignor Lazzaroni to build a model of the Holy House of Loreto"@it ;
+        crm:P2_has_type  "preferred_name" .

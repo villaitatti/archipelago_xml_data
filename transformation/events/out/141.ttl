@@ -1,0 +1,91 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The Dogaressa Foscari meets the Queen of Cyprus in the island"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "From Sanudo: «Qui zonse ozi la Regina di Cipri, fiola del Marchese di Monferà. Li fo fatto honor assai; li andò contra la Dogaressa con una quantittà di donne per numero 124 (fra le qual ne errano di vestide di panno d’orro et brochatto numero 53, di seda circha 40, il resto con manto et con veste morelle) nel bucintoro, il qual andò fino a San Chimento. Fo armado parasc[h]ermi 8, barche in grandissima quantittà. Arivò a cha’ di sier Zuan Corner dalla Piscopia, la vene qui con una nave del Ducha di Millan coverta di piombo, molto serada, et haveva da persone 300 con sí, in reliquis la Dogaressa per stracheza per do volte stramortì et fo portà in Pallazo con una barcha, et si compì la festa avanti hore 23.»"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/158/event/141>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/158> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/158/event/141/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/157/event/141>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/157> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/157/event/141/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/157/event/141/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Dogaressa"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "141" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/158/event/141> , <https://archipelago.itatti.harvard.edu/resources/actor/157/event/141> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/141/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/141/name> , <https://archipelago.itatti.harvard.edu/resources/event/141/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/141/typology> , <https://archipelago.itatti.harvard.edu/resources/event/141/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/141/date> , <urn:uuid:4bc52d0b-a437-4e52-bf85-31bd6db3f403> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<urn:uuid:4bc52d0b-a437-4e52-bf85-31bd6db3f403>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/158>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/158/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/158/event/141/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Guest"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Visit of state"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/157/identifier>
+        a       crm:E42_Identifier .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/157>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/157/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/141/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/158/identifier>
+        a       crm:E42_Identifier .

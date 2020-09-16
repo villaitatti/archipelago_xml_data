@@ -1,0 +1,110 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/12/event/16>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/12> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/12/event/16/role> .
+
+<urn:uuid:a41463f5-e4c9-4ff3-8699-1ca0de42a5b4>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "Patriarch Antonio Contarini sends the abbess Marina Celsi along with 21 nuns because she introduces the Observant reform into the convent. The convent is divided into two parts, one for the observant nuns, the other for the conventual nuns."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/18/event/16/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Reformed order"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/13/event/16/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/18/event/16> , <https://archipelago.itatti.harvard.edu/resources/actor/12/event/16> , <https://archipelago.itatti.harvard.edu/resources/actor/13/event/16> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/16/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/16/name> , <https://archipelago.itatti.harvard.edu/resources/event/16/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/16/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/16/typology> ;
+        crm:P4_has_time-span       <urn:uuid:a41463f5-e4c9-4ff3-8699-1ca0de42a5b4> , <https://archipelago.itatti.harvard.edu/resources/event/16/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
+        crm:P7_took_place_at       geonames:3230839 .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/13>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/13/identifier> .
+
+geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
+        crm:P1_is_identified_by  geonames:11 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Religious reform"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/12>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/12/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/18>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier> .
+
+geonames:3230839  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/18/event/16>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/18> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/18/event/16/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/12/event/16/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Order's reformer"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/13/event/16>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/13> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/13/event/16/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/13/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Introduction of the Observant reform into the Benedictine convent"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/12/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/18/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/16/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "16" .

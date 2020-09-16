@@ -1,0 +1,57 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/25>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/25/identifier> .
+
+<urn:uuid:327c8d16-d51a-48b2-b4b5-d6b2efeb660c>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "23" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23>
+        a                        crm:E5_Event ;
+        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/25/event/23> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/23/name> , <https://archipelago.itatti.harvard.edu/resources/event/23/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/23/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/23/typology> ;
+        crm:P4_has_time-span     <urn:uuid:327c8d16-d51a-48b2-b4b5-d6b2efeb660c> , <https://archipelago.itatti.harvard.edu/resources/event/23/date> ;
+        crm:P7_took_place_at     geonames:7910746 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+geonames:7910746  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/25/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/25/event/23>
+        a                  crm:PC14_carried_out_by ;
+        crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/25> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Election of Andrea Bondumier as Prior"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Establishment"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/23/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .

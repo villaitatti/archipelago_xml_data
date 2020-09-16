@@ -1,0 +1,65 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/source/154>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/154/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/91/source/154/event> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Foundation"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/source/154/event>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Foundation of the Provveditori alla Sanità (Health Office)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/91/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/91/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/91/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/91/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/91/date> , <urn:uuid:67a9441c-a653-4fc6-91ff-3e7280bcae41> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> , <https://archipelago.itatti.harvard.edu/resources/source/154> ;
+        crm:P7_took_place_at       geonames:12172719 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "91" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
+
+geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/91/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Foundation of the Provveditori alla Sanità (Health Office)"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/source/154/identifier>
+        a       crm:E42_Identifier .
+
+<urn:uuid:67a9441c-a653-4fc6-91ff-3e7280bcae41>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .

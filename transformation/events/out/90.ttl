@@ -1,0 +1,53 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/90/name> , <https://archipelago.itatti.harvard.edu/resources/event/90/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/90/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/90/typology> ;
+        crm:P4_has_time-span       <urn:uuid:5af0ec5b-62db-405e-8e82-d6e656368e96> , <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
+        crm:P7_took_place_at       geonames:7910746 .
+
+<urn:uuid:5af0ec5b-62db-405e-8e82-d6e656368e96>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
+
+geonames:7910746  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "90" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Abandonment"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The island is definitively abandoned"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier>
+        a       crm:E42_Identifier .

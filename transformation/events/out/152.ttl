@@ -1,0 +1,82 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/174/identifier>
+        a       crm:E42_Identifier .
+
+<urn:uuid:eee6b6c6-7fec-42d7-9f52-6bb8f72284a4>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152>
+        a                          crm:E5_Event ;
+        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/174/event/152> ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/152/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/152/name> , <https://archipelago.itatti.harvard.edu/resources/event/152/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/152/typology> , <https://archipelago.itatti.harvard.edu/resources/event/152/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/152/date> , <urn:uuid:eee6b6c6-7fec-42d7-9f52-6bb8f72284a4> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/174>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/174/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The inscription in commemoration of the Doge Polani celebrates the foundation of the island under his rule"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "12th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/174/event/152>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/174> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/174/event/152/role> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "After the death of Pietro Polani, the following inscription was depicted around his effigy:\n«Fanum sub me tributarium effecitur\nMonasteria Sanctorum Clementis et\nIacobi de Palude construuntur»"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Celebration"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/174/event/152/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Doge"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/152/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "152" .
+
+geonames:3168468  a  crm:E53_Place .

@@ -211,7 +211,7 @@
 
 	<!-- Actor's image -->
 	<generator name="380-actor-image" prefix="arc">
-		<pattern>actor/{actor_id}image</pattern>
+		<pattern>actor/{actor_id}/image</pattern>
 	</generator>
 
 	<generator name="391-actor-source" prefix="arc">
@@ -225,7 +225,7 @@
 	</generator>
 
 	<generator name="394-actor-event" prefix="arc">
-		<pattern>actor/{actor_id}/event/{event_id}/</pattern>
+		<pattern>actor/{actor_id}/event/{event_id}</pattern>
 	</generator>
 	<generator name="394-actor-event-role" prefix="arc">
 		<pattern>actor/{actor_id}/event/{event_id}/role</pattern>
@@ -235,138 +235,138 @@
 
 	<!-- Source -->
 	<generator name="400-source" prefix="arc">
-		<pattern>source/{source-id}</pattern>
+		<pattern>source/{source_id}</pattern>
 	</generator>
 	<generator name="410-source-identifier" prefix="arc">
-		<pattern>source/{source-id}/identifier</pattern>
+		<pattern>source/{source_id}/identifier</pattern>
 	</generator>
 	<generator name="411-source-title" prefix="arc">
-		<pattern>source/{source-id}/title</pattern>
+		<pattern>source/{source_id}/title</pattern>
 	</generator>
 	<generator name="420-source-typology" prefix="arc">
-		<pattern>source/{source-id}/typology</pattern>
+		<pattern>source/{source_id}/typology</pattern>
 	</generator>
 	<generator name="430-source-format" prefix="arc">
-		<pattern>source/{source-id}/format</pattern>
+		<pattern>source/{source_id}/format</pattern>
 	</generator>
 	<generator name="431-source-language" prefix="arc">
-		<pattern>source/{source-id}/language</pattern>
+		<pattern>source/{source_id}/language</pattern>
 	</generator>
 	<generator name="440-source-author_surname_name" prefix="arc">
-		<pattern>source/{source-id}/surname_name</pattern>
+		<pattern>source/{source_id}/surname_name</pattern>
 	</generator>
 	<generator name="441-source-role_author" prefix="arc">
-		<pattern>source/{source-id}/role_author</pattern>
+		<pattern>source/{source_id}/role_author</pattern>
 	</generator>
 	<generator name="450-source-original_title" prefix="arc">
-		<pattern>source/{source-id}/original_title</pattern>
+		<pattern>source/{source_id}/original_title</pattern>
 	</generator>
 	<generator name="460-source-date_earliest" prefix="arc">
-		<pattern>source/{source-id}/date_earliest</pattern>
+		<pattern>source/{source_id}/date_earliest</pattern>
 	</generator>
 	<generator name="461-source-date_latest" prefix="arc">
-		<pattern>source/{source-id}/date_latest</pattern>
+		<pattern>source/{source_id}/date_latest</pattern>
 	</generator>
 	<generator name="462-source-century" prefix="arc">
-		<pattern>source/{source-id}/century</pattern>
+		<pattern>source/{source_id}/century</pattern>
 	</generator>
 	<generator name="463-source-fraction_century" prefix="arc">
-		<pattern>source/{source-id}/fraction_century</pattern>
+		<pattern>source/{source_id}/fraction_century</pattern>
 	</generator>
 	<generator name="470-source-collection" prefix="arc">
-		<pattern>source/{source-id}/collection</pattern>
+		<pattern>source/{source_id}/collection</pattern>
 	</generator>
 	<generator name="471-source-acronym" prefix="arc">
-		<pattern>source/{source-id}/acronym</pattern>
+		<pattern>source/{source_id}/acronym</pattern>
 	</generator>
 	<generator name="472-source-fondo" prefix="arc">
-		<pattern>source/{source-id}/fondo</pattern>
+		<pattern>source/{source_id}/fondo</pattern>
 	</generator>
 	<generator name="473-source-busta" prefix="arc">
-		<pattern>source/{source-id}/busta</pattern>
+		<pattern>source/{source_id}/busta</pattern>
 	</generator>
 	<generator name="474-source-filza" prefix="arc">
-		<pattern>source/{source-id}/filza</pattern>
+		<pattern>source/{source_id}/filza</pattern>
 	</generator>
 	<generator name="475-source-title_filza" prefix="arc">
-		<pattern>source/{source-id}/title_filza</pattern>
+		<pattern>source/{source_id}/title_filza</pattern>
 	</generator>
 	<generator name="476-source-folio" prefix="arc">
-		<pattern>source/{source-id}/folio</pattern>
+		<pattern>source/{source_id}/folio</pattern>
 	</generator>
 	<generator name="477-source-drawing" prefix="arc">
-		<pattern>source/{source-id}/drawing</pattern>
+		<pattern>source/{source_id}/drawing</pattern>
 	</generator>
 	<generator name="478-source-location" prefix="arc">
-		<pattern>source/{source-id}/location</pattern>
+		<pattern>source/{source_id}/location</pattern>
 	</generator>
 	<generator name="480-source-medium" prefix="arc">
-		<pattern>source/{source-id}/medium</pattern>
+		<pattern>source/{source_id}/medium</pattern>
 	</generator>
 	<generator name="481-source-dimensions" prefix="arc">
-		<pattern>source/{source-id}/dimensions</pattern>
+		<pattern>source/{source_id}/dimensions</pattern>
 	</generator>
 	<generator name="482-source-synopsis" prefix="arc">
-		<pattern>source/{source-id}/synopsis</pattern>
+		<pattern>source/{source_id}/synopsis</pattern>
 	</generator>
 	<generator name="483-source-transcription" prefix="arc">
-		<pattern>source/{source-id}/transcription</pattern>
+		<pattern>source/{source_id}/transcription</pattern>
 	</generator>
 	<generator name="484-source-image_container" prefix="arc">
-		<pattern>source/{source-id}/image_container</pattern>
+		<pattern>source/{source_id}/image_container</pattern>
 	</generator>
 
 	<!-- Bibliographic Item -->
 	<generator name="80000-bibliographic_item" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}</pattern>
+		<pattern>bibliographic_item/{bi_id}</pattern>
 	</generator>
 	<generator name="80001-bibliographic_item-identifier" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/identifier</pattern>
+		<pattern>bibliographic_item/{bi_id}/identifier</pattern>
 	</generator>
 	<generator name="80002-bibliographic_item-typology" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/typology</pattern>
+		<pattern>bibliographic_item/{bi_id}/typology</pattern>
 	</generator>
 	<generator name="80003-bibliographic_item-author" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/author</pattern>
+		<pattern>bibliographic_item/{bi_id}/author</pattern>
 	</generator>
 	<generator name="80004-bibliographic_item-title" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/title</pattern>
+		<pattern>bibliographic_item/{bi_id}/title</pattern>
 	</generator>
 	<generator name="80005-bibliographic_item-language" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/language</pattern>
+		<pattern>bibliographic_item/{bi_id}/language</pattern>
 	</generator>
 	<generator name="80006-bibliographic_item-curator" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/curator</pattern>
+		<pattern>bibliographic_item/{bi_id}/curator</pattern>
 	</generator>
 	<generator name="80007-bibliographic_item-publisher" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/publisher</pattern>
+		<pattern>bibliographic_item/{bi_id}/publisher</pattern>
 	</generator>
 	<generator name="80008-bibliographic_item-city" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/city</pattern>
+		<pattern>bibliographic_item/{bi_id}/city</pattern>
 	</generator>
 	<generator name="80009-bibliographic_item-date" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/date</pattern>
+		<pattern>bibliographic_item/{bi_id}/date</pattern>
 	</generator>
 	<generator name="80010-bibliographic_item-book_or_journal_title" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/book_or_journal_title</pattern>
+		<pattern>bibliographic_item/{bi_id}/book_or_journal_title</pattern>
 	</generator>
 	<generator name="80011-bibliographic_item-series" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/series</pattern>
+		<pattern>bibliographic_item/{bi_id}/series</pattern>
 	</generator>
 	<generator name="80012-bibliographic_item-journals_number" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/journals_number</pattern>
+		<pattern>bibliographic_item/{bi_id}/journals_number</pattern>
 	</generator>
 	<generator name="80013-bibliographic_item-n_volume" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/n_volume</pattern>
+		<pattern>bibliographic_item/{bi_id}/n_volume</pattern>
 	</generator>
 	<generator name="80014-bibliographic_item-volume_title" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/volume_title</pattern>
+		<pattern>bibliographic_item/{bi_id}/volume_title</pattern>
 	</generator>
 	<generator name="80015-bibliographic_item-pages" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/pages</pattern>
+		<pattern>bibliographic_item/{bi_id}/pages</pattern>
 	</generator>
 	<generator name="80016-bibliographic_item-subject" prefix="arc">
-		<pattern>bibliographic_item/{bibliographic_item-id}/subject</pattern>
+		<pattern>bibliographic_item/{bi_id}/subject</pattern>
 	</generator>
 
 

@@ -1,0 +1,62 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix geonames: <http://www.geonames.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Move of the Cistercian order from Brondolo"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/85/identifier>
+        a       crm:E42_Identifier .
+
+<urn:uuid:d2804952-ee2c-4058-83e1-37ccfff8980f>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Religious order's transfer"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/85/event/67>
+        a                  crm:PC14_carried_out_by ;
+        crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/85> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67>
+        a                        crm:E5_Event ;
+        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/85/event/67> ;
+        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/67/synopsis> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/67/name> , <https://archipelago.itatti.harvard.edu/resources/event/67/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/67/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/67/typology> ;
+        crm:P4_has_time-span     <urn:uuid:d2804952-ee2c-4058-83e1-37ccfff8980f> , <https://archipelago.itatti.harvard.edu/resources/event/67/date> ;
+        crm:P7_took_place_at     geonames:7910746 .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/85>
+        a                        crm:E21_Person ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/85/identifier> .
+
+geonames:7910746  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The Venetian Senate entrusts the island to the Cistercian friars of the Santissima Trinità di Brondolo whose institute did not raise up after the Genoese War (1379-81)."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/67/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "67" .

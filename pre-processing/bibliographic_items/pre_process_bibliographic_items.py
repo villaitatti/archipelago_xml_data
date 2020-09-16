@@ -27,6 +27,7 @@ def add_clean_field(input_key):
     field.text = row.find(f'ns:{input_key}', ns).text
 
 
+
 keys = {
     "row": "ROW",
     "id_event": "ID_BIBLIOGRAPHY",
