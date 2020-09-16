@@ -23,6 +23,8 @@
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/function/1> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/identifier> ;
+        crm:P24i_changed_ownership_through
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/acquisition/1> ;
         crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/1> .
 
 aat:300007466  a  crm:E55_Type .
@@ -57,13 +59,12 @@ aat:300120364  a  crm:E55_Type .
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/function/1>
         a       crm:E5_Event .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/2>
+        a           crm:E57_Material ;
+        rdfs:label  "Brick"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/18>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/2>
-        a                crm:E57_Material ;
-        rdfs:label       "Mattone"@it , "Bricks"@en ;
-        crm:P2_has_type  aat:300010463 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/typology/1>
         a                     crm:E5_Event ;
@@ -80,8 +81,6 @@ aat:300120364  a  crm:E55_Type .
         crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
         crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
 
-aat:300010463  a  crm:E55_Type .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/1>
         a           crm:E57_Material ;
         rdfs:label  "Stone"@en .
@@ -95,7 +94,7 @@ aat:300010463  a  crm:E55_Type .
         rdfs:label  "Use"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E29_Actor .
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/acquisition/1/date>
         a                            crm:E52_Time-Span ;

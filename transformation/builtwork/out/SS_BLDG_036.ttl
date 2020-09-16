@@ -43,9 +43,8 @@
 aat:300120364  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/material/2>
-        a                crm:E57_Material ;
-        rdfs:label       "Mattone"@it , "Bricks"@en ;
-        crm:P2_has_type  aat:300010463 .
+        a           crm:E57_Material ;
+        rdfs:label  "Brick"@en .
 
 aat:300000635  a  crm:E55_Type .
 
@@ -71,8 +70,6 @@ aat:300000635  a  crm:E55_Type .
         crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1531-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-aat:300010463  a  crm:E55_Type .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/function/1>
         a       crm:E5_Event .
 
@@ -89,7 +86,7 @@ aat:300010463  a  crm:E55_Type .
         rdfs:label  "Use"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E29_Actor .
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/construction/date>
         a                            crm:E52_Time-Span ;
@@ -100,6 +97,8 @@ aat:300010463  a  crm:E55_Type .
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/function/1> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/identifier> ;
+        crm:P24i_changed_ownership_through
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/acquisition/1> ;
         crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/material/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/material/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>

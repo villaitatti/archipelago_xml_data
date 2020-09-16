@@ -504,6 +504,28 @@
             <link>
                 <path>
                     <source_relation>
+                        <relation>//Owner</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>crm:P24i_changed_ownership_through</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//Owner</source_node>
+                    <target_node>
+                        <entity>
+                            <type>crm:E8_Acquisition</type>
+                                <instance_generator name="190-built_work-acquisition">
+                                    <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                                    <arg name="acquisition_id" type="xpath">./@pos</arg>
+                                </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
                         <relation>Patrons/Patron</relation>
                     </source_relation>
                     <target_relation>
@@ -573,7 +595,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="153-built_work-use-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="use_id" type="xpathPosition">../</arg>
+                                <arg name="use_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82a_begin_of_the_begin</relationship>
@@ -608,7 +630,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="153-built_work-use-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="use_id" type="xpathPosition">../</arg>
+                                <arg name="use_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82b_end_of_the_end</relationship>
@@ -630,7 +652,7 @@
         </mapping>
         <mapping>
             <domain>
-                <source_node>/row/Typologies/Typology</source_node>
+                <source_node>//Typology</source_node>
                 <target_node>
                     <entity>
                         <type>crm:E5_Event</type>
@@ -657,7 +679,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="163-built_work-typology-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="typology_id" type="xpathPosition">../</arg>
+                                <arg name="typology_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82a_begin_of_the_begin</relationship>
@@ -692,7 +714,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="163-built_work-typology-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="typology_id" type="xpathPosition">../</arg>
+                                <arg name="typology_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82b_end_of_the_end</relationship>
@@ -728,14 +750,14 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>Name</relation>
+                        <relation>ID_PERSON</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>crm:P29_custody_received_by</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>Name</source_node>
+                    <source_node>ID_PERSON</source_node>
                     <target_node>
                         <entity>
                             <type>crm:E39_Actor</type>
@@ -762,7 +784,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="1A3-built_work-transfer_custody-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="tf_id" type="xpathPosition">../</arg>
+                                <arg name="tf_id" type="xpathPosition">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82a_begin_of_the_begin</relationship>
@@ -797,7 +819,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="1A3-built_work-transfer_custody-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="tf_id" type="xpathPosition">../</arg>
+                                <arg name="tf_id" type="xpathPosition">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:p82b_end_of_the_end</relationship>
@@ -819,13 +841,13 @@
         </mapping>
         <mapping>
             <domain>
-                <source_node>/row/Owners/Owner</source_node>
+                <source_node>//Owner</source_node>
                 <target_node>
                     <entity>
                         <type>crm:E8_Acquisition</type>
                         <instance_generator name="190-built_work-acquisition">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                            <arg name="acquisition_id" type="xpathPosition">.</arg>
+                            <arg name="acquisition_id" type="xpath">./@pos</arg>
                         </instance_generator>
                     </entity>
                 </target_node>
@@ -833,14 +855,14 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>Name</relation>
+                        <relation>ID_PERSON</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>crm:P22_transferred_title_to</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>Name</source_node>
+                    <source_node>ID_PERSON</source_node>
                     <target_node>
                         <entity>
                             <type>crm:E39_Actor</type>
@@ -867,7 +889,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="193-built_work-acquisition-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="acquisition_id" type="xpathPosition">../</arg>
+                                <arg name="acquisition_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82a_begin_of_the_begin</relationship>
@@ -902,7 +924,7 @@
                             <type>crm:E52_Time-Span</type>
                             <instance_generator name="193-built_work-acquisition-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="acquisition_id" type="xpathPosition">../</arg>
+                                <arg name="acquisition_id" type="xpath">../@pos</arg>
                             </instance_generator>
                             <additional>
                                 <relationship>crm:P82b_end_of_the_end</relationship>
@@ -956,7 +978,7 @@
                             <additional>
                                 <relationship>crmpc:P02_has_range</relationship>
                                 <entity>
-                                    <type>crm:E29_Actor</type>
+                                    <type>crm:E39_Actor</type>
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
@@ -1020,7 +1042,7 @@
                             <additional>
                                 <relationship>crmpc:P02_has_range</relationship>
                                 <entity>
-                                    <type>crm:E29_Actor</type>
+                                    <type>crm:E39_Actor</type>
                                     <instance_info>
                                         <constant/>
                                     </instance_info>

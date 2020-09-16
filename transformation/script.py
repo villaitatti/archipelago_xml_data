@@ -42,6 +42,5 @@ for root, dirs, src_files in os.walk(table_folder_in):
             os.system(f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}')
 
             cnt += 1
-            break
 
 'java -jar x3ml-engine-1.9.0-exejar.jar -i data/166.xml -x archipelago.x3ml -policy ../../archipelago_generator_policy.xml -o output.ttl -f text/turtle'

@@ -10,6 +10,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/role_patron/1>
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/typology/1>
         a                     crm:E5_Event ;
         rdfs:label            "Deposito"@it , "Storage facility"@en ;
@@ -17,9 +22,8 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/typology/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/material/1>
-        a                crm:E57_Material ;
-        rdfs:label       "Mattone"@it , "Bricks"@en ;
-        crm:P2_has_type  aat:300010463 .
+        a           crm:E57_Material ;
+        rdfs:label  "Brick"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/acquisition/1/date>
         a                            crm:E52_Time-Span ;
@@ -34,6 +38,8 @@
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/function/1> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/identifier> ;
+        crm:P24i_changed_ownership_through
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/acquisition/1> ;
         crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/material/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/use/1>
@@ -44,12 +50,16 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/construction/date> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/construction/date> ;
+        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/role_patron/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/function/1>
         a       crm:E5_Event .
 
 aat:300007700  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/construction/date>
         a                            crm:E52_Time-Span ;
@@ -66,16 +76,19 @@ aat:300120590  a  crm:E55_Type .
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_010" .
 
+<https://archipelago.itatti.harvard.edu/resource/type/patron>
+        a           crm:E55_Type ;
+        rdfs:label  "Patron"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/use/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1848-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1851-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/acquisition/1>
-        a                     crm:E8_Acquisition ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/acquisition/1/date> .
-
-aat:300010463  a  crm:E55_Type .
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_010/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;
