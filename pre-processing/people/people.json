@@ -1,0 +1,872 @@
+[
+    {
+        "Given_Name": "Marina",
+        "Surname": "Celsi",
+        "ID_PERSON": "12"
+    },
+    {
+        "Given_Name": "Antonio",
+        "Surname": "Contarini",
+        "ID_PERSON": "13"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Baffo family {Famiglia Baffo}",
+        "ID_PERSON": "16"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Holy See {Santa Sede}",
+        "ID_PERSON": "17"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Benedectine Nuns of San Secondo {Monache benedettine di San Secondo}",
+        "ID_PERSON": "18"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Gavan",
+        "ID_PERSON": "19"
+    },
+    {
+        "Given_Name": "Agostino",
+        "Surname": "Museo",
+        "ID_PERSON": "20"
+    },
+    {
+        "Given_Name": "Tiziano",
+        "Surname": "Vecellio",
+        "ID_PERSON": "21"
+    },
+    {
+        "Given_Name": "Antonio",
+        "Surname": "Visentini",
+        "ID_PERSON": "22"
+    },
+    {
+        "Given_Name": "Jacopo",
+        "Surname": "Tatti",
+        "ID_PERSON": "23"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Canons regular of Santo Spirito {Canonici regolari di Santo Spirito}",
+        "ID_PERSON": "24"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Bondumier",
+        "ID_PERSON": "25"
+    },
+    {
+        "Given_Name": "Filippo",
+        "Surname": "Tron",
+        "ID_PERSON": "26"
+    },
+    {
+        "Given_Name": "Fabio",
+        "Surname": "Chigi",
+        "ID_PERSON": "27"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Guardi",
+        "ID_PERSON": "28"
+    },
+    {
+        "Given_Name": "Daniele",
+        "Surname": "Danieli",
+        "ID_PERSON": "29"
+    },
+    {
+        "Given_Name": "Giacomo",
+        "Surname": "Guardi",
+        "ID_PERSON": "30"
+    },
+    {
+        "Given_Name": "Elisabetta Graziosa",
+        "Surname": "Ferri",
+        "ID_PERSON": "31"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Morani",
+        "ID_PERSON": "32"
+    },
+    {
+        "Given_Name": "Domenico Maria",
+        "Surname": "Gella",
+        "ID_PERSON": "33"
+    },
+    {
+        "Given_Name": "Carlo",
+        "Surname": "Gella",
+        "ID_PERSON": "34"
+    },
+    {
+        "Given_Name": "Cherubino",
+        "Surname": "Zeli",
+        "ID_PERSON": "35"
+    },
+    {
+        "Given_Name": "Jacometto",
+        "Surname": "Veneziano",
+        "ID_PERSON": "36"
+    },
+    {
+        "Given_Name": "Alessandro",
+        "Surname": "Malerba",
+        "ID_PERSON": "37"
+    },
+    {
+        "Given_Name": "Tommaso",
+        "Surname": "Temanza",
+        "ID_PERSON": "38"
+    },
+    {
+        "Given_Name": "Niccol\u00f2",
+        "Surname": "Mauro",
+        "ID_PERSON": "39"
+    },
+    {
+        "Given_Name": "Napol\u00e9on",
+        "Surname": "Bonaparte",
+        "ID_PERSON": "40"
+    },
+    {
+        "Given_Name": "Domenico",
+        "Surname": "Codagli",
+        "ID_PERSON": "41"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Dominican friars of San Secondo {Frati domenicani di San Secondo}",
+        "ID_PERSON": "42"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "da Zon",
+        "ID_PERSON": "43"
+    },
+    {
+        "Given_Name": "Vitale",
+        "Surname": "Falier",
+        "ID_PERSON": "44"
+    },
+    {
+        "Given_Name": "Gerardino",
+        "Surname": "da Villanova",
+        "ID_PERSON": "45"
+    },
+    {
+        "Given_Name": "Vincenzo Maria",
+        "Surname": "Coronelli",
+        "ID_PERSON": "46"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Bragadin",
+        "ID_PERSON": "47"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "Buonconsiglio",
+        "ID_PERSON": "48"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "Trevisan",
+        "ID_PERSON": "49"
+    },
+    {
+        "Given_Name": "Matteo",
+        "Surname": "Priuli",
+        "ID_PERSON": "50"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Bon",
+        "ID_PERSON": "51"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Baronio",
+        "ID_PERSON": "52"
+    },
+    {
+        "Given_Name": "Girolamo",
+        "Surname": "Contarini",
+        "ID_PERSON": "53"
+    },
+    {
+        "Given_Name": "Raffaele",
+        "Surname": "Riva",
+        "ID_PERSON": "54"
+    },
+    {
+        "Given_Name": "Zaccaria",
+        "Surname": "da Luni",
+        "ID_PERSON": "55"
+    },
+    {
+        "Given_Name": "Teodoro",
+        "Surname": "Viero",
+        "ID_PERSON": "56"
+    },
+    {
+        "Given_Name": "Guglielmo",
+        "Surname": "Stella",
+        "ID_PERSON": "57"
+    },
+    {
+        "Given_Name": "Jacopo",
+        "Surname": "de' Barbari",
+        "ID_PERSON": "58"
+    },
+    {
+        "Given_Name": "Marco",
+        "Surname": "Moro",
+        "ID_PERSON": "60"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Tirali",
+        "ID_PERSON": "61"
+    },
+    {
+        "Given_Name": "Luigi",
+        "Surname": "Querena",
+        "ID_PERSON": "63"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Battaglioli",
+        "ID_PERSON": "64"
+    },
+    {
+        "Given_Name": "Giuseppe Bernardino",
+        "Surname": "Bison",
+        "ID_PERSON": "65"
+    },
+    {
+        "Given_Name": "Domenico",
+        "Surname": "Lovisa",
+        "ID_PERSON": "66"
+    },
+    {
+        "Given_Name": "Cristoforo",
+        "Surname": "Sabbadino",
+        "ID_PERSON": "67"
+    },
+    {
+        "Given_Name": "Alessandro",
+        "Surname": "Spaziani",
+        "ID_PERSON": "68"
+    },
+    {
+        "Given_Name": "Benedetto",
+        "Surname": "Bordone",
+        "ID_PERSON": "69"
+    },
+    {
+        "Given_Name": "Carlo",
+        "Surname": "Ruzzini",
+        "ID_PERSON": "70"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Emo",
+        "ID_PERSON": "71"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Candian friars of Santo Spirito {Frati minori osservanti della Provincia di Candia stabiliti a Santo Spirito}",
+        "ID_PERSON": "73"
+    },
+    {
+        "Given_Name": "Enrico",
+        "Surname": "Dandolo",
+        "ID_PERSON": "74"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Gattilesso",
+        "ID_PERSON": "75"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Cominelli",
+        "ID_PERSON": "76"
+    },
+    {
+        "Given_Name": "Giovanni Battista",
+        "Surname": "Albrizzi",
+        "ID_PERSON": "77"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Chevalier",
+        "ID_PERSON": "78"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Alberti",
+        "ID_PERSON": "79"
+    },
+    {
+        "Given_Name": "Baldassare",
+        "Surname": "Longhena",
+        "ID_PERSON": "84"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Venice Municipality {Comune di Venezia}",
+        "ID_PERSON": "86"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Milizia da Mar",
+        "ID_PERSON": "87"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Venetian Republic {Repubblica di Venezia}",
+        "ID_PERSON": "88"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Savi ed esecutori alle acque",
+        "ID_PERSON": "89"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Venetian Senate {Senato veneziano}",
+        "ID_PERSON": "90"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Tironi",
+        "ID_PERSON": "91"
+    },
+    {
+        "Given_Name": "Vincenzo",
+        "Surname": "Scutari",
+        "ID_PERSON": "92"
+    },
+    {
+        "Given_Name": "Bernardin",
+        "Surname": "Giacomazzi",
+        "ID_PERSON": "93"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Procurators of St Mark's de supra {Procuratori di San Marco de supra}",
+        "ID_PERSON": "94"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Provveditori sopra monasteri",
+        "ID_PERSON": "95"
+    },
+    {
+        "Given_Name": "Bonaventura Maria",
+        "Surname": "Valerio",
+        "ID_PERSON": "96"
+    },
+    {
+        "Given_Name": "Stefano",
+        "Surname": "Codroipo",
+        "ID_PERSON": "97"
+    },
+    {
+        "Given_Name": "Vincenzo",
+        "Surname": "Polani",
+        "ID_PERSON": "98"
+    },
+    {
+        "Given_Name": "Domenico",
+        "Surname": "Porta",
+        "ID_PERSON": "99"
+    },
+    {
+        "Given_Name": "Giambattista Maria",
+        "Surname": "Contarini",
+        "ID_PERSON": "101"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Lateran Canons of Santa Maria della Carit\u00e0 {Canonici lateranensi di Santa Maria della Carit\u00e0}",
+        "ID_PERSON": "102"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Council of Ten {Consiglio dei Dieci}",
+        "ID_PERSON": "106"
+    },
+    {
+        "Given_Name": "Alvise",
+        "Surname": "Foscarini",
+        "ID_PERSON": "108"
+    },
+    {
+        "Given_Name": "Alvise",
+        "Surname": "Contarini",
+        "ID_PERSON": "109"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Pisani",
+        "ID_PERSON": "110"
+    },
+    {
+        "Given_Name": "Carlo",
+        "Surname": "Carafa della Spina",
+        "ID_PERSON": "111"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Bencio",
+        "ID_PERSON": "112"
+    },
+    {
+        "Given_Name": "Giuseppe",
+        "Surname": "Porta",
+        "ID_PERSON": "113"
+    },
+    {
+        "Given_Name": "Girolamo",
+        "Surname": "da Santacroce",
+        "ID_PERSON": "114"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "da Santacroce",
+        "ID_PERSON": "115"
+    },
+    {
+        "Given_Name": "Lorenzo",
+        "Surname": "Giustinian",
+        "ID_PERSON": "116"
+    },
+    {
+        "Given_Name": "Alessandro",
+        "Surname": "Farnese",
+        "ID_PERSON": "117"
+    },
+    {
+        "Given_Name": "Hugues",
+        "Surname": "de Comminelles",
+        "ID_PERSON": "118"
+    },
+    {
+        "Given_Name": "Nicol\u00f2",
+        "Surname": "dal Cortivo",
+        "ID_PERSON": "119"
+    },
+    {
+        "Given_Name": "Antonio Girolamo",
+        "Surname": "Vestri",
+        "ID_PERSON": "120"
+    },
+    {
+        "Given_Name": "Sebastiano",
+        "Surname": "Alberti",
+        "ID_PERSON": "121"
+    },
+    {
+        "Given_Name": "Augusto",
+        "Surname": "Denaix",
+        "ID_PERSON": "122"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Kingdom of Lombardy\u2013Venetia",
+        "ID_PERSON": "123"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Magistrate for Health {Provveditori e Sopraprovveditori alla Sanit\u00e0}",
+        "ID_PERSON": "124"
+    },
+    {
+        "Given_Name": "Girolamo",
+        "Surname": "Mercuriale",
+        "ID_PERSON": "125"
+    },
+    {
+        "Given_Name": "Girolamo",
+        "Surname": "Capivaccio",
+        "ID_PERSON": "126"
+    },
+    {
+        "Given_Name": "Mariano",
+        "Surname": "Stefanelli",
+        "ID_PERSON": "127"
+    },
+    {
+        "Given_Name": "Niccol\u00f2",
+        "Surname": "Corte",
+        "ID_PERSON": "128"
+    },
+    {
+        "Given_Name": "Bernardino",
+        "Surname": "Paterno",
+        "ID_PERSON": "129"
+    },
+    {
+        "Given_Name": "Alvise",
+        "Surname": "Mocenigo",
+        "ID_PERSON": "130"
+    },
+    {
+        "Given_Name": "Nicol\u00f2",
+        "Surname": "Massa",
+        "ID_PERSON": "131"
+    },
+    {
+        "Given_Name": "Giovan Battista",
+        "Surname": "Luran",
+        "ID_PERSON": "132"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Canons regular of San Clemente {Canonici regolari di San Clemente}",
+        "ID_PERSON": "133"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "Polani",
+        "ID_PERSON": "134"
+    },
+    {
+        "Given_Name": "Alberico",
+        "Surname": "Lottario",
+        "ID_PERSON": "135"
+    },
+    {
+        "Given_Name": "Imizza",
+        "Surname": "da Selva di Boggion",
+        "ID_PERSON": "136"
+    },
+    {
+        "Given_Name": "Daniele",
+        "Surname": "da Selva di Boggion",
+        "ID_PERSON": "137"
+    },
+    {
+        "Given_Name": "Spadaro",
+        "Surname": "Litaldo",
+        "ID_PERSON": "138"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Litaldo",
+        "ID_PERSON": "139"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Rosso",
+        "ID_PERSON": "140"
+    },
+    {
+        "Given_Name": "Egidio",
+        "Surname": "da Ferrara",
+        "ID_PERSON": "141"
+    },
+    {
+        "Given_Name": "Nicol\u00f2",
+        "Surname": "de Benvenutis",
+        "ID_PERSON": "142"
+    },
+    {
+        "Given_Name": "Jacques",
+        "Surname": "Du\u00e8ze",
+        "ID_PERSON": "143"
+    },
+    {
+        "Given_Name": "Piero",
+        "Surname": "Tomacelli",
+        "ID_PERSON": "144"
+    },
+    {
+        "Given_Name": "Gabriele",
+        "Surname": "Condulmer",
+        "ID_PERSON": "145"
+    },
+    {
+        "Given_Name": "Antonio",
+        "Surname": "de Lusciano",
+        "ID_PERSON": "146"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Nani",
+        "ID_PERSON": "147"
+    },
+    {
+        "Given_Name": "Agostino",
+        "Surname": "Barbarigo",
+        "ID_PERSON": "148"
+    },
+    {
+        "Given_Name": "Friedrich",
+        "Surname": "Habsburg",
+        "ID_PERSON": "149"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Foscari ",
+        "ID_PERSON": "150"
+    },
+    {
+        "Given_Name": "Cristoforo",
+        "Surname": "Moro",
+        "ID_PERSON": "151"
+    },
+    {
+        "Given_Name": "Antonio",
+        "Surname": "Muzzani",
+        "ID_PERSON": "152"
+    },
+    {
+        "Given_Name": "Domenico",
+        "Surname": "Graziussi",
+        "ID_PERSON": "153"
+    },
+    {
+        "Given_Name": "Angelo",
+        "Surname": "Seguso",
+        "ID_PERSON": "154"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Fondo territoriale",
+        "ID_PERSON": "155"
+    },
+    {
+        "Given_Name": "John {Giovanni}",
+        "Surname": "Palaiologos {Paleologo}",
+        "ID_PERSON": "156"
+    },
+    {
+        "Given_Name": "Maria",
+        "Surname": "Priuli",
+        "ID_PERSON": "157"
+    },
+    {
+        "Given_Name": "Amadea {Amedea}",
+        "Surname": "Palaiologos {Paleologa}",
+        "ID_PERSON": "158"
+    },
+    {
+        "Given_Name": "Ercole",
+        "Surname": "d'Este",
+        "ID_PERSON": "159"
+    },
+    {
+        "Given_Name": "Leonardo",
+        "Surname": "Loredan",
+        "ID_PERSON": "160"
+    },
+    {
+        "Given_Name": "Matth\u00e4us {Matteo}",
+        "Surname": "Schinner {Schiner}",
+        "ID_PERSON": "161"
+    },
+    {
+        "Given_Name": "Egidio",
+        "Surname": "Antonini",
+        "ID_PERSON": "163"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Gritti",
+        "ID_PERSON": "164"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Sforza",
+        "ID_PERSON": "165"
+    },
+    {
+        "Given_Name": "Francesco Maria",
+        "Surname": "della Rovere",
+        "ID_PERSON": "166"
+    },
+    {
+        "Given_Name": "Gaetano",
+        "Surname": "dei Conti di Thiene",
+        "ID_PERSON": "167"
+    },
+    {
+        "Given_Name": "Gian Pietro",
+        "Surname": "Carafa",
+        "ID_PERSON": "168"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Contarini",
+        "ID_PERSON": "169"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Vendramin",
+        "ID_PERSON": "170"
+    },
+    {
+        "Given_Name": "Piero",
+        "Surname": "Vallaresso",
+        "ID_PERSON": "171"
+    },
+    {
+        "Given_Name": "Alessandro",
+        "Surname": "Pesaro",
+        "ID_PERSON": "172"
+    },
+    {
+        "Given_Name": "Sebastiano",
+        "Surname": "Giustinian",
+        "ID_PERSON": "173"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Polani",
+        "ID_PERSON": "174"
+    },
+    {
+        "Given_Name": "Pierre",
+        "Surname": "Roger",
+        "ID_PERSON": "175"
+    },
+    {
+        "Given_Name": "Alessandro",
+        "Surname": "de Strigis",
+        "ID_PERSON": "176"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "Tirinello",
+        "ID_PERSON": "177"
+    },
+    {
+        "Given_Name": "Francesco",
+        "Surname": "Lazzaroni",
+        "ID_PERSON": "178"
+    },
+    {
+        "Given_Name": "Giovanni",
+        "Surname": "Fornareto",
+        "ID_PERSON": "179"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Mocenigo",
+        "ID_PERSON": "180"
+    },
+    {
+        "Given_Name": "Agostino",
+        "Surname": "Correggio",
+        "ID_PERSON": "181"
+    },
+    {
+        "Given_Name": "Girolamo",
+        "Surname": "Lando",
+        "ID_PERSON": "182"
+    },
+    {
+        "Given_Name": "Gianfrancesco",
+        "Surname": "Barbarigo",
+        "ID_PERSON": "183"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}",
+        "ID_PERSON": "184"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Lorenzetto",
+        "ID_PERSON": "185"
+    },
+    {
+        "Given_Name": "Zuanne",
+        "Surname": "Lumi",
+        "ID_PERSON": "186"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Brozio",
+        "ID_PERSON": "187"
+    },
+    {
+        "Given_Name": "Todero",
+        "Surname": "Balbi",
+        "ID_PERSON": "189"
+    },
+    {
+        "Given_Name": "Marco",
+        "Surname": "Basaiti",
+        "ID_PERSON": "190"
+    },
+    {
+        "Given_Name": "Andrea",
+        "Surname": "Surian",
+        "ID_PERSON": "191"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Hermits of Santa Giustina in Padua {Eremitani di Santa Giustina a Padova}",
+        "ID_PERSON": "192"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Friars of Santissima Trinit\u00e0 in Brondolo",
+        "ID_PERSON": "193"
+    },
+    {
+        "Given_Name": "Pietro",
+        "Surname": "Maffei",
+        "ID_PERSON": "194"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Benedictine monks of San Giorgio Maggiore {Monaci benedettini di San Giorgio Maggiore} ",
+        "ID_PERSON": "195"
+    },
+    {
+        "Given_Name": "Giulio Zanobi",
+        "Surname": "Medici",
+        "ID_PERSON": "196"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Benedictine nuns of Corpus Domini",
+        "ID_PERSON": "197"
+    },
+    {
+        "Given_Name": "Bartolomeo",
+        "Surname": "Gualtierotti",
+        "ID_PERSON": "198"
+    },
+    {
+        "Given_Name": "Bartolomeo",
+        "Surname": "da Ferrara",
+        "ID_PERSON": "199"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Carthusian monks of Sant'Andrea della Certosa",
+        "ID_PERSON": "200"
+    },
+    {
+        "Given_Name": "Daria",
+        "Surname": "Querini",
+        "ID_PERSON": "201"
+    },
+    {
+        "Given_Name": null,
+        "Surname": "Secular confraternity of San Diego {Scuola di San Diego}",
+        "ID_PERSON": "202"
+    }
+]

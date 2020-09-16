@@ -6,9 +6,11 @@ import os
 import re
 import json
 
+buildings = 'buildings_ordered.csv'
+
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.join(dir_path, 'SS_BLDG_01.csv')
+filename = os.path.join(dir_path, buildings)
 
 bw_typologies_filename = os.path.join(dir_path, 'dict', 'bw_typologies.tsv')
 bw_uses_filename = os.path.join(dir_path, 'dict', 'bw_uses.tsv')
@@ -16,12 +18,18 @@ bw_materials_filename = os.path.join(dir_path, 'dict', 'bw_materials.tsv')
 bw_islands_filename = os.path.join(dir_path, 'dict', 'bw_islands.tsv')
 
 # Geonames dictionary
-geonames_dict = json.load(open(os.path.join(dir_path, '../geonames/', 'geonames.json'), 'r'))
+geonames_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'geonames', 'geonames.json'), 'r'))
+people_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'people', 'people.json'), 'r'))
 
 bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
 bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
 bw_materials = pd.read_csv(bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
 bw_islands = pd.read_csv(bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
+
+def order_df():
+  df = df.set_index(key_bw_id)
+  df = df.sort_index()
+  df.to_csv(os.path.join(dir_path, buildings), sep='\t')
 
 def write_file(name, text, ext='xml'):
 
@@ -36,32 +44,84 @@ def write_file(name, text, ext='xml'):
     f.write(text)
 
 def base_tag(parent, key, text):
-  text = str(text)
-  tmp = et.SubElement(parent, key)
-  if not re.match(r'^2019-12-31$', text):
-    tmp.text = text
+  # Block None text
+  if text is None:
+    return
 
-def get_bw_use(name):
+  # Block empty and wrong end
+  text = str(text)
+  if not text or re.match(r'^2019-12-31$', text):
+    return
+  tag = et.SubElement(parent, key)
+  tag.text = text
+
+def get_bw_use(current_use):
+  
+  if current_use.get(key_use) is not None:
+    name = current_use.get(key_use) 
+  
   for bw_use in json.loads(bw_uses):
     if name == bw_use.get(key_json_name):
-      return bw_use
 
-  return None
+      try:
+          current_use[key_json_aat] = str(int(bw_use.get(key_json_aat)))
+      except AttributeError:
+        pass
+      except TypeError:
+        pass
+      
+      try:
+        current_use[key_json_ita] = bw_use.get(key_json_ita)
+      except AttributeError:
+        pass
 
-def get_bw_typology(name):
+  return current_use
 
-  for bw_typology in json.loads(bw_typologies):
-    if name == bw_typology.get(key_json_name):
-      return bw_typology
+def get_bw_typology(current_typology):
 
-  return None
+  if current_typology.get(key_typology) is not None:
 
-def get_bw_material(name):
+    name = current_typology.get(key_typology)
+
+    for bw_typology in json.loads(bw_typologies):
+      if name == bw_typology.get(key_json_name):
+
+        try:
+          current_typology[key_json_aat] = str(int(bw_typology.get(key_json_aat)))
+        except AttributeError:
+          pass
+        except TypeError:
+          pass
+        
+        try:
+          current_typology[key_json_ita] = bw_typology.get(key_json_ita)
+        except AttributeError:
+          pass
+
+  return current_typology
+
+def get_bw_material(current_material):
+
+  name =  current_material
+  current_material = {key_material: current_material}
+
   for bw_material in json.loads(bw_materials):
-    if name == bw_material.get(key_json_name):
-      return bw_material
 
-  return None
+    if name.lower() == bw_material.get(key_json_name).lower():
+      
+      try:
+        current_material[key_json_aat] = str(int(bw_material.get(key_json_aat)))
+      except AttributeError:
+        pass
+      except TypeError:
+        pass
+      
+      try:
+        current_material[key_json_ita] = bw_material.get(key_json_ita)
+      except AttributeError:
+        pass 
+
+  return current_material
 
 def get_bw_island(name):
   for bw_island in json.loads(bw_islands):
@@ -69,6 +129,20 @@ def get_bw_island(name):
       return bw_island
 
   return None
+
+def get_person(name):
+  if name is not None:
+    for person in people_dict:
+      current_name = re.sub(r'[\[{].*}','',person.get(key_surname)).strip()
+      if name.lower() == current_name.lower():
+        return person
+
+  return None
+
+def add_person(parent, key):
+  current_person = get_person(key)
+  if current_person is not None:
+    base_tag(parent, key_person_id, current_person.get(key_person_id))
 
 # Input keys
 key_root = 'root'
@@ -116,10 +190,14 @@ key_uses = 'Uses'
 key_typologies = 'Typologies'
 key_owners = 'Owners'
 key_tenants = 'Tenants'
+key_architects = 'Architects'
+key_patrons = 'Patrons'
 key_eng = 'eng'
 key_ita = 'ita'
 key_aat = 'aat'
 key_geo = 'geo'
+key_person_id = 'ID_PERSON'
+key_position = 'pos'
 
 # JSON keys
 key_json_aat = 'AAT ID'
@@ -127,46 +205,197 @@ key_json_name = 'NAME'
 key_json_url = 'URL'
 key_json_ita = 'ITA'
 key_json_geonames = 'Geonames ID'
+key_surname = 'Surname'
 
-df = pd.read_csv(filename, sep='\t')
+dtypes = {key_start:str, key_end:str, key_height:str, key_architect:str, key_patron: str, key_owner: str, key_tenant: str, key_shape_lenght:str, key_architects:str}
+df = pd.read_csv(filename, sep='\t', dtype=dtypes)
 
 builtworks = {}
 
-# Create a dict with an array containing every bw as json object
-for i in range(len(df)) :
-  row_id = df.loc[i, key_bw_id]
-  new_row = {}
-
-  if row_id not in builtworks:
-    builtworks[row_id] = []
-
-  for y in range(1, len(df.columns)):
-    val = df.iloc[i, y]
-    col = df.columns[y]
+def clear(val):
+  # Clear nan words
+  if (type(val) is np.int64 or type(val) is np.float64 or type(val) is float) and np.isnan(val): 
+    return ''
     
-    if val is np.nan or val == 'nan' or col == key_height: 
-      val = ""
-      
-    new_row[col] = val
+  return str(val)
+
+def add_to_set(key, bw_dict, id, val):
+  if bw_dict[id].get(key) is None:
+    bw_dict[id][key] = set()
+    
+  bw_dict[id][key].add(val)
+
+def insert_in_list(l, to_insert):
+
+  # Block empty dict
+  if not to_insert:
+    return
+
+  for row in l:
+    if to_insert == row:
+      return
+
+  return  l.append(to_insert)
+
+# COLLAPSING ROWS 
+for i, row in df.iterrows():
+
+  row_id = row[key_bw_id]
   
-  builtworks.get(row_id).append(new_row)
+  # Instantiate dictionaries
+  typology_dict = {}
+  use_dict = {}
+  function_dict = {}
+  owner_dict = {}
+  tenant_dict = {}
 
-#print(builtworks)
-#write_file('output', json.dumps(builtworks), ext='json')
+  material_set = set()
+  architect_set = set()
+  patron_set = set()
 
-cnt_id = 1
-bw_id = f'SS_BLDG_{cnt_id:03d}'
+  # create the current bw if not already in the main dict
+  if row_id not in builtworks:
+    builtworks[row_id] = {}
 
-while bw_id in builtworks:
+  # iterate all columns
+  for y in range(1, len(df.columns)):
 
-  first = builtworks.get(bw_id)[0]
+    # save value and the column name
+    val = clear(df.iloc[i, y])
+    col = df.columns[y]
+
+    if val is not None and type(val) and val:
+
+      # Material
+      if col == key_material:
+
+        if builtworks[row_id].get(key_material) is None:
+          builtworks[row_id][key_material] = set()
+
+        for material in val.split(';'):
+          material_set.add(material.strip())
+
+      # Function
+      elif col == key_function:
+
+        if builtworks[row_id].get(key_function) is None:
+          builtworks[row_id][key_function] = []
+        
+        function_dict[key_function] = val
+
+      elif col == key_function_start:
+        function_dict[key_function_start] = val
+
+      elif col == key_function_end:
+        function_dict[key_function_end] = val
+
+      # Typology
+      elif col == key_typology:
+
+        if builtworks[row_id].get(key_typology) is None:
+          builtworks[row_id][key_typology] = []
+
+        typology_dict[key_typology] = val
+
+      elif col == key_typology_start:
+        typology_dict[key_typology_start] = val
+
+      elif col == key_typology_end:
+        typology_dict[key_typology_end] = val
+      
+      # Use
+      elif col == key_use:
+
+        # Create the list if doesn't exist
+        if builtworks[row_id].get(key_use) is None:
+          builtworks[row_id][key_use] = []
+
+        use_dict[key_use] = val
+      
+      elif col == key_use_start:
+        use_dict[key_use_start] = val
+      
+      elif col == key_use_end:
+        use_dict[key_use_end] = val
+
+      # Owner
+      elif col == key_owner:
+
+        if builtworks[row_id].get(key_owner) is None:
+          builtworks[row_id][key_owner] = []
+
+        owner_dict[key_owner] = val
+
+      elif col == key_owner_start:
+        owner_dict[key_owner_start] = val
+
+      elif col == key_owner_end:
+        owner_dict[key_owner_end] = val
+
+      # Tenant
+      elif col == key_tenant:
+
+        if builtworks[row_id].get(key_tenant) is None:
+          builtworks[row_id][key_tenant] = []
+
+        tenant_dict[key_tenant] = val
+
+      elif col == key_tenant_start:
+        tenant_dict[key_tenant_start] = val
+
+      elif col == key_tenant_end:
+        tenant_dict[key_tenant_end] = val
+
+      # Architect
+      elif col == key_architect:
+        if builtworks[row_id].get(key_architect) is None:
+          builtworks[row_id][key_architect] = set()
+        
+        architect_set.add(val)
+
+      # Patron
+      elif col == key_patron:
+        if builtworks[row_id].get(key_patron) is None:
+          builtworks[row_id][key_patron] = set()
+        
+        patron_set.add(val)
+
+      # Residual columns
+      else:
+        builtworks[row_id][col] = val
+
+  # Append dictionaries only if not equal
+  try:
+    insert_in_list(builtworks[row_id][key_typology], typology_dict)
+  except KeyError:
+    pass
+  try:
+    insert_in_list(builtworks[row_id][key_use], use_dict)
+  except KeyError:
+    pass
+  try:
+    insert_in_list(builtworks[row_id][key_function], function_dict)
+  except KeyError:
+    pass
+  try:
+    insert_in_list(builtworks[row_id][key_owner], owner_dict)
+  except KeyError:
+    pass
+  try:
+    insert_in_list(builtworks[row_id][key_tenant], tenant_dict)
+  except KeyError:
+    pass
+
+  builtworks[row_id][key_material] = material_set
+  builtworks[row_id][key_architect] = architect_set
+  builtworks[row_id][key_patron] = patron_set
+
+
+# PRE-PROCESSING
+for bw_id, bw in builtworks.items():
 
   # Create the current row
   xml_row = et.Element(key_row)
-
-  row_date = first[key_date]
-
-  # Shared elements
 
   # bw id
   base_tag(xml_row, key_bw_id, bw_id)
@@ -174,158 +403,146 @@ while bw_id in builtworks:
   # IslandName
   island = et.SubElement(xml_row, key_islandname)
 
-  current_island = get_bw_island(first[key_islandname])
+  current_island = get_bw_island(bw.get(key_islandname))
 
   base_tag(island, key_ita,  current_island.get(key_json_name))
   base_tag(island, key_geo,  current_island.get(key_json_geonames))
 
   # Start_Earliest 
-  base_tag(xml_row, key_start,  first[key_start])
+  base_tag(xml_row, key_start,  bw.get(key_start))
 
   # End_Latest 
-  base_tag(xml_row, key_end,  first[key_end])
+  base_tag(xml_row, key_end,  bw.get(key_end))
 
   # Name 
-  base_tag(xml_row, key_name,  first[key_name])
-
-  """
-  # Function 
-  base_tag(xml_row, key_function,  first[key_function])
-
-  # Start_Function 
-  base_tag(xml_row, key_function_start,  first[key_function_start])
-
-  # End_Function
-  base_tag(xml_row, key_function_end,  first[key_function_end])
-  """
+  base_tag(xml_row, key_name,  bw.get(key_name))
 
   # Height
-  base_tag(xml_row, key_height,  first[key_height])
+  base_tag(xml_row, key_height,  bw.get(key_height))
 
-  # Material
-  text_materials = first[key_material] 
+  # SHP_Lenght
+  base_tag(xml_row, key_shape_lenght,  bw[key_shape_lenght])
 
-  if text_materials is not None:
-    text_materials = text_materials.split(';')
+  # SHP_Area
+  base_tag(xml_row, key_shape_area,  bw[key_shape_area])
 
+  # Materials
+  if bw.get(key_material) is not None and len(bw.get(key_material)) > 0:
+
+    # Get the set of materials
+    text_materials = bw.get(key_material)
+
+    # Create the tag Materials
     materials = et.SubElement(xml_row, key_materials)
 
-    for text_material in text_materials:
+    for current_material in text_materials:
+
+      # Create the tag Material
       material = et.SubElement(materials, key_material)
 
-      current_material = get_bw_material(text_material)
+      current_material = get_bw_material(current_material)
 
-      base_tag(material, key_eng, current_material.get(key_json_name))
+      # Set eng name
+      base_tag(material, key_eng, current_material.get(key_material))   
       base_tag(material, key_ita, current_material.get(key_json_ita))
       base_tag(material, key_aat, current_material.get(key_json_aat))
 
-  # Architect
-  base_tag(xml_row, key_architect,  first[key_architect])
+  # Functions
+  if bw.get(key_function) is not None and len(bw.get(key_function)) > 0:
 
-  # Patron
-  base_tag(xml_row, key_patron,  first[key_patron])
+    functions = et.SubElement(xml_row, key_functions)
+    for current_function in bw.get(key_function):
 
-  # SHP_Lenght
-  # base_tag(xml_row, key_shape_lenght,  first[key_shape_lenght])
+      function_tag = et.SubElement(functions, key_function)
+      function_tag.attrib[key_position] = str(bw.get(key_function).index(current_function) + 1)
 
-  # SHP_Area
-  # base_tag(xml_row, key_shape_area,  first[key_shape_area])
+      base_tag(function_tag, key_function, current_function.get(key_function))
+      base_tag(function_tag, key_function_start, current_function.get(key_function_start))
+      base_tag(function_tag, key_function_end, current_function.get(key_function_end))
 
-  set_uses = dict()
-  set_typologies = dict()
-  set_owners = dict()
-  set_tenants = dict()
-  set_functions = dict()
+  # Uses
+  if bw.get(key_use) is not None and len(bw.get(key_use)) > 0:
 
-  # Not shared elements
-  for current_bw in builtworks[bw_id]:
+    uses = et.SubElement(xml_row, key_uses)
+    for current_use in bw.get(key_use):
 
-    # Function
-    if current_bw[key_function] not in set_functions:
-      set_functions[current_bw[key_function]] = {key_function_start: current_bw[key_function_start], key_function_end: current_bw[key_function_end]}
+      # create xml tag
+      use_tag = et.SubElement(uses, key_use)
+      use_tag.attrib[key_position] = str(bw.get(key_use).index(current_use) + 1)
 
-    # Use
-    if current_bw[key_use] not in set_uses and current_bw[key_use]:
-      set_uses[current_bw[key_use]] = {key_use_start: current_bw[key_use_start], key_use_end: current_bw[key_use_end]}
+      # update current_use with data from uses list
+      current_use = get_bw_use(current_use)
 
-    # Typologies
-    if current_bw[key_typology] not in set_typologies and current_bw[key_typology]:
-      set_typologies[current_bw[key_typology]] = {key_typology_start: current_bw[key_typology_start], key_typology_end: current_bw[key_typology_end]}
-
-    # Owners
-    if current_bw[key_owner] not in set_owners and current_bw[key_owner]:
-      set_owners[current_bw[key_owner]] = {key_owner_start: current_bw[key_owner_start], key_owner_end: current_bw[key_owner_end]}
-
-    # Tenants
-    if current_bw[key_tenant] not in set_tenants and current_bw[key_tenant]:
-      set_tenants[current_bw[key_tenant]] = {key_tenant_start: current_bw[key_tenant_start], key_tenant_end: current_bw[key_tenant_end]}
-
-  # Function
-  functions = et.SubElement(xml_row, key_functions)
-  for key, function in set_functions.items():
-
-    function_tag = et.SubElement(functions, key_function)
-
-    base_tag(function_tag, key_name, key)
-    base_tag(function_tag, key_function_start, function[key_function_start])
-    base_tag(function_tag, key_function_end, function[key_function_end])
-
-
-  # Use
-  uses = et.SubElement(xml_row, key_uses)
-  for key, use in set_uses.items():
-
-    use_tag = et.SubElement(uses, key_use)
-
-    current_use = get_bw_use(key)
-
-    base_tag(use_tag, key_eng, current_use.get(key_json_name))
-    base_tag(use_tag, key_ita, current_use.get(key_json_ita))
-    base_tag(use_tag, key_aat, current_use.get(key_json_aat))
-
-    base_tag(use_tag, key_use_start, use[key_use_start])
-    base_tag(use_tag, key_use_end, use[key_use_end])
+      # Set eng name
+      base_tag(use_tag, key_eng, current_use.get(key_use))
+      base_tag(use_tag, key_ita, current_use.get(key_json_ita))
+      base_tag(use_tag, key_aat, current_use.get(key_json_aat))
+      base_tag(use_tag, key_use_start, current_use.get(key_use_start))
+      base_tag(use_tag, key_use_end, current_use.get(key_use_end))
 
   # Typologies
-  typologies = et.SubElement(xml_row, key_typologies)
-  for key, typology in set_typologies.items():
+  if bw.get(key_typology) is not None and len(bw.get(key_typology)) > 0:
 
-    typology_tag = et.SubElement(typologies, key_typology)
+    typologies = et.SubElement(xml_row, key_typologies)
+    for current_typology in bw.get(key_typology):
 
-    current_typology = get_bw_typology(key)
+      # create xml tag
+      typology_tag = et.SubElement(typologies, key_typology)
+      typology_tag.attrib[key_position] = str(bw.get(key_typology).index(current_typology) + 1)
 
-    base_tag(typology_tag, key_eng, current_typology.get(key_json_name))
-    base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
-    base_tag(typology_tag, key_aat, str(int(current_typology.get(key_json_aat))))
+      # update current_typology with data from typology list
+      current_typology = get_bw_typology(current_typology)
 
-    base_tag(typology_tag, key_typology_start, typology[key_typology_start])
-    base_tag(typology_tag, key_typology_end, typology[key_typology_end])
+      # Set resulting elements
+      base_tag(typology_tag, key_eng, current_typology.get(key_typology))
+      base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
+      base_tag(typology_tag, key_aat, current_typology.get(key_json_aat))
+      base_tag(typology_tag, key_typology_start, current_typology.get(key_typology_start))
+      base_tag(typology_tag, key_typology_end, current_typology.get(key_typology_end))
 
   # Owners
-  owners = et.SubElement(xml_row, key_owners)
-  for key, owner in set_owners.items():
+  if bw.get(key_owner) is not None and len(bw.get(key_owner)) > 0:
 
-    owner_tag = et.SubElement(owners, key_owner)
+    owners = et.SubElement(xml_row, key_owners)
+    for current_owner in bw.get(key_owner):
 
-    base_tag(owner_tag, key_name, key)
-    base_tag(owner_tag, key_owner_start, owner[key_owner_start])
-    base_tag(owner_tag, key_owner_end, owner[key_owner_end])
+      # Create xml tag
+      owner_tag = et.SubElement(owners, key_owner)
+      # Save owner position in list
+      owner_tag.attrib[key_position] = str(bw.get(key_owner).index(current_owner) + 1)
+
+      base_tag(owner_tag, key_person_id, current_owner.get(key_owner))
+      base_tag(owner_tag, key_owner_start, current_owner.get(key_owner_start))
+      base_tag(owner_tag, key_owner_end, current_owner.get(key_owner_end))
 
   # Tenants
-  tenants = et.SubElement(xml_row, key_tenants)
-  for key, tenant in set_tenants.items():
+  if bw.get(key_tenant) is not None and len(bw.get(key_tenant)) > 0:
 
-    tenant_tag = et.SubElement(tenants, key_tenant)
+    tenants = et.SubElement(xml_row, key_tenants)
+    for current_tenant in bw.get(key_tenant):
 
-    base_tag(tenant_tag, key_name, key)
-    base_tag(tenant_tag, key_tenant_start, tenant[key_tenant_start])
-    base_tag(tenant_tag, key_tenant_end, tenant[key_tenant_end])
+      # Create xml tag
+      tenant_tag = et.SubElement(tenants, key_tenant)
+      tenant_tag.attrib[key_position] = str(bw.get(key_tenant).index(current_tenant) + 1)
+
+      base_tag(tenant_tag, key_person_id, current_tenant.get(key_tenant))
+      base_tag(tenant_tag, key_tenant_start, current_tenant.get(key_tenant_start))
+      base_tag(tenant_tag, key_tenant_end, current_tenant.get(key_tenant_end))
+
+  # Architects
+  if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:  
+
+    architects = et.SubElement(xml_row, key_architects)
+    for current_architect in bw.get(key_architect):
+      base_tag(et.SubElement(architects, key_architect), key_person_id, current_architect)
+
+  # Patrons
+  if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
+    
+    patrons = et.SubElement(xml_row, key_patrons)
+    for current_patron in bw.get(key_patron):
+      base_tag(et.SubElement(patrons, key_patron), key_person_id, current_patron)
 
   final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
   write_file(bw_id, final)
-
-  break
-
-  cnt_id += 1
-  bw_id = f'SS_BLDG_{cnt_id:03d}'

@@ -1,0 +1,152 @@
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix aat:   <http://vocab.getty.edu/aat/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "SS_BLDG_008" .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/2>
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/2/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/construction/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1563-01-01"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/43>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/type/height>
+        a           crm:E55_Type ;
+        rdfs:label  "Height"@en .
+
+<https://archipelago.itatti.harvard.edu/resource//measurement_unit/meter>
+        a           crm:E58_Measurement_Unit ;
+        rdfs:label  "Meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1563-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/use/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1563-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1851-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/1>
+        a                             crm:E8_Acquisition ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/typology/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1563-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1851-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/measurement/height>
+        a                           crm:E16_Measurement ;
+        crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/measurement/height/dimension> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/2/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/3>
+        a       crm:E5_Event .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/role_patron/1>
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/typology/1>
+        a                     crm:E5_Event ;
+        rdfs:label            "Vera da pozzo"@it , "Wellhead"@en ;
+        crm:P2_has_type       aat:300052558 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/typology/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/2>
+        a       crm:E5_Event .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/material/1>
+        a                crm:E57_Material ;
+        rdfs:label       "Pietra d'Istria"@it , "Istrian marble"@en ;
+        crm:P2_has_type  aat:300011584 .
+
+<https://archipelago.itatti.harvard.edu/resource/type/architect>
+        a           crm:E55_Type ;
+        rdfs:label  "Architect"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/patron>
+        a           crm:E55_Type ;
+        rdfs:label  "Patron"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/1>
+        a       crm:E5_Event .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/role_architect/1>
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/43> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/architect> .
+
+aat:300008618  a  crm:E55_Type .
+
+aat:300052558  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/use/1>
+        a                     crm:E5_Event ;
+        rdfs:label            "Approvvigionamento idrico"@it , "Water supply"@en ;
+        crm:P2_has_type       aat:300008618 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/use/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/construction>
+        a                     crm:E12_Production ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/construction/date> ;
+        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/role_architect/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/role_patron/1> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/use>
+        a           crm:E55_Type ;
+        rdfs:label  "Use"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/destruction>
+        a       crm:E6_Destruction .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/measurement/height/dimension>
+        a                  crm:E54_Dimension ;
+        crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/height> ;
+        crm:P90_has_value  "1.0" ;
+        crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource//measurement_unit/meter> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008>
+        a                          crm:E22_Man-Made_Object ;
+        crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/construction> ;
+        crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/function/3> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/use/1> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/identifier> ;
+        crm:P24i_changed_ownership_through
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/acquisition/2> ;
+        crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/measurement/height> ;
+        crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_008/material/1> .
+
+aat:300011584  a  crm:E55_Type .
+
+<https://archipelago.itatti.harvard.edu/resource/type/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Typology"@en .

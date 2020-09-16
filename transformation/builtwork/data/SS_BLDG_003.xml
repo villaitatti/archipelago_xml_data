@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_003</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1852-01-01</Start>
+	<Name>Batteria</Name>
+	<SHP_Lenght>130.339791238175</SHP_Lenght>
+	<SHP_Area>724.128496009133</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Stone</eng>
+		</Material>
+		<Material>
+			<eng>Brick</eng>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function pos="1">
+			<Function>Public</Function>
+			<Start_Function>1852-01-01</Start_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use pos="1">
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1852-01-01</Start_Use>
+			<End_Use>1945-09-08</End_Use>
+		</Use>
+		<Use pos="2">
+			<eng>Abandoned</eng>
+			<ita>Abbandonato</ita>
+			<aat>300008347</aat>
+			<Start_Use>1961-01-01</Start_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology pos="1">
+			<eng>Gun battery</eng>
+			<Start_Typology>1852-01-01</Start_Typology>
+			<End_Typology>1945-09-08</End_Typology>
+		</Typology>
+		<Typology pos="2">
+			<eng>Ex gun battery</eng>
+			<Start_Typology>1961-01-01</Start_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner pos="1">
+			<ID_PERSON>86</ID_PERSON>
+			<Start_Owner>1866-10-21</Start_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
+		</Patron>
+	</Patrons>
+</row>

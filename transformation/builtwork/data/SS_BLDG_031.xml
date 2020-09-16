@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_BLDG_031</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1518-01-01</Start>
+	<End>1776-12-31</End>
+	<Name>Dormitorio</Name>
+	<SHP_Lenght>106.43495676324</SHP_Lenght>
+	<SHP_Area>511.278835170176</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Brick</eng>
+		</Material>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function pos="1">
+			<Function>Private</Function>
+			<Start_Function>1518-01-01</Start_Function>
+			<End_Function>1776-12-31</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use pos="1">
+			<eng>Religious</eng>
+			<ita>Religioso</ita>
+			<aat>300120364</aat>
+			<Start_Use>1518-01-01</Start_Use>
+			<End_Use>1776-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology pos="1">
+			<eng>Dormitory</eng>
+			<ita>Dormitorio</ita>
+			<aat>300005668</aat>
+			<Start_Typology>1518-01-01</Start_Typology>
+			<End_Typology>1776-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner pos="1">
+			<ID_PERSON>42</ID_PERSON>
+			<Start_Owner>1534-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>16</ID_PERSON>
+		</Patron>
+	</Patrons>
+</row>
