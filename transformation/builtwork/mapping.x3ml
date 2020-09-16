@@ -42,6 +42,12 @@
                     <namespace prefix="crmpc" uri="http://www.cidoc-crm.org/crmpc/"/>
                 </namespaces>
             </target_info>
+            <target_info>
+                <target_schema schema_file="https://www.w3.org/2002/07/owl.rdf" type="rdfs" version="1.1">CRMpc</target_schema>
+                <namespaces>
+                    <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+                </namespaces>
+            </target_info>
             <target_collection/>
         </target>
         <mapping_info>
@@ -72,6 +78,9 @@
                         <instance_generator name="100-built_work">
                             <arg name="bw_id" type="xpath">BW_ID/text()</arg>
                         </instance_generator>
+                        <label_generator name="Literal">
+                            <arg name="text" type="xpath">Name/text()</arg>
+                        </label_generator>
                     </entity>
                 </target_node>
             </domain>
@@ -266,6 +275,10 @@
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="func_id" type="xpathPosition">.</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">Function/text()</arg>
+                                <arg name="language" type="constant">en</arg>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>
@@ -288,14 +301,6 @@
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="use_id" type="xpathPosition">.</arg>
                             </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">eng/text()</arg>
-                                <arg name="language" type="constant">en</arg>
-                            </label_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">ita/text()</arg>
-                                <arg name="language" type="constant">it</arg>
-                            </label_generator>
                             <additional>
                                 <relationship>crm:P2_has_type</relationship>
                                 <entity>
@@ -322,6 +327,14 @@
                                     <instance_generator name="010-type-aat">
                                         <arg name="aat" type="xpath">aat/text()</arg>
                                     </instance_generator>
+                                    <label_generator name="Literal">
+                                        <arg name="text" type="xpath">eng/text()</arg>
+                                        <arg name="language" type="constant">en</arg>
+                                    </label_generator>
+                                    <label_generator name="Literal">
+                                        <arg name="text" type="xpath">ita/text()</arg>
+                                        <arg name="language" type="constant">it</arg>
+                                    </label_generator>
                                 </entity>
                             </additional>
                         </entity>
@@ -346,14 +359,6 @@
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="typology_id" type="xpathPosition">.</arg>
                             </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">eng/text()</arg>
-                                <arg name="language" type="constant">en</arg>
-                            </label_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">ita/text()</arg>
-                                <arg name="language" type="constant">it</arg>
-                            </label_generator>
                             <additional>
                                 <relationship>crm:P2_has_type</relationship>
                                 <entity>
@@ -380,6 +385,14 @@
                                     <instance_generator name="010-type-aat">
                                         <arg name="aat" type="xpath">aat/text()</arg>
                                     </instance_generator>
+                                    <label_generator name="Literal">
+                                        <arg name="text" type="xpath">eng/text()</arg>
+                                        <arg name="language" type="constant">en</arg>
+                                    </label_generator>
+                                    <label_generator name="Literal">
+                                        <arg name="text" type="xpath">ita/text()</arg>
+                                        <arg name="language" type="constant">it</arg>
+                                    </label_generator>
                                 </entity>
                             </additional>
                         </entity>
@@ -548,6 +561,38 @@
                             <instance_generator name="120-built_work-construction">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>SHP_Lenght</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>crm:P39_was_measured_by</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>SHP_Lenght</source_node>
+                    <target_node>
+                        <entity>
+                            <type>crm:E16_Measurement</type>
+                            <instance_generator name="170-built_work-measurement">
+                                <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
+                                <arg name="m_id" type="constant">perimeter</arg>
+                            </instance_generator>
+                            <additional>
+                                <relationship>crm:P40_observed_dimension</relationship>
+                                <entity>
+                                    <type>crm:E54_Dimension</type>
+                                    <instance_generator name="171-built_work-measurement-dimension">
+                                        <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
+                                        <arg name="m_id" type="constant">perimeter</arg>
+                                    </instance_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -981,8 +1026,8 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="000-type">
-                                        <arg name="type_id" type="constant">patron</arg>
+                                    <instance_generator name="010-type-aat">
+                                        <arg name="aat" type="xpath">300115251</arg>
                                     </instance_generator>
                                     <label_generator name="Literal">
                                         <arg name="text" type="constant">Patron</arg>
@@ -1045,8 +1090,8 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="000-type">
-                                        <arg name="type_id" type="constant">architect</arg>
+                                    <instance_generator name="010-type-aat">
+                                        <arg name="aat" type="constant">300024987</arg>
                                     </instance_generator>
                                     <label_generator name="Literal">
                                         <arg name="text" type="constant">Architect</arg>
