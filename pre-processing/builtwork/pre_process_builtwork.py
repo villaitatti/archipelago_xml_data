@@ -6,9 +6,11 @@ import os
 import re
 import json
 
+buildings = 'buildings_ordered.csv'
+
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.join(dir_path, 'buildings.csv')
+filename = os.path.join(dir_path, buildings)
 
 bw_typologies_filename = os.path.join(dir_path, 'dict', 'bw_typologies.tsv')
 bw_uses_filename = os.path.join(dir_path, 'dict', 'bw_uses.tsv')
@@ -23,6 +25,11 @@ bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_j
 bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
 bw_materials = pd.read_csv(bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
 bw_islands = pd.read_csv(bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
+
+def order_df():
+  df = df.set_index(key_bw_id)
+  df = df.sort_index()
+  df.to_csv(os.path.join(dir_path, buildings), sep='\t')
 
 def write_file(name, text, ext='xml'):
 
@@ -190,6 +197,7 @@ key_ita = 'ita'
 key_aat = 'aat'
 key_geo = 'geo'
 key_person_id = 'ID_PERSON'
+key_position = 'pos'
 
 # JSON keys
 key_json_aat = 'AAT ID'
@@ -199,16 +207,17 @@ key_json_ita = 'ITA'
 key_json_geonames = 'Geonames ID'
 key_surname = 'Surname'
 
-df = pd.read_csv(filename, sep='\t')
+dtypes = {key_start:str, key_end:str, key_height:str, key_architect:str, key_patron: str, key_owner: str, key_tenant: str, key_shape_lenght:str, key_architects:str}
+df = pd.read_csv(filename, sep='\t', dtype=dtypes)
 
 builtworks = {}
 
 def clear(val):
   # Clear nan words
-  if (type(val) is np.int64 or type(val) is np.float64) and np.isnan(val): 
+  if (type(val) is np.int64 or type(val) is np.float64 or type(val) is float) and np.isnan(val): 
     return ''
     
-  return val
+  return str(val)
 
 def add_to_set(key, bw_dict, id, val):
   if bw_dict[id].get(key) is None:
@@ -218,8 +227,9 @@ def add_to_set(key, bw_dict, id, val):
 
 def insert_in_list(l, to_insert):
 
-  if l is None or len(l) == 0:
-    return l.append(to_insert)
+  # Block empty dict
+  if not to_insert:
+    return
 
   for row in l:
     if to_insert == row:
@@ -227,10 +237,11 @@ def insert_in_list(l, to_insert):
 
   return  l.append(to_insert)
 
-# Create a dict with an array containing every bw as json object
-for i in range(len(df)) :
-  row_id = df.loc[i, key_bw_id]
+# COLLAPSING ROWS 
+for i, row in df.iterrows():
 
+  row_id = row[key_bw_id]
+  
   # Instantiate dictionaries
   typology_dict = {}
   use_dict = {}
@@ -253,7 +264,7 @@ for i in range(len(df)) :
     val = clear(df.iloc[i, y])
     col = df.columns[y]
 
-    if val is not None and type(val) is str:
+    if val is not None and type(val) and val:
 
       # Material
       if col == key_material:
@@ -379,6 +390,8 @@ for i in range(len(df)) :
   builtworks[row_id][key_architect] = architect_set
   builtworks[row_id][key_patron] = patron_set
 
+
+# PRE-PROCESSING
 for bw_id, bw in builtworks.items():
 
   # Create the current row
@@ -441,6 +454,7 @@ for bw_id, bw in builtworks.items():
     for current_function in bw.get(key_function):
 
       function_tag = et.SubElement(functions, key_function)
+      function_tag.attrib[key_position] = str(bw.get(key_function).index(current_function) + 1)
 
       base_tag(function_tag, key_function, current_function.get(key_function))
       base_tag(function_tag, key_function_start, current_function.get(key_function_start))
@@ -454,6 +468,7 @@ for bw_id, bw in builtworks.items():
 
       # create xml tag
       use_tag = et.SubElement(uses, key_use)
+      use_tag.attrib[key_position] = str(bw.get(key_use).index(current_use) + 1)
 
       # update current_use with data from uses list
       current_use = get_bw_use(current_use)
@@ -473,6 +488,7 @@ for bw_id, bw in builtworks.items():
 
       # create xml tag
       typology_tag = et.SubElement(typologies, key_typology)
+      typology_tag.attrib[key_position] = str(bw.get(key_typology).index(current_typology) + 1)
 
       # update current_typology with data from typology list
       current_typology = get_bw_typology(current_typology)
@@ -492,10 +508,10 @@ for bw_id, bw in builtworks.items():
 
       # Create xml tag
       owner_tag = et.SubElement(owners, key_owner)
+      # Save owner position in list
+      owner_tag.attrib[key_position] = str(bw.get(key_owner).index(current_owner) + 1)
 
-      add_person(owner_tag, current_owner.get(key_owner))
-
-      base_tag(owner_tag, key_name, current_owner.get(key_owner))
+      base_tag(owner_tag, key_person_id, current_owner.get(key_owner))
       base_tag(owner_tag, key_owner_start, current_owner.get(key_owner_start))
       base_tag(owner_tag, key_owner_end, current_owner.get(key_owner_end))
 
@@ -507,10 +523,9 @@ for bw_id, bw in builtworks.items():
 
       # Create xml tag
       tenant_tag = et.SubElement(tenants, key_tenant)
+      tenant_tag.attrib[key_position] = str(bw.get(key_tenant).index(current_tenant) + 1)
 
-      add_person(tenant_tag, current_tenant.get(key_tenant))
-
-      base_tag(tenant_tag, key_name, current_tenant.get(key_tenant))
+      base_tag(tenant_tag, key_person_id, current_tenant.get(key_tenant))
       base_tag(tenant_tag, key_tenant_start, current_tenant.get(key_tenant_start))
       base_tag(tenant_tag, key_tenant_end, current_tenant.get(key_tenant_end))
 
@@ -519,22 +534,14 @@ for bw_id, bw in builtworks.items():
 
     architects = et.SubElement(xml_row, key_architects)
     for current_architect in bw.get(key_architect):
-
-      architect_tag = et.SubElement(architects, key_architect)
-
-      add_person(architect_tag, current_architect)
-      base_tag(architect_tag, key_name, current_architect)
+      base_tag(et.SubElement(architects, key_architect), key_person_id, current_architect)
 
   # Patrons
   if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
     
     patrons = et.SubElement(xml_row, key_patrons)
     for current_patron in bw.get(key_patron):
-      
-      patron_tag = et.SubElement(patrons, key_patron)
-
-      add_person(patron_tag, current_patron)
-      base_tag(patron_tag, key_name, current_patron)
+      base_tag(et.SubElement(patrons, key_patron), key_person_id, current_patron)
 
   final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
