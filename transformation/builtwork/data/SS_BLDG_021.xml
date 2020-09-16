@@ -12,25 +12,23 @@
 	<SHP_Area>112.651852900495</SHP_Area>
 	<Materials>
 		<Material>
+			<eng>Brick</eng>
+		</Material>
+		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
 		</Material>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1777-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Service</eng>
 			<ita>Infrastrutture di servizio</ita>
 			<aat>300008553</aat>
@@ -39,7 +37,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Shelter for boats</eng>
 			<ita>Cavana</ita>
 			<Start_Typology>1777-01-01</Start_Typology>
@@ -47,22 +45,20 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1777-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Architects>
 		<Architect>
-			<Name>Tommaso Temanza</Name>
+			<ID_PERSON>38</ID_PERSON>
 		</Architect>
 	</Architects>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 		</Patron>
 	</Patrons>
 </row>

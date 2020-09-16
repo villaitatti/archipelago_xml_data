@@ -12,20 +12,18 @@
 	<SHP_Area>72.3630186374172</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
+			<eng>Brick</eng>
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1848-01-01</Start_Function>
 			<End_Function>1851-12-31</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Military</eng>
 			<ita>Militare</ita>
 			<aat>300120590</aat>
@@ -34,7 +32,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Storage facility</eng>
 			<ita>Deposito</ita>
 			<aat>300007700</aat>
@@ -43,15 +41,15 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
-			<Name>Austrian Empire</Name>
+		<Owner pos="1">
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<Name>Austrian Empire</Name>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

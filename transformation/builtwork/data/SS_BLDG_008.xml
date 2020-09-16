@@ -8,8 +8,9 @@
 	<Start>1563-01-01</Start>
 	<End>1851-12-31</End>
 	<Name>Vera da pozzo</Name>
+	<Height>1.0</Height>
 	<SHP_Lenght>4.28726950969252</SHP_Lenght>
-	<SHP_Area>1.14420085667466</SHP_Area>
+	<SHP_Area>1.1442008566746598</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Istrian marble</eng>
@@ -18,24 +19,24 @@
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1563-01-01</Start_Function>
 			<End_Function>1806-7-27</End_Function>
 		</Function>
-		<Function>
-			<Function>Private</Function>
-			<Start_Function>1563-01-01</Start_Function>
-			<End_Function>1806-07-27</End_Function>
-		</Function>
-		<Function>
+		<Function pos="2">
 			<Function>Public</Function>
 			<Start_Function>1806-07-28</Start_Function>
 			<End_Function>1851-12-31</End_Function>
 		</Function>
+		<Function pos="3">
+			<Function>Private</Function>
+			<Start_Function>1563-01-01</Start_Function>
+			<End_Function>1806-07-27</End_Function>
+		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Water supply</eng>
 			<ita>Approvvigionamento idrico</ita>
 			<aat>300008618</aat>
@@ -44,7 +45,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Wellhead</eng>
 			<ita>Vera da pozzo</ita>
 			<aat>300052558</aat>
@@ -53,40 +54,25 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
-			<End_Owner>4.28726950969252</End_Owner>
-		</Owner>
-		<Owner>
-			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1563-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
-		<Owner>
-			<Name>Austrian Empire</Name>
+		<Owner pos="2">
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>
 	</Owners>
-	<Tenants>
-		<Tenant>
-			<Name>1.14420085667466</Name>
-			<Start_Tenant>1563-01-01</Start_Tenant>
-			<End_Tenant>1806-07-27</End_Tenant>
-		</Tenant>
-		<Tenant/>
-	</Tenants>
 	<Architects>
 		<Architect>
-			<Name>Giovanni da Zon</Name>
+			<ID_PERSON>43</ID_PERSON>
 		</Architect>
 	</Architects>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 		</Patron>
 	</Patrons>
 </row>

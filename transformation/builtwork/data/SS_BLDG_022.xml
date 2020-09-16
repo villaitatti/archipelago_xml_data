@@ -8,6 +8,7 @@
 	<Start>1777-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Vera da pozzo</Name>
+	<Height>1.0</Height>
 	<SHP_Lenght>10.5881542520481</SHP_Lenght>
 	<SHP_Area>8.89871760499042</SHP_Area>
 	<Materials>
@@ -18,14 +19,14 @@
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1777-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Water supply</eng>
 			<ita>Approvvigionamento idrico</ita>
 			<aat>300008618</aat>
@@ -34,7 +35,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Wellhead</eng>
 			<ita>Vera da pozzo</ita>
 			<aat>300052558</aat>
@@ -43,9 +44,8 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1777-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
@@ -53,7 +53,6 @@
 	<Patrons>
 		<Patron>
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 		</Patron>
 	</Patrons>
 </row>

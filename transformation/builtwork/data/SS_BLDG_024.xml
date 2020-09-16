@@ -9,28 +9,26 @@
 	<End>1838-12-31</End>
 	<Name>Foresteria</Name>
 	<SHP_Lenght>47.0230201732414</SHP_Lenght>
-	<SHP_Area>126.609861793572</SHP_Area>
+	<SHP_Area>126.60986179357201</SHP_Area>
 	<Materials>
+		<Material>
+			<eng>Brick</eng>
+		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
 		</Material>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1500-01-01</Start_Function>
 			<End_Function>1838-12-31</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Accomodation</eng>
 			<ita>Strutture ricettive</ita>
 			<aat>300164125</aat>
@@ -39,7 +37,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Guest house</eng>
 			<ita>Foresteria</ita>
 			<aat>300007170</aat>
@@ -48,36 +46,22 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1797-05-11</End_Owner>
 		</Owner>
-		<Owner>
-			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
-			<Start_Owner>Dominican Friars of San Secondo</Start_Owner>
-			<End_Owner>47.0230201732414</End_Owner>
-		</Owner>
 	</Owners>
 	<Tenants>
-		<Tenant>
+		<Tenant pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Tenant>1534-01-01</Start_Tenant>
 			<End_Tenant>1806-07-27</End_Tenant>
-		</Tenant>
-		<Tenant>
-			<Name>126.609861793572</Name>
-			<Start_Tenant>1500-01-01</Start_Tenant>
-			<End_Tenant>1797-05-11</End_Tenant>
 		</Tenant>
 	</Tenants>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>90</ID_PERSON>
-			<Name>Venetian Senate</Name>
 		</Patron>
 	</Patrons>
 </row>

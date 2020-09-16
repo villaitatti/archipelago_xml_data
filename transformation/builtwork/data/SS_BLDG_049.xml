@@ -7,30 +7,28 @@
 	</IslandName>
 	<Start>1500-01-01</Start>
 	<End>1838-12-31</End>
-	<Name>Professorio</Name>
+	<Name>Monastero</Name>
 	<SHP_Lenght>85.1940171636558</SHP_Lenght>
 	<SHP_Area>311.056242245962</SHP_Area>
 	<Materials>
+		<Material>
+			<eng>Brick</eng>
+		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
 		</Material>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1500-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Religious</eng>
 			<ita>Religioso</ita>
 			<aat>300120364</aat>
@@ -39,44 +37,29 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Monastery</eng>
 			<ita>Convento</ita>
 			<aat>300000641</aat>
 			<Start_Typology>1500-01-01</Start_Typology>
 			<End_Typology>1806-07-27</End_Typology>
 		</Typology>
-		<Typology>
+		<Typology pos="2">
 			<eng>Professorio</eng>
 			<Start_Typology>1534-01-01</Start_Typology>
 			<End_Typology>1806-07-27</End_Typology>
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
-			<End_Owner>85.1940171636558</End_Owner>
-		</Owner>
-		<Owner>
-			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
-	<Tenants>
-		<Tenant>
-			<Name>311.056242245962</Name>
-			<Start_Tenant>1534-01-01</Start_Tenant>
-			<End_Tenant>1806-07-27</End_Tenant>
-		</Tenant>
-		<Tenant/>
-	</Tenants>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
+			<ID_PERSON>16</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

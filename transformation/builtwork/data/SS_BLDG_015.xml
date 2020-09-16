@@ -12,25 +12,23 @@
 	<SHP_Area>322.580300141092</SHP_Area>
 	<Materials>
 		<Material>
+			<eng>Brick</eng>
+		</Material>
+		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
 		</Material>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1806-07-28</Start_Function>
 			<End_Function>1849-12-31</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Military</eng>
 			<ita>Militare</ita>
 			<aat>300120590</aat>
@@ -39,7 +37,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Military battery</eng>
 			<ita>Batteria</ita>
 			<aat>300002501</aat>
@@ -48,8 +46,8 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
-			<Name>Austrian Empire</Name>
+		<Owner pos="1">
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>

@@ -14,53 +14,50 @@
 			<eng>Stone</eng>
 		</Material>
 		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
+			<eng>Brick</eng>
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1852-01-01</Start_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
-			<eng>Abandoned</eng>
-			<ita>Abbandonato</ita>
-			<aat>300008347</aat>
-			<Start_Use>1961-01-01</Start_Use>
-		</Use>
-		<Use>
+		<Use pos="1">
 			<eng>Military</eng>
 			<ita>Militare</ita>
 			<aat>300120590</aat>
 			<Start_Use>1852-01-01</Start_Use>
 			<End_Use>1945-09-08</End_Use>
 		</Use>
+		<Use pos="2">
+			<eng>Abandoned</eng>
+			<ita>Abbandonato</ita>
+			<aat>300008347</aat>
+			<Start_Use>1961-01-01</Start_Use>
+		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
-			<eng>Ex gun battery</eng>
-			<Start_Typology>1961-01-01</Start_Typology>
-		</Typology>
-		<Typology>
+		<Typology pos="1">
 			<eng>Gun battery</eng>
 			<Start_Typology>1852-01-01</Start_Typology>
 			<End_Typology>1945-09-08</End_Typology>
 		</Typology>
+		<Typology pos="2">
+			<eng>Ex gun battery</eng>
+			<Start_Typology>1961-01-01</Start_Typology>
+		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>86</ID_PERSON>
-			<Name>Venice Municipality</Name>
 			<Start_Owner>1866-10-21</Start_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<Name>Austrian Empire</Name>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

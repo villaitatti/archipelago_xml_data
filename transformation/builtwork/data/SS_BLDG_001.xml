@@ -17,20 +17,20 @@
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1570-01-01</Start_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Military</eng>
 			<ita>Militare</ita>
 			<aat>300120590</aat>
 			<Start_Use>1570-01-01</Start_Use>
 			<End_Use>1960-12-31</End_Use>
 		</Use>
-		<Use>
+		<Use pos="2">
 			<eng>Abandoned</eng>
 			<ita>Abbandonato</ita>
 			<aat>300008347</aat>
@@ -38,60 +38,44 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Powderhouse</eng>
 			<ita>Polveriera</ita>
 			<aat>300006921</aat>
 			<Start_Typology>1570-01-01</Start_Typology>
 			<End_Typology>1960-12-31</End_Typology>
 		</Typology>
-		<Typology>
+		<Typology pos="2">
 			<eng>Ex powderhouse</eng>
 			<Start_Typology>1961-01-01</Start_Typology>
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
-			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
-			<Start_Owner>Dominican Friars of San Secondo</Start_Owner>
-			<End_Owner>50.9750232192258</End_Owner>
+		<Owner pos="1">
+			<ID_PERSON>86</ID_PERSON>
+			<Start_Owner>1866-10-21</Start_Owner>
 		</Owner>
-		<Owner>
+		<Owner pos="2">
 			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
 			<Start_Owner>1570-01-01</Start_Owner>
 			<End_Owner>1797-05-11</End_Owner>
 		</Owner>
-		<Owner>
-			<Name>Austrian Empire</Name>
+		<Owner pos="3">
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>
-		<Owner>
-			<ID_PERSON>86</ID_PERSON>
-			<Name>Venice Municipality</Name>
-			<Start_Owner>1866-10-21</Start_Owner>
-		</Owner>
 	</Owners>
 	<Tenants>
-		<Tenant>
-			<Name>34.8314778282299</Name>
-			<Start_Tenant>1570-01-01</Start_Tenant>
-			<End_Tenant>1797-05-11</End_Tenant>
-		</Tenant>
-		<Tenant>
+		<Tenant pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Tenant>1534-01-01</Start_Tenant>
 			<End_Tenant>1806-07-27</End_Tenant>
 		</Tenant>
-		<Tenant/>
 	</Tenants>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>90</ID_PERSON>
-			<Name>Venetian Senate</Name>
 		</Patron>
 	</Patrons>
 </row>

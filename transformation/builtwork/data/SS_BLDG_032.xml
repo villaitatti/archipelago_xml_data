@@ -12,20 +12,18 @@
 	<SHP_Area>26.5905112842053</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
+			<eng>Brick</eng>
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1500-01-01</Start_Function>
 			<End_Function>1733-12-31</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Religious</eng>
 			<ita>Religioso</ita>
 			<aat>300120364</aat>
@@ -34,7 +32,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Bell tower</eng>
 			<ita>Campanile</ita>
 			<aat>300004848</aat>
@@ -43,36 +41,20 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1733-12-31</End_Owner>
 		</Owner>
-		<Owner>
+		<Owner pos="2">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
-			<End_Owner>18.3028992181332</End_Owner>
-		</Owner>
-		<Owner>
-			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
-	<Tenants>
-		<Tenant>
-			<Name>26.5905112842053</Name>
-			<Start_Tenant>1534-01-01</Start_Tenant>
-			<End_Tenant>1806-07-27</End_Tenant>
-		</Tenant>
-		<Tenant/>
-	</Tenants>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>16</ID_PERSON>
-			<Name>Baffo family</Name>
 		</Patron>
 	</Patrons>
 </row>

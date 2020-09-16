@@ -12,20 +12,18 @@
 	<SHP_Area>115.005862440171</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
+			<eng>Brick</eng>
 		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Public</Function>
 			<Start_Function>1500-01-01</Start_Function>
 			<End_Function>1769-12-31</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Military</eng>
 			<ita>Militare</ita>
 			<aat>300120590</aat>
@@ -34,7 +32,7 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
+		<Typology pos="1">
 			<eng>Walls</eng>
 			<ita>Muro di cinta</ita>
 			<aat>300100558</aat>
@@ -43,28 +41,15 @@
 		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
-			<Start_Owner>Dominican Friars of San Secondo</Start_Owner>
-			<End_Owner>426.958650045241</End_Owner>
-		</Owner>
-		<Owner>
-			<ID_PERSON>88</ID_PERSON>
-			<Name>Venetian Republic</Name>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1797-05-11</End_Owner>
 		</Owner>
 	</Owners>
 	<Tenants>
-		<Tenant>
-			<Name>115.005862440171</Name>
-			<Start_Tenant>1500-01-01</Start_Tenant>
-			<End_Tenant>1797-05-11</End_Tenant>
-		</Tenant>
-		<Tenant>
+		<Tenant pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Tenant>1534-01-01</Start_Tenant>
 			<End_Tenant>1806-07-27</End_Tenant>
 		</Tenant>
@@ -72,7 +57,6 @@
 	<Patrons>
 		<Patron>
 			<ID_PERSON>89</ID_PERSON>
-			<Name>Savi ed esecutori alle acque</Name>
 		</Patron>
 	</Patrons>
 </row>

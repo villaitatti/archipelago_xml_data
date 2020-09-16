@@ -9,28 +9,26 @@
 	<End>1820-12-31</End>
 	<Name>Chiesa</Name>
 	<SHP_Lenght>65.1657669977359</SHP_Lenght>
-	<SHP_Area>226.718730191543</SHP_Area>
+	<SHP_Area>226.71873019154302</SHP_Area>
 	<Materials>
+		<Material>
+			<eng>Brick</eng>
+		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
 		</Material>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 	</Materials>
 	<Functions>
-		<Function>
+		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1608-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
-		<Use>
+		<Use pos="1">
 			<eng>Religious</eng>
 			<ita>Religioso</ita>
 			<aat>300120364</aat>
@@ -39,46 +37,31 @@
 		</Use>
 	</Uses>
 	<Typologies>
-		<Typology>
-			<eng>Church</eng>
-			<ita>Chiesa</ita>
-			<aat>300007466</aat>
-			<Start_Typology>1608-01-01</Start_Typology>
-			<End_Typology>1806-07-27</End_Typology>
-		</Typology>
-		<Typology>
+		<Typology pos="1">
 			<eng>Church</eng>
 			<ita>Chiesa</ita>
 			<aat>300007466</aat>
 			<Start_Typology>1608-01-01</Start_Typology>
 			<End_Typology>1820-12-31</End_Typology>
 		</Typology>
+		<Typology pos="2">
+			<eng>Church</eng>
+			<ita>Chiesa</ita>
+			<aat>300007466</aat>
+			<Start_Typology>1608-01-01</Start_Typology>
+			<End_Typology>1806-07-27</End_Typology>
+		</Typology>
 	</Typologies>
 	<Owners>
-		<Owner>
+		<Owner pos="1">
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
-			<End_Owner>65.1657669977359</End_Owner>
-		</Owner>
-		<Owner>
-			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
-	<Tenants>
-		<Tenant>
-			<Name>226.718730191543</Name>
-			<Start_Tenant>1534-01-01</Start_Tenant>
-			<End_Tenant>1806-07-27</End_Tenant>
-		</Tenant>
-		<Tenant/>
-	</Tenants>
 	<Patrons>
 		<Patron>
 			<ID_PERSON>42</ID_PERSON>
-			<Name>Dominican Friars of San Secondo</Name>
 		</Patron>
 	</Patrons>
 </row>
