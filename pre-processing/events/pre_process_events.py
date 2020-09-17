@@ -2,6 +2,7 @@ from xml.dom import minidom as md, getDOMImplementation
 import xml.etree.ElementTree as et
 import os
 import json
+import re
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(dir_path, 'Events.xml')
@@ -23,6 +24,7 @@ def add_clean_field(input_key):
     field = et.SubElement(new_row, input_key)
     field.text = row.find(f'ns:{input_key}', ns).text
 
+regex_century_id = r'[0-9]{2}-[0-9]{2}'
 
 keys = {
     "row": "ROW",
@@ -56,7 +58,9 @@ keys = {
     "sources": "Sources",
     "source": "Source",
     "id_source": "ID_SOURCE",
-    "event": "Event"
+    "event": "Event",
+
+    "fraction_id": "fraction_id",
 }
 
 custom_keys = {
@@ -94,7 +98,15 @@ for row in tags:
     add_clean_field(keys["subtypology"])
     add_clean_field(keys["synopsis"])
     add_clean_field(keys["century"])
-    add_clean_field(keys["fraction_century"])
+
+
+    century_fraction = row.find(f'ns:{keys["fraction_century"]}', ns).text
+    if century_fraction is not None and re.search(regex_century_id, str(century_fraction)):
+        f_century = et.SubElement(new_row, keys["fraction_century"])
+        f_century.text =  century_fraction
+
+        r = re.search(regex_century_id, str(century_fraction))[0]
+        f_century.attrib[keys['fraction_id']] = r.replace('-','')
 
     # Add Custom Fields
     # Date_Earliest
@@ -165,6 +177,7 @@ for row in tags:
             event.text = v[keys['event']]
 
     #new_document_root.append(new_row)
+
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
     write_file(final)
 

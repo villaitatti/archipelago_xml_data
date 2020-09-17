@@ -129,6 +129,7 @@
 	<generator name="271-event-century_fraction" prefix="arc">
 		<pattern>event/{event_id}/century_fraction</pattern>
 	</generator>
+
 	<generator name="290-event-image" prefix="arc">
 		<pattern>event/{event_id}/image</pattern>
 	</generator>
@@ -372,6 +373,11 @@
 	<!-- Place -->
 	<generator name="600-place" prefix="geonames">
 		<pattern>{geonames_id}</pattern>
+	</generator>
+
+	<!-- Time primitive -->
+	<generator name="700-time_primitive" prefix="arc">
+		<pattern>time_primitive/{t_id}</pattern>
 	</generator>
 
 	<generator name="URIorUUID">
