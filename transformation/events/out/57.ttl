@@ -30,32 +30,23 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Lightning"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/70/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/57/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/70/event/57/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Wittness"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/70/event/57>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/70> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/70/event/57/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/source/85/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/57>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/70/event/57> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/57/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/57/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/57/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/57/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/57/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/57/date> , <urn:uuid:38f70507-b521-4900-a188-78d103053ebb> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/57/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/85> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -67,14 +58,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/57/typology>
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/70>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/70/identifier> .
-
-<urn:uuid:38f70507-b521-4900-a188-78d103053ebb>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 geonames:3230839  a  crm:E53_Place .
 

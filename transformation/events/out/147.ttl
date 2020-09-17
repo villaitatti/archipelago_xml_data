@@ -10,89 +10,56 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/147/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/168/event/147/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/168/event/147>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/168> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/168/event/147/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/147/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/167/event/147>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/167> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/167/event/147/role> .
-
-<urn:uuid:05a13750-42fd-4cb8-9894-3236fb069d1c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/147>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/167/event/147> , <https://archipelago.itatti.harvard.edu/resources/actor/168/event/147> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/147/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/147/name> , <https://archipelago.itatti.harvard.edu/resources/event/147/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/147/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/147/typology> ;
-        crm:P4_has_time-span       <urn:uuid:05a13750-42fd-4cb8-9894-3236fb069d1c> , <https://archipelago.itatti.harvard.edu/resources/event/147/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/167/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/147/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "147" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/168>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/168/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/147/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "Among the 13 clerics there is also the future Pope Paul IV, Gian Pietro Carafa."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/168/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/167/event/147/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/147/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Saint Cajetan along with 13 clerics resides in San Clemente"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/167>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/167/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/147/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Temporary housing"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/147/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "Among the 13 clerics there is also the future Pope Paul IV, Gian Pietro Carafa."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/147>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/147/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/147/name> , <https://archipelago.itatti.harvard.edu/resources/event/147/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/147/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/147/typology> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/147/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/167/event/147>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/147/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/147/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "147" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/147/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
 
 geonames:3168468  a  crm:E53_Place .

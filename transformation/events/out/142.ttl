@@ -10,84 +10,51 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/142/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/159/event/142>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/159> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/159/event/142/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/148/event/142>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/148> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/148/event/142/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/148/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/142/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Duke Ercole I is received by the Doge Barbarigo in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/142/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/142>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/159/event/142> , <https://archipelago.itatti.harvard.edu/resources/actor/148/event/142> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/142/name> , <https://archipelago.itatti.harvard.edu/resources/event/142/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/142/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/142/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/142/date> , <urn:uuid:3fce8e6f-f27f-47dd-b702-570eaff53d26> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/142/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "142" .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/142/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Visit of state"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/159/event/142/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/159>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/159/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/148/event/142/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Doge"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/148>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/148/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
 
-geonames:3168468  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resources/event/142/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/159/identifier>
+<https://archipelago.itatti.harvard.edu/resources/event/142/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Visit of state"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:3fce8e6f-f27f-47dd-b702-570eaff53d26>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/142>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/142/name> , <https://archipelago.itatti.harvard.edu/resources/event/142/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/142/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/142/typology> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/142/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/142/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/148/event/142>
+        a       crm:PC14_carried_out_by .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/142/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "142" .

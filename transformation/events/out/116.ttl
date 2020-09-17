@@ -14,10 +14,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/133/event/116/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Recipient"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/116/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "13th cent."@en .
@@ -30,21 +26,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Transfer (goods or people)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/116>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/133/event/116> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/116/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/116/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/116/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/116/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/116/date> , <urn:uuid:563ea0fd-2150-4c68-83ca-cdd0c861f6a8> ;
+        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/116/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier>
         a       crm:E42_Identifier .
@@ -57,9 +46,7 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/133/event/116>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/133> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/133/event/116/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/116/name>
         a                crm:E41_Appellation ;
@@ -71,7 +58,3 @@
         rdfs:label  "116" .
 
 geonames:3168468  a  crm:E53_Place .
-
-<urn:uuid:563ea0fd-2150-4c68-83ca-cdd0c861f6a8>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .

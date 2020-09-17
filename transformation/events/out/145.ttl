@@ -10,89 +10,56 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/164/event/145/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Doge"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/145/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/164/event/145>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/145/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Doge meets him in the church."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/165>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/165/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/event/145/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Visit of state"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/145/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Duke Francesco II Sforza is received by the Doge Gritti in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/164>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/164/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/165/event/145>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/165> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/165/event/145/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/145/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Visit of state"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/145>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/145/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/145/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/145/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/145/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/145/typology> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/145/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/145/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "145" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/164/event/145>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/164> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/164/event/145/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/165/event/145/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
-<urn:uuid:534167fc-4b0a-4b24-b375-17c19d267030>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/164/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
+geonames:3168468  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/145/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/165/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/145/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/145>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/164/event/145> , <https://archipelago.itatti.harvard.edu/resources/actor/165/event/145> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/145/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/145/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/145/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/145/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/145/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/145/date> , <urn:uuid:534167fc-4b0a-4b24-b375-17c19d267030> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
-
-geonames:3168468  a  crm:E53_Place .

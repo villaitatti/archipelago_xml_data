@@ -12,11 +12,11 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/126>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/126/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/126/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/126/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/126/typology> ;
-        crm:P4_has_time-span       <urn:uuid:a0cca869-dc82-4623-9406-c5bfaec47bc9> , <https://archipelago.itatti.harvard.edu/resources/event/126/date> ;
+        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/126/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -26,9 +26,7 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology>
         a           crm:E55_Type ;
@@ -42,14 +40,6 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/102>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/102/identifier> .
-
-<urn:uuid:a0cca869-dc82-4623-9406-c5bfaec47bc9>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/126/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
@@ -58,18 +48,11 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/102/event/126/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/126/identifier>
         a           crm:E42_Identifier ;

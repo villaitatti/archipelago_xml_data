@@ -11,30 +11,21 @@
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/51/event/70>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/51> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/51/event/70/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/70>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/51/event/70> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/70/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/70/name> , <https://archipelago.itatti.harvard.edu/resources/event/70/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/70/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/70/typology> ;
-        crm:P4_has_time-span       <urn:uuid:e84d1401-dff8-4470-8fb0-7fc8308f0e25> , <https://archipelago.itatti.harvard.edu/resources/event/70/date> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/70/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/51>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/51/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/70/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "A bolt of lightning strikes the bell tower. This is restored thanks to the financial support of Pietro Bon."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/51/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/70/name>
         a                crm:E41_Appellation ;
@@ -67,12 +58,4 @@ geonames:10  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Lightning"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/51/event/70/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donor for the restoration"@en .
-
 geonames:3230839  a  crm:E53_Place .
-
-<urn:uuid:e84d1401-dff8-4470-8fb0-7fc8308f0e25>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .

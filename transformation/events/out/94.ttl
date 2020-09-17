@@ -10,77 +10,44 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Public deliberation"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124/event/94>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/124> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/124/event/94/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/94/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/90/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124/event/94/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Office involved"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/94/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/90/event/94/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
-
-geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/90/event/94>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/90> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/90/event/94/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/94/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Office of the Provveditori alla Sanità is made permanent"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/94>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/124/event/94> , <https://archipelago.itatti.harvard.edu/resources/actor/90/event/94> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/94/name> , <https://archipelago.itatti.harvard.edu/resources/event/94/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/94/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/date> , <urn:uuid:6a8fdd6e-4543-4a19-87db-08449c2fcc88> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
-        crm:P7_took_place_at       geonames:12172719 .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/94/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/124/event/94>
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/94/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "94" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/124/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/90>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/90/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/event/94>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/94/name> , <https://archipelago.itatti.harvard.edu/resources/event/94/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/94/typology> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
+        crm:P7_took_place_at       geonames:12172719 .
 
-<urn:uuid:6a8fdd6e-4543-4a19-87db-08449c2fcc88>
+geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/94/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+        crm:P82_at_some_time_within  "15th cent."@en .

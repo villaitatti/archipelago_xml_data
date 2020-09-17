@@ -22,27 +22,14 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "Consecration of the last four altars of the church."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/29/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
-<urn:uuid:6c6c2863-f468-4392-8ad3-ddc54feda2e6>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/29>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/29/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/29/typology>
         a           crm:E55_Type ;
@@ -50,16 +37,12 @@ geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/29>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/29> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/29/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/29/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/29/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/29/name> , <https://archipelago.itatti.harvard.edu/resources/event/29/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/29/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/29/typology> ;
-        crm:P4_has_time-span     <urn:uuid:6c6c2863-f468-4392-8ad3-ddc54feda2e6> , <https://archipelago.itatti.harvard.edu/resources/event/29/date> ;
+        crm:P4_has_time-span     "Last quarter of the century (75-99)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/29/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/29/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/29/name>
         a                crm:E41_Appellation ;

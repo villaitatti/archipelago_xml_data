@@ -16,49 +16,21 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/27>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/27> , <https://archipelago.itatti.harvard.edu/resources/actor/21/event/27> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/27/name> , <https://archipelago.itatti.harvard.edu/resources/event/27/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/27/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/27/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/27/date> , <urn:uuid:4383121d-8b46-4532-a15d-a4fc01f28bad> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/27/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/event/27/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Painter"@en .
-
-<urn:uuid:4383121d-8b46-4532-a15d-a4fc01f28bad>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/27/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/27/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Installation of the Pentecost painting by Titian"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/21>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/27>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/21> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/21/event/27/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/identifier>
-        a       crm:E42_Identifier .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/27/subtypology>
         a           crm:E55_Type ;
@@ -71,8 +43,3 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/27/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "27" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/27>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/27/role> .

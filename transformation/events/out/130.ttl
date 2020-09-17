@@ -10,9 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/149/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -24,10 +21,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/130>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/130/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/130/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/130/typology> , <https://archipelago.itatti.harvard.edu/resources/event/130/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:4a860e02-f23a-4a8f-baa8-bf2b68ea7e61> , <https://archipelago.itatti.harvard.edu/resources/event/130/date> ;
+        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/130/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041> ;
         crm:P7_took_place_at       geonames:7910746 .
 
@@ -42,14 +39,6 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/149>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/149/identifier> .
-
-<urn:uuid:4a860e02-f23a-4a8f-baa8-bf2b68ea7e61>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/130/subtypology>
@@ -59,14 +48,8 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/149/event/130/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/149> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/130/typology>
         a           crm:E55_Type ;

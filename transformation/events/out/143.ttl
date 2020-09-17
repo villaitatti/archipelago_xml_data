@@ -10,84 +10,51 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/143>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/161/event/143> , <https://archipelago.itatti.harvard.edu/resources/actor/160/event/143> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/143/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/143/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/143/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/143/typology> ;
-        crm:P4_has_time-span       <urn:uuid:7c7d1af4-d279-4eb5-a902-f3050750a276> , <https://archipelago.itatti.harvard.edu/resources/event/143/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/143/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/143/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "143" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/160/event/143>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/160> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/160/event/143/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/161/event/143/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/161/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/160/identifier>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/143/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:7c7d1af4-d279-4eb5-a902-f3050750a276>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/161/event/143>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/161> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/161/event/143/role> .
+<https://archipelago.itatti.harvard.edu/resources/actor/160/event/143>
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/143/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/143/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Visit of state"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/143/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Cardinal Schinner is received by the Doge Loredan in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/161>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/161/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
 
 geonames:3168468  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/143/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Visit of state"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/160>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/160/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/160/event/143/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Doge"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/143>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/143/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/143/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/143/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/143/typology> ;
+        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/143/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .

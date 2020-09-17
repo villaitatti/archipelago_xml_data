@@ -10,38 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/154/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/154/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124/event/154>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/124> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/124/event/154/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/154/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "154" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/176/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/154/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "The ambassador Alessandro de Strigis and his entourage are send to the Lazzaretto Vecchio"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124/event/154/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/176/event/154/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Quarantined person"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/154/subtypology>
         a           crm:E55_Type ;
@@ -49,43 +24,35 @@
 
 geonames:7910520  a  crm:E53_Place .
 
+<https://archipelago.itatti.harvard.edu/resources/event/154/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/124/event/154>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/154/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "154" .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/176/event/154>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/176> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/176/event/154/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/124>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Marquis was sent by the Duke Carlo Gonzaga to Wien for signing the peace with the Emperor Ferdinand II. Because he comes from an infected city he is quarantined the lazzaretto."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/124/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/176>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/176/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/event/154/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The ambassador Alessandro de Strigis and his entourage are send to the Lazzaretto Vecchio"@it ;
+        crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resources/event/154>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/124/event/154> , <https://archipelago.itatti.harvard.edu/resources/actor/176/event/154> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/154/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/154/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/154/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/154/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/154/date> , <urn:uuid:9a7bd9c9-52cc-4743-ba14-85703481455e> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/154/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:7910520 .
-
-<urn:uuid:9a7bd9c9-52cc-4743-ba14-85703481455e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .

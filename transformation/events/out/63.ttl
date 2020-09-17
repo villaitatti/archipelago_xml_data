@@ -18,13 +18,6 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/26/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/26>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/26/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/63/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The procurator Filippo Tron asks for a burial in the choir of the church"@it ;
@@ -34,20 +27,15 @@ geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/63>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/26/event/63> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/63/name> , <https://archipelago.itatti.harvard.edu/resources/event/63/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/63/typology> ;
-        crm:P4_has_time-span     <urn:uuid:d7495b77-2c5d-47ca-8a36-d006c19bf797> , <https://archipelago.itatti.harvard.edu/resources/event/63/date> ;
+        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/63/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/63/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "63" .
 
-<urn:uuid:d7495b77-2c5d-47ca-8a36-d006c19bf797>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/26/event/63>
-        a                  crm:PC14_carried_out_by ;
-        crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/26> .
+        a       crm:PC14_carried_out_by .

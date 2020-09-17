@@ -10,26 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:a85ccec2-9240-44e1-a382-2eed082751ea>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/24/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/24>
-        a                  crm:PC14_carried_out_by ;
-        crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/24> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/24/subtypology>
         a           crm:E55_Type ;
@@ -41,10 +29,10 @@ geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/24>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/24> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/24/name> , <https://archipelago.itatti.harvard.edu/resources/event/24/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/24/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/24/typology> ;
-        crm:P4_has_time-span     <urn:uuid:a85ccec2-9240-44e1-a382-2eed082751ea> , <https://archipelago.itatti.harvard.edu/resources/event/24/date> ;
+        crm:P4_has_time-span     "Beginning of the century (0-10)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/24/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/24/name>

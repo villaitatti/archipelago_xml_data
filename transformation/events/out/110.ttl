@@ -10,73 +10,56 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/74/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/74/event/110/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Island's administrator"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/110/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/110>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/110/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/110/name> , <https://archipelago.itatti.harvard.edu/resources/event/110/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/110/typology> , <https://archipelago.itatti.harvard.edu/resources/event/110/subtypology> ;
+        crm:P4_has_time-span       "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/110/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/110/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "110" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/134/event/110/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Bishop of Castello"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/74>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/74/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/134/event/110>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/134> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/134/event/110/role> .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/134/identifier>
+<https://archipelago.itatti.harvard.edu/resources/actor/74/event/110>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/110/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/134>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/134/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/110/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Public deliberation"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier> .
 
-<urn:uuid:353172fe-0e5b-4a37-89d2-3631351a36f0>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/110/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The Bishop of Castello, Giovanni Polani, recognizes the Patriarch of Grado's jurisdiction on the island"@it ;
+        crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/110/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "12th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/event/110/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Public deliberation"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/110/synopsis>
         a           crm:E73_Information_Object ;
@@ -84,22 +67,6 @@
 
 geonames:3168468  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/110/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "The Bishop of Castello, Giovanni Polani, recognizes the Patriarch of Grado's jurisdiction on the island"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/110>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/74/event/110> , <https://archipelago.itatti.harvard.edu/resources/actor/134/event/110> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/110/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/110/name> , <https://archipelago.itatti.harvard.edu/resources/event/110/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/110/typology> , <https://archipelago.itatti.harvard.edu/resources/event/110/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:353172fe-0e5b-4a37-89d2-3631351a36f0> , <https://archipelago.itatti.harvard.edu/resources/event/110/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/74/event/110>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/74> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/74/event/110/role> .
+<https://archipelago.itatti.harvard.edu/resources/event/110/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "12th cent."@en .

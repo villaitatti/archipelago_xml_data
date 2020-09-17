@@ -12,15 +12,11 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/22>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/22> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/22/name> , <https://archipelago.itatti.harvard.edu/resources/event/22/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/22/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/22/typology> ;
-        crm:P4_has_time-span     <urn:uuid:34f2d24e-0dbf-43af-b36f-273124c84209> , <https://archipelago.itatti.harvard.edu/resources/event/22/date> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/22/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/22/role>
-        a           crm:E55_Type ;
-        rdfs:label  "New owners"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/22/identifier>
         a           crm:E42_Identifier ;
@@ -39,23 +35,10 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "12th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
-<urn:uuid:34f2d24e-0dbf-43af-b36f-273124c84209>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/22>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/22/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/22/subtypology>
         a           crm:E55_Type ;

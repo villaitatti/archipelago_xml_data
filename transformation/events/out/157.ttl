@@ -10,15 +10,12 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:78ddc704-c462-4e06-a199-e388329cd0a5>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/157>
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/157/name> , <https://archipelago.itatti.harvard.edu/resources/event/157/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/157/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/157/typology> ;
-        crm:P4_has_time-span     <urn:uuid:78ddc704-c462-4e06-a199-e388329cd0a5> , <https://archipelago.itatti.harvard.edu/resources/event/157/date> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/157/date> ;
         crm:P7_took_place_at     geonames:12172719 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/157/name>

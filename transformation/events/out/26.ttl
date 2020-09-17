@@ -10,14 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:dedfd8ab-1b40-45fd-b16b-5688ab18eccf>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/event/26/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Artisted appointed"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/26/typology>
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
@@ -27,25 +19,7 @@
         rdfs:label  "26" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/26>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/21> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/21/event/26/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/26/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/26>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/26/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
+        a       crm:PC14_carried_out_by .
 
 geonames:7910746  a  crm:E53_Place .
 
@@ -54,20 +28,13 @@ geonames:7910746  a  crm:E53_Place .
         rdfs:label       "Titian is appointed for painting the altarpiece of the Pentecost"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/26>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/26> , <https://archipelago.itatti.harvard.edu/resources/actor/21/event/26> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/26/name> , <https://archipelago.itatti.harvard.edu/resources/event/26/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/26/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/26/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/26/date> , <urn:uuid:dedfd8ab-1b40-45fd-b16b-5688ab18eccf> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/26/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/26/date>
         a                            crm:E52_Time-Span ;

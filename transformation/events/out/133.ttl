@@ -10,82 +10,49 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/133/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Demolition of the monastery and small houses for noblemen"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/153/event/133/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Engineer"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/133/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The island is raised to the ground and the entire monastery, alongside the houses for noblemen, is demolished. The church is spared but all its artworks are removed."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/133>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/154/event/133> , <https://archipelago.itatti.harvard.edu/resources/actor/153/event/133> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/133/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/133/name> , <https://archipelago.itatti.harvard.edu/resources/event/133/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/133/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/133/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/133/date> , <urn:uuid:61c858e3-1cab-467f-a0ef-dffd235c3a5b> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/154/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/133/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Demolition"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154/event/133/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/133/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "133" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/153>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/153/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/133/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "19th cent."@en .
 
-<urn:uuid:61c858e3-1cab-467f-a0ef-dffd235c3a5b>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/133/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/133/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "133" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/133/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Demolition"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/133>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/133/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/133/name> , <https://archipelago.itatti.harvard.edu/resources/event/133/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/133/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/133/typology> ;
+        crm:P4_has_time-span       "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/133/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/133/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Demolition of the monastery and small houses for noblemen"@it ;
+        crm:P2_has_type  "preferred_name" .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/153/event/133>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/153> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/153/event/133/role> .
+        a       crm:PC14_carried_out_by .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/154/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resources/event/133/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The island is raised to the ground and the entire monastery, alongside the houses for noblemen, is demolished. The church is spared but all its artworks are removed."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/153/identifier>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
 geonames:3168468  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154/event/133>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/154> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/154/event/133/role> .

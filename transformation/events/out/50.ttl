@@ -26,10 +26,6 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
 
-<urn:uuid:746c6c0a-3740-4a25-bf9a-c1af00268d41>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/50/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
@@ -37,13 +33,6 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/50/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/50/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
@@ -53,9 +42,7 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
         rdfs:label  "Construction"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/50>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/50/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/50/synopsis>
         a           crm:E73_Information_Object ;
@@ -63,16 +50,12 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/event/50>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/50> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/50/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/50/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/50/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/50/typology> , <https://archipelago.itatti.harvard.edu/resources/event/50/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/50/date> , <urn:uuid:746c6c0a-3740-4a25-bf9a-c1af00268d41> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/50/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
 geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .

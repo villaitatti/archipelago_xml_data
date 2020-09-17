@@ -12,11 +12,11 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/11>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/11> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/11/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/11/name> , <https://archipelago.itatti.harvard.edu/resources/event/11/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/11/typology> , <https://archipelago.itatti.harvard.edu/resources/event/11/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:9d298c83-5e62-49d0-bf60-7d4c9260299c> , <https://archipelago.itatti.harvard.edu/resources/event/11/date> ;
+        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/11/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -27,10 +27,6 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
-
-<urn:uuid:9d298c83-5e62-49d0-bf60-7d4c9260299c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/11/identifier>
         a           crm:E42_Identifier ;
@@ -47,9 +43,6 @@ geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E73_Information_Object ;
         rdfs:label  "The work for the new refectory located in the eastern side of the island will last until the 1738."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/11/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
@@ -60,14 +53,8 @@ geonames:17  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/11/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/11>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/11/role> .
+        a       crm:PC14_carried_out_by .
 
 geonames:3230839  a  crm:E53_Place .
 
@@ -75,7 +62,3 @@ geonames:3230839  a  crm:E53_Place .
         a                crm:E41_Appellation ;
         rdfs:label       "Construction of the new wing for the refectory"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .

@@ -25,28 +25,15 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
 
-<urn:uuid:026d5c44-8c8b-46e5-aefb-b76693c4baf2>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/85/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/85>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/85/name> , <https://archipelago.itatti.harvard.edu/resources/event/85/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/85/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/85/typology> ;
-        crm:P4_has_time-span     <urn:uuid:026d5c44-8c8b-46e5-aefb-b76693c4baf2> , <https://archipelago.itatti.harvard.edu/resources/event/85/date> ;
+        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/85/date> ;
         crm:P7_took_place_at     geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/85/name>
@@ -59,7 +46,3 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         rdfs:label  "85" .
 
 geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .

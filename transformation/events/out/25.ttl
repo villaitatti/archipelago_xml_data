@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:4fef0e91-c21b-40bd-b3fb-31bc36897c99>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/25/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "An Augustinian monk refers of the presence of Jacopo Sansovino in the church. In the same year, Tuitian was completing the Pentecost painting that was already installed on the main altar of the church."@en .
@@ -22,38 +18,21 @@
         a           crm:E42_Identifier ;
         rdfs:label  "25" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/23>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/23/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/25/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/23/event/25>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/23> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/23/event/25/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/25>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/21/event/25> , <https://archipelago.itatti.harvard.edu/resources/actor/23/event/25> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/25/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/25/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/25/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/25/name> , <https://archipelago.itatti.harvard.edu/resources/event/25/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/25/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/25/typology> ;
-        crm:P4_has_time-span     <urn:uuid:4fef0e91-c21b-40bd-b3fb-31bc36897c99> , <https://archipelago.itatti.harvard.edu/resources/event/25/date> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/25/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/event/25/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Artist involved in the church's decoration"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/23/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/25/name>
         a                crm:E41_Appellation ;
@@ -69,15 +48,3 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/25/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/23/event/25/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect involved in the church's restoration"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/event/25>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/21> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/21/event/25/role> .

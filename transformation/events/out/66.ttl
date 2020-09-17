@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/66/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/66/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
@@ -27,36 +23,23 @@
         a           crm:E55_Type ;
         rdfs:label  "Restoration"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/66/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
-<urn:uuid:c5fdd14b-0373-4614-a568-69542ca29224>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/66/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "66" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/66>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/66/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/66>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/66> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/66/name> , <https://archipelago.itatti.harvard.edu/resources/event/66/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/66/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/66/typology> ;
-        crm:P4_has_time-span     <urn:uuid:c5fdd14b-0373-4614-a568-69542ca29224> , <https://archipelago.itatti.harvard.edu/resources/event/66/date> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/66/date> ;
         crm:P7_took_place_at     geonames:7910746 .

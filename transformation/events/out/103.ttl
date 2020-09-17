@@ -22,10 +22,6 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
-<urn:uuid:bdb6158f-4b20-4a7f-b317-9baa352f040b>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/103/typology>
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
@@ -34,7 +30,8 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/103/name> , <https://archipelago.itatti.harvard.edu/resources/event/103/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/103/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/103/typology> ;
-        crm:P4_has_time-span       <urn:uuid:bdb6158f-4b20-4a7f-b317-9baa352f040b> , <https://archipelago.itatti.harvard.edu/resources/event/103/date> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/103/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

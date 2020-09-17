@@ -10,18 +10,12 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/84>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/84/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/32/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "32" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/84/event/32>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/84> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/84/event/32/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/32/typology>
         a           crm:E55_Type ;
@@ -32,23 +26,15 @@
         rdfs:label       "Survey of the entire island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:be395037-e1ff-4dc5-858f-c37b5904cc14>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/84/event/32/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Surveyor"@en .
-
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/32>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/84/event/32> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/32/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/32/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/32/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/32/name> , <https://archipelago.itatti.harvard.edu/resources/event/32/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/32/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/32/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/32/date> , <urn:uuid:be395037-e1ff-4dc5-858f-c37b5904cc14> ;
+        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/32/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/32/date>
@@ -62,6 +48,3 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/32/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/84/identifier>
-        a       crm:E42_Identifier .

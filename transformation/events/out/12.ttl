@@ -15,10 +15,6 @@
         rdfs:label       "Reconstruction of the church"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:f643f2e6-36f0-4925-ba7c-a041926f93ba>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Reconstruction"@en .
@@ -31,14 +27,8 @@
         a           crm:E42_Identifier ;
         rdfs:label  "12" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/12/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/12>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/12/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis>
         a           crm:E73_Information_Object ;
@@ -46,16 +36,13 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/12>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/12> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/12/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/12/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/12/typology> ;
-        crm:P4_has_time-span       <urn:uuid:f643f2e6-36f0-4925-ba7c-a041926f93ba> , <https://archipelago.itatti.harvard.edu/resources/event/12/date> ;
+        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
 
 geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:12 .
@@ -72,7 +59,3 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/12/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .

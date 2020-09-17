@@ -14,10 +14,6 @@
         a           crm:E42_Identifier ;
         rdfs:label  "107" .
 
-<urn:uuid:17e2a3a7-445f-41c1-b85a-df88a0961e37>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
@@ -30,7 +26,8 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/107/name> , <https://archipelago.itatti.harvard.edu/resources/event/107/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/107/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/107/typology> ;
-        crm:P4_has_time-span       <urn:uuid:17e2a3a7-445f-41c1-b85a-df88a0961e37> , <https://archipelago.itatti.harvard.edu/resources/event/107/date> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/107/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

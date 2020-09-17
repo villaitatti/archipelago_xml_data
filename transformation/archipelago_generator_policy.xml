@@ -137,7 +137,6 @@
 		<pattern>event/{event_id}/source/{source_id}/event</pattern>
 	</generator>
 
-
 	<!-- Actor -->
 	<generator name="300-actor" prefix="arc">
 		<pattern>actor/{actor_id}</pattern>

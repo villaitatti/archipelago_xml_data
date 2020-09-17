@@ -10,82 +10,49 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:c608f667-0c29-44f1-9549-ce30e197726e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154/event/136/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Architect"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/136/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The whole project costed 3 million lire."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/153/event/136>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/153> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/153/event/136/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/136/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Construction"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/154/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/154/event/136>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/154> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/154/event/136/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/136/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/153>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/153/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/136/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "136" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/154/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/136>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/154/event/136> , <https://archipelago.itatti.harvard.edu/resources/actor/153/event/136> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/136/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/136/name> , <https://archipelago.itatti.harvard.edu/resources/event/136/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/136/typology> , <https://archipelago.itatti.harvard.edu/resources/event/136/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/136/date> , <urn:uuid:c608f667-0c29-44f1-9549-ce30e197726e> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/136/name>
         a                crm:E41_Appellation ;
         rdfs:label       "End of the works for the construction of the mental institution"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/153/event/136/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Engineer"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/136/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The whole project costed 3 million lire."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/153/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resources/event/136/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Construction"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/136/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/136/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/136>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/136/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/136/name> , <https://archipelago.itatti.harvard.edu/resources/event/136/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/136/typology> , <https://archipelago.itatti.harvard.edu/resources/event/136/subtypology> ;
+        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/136/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/153/event/136>
+        a       crm:PC14_carried_out_by .
 
 geonames:3168468  a  crm:E53_Place .

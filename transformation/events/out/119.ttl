@@ -10,45 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/143/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/143/event/119/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Pope John XXII"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/142/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/119/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/119/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "119" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/119/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "After the death of the prior Nicolò de Arimundo, Pope John XXII gives the vacant priory to the Canon Regular Nicolò de Benvenuti who lived in Santo Spirito. The decision sheds light on the decline of the decline of the island's fortune."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/119>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/142/event/119> , <https://archipelago.itatti.harvard.edu/resources/actor/143/event/119> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/119/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/119/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/119/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/119/typology> , <https://archipelago.itatti.harvard.edu/resources/event/119/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:a9ed2a51-07b8-4f02-ae6a-317dc9fcea18> , <https://archipelago.itatti.harvard.edu/resources/event/119/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<urn:uuid:a9ed2a51-07b8-4f02-ae6a-317dc9fcea18>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -58,23 +19,6 @@
         rdfs:label       "The vacant priory of San Clemente is administrated by the Canons of Santo Spirito"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/143>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/143/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/142/event/119>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/142> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/142/event/119/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/142/event/119/role>
-        a           crm:E55_Type ;
-        rdfs:label  "New administrator of the island coming from Santo Spirito"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/142>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/142/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/119/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
@@ -83,9 +27,32 @@
         a           crm:E55_Type ;
         rdfs:label  "Regime change"@en .
 
-geonames:3168468  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resources/event/119/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "14th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/143/event/119>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/143> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/143/event/119/role> .
+<https://archipelago.itatti.harvard.edu/resources/event/119>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/119/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/119/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/119/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/119/typology> , <https://archipelago.itatti.harvard.edu/resources/event/119/subtypology> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/119/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/119/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "After the death of the prior Nicolò de Arimundo, Pope John XXII gives the vacant priory to the Canon Regular Nicolò de Benvenuti who lived in Santo Spirito. The decision sheds light on the decline of the decline of the island's fortune."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/142/event/119>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/119/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "119" .
+
+geonames:3168468  a  crm:E53_Place .

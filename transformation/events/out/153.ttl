@@ -10,13 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/175/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/175/event/153/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Island's ruler"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "In 1357, the Pope elected Franchino da Bologna as new prior."@en .
@@ -31,20 +24,16 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/153>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/175/event/153> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/153/name> , <https://archipelago.itatti.harvard.edu/resources/event/153/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/153/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/153/typology> ;
-        crm:P4_has_time-span     <urn:uuid:b8e8a47e-0bd5-4d6d-b612-c61ab04e1a33> , <https://archipelago.itatti.harvard.edu/resources/event/153/date> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/153/date> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/153/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/175>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/175/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/153/name>
         a                crm:E41_Appellation ;
@@ -52,13 +41,7 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/175/event/153>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/175> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/175/event/153/role> .
-
-<urn:uuid:b8e8a47e-0bd5-4d6d-b612-c61ab04e1a33>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+        a       crm:PC14_carried_out_by .
 
 geonames:3168468  a  crm:E53_Place .
 

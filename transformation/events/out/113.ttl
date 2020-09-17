@@ -10,29 +10,32 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/138/event/113>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/138> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/138/event/113/role> .
+<https://archipelago.itatti.harvard.edu/resources/event/113/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The Litaldo family donates some lands in Pellestrina to the Canons Regular"@it ;
+        crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:7e781c8b-f9fc-4d62-b583-5c7f8879a853>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/139/event/113/role>
+<https://archipelago.itatti.harvard.edu/resources/event/113>
+        a                          crm:E5_Event ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/113/name> , <https://archipelago.itatti.harvard.edu/resources/event/113/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/113/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/113/typology> ;
+        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/113/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/113/subtypology>
         a           crm:E55_Type ;
-        rdfs:label  "Donator"@en .
+        rdfs:label  "Donation"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/113/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "113" .
+<https://archipelago.itatti.harvard.edu/resources/actor/133/event/113>
+        a       crm:PC14_carried_out_by .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/139/event/113>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/139> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/139/event/113/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/113/date>
@@ -43,60 +46,8 @@
         a           crm:E55_Type ;
         rdfs:label  "Economic"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/139/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/113>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/139/event/113> , <https://archipelago.itatti.harvard.edu/resources/actor/133/event/113> , <https://archipelago.itatti.harvard.edu/resources/actor/138/event/113> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/113/name> , <https://archipelago.itatti.harvard.edu/resources/event/113/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/113/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/113/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/113/date> , <urn:uuid:7e781c8b-f9fc-4d62-b583-5c7f8879a853> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/138/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133/event/113>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/133> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/133/event/113/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/139>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/139/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/113/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Donation"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/138/event/113/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donator"@en .
-
 geonames:3168468  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/113/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "The Litaldo family donates some lands in Pellestrina to the Canons Regular"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/138>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/138/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133/event/113/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Recipient"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/113/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "113" .

@@ -21,7 +21,8 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/93/name> , <https://archipelago.itatti.harvard.edu/resources/event/93/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/93/typology> ;
-        crm:P4_has_time-span       <urn:uuid:c27438f4-704c-4f82-a518-b2c248513c5c> , <https://archipelago.itatti.harvard.edu/resources/event/93/date> ;
+        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/93/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
@@ -33,10 +34,6 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Plague spreads in Venice"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<urn:uuid:c27438f4-704c-4f82-a518-b2c248513c5c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
         a                        crm:E31_Document ;

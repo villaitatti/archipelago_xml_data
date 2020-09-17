@@ -15,15 +15,12 @@
         rdfs:label       "Veneto is annexed to Italy"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:78aad087-c8af-4349-967d-358eccd7be73>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/84>
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/84/name> , <https://archipelago.itatti.harvard.edu/resources/event/84/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/84/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/84/typology> ;
-        crm:P4_has_time-span     <urn:uuid:78aad087-c8af-4349-967d-358eccd7be73> , <https://archipelago.itatti.harvard.edu/resources/event/84/date> ;
+        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/84/date> ;
         crm:P7_took_place_at     geonames:12172719 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/84/date>

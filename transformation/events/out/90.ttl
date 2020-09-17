@@ -22,13 +22,10 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/90/name> , <https://archipelago.itatti.harvard.edu/resources/event/90/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/90/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/90/typology> ;
-        crm:P4_has_time-span       <urn:uuid:9327c412-c1e9-4a5e-90fa-6b00c4f88da4> , <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
+        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:7910746 .
-
-<urn:uuid:9327c412-c1e9-4a5e-90fa-6b00c4f88da4>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/90/date>
         a                            crm:E52_Time-Span ;

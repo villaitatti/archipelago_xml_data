@@ -10,85 +10,52 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/41/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Doge Falier's donation to the Benedectine nuns of a saltworks"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/41/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Donation"@en .
-
-geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
-        crm:P1_is_identified_by  geonames:11 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/18/event/41/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Beneficiary"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/44/event/41/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donor"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/18>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/41/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The Doge Vitale Falier donates a fundamentum or saltworks located in the sestiere of Santa Croce (once called Luprio). The church is described in bad condition."@en .
-
-geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/41/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "11th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/44/event/41>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/44> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/44/event/41/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/41>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/44/event/41> , <https://archipelago.itatti.harvard.edu/resources/actor/18/event/41> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/41/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/41/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/41/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/41/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/41/typology> ;
-        crm:P4_has_time-span       <urn:uuid:ac4287c5-65a2-4e81-8d46-707a551c126a> , <https://archipelago.itatti.harvard.edu/resources/event/41/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
-        crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/44>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/44/identifier> .
-
-<urn:uuid:ac4287c5-65a2-4e81-8d46-707a551c126a>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/41/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Economic"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/41/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "11th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/44/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/18/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/18/event/41>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/18> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/18/event/41/role> .
+geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
+        crm:P1_is_identified_by  geonames:11 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/41/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "41" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/41/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The Doge Vitale Falier donates a fundamentum or saltworks located in the sestiere of Santa Croce (once called Luprio). The church is described in bad condition."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/41/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Doge Falier's donation to the Benedectine nuns of a saltworks"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/41>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/41/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/41/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/41/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/41/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/41/typology> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/41/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
+        crm:P7_took_place_at       geonames:3230839 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/41/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Donation"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/41/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Economic"@en .
+
+geonames:3230839  a  crm:E53_Place .

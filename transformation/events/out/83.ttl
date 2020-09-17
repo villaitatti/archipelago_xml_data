@@ -10,31 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/117>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/117/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/117/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/117/event/83>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/117> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/117/event/83/role> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/83/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Titian accuses the Lateran Canons of not paying his work"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/21>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/83>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/21> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/21/event/83/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/83/typology>
         a           crm:E55_Type ;
@@ -50,20 +32,8 @@ geonames:7910746  a  crm:E53_Place .
         a           crm:E42_Identifier ;
         rdfs:label  "83" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/21/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/117/event/83/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Letter's recipient"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/21/event/83/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Letter's sender"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/83>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/117/event/83> , <https://archipelago.itatti.harvard.edu/resources/actor/21/event/83> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/83/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/83/name> , <https://archipelago.itatti.harvard.edu/resources/event/83/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/83/typology> ;

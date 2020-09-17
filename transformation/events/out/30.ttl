@@ -22,61 +22,28 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "With the papal bill In vineam Domini the Pope Alessandro VII suppressed 75 convents in Venice (later reduced to 59). Among them there were the Lateran Canons of Santo Spirito."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/27/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/30/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Suppressed order"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
-        a       crm:E42_Identifier .
-
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/30>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/24/event/30/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/30/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Suppression of the Lateran Canons"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/27/event/30/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/30>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/27/event/30> , <https://archipelago.itatti.harvard.edu/resources/actor/24/event/30> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/30/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/30/name> , <https://archipelago.itatti.harvard.edu/resources/event/30/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/30/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/30/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/30/date> , <urn:uuid:9567c70a-ec36-4cd5-8432-c8b44b5f4334> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/30/date> ;
         crm:P7_took_place_at     geonames:7910746 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/27>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/27/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/27/event/30>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/27> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/27/event/30/role> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/30/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
-
-<urn:uuid:9567c70a-ec36-4cd5-8432-c8b44b5f4334>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/30/typology>
         a           crm:E55_Type ;

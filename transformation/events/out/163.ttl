@@ -10,85 +10,36 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/184>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/184/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/181/event/163>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/181> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/181/event/163/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/181/event/163/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Nominal buyer"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/184/event/163/role>
-        a           crm:E55_Type ;
-        rdfs:label  "New owners"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/163/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
-<urn:uuid:63c080a1-f3b3-4849-bacb-ebc735542ef8>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/187/event/163/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Notary"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/163/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Religious order's transfer"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/181>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/181/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/187>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/187/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/184/event/163>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/184> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/184/event/163/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/163/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "163" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/163/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/187/event/163>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/187> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/187/event/163/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/181/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/163/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The island is sold to the Camaldolese monks of Monte Rua"@it ;
         crm:P2_has_type  "preferred_name" .
 
-geonames:3168468  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/184/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/163>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/184/event/163> , <https://archipelago.itatti.harvard.edu/resources/actor/181/event/163> , <https://archipelago.itatti.harvard.edu/resources/actor/187/event/163> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/163/name> , <https://archipelago.itatti.harvard.edu/resources/event/163/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/163/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/163/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/163/date> , <urn:uuid:63c080a1-f3b3-4849-bacb-ebc735542ef8> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/163/date> ;
         crm:P7_took_place_at     geonames:3168468 .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/187/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resources/actor/184/event/163>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/163/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Religious order's transfer"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/163/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/163/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "163" .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/event/163/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .

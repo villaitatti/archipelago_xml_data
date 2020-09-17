@@ -14,16 +14,12 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/52/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The French ambassador leaves his palace in Venice to go to the island of San Secondo in oder to escape the plague."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/52>
-        a                  crm:PC14_carried_out_by ;
-        crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/42> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/52/name>
         a                crm:E41_Appellation ;
@@ -32,11 +28,11 @@
 
 <https://archipelago.itatti.harvard.edu/resources/event/52>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/42/event/52> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/52/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/52/name> , <https://archipelago.itatti.harvard.edu/resources/event/52/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/52/typology> , <https://archipelago.itatti.harvard.edu/resources/event/52/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/52/date> , <urn:uuid:fa21eb3f-ca03-412f-b0f7-3c2fc63c733a> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/52/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/52/typology> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/52/date> ;
         crm:P7_took_place_at     geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/52/typology>
@@ -50,16 +46,8 @@
 geonames:15  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:15 .
 
-<urn:uuid:fa21eb3f-ca03-412f-b0f7-3c2fc63c733a>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/52/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Visit of state"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .

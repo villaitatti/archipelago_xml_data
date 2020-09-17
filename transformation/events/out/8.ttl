@@ -10,17 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/8>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/8> , <https://archipelago.itatti.harvard.edu/resources/actor/88/event/8> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/8/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/8/name> , <https://archipelago.itatti.harvard.edu/resources/event/8/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/8/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/8/typology> ;
-        crm:P4_has_time-span       <urn:uuid:a754dcf1-5cd4-45d7-80d6-4eef4ed2321e> , <https://archipelago.itatti.harvard.edu/resources/event/8/date> ;
+        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/8/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011> , <https://archipelago.itatti.harvard.edu/resources/source/80> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -43,10 +39,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E73_Information_Object ;
         rdfs:label  "The Dominican friars are removed and transferred to the monastery of San Domenico di Castello. The island is transformed into a lazzaretto for people infected with plague. The friars' goods are moved to the library and the chapel of the Cross or to the church of San Giobbe in Venice."@en .
 
-<urn:uuid:a754dcf1-5cd4-45d7-80d6-4eef4ed2321e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/8/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Adaptive reuse (i.e. lazaretto)"@en .
@@ -58,11 +50,6 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/88/event/8>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/88> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/88/event/8/role> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/8/date>
         a                            crm:E52_Time-Span ;
@@ -76,17 +63,8 @@ geonames:3230839  a  crm:E53_Place .
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/88>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/88/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/8>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/8/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
@@ -96,17 +74,6 @@ geonames:3230839  a  crm:E53_Place .
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/80/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/8/source/80/event> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/88/event/8/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/88/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/8/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Removed order"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .

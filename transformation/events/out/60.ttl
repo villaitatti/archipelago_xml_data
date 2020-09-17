@@ -14,9 +14,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Celebration"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/74/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/60/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Patriarch places and blesses the first stone of the complex."@en .
@@ -26,39 +23,25 @@
         rdfs:label       "Blessing of the new religious complex"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/74>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/74/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/60/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "12th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/60>
         a                        crm:E5_Event ;
-        crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/74/event/60> ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/60/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/60/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/60/name> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/60/typology> , <https://archipelago.itatti.harvard.edu/resources/event/60/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/60/date> , <urn:uuid:1c0d2209-4e14-4675-9317-9caa5daa950c> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/60/name> , <https://archipelago.itatti.harvard.edu/resources/event/60/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/60/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/60/typology> ;
+        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/60/date> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/74/event/60>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/74> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/74/event/60/role> .
-
-<urn:uuid:1c0d2209-4e14-4675-9317-9caa5daa950c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/60/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/74/event/60/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Blessing Patriarch"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

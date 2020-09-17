@@ -23,21 +23,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Construction"@en .
 
-<urn:uuid:efe1a824-3021-4dc3-b387-ec56fd76485c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/89>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/18/event/89> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/89/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/89/name> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/89/name> , <https://archipelago.itatti.harvard.edu/resources/event/89/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/89/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/89/typology> ;
-        crm:P4_has_time-span       <urn:uuid:efe1a824-3021-4dc3-b387-ec56fd76485c> , <https://archipelago.itatti.harvard.edu/resources/event/89/date> ;
+        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/89/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/152> ;
         crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/18/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/source/152>
         a                        crm:E31_Document ;
@@ -51,10 +44,6 @@
 geonames:78  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:78 .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/18>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier> .
-
 <https://archipelago.itatti.harvard.edu/resources/source/152/identifier>
         a       crm:E42_Identifier .
 
@@ -66,13 +55,7 @@ geonames:78  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E41_Appellation ;
         rdfs:label  "Construction of a new dormitory"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/18/event/89/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/18/event/89>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/18> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/18/event/89/role> .
+        a       crm:PC14_carried_out_by .
 
 geonames:3230839  a  crm:E53_Place .

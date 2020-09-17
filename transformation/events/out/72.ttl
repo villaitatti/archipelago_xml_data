@@ -14,10 +14,6 @@
         a           crm:E42_Identifier ;
         rdfs:label  "72" .
 
-<urn:uuid:254e48f9-c17f-4200-baa4-4f2230f36d16>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/72/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Reconstruction of the dock"@it ;
@@ -41,5 +37,6 @@ geonames:7910746  a  crm:E53_Place .
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/72/name> , <https://archipelago.itatti.harvard.edu/resources/event/72/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/72/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/72/typology> ;
-        crm:P4_has_time-span     <urn:uuid:254e48f9-c17f-4200-baa4-4f2230f36d16> , <https://archipelago.itatti.harvard.edu/resources/event/72/date> ;
+        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/72/date> ;
         crm:P7_took_place_at     geonames:7910746 .

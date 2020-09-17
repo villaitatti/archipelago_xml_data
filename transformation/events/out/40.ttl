@@ -10,13 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/40/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The Napoleonic decree suppresses the Dominican community. The island becomes a state property."@en .
+<https://archipelago.itatti.harvard.edu/resources/event/40/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/40/identifier>
         a           crm:E42_Identifier ;
@@ -25,25 +25,44 @@
 geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:11 .
 
+<https://archipelago.itatti.harvard.edu/resources/event/40>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/40/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/40/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/40/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/40/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/40/typology> ;
+        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
+        crm:P7_took_place_at       geonames:3230839 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/40/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The Napoleonic decree suppresses the Dominican community. The island becomes a state property."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/40/event/40>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/40> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/40/event/40/role> .
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/40/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Suppression of the Dominican community"@it ;
+        crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resources/event/40/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Religious order's suppression"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/40>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/40/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/40/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009>
         a                        crm:E31_Document ;
@@ -51,58 +70,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 
 geonames:3230839  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/40/event/40/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/40/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/40/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Suppression of the Dominican community"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<urn:uuid:280990cc-72a0-4742-8c90-27c7690432f7>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/40/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Suppressed order"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/40>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/40/event/40> , <https://archipelago.itatti.harvard.edu/resources/actor/42/event/40> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/40/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/40/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/40/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/40/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/40/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/date> , <urn:uuid:280990cc-72a0-4742-8c90-27c7690432f7> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
-        crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/40>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/40/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/40/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .

@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:9506af81-dfef-46d0-b820-a9c3ed82cbc6>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
@@ -23,7 +19,8 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/102/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/102/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/102/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/102/typology> , <https://archipelago.itatti.harvard.edu/resources/event/102/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:9506af81-dfef-46d0-b820-a9c3ed82cbc6> , <https://archipelago.itatti.harvard.edu/resources/event/102/date> ;
+        crm:P4_has_time-span       "End of the century (90-99)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/102/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

@@ -10,82 +10,49 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/150>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/150/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/156>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/156/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/139/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/139>
-        a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/156/event/139> , <https://archipelago.itatti.harvard.edu/resources/actor/150/event/139> ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/139/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/139/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/139/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/139/typology> , <https://archipelago.itatti.harvard.edu/resources/event/139/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:70b1ce72-4ce3-4c54-8738-813ac523a5b4> , <https://archipelago.itatti.harvard.edu/resources/event/139/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/139/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The Doge reaches the island with the Bucintoro and then, together with the Emperor, they move to the island of San Giorgio Maggiore."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/150/event/139>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/150> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/150/event/139/role> .
+<https://archipelago.itatti.harvard.edu/resources/event/139/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "139" .
 
 <https://archipelago.itatti.harvard.edu/resources/event/139/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Visit of state"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/139/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/150/event/139>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/139/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier> .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/150/event/139/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Doge"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/139/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "139" .
+<https://archipelago.itatti.harvard.edu/resources/event/139/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The Doge reaches the island with the Bucintoro and then, together with the Emperor, they move to the island of San Giorgio Maggiore."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/139/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Doge Foscari meets the Emperor John VIII Palaiologos in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/150/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/139/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/156/event/139>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/156> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/156/event/139/role> .
-
-<urn:uuid:70b1ce72-4ce3-4c54-8738-813ac523a5b4>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/156/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/156/event/139/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
+<https://archipelago.itatti.harvard.edu/resources/event/139>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/139/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/139/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/139/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/139/typology> , <https://archipelago.itatti.harvard.edu/resources/event/139/subtypology> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/139/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
+        crm:P7_took_place_at       geonames:3168468 .
 
 geonames:3168468  a  crm:E53_Place .

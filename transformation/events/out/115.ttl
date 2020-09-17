@@ -10,26 +10,23 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/140/identifier>
-        a       crm:E42_Identifier .
-
-<urn:uuid:cc1f6b32-06f6-457f-8566-a2bdb263f47e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/115>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/140/event/115> , <https://archipelago.itatti.harvard.edu/resources/actor/133/event/115> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/115/name> , <https://archipelago.itatti.harvard.edu/resources/event/115/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/115/typology> , <https://archipelago.itatti.harvard.edu/resources/event/115/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> , <urn:uuid:cc1f6b32-06f6-457f-8566-a2bdb263f47e> ;
+        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/140>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/140/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/115/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Economic"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/115/identifier>
         a           crm:E42_Identifier ;
@@ -39,53 +36,23 @@
         a           crm:E55_Type ;
         rdfs:label  "Donation"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/115/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Economic"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/133/event/115>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/133> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/133/event/115/role> .
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/115/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "13th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/115/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Angelo Rosso donates a land in Malamocco to the Canons Regular"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/140/event/115>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/140> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/140/event/115/role> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133/event/115/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Recipient"@en .
+geonames:3168468  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Alongside Rosso's donation, other lands in Piove di Sacco, Fossò, Bogion were given to the Canons."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/133>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/140/event/115/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donator"@en .
-
-geonames:3168468  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/115/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "13th cent."@en .

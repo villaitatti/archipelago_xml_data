@@ -24,30 +24,21 @@
         rdfs:label  "After the massive restoration campaign started in 1563, the new church of San Secondo is consecrated."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/39>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/39/role> .
+        a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/39>
         a                          crm:E5_Event ;
-        crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/39> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/39/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/39/name> , <https://archipelago.itatti.harvard.edu/resources/event/39/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/39/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/39/typology> ;
-        crm:P4_has_time-span       <urn:uuid:b994499e-fc37-4bdf-a475-b00c35e5f786> , <https://archipelago.itatti.harvard.edu/resources/event/39/date> ;
+        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/39/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/39/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
-        a       crm:E42_Identifier .
-
-<urn:uuid:b994499e-fc37-4bdf-a475-b00c35e5f786>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:12 .
@@ -67,12 +58,4 @@ geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/39/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
 geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/42>
-        a                        crm:E21_Person ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .
