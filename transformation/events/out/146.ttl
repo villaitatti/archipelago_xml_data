@@ -20,7 +20,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/146/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/146/name> , <https://archipelago.itatti.harvard.edu/resources/event/146/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/146/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/146/typology> ;
-        crm:P4_has_time-span       <urn:uuid:4f80e10e-f030-48f8-991e-79551be6f8a2> , <https://archipelago.itatti.harvard.edu/resources/event/146/date> ;
+        crm:P4_has_time-span       <urn:uuid:a7fdfecf-baaa-424a-a31a-b3f1f4d80751> , <https://archipelago.itatti.harvard.edu/resources/event/146/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -36,6 +36,10 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "Coming from Chioggia, he stops in San Clemente but he is not received by the Doge."@en .
 
+<urn:uuid:a7fdfecf-baaa-424a-a31a-b3f1f4d80751>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
 
@@ -47,10 +51,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/166>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/166/identifier> .
-
-<urn:uuid:4f80e10e-f030-48f8-991e-79551be6f8a2>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/146/date>
         a                            crm:E52_Time-Span ;

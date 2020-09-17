@@ -50,7 +50,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/48/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/48/name> , <https://archipelago.itatti.harvard.edu/resources/event/48/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/48/typology> , <https://archipelago.itatti.harvard.edu/resources/event/48/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/48/date> , <urn:uuid:a2827462-4fcb-4829-a2fc-f019f2683dea> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/48/date> , <urn:uuid:d0a99e7b-7eec-4cf4-8b06-e0b690f7abe7> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011> , <https://archipelago.itatti.harvard.edu/resources/source/80> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -74,10 +74,6 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:a2827462-4fcb-4829-a2fc-f019f2683dea>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
@@ -98,6 +94,10 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/48/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Religious order's transfer"@en .
+
+<urn:uuid:d0a99e7b-7eec-4cf4-8b06-e0b690f7abe7>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;

@@ -17,10 +17,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Island's ruler"@en .
 
-<urn:uuid:a5157194-dd81-4039-9e43-33ffac68c953>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "In 1357, the Pope elected Franchino da Bologna as new prior."@en .
@@ -39,7 +35,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/153/name> , <https://archipelago.itatti.harvard.edu/resources/event/153/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/153/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/153/typology> ;
-        crm:P4_has_time-span     <urn:uuid:a5157194-dd81-4039-9e43-33ffac68c953> , <https://archipelago.itatti.harvard.edu/resources/event/153/date> ;
+        crm:P4_has_time-span     <urn:uuid:b8e8a47e-0bd5-4d6d-b612-c61ab04e1a33> , <https://archipelago.itatti.harvard.edu/resources/event/153/date> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/153/typology>
@@ -59,6 +55,10 @@
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/175> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/175/event/153/role> .
+
+<urn:uuid:b8e8a47e-0bd5-4d6d-b612-c61ab04e1a33>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

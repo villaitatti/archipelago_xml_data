@@ -19,13 +19,13 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/141> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/141/event/117/role> .
 
+<urn:uuid:33af06fe-c8f7-4c3c-9dc3-a2a025a89925>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/117/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "117" .
-
-<urn:uuid:60e3692f-fb3d-4018-9468-90fda857b06e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
         a       crm:E42_Identifier .
@@ -59,7 +59,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/117/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/117/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/117/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/117/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/117/typology> ;
-        crm:P4_has_time-span       <urn:uuid:60e3692f-fb3d-4018-9468-90fda857b06e> , <https://archipelago.itatti.harvard.edu/resources/event/117/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/117/date> , <urn:uuid:33af06fe-c8f7-4c3c-9dc3-a2a025a89925> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

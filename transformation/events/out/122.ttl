@@ -67,13 +67,9 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/122/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/122/name> , <https://archipelago.itatti.harvard.edu/resources/event/122/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/122/typology> , <https://archipelago.itatti.harvard.edu/resources/event/122/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/122/date> , <urn:uuid:566e4fe3-fbaf-440c-854a-21cff914eb49> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/122/date> , <urn:uuid:1d2e2788-33bd-4b65-971a-dc0d7f7f8206> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/157> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<urn:uuid:566e4fe3-fbaf-440c-854a-21cff914eb49>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/122/synopsis>
         a           crm:E73_Information_Object ;
@@ -101,3 +97,7 @@ geonames:3168468  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/122/source/157/event>
         a           crm:E41_Appellation ;
         rdfs:label  "The Lateran Canons set up in the island while all the properties of San Clemente, including archival documents and relics, are transferred to Santa Maria della Carità"@en .
+
+<urn:uuid:1d2e2788-33bd-4b65-971a-dc0d7f7f8206>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .

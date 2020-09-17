@@ -13,13 +13,17 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/140/identifier>
         a       crm:E42_Identifier .
 
+<urn:uuid:cc1f6b32-06f6-457f-8566-a2bdb263f47e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/115>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/140/event/115> , <https://archipelago.itatti.harvard.edu/resources/actor/133/event/115> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/115/name> , <https://archipelago.itatti.harvard.edu/resources/event/115/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/115/typology> , <https://archipelago.itatti.harvard.edu/resources/event/115/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> , <urn:uuid:f70dc36a-5f09-404c-9990-a6cb2be21b83> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> , <urn:uuid:cc1f6b32-06f6-457f-8566-a2bdb263f47e> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -71,10 +75,6 @@
 <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Alongside Rosso's donation, other lands in Piove di Sacco, Fossò, Bogion were given to the Canons."@en .
-
-<urn:uuid:f70dc36a-5f09-404c-9990-a6cb2be21b83>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/133>
         a                        crm:E21_Person ;

@@ -15,7 +15,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/161/event/143> , <https://archipelago.itatti.harvard.edu/resources/actor/160/event/143> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/143/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/143/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/143/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/143/typology> ;
-        crm:P4_has_time-span       <urn:uuid:cccd9a2b-40d3-4b64-a762-892c8c4a640c> , <https://archipelago.itatti.harvard.edu/resources/event/143/date> ;
+        crm:P4_has_time-span       <urn:uuid:7c7d1af4-d279-4eb5-a902-f3050750a276> , <https://archipelago.itatti.harvard.edu/resources/event/143/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -48,6 +48,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/actor/160/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:7c7d1af4-d279-4eb5-a902-f3050750a276>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/161/event/143>
         a                         crm:PC14_carried_out_by ;
@@ -83,10 +87,6 @@ geonames:3168468  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/actor/160>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/160/identifier> .
-
-<urn:uuid:cccd9a2b-40d3-4b64-a762-892c8c4a640c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/160/event/143/role>
         a           crm:E55_Type ;

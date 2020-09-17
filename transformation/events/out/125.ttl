@@ -30,19 +30,15 @@
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/102/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/125/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier>
+<https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:92fd7f02-164e-4171-956c-af1e6b5a21c2>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/125>
         a                          crm:E5_Event ;
@@ -50,7 +46,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/125/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/125/name> , <https://archipelago.itatti.harvard.edu/resources/event/125/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/125/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/125/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/125/date> , <urn:uuid:92fd7f02-164e-4171-956c-af1e6b5a21c2> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/125/date> , <urn:uuid:c038bd14-b4a6-466a-b7d5-46aa13594d6d> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -69,6 +65,10 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier> .
+
+<urn:uuid:c038bd14-b4a6-466a-b7d5-46aa13594d6d>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

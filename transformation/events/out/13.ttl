@@ -18,6 +18,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Restoration"@en .
 
+<urn:uuid:4d25d627-8769-42ba-93dc-935a5e8800f8>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/13/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
@@ -49,17 +53,13 @@ geonames:3230839  a  crm:E53_Place .
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/90/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/13/source/90/event> .
 
-<urn:uuid:f78bd883-381e-4d13-ac7e-5fd490b53ce8>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/13>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/105/event/13> , <https://archipelago.itatti.harvard.edu/resources/actor/42/event/13> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/13/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/13/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/13/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/13/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/13/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/13/date> , <urn:uuid:f78bd883-381e-4d13-ac7e-5fd490b53ce8> ;
+        crm:P4_has_time-span       <urn:uuid:4d25d627-8769-42ba-93dc-935a5e8800f8> , <https://archipelago.itatti.harvard.edu/resources/event/13/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/90> ;
         crm:P7_took_place_at       geonames:3230839 .
 

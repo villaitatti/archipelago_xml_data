@@ -26,7 +26,7 @@
         a           crm:E55_Type ;
         rdfs:label  "Economic"@en .
 
-<urn:uuid:18794809-aa0c-4521-b0d4-6a7cd598b3eb>
+<urn:uuid:4bbdd8bc-b375-404d-8818-243db899148b>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
@@ -63,5 +63,5 @@ geonames:3168468  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/132/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/132/name> , <https://archipelago.itatti.harvard.edu/resources/event/132/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/132/typology> , <https://archipelago.itatti.harvard.edu/resources/event/132/subtypology> ;
-        crm:P4_has_time-span     <urn:uuid:18794809-aa0c-4521-b0d4-6a7cd598b3eb> , <https://archipelago.itatti.harvard.edu/resources/event/132/date> ;
+        crm:P4_has_time-span     <urn:uuid:4bbdd8bc-b375-404d-8818-243db899148b> , <https://archipelago.itatti.harvard.edu/resources/event/132/date> ;
         crm:P7_took_place_at     geonames:3168468 .

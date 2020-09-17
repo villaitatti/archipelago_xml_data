@@ -85,7 +85,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/189/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/178/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/102/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/181/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/183/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/182/event/164> , <https://archipelago.itatti.harvard.edu/resources/actor/184/event/164> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/164/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/164/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/164/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/164/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/164/date> , <urn:uuid:991e5b1b-df69-4772-89ef-88db9a493d30> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/164/date> , <urn:uuid:c232e15a-2568-4295-aaca-def26e455ac7> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/161> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -134,15 +134,15 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:991e5b1b-df69-4772-89ef-88db9a493d30>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/183/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/178/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:c232e15a-2568-4295-aaca-def26e455ac7>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

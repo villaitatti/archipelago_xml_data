@@ -33,10 +33,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:01f7c222-4ec3-40cd-9db6-1179c9c3edcc>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/44/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
@@ -49,12 +45,16 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a                  crm:PC14_carried_out_by ;
         crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/18> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/18>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<urn:uuid:4b1adde8-39f2-4bc5-ba22-b25a1d0f6a66>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/44/subtypology>
         a           crm:E55_Type ;
@@ -68,6 +68,6 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/44/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/44/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/44/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/44/typology> , <https://archipelago.itatti.harvard.edu/resources/event/44/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:01f7c222-4ec3-40cd-9db6-1179c9c3edcc> , <https://archipelago.itatti.harvard.edu/resources/event/44/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/44/date> , <urn:uuid:4b1adde8-39f2-4bc5-ba22-b25a1d0f6a66> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .

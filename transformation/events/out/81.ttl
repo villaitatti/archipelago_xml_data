@@ -16,13 +16,9 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/81/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/81/name> , <https://archipelago.itatti.harvard.edu/resources/event/81/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/81/typology> , <https://archipelago.itatti.harvard.edu/resources/event/81/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:0f14722b-9444-41ec-9e40-467e6e7d1d86> , <https://archipelago.itatti.harvard.edu/resources/event/81/date> ;
+        crm:P4_has_time-span       <urn:uuid:31ca56f9-49a9-45b5-a05d-90a57e61952d> , <https://archipelago.itatti.harvard.edu/resources/event/81/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/86/event/81/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/81/typology>
         a           crm:E55_Type ;
@@ -32,9 +28,9 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier> .
 
-<urn:uuid:0f14722b-9444-41ec-9e40-467e6e7d1d86>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+<https://archipelago.itatti.harvard.edu/resources/actor/86/event/81/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/86/identifier>
         a       crm:E42_Identifier .
@@ -45,6 +41,10 @@ geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/81/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Following the end of the II World War, the island is demilitarized."@en .
+
+<urn:uuid:31ca56f9-49a9-45b5-a05d-90a57e61952d>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/81/subtypology>
         a           crm:E55_Type ;

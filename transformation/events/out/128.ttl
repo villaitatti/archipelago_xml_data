@@ -14,6 +14,10 @@
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/150/identifier> .
 
+<urn:uuid:729e45e6-2c2e-4ce5-9523-847fc443aa4a>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/128/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Coming from Rome, the Emperor along with many princes stop in Venice.\n\n«fu dal Consiglio dei X terminato che il Dose le dovesse andar incontro col Bucintoro a S. Clemente. Giunto l'imperatore a Chiozza [...] trovò la nobiltà, che l'attendeva, et vene seco a S. Clemente dove era il Dose con il Bucintoro coperto di panno d'oro e sei piatte piene di nobili Veneti: ogni arte di Venetia ornò il suo palischermo et altre gentilezze e furono caricate tre galie di questi artigiani; et furono tra le galie et palischermi et barche a modo di Ganzare, più di 120 et di più le barche delle contrade con gli suoi peate et altre barche di Venetia, che pareva un'armata. Giunto a S. Clemente l'imperatore montò in Bucintoro e si pose nella sedia del Dose et vennero nel canal Grande»."@en .
@@ -62,7 +66,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/128/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/128/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/128/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/128/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/128/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/128/date> , <urn:uuid:935a9dcc-4781-4489-95a8-c93192829692> ;
+        crm:P4_has_time-span       <urn:uuid:729e45e6-2c2e-4ce5-9523-847fc443aa4a> , <https://archipelago.itatti.harvard.edu/resources/event/128/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -98,10 +102,6 @@
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/128/role> .
-
-<urn:uuid:935a9dcc-4781-4489-95a8-c93192829692>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

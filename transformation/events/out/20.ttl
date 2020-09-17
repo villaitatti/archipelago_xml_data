@@ -29,16 +29,12 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/20/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/20/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/20/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/20/typology> , <https://archipelago.itatti.harvard.edu/resources/event/20/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/20/date> , <urn:uuid:ea387eed-e741-428f-afa2-677242f579bc> ;
+        crm:P4_has_time-span     <urn:uuid:5832623d-062b-4874-8743-898827fbd417> , <https://archipelago.itatti.harvard.edu/resources/event/20/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/20/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "20" .
-
-<urn:uuid:ea387eed-e741-428f-afa2-677242f579bc>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/21>
         a                        crm:E21_Person ;
@@ -55,6 +51,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:5832623d-062b-4874-8743-898827fbd417>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/20/typology>
         a           crm:E55_Type ;

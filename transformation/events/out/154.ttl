@@ -65,10 +65,6 @@ geonames:7910520  a  crm:E53_Place .
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
 
-<urn:uuid:a63cfb79-80a4-4ca4-bf13-7aef3e15db73>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Marquis was sent by the Duke Carlo Gonzaga to Wien for signing the peace with the Emperor Ferdinand II. Because he comes from an infected city he is quarantined the lazzaretto."@en .
@@ -86,6 +82,10 @@ geonames:7910520  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/154/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/154/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/154/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/154/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/154/date> , <urn:uuid:a63cfb79-80a4-4ca4-bf13-7aef3e15db73> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/154/date> , <urn:uuid:9a7bd9c9-52cc-4743-ba14-85703481455e> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:7910520 .
+
+<urn:uuid:9a7bd9c9-52cc-4743-ba14-85703481455e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .

@@ -56,15 +56,15 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/114/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/114/name> , <https://archipelago.itatti.harvard.edu/resources/event/114/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/114/typology> , <https://archipelago.itatti.harvard.edu/resources/event/114/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/114/date> , <urn:uuid:8622186a-7ad7-4957-80c5-ad5a577027f1> ;
+        crm:P4_has_time-span       <urn:uuid:b20aadff-0606-4734-be0c-b85dbe7f214c> , <https://archipelago.itatti.harvard.edu/resources/event/114/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:8622186a-7ad7-4957-80c5-ad5a577027f1>
+geonames:3168468  a  crm:E53_Place .
+
+<urn:uuid:b20aadff-0606-4734-be0c-b85dbe7f214c>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
-geonames:3168468  a  crm:E53_Place .

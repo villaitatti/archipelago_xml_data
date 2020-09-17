@@ -22,13 +22,13 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<urn:uuid:4cf96137-3707-4846-ac4e-6f55688fc5f5>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/156/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<urn:uuid:1273f9ad-f80d-4ce4-b1fb-8455e849e3d5>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/176/event/156>
         a                  crm:PC14_carried_out_by ;
@@ -47,7 +47,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/176/event/156> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/156/name> , <https://archipelago.itatti.harvard.edu/resources/event/156/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/156/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/156/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/156/date> , <urn:uuid:4cf96137-3707-4846-ac4e-6f55688fc5f5> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/156/date> , <urn:uuid:1273f9ad-f80d-4ce4-b1fb-8455e849e3d5> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

@@ -28,10 +28,10 @@
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/62> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/62/name> , <https://archipelago.itatti.harvard.edu/resources/event/62/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/62/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/62/typology> ;
-        crm:P4_has_time-span     <urn:uuid:71f23fb6-ca1a-4c2e-a8ba-331b9ff65f8d> , <https://archipelago.itatti.harvard.edu/resources/event/62/date> ;
+        crm:P4_has_time-span     <urn:uuid:50ca5f9e-af9a-4771-807d-845cb35b2107> , <https://archipelago.itatti.harvard.edu/resources/event/62/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
-<urn:uuid:71f23fb6-ca1a-4c2e-a8ba-331b9ff65f8d>
+<urn:uuid:50ca5f9e-af9a-4771-807d-845cb35b2107>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 

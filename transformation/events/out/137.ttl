@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<urn:uuid:6cff2bbb-d874-4041-a475-ecb14c8210f9>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -21,10 +25,6 @@
 <https://archipelago.itatti.harvard.edu/resources/event/137/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<urn:uuid:d224b549-565e-4c1c-a127-f90c8703a028>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/137/date>
         a                            crm:E52_Time-Span ;
@@ -48,6 +48,6 @@ geonames:3168468  a  crm:E53_Place .
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/137/name> , <https://archipelago.itatti.harvard.edu/resources/event/137/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/137/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/137/typology> ;
-        crm:P4_has_time-span       <urn:uuid:d224b549-565e-4c1c-a127-f90c8703a028> , <https://archipelago.itatti.harvard.edu/resources/event/137/date> ;
+        crm:P4_has_time-span       <urn:uuid:6cff2bbb-d874-4041-a475-ecb14c8210f9> , <https://archipelago.itatti.harvard.edu/resources/event/137/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .

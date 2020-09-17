@@ -15,6 +15,10 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/152> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/152/event/131/role> .
 
+<urn:uuid:b07464ac-a3e1-49b4-9c39-4bf0fcc04eec>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/152/event/131/role>
         a           crm:E55_Type ;
         rdfs:label  "Proponent"@en .
@@ -48,7 +52,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/131/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/131/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/131/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/131/typology> , <https://archipelago.itatti.harvard.edu/resources/event/131/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/131/date> , <urn:uuid:ae7d06d2-7724-48c7-bedf-399dcc9e9734> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/131/date> , <urn:uuid:b07464ac-a3e1-49b4-9c39-4bf0fcc04eec> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -70,10 +74,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/152>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/152/identifier> .
-
-<urn:uuid:ae7d06d2-7724-48c7-bedf-399dcc9e9734>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/123>
         a                        crm:E21_Person ;

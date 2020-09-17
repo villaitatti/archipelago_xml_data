@@ -64,6 +64,10 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Owner"@en .
 
+<urn:uuid:3da9d9c6-31fb-4645-b55e-d90a344f4ecd>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/88>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/88/identifier> .
@@ -73,17 +77,13 @@ geonames:3230839  a  crm:E53_Place .
         rdfs:label       "Construction of a powderhouse"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:31d98e72-592a-4abf-a83c-a237554d396b>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/47>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/47> , <https://archipelago.itatti.harvard.edu/resources/actor/90/event/47> , <https://archipelago.itatti.harvard.edu/resources/actor/88/event/47> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/47/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/47/name> , <https://archipelago.itatti.harvard.edu/resources/event/47/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/47/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/47/typology> ;
-        crm:P4_has_time-span       <urn:uuid:31d98e72-592a-4abf-a83c-a237554d396b> , <https://archipelago.itatti.harvard.edu/resources/event/47/date> ;
+        crm:P4_has_time-span       <urn:uuid:3da9d9c6-31fb-4645-b55e-d90a344f4ecd> , <https://archipelago.itatti.harvard.edu/resources/event/47/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/85> ;
         crm:P7_took_place_at       geonames:3230839 .
 

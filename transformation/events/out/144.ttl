@@ -19,10 +19,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Doge"@en .
 
-<urn:uuid:c01ec914-38f6-4183-8fb6-adfdbaf9fe03>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/163/event/144/role>
         a           crm:E55_Type ;
         rdfs:label  "Guest"@en .
@@ -30,6 +26,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/163>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/163/identifier> .
+
+<urn:uuid:7d966051-7d93-46f0-81a8-97d1a3237595>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/144/synopsis>
         a           crm:E73_Information_Object ;
@@ -93,6 +93,6 @@ geonames:3168468  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/144/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/144/name> , <https://archipelago.itatti.harvard.edu/resources/event/144/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/144/typology> , <https://archipelago.itatti.harvard.edu/resources/event/144/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:c01ec914-38f6-4183-8fb6-adfdbaf9fe03> , <https://archipelago.itatti.harvard.edu/resources/event/144/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/144/date> , <urn:uuid:7d966051-7d93-46f0-81a8-97d1a3237595> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .

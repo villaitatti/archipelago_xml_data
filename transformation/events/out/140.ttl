@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:c54859d9-c1cd-4374-9167-6f8265975b89>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/156/identifier>
         a       crm:E42_Identifier .
 
@@ -40,6 +36,10 @@ geonames:3168290  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Guest"@en .
 
+<urn:uuid:ad962b4f-5c1a-4233-9f30-0afe744fe36d>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/140/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Visit of state"@en .
@@ -56,7 +56,7 @@ geonames:3168290  a  crm:E53_Place .
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/156/event/140> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/140/name> , <https://archipelago.itatti.harvard.edu/resources/event/140/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/140/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/140/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/140/date> , <urn:uuid:c54859d9-c1cd-4374-9167-6f8265975b89> ;
+        crm:P4_has_time-span       <urn:uuid:ad962b4f-5c1a-4233-9f30-0afe744fe36d> , <https://archipelago.itatti.harvard.edu/resources/event/140/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
         crm:P7_took_place_at       geonames:3168290 .
 

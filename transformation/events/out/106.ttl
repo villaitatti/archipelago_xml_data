@@ -31,6 +31,10 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The Giunta Regionale declares that the island's use is no more sanitary (prot. n. 5435)."@en .
 
+<urn:uuid:02582f71-5601-4f0c-a393-743a6fd29e5a>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/106/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
@@ -38,16 +42,12 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:5b298eca-4fd4-4083-a59e-2bb3f5918a1c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/106>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/106/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/106/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/106/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/106/typology> , <https://archipelago.itatti.harvard.edu/resources/event/106/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:5b298eca-4fd4-4083-a59e-2bb3f5918a1c> , <https://archipelago.itatti.harvard.edu/resources/event/106/date> ;
+        crm:P4_has_time-span       <urn:uuid:02582f71-5601-4f0c-a393-743a6fd29e5a> , <https://archipelago.itatti.harvard.edu/resources/event/106/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

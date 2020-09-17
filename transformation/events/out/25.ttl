@@ -10,7 +10,7 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:a8e5403d-8d7c-4ebc-b9fd-74d510662e81>
+<urn:uuid:4fef0e91-c21b-40bd-b3fb-31bc36897c99>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
@@ -41,7 +41,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/25/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/25/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/25/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/25/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/25/typology> ;
-        crm:P4_has_time-span     <urn:uuid:a8e5403d-8d7c-4ebc-b9fd-74d510662e81> , <https://archipelago.itatti.harvard.edu/resources/event/25/date> ;
+        crm:P4_has_time-span     <urn:uuid:4fef0e91-c21b-40bd-b3fb-31bc36897c99> , <https://archipelago.itatti.harvard.edu/resources/event/25/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/25/role>

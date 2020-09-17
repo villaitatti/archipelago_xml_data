@@ -15,6 +15,10 @@
         rdfs:label       "Reconstruction of the church"@it ;
         crm:P2_has_type  "preferred_name" .
 
+<urn:uuid:f643f2e6-36f0-4925-ba7c-a041926f93ba>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Reconstruction"@en .
@@ -46,7 +50,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/12/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/12/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/12/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/date> , <urn:uuid:83164c68-7e90-4d10-997a-0dd4bdbe907a> ;
+        crm:P4_has_time-span       <urn:uuid:f643f2e6-36f0-4925-ba7c-a041926f93ba> , <https://archipelago.itatti.harvard.edu/resources/event/12/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -58,10 +62,6 @@ geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:83164c68-7e90-4d10-997a-0dd4bdbe907a>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;

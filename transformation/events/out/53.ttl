@@ -37,7 +37,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/53/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/53/name> , <https://archipelago.itatti.harvard.edu/resources/event/53/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/53/typology> , <https://archipelago.itatti.harvard.edu/resources/event/53/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:a408fe9d-3f29-4beb-a65a-8b0dccb2f766> , <https://archipelago.itatti.harvard.edu/resources/event/53/date> ;
+        crm:P4_has_time-span       <urn:uuid:384474a1-e377-4fc1-abcf-38f43a692190> , <https://archipelago.itatti.harvard.edu/resources/event/53/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -51,10 +51,6 @@
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/53/role> .
 
 geonames:3230839  a  crm:E53_Place .
-
-<urn:uuid:a408fe9d-3f29-4beb-a65a-8b0dccb2f766>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 
 geonames:15  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:15 .
@@ -92,3 +88,7 @@ geonames:15  a                   crm:E42_Identifier , crm:E53_Place ;
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/41> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/41/event/53/role> .
+
+<urn:uuid:384474a1-e377-4fc1-abcf-38f43a692190>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .

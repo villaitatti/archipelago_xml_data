@@ -82,11 +82,11 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/102/event/127> , <https://archipelago.itatti.harvard.edu/resources/actor/90/event/127> , <https://archipelago.itatti.harvard.edu/resources/actor/148/event/127> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/127/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/127/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/127/typology> , <https://archipelago.itatti.harvard.edu/resources/event/127/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:2a9dfa18-c467-4bff-984f-a7ca6453f627> , <https://archipelago.itatti.harvard.edu/resources/event/127/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/127/date> , <urn:uuid:3b5392f6-dd3d-41c9-850f-f2499b5b5dd1> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/159> ;
         crm:P7_took_place_at       geonames:3168468 .
 
-<urn:uuid:2a9dfa18-c467-4bff-984f-a7ca6453f627>
+<urn:uuid:3b5392f6-dd3d-41c9-850f-f2499b5b5dd1>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 

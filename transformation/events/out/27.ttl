@@ -19,12 +19,16 @@
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/27> , <https://archipelago.itatti.harvard.edu/resources/actor/21/event/27> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/27/name> , <https://archipelago.itatti.harvard.edu/resources/event/27/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/27/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/27/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/27/date> , <urn:uuid:7b26c806-9c0c-4d29-92bd-5ecd90dfe40f> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/27/date> , <urn:uuid:4383121d-8b46-4532-a15d-a4fc01f28bad> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/27/role>
         a           crm:E55_Type ;
         rdfs:label  "Painter"@en .
+
+<urn:uuid:4383121d-8b46-4532-a15d-a4fc01f28bad>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/27/role>
         a           crm:E55_Type ;
@@ -38,10 +42,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/21>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/21/identifier> .
-
-<urn:uuid:7b26c806-9c0c-4d29-92bd-5ecd90dfe40f>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier>
         a       crm:E42_Identifier .

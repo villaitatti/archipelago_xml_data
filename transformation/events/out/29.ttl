@@ -14,10 +14,6 @@
         a           crm:E42_Identifier ;
         rdfs:label  "29" .
 
-<urn:uuid:e92e15e4-a93e-47b5-9b5e-e47fa73d6dbf>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/29/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
@@ -39,6 +35,10 @@ geonames:7910746  a  crm:E53_Place .
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/24/identifier> .
 
+<urn:uuid:6c6c2863-f468-4392-8ad3-ddc54feda2e6>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/29>
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/24> ;
@@ -54,7 +54,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/29/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/29/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/29/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/29/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/29/typology> ;
-        crm:P4_has_time-span     <urn:uuid:e92e15e4-a93e-47b5-9b5e-e47fa73d6dbf> , <https://archipelago.itatti.harvard.edu/resources/event/29/date> ;
+        crm:P4_has_time-span     <urn:uuid:6c6c2863-f468-4392-8ad3-ddc54feda2e6> , <https://archipelago.itatti.harvard.edu/resources/event/29/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/29/role>

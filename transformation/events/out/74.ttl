@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:b5c52853-cc31-480d-89b0-8a3ad2e27e7b>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/93/event/74/role>
         a           crm:E55_Type ;
         rdfs:label  "Secretary of the monastery who reported the petition"@en .
@@ -48,6 +44,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/93>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/93/identifier> .
+
+<urn:uuid:7700397c-1178-4597-b897-094c6133063a>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/74/subtypology>
         a           crm:E55_Type ;
@@ -86,7 +86,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/74/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/74/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/74/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/74/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/74/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/74/date> , <urn:uuid:b5c52853-cc31-480d-89b0-8a3ad2e27e7b> ;
+        crm:P4_has_time-span       <urn:uuid:7700397c-1178-4597-b897-094c6133063a> , <https://archipelago.itatti.harvard.edu/resources/event/74/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/119> ;
         crm:P7_took_place_at       geonames:7910746 .
 

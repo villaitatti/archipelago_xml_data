@@ -36,9 +36,13 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/36/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/36/name> , <https://archipelago.itatti.harvard.edu/resources/event/36/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/36/typology> , <https://archipelago.itatti.harvard.edu/resources/event/36/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/36/date> , <urn:uuid:1dd4f1e5-fddc-4c86-af07-f1dde010befb> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/36/date> , <urn:uuid:03529bf8-9260-41e3-89dd-a2d6a35988bc> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
+
+<urn:uuid:03529bf8-9260-41e3-89dd-a2d6a35988bc>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:19 .
@@ -72,7 +76,3 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/36/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "After the II World War the island is used by private citizens and then abandoned."@en .
-
-<urn:uuid:1dd4f1e5-fddc-4c86-af07-f1dde010befb>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .

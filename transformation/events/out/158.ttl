@@ -31,13 +31,13 @@
         rdfs:label       "The island is used as a lazzaretto"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:476049fb-c3ab-417d-93ce-d489c7ee396d>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/124>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
+
+<urn:uuid:762867ff-fdc3-4033-957a-0993c28dd4d9>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/158>
         a                          crm:E5_Event ;
@@ -45,7 +45,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/158/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/158/name> , <https://archipelago.itatti.harvard.edu/resources/event/158/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/158/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/158/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/158/date> , <urn:uuid:476049fb-c3ab-417d-93ce-d489c7ee396d> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/158/date> , <urn:uuid:762867ff-fdc3-4033-957a-0993c28dd4d9> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

@@ -35,10 +35,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/102/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:afb040ed-27d5-47dd-bc24-97d5639839f6>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/145/event/77>
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/145> ;
@@ -59,13 +55,17 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
+<urn:uuid:ee71c8b4-f793-49d8-8ac5-d73ecf3b0aed>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/77>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/145/event/77> , <https://archipelago.itatti.harvard.edu/resources/actor/102/event/77> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/77/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/77/name> , <https://archipelago.itatti.harvard.edu/resources/event/77/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/77/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/77/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/77/date> , <urn:uuid:afb040ed-27d5-47dd-bc24-97d5639839f6> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/77/date> , <urn:uuid:ee71c8b4-f793-49d8-8ac5-d73ecf3b0aed> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/157> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

@@ -19,7 +19,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/53/event/97> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/97/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/97/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/97/typology> , <https://archipelago.itatti.harvard.edu/resources/event/97/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:a4cbe89a-7dfc-43d6-8d54-6a3145ea32d1> , <https://archipelago.itatti.harvard.edu/resources/event/97/date> ;
+        crm:P4_has_time-span       <urn:uuid:55f54698-9332-4452-b813-887c2bac912f> , <https://archipelago.itatti.harvard.edu/resources/event/97/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -35,16 +35,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
 
-<urn:uuid:a4cbe89a-7dfc-43d6-8d54-6a3145ea32d1>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/97/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "97" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/53/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:55f54698-9332-4452-b813-887c2bac912f>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .

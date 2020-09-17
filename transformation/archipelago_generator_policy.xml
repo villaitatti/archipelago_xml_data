@@ -123,10 +123,10 @@
 	<generator name="263-event-date" prefix="arc">
 		<pattern>event/{event_id}/date</pattern>
 	</generator>
-	<generator name="event/{event_id}/century" prefix="arc">
+	<generator name="270-event-century" prefix="arc">
 		<pattern>event/{event_id}/century</pattern>
 	</generator>
-	<generator name="event/{event_id}/century_fraction" prefix="arc">
+	<generator name="271-event-century_fraction" prefix="arc">
 		<pattern>event/{event_id}/century_fraction</pattern>
 	</generator>
 	<generator name="290-event-image" prefix="arc">

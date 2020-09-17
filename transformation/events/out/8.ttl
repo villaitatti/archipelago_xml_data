@@ -20,7 +20,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/8/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/8/name> , <https://archipelago.itatti.harvard.edu/resources/event/8/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/8/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/8/typology> ;
-        crm:P4_has_time-span       <urn:uuid:d1c60d3e-7fb1-4087-87ac-0821f80cf26a> , <https://archipelago.itatti.harvard.edu/resources/event/8/date> ;
+        crm:P4_has_time-span       <urn:uuid:a754dcf1-5cd4-45d7-80d6-4eef4ed2321e> , <https://archipelago.itatti.harvard.edu/resources/event/8/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011> , <https://archipelago.itatti.harvard.edu/resources/source/80> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -43,6 +43,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E73_Information_Object ;
         rdfs:label  "The Dominican friars are removed and transferred to the monastery of San Domenico di Castello. The island is transformed into a lazzaretto for people infected with plague. The friars' goods are moved to the library and the chapel of the Cross or to the church of San Giobbe in Venice."@en .
 
+<urn:uuid:a754dcf1-5cd4-45d7-80d6-4eef4ed2321e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/8/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Adaptive reuse (i.e. lazaretto)"@en .
@@ -50,14 +54,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011/identifier>
-        a       crm:E42_Identifier .
-
 geonames:3230839  a  crm:E53_Place .
 
-<urn:uuid:d1c60d3e-7fb1-4087-87ac-0821f80cf26a>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/88/event/8>
         a                         crm:PC14_carried_out_by ;

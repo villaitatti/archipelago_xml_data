@@ -20,7 +20,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/42/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/42/name> , <https://archipelago.itatti.harvard.edu/resources/event/42/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/42/typology> , <https://archipelago.itatti.harvard.edu/resources/event/42/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/42/date> , <urn:uuid:60d60db0-26df-42fb-9d83-4f7a3ebbec54> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/42/date> , <urn:uuid:36f4c084-5eda-4b56-9953-fbdbba52e7ea> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -50,18 +50,14 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/18/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/18/event/42>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/18> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/18/event/42/role> .
-
 <https://archipelago.itatti.harvard.edu/resources/event/42/typology>
         a           crm:E55_Type ;
         rdfs:label  "Economic"@en .
 
-<urn:uuid:60d60db0-26df-42fb-9d83-4f7a3ebbec54>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/actor/18/event/42>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/18> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/18/event/42/role> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/42/date>
         a                            crm:E52_Time-Span ;
@@ -76,3 +72,7 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/42/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "42" .
+
+<urn:uuid:36f4c084-5eda-4b56-9953-fbdbba52e7ea>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .

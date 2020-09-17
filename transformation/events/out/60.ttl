@@ -40,7 +40,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/60/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/60/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/60/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/60/typology> , <https://archipelago.itatti.harvard.edu/resources/event/60/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/60/date> , <urn:uuid:b9b8d8ab-545a-4a91-a276-2fc6ec142a04> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/60/date> , <urn:uuid:1c0d2209-4e14-4675-9317-9caa5daa950c> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/74/event/60>
@@ -48,7 +48,7 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/74> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/74/event/60/role> .
 
-<urn:uuid:b9b8d8ab-545a-4a91-a276-2fc6ec142a04>
+<urn:uuid:1c0d2209-4e14-4675-9317-9caa5daa950c>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 

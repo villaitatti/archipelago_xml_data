@@ -14,13 +14,9 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/104/name> , <https://archipelago.itatti.harvard.edu/resources/event/104/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/104/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/104/typology> ;
-        crm:P4_has_time-span       <urn:uuid:d4ace8ea-499d-4096-8b62-7555f0952d15> , <https://archipelago.itatti.harvard.edu/resources/event/104/date> ;
+        crm:P4_has_time-span       <urn:uuid:cc165eaf-9d46-462b-8285-c70f1c0685ad> , <https://archipelago.itatti.harvard.edu/resources/event/104/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/104/date>
         a                            crm:E52_Time-Span ;
@@ -34,9 +30,9 @@
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
 
-<urn:uuid:d4ace8ea-499d-4096-8b62-7555f0952d15>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/104/subtypology>
         a           crm:E55_Type ;
@@ -44,6 +40,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:cc165eaf-9d46-462b-8285-c70f1c0685ad>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

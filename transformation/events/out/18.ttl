@@ -37,6 +37,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Order's new vicary"@en .
 
+<urn:uuid:c511f6c8-dd6b-4637-aeac-6e80ab6e7e18>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/18/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Relocation of the Dominican friars coming from Tuscany"@it ;
@@ -48,10 +52,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:d9703ffa-094b-4627-bffe-eaab1f92e3b0>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/18/subtypology>
         a           crm:E55_Type ;
@@ -67,7 +67,7 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/18/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/18/name> , <https://archipelago.itatti.harvard.edu/resources/event/18/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/18/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/18/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/18/date> , <urn:uuid:d9703ffa-094b-4627-bffe-eaab1f92e3b0> ;
+        crm:P4_has_time-span       <urn:uuid:c511f6c8-dd6b-4637-aeac-6e80ab6e7e18> , <https://archipelago.itatti.harvard.edu/resources/event/18/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 

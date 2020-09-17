@@ -32,7 +32,7 @@
         rdfs:label       "Survey of the entire island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:e92f8301-5990-4226-8a98-54269aeedd16>
+<urn:uuid:be395037-e1ff-4dc5-858f-c37b5904cc14>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
@@ -48,7 +48,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/32/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/32/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/32/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/32/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/32/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/32/date> , <urn:uuid:e92f8301-5990-4226-8a98-54269aeedd16> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/32/date> , <urn:uuid:be395037-e1ff-4dc5-858f-c37b5904cc14> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/32/date>

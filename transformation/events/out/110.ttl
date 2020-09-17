@@ -66,7 +66,7 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017/identifier> .
 
-<urn:uuid:51f4a2dd-0efd-475f-8f36-c696e403bced>
+<urn:uuid:353172fe-0e5b-4a37-89d2-3631351a36f0>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
@@ -95,7 +95,7 @@ geonames:3168468  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/110/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/110/name> , <https://archipelago.itatti.harvard.edu/resources/event/110/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/110/typology> , <https://archipelago.itatti.harvard.edu/resources/event/110/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:51f4a2dd-0efd-475f-8f36-c696e403bced> , <https://archipelago.itatti.harvard.edu/resources/event/110/date> ;
+        crm:P4_has_time-span       <urn:uuid:353172fe-0e5b-4a37-89d2-3631351a36f0> , <https://archipelago.itatti.harvard.edu/resources/event/110/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

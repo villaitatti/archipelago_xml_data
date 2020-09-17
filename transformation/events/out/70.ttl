@@ -21,17 +21,13 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/70/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/70/name> , <https://archipelago.itatti.harvard.edu/resources/event/70/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/70/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/70/typology> ;
-        crm:P4_has_time-span       <urn:uuid:ff7d979f-0be7-412d-9c96-c17cce2afd1b> , <https://archipelago.itatti.harvard.edu/resources/event/70/date> ;
+        crm:P4_has_time-span       <urn:uuid:e84d1401-dff8-4470-8fb0-7fc8308f0e25> , <https://archipelago.itatti.harvard.edu/resources/event/70/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/51>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/51/identifier> .
-
-<urn:uuid:ff7d979f-0be7-412d-9c96-c17cce2afd1b>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/70/synopsis>
         a           crm:E73_Information_Object ;
@@ -76,3 +72,7 @@ geonames:10  a                   crm:E42_Identifier , crm:E53_Place ;
         rdfs:label  "Donor for the restoration"@en .
 
 geonames:3230839  a  crm:E53_Place .
+
+<urn:uuid:e84d1401-dff8-4470-8fb0-7fc8308f0e25>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .

@@ -34,7 +34,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/173/event/150> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/150/name> , <https://archipelago.itatti.harvard.edu/resources/event/150/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/150/typology> , <https://archipelago.itatti.harvard.edu/resources/event/150/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/150/date> , <urn:uuid:eb518a21-8d46-4e9a-b568-058dc85c925e> ;
+        crm:P4_has_time-span       <urn:uuid:78d8ea08-bf2f-4d8d-86c1-c71cd22da98f> , <https://archipelago.itatti.harvard.edu/resources/event/150/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -51,10 +51,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Temporary housing"@en .
 
-<urn:uuid:eb518a21-8d46-4e9a-b568-058dc85c925e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/150/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The island is used as lazzaretto for the captain and knight Sebastiano Giustinian who was coming back from Candia"@it ;
@@ -62,6 +58,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:78d8ea08-bf2f-4d8d-86c1-c71cd22da98f>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/150/date>
         a                            crm:E52_Time-Span ;

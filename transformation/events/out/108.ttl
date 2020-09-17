@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<urn:uuid:703a2883-7e4e-4614-b6f1-9a8c78790627>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/108/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
@@ -34,16 +38,12 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/108/name> , <https://archipelago.itatti.harvard.edu/resources/event/108/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/108/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/108/typology> ;
-        crm:P4_has_time-span       <urn:uuid:b41c1790-2d48-4242-9b16-88b238411e0c> , <https://archipelago.itatti.harvard.edu/resources/event/108/date> ;
+        crm:P4_has_time-span       <urn:uuid:703a2883-7e4e-4614-b6f1-9a8c78790627> , <https://archipelago.itatti.harvard.edu/resources/event/108/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:b41c1790-2d48-4242-9b16-88b238411e0c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

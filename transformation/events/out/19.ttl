@@ -68,6 +68,10 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Construction worker"@en .
 
+<urn:uuid:0fff44c2-ad81-41fc-bcb1-1f1b30581efa>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier>
         a       crm:E42_Identifier .
 
@@ -86,7 +90,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/19/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/19/name> , <https://archipelago.itatti.harvard.edu/resources/event/19/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/19/typology> , <https://archipelago.itatti.harvard.edu/resources/event/19/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/19/date> , <urn:uuid:8e960085-729a-4062-b6a5-8da178d351c0> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/19/date> , <urn:uuid:0fff44c2-ad81-41fc-bcb1-1f1b30581efa> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> , <https://archipelago.itatti.harvard.edu/resources/source/90> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -97,10 +101,6 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/84/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:8e960085-729a-4062-b6a5-8da178d351c0>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/19/identifier>
         a       crm:E42_Identifier .

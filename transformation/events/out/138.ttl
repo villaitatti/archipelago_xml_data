@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<urn:uuid:73ad8ff6-c590-491d-bf19-74a06fefdfe8>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -31,7 +35,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/138/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/138/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/138/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/138/typology> , <https://archipelago.itatti.harvard.edu/resources/event/138/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/138/date> , <urn:uuid:89cd10f7-c119-4ad4-b49c-0be8b3424d50> ;
+        crm:P4_has_time-span       <urn:uuid:73ad8ff6-c590-491d-bf19-74a06fefdfe8> , <https://archipelago.itatti.harvard.edu/resources/event/138/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -41,10 +45,6 @@
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:89cd10f7-c119-4ad4-b49c-0be8b3424d50>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

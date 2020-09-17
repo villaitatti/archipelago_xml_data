@@ -28,10 +28,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
 
-<urn:uuid:1f195de0-acac-4184-91b4-3dd8b461e2cd>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/65/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Transfer (goods)"@en .
@@ -42,7 +38,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/65/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/65/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/65/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/65/typology> , <https://archipelago.itatti.harvard.edu/resources/event/65/subtypology> ;
-        crm:P4_has_time-span     <urn:uuid:1f195de0-acac-4184-91b4-3dd8b461e2cd> , <https://archipelago.itatti.harvard.edu/resources/event/65/date> ;
+        crm:P4_has_time-span     <urn:uuid:42957448-ce11-412b-a8e0-e36b871a77db> , <https://archipelago.itatti.harvard.edu/resources/event/65/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 geonames:7910746  a  crm:E53_Place .
@@ -50,6 +46,10 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/65/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "65" .
+
+<urn:uuid:42957448-ce11-412b-a8e0-e36b871a77db>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/65/synopsis>
         a           crm:E73_Information_Object ;

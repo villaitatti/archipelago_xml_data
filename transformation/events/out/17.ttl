@@ -16,17 +16,13 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/17/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/17/name> , <https://archipelago.itatti.harvard.edu/resources/event/17/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/17/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/17/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/17/date> , <urn:uuid:64b422a6-0f54-4506-9dac-307605a61fa7> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/17/date> , <urn:uuid:90416dc7-3422-4e30-a937-095253660a34> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/17/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Religious order's suppression"@en .
-
-<urn:uuid:64b422a6-0f54-4506-9dac-307605a61fa7>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:11 .
@@ -47,6 +43,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/17/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Clemente VII suppresses the religious community and transfers the Benedictine nuns to the Giudecca. The abbatial title of the church is estinguished."@en .
+
+<urn:uuid:90416dc7-3422-4e30-a937-095253660a34>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .

@@ -18,6 +18,10 @@
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/48/identifier> .
 
+<urn:uuid:281d1068-8fc5-43c7-ae70-fd120dc8cf3c>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/46/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "46" .
@@ -45,10 +49,6 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Fire"@en .
 
-<urn:uuid:c3c9b6f2-db7a-4108-956e-8dbe8dfd45e7>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/46/typology>
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
@@ -72,7 +72,7 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/46/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/46/name> , <https://archipelago.itatti.harvard.edu/resources/event/46/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/46/typology> , <https://archipelago.itatti.harvard.edu/resources/event/46/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/46/date> , <urn:uuid:c3c9b6f2-db7a-4108-956e-8dbe8dfd45e7> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/46/date> , <urn:uuid:281d1068-8fc5-43c7-ae70-fd120dc8cf3c> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 

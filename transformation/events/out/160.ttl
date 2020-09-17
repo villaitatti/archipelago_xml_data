@@ -25,13 +25,13 @@
         a           crm:E55_Type ;
         rdfs:label  "Decision makers"@en .
 
+<urn:uuid:19def814-d3b2-469b-a68f-0c344fe173d2>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/160/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Public deliberation"@en .
-
-<urn:uuid:971b269a-32d9-4ebf-9fac-4db48350ed00>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/178/event/160>
         a                         crm:PC14_carried_out_by ;
@@ -44,7 +44,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/160/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/160/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/160/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/160/typology> , <https://archipelago.itatti.harvard.edu/resources/event/160/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/160/date> , <urn:uuid:971b269a-32d9-4ebf-9fac-4db48350ed00> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/160/date> , <urn:uuid:19def814-d3b2-469b-a68f-0c344fe173d2> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

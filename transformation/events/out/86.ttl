@@ -19,7 +19,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/123/event/86> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/86/name> , <https://archipelago.itatti.harvard.edu/resources/event/86/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/86/typology> , <https://archipelago.itatti.harvard.edu/resources/event/86/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:731584ac-6dfd-455e-8dba-92322e4d6b54> , <https://archipelago.itatti.harvard.edu/resources/event/86/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/86/date> , <urn:uuid:444f27ac-0172-4c04-aacd-686feee59b80> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/77> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -33,6 +33,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/86/source/77/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Reshape of the island into an octagon"@en .
+
+<urn:uuid:444f27ac-0172-4c04-aacd-686feee59b80>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/source/77>
         a                        crm:E31_Document ;
@@ -66,10 +70,6 @@ geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/actor/123>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/123/identifier> .
-
-<urn:uuid:731584ac-6dfd-455e-8dba-92322e4d6b54>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 geonames:3230839  a  crm:E53_Place .
 

@@ -27,7 +27,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/130/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/130/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/130/typology> , <https://archipelago.itatti.harvard.edu/resources/event/130/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:540b05b4-7ee3-4c0e-be59-b9015394b0f8> , <https://archipelago.itatti.harvard.edu/resources/event/130/date> ;
+        crm:P4_has_time-span       <urn:uuid:4a860e02-f23a-4a8f-baa8-bf2b68ea7e61> , <https://archipelago.itatti.harvard.edu/resources/event/130/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041> ;
         crm:P7_took_place_at       geonames:7910746 .
 
@@ -46,6 +46,10 @@
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/149/identifier> .
 
+<urn:uuid:4a860e02-f23a-4a8f-baa8-bf2b68ea7e61>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/130/subtypology>
@@ -58,10 +62,6 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130/role>
         a           crm:E55_Type ;
         rdfs:label  "Guest"@en .
-
-<urn:uuid:540b05b4-7ee3-4c0e-be59-b9015394b0f8>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130>
         a                         crm:PC14_carried_out_by ;

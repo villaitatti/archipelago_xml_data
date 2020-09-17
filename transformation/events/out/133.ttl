@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:94af3da0-ce76-4e0d-a22a-fce1f04155c5>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/133/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Demolition of the monastery and small houses for noblemen"@it ;
@@ -33,7 +29,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/133/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/133/name> , <https://archipelago.itatti.harvard.edu/resources/event/133/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/133/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/133/typology> ;
-        crm:P4_has_time-span       <urn:uuid:94af3da0-ce76-4e0d-a22a-fce1f04155c5> , <https://archipelago.itatti.harvard.edu/resources/event/133/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/133/date> , <urn:uuid:61c858e3-1cab-467f-a0ef-dffd235c3a5b> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -67,6 +63,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/133/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "19th cent."@en .
+
+<urn:uuid:61c858e3-1cab-467f-a0ef-dffd235c3a5b>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/133/typology>
         a           crm:E55_Type ;

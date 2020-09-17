@@ -23,16 +23,12 @@
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/25/event/23> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/23/name> , <https://archipelago.itatti.harvard.edu/resources/event/23/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/23/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/23/typology> ;
-        crm:P4_has_time-span     <urn:uuid:627883d9-b7a7-4a88-9e8e-9b92e40b2153> , <https://archipelago.itatti.harvard.edu/resources/event/23/date> ;
+        crm:P4_has_time-span     <urn:uuid:8a5d7d53-4aa6-4246-a675-7c58d932deb4> , <https://archipelago.itatti.harvard.edu/resources/event/23/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/23/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
-
-<urn:uuid:627883d9-b7a7-4a88-9e8e-9b92e40b2153>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 geonames:7910746  a  crm:E53_Place .
 
@@ -55,3 +51,7 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/23/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<urn:uuid:8a5d7d53-4aa6-4246-a675-7c58d932deb4>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .

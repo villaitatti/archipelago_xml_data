@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:4d7fed9c-5194-4fe7-a85c-8b2947adedcc>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/118/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Patriarch Egidio da Ferrara donates his apartment within the island to the Canons Regular"@it ;
@@ -57,7 +53,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/141/event/118> , <https://archipelago.itatti.harvard.edu/resources/actor/133/event/118> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/118/name> , <https://archipelago.itatti.harvard.edu/resources/event/118/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/118/typology> , <https://archipelago.itatti.harvard.edu/resources/event/118/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/118/date> , <urn:uuid:4d7fed9c-5194-4fe7-a85c-8b2947adedcc> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/118/date> , <urn:uuid:6d1e2a72-a2ba-484b-9528-54a8d1f78bae> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/156> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -96,3 +92,7 @@ geonames:3168468  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/actor/141>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/141/identifier> .
+
+<urn:uuid:6d1e2a72-a2ba-484b-9528-54a8d1f78bae>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
