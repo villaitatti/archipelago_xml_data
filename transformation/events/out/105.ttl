@@ -26,7 +26,7 @@
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/105/name> , <https://archipelago.itatti.harvard.edu/resources/event/105/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/105/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/105/typology> ;
-        crm:P4_has_time-span     <urn:uuid:105ca5aa-0239-4f9b-8bbf-49079a34785c> , <https://archipelago.itatti.harvard.edu/resources/event/105/date> ;
+        crm:P4_has_time-span     <urn:uuid:5bf5a449-dd2c-474e-8c55-c96aaaf679ce> , <https://archipelago.itatti.harvard.edu/resources/event/105/date> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/105/name>
@@ -34,12 +34,12 @@
         rdfs:label       "The wooden choir of the sacristy is transferred to the sacristy of Ognissanti"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:105ca5aa-0239-4f9b-8bbf-49079a34785c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/105/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "20th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .
+
+<urn:uuid:5bf5a449-dd2c-474e-8c55-c96aaaf679ce>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .

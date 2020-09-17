@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<urn:uuid:e236dc4c-e88a-4a00-a294-c68e37c8ec05>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/73>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/73/identifier> .
@@ -28,7 +32,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/58/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/58/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/58/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/58/typology> , <https://archipelago.itatti.harvard.edu/resources/event/58/subtypology> ;
-        crm:P4_has_time-span     <urn:uuid:2b639f82-d8cc-45ea-b0d0-7879ccf05359> , <https://archipelago.itatti.harvard.edu/resources/event/58/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/58/date> , <urn:uuid:e236dc4c-e88a-4a00-a294-c68e37c8ec05> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/58/subtypology>
@@ -42,10 +46,6 @@
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/73> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/73/event/58/role> .
-
-<urn:uuid:2b639f82-d8cc-45ea-b0d0-7879ccf05359>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 geonames:7910746  a  crm:E53_Place .
 

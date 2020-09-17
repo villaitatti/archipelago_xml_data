@@ -14,12 +14,16 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
+<urn:uuid:7f751fb3-ff49-4dcf-9496-9873e58cbf60>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/102>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/102/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/102/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/102/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/102/typology> , <https://archipelago.itatti.harvard.edu/resources/event/102/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:c1872bd4-bfe9-484d-8482-603a9f145086> , <https://archipelago.itatti.harvard.edu/resources/event/102/date> ;
+        crm:P4_has_time-span       <urn:uuid:7f751fb3-ff49-4dcf-9496-9873e58cbf60> , <https://archipelago.itatti.harvard.edu/resources/event/102/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -31,10 +35,6 @@
 <https://archipelago.itatti.harvard.edu/resources/event/102/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The formal dismission is issued by the Unità Sanitaria Locale (deliberation n. 1099)."@en .
-
-<urn:uuid:c1872bd4-bfe9-484d-8482-603a9f145086>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/102/identifier>
         a           crm:E42_Identifier ;

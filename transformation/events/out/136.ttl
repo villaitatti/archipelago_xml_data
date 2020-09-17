@@ -27,10 +27,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Construction"@en .
 
-<urn:uuid:9077c445-f5d6-499f-8836-93027e5c0e45>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/154>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/154/identifier> .
@@ -68,7 +64,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/136/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/136/name> , <https://archipelago.itatti.harvard.edu/resources/event/136/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/136/typology> , <https://archipelago.itatti.harvard.edu/resources/event/136/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/136/date> , <urn:uuid:9077c445-f5d6-499f-8836-93027e5c0e45> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/136/date> , <urn:uuid:f37cf0eb-dd32-417b-a5e5-803ea90c43d8> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -87,5 +83,9 @@
 <https://archipelago.itatti.harvard.edu/resources/event/136/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<urn:uuid:f37cf0eb-dd32-417b-a5e5-803ea90c43d8>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 geonames:3168468  a  crm:E53_Place .

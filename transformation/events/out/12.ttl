@@ -40,17 +40,13 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The church is completely reconstructed along with two cells located near the sacristy."@en .
 
-<urn:uuid:bf0fd9a7-1ee8-454c-9b1a-bac647799d20>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/12>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/42/event/12> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/12/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/12/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/12/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/date> , <urn:uuid:bf0fd9a7-1ee8-454c-9b1a-bac647799d20> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/date> , <urn:uuid:83164c68-7e90-4d10-997a-0dd4bdbe907a> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -62,6 +58,10 @@ geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:83164c68-7e90-4d10-997a-0dd4bdbe907a>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;

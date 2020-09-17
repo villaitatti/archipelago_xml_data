@@ -23,6 +23,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Nominal buyer"@en .
 
+<urn:uuid:1ccc1825-427c-4dfc-bb93-59132aa1d01f>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/184/event/163/role>
         a           crm:E55_Type ;
         rdfs:label  "New owners"@en .
@@ -60,10 +64,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<urn:uuid:7a767a11-517e-4890-be64-f0164455077c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/187/event/163>
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/187> ;
@@ -87,7 +87,7 @@ geonames:3168468  a  crm:E53_Place .
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/184/event/163> , <https://archipelago.itatti.harvard.edu/resources/actor/181/event/163> , <https://archipelago.itatti.harvard.edu/resources/actor/187/event/163> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/163/name> , <https://archipelago.itatti.harvard.edu/resources/event/163/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/163/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/163/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/163/date> , <urn:uuid:7a767a11-517e-4890-be64-f0164455077c> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/163/date> , <urn:uuid:1ccc1825-427c-4dfc-bb93-59132aa1d01f> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/187/identifier>

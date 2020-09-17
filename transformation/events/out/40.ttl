@@ -59,6 +59,10 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
+<urn:uuid:59cbde82-2545-4978-8e2f-25d460b8df73>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/40/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Suppression of the Dominican community"@it ;
@@ -84,7 +88,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/40/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/40/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/40/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/40/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/40/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/date> , <urn:uuid:1ec89a86-280f-407e-bbdd-68fd3e46dd94> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/date> , <urn:uuid:59cbde82-2545-4978-8e2f-25d460b8df73> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -92,10 +96,6 @@ geonames:3230839  a  crm:E53_Place .
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/40/role> .
-
-<urn:uuid:1ec89a86-280f-407e-bbdd-68fd3e46dd94>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/40/identifier>
         a       crm:E42_Identifier .

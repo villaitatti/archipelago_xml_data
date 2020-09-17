@@ -62,7 +62,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/128/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/128/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/128/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/128/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/128/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/128/date> , <urn:uuid:6d95a997-7636-4879-b664-2a31502f2e13> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/128/date> , <urn:uuid:935a9dcc-4781-4489-95a8-c93192829692> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -99,11 +99,11 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/128/role> .
 
-geonames:3168468  a  crm:E53_Place .
-
-<urn:uuid:6d95a997-7636-4879-b664-2a31502f2e13>
+<urn:uuid:935a9dcc-4781-4489-95a8-c93192829692>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
+geonames:3168468  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/128/subtypology>
         a           crm:E55_Type ;

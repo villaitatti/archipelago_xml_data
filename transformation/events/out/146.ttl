@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:95c173f3-040f-4c02-881e-be5710464547>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -24,7 +20,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/146/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/146/name> , <https://archipelago.itatti.harvard.edu/resources/event/146/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/146/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/146/typology> ;
-        crm:P4_has_time-span       <urn:uuid:95c173f3-040f-4c02-881e-be5710464547> , <https://archipelago.itatti.harvard.edu/resources/event/146/date> ;
+        crm:P4_has_time-span       <urn:uuid:4f80e10e-f030-48f8-991e-79551be6f8a2> , <https://archipelago.itatti.harvard.edu/resources/event/146/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -51,6 +47,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/166>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/166/identifier> .
+
+<urn:uuid:4f80e10e-f030-48f8-991e-79551be6f8a2>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/146/date>
         a                            crm:E52_Time-Span ;

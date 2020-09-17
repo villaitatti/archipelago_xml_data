@@ -27,10 +27,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Temporary housing"@en .
 
-<urn:uuid:1233cb85-6e35-4299-ba29-56de71339123>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/151/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "He was asked to stay in the island for a few days."@en .
@@ -40,8 +36,12 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/151/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/151/name> , <https://archipelago.itatti.harvard.edu/resources/event/151/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/151/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/151/typology> ;
-        crm:P4_has_time-span     <urn:uuid:1233cb85-6e35-4299-ba29-56de71339123> , <https://archipelago.itatti.harvard.edu/resources/event/151/date> ;
+        crm:P4_has_time-span     <urn:uuid:63e6402d-4812-4054-a644-44fcab803174> , <https://archipelago.itatti.harvard.edu/resources/event/151/date> ;
         crm:P7_took_place_at     geonames:3168468 .
+
+<urn:uuid:63e6402d-4812-4054-a644-44fcab803174>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/151/date>
         a                            crm:E52_Time-Span ;

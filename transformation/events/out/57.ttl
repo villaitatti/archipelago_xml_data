@@ -26,16 +26,12 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E41_Appellation ;
         rdfs:label  "Two bolts of lightning strike the island"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/70/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/57/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Lightning"@en .
 
-<urn:uuid:7d878625-eceb-44af-ba97-84767c58249d>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resources/actor/70/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/57/date>
         a                            crm:E52_Time-Span ;
@@ -44,6 +40,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/actor/70/event/57/role>
         a           crm:E55_Type ;
         rdfs:label  "Wittness"@en .
+
+<urn:uuid:0847c4c1-955c-4285-8d9a-37aac33c3aa4>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/70/event/57>
         a                         crm:PC14_carried_out_by ;
@@ -59,7 +59,7 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/57/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/57/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/57/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/57/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/57/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/57/date> , <urn:uuid:7d878625-eceb-44af-ba97-84767c58249d> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/57/date> , <urn:uuid:0847c4c1-955c-4285-8d9a-37aac33c3aa4> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/85> ;
         crm:P7_took_place_at       geonames:3230839 .
 

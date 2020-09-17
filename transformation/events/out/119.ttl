@@ -24,6 +24,10 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "14th cent."@en .
 
+<urn:uuid:7bb0487c-85e1-4b1f-a243-fc0e69b46dd1>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/119/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "119" .
@@ -38,7 +42,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/119/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/119/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/119/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/119/typology> , <https://archipelago.itatti.harvard.edu/resources/event/119/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/119/date> , <urn:uuid:c8005145-32d4-4114-9943-e430b5348943> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/119/date> , <urn:uuid:7bb0487c-85e1-4b1f-a243-fc0e69b46dd1> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -85,7 +89,3 @@ geonames:3168468  a  crm:E53_Place .
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/143> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/143/event/119/role> .
-
-<urn:uuid:c8005145-32d4-4114-9943-e430b5348943>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .

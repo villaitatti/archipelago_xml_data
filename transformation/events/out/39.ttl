@@ -14,14 +14,14 @@
         a           crm:E42_Identifier ;
         rdfs:label  "39" .
 
-<urn:uuid:061b671f-b6ba-40c7-b72e-7dffd117c320>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/39/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Consecration of the new church"@it ;
         crm:P2_has_type  "preferred_name" .
+
+<urn:uuid:b268f340-03f4-489c-a255-70fea7f87351>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/39/synopsis>
         a           crm:E73_Information_Object ;
@@ -38,7 +38,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/39/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/39/name> , <https://archipelago.itatti.harvard.edu/resources/event/39/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/39/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/39/typology> ;
-        crm:P4_has_time-span       <urn:uuid:061b671f-b6ba-40c7-b72e-7dffd117c320> , <https://archipelago.itatti.harvard.edu/resources/event/39/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/39/date> , <urn:uuid:b268f340-03f4-489c-a255-70fea7f87351> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 

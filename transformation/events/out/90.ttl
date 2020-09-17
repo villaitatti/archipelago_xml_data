@@ -14,6 +14,10 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier> .
 
+<urn:uuid:e316a9b5-88c3-4204-a9da-911fef3031fe>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/90/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
@@ -22,13 +26,9 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/90/name> , <https://archipelago.itatti.harvard.edu/resources/event/90/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/90/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/90/typology> ;
-        crm:P4_has_time-span       <urn:uuid:5af0ec5b-62db-405e-8e82-d6e656368e96> , <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
+        crm:P4_has_time-span       <urn:uuid:e316a9b5-88c3-4204-a9da-911fef3031fe> , <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:7910746 .
-
-<urn:uuid:5af0ec5b-62db-405e-8e82-d6e656368e96>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/90/date>
         a                            crm:E52_Time-Span ;

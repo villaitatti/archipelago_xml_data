@@ -21,10 +21,6 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "According to Father Davide da Portogruaro, the church and hospital were actually founded in 1146. For sure, at this time the island is inhabitated by the Canons regular of St Augustine."@en .
 
-<urn:uuid:f2b6b1b6-e8d8-49fc-97f8-ad65573050d4>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
         a       crm:E42_Identifier .
 
@@ -49,7 +45,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/109/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/109/name> , <https://archipelago.itatti.harvard.edu/resources/event/109/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/109/typology> , <https://archipelago.itatti.harvard.edu/resources/event/109/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:f2b6b1b6-e8d8-49fc-97f8-ad65573050d4> , <https://archipelago.itatti.harvard.edu/resources/event/109/date> ;
+        crm:P4_has_time-span       <urn:uuid:18e89d55-13f6-426d-83c8-a35b047481f6> , <https://archipelago.itatti.harvard.edu/resources/event/109/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -73,6 +69,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/133>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier> .
+
+<urn:uuid:18e89d55-13f6-426d-83c8-a35b047481f6>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/133/event/109>
         a                         crm:PC14_carried_out_by ;

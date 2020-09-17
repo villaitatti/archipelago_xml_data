@@ -25,6 +25,10 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
 
+<urn:uuid:aa3d71d9-cc1f-4e27-9ec6-ef7a21d23946>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85/role>
         a           crm:E55_Type ;
         rdfs:label  "Patron"@en .
@@ -42,17 +46,13 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/85/name> , <https://archipelago.itatti.harvard.edu/resources/event/85/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/85/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/85/typology> ;
-        crm:P4_has_time-span     <urn:uuid:7350d3fa-6118-40a5-962a-71c8eb4bca02> , <https://archipelago.itatti.harvard.edu/resources/event/85/date> ;
+        crm:P4_has_time-span     <urn:uuid:aa3d71d9-cc1f-4e27-9ec6-ef7a21d23946> , <https://archipelago.itatti.harvard.edu/resources/event/85/date> ;
         crm:P7_took_place_at     geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/85/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Restoration of the external wall"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<urn:uuid:7350d3fa-6118-40a5-962a-71c8eb4bca02>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/85/identifier>
         a           crm:E42_Identifier ;

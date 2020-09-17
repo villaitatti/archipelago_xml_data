@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:9a4cdc24-3aab-434c-af44-d9ac6c240ec6>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Spread of the plague"@en .
@@ -25,7 +21,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/93/name> , <https://archipelago.itatti.harvard.edu/resources/event/93/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/93/typology> ;
-        crm:P4_has_time-span       <urn:uuid:9a4cdc24-3aab-434c-af44-d9ac6c240ec6> , <https://archipelago.itatti.harvard.edu/resources/event/93/date> ;
+        crm:P4_has_time-span       <urn:uuid:5f433e0b-72a9-4ef2-98c5-b2e750eba1d8> , <https://archipelago.itatti.harvard.edu/resources/event/93/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
@@ -37,6 +33,10 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Plague spreads in Venice"@it ;
         crm:P2_has_type  "preferred_name" .
+
+<urn:uuid:5f433e0b-72a9-4ef2-98c5-b2e750eba1d8>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
         a                        crm:E31_Document ;

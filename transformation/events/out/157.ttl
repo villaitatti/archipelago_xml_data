@@ -14,17 +14,17 @@
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/157/name> , <https://archipelago.itatti.harvard.edu/resources/event/157/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/157/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/157/typology> ;
-        crm:P4_has_time-span     <urn:uuid:4b71e1d1-4d04-4b41-9396-5329eff8c177> , <https://archipelago.itatti.harvard.edu/resources/event/157/date> ;
+        crm:P4_has_time-span     <urn:uuid:07c7ca9c-bedc-46fb-a333-16f4c5959f74> , <https://archipelago.itatti.harvard.edu/resources/event/157/date> ;
         crm:P7_took_place_at     geonames:12172719 .
-
-<urn:uuid:4b71e1d1-4d04-4b41-9396-5329eff8c177>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/157/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The plague spreads in the whole city"@it ;
         crm:P2_has_type  "preferred_name" .
+
+<urn:uuid:07c7ca9c-bedc-46fb-a333-16f4c5959f74>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/157/identifier>
         a           crm:E42_Identifier ;

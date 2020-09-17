@@ -18,10 +18,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<urn:uuid:8299cbb6-103e-4825-a778-ab2eadfaf9f9>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
@@ -38,7 +34,7 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/45/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/45/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/45/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/45/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/45/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/45/date> , <urn:uuid:8299cbb6-103e-4825-a778-ab2eadfaf9f9> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/45/date> , <urn:uuid:bef29da4-58e6-435c-8709-afd13d629931> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -53,6 +49,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/45/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
+
+<urn:uuid:bef29da4-58e6-435c-8709-afd13d629931>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .

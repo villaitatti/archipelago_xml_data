@@ -31,10 +31,6 @@
         rdfs:label       "The Canons regular of San Clemente are confirmed under the jurisdiction of the Patriarch of Grado"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:c3d2e6d4-f160-47ad-a98d-99211655234d>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/133/identifier>
         a       crm:E42_Identifier .
 
@@ -60,11 +56,15 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/114/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/114/name> , <https://archipelago.itatti.harvard.edu/resources/event/114/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/114/typology> , <https://archipelago.itatti.harvard.edu/resources/event/114/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/114/date> , <urn:uuid:c3d2e6d4-f160-47ad-a98d-99211655234d> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/114/date> , <urn:uuid:8622186a-7ad7-4957-80c5-ad5a577027f1> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:8622186a-7ad7-4957-80c5-ad5a577027f1>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 geonames:3168468  a  crm:E53_Place .

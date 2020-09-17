@@ -22,13 +22,9 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/98/name> , <https://archipelago.itatti.harvard.edu/resources/event/98/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/98/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/98/typology> ;
-        crm:P4_has_time-span       <urn:uuid:f7d9269e-b8de-406d-bf14-112ad1e3d60c> , <https://archipelago.itatti.harvard.edu/resources/event/98/date> ;
+        crm:P4_has_time-span       <urn:uuid:cbca5550-d000-463f-9d94-3e32241ce42d> , <https://archipelago.itatti.harvard.edu/resources/event/98/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<urn:uuid:f7d9269e-b8de-406d-bf14-112ad1e3d60c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/98/typology>
         a           crm:E55_Type ;
@@ -51,3 +47,7 @@
         crm:P82_at_some_time_within  "20th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .
+
+<urn:uuid:cbca5550-d000-463f-9d94-3e32241ce42d>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .

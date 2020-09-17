@@ -52,6 +52,10 @@ geonames:12172719  a  crm:E53_Place .
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/90> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/90/event/94/role> .
 
+<urn:uuid:cfdf0955-58fc-4b94-94af-083c08b6dfdc>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/124>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
@@ -66,17 +70,13 @@ geonames:12172719  a  crm:E53_Place .
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/124/event/94> , <https://archipelago.itatti.harvard.edu/resources/actor/90/event/94> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/94/name> , <https://archipelago.itatti.harvard.edu/resources/event/94/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/94/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/date> , <urn:uuid:8dee21ff-352b-454d-ab45-1fbe77b34e6c> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/date> , <urn:uuid:cfdf0955-58fc-4b94-94af-083c08b6dfdc> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/94/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "94" .
-
-<urn:uuid:8dee21ff-352b-454d-ab45-1fbe77b34e6c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier>
         a       crm:E42_Identifier .

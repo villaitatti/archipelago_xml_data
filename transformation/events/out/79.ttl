@@ -19,7 +19,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/99/event/79> , <https://archipelago.itatti.harvard.edu/resources/actor/94/event/79> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/79/name> , <https://archipelago.itatti.harvard.edu/resources/event/79/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/79/typology> ;
-        crm:P4_has_time-span       <urn:uuid:9d44c44f-dc9d-4ee0-a1c3-b727c9dcab27> , <https://archipelago.itatti.harvard.edu/resources/event/79/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/79/date> , <urn:uuid:034ea2e7-d3ec-4a72-8af8-4144ebd5ec30> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/133> , <https://archipelago.itatti.harvard.edu/resources/source/129> ;
         crm:P7_took_place_at       geonames:7910746 .
 
@@ -77,13 +77,13 @@
 
 geonames:7910746  a  crm:E53_Place .
 
+<urn:uuid:034ea2e7-d3ec-4a72-8af8-4144ebd5ec30>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/79/source/133/event>
         a           crm:E41_Appellation ;
         rdfs:label  "The teacher and his four novices are removed from the island"@en .
-
-<urn:uuid:9d44c44f-dc9d-4ee0-a1c3-b727c9dcab27>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/99/event/79/role>
         a           crm:E55_Type ;

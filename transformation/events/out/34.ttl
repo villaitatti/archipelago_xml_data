@@ -22,10 +22,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/35/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:26b0b49d-e7bc-4dae-96fa-fb2c2453a46e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/34/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Freezing of the lagoon waters"@it ;
@@ -49,7 +45,7 @@
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/35/event/34> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/34/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/34/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/34/typology> , <https://archipelago.itatti.harvard.edu/resources/event/34/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/34/date> , <urn:uuid:26b0b49d-e7bc-4dae-96fa-fb2c2453a46e> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/34/date> , <urn:uuid:089eca78-9d88-4e33-a4d2-c45a1005c6a0> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/39> , <https://archipelago.itatti.harvard.edu/resources/source/28> , <https://archipelago.itatti.harvard.edu/resources/source/42> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0023> , <https://archipelago.itatti.harvard.edu/resources/source/17> ;
         crm:P7_took_place_at       geonames:12172719 .
 
@@ -113,6 +109,10 @@ geonames:12172719  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/34/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
+
+<urn:uuid:089eca78-9d88-4e33-a4d2-c45a1005c6a0>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/source/28/identifier>
         a       crm:E42_Identifier .

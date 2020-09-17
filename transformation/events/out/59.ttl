@@ -16,10 +16,6 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:078d51e7-7a61-4db2-98c6-76f28def8db5>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014/identifier> .
@@ -41,7 +37,7 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/59/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/59/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/59/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/59/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/59/typology> ;
-        crm:P4_has_time-span       <urn:uuid:078d51e7-7a61-4db2-98c6-76f28def8db5> , <https://archipelago.itatti.harvard.edu/resources/event/59/date> ;
+        crm:P4_has_time-span       <urn:uuid:a1491963-2f57-41e1-8a0c-b9bbe5734636> , <https://archipelago.itatti.harvard.edu/resources/event/59/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0016> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -84,6 +80,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0016/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:a1491963-2f57-41e1-8a0c-b9bbe5734636>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017>
         a                        crm:E31_Document ;

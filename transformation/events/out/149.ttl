@@ -23,13 +23,9 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/149/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/149/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/149/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/149/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/149/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/149/date> , <urn:uuid:b52ae028-e4be-4a41-966e-c8b8ca0db7b9> ;
+        crm:P4_has_time-span       <urn:uuid:9e624d17-388c-49fd-ae56-62555a398f10> , <https://archipelago.itatti.harvard.edu/resources/event/149/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<urn:uuid:b52ae028-e4be-4a41-966e-c8b8ca0db7b9>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/149/subtypology>
         a           crm:E55_Type ;
@@ -67,6 +63,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/149/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Provveditori alla Sanità led only the captain and some other patroni being housed in San Clemente. The rest of the fleet is sent to the Lazzaretto Nuovo for the quarantine."@en .
+
+<urn:uuid:9e624d17-388c-49fd-ae56-62555a398f10>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/124>
         a                        crm:E21_Person ;

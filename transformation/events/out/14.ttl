@@ -33,17 +33,13 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/14/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/14/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/14/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/14/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/14/typology> ;
-        crm:P4_has_time-span       <urn:uuid:0a64e9d1-ae9f-424f-8bba-b53e979fedf8> , <https://archipelago.itatti.harvard.edu/resources/event/14/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/14/date> , <urn:uuid:26936f3f-37cb-4a84-98ac-f80e069009b1> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/14/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<urn:uuid:0a64e9d1-ae9f-424f-8bba-b53e979fedf8>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier>
         a       crm:E42_Identifier .
@@ -66,6 +62,10 @@ geonames:15  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/14/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Foundation"@en .
+
+<urn:uuid:26936f3f-37cb-4a84-98ac-f80e069009b1>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/14/date>
         a                            crm:E52_Time-Span ;

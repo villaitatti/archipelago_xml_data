@@ -21,13 +21,17 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "18th cent."@en .
 
+<urn:uuid:2710b27c-f698-4dd0-8f8e-5bcb944f32aa>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/54>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/87/event/54> , <https://archipelago.itatti.harvard.edu/resources/actor/42/event/54> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/54/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/54/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/54/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/54/typology> , <https://archipelago.itatti.harvard.edu/resources/event/54/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/54/date> , <urn:uuid:df595f9f-dc71-4145-a9c2-3ec52596dada> ;
+        crm:P4_has_time-span       <urn:uuid:2710b27c-f698-4dd0-8f8e-5bcb944f32aa> , <https://archipelago.itatti.harvard.edu/resources/event/54/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/81> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -35,10 +39,6 @@
         a                         crm:PC14_carried_out_by ;
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/42> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/42/event/54/role> .
-
-<urn:uuid:df595f9f-dc71-4145-a9c2-3ec52596dada>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:11 .

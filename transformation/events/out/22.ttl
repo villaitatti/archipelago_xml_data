@@ -10,12 +10,16 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<urn:uuid:7f7d7dcf-656b-495e-8185-51695e3df0bf>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/22>
         a                        crm:E5_Event ;
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/22> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/22/name> , <https://archipelago.itatti.harvard.edu/resources/event/22/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/22/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/22/typology> ;
-        crm:P4_has_time-span     <urn:uuid:a399d76a-52ad-4a9c-8bf7-0bc6eee6f5c9> , <https://archipelago.itatti.harvard.edu/resources/event/22/date> ;
+        crm:P4_has_time-span     <urn:uuid:7f7d7dcf-656b-495e-8185-51695e3df0bf> , <https://archipelago.itatti.harvard.edu/resources/event/22/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/24/event/22/role>
@@ -30,10 +34,6 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Settlement of Augustinian Canons in Santo Spirito"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<urn:uuid:a399d76a-52ad-4a9c-8bf7-0bc6eee6f5c9>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/22/typology>
         a           crm:E55_Type ;

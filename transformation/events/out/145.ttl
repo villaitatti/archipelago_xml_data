@@ -77,22 +77,22 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
 
+<urn:uuid:8221cbed-b0bb-47af-bd3a-62a01c5f3056>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/145>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/164/event/145> , <https://archipelago.itatti.harvard.edu/resources/actor/165/event/145> ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/145/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/145/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/145/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/145/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/145/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/145/date> , <urn:uuid:f1f1f7a2-8341-4ff5-b02b-750583d8840a> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/145/date> , <urn:uuid:8221cbed-b0bb-47af-bd3a-62a01c5f3056> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
-
-<urn:uuid:f1f1f7a2-8341-4ff5-b02b-750583d8840a>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 geonames:3168468  a  crm:E53_Place .

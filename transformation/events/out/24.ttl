@@ -27,6 +27,10 @@ geonames:7910746  a  crm:E53_Place .
         a                  crm:PC14_carried_out_by ;
         crm:P02_has_range  <https://archipelago.itatti.harvard.edu/resources/actor/24> .
 
+<urn:uuid:108c826c-9441-4d20-99ac-fcfd18199631>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/24/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
@@ -35,16 +39,12 @@ geonames:7910746  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<urn:uuid:9e79e173-8aec-447d-b29a-0537d42e51c0>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/24>
         a                        crm:E5_Event ;
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/24/event/24> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/24/name> , <https://archipelago.itatti.harvard.edu/resources/event/24/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/24/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/24/typology> ;
-        crm:P4_has_time-span     <urn:uuid:9e79e173-8aec-447d-b29a-0537d42e51c0> , <https://archipelago.itatti.harvard.edu/resources/event/24/date> ;
+        crm:P4_has_time-span     <urn:uuid:108c826c-9441-4d20-99ac-fcfd18199631> , <https://archipelago.itatti.harvard.edu/resources/event/24/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/24/name>

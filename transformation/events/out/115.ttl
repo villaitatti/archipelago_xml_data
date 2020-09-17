@@ -19,7 +19,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/115/name> , <https://archipelago.itatti.harvard.edu/resources/event/115/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/115/typology> , <https://archipelago.itatti.harvard.edu/resources/event/115/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> , <urn:uuid:d2830e75-9108-4dde-b067-db638dcdfe33> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/115/date> , <urn:uuid:f70dc36a-5f09-404c-9990-a6cb2be21b83> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -47,10 +47,6 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/133> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/133/event/115/role> .
 
-<urn:uuid:d2830e75-9108-4dde-b067-db638dcdfe33>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/115/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Angelo Rosso donates a land in Malamocco to the Canons Regular"@it ;
@@ -75,6 +71,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/115/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Alongside Rosso's donation, other lands in Piove di Sacco, Fossò, Bogion were given to the Canons."@en .
+
+<urn:uuid:f70dc36a-5f09-404c-9990-a6cb2be21b83>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/133>
         a                        crm:E21_Person ;

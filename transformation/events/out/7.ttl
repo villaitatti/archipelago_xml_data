@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:2a7f0ee3-faf3-4871-874f-b2efd5dad623>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/42/identifier> .
@@ -27,7 +23,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/7/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/7/name> , <https://archipelago.itatti.harvard.edu/resources/event/7/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/7/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/7/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/7/date> , <urn:uuid:2a7f0ee3-faf3-4871-874f-b2efd5dad623> ;
+        crm:P4_has_time-span       <urn:uuid:c92479e9-81bc-4080-9059-4d9e3a945705> , <https://archipelago.itatti.harvard.edu/resources/event/7/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/80> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0020> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -38,6 +34,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/7/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<urn:uuid:c92479e9-81bc-4080-9059-4d9e3a945705>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 geonames:3230839  a  crm:E53_Place .
 

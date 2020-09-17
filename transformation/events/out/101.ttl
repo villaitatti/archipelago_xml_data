@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:54371915-dfb0-4d86-b6b5-adbc7478475e>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/101/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Artworks are transferred to the Galleria Franchetti (Ca' d'Oro), to the restoration laboratory in San Gregorio, and to the venues of the Venetian U.S.L."@it ;
@@ -27,6 +23,10 @@
         a           crm:E42_Identifier ;
         rdfs:label  "101" .
 
+<urn:uuid:f0efea01-2ad0-4dd3-8e56-1019df93ce33>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
 
@@ -38,7 +38,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/101/name> , <https://archipelago.itatti.harvard.edu/resources/event/101/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/101/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/101/typology> ;
-        crm:P4_has_time-span       <urn:uuid:54371915-dfb0-4d86-b6b5-adbc7478475e> , <https://archipelago.itatti.harvard.edu/resources/event/101/date> ;
+        crm:P4_has_time-span       <urn:uuid:f0efea01-2ad0-4dd3-8e56-1019df93ce33> , <https://archipelago.itatti.harvard.edu/resources/event/101/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

@@ -47,13 +47,9 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/141/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/141/name> , <https://archipelago.itatti.harvard.edu/resources/event/141/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/141/typology> , <https://archipelago.itatti.harvard.edu/resources/event/141/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/141/date> , <urn:uuid:4bc52d0b-a437-4e52-bf85-31bd6db3f403> ;
+        crm:P4_has_time-span       <urn:uuid:712498dd-a060-43ae-aa15-4de2d225c5e4> , <https://archipelago.itatti.harvard.edu/resources/event/141/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<urn:uuid:4bc52d0b-a437-4e52-bf85-31bd6db3f403>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier>
         a       crm:E42_Identifier .
@@ -62,13 +58,17 @@
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
+<https://archipelago.itatti.harvard.edu/resources/actor/158/event/141/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Guest"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/158>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/158/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/158/event/141/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Guest"@en .
+<urn:uuid:712498dd-a060-43ae-aa15-4de2d225c5e4>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/141/subtypology>
         a           crm:E55_Type ;

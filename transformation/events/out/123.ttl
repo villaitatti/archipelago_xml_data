@@ -13,6 +13,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/146/identifier>
         a       crm:E42_Identifier .
 
+<urn:uuid:af119b1b-ec37-4e20-820e-4aa8bb64ab8f>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/146>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/146/identifier> .
@@ -20,10 +24,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/146/event/123/role>
         a           crm:E55_Type ;
         rdfs:label  "New prior of the island"@en .
-
-<urn:uuid:2e55fb63-dd2e-471f-a3ef-172446f67e70>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/102>
         a                        crm:E21_Person ;
@@ -38,7 +38,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/123/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/123/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/123/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/123/typology> , <https://archipelago.itatti.harvard.edu/resources/event/123/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:2e55fb63-dd2e-471f-a3ef-172446f67e70> , <https://archipelago.itatti.harvard.edu/resources/event/123/date> ;
+        crm:P4_has_time-span       <urn:uuid:af119b1b-ec37-4e20-820e-4aa8bb64ab8f> , <https://archipelago.itatti.harvard.edu/resources/event/123/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

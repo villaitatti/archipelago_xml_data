@@ -17,6 +17,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/85/identifier>
         a       crm:E42_Identifier .
 
+<urn:uuid:e7c576b7-11aa-4ce9-92cf-d80a76692336>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/61/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
@@ -24,10 +28,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/85>
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/85/identifier> .
-
-<urn:uuid:86e1e5bf-0959-4dff-9807-996a4f395738>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/61/date>
         a                            crm:E52_Time-Span ;
@@ -49,7 +49,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P01i_is_domain_of    <https://archipelago.itatti.harvard.edu/resources/actor/85/event/61> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/61/name> , <https://archipelago.itatti.harvard.edu/resources/event/61/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/61/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/61/typology> ;
-        crm:P4_has_time-span     <urn:uuid:86e1e5bf-0959-4dff-9807-996a4f395738> , <https://archipelago.itatti.harvard.edu/resources/event/61/date> ;
+        crm:P4_has_time-span     <urn:uuid:e7c576b7-11aa-4ce9-92cf-d80a76692336> , <https://archipelago.itatti.harvard.edu/resources/event/61/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/61/subtypology>

@@ -34,7 +34,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/161/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/161/name> , <https://archipelago.itatti.harvard.edu/resources/event/161/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/161/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/161/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/161/date> , <urn:uuid:36b8da91-88a8-454d-93d6-11242e4ed708> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/161/date> , <urn:uuid:e468115c-d2f0-4aa5-90e0-3056e3cdc8ad> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -68,10 +68,6 @@
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/178/identifier> .
 
-<urn:uuid:36b8da91-88a8-454d-93d6-11242e4ed708>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/161/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "161" .
@@ -89,3 +85,7 @@
         rdfs:label  "Architectural"@en .
 
 geonames:3168468  a  crm:E53_Place .
+
+<urn:uuid:e468115c-d2f0-4aa5-90e0-3056e3cdc8ad>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .

@@ -66,12 +66,16 @@ geonames:3230839  a  crm:E53_Place .
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
 
+<urn:uuid:5edc1223-28ce-497e-9d78-e8fcea442293>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/37>
         a                          crm:E5_Event ;
         crm:P01i_is_domain_of      <https://archipelago.itatti.harvard.edu/resources/actor/38/event/37> , <https://archipelago.itatti.harvard.edu/resources/actor/42/event/37> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/37/name> , <https://archipelago.itatti.harvard.edu/resources/event/37/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/37/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/37/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/37/date> , <urn:uuid:f6700d3f-6d03-4987-90cb-cebb9f632704> ;
+        crm:P4_has_time-span       <urn:uuid:5edc1223-28ce-497e-9d78-e8fcea442293> , <https://archipelago.itatti.harvard.edu/resources/event/37/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/source/57> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -91,10 +95,6 @@ geonames:3230839  a  crm:E53_Place .
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/57/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/37/source/57/event> .
-
-<urn:uuid:f6700d3f-6d03-4987-90cb-cebb9f632704>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/37/typology>
         a           crm:E55_Type ;

@@ -14,10 +14,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<urn:uuid:e563b6dc-cba6-403a-a75e-06858dcbcc42>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/154/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
@@ -69,6 +65,10 @@ geonames:7910520  a  crm:E53_Place .
         a                        crm:E21_Person ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/actor/124/identifier> .
 
+<urn:uuid:a63cfb79-80a4-4ca4-bf13-7aef3e15db73>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Second quarter of the century (25-49)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Marquis was sent by the Duke Carlo Gonzaga to Wien for signing the peace with the Emperor Ferdinand II. Because he comes from an infected city he is quarantined the lazzaretto."@en .
@@ -86,6 +86,6 @@ geonames:7910520  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/154/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/154/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/154/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/154/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/154/typology> ;
-        crm:P4_has_time-span       <urn:uuid:e563b6dc-cba6-403a-a75e-06858dcbcc42> , <https://archipelago.itatti.harvard.edu/resources/event/154/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/154/date> , <urn:uuid:a63cfb79-80a4-4ca4-bf13-7aef3e15db73> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:7910520 .

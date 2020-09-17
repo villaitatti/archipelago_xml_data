@@ -18,13 +18,13 @@
         a           crm:E42_Identifier ;
         rdfs:label  "30" .
 
-<urn:uuid:0ee4bc1d-caf5-4e24-815a-e311bd958150>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/30/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "With the papal bill In vineam Domini the Pope Alessandro VII suppressed 75 convents in Venice (later reduced to 59). Among them there were the Lateran Canons of Santo Spirito."@en .
+
+<urn:uuid:84084b7b-3c93-482a-b0a3-7dc9f48bd51e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/27/identifier>
         a       crm:E42_Identifier .
@@ -62,7 +62,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/30/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/30/name> , <https://archipelago.itatti.harvard.edu/resources/event/30/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/30/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/30/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/30/date> , <urn:uuid:0ee4bc1d-caf5-4e24-815a-e311bd958150> ;
+        crm:P4_has_time-span     <urn:uuid:84084b7b-3c93-482a-b0a3-7dc9f48bd51e> , <https://archipelago.itatti.harvard.edu/resources/event/30/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/27>

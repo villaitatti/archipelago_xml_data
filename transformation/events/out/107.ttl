@@ -10,7 +10,7 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:08973d17-39f3-49bd-a6d2-4763c6e3ccf6>
+<urn:uuid:d55092cb-5e44-41cb-835f-5ee46b55796e>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "End of the century (90-99)"@en .
 
@@ -30,7 +30,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/107/name> , <https://archipelago.itatti.harvard.edu/resources/event/107/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/107/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/107/typology> ;
-        crm:P4_has_time-span       <urn:uuid:08973d17-39f3-49bd-a6d2-4763c6e3ccf6> , <https://archipelago.itatti.harvard.edu/resources/event/107/date> ;
+        crm:P4_has_time-span       <urn:uuid:d55092cb-5e44-41cb-835f-5ee46b55796e> , <https://archipelago.itatti.harvard.edu/resources/event/107/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 

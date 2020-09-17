@@ -37,7 +37,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/53/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/53/name> , <https://archipelago.itatti.harvard.edu/resources/event/53/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/53/typology> , <https://archipelago.itatti.harvard.edu/resources/event/53/subtypology> ;
-        crm:P4_has_time-span       <urn:uuid:19a03ad7-9a8c-4a81-9195-9138cced7c82> , <https://archipelago.itatti.harvard.edu/resources/event/53/date> ;
+        crm:P4_has_time-span       <urn:uuid:a408fe9d-3f29-4beb-a65a-8b0dccb2f766> , <https://archipelago.itatti.harvard.edu/resources/event/53/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -52,7 +52,7 @@
 
 geonames:3230839  a  crm:E53_Place .
 
-<urn:uuid:19a03ad7-9a8c-4a81-9195-9138cced7c82>
+<urn:uuid:a408fe9d-3f29-4beb-a65a-8b0dccb2f766>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 

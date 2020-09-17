@@ -15,6 +15,10 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/133> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/133/event/111/role> .
 
+<urn:uuid:88819004-5196-4b67-a432-3b0fd191b93d>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/111/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Every year, the church of San Giacomo must donate a pound (libbra) of pepper, a pound of incense, and, on the fest of the saint, half of the lamn donated to the church."@en .
@@ -22,10 +26,6 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/135/event/111/role>
         a           crm:E55_Type ;
         rdfs:label  "Donator"@en .
-
-<urn:uuid:e1cdbfb3-7e35-49d1-96f4-58eb7543447c>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/111/identifier>
         a           crm:E42_Identifier ;
@@ -76,7 +76,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/111/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/111/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/111/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/111/typology> , <https://archipelago.itatti.harvard.edu/resources/event/111/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/111/date> , <urn:uuid:e1cdbfb3-7e35-49d1-96f4-58eb7543447c> ;
+        crm:P4_has_time-span       <urn:uuid:88819004-5196-4b67-a432-3b0fd191b93d> , <https://archipelago.itatti.harvard.edu/resources/event/111/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

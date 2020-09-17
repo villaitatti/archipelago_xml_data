@@ -24,13 +24,13 @@
         rdfs:label       "The Titian's paintings of the ceiling are moved to Santa Maria della Salute"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<urn:uuid:24ed4d56-f060-4eb4-9ae8-ae2588ba1f30>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/65/typology>
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
+
+<urn:uuid:1f195de0-acac-4184-91b4-3dd8b461e2cd>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/65/subtypology>
         a           crm:E55_Type ;
@@ -42,7 +42,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/65/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/65/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/65/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/65/typology> , <https://archipelago.itatti.harvard.edu/resources/event/65/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/65/date> , <urn:uuid:24ed4d56-f060-4eb4-9ae8-ae2588ba1f30> ;
+        crm:P4_has_time-span     <urn:uuid:1f195de0-acac-4184-91b4-3dd8b461e2cd> , <https://archipelago.itatti.harvard.edu/resources/event/65/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 geonames:7910746  a  crm:E53_Place .

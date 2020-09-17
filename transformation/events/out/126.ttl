@@ -16,7 +16,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/126/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/126/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/126/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/126/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/126/date> , <urn:uuid:2d7f7816-111e-48d8-8c82-e334af226839> ;
+        crm:P4_has_time-span       <urn:uuid:5daa1421-c773-443c-a540-294cbb8d03fd> , <https://archipelago.itatti.harvard.edu/resources/event/126/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -25,10 +25,9 @@
         rdfs:label       "The monastery is enlarged and enriched with a new cloister"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/102/event/126>
-        a                         crm:PC14_carried_out_by ;
-        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
-        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126/role> .
+<urn:uuid:5daa1421-c773-443c-a540-294cbb8d03fd>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology>
         a           crm:E55_Type ;
@@ -63,10 +62,6 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<urn:uuid:2d7f7816-111e-48d8-8c82-e334af226839>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Last quarter of the century (75-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126/role>
         a           crm:E55_Type ;
         rdfs:label  "Patrons"@en .
@@ -80,3 +75,8 @@
         rdfs:label  "The monastery is enlarged to house 17 new canons. A new cloister on two levels with arcades and marble columns is built."@en .
 
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/102/event/126>
+        a                         crm:PC14_carried_out_by ;
+        crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/102> ;
+        crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/102/event/126/role> .

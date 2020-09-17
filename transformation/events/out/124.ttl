@@ -24,16 +24,12 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/124/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/124/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/124/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/124/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/124/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/124/date> , <urn:uuid:c3f3ff13-d8a1-4f9d-b816-9a1f2a57e6c9> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/124/date> , <urn:uuid:84176835-dce9-43c0-ae37-89bee293040a> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/147/identifier>
         a       crm:E42_Identifier .
-
-<urn:uuid:c3f3ff13-d8a1-4f9d-b816-9a1f2a57e6c9>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/124/subtypology>
         a           crm:E55_Type ;
@@ -56,6 +52,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/124/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<urn:uuid:84176835-dce9-43c0-ae37-89bee293040a>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .

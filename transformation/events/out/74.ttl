@@ -10,7 +10,7 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<urn:uuid:20d9a529-7ba9-470f-8971-054e06f9c28d>
+<urn:uuid:b5c52853-cc31-480d-89b0-8a3ad2e27e7b>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
@@ -86,7 +86,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/74/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/74/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/74/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/74/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/74/typology> ;
-        crm:P4_has_time-span       <urn:uuid:20d9a529-7ba9-470f-8971-054e06f9c28d> , <https://archipelago.itatti.harvard.edu/resources/event/74/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/74/date> , <urn:uuid:b5c52853-cc31-480d-89b0-8a3ad2e27e7b> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/119> ;
         crm:P7_took_place_at       geonames:7910746 .
 

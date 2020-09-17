@@ -15,10 +15,6 @@
         crm:P02_has_range         <https://archipelago.itatti.harvard.edu/resources/actor/12> ;
         crm:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resources/actor/12/event/16/role> .
 
-<urn:uuid:a41463f5-e4c9-4ff3-8699-1ca0de42a5b4>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/16/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Patriarch Antonio Contarini sends the abbess Marina Celsi along with 21 nuns because she introduces the Observant reform into the convent. The convent is divided into two parts, one for the observant nuns, the other for the conventual nuns."@en .
@@ -37,7 +33,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/16/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/16/name> , <https://archipelago.itatti.harvard.edu/resources/event/16/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/16/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/16/typology> ;
-        crm:P4_has_time-span       <urn:uuid:a41463f5-e4c9-4ff3-8699-1ca0de42a5b4> , <https://archipelago.itatti.harvard.edu/resources/event/16/date> ;
+        crm:P4_has_time-span       <urn:uuid:97c6424e-92cb-4ada-854c-6e41df8c723b> , <https://archipelago.itatti.harvard.edu/resources/event/16/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -51,6 +47,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/16/date>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
+
+<urn:uuid:97c6424e-92cb-4ada-854c-6e41df8c723b>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/16/subtypology>
         a           crm:E55_Type ;

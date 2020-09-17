@@ -15,12 +15,12 @@
         rdfs:label       "Move of the Cistercian order from Brondolo"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/85/identifier>
-        a       crm:E42_Identifier .
-
-<urn:uuid:d2804952-ee2c-4058-83e1-37ccfff8980f>
+<urn:uuid:2de2ebf9-2600-405a-9e0d-17be2524f4ad>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "Beginning of the century (0-10)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/actor/85/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/event/67/typology>
         a           crm:E55_Type ;
@@ -40,7 +40,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/67/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/67/name> , <https://archipelago.itatti.harvard.edu/resources/event/67/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/67/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/67/typology> ;
-        crm:P4_has_time-span     <urn:uuid:d2804952-ee2c-4058-83e1-37ccfff8980f> , <https://archipelago.itatti.harvard.edu/resources/event/67/date> ;
+        crm:P4_has_time-span     <urn:uuid:2de2ebf9-2600-405a-9e0d-17be2524f4ad> , <https://archipelago.itatti.harvard.edu/resources/event/67/date> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/85>

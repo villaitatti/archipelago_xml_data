@@ -30,10 +30,6 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E73_Information_Object ;
         rdfs:label  "The Camaldolese monks of San Michele di Murano arrived in San Secondo but the Council of Ten forces the nuns to come back to their original island."@en .
 
-<urn:uuid:a3547c94-603d-41e7-b658-9042fbf441b6>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/80/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Religious order's transfer"@en .
@@ -50,7 +46,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/80/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/80/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/80/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/80/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/80/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/80/date> , <urn:uuid:a3547c94-603d-41e7-b658-9042fbf441b6> ;
+        crm:P4_has_time-span       <urn:uuid:ebe1c167-8b0d-4500-bb2c-22710582f37e> , <https://archipelago.itatti.harvard.edu/resources/event/80/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -80,6 +76,10 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
+
+<urn:uuid:ebe1c167-8b0d-4500-bb2c-22710582f37e>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "First quarter of the century (0-24)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/184/identifier>
         a       crm:E42_Identifier .

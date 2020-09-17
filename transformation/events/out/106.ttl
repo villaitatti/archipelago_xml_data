@@ -14,10 +14,6 @@
         a           crm:E42_Identifier ;
         rdfs:label  "106" .
 
-<urn:uuid:c7c28701-5fc3-4838-827c-9e09a7bb6ae5>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
@@ -42,12 +38,16 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
 
+<urn:uuid:5b298eca-4fd4-4083-a59e-2bb3f5918a1c>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/106>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/106/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/106/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/106/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/106/typology> , <https://archipelago.itatti.harvard.edu/resources/event/106/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/106/date> , <urn:uuid:c7c28701-5fc3-4838-827c-9e09a7bb6ae5> ;
+        crm:P4_has_time-span       <urn:uuid:5b298eca-4fd4-4083-a59e-2bb3f5918a1c> , <https://archipelago.itatti.harvard.edu/resources/event/106/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
