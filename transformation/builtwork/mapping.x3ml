@@ -571,7 +571,7 @@
                         <relation>SHP_Lenght</relation>
                     </source_relation>
                     <target_relation>
-                        <relationship>crm:P39_was_measured_by</relationship>
+                        <relationship>crm:P39i_was_measured_by</relationship>
                     </target_relation>
                 </path>
                 <range>
@@ -591,6 +591,108 @@
                                         <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                         <arg name="m_id" type="constant">perimeter</arg>
                                     </instance_generator>
+                                    <additional>
+                                        <relationship>crm:P90_has_value</relationship>
+                                        <entity>
+                                            <type>http://www.w3.org/2001/XMLSchema#decimal</type>
+                                            <instance_generator name="Literal">
+                                                <arg name="text" type="xpath">text()</arg>
+                                            </instance_generator>
+                                        </entity>
+                                    </additional>
+                                    <additional>
+                                        <relationship>crm:P2_has_type</relationship>
+                                        <entity>
+                                            <type>crm:E55_Type</type>
+                                            <instance_generator name="000-type">
+                                                <arg name="type_id" type="constant">perimeter</arg>
+                                            </instance_generator>
+                                            <label_generator name="Literal">
+                                                <arg name="text" type="constant">Perimeter</arg>
+                                                <arg name="language" type="constant">en</arg>
+                                            </label_generator>
+                                        </entity>
+                                    </additional>
+                                    <additional>
+                                        <relationship>crm:P91_has_unit</relationship>
+                                        <entity>
+                                            <type>crm:E58_Measurement_Unit</type>
+                                            <instance_generator name="000-type">
+                                                <arg name="type_id" type="constant">meter</arg>
+                                            </instance_generator>
+                                            <label_generator name="Literal">
+                                                <arg name="text" type="constant">Meter</arg>
+                                                <arg name="language" type="constant">en</arg>
+                                            </label_generator>
+                                        </entity>
+                                    </additional>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>SHP_Area</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>crm:P39i_was_measured_by</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>SHP_Area</source_node>
+                    <target_node>
+                        <entity>
+                            <type>crm:E16_Measurement</type>
+                            <instance_generator name="170-built_work-measurement">
+                                <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
+                                <arg name="m_id" type="constant">area</arg>
+                            </instance_generator>
+                            <additional>
+                                <relationship>crm:P40_observed_dimension</relationship>
+                                <entity>
+                                    <type>crm:E54_Dimension</type>
+                                    <instance_generator name="171-built_work-measurement-dimension">
+                                        <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
+                                        <arg name="m_id" type="constant">area</arg>
+                                    </instance_generator>
+                                    <additional>
+                                        <relationship>crm:P90_has_value</relationship>
+                                        <entity>
+                                            <type>http://www.w3.org/2001/XMLSchema#decimal</type>
+                                            <instance_generator name="Literal">
+                                                <arg name="text" type="xpath">text()</arg>
+                                            </instance_generator>
+                                        </entity>
+                                    </additional>
+                                    <additional>
+                                        <relationship>crm:P2_has_type</relationship>
+                                        <entity>
+                                            <type>crm:E55_Type</type>
+                                            <instance_generator name="000-type">
+                                                <arg name="type_id" type="constant">area</arg>
+                                            </instance_generator>
+                                            <label_generator name="Literal">
+                                                <arg name="text" type="constant">Area</arg>
+                                                <arg name="language" type="constant">en</arg>
+                                            </label_generator>
+                                        </entity>
+                                    </additional>
+                                    <additional>
+                                        <relationship>crm:P91_has_unit</relationship>
+                                        <entity>
+                                            <type>crm:E58_Measurement_Unit</type>
+                                            <instance_generator name="000-type">
+                                                <arg name="type_id" type="constant">square_meter</arg>
+                                            </instance_generator>
+                                            <label_generator name="Literal">
+                                                <arg name="text" type="constant">Square meter</arg>
+                                                <arg name="language" type="constant">en</arg>
+                                            </label_generator>
+                                        </entity>
+                                    </additional>
                                 </entity>
                             </additional>
                         </entity>
