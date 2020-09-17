@@ -12,7 +12,9 @@
 	<SHP_Area>66.41253136789851</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -49,7 +51,7 @@
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>203</ID_PERSON>
+			<ID_PERSON>123</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

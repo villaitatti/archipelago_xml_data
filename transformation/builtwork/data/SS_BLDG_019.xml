@@ -8,16 +8,18 @@
 	<Start>1607-01-01</Start>
 	<End>1820-12-31</End>
 	<Name>Loggia</Name>
-	<SHP_Lenght>58.3393134654195</SHP_Lenght>
-	<SHP_Area>115.248259002748</SHP_Area>
+	<SHP_Lenght>58.33931346541952</SHP_Lenght>
+	<SHP_Area>115.2482590027479</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Brick</eng>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

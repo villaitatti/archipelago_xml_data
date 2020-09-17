@@ -8,9 +8,9 @@
 	<Start>1563-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Pontile</Name>
-	<Height>1.0</Height>
-	<SHP_Lenght>50.7165346666061</SHP_Lenght>
-	<SHP_Area>67.7056878898676</SHP_Area>
+	<Height>1</Height>
+	<SHP_Lenght>50.71653466660606</SHP_Lenght>
+	<SHP_Area>67.70568788986763</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Wood</eng>

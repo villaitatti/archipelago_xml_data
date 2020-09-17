@@ -9,13 +9,15 @@
 	<End>1607-12-31</End>
 	<Name>Chiesa</Name>
 	<SHP_Lenght>65.1657669977359</SHP_Lenght>
-	<SHP_Area>226.71873019154302</SHP_Area>
+	<SHP_Area>226.71873019154305</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Stone</eng>
 		</Material>
 		<Material>
-			<eng>Stone</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

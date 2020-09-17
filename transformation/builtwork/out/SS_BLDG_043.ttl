@@ -1,35 +1,61 @@
 @prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix aat:   <http://vocab.getty.edu/aat/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
+@prefix crmpc: <http://www.cidoc-crm.org/crmpc/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crmgeo: <http://www.cidoc-crm.org/cidoc-crm/CRMgeo/> .
 @prefix frbr:  <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1770-01-01"@en .
+        crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/perimeter/dimension>
+        a                  crm:E54_Dimension ;
+        crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
+        crm:P90_has_value  "570.731151754742" ;
+        crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/role_patron/1>
-        a       crmpc:PC14_carried_out_by .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1>
         a                     crm:E5_Event ;
-        rdfs:label            "Militare"@it , "Military"@en ;
         crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1/date> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/area/dimension>
+        a                  crm:E54_Dimension ;
+        crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
+        crm:P90_has_value  "153.056759018278" ;
+        crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/area>
+        a           crm:E55_Type ;
+        rdfs:label  "Area"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/square_meter>
+        a           crm:E58_Measurement_Unit ;
+        rdfs:label  "Square meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/perimeter>
+        a                           crm:E16_Measurement ;
+        crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/perimeter/dimension> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction/date> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction/date> ;
+        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/role_patron/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/typology/1>
         a                     crm:E5_Event ;
-        rdfs:label            "Muro di cinta"@it , "Walls"@en ;
         crm:P2_has_type       aat:300100558 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/typology/1/date> .
 
@@ -38,36 +64,51 @@
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043>
         a                          crm:E22_Man-Made_Object ;
+        rdfs:label                 "Muro di cinta" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction> ;
-        crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/function/1> ;
+        crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/typology/1> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/acquisition/1> ;
-        crm:P45_consists_of        <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/material/1> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/material/1>
-        a           crm:E57_Material ;
-        rdfs:label  "Brick"@en .
+        crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/area> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/perimeter> ;
+        crm:P45_consists_of        aat:300010463 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/destruction>
         a       crm:E6_Destruction .
 
-aat:300100558  a  crm:E55_Type .
+aat:300100558  a    crm:E55_Type ;
+        rdfs:label  "Muro di cinta"@it , "Walls"@en .
 
-aat:300120590  a  crm:E55_Type .
+aat:300120590  a    crm:E55_Type ;
+        rdfs:label  "Militare"@it , "Military"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/function/1>
-        a       crm:E5_Event .
+        a           crm:E5_Event ;
+        rdfs:label  "Public"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/area>
+        a                           crm:E16_Measurement ;
+        crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/measurement/area/dimension> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/123>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/type/perimeter>
+        a           crm:E55_Type ;
+        rdfs:label  "Perimeter"@en .
+
+aat:300010463  a    crm:E57_Material ;
+        rdfs:label  "Mattone"@it , "Bricks"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/identifier>
         a           crm:E42_Identifier ;
@@ -75,7 +116,7 @@ aat:300120590  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
@@ -86,7 +127,14 @@ aat:300120590  a  crm:E55_Type .
         a           crm:E55_Type ;
         rdfs:label  "Typology"@en .
 
+aat:300115251  a    crm:E55_Type ;
+        rdfs:label  "Patron"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/acquisition/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/meter>
+        a           crm:E58_Measurement_Unit ;
+        rdfs:label  "Meter"@en .

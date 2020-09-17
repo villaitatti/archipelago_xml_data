@@ -8,11 +8,13 @@
 	<Start>1563-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Lavatorio</Name>
-	<SHP_Lenght>40.8188179011757</SHP_Lenght>
+	<SHP_Lenght>40.81881790117566</SHP_Lenght>
 	<SHP_Area>94.18159414094929</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

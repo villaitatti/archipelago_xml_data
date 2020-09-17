@@ -5,14 +5,16 @@
 		<ita>San Secondo</ita>
 		<geo>3230839</geo>
 	</IslandName>
-	<Start>1697-01-01</Start>
+	<Start>1500-01-01</Start>
 	<End>1769-12-31</End>
 	<Name>Muro di cinta</Name>
-	<SHP_Lenght>426.958650045241</SHP_Lenght>
-	<SHP_Area>115.005862440171</SHP_Area>
+	<SHP_Lenght>426.9586500452406</SHP_Lenght>
+	<SHP_Area>115.0058624401708</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

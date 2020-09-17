@@ -8,11 +8,13 @@
 	<Start>1563-01-01</Start>
 	<End>1788-12-31</End>
 	<Name>Caneva</Name>
-	<SHP_Lenght>32.5716488889651</SHP_Lenght>
-	<SHP_Area>65.44389612542079</SHP_Area>
+	<SHP_Lenght>32.57164888896509</SHP_Lenght>
+	<SHP_Area>65.44389612542085</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

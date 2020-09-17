@@ -8,9 +8,9 @@
 	<Start>1777-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Vera da pozzo</Name>
-	<Height>1.0</Height>
-	<SHP_Lenght>10.5881542520481</SHP_Lenght>
-	<SHP_Area>8.89871760499042</SHP_Area>
+	<Height>1</Height>
+	<SHP_Lenght>10.58815425204807</SHP_Lenght>
+	<SHP_Area>8.898717604990424</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Istrian marble</eng>
