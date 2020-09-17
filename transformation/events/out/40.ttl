@@ -14,10 +14,6 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/40/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/40/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "40" .
@@ -25,13 +21,16 @@
 geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:11 .
 
+<https://archipelago.itatti.harvard.edu/resources/event/40/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/40>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/40/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/40/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/40/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/40/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/40/typology> ;
-        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/40/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0009> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 

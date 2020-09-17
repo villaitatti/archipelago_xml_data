@@ -64,8 +64,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/87/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/87/name> , <https://archipelago.itatti.harvard.edu/resources/event/87/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/87/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/87/typology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/87/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/87/century> , <https://archipelago.itatti.harvard.edu/resources/event/87/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/56> , <https://archipelago.itatti.harvard.edu/resources/source/74> , <https://archipelago.itatti.harvard.edu/resources/source/55> , <https://archipelago.itatti.harvard.edu/resources/source/76> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0021> , <https://archipelago.itatti.harvard.edu/resources/source/75> , <https://archipelago.itatti.harvard.edu/resources/source/72> , <https://archipelago.itatti.harvard.edu/resources/source/70> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -73,12 +72,16 @@
         a           crm:E41_Appellation ;
         rdfs:label  "Project for a new private shelter for boats"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/source/74/identifier>
+        a       crm:E42_Identifier .
+
 <https://archipelago.itatti.harvard.edu/resources/event/87/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/source/74/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/87/source/74/event>
         a           crm:E41_Appellation ;
@@ -86,6 +89,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/source/70/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/87/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
 
 geonames:3230839  a  crm:E53_Place .
 
@@ -95,10 +102,6 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/87/source/72/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Project for a new private shelter for boats"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/87/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/source/72>
         a                        crm:E31_Document ;
@@ -118,6 +121,10 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/source/75/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/87/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/87/source/55/event>
         a           crm:E41_Appellation ;

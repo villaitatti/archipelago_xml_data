@@ -15,8 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/141/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/141/name> , <https://archipelago.itatti.harvard.edu/resources/event/141/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/141/typology> , <https://archipelago.itatti.harvard.edu/resources/event/141/subtypology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/141/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/141/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/141/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -34,7 +33,7 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/event/141/date>
+<https://archipelago.itatti.harvard.edu/resources/event/141/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
@@ -42,9 +41,17 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "From Sanudo: «Qui zonse ozi la Regina di Cipri, fiola del Marchese di Monferà. Li fo fatto honor assai; li andò contra la Dogaressa con una quantittà di donne per numero 124 (fra le qual ne errano di vestide di panno d’orro et brochatto numero 53, di seda circha 40, il resto con manto et con veste morelle) nel bucintoro, il qual andò fino a San Chimento. Fo armado parasc[h]ermi 8, barche in grandissima quantittà. Arivò a cha’ di sier Zuan Corner dalla Piscopia, la vene qui con una nave del Ducha di Millan coverta di piombo, molto serada, et haveva da persone 300 con sí, in reliquis la Dogaressa per stracheza per do volte stramortì et fo portà in Pallazo con una barcha, et si compì la festa avanti hore 23.»"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/141/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/141/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/141/identifier>
         a           crm:E42_Identifier ;

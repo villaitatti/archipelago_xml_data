@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/122/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
@@ -26,13 +30,16 @@
         a           crm:E41_Appellation ;
         rdfs:label  "The Lateran Canons set up in the island while all the properties of San Clemente, including archival documents and relics, are transferred to Santa Maria della Carità"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/122/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/122>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/122/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/122/name> , <https://archipelago.itatti.harvard.edu/resources/event/122/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/122/typology> , <https://archipelago.itatti.harvard.edu/resources/event/122/subtypology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/122/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/122/century> , <https://archipelago.itatti.harvard.edu/resources/event/122/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/157> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -60,9 +67,9 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The relics of Sant'Aniano are brought to the church of Santa Maria della Carità and install on the main altar in 1453."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/122/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/145/event/122>
         a       crm:PC14_carried_out_by .

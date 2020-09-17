@@ -26,10 +26,9 @@
 <https://archipelago.itatti.harvard.edu/resources/event/118>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/118/name> , <https://archipelago.itatti.harvard.edu/resources/event/118/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/118/typology> , <https://archipelago.itatti.harvard.edu/resources/event/118/subtypology> ;
-        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/118/date> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/156> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/118/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/118/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/118/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/156> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/118/subtypology>
@@ -45,15 +44,15 @@
         rdfs:label       "The Patriarch Egidio da Ferrara donates his apartment within the island to the Canons Regular"@it ;
         crm:P2_has_type  "preferred_name" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/118/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "14th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/source/156/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/118/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/118/typology>
         a           crm:E55_Type ;

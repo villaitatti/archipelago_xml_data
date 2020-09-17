@@ -18,9 +18,13 @@
         a           crm:E42_Identifier ;
         rdfs:label  "25" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25/date>
+<https://archipelago.itatti.harvard.edu/resources/event/25/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/23/event/25>
         a       crm:PC14_carried_out_by .
@@ -30,8 +34,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/25/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/25/name> , <https://archipelago.itatti.harvard.edu/resources/event/25/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/25/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/25/typology> ;
-        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/25/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/25/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/25/century> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/25/name>
@@ -48,3 +51,7 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/25/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/25/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .

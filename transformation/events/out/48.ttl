@@ -41,8 +41,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/48/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/48/name> , <https://archipelago.itatti.harvard.edu/resources/event/48/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/48/typology> , <https://archipelago.itatti.harvard.edu/resources/event/48/subtypology> ;
-        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/48/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/48/century> , <https://archipelago.itatti.harvard.edu/resources/event/48/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011> , <https://archipelago.itatti.harvard.edu/resources/source/80> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -53,9 +52,9 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/48/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0011>
         a                        crm:E31_Document ;
@@ -82,6 +81,14 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Religious order's transfer"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/48/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/48/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .

@@ -26,14 +26,18 @@
         rdfs:label       "Imizza e Daniele from Selva di Boggion donate a portion of land in Pellestrina to the Canons Regular"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/event/112/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Donation"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/112/date>
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Last quarter of the century (75-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/112/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "12th cent."@en .
 
@@ -41,13 +45,16 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/112/name> , <https://archipelago.itatti.harvard.edu/resources/event/112/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/112/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/112/typology> ;
-        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/112/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/112/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/112/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/112/typology>
         a           crm:E55_Type ;
         rdfs:label  "Economic"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/112/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .
 
 geonames:3168468  a  crm:E53_Place .

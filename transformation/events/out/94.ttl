@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Public deliberation"@en .
@@ -26,12 +30,20 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/94/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/actor/124/event/94>
         a       crm:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resources/event/94/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "94" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/94/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
         a                        crm:E31_Document ;
@@ -41,13 +53,8 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/94/name> , <https://archipelago.itatti.harvard.edu/resources/event/94/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/94/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/94/typology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/94/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/94/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
 geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/94/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .

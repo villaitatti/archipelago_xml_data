@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/98/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Transfer (property)"@en .
@@ -18,14 +22,21 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/98/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/98>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/98/name> , <https://archipelago.itatti.harvard.edu/resources/event/98/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/98/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/98/typology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/98/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/98/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/98/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/98/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/98/typology>
         a           crm:E55_Type ;
@@ -42,9 +53,5 @@
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/98/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .

@@ -10,16 +10,20 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/144/event/120>
-        a       crm:PC14_carried_out_by .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/120/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/actor/144/event/120>
+        a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/120/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/120/synopsis>
         a           crm:E73_Information_Object ;
@@ -38,8 +42,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/120/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/120/name> , <https://archipelago.itatti.harvard.edu/resources/event/120/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/120/typology> , <https://archipelago.itatti.harvard.edu/resources/event/120/subtypology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/120/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/120/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/120/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -56,3 +59,7 @@ geonames:3168468  a  crm:E53_Place .
         a                crm:E41_Appellation ;
         rdfs:label       "Pope Boniface IX chooses the church as a place for new indulgences"@it ;
         crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/120/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "14th cent."@en .

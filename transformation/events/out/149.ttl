@@ -33,12 +33,11 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/149/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/149/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/149/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/149/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/149/typology> ;
-        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/149/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/149/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/149/date>
+<https://archipelago.itatti.harvard.edu/resources/event/149/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 

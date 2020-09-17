@@ -5,7 +5,7 @@
         <general_description/>
         <source>
             <source_info>
-                <source_schema type="" version="" schema_file="7___29-06-2020144841___12447.xml"/>
+                <source_schema type="" version="" schema_file="7___17-09-2020144248___3722.xml"/>
                 <namespaces>
                     <namespace prefix="" uri=""/>
                 </namespaces>
@@ -53,8 +53,8 @@
         <example_data_info>
             <example_data_from/>
             <example_data_contact_person/>
-            <example_data_source_record xml_link="7___29-06-2020144841___12447.xml"/>
-            <generator_policy_info generator_link="archipelago_generator_policy___11-09-2020154857___113.xml"/>
+            <example_data_source_record xml_link="7___17-09-2020144248___3722.xml"/>
+            <generator_policy_info generator_link="archipelago_generator_policy___17-09-2020143933___10352.xml"/>
             <example_data_target_record/>
             <thesaurus_info/>
         </example_data_info>
@@ -289,7 +289,7 @@
                         <relationship>crm:P4_has_time-span</relationship>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="263-event-date">
+                            <instance_generator name="270-event-century">
                                 <arg name="event_id" type="xpath">../ID_EVENT/text()</arg>
                             </instance_generator>
                         </entity>
@@ -359,11 +359,11 @@
                         <relationship>crm:P4_has_time-span</relationship>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="event/{event_id}/century_fraction">
+                            <instance_generator name="271-event-century_fraction">
                                 <arg name="event_id" type="xpath">../ID_EVENT/text()</arg>
                             </instance_generator>
                         </entity>
-                        <relationship>crm:P82_at_some_time_within</relationship>
+                        <relationship>crm:P1_is_identified_by</relationship>
                     </target_relation>
                 </path>
                 <range>
@@ -373,11 +373,14 @@
                             <exists>text()</exists>
                         </if>
                         <entity>
-                            <type>http://www.w3.org/2000/01/rdf-schema#Literal</type>
-                            <instance_generator name="Literal">
+                            <type>crm:E49_Time_Appellation</type>
+                            <instance_generator name="700-time_appellation">
+                                <arg name="t_id" type="xpath">string(@fraction_id)</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
                                 <arg name="text" type="xpath">text()</arg>
                                 <arg name="language" type="constant">en</arg>
-                            </instance_generator>
+                            </label_generator>
                         </entity>
                     </target_node>
                 </range>

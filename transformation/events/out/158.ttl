@@ -26,19 +26,18 @@
         rdfs:label       "The island is used as a lazzaretto"@it ;
         crm:P2_has_type  "preferred_name" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/158/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/158>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/158/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/158/name> , <https://archipelago.itatti.harvard.edu/resources/event/158/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/158/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/158/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/158/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/158/century> , <https://archipelago.itatti.harvard.edu/resources/event/158/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/158/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/158/typology>
         a           crm:E55_Type ;
@@ -50,6 +49,14 @@
 <https://archipelago.itatti.harvard.edu/resources/event/158/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "158" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/158/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/158/subtypology>
         a           crm:E55_Type ;

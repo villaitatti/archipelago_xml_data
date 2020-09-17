@@ -15,8 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/38/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/38/name> , <https://archipelago.itatti.harvard.edu/resources/event/38/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/38/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/38/typology> ;
-        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/38/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/38/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/71> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -42,10 +41,6 @@ geonames:20  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Construction"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/38/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/38/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The loggia facing the garden of the friars is reconstructed following the design provided by friar Alessandro Malerba."@en .
@@ -57,6 +52,11 @@ geonames:20  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E41_Appellation ;
         rdfs:label  "Reconstruction of the loggia"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/source/71>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/71/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/38/source/71/event> .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .
@@ -65,9 +65,8 @@ geonames:20  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E42_Identifier ;
         rdfs:label  "38" .
 
-<https://archipelago.itatti.harvard.edu/resources/source/71>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/71/identifier> ;
-        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/38/source/71/event> .
+<https://archipelago.itatti.harvard.edu/resources/event/38/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
 
 geonames:3230839  a  crm:E53_Place .

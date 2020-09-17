@@ -10,6 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/153/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "14th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "In 1357, the Pope elected Franchino da Bologna as new prior."@en .
@@ -18,22 +26,21 @@
         a           crm:E55_Type ;
         rdfs:label  "Regime change"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/153/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/153>
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/153/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/153/name> , <https://archipelago.itatti.harvard.edu/resources/event/153/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/153/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/153/typology> ;
-        crm:P4_has_time-span     "Mid-century (40-60)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/153/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/153/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/153/century> ;
         crm:P7_took_place_at     geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/153/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/153/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/153/name>
         a                crm:E41_Appellation ;

@@ -21,6 +21,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/21/event/26>
         a       crm:PC14_carried_out_by .
 
+<https://archipelago.itatti.harvard.edu/resources/event/26/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/26/name>
@@ -32,13 +36,16 @@ geonames:7910746  a  crm:E53_Place .
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/26/name> , <https://archipelago.itatti.harvard.edu/resources/event/26/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/26/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/26/typology> ;
-        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/26/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/26/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/26/century> ;
         crm:P7_took_place_at     geonames:7910746 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/26/date>
+<https://archipelago.itatti.harvard.edu/resources/event/26/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/26/subtypology>
         a           crm:E55_Type ;

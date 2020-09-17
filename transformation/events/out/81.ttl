@@ -15,8 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/81/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/81/name> , <https://archipelago.itatti.harvard.edu/resources/event/81/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/81/typology> , <https://archipelago.itatti.harvard.edu/resources/event/81/subtypology> ;
-        crm:P4_has_time-span       "Mid-century (40-60)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/81/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/81/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/81/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -28,12 +27,24 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/81/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
+
 geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:19 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/81/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Following the end of the II World War, the island is demilitarized."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/81/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/81/subtypology>
         a           crm:E55_Type ;
@@ -48,14 +59,10 @@ geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E42_Identifier ;
         rdfs:label  "81" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/86/event/81>
         a       crm:PC14_carried_out_by .
 
-<https://archipelago.itatti.harvard.edu/resources/event/81/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier>
+        a       crm:E42_Identifier .
 
 geonames:3230839  a  crm:E53_Place .

@@ -18,6 +18,10 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/162/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Work of art's transportation"@en .
@@ -27,16 +31,19 @@
         rdfs:label       "The image of the Virgin is pompously translated from the church of Santa Maria della Carità to the Holy House of Loreto in San Clemente"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/162/date>
+<https://archipelago.itatti.harvard.edu/resources/event/162/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/162/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/162>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/162/name> , <https://archipelago.itatti.harvard.edu/resources/event/162/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/162/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/162/typology> ;
-        crm:P4_has_time-span       "Mid-century (40-60)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/162/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/162/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/162/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

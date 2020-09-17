@@ -23,8 +23,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/130/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/130/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/130/typology> , <https://archipelago.itatti.harvard.edu/resources/event/130/subtypology> ;
-        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/130/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/130/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/130/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041> ;
         crm:P7_took_place_at       geonames:7910746 .
 
@@ -32,12 +31,16 @@
         a           crm:E42_Identifier ;
         rdfs:label  "130" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/130/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0041/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/130/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/130/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
 
 geonames:7910746  a  crm:E53_Place .
 
@@ -47,6 +50,10 @@ geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/149/event/130>
         a       crm:PC14_carried_out_by .

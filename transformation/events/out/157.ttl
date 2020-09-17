@@ -14,9 +14,12 @@
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/157/name> , <https://archipelago.itatti.harvard.edu/resources/event/157/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/157/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/157/typology> ;
-        crm:P4_has_time-span     "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/157/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/157/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/157/century> ;
         crm:P7_took_place_at     geonames:12172719 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/157/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/157/name>
         a                crm:E41_Appellation ;
@@ -31,11 +34,15 @@
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
+
 geonames:12172719  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/157/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/event/157/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/157/subtypology>
         a           crm:E55_Type ;

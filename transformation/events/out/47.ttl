@@ -23,16 +23,19 @@ geonames:13  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/47/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/47/name> , <https://archipelago.itatti.harvard.edu/resources/event/47/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/47/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/47/typology> ;
-        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/47/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/47/century> , <https://archipelago.itatti.harvard.edu/resources/event/47/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/85> ;
         crm:P7_took_place_at       geonames:3230839 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/47/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/47/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "After the fire in the Arsenal, the Senate decides to locate some powderhouses on the islands of the lagoon. The first one to be built is in San Secondo."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/47/date>
+<https://archipelago.itatti.harvard.edu/resources/event/47/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
@@ -62,5 +65,9 @@ geonames:13  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/source/85/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 geonames:3230839  a  crm:E53_Place .

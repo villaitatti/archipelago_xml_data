@@ -31,6 +31,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Election"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/123/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/123/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The prior Pietro Maffei, along with other Lateran Canons and friars from San Giorgio Maggiore, elected the new prior of San Clemente. Other canons are transferred to the island that begins to be inhabited regularly."@en .
@@ -46,12 +50,15 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/123/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/123/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/123/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/123/typology> , <https://archipelago.itatti.harvard.edu/resources/event/123/subtypology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/123/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/123/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/123/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/date>
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/123/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 

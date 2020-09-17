@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/85/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "18th cent."@en .
+
 geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:22 .
 
@@ -21,10 +25,6 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/85/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/85>
         a       crm:PC14_carried_out_by .
 
@@ -32,8 +32,7 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/85/name> , <https://archipelago.itatti.harvard.edu/resources/event/85/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/85/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/85/typology> ;
-        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/85/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/85/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/85/century> ;
         crm:P7_took_place_at     geonames:3230839 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/85/name>
@@ -41,8 +40,16 @@ geonames:22  a                   crm:E42_Identifier , crm:E53_Place ;
         rdfs:label       "Restoration of the external wall"@it ;
         crm:P2_has_type  "preferred_name" .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/85/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "85" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/85/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
 
 geonames:3230839  a  crm:E53_Place .

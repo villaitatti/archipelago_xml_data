@@ -14,6 +14,10 @@
         a           crm:E42_Identifier ;
         rdfs:label  "14" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/14/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
@@ -26,10 +30,13 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/14/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/14/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/14/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/14/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/14/typology> ;
-        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/14/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/14/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/14/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/14/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/14/typology>
         a           crm:E55_Type ;
@@ -47,15 +54,15 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The collegio existed only until 1689."@en .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
+
 geonames:15  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:15 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/14/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Foundation"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/14/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 geonames:3230839  a  crm:E53_Place .

@@ -10,6 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
+        crm:P1_is_identified_by  geonames:1 .
+
 <https://archipelago.itatti.harvard.edu/resources/event/43/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "43" .
@@ -18,12 +21,17 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "Gerardino da Villanova sells some lands in the Trevigiano area to the abbess. He also donates two iugeri (plots of land) located near Treviso. In exchange, he askes that the proceeds are used to buy the oil for illuminating the altar of San Secondo."@en .
 
-geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
-        crm:P1_is_identified_by  geonames:1 .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/43/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .
+
+<https://archipelago.itatti.harvard.edu/resources/event/43/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "12th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/43/name>
         a                crm:E41_Appellation ;
@@ -35,8 +43,7 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/43/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/43/name> , <https://archipelago.itatti.harvard.edu/resources/event/43/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/43/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/43/typology> ;
-        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/43/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/43/century> , <https://archipelago.itatti.harvard.edu/resources/event/43/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -50,9 +57,9 @@ geonames:1  a                    crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/actor/45/event/43>
         a       crm:PC14_carried_out_by .
 
-<https://archipelago.itatti.harvard.edu/resources/event/43/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "12th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Last quarter of the century (75-99)"@en .
 
 geonames:3230839  a  crm:E53_Place .
 

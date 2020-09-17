@@ -16,6 +16,10 @@
 
 geonames:3168290  a  crm:E53_Place .
 
+<https://archipelago.itatti.harvard.edu/resources/event/140/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/140/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
@@ -24,6 +28,10 @@ geonames:3168290  a  crm:E53_Place .
         a                crm:E41_Appellation ;
         rdfs:label       "The Emperor John VIII Palaiologos is housed in the island's guestroom"@it ;
         crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/140/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042>
         a                        crm:E31_Document ;
@@ -36,18 +44,17 @@ geonames:3168290  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/event/140/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/140>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/140/name> , <https://archipelago.itatti.harvard.edu/resources/event/140/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/140/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/140/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/140/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/140/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/140/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0042> ;
         crm:P7_took_place_at       geonames:3168290 .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/156/event/140>
         a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .

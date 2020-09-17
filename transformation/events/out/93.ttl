@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/93/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Spread of the plague"@en .
@@ -21,8 +25,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/93/name> , <https://archipelago.itatti.harvard.edu/resources/event/93/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/93/typology> ;
-        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/93/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/93/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
@@ -38,10 +41,6 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/93/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
 
 geonames:12172719  a  crm:E53_Place .
 

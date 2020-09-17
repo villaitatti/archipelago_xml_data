@@ -14,7 +14,7 @@
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/96/date>
+<https://archipelago.itatti.harvard.edu/resources/event/96/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "20th cent."@en .
 
@@ -30,17 +30,24 @@
         a           crm:E42_Identifier ;
         rdfs:label  "96" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/96/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/96>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/96/name> , <https://archipelago.itatti.harvard.edu/resources/event/96/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/96/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/96/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/96/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/96/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/96/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

@@ -13,6 +13,10 @@
 <https://archipelago.itatti.harvard.edu/resources/actor/133/event/114>
         a       crm:PC14_carried_out_by .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/114/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The decision was made in the church of San Clemente."@en .
@@ -21,18 +25,14 @@
         a           crm:E42_Identifier ;
         rdfs:label  "114" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+<https://archipelago.itatti.harvard.edu/resources/event/114/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "12th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/114/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Canons regular of San Clemente are confirmed under the jurisdiction of the Patriarch of Grado"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/114/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "12th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/114/subtypology>
         a           crm:E55_Type ;
@@ -47,12 +47,19 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/114/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/114/name> , <https://archipelago.itatti.harvard.edu/resources/event/114/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/114/typology> , <https://archipelago.itatti.harvard.edu/resources/event/114/subtypology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/114/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/114/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/114/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
+<https://archipelago.itatti.harvard.edu/resources/event/114/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
+
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .

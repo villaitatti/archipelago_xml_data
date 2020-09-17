@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/56/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "18th cent."@en .
+
 geonames:13  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:13 .
 
@@ -39,21 +43,24 @@ geonames:13  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/56/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/56/name> , <https://archipelago.itatti.harvard.edu/resources/event/56/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/56/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/56/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/56/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/56/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/56/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/85> ;
         crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/56/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/56/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Transfer (goods)"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/56/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/source/85/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/56/identifier>
         a           crm:E42_Identifier ;

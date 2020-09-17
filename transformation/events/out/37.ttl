@@ -10,16 +10,20 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/37/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
+
 geonames:18  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:18 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/37/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/source/57>
         a                        crm:E31_Document ;
@@ -46,8 +50,7 @@ geonames:18  a                   crm:E42_Identifier , crm:E53_Place ;
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/37/name> , <https://archipelago.itatti.harvard.edu/resources/event/37/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/37/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/37/typology> ;
-        crm:P4_has_time-span       "Mid-century (40-60)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/37/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/37/century> , <https://archipelago.itatti.harvard.edu/resources/event/37/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resources/source/57> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -57,6 +60,10 @@ geonames:18  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/37/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Design"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/37/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "18th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/37/identifier>
         a           crm:E42_Identifier ;

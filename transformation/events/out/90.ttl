@@ -22,14 +22,13 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/90/name> , <https://archipelago.itatti.harvard.edu/resources/event/90/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/90/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/90/typology> ;
-        crm:P4_has_time-span       "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/90/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/90/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/90/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:7910746 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/90/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/event/90/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
 
 geonames:7910746  a  crm:E53_Place .
 
@@ -41,6 +40,10 @@ geonames:7910746  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Abandonment"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/90/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The island is definitively abandoned"@it ;
@@ -48,3 +51,7 @@ geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0002/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resources/event/90/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "20th cent."@en .

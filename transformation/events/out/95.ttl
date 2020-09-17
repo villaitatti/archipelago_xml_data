@@ -14,8 +14,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/95/name> , <https://archipelago.itatti.harvard.edu/resources/event/95/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/95/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/95/typology> ;
-        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/95/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/95/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
@@ -35,7 +34,7 @@
         a           crm:E55_Type ;
         rdfs:label  "Public deliberation"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/95/date>
+<https://archipelago.itatti.harvard.edu/resources/event/95/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 

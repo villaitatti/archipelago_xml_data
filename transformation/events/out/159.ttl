@@ -26,30 +26,37 @@
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/159/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resources/source/160/identifier>
         a       crm:E42_Identifier .
 
+<https://archipelago.itatti.harvard.edu/resources/event/159/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+
 <https://archipelago.itatti.harvard.edu/resources/event/159/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "159" .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/159/source/160/event>
         a           crm:E41_Appellation ;
         rdfs:label  "According to descriptions, the island is in a state of disrepair and the Lateran Canons cannot live in there"@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/159/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/159>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/159/name> , <https://archipelago.itatti.harvard.edu/resources/event/159/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/159/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/159/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/159/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/159/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/160> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

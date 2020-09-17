@@ -20,19 +20,18 @@
 geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
         crm:P1_is_identified_by  geonames:11 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/59/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "12th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/59>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/59/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/59/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/59/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/59/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/59/typology> ;
-        crm:P4_has_time-span       "Second quarter of the century (25-49)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/59/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/59/century> , <https://archipelago.itatti.harvard.edu/resources/event/59/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0017> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0016> ;
         crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resources/event/59/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;
@@ -41,6 +40,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/event/59/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "According to the chronicle by Enrico Dandolo, the wealthy merchant Pietro Gattilesso put up money to build a church and a pilgrim's hospital dedicated to St Clement Pope on the island that would henceforth bear his name. Both the church and hospital were put under the jurisdiction of the Patriarch of Grado, Enrico Dandolo."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/59/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "12th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
@@ -75,6 +78,10 @@ geonames:11  a                   crm:E42_Identifier , crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0045/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/59/typology>
         a           crm:E55_Type ;

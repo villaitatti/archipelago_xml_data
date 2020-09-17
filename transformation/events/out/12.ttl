@@ -19,16 +19,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Reconstruction"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/12/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/12/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "12" .
 
 <https://archipelago.itatti.harvard.edu/resources/actor/42/event/12>
         a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/event/12/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis>
         a           crm:E73_Information_Object ;
@@ -37,10 +37,9 @@
 <https://archipelago.itatti.harvard.edu/resources/event/12>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/12/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/12/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/12/name> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/12/name> , <https://archipelago.itatti.harvard.edu/resources/event/12/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/12/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/12/typology> ;
-        crm:P4_has_time-span       "Beginning of the century (0-10)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/12/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 .
 

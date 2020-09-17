@@ -24,7 +24,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/82/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/82/name> , <https://archipelago.itatti.harvard.edu/resources/event/82/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/82/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/82/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/82/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/82/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/135> ;
         crm:P7_took_place_at       geonames:7910746 .
 
@@ -32,10 +32,6 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/135/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/82/source/135/event> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/82/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/82/subtypology>
         a           crm:E55_Type ;
@@ -50,6 +46,10 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resources/event/82/source/135/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Survey of the entire island"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/82/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/source/135/identifier>
         a       crm:E42_Identifier .

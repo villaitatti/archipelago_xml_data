@@ -19,6 +19,10 @@
         rdfs:label       "Construction of a new dormitory"@it ;
         crm:P2_has_type  "preferred_name" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/89/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/89/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Construction"@en .
@@ -27,8 +31,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/89/name> , <https://archipelago.itatti.harvard.edu/resources/event/89/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/89/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/89/typology> ;
-        crm:P4_has_time-span       "First quarter of the century (0-24)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/89/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/89/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/152> ;
         crm:P7_took_place_at       geonames:3230839 .
 
@@ -46,10 +49,6 @@ geonames:78  a                   crm:E42_Identifier , crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resources/source/152/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/89/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/89/source/152/event>
         a           crm:E41_Appellation ;

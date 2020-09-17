@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/132/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "132" .
@@ -22,9 +18,17 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The Fondo territoriale was the owner of the island."@en .
 
+<https://archipelago.itatti.harvard.edu/resources/event/132/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/132/typology>
         a           crm:E55_Type ;
         rdfs:label  "Economic"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/132/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/132/subtypology>
         a           crm:E55_Type ;
@@ -32,6 +36,10 @@
 
 <https://archipelago.itatti.harvard.edu/resources/actor/155/event/132>
         a       crm:PC14_carried_out_by .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/132/name>
         a                crm:E41_Appellation ;
@@ -45,6 +53,5 @@ geonames:3168468  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/132/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/132/name> , <https://archipelago.itatti.harvard.edu/resources/event/132/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/132/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/132/typology> ;
-        crm:P4_has_time-span     "Third quarter of the century (50-74)"@en ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/132/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/132/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/132/century> ;
         crm:P7_took_place_at     geonames:3168468 .

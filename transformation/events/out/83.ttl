@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resources/event/83/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/83/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Titian accuses the Lateran Canons of not paying his work"@it ;
@@ -22,10 +26,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/83/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resources/event/83/identifier>
@@ -37,7 +37,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/83/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/83/name> , <https://archipelago.itatti.harvard.edu/resources/event/83/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/83/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/83/date> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/83/century> ;
         crm:P7_took_place_at     geonames:7910746 .
 
 <https://archipelago.itatti.harvard.edu/resources/event/83/synopsis>

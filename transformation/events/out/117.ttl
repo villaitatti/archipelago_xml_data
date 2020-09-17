@@ -14,9 +14,17 @@
         a           crm:E42_Identifier ;
         rdfs:label  "117" .
 
+<https://archipelago.itatti.harvard.edu/resources/event/117/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
+
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/117/subtypology>
         a           crm:E55_Type ;
@@ -25,6 +33,10 @@
 <https://archipelago.itatti.harvard.edu/resources/event/117/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Dominican Patriarch asks the Canons to build an apartment for him in the island. This is built on the southern-est corner of the island, in front of the vegetable garden and \"near the old building\". It consists of many rooms, a living room equipped with a fireplace and a small loggia (lobiolam). The rooms are remembered as small but cozy (prelibatae) in a document dated 1643. In this description, one room is mentioned as \"la camera d'oro\" because it was decorated with gilded carvings."@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/117/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "13th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/117/name>
         a                crm:E41_Appellation ;
@@ -37,17 +49,12 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/event/117/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "13th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/117>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/117/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/117/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/117/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/117/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/117/typology> ;
-        crm:P4_has_time-span       "End of the century (90-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/117/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/117/century> , <https://archipelago.itatti.harvard.edu/resources/event/117/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

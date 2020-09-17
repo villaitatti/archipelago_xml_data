@@ -19,9 +19,9 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/159/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/127/source/159/event> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/127/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
+<https://archipelago.itatti.harvard.edu/resources/event/127/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/127/subtypology>
         a           crm:E55_Type ;
@@ -31,8 +31,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/127/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/127/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/127/typology> , <https://archipelago.itatti.harvard.edu/resources/event/127/subtypology> ;
-        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/127/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/127/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/127/century> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resources/source/159> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -53,6 +52,14 @@
 <https://archipelago.itatti.harvard.edu/resources/event/127/source/159/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Doge Agostino Barbarigo and Senate donate an old galea to the Canons whose timber could be used for renovating their monastery"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Last quarter of the century (75-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/127/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resources/event/127/typology>
         a           crm:E55_Type ;

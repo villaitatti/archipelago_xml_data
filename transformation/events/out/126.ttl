@@ -15,8 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/126/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/126/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/126/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/126/typology> ;
-        crm:P4_has_time-span       "Last quarter of the century (75-99)"@en ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/126/date> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/126/century> , <https://archipelago.itatti.harvard.edu/resources/event/126/century_fraction> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 
@@ -36,10 +35,6 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resources/event/126/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
@@ -54,9 +49,21 @@
 <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
+<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Last quarter of the century (75-99)"@en .
+
+<https://archipelago.itatti.harvard.edu/resources/event/126/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "15th cent."@en .
+
 <https://archipelago.itatti.harvard.edu/resources/event/126/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "126" .
+
+<https://archipelago.itatti.harvard.edu/resources/event/126/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .
 
 <https://archipelago.itatti.harvard.edu/resources/event/126/synopsis>
         a           crm:E73_Information_Object ;

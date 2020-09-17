@@ -375,9 +375,9 @@
 		<pattern>{geonames_id}</pattern>
 	</generator>
 
-	<!-- Time primitive -->
-	<generator name="700-time_primitive" prefix="arc">
-		<pattern>time_primitive/{t_id}</pattern>
+	<!-- Time appellation -->
+	<generator name="700-time_appellation" prefix="arc">
+		<pattern>time_appellation/{t_id}</pattern>
 	</generator>
 
 	<generator name="URIorUUID">
