@@ -12,7 +12,9 @@
 	<SHP_Area>147.634113159661</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

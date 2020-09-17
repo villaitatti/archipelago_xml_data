@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_IS_004</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1852-01-01</Start>
+	<End>1944-12-31</End>
+	<Name>Isola di San Secondo</Name>
+	<SHP_Lenght>586.271717979979</SHP_Lenght>
+	<SHP_Area>13544.150646861699</SHP_Area>
+	<Functions>
+		<Function pos="1">
+			<Function>Public</Function>
+			<Start_Function>1806-07-28</Start_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use pos="1">
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1806-07-28</Start_Use>
+			<End_Use>1945-09-08</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology pos="1">
+			<eng>Island</eng>
+			<Start_Typology>1500-01-01</Start_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner pos="1">
+			<ID_PERSON>123</ID_PERSON>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
+	</Owners>
+</row>

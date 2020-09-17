@@ -8,9 +8,9 @@
 	<Start>1563-01-01</Start>
 	<End>1851-12-31</End>
 	<Name>Vera da pozzo</Name>
-	<Height>1.0</Height>
-	<SHP_Lenght>4.28726950969252</SHP_Lenght>
-	<SHP_Area>1.1442008566746598</SHP_Area>
+	<Height>1</Height>
+	<SHP_Lenght>4.287269509692525</SHP_Lenght>
+	<SHP_Area>1.144200856674664</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Istrian marble</eng>
@@ -22,17 +22,17 @@
 		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1563-01-01</Start_Function>
-			<End_Function>1806-7-27</End_Function>
+			<End_Function>1806-07-27</End_Function>
 		</Function>
 		<Function pos="2">
+			<Function>Private</Function>
+			<Start_Function>1563-01-01</Start_Function>
+			<End_Function>1806-7-27</End_Function>
+		</Function>
+		<Function pos="3">
 			<Function>Public</Function>
 			<Start_Function>1806-07-28</Start_Function>
 			<End_Function>1851-12-31</End_Function>
-		</Function>
-		<Function pos="3">
-			<Function>Private</Function>
-			<Start_Function>1563-01-01</Start_Function>
-			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>
@@ -60,7 +60,7 @@
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 		<Owner pos="2">
-			<ID_PERSON>203</ID_PERSON>
+			<ID_PERSON>123</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>

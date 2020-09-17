@@ -8,16 +8,18 @@
 	<Start>1734-01-01</Start>
 	<End>1820-12-31</End>
 	<Name>Campanile</Name>
-	<SHP_Lenght>23.7247121454433</SHP_Lenght>
-	<SHP_Area>35.136591107635695</SHP_Area>
+	<SHP_Lenght>23.72471214544331</SHP_Lenght>
+	<SHP_Area>35.13659110763568</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Brick</eng>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

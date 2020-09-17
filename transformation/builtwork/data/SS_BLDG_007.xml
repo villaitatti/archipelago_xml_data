@@ -12,7 +12,9 @@
 	<SHP_Area>24.2528865808452</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -42,6 +44,11 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
+			<ID_PERSON>123</ID_PERSON>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
+		<Owner pos="2">
 			<ID_PERSON>86</ID_PERSON>
 			<Start_Owner>1866-10-21</Start_Owner>
 			<End_Owner>1981-12-31</End_Owner>
@@ -49,7 +56,7 @@
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>203</ID_PERSON>
+			<ID_PERSON>123</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

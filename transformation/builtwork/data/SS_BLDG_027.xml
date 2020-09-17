@@ -9,10 +9,12 @@
 	<End>1838-12-31</End>
 	<Name>Legnaia</Name>
 	<SHP_Lenght>28.8345566114051</SHP_Lenght>
-	<SHP_Area>41.6552530786949</SHP_Area>
+	<SHP_Area>41.65525307869493</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

@@ -8,16 +8,18 @@
 	<Start>1608-01-01</Start>
 	<End>1820-12-31</End>
 	<Name>Chiesa</Name>
-	<SHP_Lenght>65.1657669977359</SHP_Lenght>
-	<SHP_Area>226.71873019154302</SHP_Area>
+	<SHP_Lenght>65.16576699773586</SHP_Lenght>
+	<SHP_Area>226.71873019154305</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Brick</eng>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -42,14 +44,14 @@
 			<ita>Chiesa</ita>
 			<aat>300007466</aat>
 			<Start_Typology>1608-01-01</Start_Typology>
-			<End_Typology>1820-12-31</End_Typology>
+			<End_Typology>1806-07-27</End_Typology>
 		</Typology>
 		<Typology pos="2">
 			<eng>Church</eng>
 			<ita>Chiesa</ita>
 			<aat>300007466</aat>
 			<Start_Typology>1608-01-01</Start_Typology>
-			<End_Typology>1806-07-27</End_Typology>
+			<End_Typology>1820-12-31</End_Typology>
 		</Typology>
 	</Typologies>
 	<Owners>

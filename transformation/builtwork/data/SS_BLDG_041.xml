@@ -8,8 +8,8 @@
 	<Start>1500-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Pontile</Name>
-	<SHP_Lenght>25.2535648287201</SHP_Lenght>
-	<SHP_Area>27.1538898923165</SHP_Area>
+	<SHP_Lenght>25.25356482872013</SHP_Lenght>
+	<SHP_Area>27.153889892316517</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Wood</eng>
@@ -21,12 +21,12 @@
 		<Function pos="1">
 			<Function>Private</Function>
 			<Start_Function>1500-01-01</Start_Function>
-			<End_Function>1806-07-27</End_Function>
+			<End_Function>1806-7-27</End_Function>
 		</Function>
 		<Function pos="2">
 			<Function>Private</Function>
 			<Start_Function>1500-01-01</Start_Function>
-			<End_Function>1806-7-27</End_Function>
+			<End_Function>1806-07-27</End_Function>
 		</Function>
 	</Functions>
 	<Uses>

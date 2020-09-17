@@ -8,11 +8,13 @@
 	<Start>1770-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Rastello</Name>
-	<SHP_Lenght>34.8950259242314</SHP_Lenght>
-	<SHP_Area>11.875052204716198</SHP_Area>
+	<SHP_Lenght>34.89502592423144</SHP_Lenght>
+	<SHP_Area>11.87505220471623</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

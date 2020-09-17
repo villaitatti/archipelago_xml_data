@@ -145,9 +145,9 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="Literal">
+                                    <instance_generator name="GermanDateTime">
+                                        <arg name="bound" type="constant">Lower</arg>
                                         <arg name="text" type="xpath">text()</arg>
-                                        <arg name="language" type="constant">en</arg>
                                     </instance_generator>
                                 </entity>
                             </additional>

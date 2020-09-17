@@ -8,16 +8,18 @@
 	<Start>1738-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Dormitorio ; Refettorio</Name>
-	<SHP_Lenght>178.312490467</SHP_Lenght>
-	<SHP_Area>919.2605345284669</SHP_Area>
+	<SHP_Lenght>178.3124904670001</SHP_Lenght>
+	<SHP_Area>919.2605345284668</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Brick</eng>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

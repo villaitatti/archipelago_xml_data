@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<row>
+	<BW_ID>SS_OS_002</BW_ID>
+	<IslandName>
+		<ita>San Secondo</ita>
+		<geo>3230839</geo>
+	</IslandName>
+	<Start>1718-01-01</Start>
+	<End>1820-12-31</End>
+	<Name>Giardino</Name>
+	<SHP_Lenght>112.2167516728607</SHP_Lenght>
+	<SHP_Area>541.2994013184242</SHP_Area>
+	<Materials>
+		<Material>
+			<eng>Fruit trees</eng>
+		</Material>
+	</Materials>
+	<Functions>
+		<Function pos="1">
+			<Function>Private</Function>
+			<Start_Function>1718-01-01</Start_Function>
+			<End_Function>1806-07-28</End_Function>
+		</Function>
+	</Functions>
+	<Uses>
+		<Use pos="1">
+			<eng>Service</eng>
+			<ita>Infrastrutture di servizio</ita>
+			<aat>300008553</aat>
+			<Start_Use>1718-01-01</Start_Use>
+			<End_Use>1820-12-31</End_Use>
+		</Use>
+	</Uses>
+	<Typologies>
+		<Typology pos="1">
+			<eng>Garden</eng>
+			<ita>Giardino</ita>
+			<aat>300008090</aat>
+			<Start_Typology>1718-01-01</Start_Typology>
+			<End_Typology>1820-12-31</End_Typology>
+		</Typology>
+	</Typologies>
+	<Owners>
+		<Owner pos="1">
+			<ID_PERSON>42</ID_PERSON>
+			<Start_Owner>1718-01-01</Start_Owner>
+			<End_Owner>1806-07-28</End_Owner>
+		</Owner>
+	</Owners>
+	<Patrons>
+		<Patron>
+			<ID_PERSON>42</ID_PERSON>
+		</Patron>
+	</Patrons>
+</row>

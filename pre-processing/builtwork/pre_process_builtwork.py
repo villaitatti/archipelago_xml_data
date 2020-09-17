@@ -6,11 +6,12 @@ import os
 import re
 import json
 
-buildings = 'buildings_ordered.csv'
+buildings = 'SS_BLDGS_ordered'
+buildings_ext = '.tsv'
 
 # TODO pass the file as arg
 dir_path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.join(dir_path, buildings)
+filename = os.path.join(dir_path, buildings+buildings_ext)
 
 bw_typologies_filename = os.path.join(dir_path, 'dict', 'bw_typologies.tsv')
 bw_uses_filename = os.path.join(dir_path, 'dict', 'bw_uses.tsv')
@@ -26,10 +27,11 @@ bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='
 bw_materials = pd.read_csv(bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
 bw_islands = pd.read_csv(bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
 
-def order_df():
+
+def order_df(df):
   df = df.set_index(key_bw_id)
   df = df.sort_index()
-  df.to_csv(os.path.join(dir_path, buildings), sep='\t')
+  df.to_csv(os.path.join(dir_path, f'{buildings}_ordered{buildings_ext}'), sep='\t')
 
 def write_file(name, text, ext='xml'):
 

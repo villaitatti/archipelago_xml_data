@@ -8,16 +8,18 @@
 	<Start>1518-01-01</Start>
 	<End>1776-12-31</End>
 	<Name>Dormitorio</Name>
-	<SHP_Lenght>106.43495676324</SHP_Lenght>
-	<SHP_Area>511.278835170176</SHP_Area>
+	<SHP_Lenght>106.4349567632401</SHP_Lenght>
+	<SHP_Area>511.2788351701757</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Brick</eng>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>

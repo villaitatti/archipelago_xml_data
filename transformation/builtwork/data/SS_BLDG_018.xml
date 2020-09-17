@@ -12,12 +12,14 @@
 	<SHP_Area>52.1430136735508</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Brick</eng>
-		</Material>
-		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
