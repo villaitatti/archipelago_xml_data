@@ -81,11 +81,6 @@
 		<pattern>/measurement_unit/{unit}</pattern>
 	</generator>
 
-
-	<generator name="180-built_work-material" prefix="arc">
-		<pattern>built_work/{bw_id}/material/{m_id}</pattern>
-	</generator>
-
 	<generator name="190-built_work-acquisition" prefix="arc">
 		<pattern>built_work/{bw_id}/acquisition/{acquisition_id}</pattern>
 	</generator>

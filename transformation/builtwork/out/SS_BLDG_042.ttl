@@ -16,9 +16,7 @@
         crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/function/1>
         a       crm:E5_Event .
@@ -27,9 +25,6 @@
         a                             crm:E8_Acquisition ;
         crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/acquisition/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/42>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/typology/1>
         a                     crm:E5_Event ;
@@ -46,8 +41,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/construction/date> .
 
 aat:300100558  a  crm:E55_Type .
 
@@ -78,10 +72,6 @@ aat:300120590  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/destruction>
         a       crm:E6_Destruction .
-
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_042/use/1/date>
         a                            crm:E52_Time-Span ;

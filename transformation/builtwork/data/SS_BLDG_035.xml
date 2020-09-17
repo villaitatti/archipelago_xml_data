@@ -12,10 +12,10 @@
 	<SHP_Area>226.71873019154302</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Stone</eng>
+			<eng>Brick</eng>
 		</Material>
 		<Material>
-			<eng>Brick</eng>
+			<eng>Stone</eng>
 		</Material>
 	</Materials>
 	<Functions>

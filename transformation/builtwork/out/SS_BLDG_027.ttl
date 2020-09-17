@@ -18,8 +18,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/material/1>
         a           crm:E57_Material ;
@@ -40,9 +39,7 @@
 aat:300008553  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/acquisition/1>
         a                             crm:E8_Acquisition ;
@@ -64,10 +61,6 @@ aat:300266240  a  crm:E55_Type .
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1777-01-01"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction>
         a       crm:E6_Destruction .

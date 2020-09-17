@@ -31,8 +31,7 @@ aat:300007466  a  crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/construction>
         a                     crm:E12_Production ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/role_patron/1> .
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/construction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/typology/1/date>
         a                            crm:E52_Time-Span ;
@@ -72,14 +71,8 @@ aat:300120364  a  crm:E55_Type .
         crm:P2_has_type       aat:300007466 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/typology/1/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/material/1>
         a           crm:E57_Material ;
@@ -92,9 +85,6 @@ aat:300120364  a  crm:E55_Type .
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;
         rdfs:label  "Use"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_035/acquisition/1/date>
         a                            crm:E52_Time-Span ;

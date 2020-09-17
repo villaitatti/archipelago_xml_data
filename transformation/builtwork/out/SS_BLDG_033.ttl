@@ -84,18 +84,12 @@ aat:300008553  a  crm:E55_Type .
         rdfs:label  "Architect"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/type/patron> .
+        a       crmpc:PC14_carried_out_by .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/construction>
         a                     crm:E12_Production ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/construction/date> ;
-        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/role_architect/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/role_patron/1> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/patron>
-        a           crm:E55_Type ;
-        rdfs:label  "Patron"@en .
+        crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/role_architect/1> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_033/function/1>
         a       crm:E5_Event .
