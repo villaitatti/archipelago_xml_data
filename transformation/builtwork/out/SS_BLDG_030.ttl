@@ -53,6 +53,10 @@ aat:300004499  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/measurement/perimeter/dimension> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 aat:300024987  a    crm:E55_Type ;
         rdfs:label  "Architect"@en .
 
@@ -89,12 +93,13 @@ aat:300024987  a    crm:E55_Type ;
         crm:P90_has_value  "65.44389612542085" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/destruction>
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/destruction/date> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1563-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/destruction>
-        a       crm:E6_Destruction .
 
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
@@ -129,6 +134,7 @@ aat:300010463  a    crm:E57_Material ;
         rdfs:label                 "Caneva" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_030/acquisition/1> ;

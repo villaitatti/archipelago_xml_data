@@ -83,11 +83,16 @@ aat:300024987  a    crm:E55_Type ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/typology/1/date>
         a                            crm:E52_Time-Span ;
@@ -102,6 +107,7 @@ aat:300010463  a    crm:E57_Material ;
         rdfs:label                 "Cavana" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_021/acquisition/1> ;

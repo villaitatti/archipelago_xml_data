@@ -59,6 +59,10 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "Unknown-Format"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/acquisition/1>
         a                             crm:E8_Acquisition ;
         crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
@@ -89,6 +93,7 @@ aat:300004095  a    crm:E55_Type ;
         rdfs:label                 "Cortile" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/use/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/acquisition/1> ;
@@ -115,7 +120,8 @@ aat:300004095  a    crm:E55_Type ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/typology/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_004/transfer_custody/1>
         a                            crm:E10_Transfer_of_Custody ;

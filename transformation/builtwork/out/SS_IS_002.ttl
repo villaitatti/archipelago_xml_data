@@ -44,6 +44,7 @@ aat:300008347  a    crm:E55_Type ;
         rdfs:label                 "Isola di San Secondo" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/acquisition/1> ;
@@ -65,6 +66,10 @@ aat:300008347  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/measurement/area>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/measurement/area/dimension> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "2018-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/construction/date>
         a                            crm:E52_Time-Span ;
@@ -98,7 +103,8 @@ aat:300008347  a    crm:E55_Type ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/use/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_002/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;

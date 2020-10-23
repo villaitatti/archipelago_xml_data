@@ -15,7 +15,8 @@ aat:300115251  a    crm:E55_Type ;
         rdfs:label  "Patron"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
@@ -80,6 +81,7 @@ aat:300120364  a    crm:E55_Type ;
         rdfs:label                 "Dormitorio" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/typology/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/acquisition/1> ;
@@ -102,6 +104,10 @@ aat:300120364  a    crm:E55_Type ;
         a                     crm:E5_Event ;
         crm:P2_has_type       aat:300005668 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/typology/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1517-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;

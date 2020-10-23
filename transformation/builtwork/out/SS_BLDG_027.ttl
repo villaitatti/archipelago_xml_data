@@ -37,6 +37,10 @@ aat:300115251  a    crm:E55_Type ;
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_027" .
@@ -87,7 +91,8 @@ aat:300266240  a    crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction/date> .
 
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
@@ -118,6 +123,7 @@ aat:300010463  a    crm:E57_Material ;
         rdfs:label                 "Legnaia" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/typology/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/acquisition/1> ;

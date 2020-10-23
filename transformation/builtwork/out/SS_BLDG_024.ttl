@@ -43,6 +43,10 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/90>
         a       crm:E39_Actor .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/area>
         a           crm:E55_Type ;
         rdfs:label  "Area"@en .
@@ -70,6 +74,7 @@ aat:300164125  a    crm:E55_Type ;
         rdfs:label                 "Foresteria" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/typology/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/acquisition/1> ;
@@ -97,7 +102,8 @@ aat:300007170  a    crm:E55_Type ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/acquisition/1>
         a                             crm:E8_Acquisition ;

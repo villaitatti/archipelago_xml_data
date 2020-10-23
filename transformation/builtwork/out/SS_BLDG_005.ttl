@@ -63,6 +63,7 @@ aat:300007700  a    crm:E55_Type ;
         rdfs:label                 "Deposito" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/acquisition/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/acquisition/1> ;
@@ -101,6 +102,10 @@ aat:300120590  a    crm:E55_Type ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
         crm:P90_has_value  "27.44898465160817" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1981-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/function/1>
         a           crm:E5_Event ;
@@ -147,4 +152,5 @@ aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Meter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_005/destruction/date> .

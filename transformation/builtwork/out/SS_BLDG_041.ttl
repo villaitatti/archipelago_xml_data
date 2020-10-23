@@ -68,11 +68,16 @@ aat:300008553  a    crm:E55_Type ;
         rdfs:label                 "Pontile" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/function/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/use/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/acquisition/1> ;
         crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/measurement/perimeter> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/measurement/area> ;
         crm:P45_consists_of        aat:300011914 .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
@@ -137,7 +142,8 @@ aat:300011914  a    crm:E57_Material ;
         rdfs:label  "Typology"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_041/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/meter>
         a           crm:E58_Measurement_Unit ;

@@ -39,7 +39,8 @@ aat:300115251  a    crm:E55_Type ;
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction/date> .
 
 aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
@@ -77,6 +78,7 @@ aat:300120590  a    crm:E55_Type ;
         rdfs:label                 "Deposito" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/typology/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/acquisition/1> ;
@@ -111,6 +113,10 @@ aat:300010463  a    crm:E57_Material ;
         a                             crm:E8_Acquisition ;
         crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/86> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/acquisition/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1981-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;

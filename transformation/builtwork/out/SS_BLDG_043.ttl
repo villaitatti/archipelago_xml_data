@@ -64,6 +64,10 @@
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
@@ -72,6 +76,7 @@
         rdfs:label                 "Muro di cinta" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/typology/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/acquisition/1> ;
@@ -79,7 +84,8 @@
         crm:P45_consists_of        aat:300010463 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_043/destruction/date> .
 
 aat:300100558  a    crm:E55_Type ;
         rdfs:label  "Muro di cinta"@it , "Walls"@en .

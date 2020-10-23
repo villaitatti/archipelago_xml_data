@@ -30,7 +30,8 @@ aat:300115251  a    crm:E55_Type ;
         crm:P82b_end_of_the_end      "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/area>
         a           crm:E55_Type ;
@@ -54,6 +55,10 @@ aat:300008553  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/measurement/perimeter/dimension> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
 
@@ -76,6 +81,7 @@ aat:300007700  a    crm:E55_Type ;
         rdfs:label                 "Deposito" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/3> ;

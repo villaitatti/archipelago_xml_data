@@ -75,7 +75,8 @@ aat:300008553  a    crm:E55_Type ;
         crm:P82b_end_of_the_end      "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
@@ -90,6 +91,10 @@ aat:300008553  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/use/1/date>
         a                            crm:E52_Time-Span ;
@@ -116,6 +121,7 @@ aat:300011914  a    crm:E57_Material ;
         rdfs:label                 "Pontile" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/acquisition/1> ;

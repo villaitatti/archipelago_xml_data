@@ -17,7 +17,8 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/typology/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/area>
         a           crm:E55_Type ;
@@ -31,6 +32,10 @@
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/acquisition/2/date>
         a                            crm:E52_Time-Span ;
@@ -69,6 +74,7 @@ aat:300120364  a    crm:E55_Type ;
         rdfs:label                 "Isola di San Secondo" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/function/1> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/acquisition/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007/acquisition/1> ;

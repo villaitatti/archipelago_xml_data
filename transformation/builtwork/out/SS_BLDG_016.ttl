@@ -77,7 +77,8 @@ aat:300010463  a    crm:E57_Material ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/acquisition/2/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/destruction>
-        a       crm:E6_Destruction .
+        a                     crm:E6_Destruction ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/destruction/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/identifier>
         a           crm:E42_Identifier ;
@@ -123,6 +124,7 @@ aat:300120590  a    crm:E55_Type ;
         rdfs:label                 "Magazzino" ;
         crm:P108i_was_produced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/construction> ;
         crm:P12i_was_present_at    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/typology/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/use/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/function/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/use/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/function/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/typology/2> ;
+        crm:P13i_was_destroyed_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/destruction> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/identifier> ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/acquisition/2> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/acquisition/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/acquisition/3> ;
@@ -164,6 +166,10 @@ aat:300115251  a    crm:E55_Type ;
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1806-07-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/destruction/date>
+        a                        crm:E52_Time-Span ;
+        crm:P82b_end_of_the_end  "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_016/use/2>
         a                     crm:E5_Event ;

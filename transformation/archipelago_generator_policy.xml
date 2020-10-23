@@ -41,6 +41,10 @@
 		<pattern>built_work/{bw_id}/destruction</pattern>
 	</generator>
 
+	<generator name="133-buil_work-destruction-date" prefix="arc">
+		<pattern>built_work/{bw_id}/destruction/date</pattern>
+	</generator>
+
 	<generator name="140-built_work-function" prefix="arc">
 		<pattern>built_work/{bw_id}/function/{func_id}</pattern>
 	</generator>
