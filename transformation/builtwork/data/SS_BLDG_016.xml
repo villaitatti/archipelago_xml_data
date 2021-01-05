@@ -5,11 +5,11 @@
 		<ita>San Secondo</ita>
 		<geo>3230839</geo>
 	</IslandName>
-	<Start>1563-01-01</Start>
+	<Start>1500-01-01</Start>
 	<End>1849-12-31</End>
 	<Name>Magazzino</Name>
-	<SHP_Lenght>33.90284631842654</SHP_Lenght>
-	<SHP_Area>43.084851378942396</SHP_Area>
+	<SHP_Lenght>33.9415656530877</SHP_Lenght>
+	<SHP_Area>43.13756006708421</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -19,29 +19,29 @@
 	</Materials>
 	<Functions>
 		<Function pos="1">
-			<Function>Public</Function>
-			<Start_Function>1806-07-28</Start_Function>
-			<End_Function>1849-12-31</End_Function>
-		</Function>
-		<Function pos="2">
 			<Function>Private</Function>
 			<Start_Function>1563-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
 		</Function>
+		<Function pos="2">
+			<Function>Public</Function>
+			<Start_Function>1806-07-28</Start_Function>
+			<End_Function>1849-12-31</End_Function>
+		</Function>
 	</Functions>
 	<Uses>
 		<Use pos="1">
-			<eng>Military</eng>
-			<ita>Militare</ita>
-			<aat>300120590</aat>
-			<Start_Use>1806-07-28</Start_Use>
-			<End_Use>1849-12-31</End_Use>
-		</Use>
-		<Use pos="2">
 			<eng>Service</eng>
 			<ita>Infrastrutture di servizio</ita>
 			<aat>300008553</aat>
 			<Start_Use>1563-01-01</Start_Use>
+			<End_Use>1849-12-31</End_Use>
+		</Use>
+		<Use pos="2">
+			<eng>Military</eng>
+			<ita>Militare</ita>
+			<aat>300120590</aat>
+			<Start_Use>1806-07-28</Start_Use>
 			<End_Use>1849-12-31</End_Use>
 		</Use>
 	</Uses>
@@ -50,37 +50,37 @@
 			<eng>Warehouse</eng>
 			<ita>Magazzino</ita>
 			<aat>300007722</aat>
-			<Start_Typology>1500-01-01</Start_Typology>
+			<Start_Typology>1563-01-01</Start_Typology>
 			<End_Typology>1849-12-31</End_Typology>
 		</Typology>
 		<Typology pos="2">
 			<eng>Warehouse</eng>
 			<ita>Magazzino</ita>
 			<aat>300007722</aat>
-			<Start_Typology>1563-01-01</Start_Typology>
+			<Start_Typology>1500-01-01</Start_Typology>
 			<End_Typology>1849-12-31</End_Typology>
 		</Typology>
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>123</ID_PERSON>
-			<Start_Owner>1814-04-20</Start_Owner>
-			<End_Owner>1866-10-20</End_Owner>
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 		<Owner pos="2">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1563-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 		<Owner pos="3">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
+		<Owner pos="4">
+			<ID_PERSON>Austrian Empire</ID_PERSON>
+			<Start_Owner>1814-04-20</Start_Owner>
+			<End_Owner>1866-10-20</End_Owner>
+		</Owner>
 	</Owners>
-	<Patrons>
-		<Patron>
-			<ID_PERSON>42</ID_PERSON>
-		</Patron>
-	</Patrons>
 </row>

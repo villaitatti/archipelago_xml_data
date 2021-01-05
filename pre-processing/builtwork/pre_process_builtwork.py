@@ -6,7 +6,7 @@ import os
 import re
 import json
 
-buildings = 'SS_BLDGS_ordered'
+buildings = 'SS_BLDGS'
 buildings_ext = '.tsv'
 
 # TODO pass the file as arg
@@ -423,10 +423,17 @@ for bw_id, bw in builtworks.items():
   base_tag(xml_row, key_height,  bw.get(key_height))
 
   # SHP_Lenght
-  base_tag(xml_row, key_shape_lenght,  bw[key_shape_lenght])
+  # If is null
+  try:
+    base_tag(xml_row, key_shape_lenght,  bw[key_shape_lenght])
+  except Exception:
+    pass
 
   # SHP_Area
-  base_tag(xml_row, key_shape_area,  bw[key_shape_area])
+  try:
+    base_tag(xml_row, key_shape_area,  bw[key_shape_area])
+  except Exception:
+    pass
 
   # Materials
   if bw.get(key_material) is not None and len(bw.get(key_material)) > 0:

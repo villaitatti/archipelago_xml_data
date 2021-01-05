@@ -12,14 +12,14 @@
 	<SHP_Area>322.580300141092</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Istrian marble</eng>
-			<ita>Pietra d'Istria</ita>
-			<aat>300011584</aat>
-		</Material>
-		<Material>
 			<eng>Bricks</eng>
 			<ita>Mattone</ita>
 			<aat>300010463</aat>
+		</Material>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -49,7 +49,7 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>123</ID_PERSON>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>

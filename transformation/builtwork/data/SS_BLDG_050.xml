@@ -44,21 +44,21 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>88</ID_PERSON>
+			<ID_PERSON>Venetian Republic</ID_PERSON>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1696-12-31</End_Owner>
 		</Owner>
 	</Owners>
 	<Tenants>
 		<Tenant pos="1">
-			<ID_PERSON>18</ID_PERSON>
+			<ID_PERSON>Benedectine nuns of San Secondo</ID_PERSON>
 			<Start_Tenant>1500-01-01</Start_Tenant>
 			<End_Tenant>1531-12-31</End_Tenant>
 		</Tenant>
 	</Tenants>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>89</ID_PERSON>
+			<ID_PERSON>Office of the Savi ed esecutori alle acque</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

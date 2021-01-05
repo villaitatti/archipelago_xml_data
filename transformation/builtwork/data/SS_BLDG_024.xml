@@ -12,14 +12,14 @@
 	<SHP_Area>126.60986179357201</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Istrian marble</eng>
-			<ita>Pietra d'Istria</ita>
-			<aat>300011584</aat>
-		</Material>
-		<Material>
 			<eng>Bricks</eng>
 			<ita>Mattone</ita>
 			<aat>300010463</aat>
+		</Material>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -49,21 +49,26 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>88</ID_PERSON>
+			<ID_PERSON>Venetian Republic</ID_PERSON>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1797-05-11</End_Owner>
 		</Owner>
 	</Owners>
 	<Tenants>
 		<Tenant pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<Start_Tenant>1534-01-01</Start_Tenant>
+			<End_Tenant>1806-07-27</End_Tenant>
+		</Tenant>
+		<Tenant pos="2">
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
 			<Start_Tenant>1534-01-01</Start_Tenant>
 			<End_Tenant>1806-07-27</End_Tenant>
 		</Tenant>
 	</Tenants>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>90</ID_PERSON>
+			<ID_PERSON>Venetian Senate</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

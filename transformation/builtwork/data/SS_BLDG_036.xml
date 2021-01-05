@@ -12,12 +12,12 @@
 	<SHP_Area>311.056242245962</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Stone</eng>
-		</Material>
-		<Material>
 			<eng>Bricks</eng>
 			<ita>Mattone</ita>
 			<aat>300010463</aat>
+		</Material>
+		<Material>
+			<eng>Stone</eng>
 		</Material>
 	</Materials>
 	<Functions>
@@ -47,14 +47,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>18</ID_PERSON>
+			<ID_PERSON>Benedectine nuns of San Secondo</ID_PERSON>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1531-12-31</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>16</ID_PERSON>
+			<ID_PERSON>Baffo family</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

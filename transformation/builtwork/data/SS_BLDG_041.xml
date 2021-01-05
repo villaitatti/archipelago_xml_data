@@ -8,8 +8,8 @@
 	<Start>1500-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Pontile</Name>
-	<SHP_Lenght>25.25356482872013</SHP_Lenght>
-	<SHP_Area>27.153889892316517</SHP_Area>
+	<SHP_Lenght>25.2535648287201</SHP_Lenght>
+	<SHP_Area>27.1538898923165</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Wood</eng>
@@ -49,14 +49,19 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner pos="2">
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>18</ID_PERSON>
+			<ID_PERSON>Benedectine Nuns of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

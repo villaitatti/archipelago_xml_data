@@ -8,8 +8,8 @@
 	<Start>1563-01-01</Start>
 	<End>1788-12-31</End>
 	<Name>Caneva</Name>
-	<SHP_Lenght>32.57164888896509</SHP_Lenght>
-	<SHP_Area>65.44389612542085</SHP_Area>
+	<SHP_Lenght>32.5716488889651</SHP_Lenght>
+	<SHP_Area>65.44389612542079</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -35,6 +35,13 @@
 	</Uses>
 	<Typologies>
 		<Typology pos="1">
+			<eng>Warehouse</eng>
+			<ita>Magazzino</ita>
+			<aat>300007722</aat>
+			<Start_Typology>1563-01-01</Start_Typology>
+			<End_Typology>1788-12-31</End_Typology>
+		</Typology>
+		<Typology pos="2">
 			<eng>Kitchen pantry</eng>
 			<ita>Caneva</ita>
 			<aat>300004499</aat>
@@ -44,19 +51,24 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner pos="2">
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1563-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Architects>
 		<Architect>
-			<ID_PERSON>43</ID_PERSON>
+			<ID_PERSON>Giovanni da Zon</ID_PERSON>
 		</Architect>
 	</Architects>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

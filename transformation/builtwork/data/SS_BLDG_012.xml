@@ -8,8 +8,8 @@
 	<Start>1848-01-01</Start>
 	<End>1851-12-31</End>
 	<Name>Deposito</Name>
-	<SHP_Lenght>69.20826128658827</SHP_Lenght>
-	<SHP_Area>152.9685881294507</SHP_Area>
+	<SHP_Lenght>69.2082612865883</SHP_Lenght>
+	<SHP_Area>152.968588129451</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -44,14 +44,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>123</ID_PERSON>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>123</ID_PERSON>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

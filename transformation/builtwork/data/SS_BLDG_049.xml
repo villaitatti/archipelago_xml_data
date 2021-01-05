@@ -7,23 +7,28 @@
 	</IslandName>
 	<Start>1500-01-01</Start>
 	<End>1838-12-31</End>
-	<Name>Monastero</Name>
-	<SHP_Lenght>85.19401716365581</SHP_Lenght>
-	<SHP_Area>311.0562422459625</SHP_Area>
+	<Name>Professorio</Name>
+	<SHP_Lenght>85.1940171636558</SHP_Lenght>
+	<SHP_Area>311.056242245962</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Istrian marble</eng>
-			<ita>Pietra d'Istria</ita>
-			<aat>300011584</aat>
-		</Material>
 		<Material>
 			<eng>Bricks</eng>
 			<ita>Mattone</ita>
 			<aat>300010463</aat>
 		</Material>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
+		</Material>
 	</Materials>
 	<Functions>
 		<Function pos="1">
+			<Function>Private</Function>
+			<Start_Function>1500-01-01</Start_Function>
+			<End_Function>1838-12-31</End_Function>
+		</Function>
+		<Function pos="2">
 			<Function>Private</Function>
 			<Start_Function>1500-01-01</Start_Function>
 			<End_Function>1806-07-27</End_Function>
@@ -40,8 +45,8 @@
 	</Uses>
 	<Typologies>
 		<Typology pos="1">
-			<eng>Professorio</eng>
-			<Start_Typology>1534-01-01</Start_Typology>
+			<eng>Monastery ; Professorio</eng>
+			<Start_Typology>1500-01-01</Start_Typology>
 			<End_Typology>1806-07-27</End_Typology>
 		</Typology>
 		<Typology pos="2">
@@ -51,17 +56,27 @@
 			<Start_Typology>1500-01-01</Start_Typology>
 			<End_Typology>1806-07-27</End_Typology>
 		</Typology>
+		<Typology pos="3">
+			<eng>Professorio</eng>
+			<Start_Typology>1534-01-01</Start_Typology>
+			<End_Typology>1806-07-27</End_Typology>
+		</Typology>
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1500-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner pos="2">
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>16</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

@@ -5,6 +5,8 @@ import ast
 import uuid
 import urllib
 
+typology = 'people'
+
 key_usr = 'usr'
 key_psw = 'psw'
 
@@ -30,7 +32,7 @@ dir_rdf = 'rdf'
 dir_int = 'intermediate'
 
 dir_input = os.path.join(dir_path, dir_out, dir_txt)
-dir_output = os.path.join(dir_path, os.path.pardir, 'builtwork', dir_out)
+dir_output = os.path.join(dir_path, os.path.pardir, typology, dir_out)
 
 objects = [] 
 
@@ -42,7 +44,7 @@ def delete():
     for root, dirs, src_files in os.walk(dir_output):
         for filename in src_files:
 
-            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/builtwork/{filename.replace('.ttl','')}/context", safe='') 
+            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
             request_url = f'http://127.0.0.1:10214/rdf-graph-store?graph={graph_uri}'
 
             command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
@@ -55,7 +57,7 @@ def post():
     for root, dirs, src_files in os.walk(dir_output):
         for filename in src_files:
 
-            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/builtwork/{filename.replace('.ttl','')}/context", safe='') 
+            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
             request_url = f'http://127.0.0.1:10214/rdf-graph-store?graph={graph_uri}'
 
             command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'

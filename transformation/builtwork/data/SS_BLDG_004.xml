@@ -44,14 +44,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>86</ID_PERSON>
+			<ID_PERSON>Venice Municipality</ID_PERSON>
 			<Start_Owner>1866-10-21</Start_Owner>
 			<End_Owner>1981-12-31</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>123</ID_PERSON>
+			<ID_PERSON>Austrian Empire</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

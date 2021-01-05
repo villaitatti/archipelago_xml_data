@@ -12,14 +12,14 @@
 	<SHP_Area>120.296543357416</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Istrian marble</eng>
-			<ita>Pietra d'Istria</ita>
-			<aat>300011584</aat>
-		</Material>
-		<Material>
 			<eng>Bricks</eng>
 			<ita>Mattone</ita>
 			<aat>300010463</aat>
+		</Material>
+		<Material>
+			<eng>Istrian marble</eng>
+			<ita>Pietra d'Istria</ita>
+			<aat>300011584</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -40,6 +40,13 @@
 	</Uses>
 	<Typologies>
 		<Typology pos="1">
+			<eng>Portico</eng>
+			<ita>Portico</ita>
+			<aat>300004145</aat>
+			<Start_Typology>1563-01-01</Start_Typology>
+			<End_Typology>1788-12-31</End_Typology>
+		</Typology>
+		<Typology pos="2">
 			<eng>Kitchen</eng>
 			<ita>Cucina</ita>
 			<aat>300004514</aat>
@@ -49,19 +56,24 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner pos="2">
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1563-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Architects>
 		<Architect>
-			<ID_PERSON>43</ID_PERSON>
+			<ID_PERSON>Giovanni da Zon</ID_PERSON>
 		</Architect>
 	</Architects>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

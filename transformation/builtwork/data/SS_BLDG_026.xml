@@ -8,8 +8,8 @@
 	<Start>1563-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Lavatorio</Name>
-	<SHP_Lenght>40.81881790117566</SHP_Lenght>
-	<SHP_Area>94.18159414094929</SHP_Area>
+	<SHP_Lenght>40.8189587059211</SHP_Lenght>
+	<SHP_Area>94.12398132495301</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -35,28 +35,33 @@
 	</Uses>
 	<Typologies>
 		<Typology pos="1">
+			<eng>Wash house</eng>
+			<Start_Typology>1563-01-01</Start_Typology>
+			<End_Typology>1838-12-31</End_Typology>
+		</Typology>
+		<Typology pos="2">
 			<eng>Washhouse</eng>
 			<ita>Lavatorio</ita>
 			<aat>300008016</aat>
 			<Start_Typology>1563-01-01</Start_Typology>
 			<End_Typology>1838-12-31</End_Typology>
 		</Typology>
-		<Typology pos="2">
-			<eng>Wash house</eng>
-			<Start_Typology>1563-01-01</Start_Typology>
-			<End_Typology>1838-12-31</End_Typology>
-		</Typology>
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
+			<Start_Owner>1563-01-01</Start_Owner>
+			<End_Owner>1806-07-27</End_Owner>
+		</Owner>
+		<Owner pos="2">
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1563-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

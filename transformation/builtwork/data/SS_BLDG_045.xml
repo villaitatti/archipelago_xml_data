@@ -8,8 +8,8 @@
 	<Start>1770-01-01</Start>
 	<End>1838-12-31</End>
 	<Name>Rastello</Name>
-	<SHP_Lenght>34.89502592423144</SHP_Lenght>
-	<SHP_Area>11.87505220471623</SHP_Area>
+	<SHP_Lenght>34.8950259242314</SHP_Lenght>
+	<SHP_Area>11.875052204716198</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -42,14 +42,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 			<Start_Owner>1770-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>42</ID_PERSON>
+			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>
