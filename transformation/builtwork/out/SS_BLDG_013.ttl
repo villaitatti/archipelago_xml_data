@@ -47,11 +47,14 @@ aat:300115251  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "1.028813584104437" ;
+        crm:P90_has_value  "1.02881358410444" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
+        a       crm:E39_Actor .
 
 aat:300120590  a    crm:E55_Type ;
         rdfs:label  "Militare"@it , "Military"@en .
@@ -80,7 +83,7 @@ aat:300120590  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "13.13178113235264" ;
+        crm:P90_has_value  "13.1317811323526" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/construction>
@@ -90,11 +93,8 @@ aat:300120590  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/acquisition/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/123>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
@@ -131,7 +131,7 @@ aat:300010463  a    crm:E57_Material ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_013/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>

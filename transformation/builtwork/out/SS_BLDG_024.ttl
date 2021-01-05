@@ -40,9 +40,6 @@
         crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/90>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/destruction/date>
         a                        crm:E52_Time-Span ;
         crm:P82b_end_of_the_end  "1838-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -66,7 +63,7 @@ aat:300164125  a    crm:E55_Type ;
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/42>
+<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20friars%20of%20San%20Secondo>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024>
@@ -79,13 +76,16 @@ aat:300164125  a    crm:E55_Type ;
         crm:P24i_changed_ownership_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/acquisition/1> ;
         crm:P30i_custody_transferred_through
-                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1> ;
+                <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/2> ;
         crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/measurement/area> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/measurement/perimeter> ;
         crm:P45_consists_of        aat:300010463 , aat:300011584 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/measurement/perimeter>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/measurement/perimeter/dimension> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/use/1/date>
         a                            crm:E52_Time-Span ;
@@ -94,6 +94,11 @@ aat:300164125  a    crm:E55_Type ;
 
 aat:300007170  a    crm:E55_Type ;
         rdfs:label  "Foresteria"@it , "Guest house"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/2>
+        a                            crm:E10_Transfer_of_Custody ;
+        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20friars%20of%20San%20Secondo> ;
+        crm:P4_has_time-span         <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/measurement/area/dimension>
         a                  crm:E54_Dimension ;
@@ -107,12 +112,12 @@ aat:300007170  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1>
         a                            crm:E10_Transfer_of_Custody ;
-        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
         crm:P4_has_time-span         <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/transfer_custody/1/date>
@@ -130,20 +135,23 @@ aat:300007170  a    crm:E55_Type ;
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
+        a       crm:E39_Actor .
+
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Senate>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/90> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Senate> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;
         rdfs:label  "Use"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/88>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_024/function/1>
         a           crm:E5_Event ;

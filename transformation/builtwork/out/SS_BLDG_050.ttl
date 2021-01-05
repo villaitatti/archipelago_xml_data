@@ -46,7 +46,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/area/dimension>
@@ -64,6 +64,9 @@ aat:300115251  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1696-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic>
+        a       crm:E39_Actor .
+
 aat:300100558  a    crm:E55_Type ;
         rdfs:label  "Muro di cinta"@it , "Walls"@en .
 
@@ -72,12 +75,12 @@ aat:300120590  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/89> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Office%20of%20the%20Savi%20ed%20esecutori%20alle%20acque> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/transfer_custody/1>
         a                            crm:E10_Transfer_of_Custody ;
-        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo> ;
         crm:P4_has_time-span         <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/transfer_custody/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/area>
@@ -88,13 +91,13 @@ aat:300120590  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/perimeter/dimension> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/18>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/construction>
         a                     crm:E12_Production ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/construction/date> ;
         crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/role_patron/1> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/typology/1/date>
         a                            crm:E52_Time-Span ;
@@ -119,9 +122,6 @@ aat:300120590  a    crm:E55_Type ;
         crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/area> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/perimeter> ;
         crm:P45_consists_of        aat:300010463 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/89>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_050/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
@@ -144,7 +144,7 @@ aat:300010463  a    crm:E57_Material ;
         a           crm:E55_Type ;
         rdfs:label  "Use"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/88>
+<https://archipelago.itatti.harvard.edu/resource/actor/Office%20of%20the%20Savi%20ed%20esecutori%20alle%20acque>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>

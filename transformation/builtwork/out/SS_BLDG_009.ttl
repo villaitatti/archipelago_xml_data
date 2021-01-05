@@ -16,7 +16,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/use/1/date>
@@ -35,6 +35,9 @@ aat:300115251  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/use/1>
         a                     crm:E5_Event ;
@@ -64,13 +67,10 @@ aat:300115251  a    crm:E55_Type ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/construction/date> ;
         crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/role_patron/1> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/123>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "5.079292367830339" ;
+        crm:P90_has_value  "5.07929236783034" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
@@ -113,7 +113,7 @@ aat:300008618  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_009/acquisition/1/date> .
 
 aat:300052558  a    crm:E55_Type ;

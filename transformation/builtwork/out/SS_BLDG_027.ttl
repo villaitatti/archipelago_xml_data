@@ -45,15 +45,12 @@ aat:300115251  a    crm:E55_Type ;
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_027" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/42>
-        a       crm:E39_Actor .
-
 aat:300008553  a    crm:E55_Type ;
         rdfs:label  "Infrastrutture di servizio"@it , "Service"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/typology/1/date>
@@ -75,7 +72,7 @@ aat:300266240  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/construction/date>
@@ -89,6 +86,9 @@ aat:300266240  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/destruction>
         a                     crm:E6_Destruction ;
@@ -106,7 +106,7 @@ aat:300010463  a    crm:E57_Material ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "41.65525307869493" ;
+        crm:P90_has_value  "41.6552530786949" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_027/use/1>

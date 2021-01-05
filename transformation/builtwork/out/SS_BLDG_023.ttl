@@ -20,7 +20,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/destruction>
@@ -49,17 +49,14 @@ aat:300115251  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1777-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/role_patron/1>
-        a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:P14.1_in_the_role_of  aat:300115251 .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_023" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/42>
-        a       crm:E39_Actor .
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/role_patron/1>
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 aat:300008553  a    crm:E55_Type ;
         rdfs:label  "Infrastrutture di servizio"@it , "Service"@en .
@@ -103,13 +100,16 @@ aat:300008553  a    crm:E55_Type ;
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
+        a       crm:E39_Actor .
+
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "37.26239537400988" ;
+        crm:P90_has_value  "37.2623953740099" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/typology/1>
@@ -120,7 +120,7 @@ aat:300010463  a    crm:E57_Material ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_023/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "11.74369877196131" ;
+        crm:P90_has_value  "11.7436987719613" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>

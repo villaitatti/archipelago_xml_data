@@ -34,7 +34,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Baffo%20family> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/area>
@@ -52,6 +52,9 @@ aat:300005668  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Baffo%20family>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/construction>
         a                     crm:E12_Production ;
@@ -73,7 +76,7 @@ aat:300120364  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "366.6815937368831" ;
+        crm:P90_has_value  "366.68159373688303" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039>
@@ -97,9 +100,6 @@ aat:300120364  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/measurement/area/dimension> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/18>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/typology/1>
         a                     crm:E5_Event ;
         crm:P2_has_type       aat:300005668 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
@@ -108,6 +108,9 @@ aat:300120364  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/destruction/date>
         a                        crm:E52_Time-Span ;
         crm:P82b_end_of_the_end  "1517-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
@@ -129,12 +132,9 @@ aat:300010463  a    crm:E57_Material ;
         a           crm:E55_Type ;
         rdfs:label  "Use"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_039/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>

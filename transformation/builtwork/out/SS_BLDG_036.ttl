@@ -16,7 +16,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/use/1>
@@ -47,6 +47,9 @@ aat:300115251  a    crm:E55_Type ;
         crm:P90_has_value  "311.056242245962" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Baffo%20family>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
@@ -57,7 +60,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/16> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Baffo%20family> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/use/1/date>
@@ -76,7 +79,7 @@ aat:300000635  a    crm:E55_Type ;
         crm:P2_has_type       aat:300000635 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/typology/1/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/18>
+<https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20nuns%20of%20San%20Secondo>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
@@ -111,9 +114,6 @@ aat:300010463  a    crm:E57_Material ;
 <https://archipelago.itatti.harvard.edu/resource/type/use>
         a           crm:E55_Type ;
         rdfs:label  "Use"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_036/construction/date>
         a                            crm:E52_Time-Span ;

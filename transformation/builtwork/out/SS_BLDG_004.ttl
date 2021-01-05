@@ -16,7 +16,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/measurement/area>
@@ -35,15 +35,15 @@ aat:300115251  a    crm:E55_Type ;
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/86>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction>
         a                     crm:E6_Destruction ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction/date> .
 
 aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/use/1>
         a                     crm:E5_Event ;
@@ -95,9 +95,6 @@ aat:300120590  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1866-10-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1981-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/123>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
@@ -106,12 +103,15 @@ aat:300120590  a    crm:E55_Type ;
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_004" .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality>
+        a       crm:E39_Actor .
+
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/86> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_004/destruction/date>
