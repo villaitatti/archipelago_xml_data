@@ -22,7 +22,7 @@ data = dict_cur.fetchall()
 f=open('data.tsv', 'w')
 #Removed height and material because sansecondo_island_1500 doesn't have it. haven't controller others
 #BW_ID	IslandName	Date	Start	End	Name	Function	Start_Function	End_Function	Use	Start_Use	End_Use	Typology	Start_Typology	End_Typology	Material	Architect	Patron	Owner	Start_Owner	End_Owner	Tenant	Start_Tenant	End_Tenant	SHP_Lenght	SHP_Area
-cols = ['"BW_ID"','"IslandName"','"Date"','"Start"','"End"','"Name"','"Function"','"Start_Function"','"End_Function"','"Use"','"Start_Use"','"End_Use"','"Typology"','"Start_Typology"','"End_Typology"','"Material"','"Architect"','"Patron"','"Owner"','"Start_Owner"','"End_Owner"','"Tenant"','"Start_Tenant"','"End_Tenant"','"SHP_Lenght"','"SHP_Area"']
+cols = ['"BW_ID"', '"geometry"', '"IslandName"','"Date"','"Start"','"End"','"Name"','"Function"','"Start_Function"','"End_Function"','"Use"','"Start_Use"','"End_Use"','"Typology"','"Start_Typology"','"End_Typology"','"Material"','"Architect"','"Patron"','"Owner"','"Start_Owner"','"End_Owner"','"Tenant"','"Start_Tenant"','"End_Tenant"','"SHP_Lenght"','"SHP_Area"']
 
 for tab in data:
     dict_cur.copy_to(f, tab[0], sep='\t', null='', columns=cols)
