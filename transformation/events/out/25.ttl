@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,48 +10,70 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "An Augustinian monk refers of the presence of Jacopo Sansovino in the church. In the same year, Tuitian was completing the Pentecost painting that was already installed on the main altar of the church."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/21/event/25>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Artist%20involved%20in%20the%20church%27s%20decoration/event/25/role> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "25" .
+<https://archipelago.itatti.harvard.edu/resource/event/25/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25/century>
+<https://archipelago.itatti.harvard.edu/resource/event/25/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/25/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Restoration"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Architect%20involved%20in%20the%20church%27s%20restoration/event/25/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Architect involved in the church's restoration"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Artist%20involved%20in%20the%20church%27s%20decoration/event/25/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Artist involved in the church's decoration"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/23>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/25/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
+geonames:7910746  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/25>
+        a                        crm:E5_Event ;
+        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/25/synopsis> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/25/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/25/name> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/25/typology> , <https://archipelago.itatti.harvard.edu/resource/event/25/subtypology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/25/century> , <https://archipelago.itatti.harvard.edu/resource/event/25/century_fraction> ;
+        crm:P7_took_place_at     geonames:7910746 ;
+        crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/23/event/25> , <https://archipelago.itatti.harvard.edu/resource/actor/21/event/25> .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
         a           crm:E49_Time_Appellation ;
         rdfs:label  "Mid-century (40-60)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/23/event/25>
-        a       crm:PC14_carried_out_by .
+<https://archipelago.itatti.harvard.edu/resource/event/25/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "An Augustinian monk refers of the presence of Jacopo Sansovino in the church. In the same year, Tuitian was completing the Pentecost painting that was already installed on the main altar of the church."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25>
-        a                        crm:E5_Event ;
-        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/25/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/25/name> , <https://archipelago.itatti.harvard.edu/resources/event/25/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/25/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/25/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/25/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/25/century> ;
-        crm:P7_took_place_at     geonames:7910746 .
+<https://archipelago.itatti.harvard.edu/resource/actor/21>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/event/25/name>
+<https://archipelago.itatti.harvard.edu/resource/actor/23/event/25>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/23> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect%20involved%20in%20the%20church%27s%20restoration/event/25/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/25/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Sansovino is attested working in the church"@it ;
         crm:P2_has_type  "preferred_name" .
 
-geonames:7910746  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/25/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Restoration"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/25/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/25/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
+<https://archipelago.itatti.harvard.edu/resource/event/25/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "25" .

@@ -32,7 +32,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Benedictine nuns of San Secondo {Monache benedettine di San Secondo}"@it ;
+        rdfs:label       "Benedectine Nuns of San Secondo {Monache benedettine di San Secondo}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/identifier>

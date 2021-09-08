@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,38 +10,88 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/92>
+<https://archipelago.itatti.harvard.edu/resource/actor/127>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126/event/92>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/126> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/130>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Physician"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/92/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "92" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Professor at the University of Padua"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/126>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/92>
         a                          crm:E5_Event ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/92/name> , <https://archipelago.itatti.harvard.edu/resources/event/92/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/92/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/92/typology> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
-        crm:P7_took_place_at       geonames:12172719 .
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/92/name> , <https://archipelago.itatti.harvard.edu/resource/event/92/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/92/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/92/typology> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037> ;
+        crm:P7_took_place_at       geonames:12172719 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/126/event/92> , <https://archipelago.itatti.harvard.edu/resource/actor/128/event/92> , <https://archipelago.itatti.harvard.edu/resource/actor/125/event/92> , <https://archipelago.itatti.harvard.edu/resource/actor/127/event/92> , <https://archipelago.itatti.harvard.edu/resource/actor/130/event/92> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/actor/125>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/event/92/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/event/92/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Meeting"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/92/name>
+geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/127/event/92>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/127> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/125/event/92>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/125> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/92/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/130/event/92>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/130> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/92/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/128>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/92/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Doge"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/92/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Paduan doctors meet the Doge in the Sala del Maggior Consiglio for discussing about plague"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/125/event/92>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/92/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "92" .
-
-geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/92/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/128/event/92>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/128> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .

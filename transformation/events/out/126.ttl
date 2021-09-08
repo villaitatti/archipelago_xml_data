@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,63 +10,73 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126>
-        a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/126/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/126/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/126/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/126/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/126/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/126/century> , <https://archipelago.itatti.harvard.edu/resources/event/126/century_fraction> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/126/name>
+<https://archipelago.itatti.harvard.edu/resource/event/126/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The monastery is enlarged and enriched with a new cloister"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/102/event/126>
-        a       crm:PC14_carried_out_by .
+<https://archipelago.itatti.harvard.edu/resource/event/126/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/7599> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Enlargment"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0014>
         a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0014/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0014/identifier>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/126/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patrons"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/7599>
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/7599>
         a           crm:E49_Time_Appellation ;
         rdfs:label  "Last quarter of the century (75-99)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/century>
+<https://archipelago.itatti.harvard.edu/resource/actor/102>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/126/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/identifier>
+<https://archipelago.itatti.harvard.edu/resource/event/126/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "126" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/7599> .
+<https://archipelago.itatti.harvard.edu/resource/event/126/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Enlargment"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/126/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The monastery is enlarged to house 17 new canons. A new cloister on two levels with arcades and marble columns is built."@en .
+<https://archipelago.itatti.harvard.edu/resource/event/126/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0014/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
 
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/126>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/126/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/126/name> , <https://archipelago.itatti.harvard.edu/resource/event/126/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/126/typology> , <https://archipelago.itatti.harvard.edu/resource/event/126/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/126/century> , <https://archipelago.itatti.harvard.edu/resource/event/126/century_fraction> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0014> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/102/event/126> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/102/event/126>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/126/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/126/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The monastery is enlarged to house 17 new canons. A new cloister on two levels with arcades and marble columns is built."@en .

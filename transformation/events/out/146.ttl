@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,63 +10,73 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/146/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/146>
+<https://archipelago.itatti.harvard.edu/resource/event/146>
         a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/146/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/146/name> , <https://archipelago.itatti.harvard.edu/resources/event/146/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/146/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/146/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/146/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/146/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/146/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/146/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/146/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/146/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/146/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/146/century> , <https://archipelago.itatti.harvard.edu/resource/event/146/century_fraction> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/166/event/146> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
+<https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/146/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Guest"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+<https://archipelago.itatti.harvard.edu/resource/actor/166/event/146>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/166> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/146/role> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/146/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "146" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/146/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Visit of state"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "Coming from Chioggia, he stops in San Clemente but he is not received by the Doge."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/name>
+<https://archipelago.itatti.harvard.edu/resource/actor/166>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/146/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The Duke of Urbin, Francesco Maria I della Rovere, is received by Venetian noblemen in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/event/146/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/146/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "Coming from Chioggia, he stops in San Clemente but he is not received by the Doge."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/146/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "16th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
         a           crm:E49_Time_Appellation ;
         rdfs:label  "Second quarter of the century (25-49)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/166/event/146>
-        a       crm:PC14_carried_out_by .
-
 geonames:3168468  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/146/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "146" .
+<https://archipelago.itatti.harvard.edu/resource/event/146/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .

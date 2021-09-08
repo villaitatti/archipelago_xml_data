@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,56 +10,78 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
+<https://archipelago.itatti.harvard.edu/resource/actor/146>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/typology>
+<https://archipelago.itatti.harvard.edu/resource/event/123/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The prior Pietro Maffei, along with other Lateran Canons and friars from San Giorgio Maggiore, elected the new prior of San Clemente. Other canons are transferred to the island that begins to be inhabited regularly."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/102>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/New%20prior%20of%20the%20island/event/123/role>
         a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+        rdfs:label  "New prior of the island"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/name>
+<https://archipelago.itatti.harvard.edu/resource/actor/102/event/123>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20inhabitants/event/123/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/123>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/123/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/123/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/123/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/123/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/123/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/123/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/123/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/146/event/123> , <https://archipelago.itatti.harvard.edu/resource/actor/102/event/123> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/146/event/123>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/146> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20prior%20of%20the%20island/event/123/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/123/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Antonio de Lusciano from Milan is the new prior of the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/identifier>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/123/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/123/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "123" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/actor/New%20inhabitants/event/123/role>
+        a           crm:E55_Type ;
+        rdfs:label  "New inhabitants"@en .
+
+geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/123/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Election"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/century_fraction>
+<https://archipelago.itatti.harvard.edu/resource/event/123/century_fraction>
         a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/123/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The prior Pietro Maffei, along with other Lateran Canons and friars from San Giorgio Maggiore, elected the new prior of San Clemente. Other canons are transferred to the island that begins to be inhabited regularly."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/146/event/123>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/event/123>
-        a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/123/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/123/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/123/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/123/typology> , <https://archipelago.itatti.harvard.edu/resources/event/123/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/123/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/123/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/123/century>
+<https://archipelago.itatti.harvard.edu/resource/event/123/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
-geonames:3168468  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .

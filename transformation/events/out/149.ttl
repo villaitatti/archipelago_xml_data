@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,55 +10,77 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/124/event/149>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/event/149/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/149>
+<https://archipelago.itatti.harvard.edu/resource/event/149>
         a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/149/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/149/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/149/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/149/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/149/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/149/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/149/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/149/name> , <https://archipelago.itatti.harvard.edu/resource/event/149/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/149/typology> , <https://archipelago.itatti.harvard.edu/resource/event/149/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/149/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/124/event/149> , <https://archipelago.itatti.harvard.edu/resource/actor/172/event/149> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/149/century>
+<https://archipelago.itatti.harvard.edu/resource/event/149/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "149" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/149/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/149/synopsis>
+<https://archipelago.itatti.harvard.edu/resource/actor/Recovered%20person/event/149/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Recovered person"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/172>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/149/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Provveditori alla Sanità led only the captain and some other patroni being housed in San Clemente. The rest of the fleet is sent to the Lazzaretto Nuovo for the quarantine."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resources/event/149/name>
+<https://archipelago.itatti.harvard.edu/resource/actor/124>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/149/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/149/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Temporary housing"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/149/name>
         a                crm:E41_Appellation ;
         rdfs:label       "The island is used as lazzaretto for captain Alessandro Pesaro and some other infected colleagues"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/149/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "149" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/149/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/event/149/typology>
         a           crm:E55_Type ;
-        rdfs:label  "Temporary housing"@en .
+        rdfs:label  "Social"@en .
 
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/172/event/149>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/172> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recovered%20person/event/149/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/124/event/149>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/124> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/149/role> .

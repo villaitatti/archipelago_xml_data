@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
+  <ERRORCODE>0</ERRORCODE>
+  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4" />
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MVA_25.03.2020.fmp12" RECORDS="57" TIMEFORMAT="k:mm:ss " />
+  <METADATA>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="BUILTWORK_ID" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="End" TYPE="TEXT" />
+    <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="ID_PLACE" TYPE="NUMBER" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="IslandName" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Name" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Start" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TBL_EVENTS_X_PEOPLE::Role" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TBL_PEOPLE::Name_Surname_Person" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TBL_SOURCES::Archival reference" TYPE="TEXT" />
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TBL_SOURCES::Year_Earliest" TYPE="NUMBER" />
+  </METADATA>
+  <RESULTSET FOUND="57">
+    <ROW MODID="26" RECORDID="4">
+      <COL>
+        <DATA>SS_BLDG_038</DATA>
+      </COL>
+      <COL>
+        <DATA>1562-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Sacristy {Sacrestia}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="27" RECORDID="5">
+      <COL>
+        <DATA>SS_BLDG_040</DATA>
+      </COL>
+      <COL>
+        <DATA>1562-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>3</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Refectory {Refettorio}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="27" RECORDID="6">
+      <COL>
+        <DATA>SS_BLDG_024</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>4</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Guest house {Foresteria}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="20" RECORDID="9">
+      <COL>
+        <DATA>SS_BLDG_039</DATA>
+      </COL>
+      <COL>
+        <DATA>1517-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>7</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dormitory {Dormitorio}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="24" RECORDID="10">
+      <COL>
+        <DATA>SS_BLDG_041</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>8</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dock {Pontile}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="23" RECORDID="11">
+      <COL>
+        <DATA>SS_BLDG_050</DATA>
+      </COL>
+      <COL>
+        <DATA>1696-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>9</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Walls {Muro di cinta}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="36" RECORDID="18">
+      <COL>
+        <DATA>SS_BLDG_037</DATA>
+      </COL>
+      <COL>
+        <DATA>1562-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>16</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Loggia {Loggia}</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="6" RECORDID="25">
+      <COL>
+        <DATA>SS_BLDG_003</DATA>
+      </COL>
+      <COL>
+        <DATA>2019-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>33</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Military battery</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="26">
+      <COL>
+        <DATA>SS_BLDG_004</DATA>
+      </COL>
+      <COL>
+        <DATA>1981-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>50</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="27">
+      <COL>
+        <DATA>SS_BLDG_005</DATA>
+      </COL>
+      <COL>
+        <DATA>1981-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>51</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="28">
+      <COL>
+        <DATA>SS_BLDG_006</DATA>
+      </COL>
+      <COL>
+        <DATA>1981-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>52</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="29">
+      <COL>
+        <DATA>SS_BLDG_007</DATA>
+      </COL>
+      <COL>
+        <DATA>1981-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>53</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="16" RECORDID="30">
+      <COL>
+        <DATA>SS_BLDG_008</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>54</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Wellhead {Vera da pozzo}</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="17" RECORDID="31">
+      <COL>
+        <DATA>SS_BLDG_009</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>55</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Wellhead</DATA>
+      </COL>
+      <COL>
+        <DATA>1848-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="17" RECORDID="32">
+      <COL>
+        <DATA>SS_BLDG_010</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>56</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1848-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="17" RECORDID="33">
+      <COL>
+        <DATA>SS_BLDG_011</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>57</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1848-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="18" RECORDID="34">
+      <COL>
+        <DATA>SS_BLDG_012</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>58</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1848-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="18" RECORDID="35">
+      <COL>
+        <DATA>SS_BLDG_013</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>59</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1848-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="36">
+      <COL>
+        <DATA>SS_BLDG_042</DATA>
+      </COL>
+      <COL>
+        <DATA>1851-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>60</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Walls of San Secondo (1839-1851)</DATA>
+      </COL>
+      <COL>
+        <DATA>1839-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="26" RECORDID="37">
+      <COL>
+        <DATA>SS_BLDG_015</DATA>
+      </COL>
+      <COL>
+        <DATA>1849-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>61</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Military battery</DATA>
+      </COL>
+      <COL>
+        <DATA>1806-07-28</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="31" RECORDID="38">
+      <COL>
+        <DATA>SS_BLDG_016</DATA>
+      </COL>
+      <COL>
+        <DATA>1849-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>62</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Warehouse</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="39">
+      <COL>
+        <DATA>SS_BLDG_043</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>63</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Walls of San Secondo (1770-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1770-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="30" RECORDID="40">
+      <COL>
+        <DATA>SS_BLDG_018</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>64</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Sacristy of San Secondo (1672-1820)</DATA>
+      </COL>
+      <COL>
+        <DATA>1672-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="41">
+      <COL>
+        <DATA>SS_BLDG_022</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>65</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Wellhead</DATA>
+      </COL>
+      <COL>
+        <DATA>1777-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="42">
+      <COL>
+        <DATA>SS_BLDG_023</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>66</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Fence</DATA>
+      </COL>
+      <COL>
+        <DATA>1777-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="43">
+      <COL>
+        <DATA>SS_BLDG_025</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>67</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Bell tower of San Secondo (1734-1820)</DATA>
+      </COL>
+      <COL>
+        <DATA>1734-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="44">
+      <COL>
+        <DATA>SS_BLDG_026</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>68</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Wash house</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="45">
+      <COL>
+        <DATA>SS_BLDG_027</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>69</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Woodshed</DATA>
+      </COL>
+      <COL>
+        <DATA>1777-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="46">
+      <COL>
+        <DATA>SS_BLDG_028</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>70</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dock of San Secondo (1563-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="47">
+      <COL>
+        <DATA>SS_BLDG_029</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>71</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dock of San Secondo (1777-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1777-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="48">
+      <COL>
+        <DATA>SS_BLDG_045</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>72</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Fence</DATA>
+      </COL>
+      <COL>
+        <DATA>1770-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="23" RECORDID="49">
+      <COL>
+        <DATA>SS_BLDG_046</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>73</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dock of San Secondo (1500-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="23" RECORDID="50">
+      <COL>
+        <DATA>SS_BLDG_047</DATA>
+      </COL>
+      <COL>
+        <DATA>1769-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>74</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Walls of San Secondo (1697-1769)</DATA>
+      </COL>
+      <COL>
+        <DATA>1697-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="25" RECORDID="51">
+      <COL>
+        <DATA>SS_BLDG_048</DATA>
+      </COL>
+      <COL>
+        <DATA>1788-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>75</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Storage facility</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="52">
+      <COL>
+        <DATA>SS_BLDG_036</DATA>
+      </COL>
+      <COL>
+        <DATA>1562-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>76</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Monastery of San Secondo (1500-1562)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="53">
+      <COL>
+        <DATA>SS_BLDG_030</DATA>
+      </COL>
+      <COL>
+        <DATA>1788-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>77</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Kitchen pantry</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="55">
+      <COL>
+        <DATA>SS_BLDG_033</DATA>
+      </COL>
+      <COL>
+        <DATA>1788-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>79</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Kitchen</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="56">
+      <COL>
+        <DATA>SS_BLDG_034</DATA>
+      </COL>
+      <COL>
+        <DATA>1716-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>80</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Woodshed (1563-1716)</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="57">
+      <COL>
+        <DATA>SS_OS_002</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>81</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Garden {Giardino}</DATA>
+      </COL>
+      <COL>
+        <DATA>1718-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="58">
+      <COL>
+        <DATA>SS_OS_006</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>82</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Porch {Portico}</DATA>
+      </COL>
+      <COL>
+        <DATA>1607-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="59">
+      <COL>
+        <DATA>SS_OS_001</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>83</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Campo {Campo}</DATA>
+      </COL>
+      <COL>
+        <DATA>1718-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="60">
+      <COL>
+        <DATA>SS_OS_003</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>84</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Vegetable garden {Orto}</DATA>
+      </COL>
+      <COL>
+        <DATA>1734-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="61">
+      <COL>
+        <DATA>SS_OS_005</DATA>
+      </COL>
+      <COL>
+        <DATA>1806-07-28</DATA>
+      </COL>
+      <COL>
+        <DATA>85</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Vegetable garden and orchard {Orto e frutteto}</DATA>
+      </COL>
+      <COL>
+        <DATA>1718-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="62">
+      <COL>
+        <DATA>SS_OS_004</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>86</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Courtyard {Cortile}</DATA>
+      </COL>
+      <COL>
+        <DATA>1718-01-01</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="48" RECORDID="3">
+      <COL>
+        <DATA>SS_BLDG_035</DATA>
+      </COL>
+      <COL>
+        <DATA>1607-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Benedectine church of San Secondo (1500-1607)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Founder {Fondatore}</DATA>
+        <DATA>Beneficiary {Beneficiarie}</DATA>
+        <DATA>Donor {Finanziatore}</DATA>
+        <DATA>Painter whose altarpiece did not get damaged {Autore della pala d&apos;altare non danneggiata}</DATA>
+        <DATA>Donor {Finanziatore}</DATA>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Beneficiary {Beneficiarie}</DATA>
+        <DATA>Donor {Finanziatore}</DATA>
+        <DATA>Donor {Finanziatore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Baffo family {Famiglia Baffo}</DATA>
+        <DATA>Benedictine nuns of San Secondo {Monache benedettine di San Secondo}</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Gerardino da Villanova</DATA>
+        <DATA>Giovanni Buonconsiglio, Marescalco</DATA>
+        <DATA>Giovanni Trevisan</DATA>
+        <DATA>Matteo Priuli</DATA>
+        <DATA>Benedictine nuns of Corpus Domini</DATA>
+      </COL>
+      <COL>
+        <DATA>BMCVe, ms. 3625</DATA>
+        <DATA>BMCVe, ms. Cicogna 2833</DATA>
+      </COL>
+      <COL>
+        <DATA></DATA>
+        <DATA></DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="24" RECORDID="12">
+      <COL>
+        <DATA>SS_BLDG_032</DATA>
+      </COL>
+      <COL>
+        <DATA>1733-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>10</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Bell tower of San Secondo (1500-1733)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Donor {Finanziatore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Pietro Bon</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="35" RECORDID="13">
+      <COL>
+        <DATA>SS_IS_007</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>11</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Island of San Secondo (1500-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Founder {Fondatore}</DATA>
+        <DATA>Donor {Donatore}</DATA>
+        <DATA>Beneficiary {Beneficiarie}</DATA>
+        <DATA>Chronicler {Cronista}</DATA>
+        <DATA>Removed order {Ordine allontanato}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>New vicar of San Secondo {Nuovo vicario di San Secondo}</DATA>
+        <DATA>Order&apos;s reformer {Riformatore dell&apos;ordine}</DATA>
+        <DATA>Reformed order {Ordine riformato}</DATA>
+        <DATA>Suppressed order {Ordine soppresso}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>Beneficiary {Beneficiarie}</DATA>
+        <DATA>Transferred order {Ordine trasferito}</DATA>
+        <DATA>New prior of San Secondo {Nuovo priore di San Secondo}</DATA>
+        <DATA>Transferred order {Ordine trasferito}</DATA>
+        <DATA>Beneficiary {Beneficiari}</DATA>
+        <DATA>Wittness {Testimone}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>Suppressed order {Ordine soppresso}</DATA>
+        <DATA>Transferred order {Ordine trasferito}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>New inhabitants {Nuovi abitanti}</DATA>
+      </COL>
+      <COL>
+        <DATA>Marina Celsi</DATA>
+        <DATA>Antonio Contarini</DATA>
+        <DATA>Benedictine nuns of San Secondo {Monache benedettine di San Secondo}</DATA>
+        <DATA>Napoléon Bonaparte, Napoleon</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Vitale Falier</DATA>
+        <DATA>Angelo Bragadin</DATA>
+        <DATA>Zaccaria da Luni</DATA>
+        <DATA>Carlo Ruzzini</DATA>
+        <DATA>Enrico Dandolo</DATA>
+        <DATA>Pietro Gattilesso, Raubato</DATA>
+        <DATA>Milizia da Mar</DATA>
+        <DATA>Venetian Republic {Repubblica di Venezia}</DATA>
+        <DATA>Council of Ten {Consiglio dei Dieci}</DATA>
+        <DATA>Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}</DATA>
+        <DATA>Giulio Zanobi Medici, Pope Clement VII {Papa Clemente VII}</DATA>
+      </COL>
+      <COL>
+        <DATA>BMCVe, ms. Cicogna 2833</DATA>
+        <DATA>ASVe, San Secondo, b. 2, c. 28r</DATA>
+        <DATA>ASVe, San Secondo, b. 2 </DATA>
+      </COL>
+      <COL>
+        <DATA></DATA>
+        <DATA>1732</DATA>
+        <DATA>1535</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="30" RECORDID="15">
+      <COL>
+        <DATA>SS_BLDG_001</DATA>
+      </COL>
+      <COL>
+        <DATA>2019-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>13</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Powderhouse of San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>1570-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patron {Committente}</DATA>
+        <DATA>Petitioners {Richiedenti}</DATA>
+        <DATA>Owner {Proprietario}</DATA>
+        <DATA>Tenant {Affittuario}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Venetian Republic {Repubblica di Venezia}</DATA>
+        <DATA>Venetian Senate {Senato veneziano}</DATA>
+      </COL>
+      <COL>
+        <DATA>ASVe, San Secondo, b. 2 </DATA>
+      </COL>
+      <COL>
+        <DATA>1535</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="33" RECORDID="17">
+      <COL>
+        <DATA>SS_BLDG_049</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>15</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Monastery of San Secondo (1500-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1563-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Founder {Fondatore}</DATA>
+        <DATA>Beneficiary {Beneficiarie}</DATA>
+        <DATA>Architect {Architetto}</DATA>
+        <DATA>Reformed order {Ordine riformato}</DATA>
+        <DATA>Patrons {Committente}</DATA>
+        <DATA>Founders {Fondatori}</DATA>
+        <DATA>Hosts {Ospitanti}</DATA>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Chronicler {Cronista}</DATA>
+      </COL>
+      <COL>
+        <DATA>Baffo family {Famiglia Baffo}</DATA>
+        <DATA>Benedictine nuns of San Secondo {Monache benedettine di San Secondo}</DATA>
+        <DATA>Domenico Codagli</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Giovanni da Zon</DATA>
+      </COL>
+      <COL>
+        <DATA>BMCVe, ms. 3625</DATA>
+        <DATA>BMCVe, ms. Cicogna 2833</DATA>
+      </COL>
+      <COL>
+        <DATA></DATA>
+        <DATA></DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="54">
+      <COL>
+        <DATA>SS_BLDG_031</DATA>
+      </COL>
+      <COL>
+        <DATA>1776-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>78</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dormitory of San Secondo (1518-1776)</DATA>
+      </COL>
+      <COL>
+        <DATA>1518-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+      </COL>
+      <COL>
+        <DATA>Benedictine nuns of San Secondo {Monache benedettine di San Secondo}</DATA>
+      </COL>
+      <COL>
+        <DATA>ASVe, San Secondo, b. 4</DATA>
+      </COL>
+      <COL>
+        <DATA>1518</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="22" RECORDID="7">
+      <COL>
+        <DATA>SS_BLDG_014</DATA>
+      </COL>
+      <COL>
+        <DATA>1849-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>5</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Cavana of San Secondo (1500-1849)</DATA>
+      </COL>
+      <COL>
+        <DATA>1500-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Venetian Senate {Senato veneziano}</DATA>
+      </COL>
+      <COL>
+        <DATA>ASVe, San Secondo, b. 5</DATA>
+      </COL>
+      <COL>
+        <DATA>1672</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="28" RECORDID="14">
+      <COL>
+        <DATA>SS_BLDG_017</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>12</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican church of San Secondo (1608-1820)</DATA>
+      </COL>
+      <COL>
+        <DATA>1608-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Construction worker {Muratore}</DATA>
+        <DATA>Architect {Architetto}</DATA>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Surveyor {Rilevatore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Angelo Gavan</DATA>
+        <DATA>Daniele Danieli</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Baldassare Longhena</DATA>
+      </COL>
+      <COL>
+        <DATA>ASVe, San Secondo, b. 1, dis. 10</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 11</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 26</DATA>
+        <DATA>ASVe, San Secondo, b. 5</DATA>
+      </COL>
+      <COL>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1672</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="40" RECORDID="22">
+      <COL>
+        <DATA>SS_BLDG_019</DATA>
+      </COL>
+      <COL>
+        <DATA>1820-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>20</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Loggia of San Secondo (1607-1820)</DATA>
+      </COL>
+      <COL>
+        <DATA>1607-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Designer {Progettista}</DATA>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Surveyor {Rilevatore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Daniele Danieli</DATA>
+        <DATA>Alessandro Malerba</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+      </COL>
+      <COL>
+        <DATA>ASVe, San Secondo, b. 1, dis. 10</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 11</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 26</DATA>
+      </COL>
+      <COL>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="6" RECORDID="19">
+      <COL>
+        <DATA>SS_BLDG_020</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>17</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Refectory of San Secondo (1738-1838)</DATA>
+      </COL>
+      <COL>
+        <DATA>1738-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+    <ROW MODID="4" RECORDID="20">
+      <COL>
+        <DATA>SS_BLDG_021</DATA>
+      </COL>
+      <COL>
+        <DATA>1838-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>18</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Private cavana of San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>1777-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Architect {Architetto}</DATA>
+        <DATA>Architect {Architetto}</DATA>
+        <DATA>Designer {Progettista}</DATA>
+      </COL>
+      <COL>
+        <DATA>Daniele Danieli</DATA>
+        <DATA>Tommaso Temanza</DATA>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+      </COL>
+      <COL>
+        <DATA>ISCAG, Disegni, X A 630</DATA>
+        <DATA>BNM</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 21</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 22</DATA>
+        <DATA>BSPVe, ms. 981.3</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 23</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 33</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 38</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 39</DATA>
+        <DATA>ASVe, San Secondo, b. 1, dis. 40</DATA>
+      </COL>
+      <COL>
+        <DATA>1801</DATA>
+        <DATA>1779</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1753</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+        <DATA>1694</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="21">
+      <COL>
+        <DATA>SS_IS_003</DATA>
+      </COL>
+      <COL>
+        <DATA>1981-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>19</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Island of San Secondo (1852-1981)</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+        <DATA>Owner {Proprietario}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+        <DATA>Decision maker {Decisore}</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+        <DATA>Municipality of Venice {Comune di Venezia}</DATA>
+        <DATA>Kingdom of Lombardy–Venetia</DATA>
+      </COL>
+      <COL>
+        <DATA>MPAW</DATA>
+      </COL>
+      <COL>
+        <DATA>1852</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="27" RECORDID="24">
+      <COL>
+        <DATA>SS_BLDG_002</DATA>
+      </COL>
+      <COL>
+        <DATA>2019-12-31</DATA>
+      </COL>
+      <COL>
+        <DATA>22</DATA>
+      </COL>
+      <COL>
+        <DATA>San Secondo</DATA>
+      </COL>
+      <COL>
+        <DATA>Walls of San Secondo (1852-2019)</DATA>
+      </COL>
+      <COL>
+        <DATA>1852-01-01</DATA>
+      </COL>
+      <COL>
+        <DATA>Patrons {Committenti}</DATA>
+      </COL>
+      <COL>
+        <DATA>Dominican friars of San Secondo {Frati domenicani di San Secondo}</DATA>
+      </COL>
+      <COL></COL>
+      <COL></COL>
+    </ROW>
+  </RESULTSET>
+</FMPXMLRESULT>

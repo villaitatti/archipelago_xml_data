@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,40 +10,40 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/84/name>
+<https://archipelago.itatti.harvard.edu/resource/event/84/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Third quarter of the century (50-74)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/84/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Veneto is annexed to Italy"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/84>
+<https://archipelago.itatti.harvard.edu/resource/event/84>
         a                        crm:E5_Event ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/84/name> , <https://archipelago.itatti.harvard.edu/resources/event/84/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/84/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/84/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/84/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/84/century> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/84/name> , <https://archipelago.itatti.harvard.edu/resource/event/84/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/84/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/84/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/84/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/84/century> ;
         crm:P7_took_place_at     geonames:12172719 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/84/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Regime change"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/84/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/84/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/84/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/84/identifier>
+<https://archipelago.itatti.harvard.edu/resource/event/84/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "84" .
 
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/84/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Regime change"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/84/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
 
 geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/84/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .

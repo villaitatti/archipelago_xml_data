@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,35 +10,40 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/24/century>
+<https://archipelago.itatti.harvard.edu/resource/event/24/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "16th cent."@en .
 
-geonames:7910746  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/actor/24>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/24/event/24>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/event/24/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/event/24/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/24/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/24>
+<https://archipelago.itatti.harvard.edu/resource/event/24>
         a                        crm:E5_Event ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/24/name> , <https://archipelago.itatti.harvard.edu/resources/event/24/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/24/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/24/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/24/century> ;
-        crm:P7_took_place_at     geonames:7910746 .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/24/name> , <https://archipelago.itatti.harvard.edu/resource/event/24/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/24/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/24/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/24/century> ;
+        crm:P7_took_place_at     geonames:7910746 ;
+        crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/24/event/24> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/24/name>
+<https://archipelago.itatti.harvard.edu/resource/event/24/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "24" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/24/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Consecration of two altars"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/24/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "24" .
+<https://archipelago.itatti.harvard.edu/resource/actor/24/event/24>
+        a                    crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/24> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/24/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+geonames:7910746  a  crm:E53_Place .

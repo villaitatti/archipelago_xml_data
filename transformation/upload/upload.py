@@ -5,7 +5,7 @@ import ast
 import uuid
 import urllib
 
-typology = 'people'
+typology = 'events'
 
 key_usr = 'usr'
 key_psw = 'psw'
@@ -34,40 +34,20 @@ dir_int = 'intermediate'
 dir_input = os.path.join(dir_path, dir_out, dir_txt)
 dir_output = os.path.join(dir_path, os.path.pardir, typology, dir_out)
 
-objects = [] 
+auth = json.load(open(os.path.join(dir_path, '.config'),'r'))
+for root, dirs, src_files in os.walk(dir_output):
+  for filename in src_files:
 
-def get_auth():
-    return json.load(open(os.path.join(dir_path, '.config'),'r'))
+    graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
+    request_url = f'https://archipelago.itatti.harvard.edu/rdf-graph-store?graph={graph_uri}'
 
-def delete():
-    auth = get_auth()
-    for root, dirs, src_files in os.walk(dir_output):
-        for filename in src_files:
+    print(f'### {filename} ###')
+    #DEL
+    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
+    print(f'DEL\t\t{os.system(command)}')
 
-            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
-            request_url = f'http://127.0.0.1:10214/rdf-graph-store?graph={graph_uri}'
+    #POST
+    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'
+    print(f'POST\t\t{os.system(command)}')
 
-            command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
-
-            print(f'DEL\t{filename}')
-            print(os.system(command))
-
-def post():
-    auth = get_auth()
-    for root, dirs, src_files in os.walk(dir_output):
-        for filename in src_files:
-
-            graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
-            request_url = f'http://127.0.0.1:10214/rdf-graph-store?graph={graph_uri}'
-
-            command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'
-
-            print(f'POST\t{filename}')
-            print(os.system(command))
-
-
-objects = [] 
-
-delete()
-
-post()
+    print('\n')

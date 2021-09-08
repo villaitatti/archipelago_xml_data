@@ -6,6 +6,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 def base_path(name):
     return os.path.join(dir_path, name)
 
+# python script.py [table names]
 # Table is a CLI param
 table_folder = base_path(sys.argv[-1])
 

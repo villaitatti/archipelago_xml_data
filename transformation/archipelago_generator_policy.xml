@@ -379,6 +379,11 @@
 		<pattern>{geonames_id}</pattern>
 	</generator>
 
+  <!-- Place BW -->
+	<generator name="610-place" prefix="arc">
+		<pattern>built_work/{bw_id}</pattern>
+	</generator>
+
 	<!-- Time appellation -->
 	<generator name="700-time_appellation" prefix="arc">
 		<pattern>time_appellation/{t_id}</pattern>

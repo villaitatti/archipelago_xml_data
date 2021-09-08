@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,51 +10,62 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "39" .
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/century>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/39/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "17th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/name>
+<https://archipelago.itatti.harvard.edu/resource/event/39/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/39/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Consecration of the new church"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "After the massive restoration campaign started in 1563, the new church of San Secondo is consecrated."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/39/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patrons"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/42/event/39>
-        a       crm:PC14_carried_out_by .
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39>
-        a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/39/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/39/name> , <https://archipelago.itatti.harvard.edu/resources/event/39/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/39/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/39/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/39/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015> ;
-        crm:P7_took_place_at       geonames:3230839 .
+<https://archipelago.itatti.harvard.edu/resource/actor/42/event/39>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/39/role> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/event/39/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
 
-geonames:12  a                   crm:E42_Identifier , crm:E53_Place ;
-        crm:P1_is_identified_by  geonames:12 .
+<https://archipelago.itatti.harvard.edu/resource/event/39>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/39/synopsis> ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_017> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/39/name> , <https://archipelago.itatti.harvard.edu/resource/event/39/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/39/typology> , <https://archipelago.itatti.harvard.edu/resource/event/39/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/39/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> ;
+        crm:P7_took_place_at       geonames:3230839 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/39> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_017>
+        a       crm:E22_Man-Made_Object .
 
-<https://archipelago.itatti.harvard.edu/resources/event/39/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/39/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "39" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0015/identifier> .
+<https://archipelago.itatti.harvard.edu/resource/event/39/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "After the massive restoration campaign started in 1563, the new church of San Secondo is consecrated."@en .
 
 geonames:3230839  a  crm:E53_Place .

@@ -20,7 +20,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/86/surname>
         a                crm:E41_Appellation ;
-        rdfs:label       "Municipality of Venice {Comune di Venezia}"@it ;
+        rdfs:label       "Venice Municipality {Comune di Venezia}"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/surname>

@@ -22,6 +22,7 @@
         crm:P30i_custody_transferred_through
                 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/transfer_custody/2> ;
         crm:P39i_was_measured_by   <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/measurement/area> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/measurement/perimeter> ;
+        crm:P71i_is_listed_in <http://www.researchspace.org/resource/vocab/san_secondo>;
         crm:P45_consists_of        aat:300011584 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001/measurement/perimeter>

@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,59 +10,70 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/86>
-        a                          crm:E5_Event ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/86/name> , <https://archipelago.itatti.harvard.edu/resources/event/86/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/86/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/86/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/86/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/86/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/source/77> ;
-        crm:P7_took_place_at       geonames:3230839 .
-
-<https://archipelago.itatti.harvard.edu/resources/source/77/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Addition"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/source/77/event>
+<https://archipelago.itatti.harvard.edu/resource/event/86/source/77/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Reshape of the island into an octagon"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Mid-century (40-60)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
-
-<https://archipelago.itatti.harvard.edu/resources/source/77>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/source/77/identifier> ;
-        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resources/event/86/source/77/event> .
-
-geonames:19  a                   crm:E42_Identifier , crm:E53_Place ;
-        crm:P1_is_identified_by  geonames:19 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "86" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Urban"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/86/name>
+<https://archipelago.itatti.harvard.edu/resource/event/86/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Reshape of the island into an octagon"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/actor/123/event/86>
-        a       crm:PC14_carried_out_by .
+<https://archipelago.itatti.harvard.edu/resource/source/77>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/source/77/identifier> ;
+        crm:P70_documents        <https://archipelago.itatti.harvard.edu/resource/event/86/source/77/event> .
+
+<https://archipelago.itatti.harvard.edu/resource/source/77/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/123/event/86>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/86/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Urban"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86>
+        a                          crm:E5_Event ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/19> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/86/name> , <https://archipelago.itatti.harvard.edu/resource/event/86/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/86/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/86/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/86/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/86/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/77> ;
+        crm:P7_took_place_at       geonames:3230839 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/123/event/86> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/19>
+        a       crm:E22_Man-Made_Object .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "86" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/86/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Addition"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/123>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/86/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .
 
 geonames:3230839  a  crm:E53_Place .

@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,53 +10,53 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Enlargment"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/4060>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Mid-century (40-60)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Architectural"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138>
-        a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resources/event/138/synopsis> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/138/identifier> , <https://archipelago.itatti.harvard.edu/resources/event/138/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/138/typology> , <https://archipelago.itatti.harvard.edu/resources/event/138/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/138/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/138/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018> ;
-        crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The island is expanded through land reclamation. A new garden and vegetable garden are added."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0018/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/4060> .
-
-geonames:3168468  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/138/identifier>
+<https://archipelago.itatti.harvard.edu/resource/event/138/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "138" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/138/name>
+<https://archipelago.itatti.harvard.edu/resource/event/138/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Enlargment"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/138/synopsis> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/138/name> , <https://archipelago.itatti.harvard.edu/resource/event/138/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/138/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/138/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/138/century> , <https://archipelago.itatti.harvard.edu/resource/event/138/century_fraction> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
+        crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Mid-century (40-60)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The island is expanded through land reclamation. A new garden and vegetable garden are added."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/138/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Island's elargement"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/138/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
+geonames:3168468  a  crm:E53_Place .

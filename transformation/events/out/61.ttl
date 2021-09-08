@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,43 +10,48 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/61/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "61" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/61/century>
+<https://archipelago.itatti.harvard.edu/resource/event/61/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/61/typology>
+<https://archipelago.itatti.harvard.edu/resource/event/61/subtypology>
         a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
+        rdfs:label  "Religious order's transfer"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/61>
+        a                        crm:E5_Event ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/61/name> , <https://archipelago.itatti.harvard.edu/resource/event/61/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/61/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/61/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/61/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/61/century> ;
+        crm:P7_took_place_at     geonames:7910746 ;
+        crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/85/event/61> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/85/event/61>
+        a                    crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/85> .
 
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resources/event/61/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/2549> .
-
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/85/event/61>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/event/61/name>
+<https://archipelago.itatti.harvard.edu/resource/event/61/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Settlement of the eremitani from Santa Giustina in Padua"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/61>
-        a                        crm:E5_Event ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/61/name> , <https://archipelago.itatti.harvard.edu/resources/event/61/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/61/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/61/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/61/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/61/century> ;
-        crm:P7_took_place_at     geonames:7910746 .
+<https://archipelago.itatti.harvard.edu/resource/actor/85>
+        a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resources/event/61/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "Second quarter of the century (25-49)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/61/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "61" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/61/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/61/typology>
         a           crm:E55_Type ;
-        rdfs:label  "Religious order's transfer"@en .
+        rdfs:label  "Social"@en .

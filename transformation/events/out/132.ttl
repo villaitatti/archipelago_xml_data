@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,48 +10,58 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "132" .
+<https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20owner/event/132/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Island's owner"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132/synopsis>
+<https://archipelago.itatti.harvard.edu/resource/event/132/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Fondo territoriale was the owner of the island."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/132/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Economic"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/132/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/5074> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/132/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Project management"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/actor/155/event/132>
-        a       crm:PC14_carried_out_by .
-
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/5074>
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
         a           crm:E49_Time_Appellation ;
         rdfs:label  "Third quarter of the century (50-74)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132/name>
+<https://archipelago.itatti.harvard.edu/resource/actor/155>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/event/132/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "132" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/132/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/155/event/132>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/155> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20owner/event/132/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/132/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Public contract between the Fondo territoriale and the company Alverà Varetton"@it ;
         crm:P2_has_type  "preferred_name" .
 
-geonames:3168468  a  crm:E53_Place .
+<https://archipelago.itatti.harvard.edu/resource/event/132/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Economic"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/132>
+<https://archipelago.itatti.harvard.edu/resource/event/132/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Project management"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/132>
         a                        crm:E5_Event ;
-        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resources/event/132/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/event/132/name> , <https://archipelago.itatti.harvard.edu/resources/event/132/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resources/event/132/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/132/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resources/event/132/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/132/century> ;
-        crm:P7_took_place_at     geonames:3168468 .
+        crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/132/synopsis> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/132/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/132/name> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/132/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/132/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/132/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/132/century> ;
+        crm:P7_took_place_at     geonames:3168468 ;
+        crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/132/century>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "19th cent."@en .
+
+geonames:3168468  a  crm:E53_Place .

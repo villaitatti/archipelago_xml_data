@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,48 +10,48 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/99/century>
+<https://archipelago.itatti.harvard.edu/resource/event/99/century_fraction>
+        a                        crm:E52_Time-Span ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/99/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "20th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/99/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Transfer (goods or people)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resources/event/99/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "99" .
-
-<https://archipelago.itatti.harvard.edu/resources/event/99/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resources/event/99/name>
+<https://archipelago.itatti.harvard.edu/resource/event/99/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Hospitalized patients are dismissed"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/event/99/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/99/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/time_appellation/9099> .
+<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
+        a           crm:E49_Time_Appellation ;
+        rdfs:label  "End of the century (90-99)"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/99>
+<https://archipelago.itatti.harvard.edu/resource/event/99>
         a                          crm:E5_Event ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/99/name> , <https://archipelago.itatti.harvard.edu/resources/event/99/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/99/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/99/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/99/century_fraction> , <https://archipelago.itatti.harvard.edu/resources/event/99/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0022> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/99/name> , <https://archipelago.itatti.harvard.edu/resource/event/99/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/99/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/99/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/99/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/99/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
 
+<https://archipelago.itatti.harvard.edu/resource/event/99/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Transfer (goods or people)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/99/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "99" .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier>
+        a       crm:E42_Identifier .
+
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier> .

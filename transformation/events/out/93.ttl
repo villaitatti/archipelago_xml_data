@@ -1,4 +1,4 @@
-@prefix arc:   <https://archipelago.itatti.harvard.edu/resources/> .
+@prefix arc:   <https://archipelago.itatti.harvard.edu/resource/> .
 @prefix geonames: <http://www.geonames.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -10,40 +10,40 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resources/event/93/century>
+<https://archipelago.itatti.harvard.edu/resource/event/93/century>
         a                            crm:E52_Time-Span ;
         crm:P82_at_some_time_within  "15th cent."@en .
 
-<https://archipelago.itatti.harvard.edu/resources/event/93/subtypology>
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/93/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Urban"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/93/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Spread of the plague"@en .
 
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resources/event/93>
+<https://archipelago.itatti.harvard.edu/resource/event/93>
         a                          crm:E5_Event ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resources/event/93/name> , <https://archipelago.itatti.harvard.edu/resources/event/93/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resources/event/93/subtypology> , <https://archipelago.itatti.harvard.edu/resources/event/93/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resources/event/93/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/93/name> , <https://archipelago.itatti.harvard.edu/resource/event/93/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/93/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/93/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/93/century> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 .
 
-<https://archipelago.itatti.harvard.edu/resources/event/93/identifier>
+<https://archipelago.itatti.harvard.edu/resource/event/93/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "93" .
 
-<https://archipelago.itatti.harvard.edu/resources/event/93/name>
+geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/93/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Plague spreads in Venice"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resources/bibliographic_item/Bibl0037/identifier> .
-
-geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resources/event/93/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Urban"@en .

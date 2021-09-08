@@ -16,6 +16,11 @@
         crm:P7_took_place_at  geonames:3170754 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
+<urn:uuid:5a002850-d6ec-4630-8d58-d893701b2532>
+        a                     crm:E7_Activity ;
+        crm:P2_has_type       <urn:uuid:a5db5450-7409-47b7-acac-84c6516c92db> ;
+        crm:P4_has_time-span  <urn:uuid:b40ac067-cd0b-4e5f-ba34-d20ad9282bc0> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/21/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/21/death/date> ;
@@ -38,21 +43,9 @@ geonames:3170754  a  crm:E53_Place ;
         rdfs:label       "Tiziano"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<urn:uuid:52570ee6-6c3a-4bcc-804f-43fc1cc985c0>
-        a       crm:E55_Type .
-
-<urn:uuid:76818e8c-4105-4fcb-a554-e3bb0294a36b>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1525"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/21/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "21" .
-
-<urn:uuid:73c5ee7d-ba3c-4eb6-8d9e-204d9ff4b490>
-        a                     crm:E7_Activity ;
-        crm:P2_has_type       <urn:uuid:52570ee6-6c3a-4bcc-804f-43fc1cc985c0> ;
-        crm:P4_has_time-span  <urn:uuid:76818e8c-4105-4fcb-a554-e3bb0294a36b> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21/birth/date>
         a                            crm:E52_Time-Span ;
@@ -62,12 +55,16 @@ geonames:3170754  a  crm:E53_Place ;
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1576-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<urn:uuid:b40ac067-cd0b-4e5f-ba34-d20ad9282bc0>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1525"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21>
         a                        crm:E39_Actor ;
-        crm:P12i_was_present_at  <urn:uuid:73c5ee7d-ba3c-4eb6-8d9e-204d9ff4b490> ;
+        crm:P12i_was_present_at  <urn:uuid:5a002850-d6ec-4630-8d58-d893701b2532> ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/21/activity/300025136> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/21/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/21/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/21/given_name> ;
         crm:P92i_was_brought_into_existence_by
@@ -85,3 +82,6 @@ geonames:3170754  a  crm:E53_Place ;
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
+
+<urn:uuid:a5db5450-7409-47b7-acac-84c6516c92db>
+        a       crm:E55_Type .
