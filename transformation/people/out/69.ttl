@@ -10,13 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/69/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "69" .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/69/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "69" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/death/date>
         a                            crm:E52_Time-Span ;
@@ -25,20 +25,24 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/69>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/300154329> , <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/300025593> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/69/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/69/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/69/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/69/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/69/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/69/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/69/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/69/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/69/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Benedetto"@it ;
+        rdfs:label       "Benedetto Bordone"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/69/birth/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/69/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/69/death/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/300025593>
         a           frbr:F51_Pursuit ;
@@ -47,19 +51,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/69/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1450-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/69/death>
-        a                     crm:E69_Death ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/69/death/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/69/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bordone"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/69/activity/300154329>
         a           frbr:F51_Pursuit ;

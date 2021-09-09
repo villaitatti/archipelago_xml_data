@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>163</ID_PERSON>
-	<Given_Name>Egidio</Given_Name>
-	<Surname>Antonini</Surname>
+	<Appellation>Egidio Antonini</Appellation>
 	<Alias>
 		<eng>Giles of Viterbo</eng>
 	</Alias>

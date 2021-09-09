@@ -40,17 +40,12 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/181>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300435149> , <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300025245> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/181/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/181/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/181/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/181/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/181/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/181/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/181/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/181/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/181/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Correggio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/death>
         a                     crm:E69_Death ;
@@ -65,17 +60,8 @@
         a           frbr:F51_Pursuit ;
         rdfs:label  "Merchant"@en , "Mercante"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/181/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Agostino"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/activity/300435149>
         a           frbr:F51_Pursuit ;
@@ -83,3 +69,8 @@
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/181/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Agostino Correggio"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

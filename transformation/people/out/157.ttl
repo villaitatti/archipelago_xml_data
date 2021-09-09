@@ -15,11 +15,6 @@
         rdfs:label       "Fu la moglie del doge Jacopo Foscari (1416-1457)"@it , "She was the wife of Doge Jacopo Foscari"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/157/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Priuli"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -27,7 +22,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/157>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/157/activity/OCC340052> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/157/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/157/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/157/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/157/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/157/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/157/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/157/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/157/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/157/birth> .
@@ -48,18 +43,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Biography"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/157/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Maria Priuli"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/157/activity/OCC340052>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Dogaressa"@en , "Dogaressa"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/157/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Maria"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

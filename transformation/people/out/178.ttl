@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/178/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Lazzaroni"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 aat:300025774  a         crm:E41_Appellation ;
         rdfs:label       "Sacerdote"@it , "Priest"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
@@ -22,6 +17,11 @@ aat:300025774  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/178/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Francesco Lazzaroni"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340057>
         a           frbr:F51_Pursuit ;
@@ -35,20 +35,11 @@ aat:300025774  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/178/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Francesco"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/178>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340058> , <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340057> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/178/identifier> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/178/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/178/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/178/identifier> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/178/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/178/activity/OCC340058>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Patriarchal vicar"@en , "Vicario patriarcale"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

@@ -1,872 +1,698 @@
 [
     {
-        "Given_Name": "Marina",
-        "Surname": "Celsi",
+        "Appellation": "Marina Celsi",
         "ID_PERSON": "12"
     },
     {
-        "Given_Name": "Antonio",
-        "Surname": "Contarini",
+        "Appellation": "Antonio Contarini",
         "ID_PERSON": "13"
     },
     {
-        "Given_Name": null,
-        "Surname": "Baffo family {Famiglia Baffo}",
+        "Appellation": " Baffo family",
         "ID_PERSON": "16"
     },
     {
-        "Given_Name": null,
-        "Surname": "Holy See {Santa Sede}",
+        "Appellation": " Holy See",
         "ID_PERSON": "17"
     },
     {
-        "Given_Name": null,
-        "Surname": "Benedectine Nuns of San Secondo {Monache benedettine di San Secondo}",
+        "Appellation": " Benedectine Nuns of San Secondo",
         "ID_PERSON": "18"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Gavan",
+        "Appellation": "Angelo Gavan",
         "ID_PERSON": "19"
     },
     {
-        "Given_Name": "Agostino",
-        "Surname": "Museo",
+        "Appellation": "Agostino Museo",
         "ID_PERSON": "20"
     },
     {
-        "Given_Name": "Tiziano",
-        "Surname": "Vecellio",
+        "Appellation": "Tiziano Vecellio",
         "ID_PERSON": "21"
     },
     {
-        "Given_Name": "Antonio",
-        "Surname": "Visentini",
+        "Appellation": "Antonio Visentini",
         "ID_PERSON": "22"
     },
     {
-        "Given_Name": "Jacopo",
-        "Surname": "Tatti",
+        "Appellation": "Jacopo Tatti",
         "ID_PERSON": "23"
     },
     {
-        "Given_Name": null,
-        "Surname": "Canons regular of Santo Spirito {Canonici regolari di Santo Spirito}",
+        "Appellation": " Canons regular of Santo Spirito",
         "ID_PERSON": "24"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Bondumier",
+        "Appellation": "Andrea Bondumier",
         "ID_PERSON": "25"
     },
     {
-        "Given_Name": "Filippo",
-        "Surname": "Tron",
+        "Appellation": "Filippo Tron",
         "ID_PERSON": "26"
     },
     {
-        "Given_Name": "Fabio",
-        "Surname": "Chigi",
+        "Appellation": "Fabio Chigi",
         "ID_PERSON": "27"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Guardi",
+        "Appellation": "Francesco Guardi",
         "ID_PERSON": "28"
     },
     {
-        "Given_Name": "Daniele",
-        "Surname": "Danieli",
+        "Appellation": "Daniele Danieli",
         "ID_PERSON": "29"
     },
     {
-        "Given_Name": "Giacomo",
-        "Surname": "Guardi",
+        "Appellation": "Giacomo Guardi",
         "ID_PERSON": "30"
     },
     {
-        "Given_Name": "Elisabetta Graziosa",
-        "Surname": "Ferri",
+        "Appellation": "Elisabetta Graziosa Ferri",
         "ID_PERSON": "31"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Morani",
+        "Appellation": "Pietro Morani",
         "ID_PERSON": "32"
     },
     {
-        "Given_Name": "Domenico Maria",
-        "Surname": "Gella",
+        "Appellation": "Domenico Maria Gella",
         "ID_PERSON": "33"
     },
     {
-        "Given_Name": "Carlo",
-        "Surname": "Gella",
+        "Appellation": "Carlo Gella",
         "ID_PERSON": "34"
     },
     {
-        "Given_Name": "Cherubino",
-        "Surname": "Zeli",
+        "Appellation": "Cherubino Zeli",
         "ID_PERSON": "35"
     },
     {
-        "Given_Name": "Jacometto",
-        "Surname": "Veneziano",
+        "Appellation": "Jacometto Veneziano",
         "ID_PERSON": "36"
     },
     {
-        "Given_Name": "Alessandro",
-        "Surname": "Malerba",
+        "Appellation": "Alessandro Malerba",
         "ID_PERSON": "37"
     },
     {
-        "Given_Name": "Tommaso",
-        "Surname": "Temanza",
+        "Appellation": "Tommaso Temanza",
         "ID_PERSON": "38"
     },
     {
-        "Given_Name": "Niccol\u00f2",
-        "Surname": "Mauro",
+        "Appellation": "Niccol\u00f2 Mauro",
         "ID_PERSON": "39"
     },
     {
-        "Given_Name": "Napol\u00e9on",
-        "Surname": "Bonaparte",
+        "Appellation": "Napol\u00e9on Bonaparte",
         "ID_PERSON": "40"
     },
     {
-        "Given_Name": "Domenico",
-        "Surname": "Codagli",
+        "Appellation": "Domenico Codagli",
         "ID_PERSON": "41"
     },
     {
-        "Given_Name": null,
-        "Surname": "Dominican friars of San Secondo {Frati domenicani di San Secondo}",
+        "Appellation": " Dominican friars of San Secondo",
         "ID_PERSON": "42"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "da Zon",
+        "Appellation": "Giovanni da Zon",
         "ID_PERSON": "43"
     },
     {
-        "Given_Name": "Vitale",
-        "Surname": "Falier",
+        "Appellation": "Vitale Falier",
         "ID_PERSON": "44"
     },
     {
-        "Given_Name": "Gerardino",
-        "Surname": "da Villanova",
+        "Appellation": "Gerardino da Villanova",
         "ID_PERSON": "45"
     },
     {
-        "Given_Name": "Vincenzo Maria",
-        "Surname": "Coronelli",
+        "Appellation": "Vincenzo Maria Coronelli",
         "ID_PERSON": "46"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Bragadin",
+        "Appellation": "Angelo Bragadin",
         "ID_PERSON": "47"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "Buonconsiglio",
+        "Appellation": "Giovanni Buonconsiglio",
         "ID_PERSON": "48"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "Trevisan",
+        "Appellation": "Giovanni Trevisan",
         "ID_PERSON": "49"
     },
     {
-        "Given_Name": "Matteo",
-        "Surname": "Priuli",
+        "Appellation": "Matteo Priuli",
         "ID_PERSON": "50"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Bon",
+        "Appellation": "Pietro Bon",
         "ID_PERSON": "51"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Baronio",
+        "Appellation": "Angelo Baronio",
         "ID_PERSON": "52"
     },
     {
-        "Given_Name": "Girolamo",
-        "Surname": "Contarini",
+        "Appellation": "Girolamo Contarini",
         "ID_PERSON": "53"
     },
     {
-        "Given_Name": "Raffaele",
-        "Surname": "Riva",
+        "Appellation": "Raffaele Riva",
         "ID_PERSON": "54"
     },
     {
-        "Given_Name": "Zaccaria",
-        "Surname": "da Luni",
+        "Appellation": "Zaccaria da Luni",
         "ID_PERSON": "55"
     },
     {
-        "Given_Name": "Teodoro",
-        "Surname": "Viero",
+        "Appellation": "Teodoro Viero",
         "ID_PERSON": "56"
     },
     {
-        "Given_Name": "Guglielmo",
-        "Surname": "Stella",
+        "Appellation": "Guglielmo Stella",
         "ID_PERSON": "57"
     },
     {
-        "Given_Name": "Jacopo",
-        "Surname": "de' Barbari",
+        "Appellation": "Jacopo de' Barbari",
         "ID_PERSON": "58"
     },
     {
-        "Given_Name": "Marco",
-        "Surname": "Moro",
+        "Appellation": "Marco Moro",
         "ID_PERSON": "60"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Tirali",
+        "Appellation": "Andrea Tirali",
         "ID_PERSON": "61"
     },
     {
-        "Given_Name": "Luigi",
-        "Surname": "Querena",
+        "Appellation": "Luigi Querena",
         "ID_PERSON": "63"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Battaglioli",
+        "Appellation": "Francesco Battaglioli",
         "ID_PERSON": "64"
     },
     {
-        "Given_Name": "Giuseppe Bernardino",
-        "Surname": "Bison",
+        "Appellation": "Giuseppe Bernardino Bison",
         "ID_PERSON": "65"
     },
     {
-        "Given_Name": "Domenico",
-        "Surname": "Lovisa",
+        "Appellation": "Domenico Lovisa",
         "ID_PERSON": "66"
     },
     {
-        "Given_Name": "Cristoforo",
-        "Surname": "Sabbadino",
+        "Appellation": "Cristoforo Sabbadino",
         "ID_PERSON": "67"
     },
     {
-        "Given_Name": "Alessandro",
-        "Surname": "Spaziani",
+        "Appellation": "Alessandro Spaziani",
         "ID_PERSON": "68"
     },
     {
-        "Given_Name": "Benedetto",
-        "Surname": "Bordone",
+        "Appellation": "Benedetto Bordone",
         "ID_PERSON": "69"
     },
     {
-        "Given_Name": "Carlo",
-        "Surname": "Ruzzini",
+        "Appellation": "Carlo Ruzzini",
         "ID_PERSON": "70"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Emo",
+        "Appellation": "Angelo Emo",
         "ID_PERSON": "71"
     },
     {
-        "Given_Name": null,
-        "Surname": "Candian friars of Santo Spirito {Frati minori osservanti della Provincia di Candia stabiliti a Santo Spirito}",
+        "Appellation": " Candian friars of Santo Spirito",
         "ID_PERSON": "73"
     },
     {
-        "Given_Name": "Enrico",
-        "Surname": "Dandolo",
+        "Appellation": "Enrico Dandolo",
         "ID_PERSON": "74"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Gattilesso",
+        "Appellation": "Pietro Gattilesso",
         "ID_PERSON": "75"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Cominelli",
+        "Appellation": "Andrea Cominelli",
         "ID_PERSON": "76"
     },
     {
-        "Given_Name": "Giovanni Battista",
-        "Surname": "Albrizzi",
+        "Appellation": "Giovanni Battista Albrizzi",
         "ID_PERSON": "77"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Chevalier",
+        "Appellation": "Pietro Chevalier",
         "ID_PERSON": "78"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Alberti",
+        "Appellation": "Francesco Alberti",
         "ID_PERSON": "79"
     },
     {
-        "Given_Name": "Baldassare",
-        "Surname": "Longhena",
+        "Appellation": "Baldassare Longhena",
         "ID_PERSON": "84"
     },
     {
-        "Given_Name": null,
-        "Surname": "Venice Municipality {Comune di Venezia}",
+        "Appellation": " Venice Municipality",
         "ID_PERSON": "86"
     },
     {
-        "Given_Name": null,
-        "Surname": "Milizia da Mar",
+        "Appellation": " Milizia da Mar",
         "ID_PERSON": "87"
     },
     {
-        "Given_Name": null,
-        "Surname": "Venetian Republic {Repubblica di Venezia}",
+        "Appellation": " Venetian Republic",
         "ID_PERSON": "88"
     },
     {
-        "Given_Name": null,
-        "Surname": "Savi ed esecutori alle acque",
+        "Appellation": " Savi ed esecutori alle acque",
         "ID_PERSON": "89"
     },
     {
-        "Given_Name": null,
-        "Surname": "Venetian Senate {Senato veneziano}",
+        "Appellation": " Venetian Senate",
         "ID_PERSON": "90"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Tironi",
+        "Appellation": "Francesco Tironi",
         "ID_PERSON": "91"
     },
     {
-        "Given_Name": "Vincenzo",
-        "Surname": "Scutari",
+        "Appellation": "Vincenzo Scutari",
         "ID_PERSON": "92"
     },
     {
-        "Given_Name": "Bernardin",
-        "Surname": "Giacomazzi",
+        "Appellation": "Bernardin Giacomazzi",
         "ID_PERSON": "93"
     },
     {
-        "Given_Name": null,
-        "Surname": "Procurators of St Mark's de supra {Procuratori di San Marco de supra}",
+        "Appellation": " Procurators of St Mark's de supra",
         "ID_PERSON": "94"
     },
     {
-        "Given_Name": null,
-        "Surname": "Provveditori sopra monasteri",
+        "Appellation": " Provveditori sopra monasteri",
         "ID_PERSON": "95"
     },
     {
-        "Given_Name": "Bonaventura Maria",
-        "Surname": "Valerio",
+        "Appellation": "Bonaventura Maria Valerio",
         "ID_PERSON": "96"
     },
     {
-        "Given_Name": "Stefano",
-        "Surname": "Codroipo",
+        "Appellation": "Stefano Codroipo",
         "ID_PERSON": "97"
     },
     {
-        "Given_Name": "Vincenzo",
-        "Surname": "Polani",
+        "Appellation": "Vincenzo Polani",
         "ID_PERSON": "98"
     },
     {
-        "Given_Name": "Domenico",
-        "Surname": "Porta",
+        "Appellation": "Domenico Porta",
         "ID_PERSON": "99"
     },
     {
-        "Given_Name": "Giambattista Maria",
-        "Surname": "Contarini",
+        "Appellation": "Giambattista Maria Contarini",
         "ID_PERSON": "101"
     },
     {
-        "Given_Name": null,
-        "Surname": "Lateran Canons of Santa Maria della Carit\u00e0 {Canonici lateranensi di Santa Maria della Carit\u00e0}",
+        "Appellation": " Lateran Canons of Santa Maria della Carit\u00e0",
         "ID_PERSON": "102"
     },
     {
-        "Given_Name": null,
-        "Surname": "Council of Ten {Consiglio dei Dieci}",
+        "Appellation": " Council of Ten",
         "ID_PERSON": "106"
     },
     {
-        "Given_Name": "Alvise",
-        "Surname": "Foscarini",
+        "Appellation": "Alvise Foscarini",
         "ID_PERSON": "108"
     },
     {
-        "Given_Name": "Alvise",
-        "Surname": "Contarini",
+        "Appellation": "Alvise Contarini",
         "ID_PERSON": "109"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Pisani",
+        "Appellation": "Andrea Pisani",
         "ID_PERSON": "110"
     },
     {
-        "Given_Name": "Carlo",
-        "Surname": "Carafa della Spina",
+        "Appellation": "Carlo Carafa della Spina",
         "ID_PERSON": "111"
     },
     {
-        "Given_Name": null,
-        "Surname": "Bencio",
+        "Appellation": " Bencio",
         "ID_PERSON": "112"
     },
     {
-        "Given_Name": "Giuseppe",
-        "Surname": "Porta",
+        "Appellation": "Giuseppe Porta",
         "ID_PERSON": "113"
     },
     {
-        "Given_Name": "Girolamo",
-        "Surname": "da Santacroce",
+        "Appellation": "Girolamo da Santacroce",
         "ID_PERSON": "114"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "da Santacroce",
+        "Appellation": "Francesco da Santacroce",
         "ID_PERSON": "115"
     },
     {
-        "Given_Name": "Lorenzo",
-        "Surname": "Giustinian",
+        "Appellation": "Lorenzo Giustinian",
         "ID_PERSON": "116"
     },
     {
-        "Given_Name": "Alessandro",
-        "Surname": "Farnese",
+        "Appellation": "Alessandro Farnese",
         "ID_PERSON": "117"
     },
     {
-        "Given_Name": "Hugues",
-        "Surname": "de Comminelles",
+        "Appellation": "Hugues de Comminelles",
         "ID_PERSON": "118"
     },
     {
-        "Given_Name": "Nicol\u00f2",
-        "Surname": "dal Cortivo",
+        "Appellation": "Nicol\u00f2 dal Cortivo",
         "ID_PERSON": "119"
     },
     {
-        "Given_Name": "Antonio Girolamo",
-        "Surname": "Vestri",
+        "Appellation": "Antonio Girolamo Vestri",
         "ID_PERSON": "120"
     },
     {
-        "Given_Name": "Sebastiano",
-        "Surname": "Alberti",
+        "Appellation": "Sebastiano Alberti",
         "ID_PERSON": "121"
     },
     {
-        "Given_Name": "Augusto",
-        "Surname": "Denaix",
+        "Appellation": "Augusto Denaix",
         "ID_PERSON": "122"
     },
     {
-        "Given_Name": null,
-        "Surname": "Kingdom of Lombardy\u2013Venetia",
+        "Appellation": " Kingdom of Lombardy\u2013Venetia",
         "ID_PERSON": "123"
     },
     {
-        "Given_Name": null,
-        "Surname": "Magistrate for Health {Provveditori e Sopraprovveditori alla Sanit\u00e0}",
+        "Appellation": " Magistrate for Health",
         "ID_PERSON": "124"
     },
     {
-        "Given_Name": "Girolamo",
-        "Surname": "Mercuriale",
+        "Appellation": "Girolamo Mercuriale",
         "ID_PERSON": "125"
     },
     {
-        "Given_Name": "Girolamo",
-        "Surname": "Capivaccio",
+        "Appellation": "Girolamo Capivaccio",
         "ID_PERSON": "126"
     },
     {
-        "Given_Name": "Mariano",
-        "Surname": "Stefanelli",
+        "Appellation": "Mariano Stefanelli",
         "ID_PERSON": "127"
     },
     {
-        "Given_Name": "Niccol\u00f2",
-        "Surname": "Corte",
+        "Appellation": "Niccol\u00f2 Corte",
         "ID_PERSON": "128"
     },
     {
-        "Given_Name": "Bernardino",
-        "Surname": "Paterno",
+        "Appellation": "Bernardino Paterno",
         "ID_PERSON": "129"
     },
     {
-        "Given_Name": "Alvise",
-        "Surname": "Mocenigo",
+        "Appellation": "Alvise Mocenigo",
         "ID_PERSON": "130"
     },
     {
-        "Given_Name": "Nicol\u00f2",
-        "Surname": "Massa",
+        "Appellation": "Nicol\u00f2 Massa",
         "ID_PERSON": "131"
     },
     {
-        "Given_Name": "Giovan Battista",
-        "Surname": "Luran",
+        "Appellation": "Giovan Battista Luran",
         "ID_PERSON": "132"
     },
     {
-        "Given_Name": null,
-        "Surname": "Canons regular of San Clemente {Canonici regolari di San Clemente}",
+        "Appellation": " Canons regular of San Clemente",
         "ID_PERSON": "133"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "Polani",
+        "Appellation": "Giovanni Polani",
         "ID_PERSON": "134"
     },
     {
-        "Given_Name": "Alberico",
-        "Surname": "Lottario",
+        "Appellation": "Alberico Lottario",
         "ID_PERSON": "135"
     },
     {
-        "Given_Name": "Imizza",
-        "Surname": "da Selva di Boggion",
+        "Appellation": "Imizza da Selva di Boggion",
         "ID_PERSON": "136"
     },
     {
-        "Given_Name": "Daniele",
-        "Surname": "da Selva di Boggion",
+        "Appellation": "Daniele da Selva di Boggion",
         "ID_PERSON": "137"
     },
     {
-        "Given_Name": "Spadaro",
-        "Surname": "Litaldo",
+        "Appellation": "Spadaro Litaldo",
         "ID_PERSON": "138"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Litaldo",
+        "Appellation": "Pietro Litaldo",
         "ID_PERSON": "139"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Rosso",
+        "Appellation": "Angelo Rosso",
         "ID_PERSON": "140"
     },
     {
-        "Given_Name": "Egidio",
-        "Surname": "da Ferrara",
+        "Appellation": "Egidio da Ferrara",
         "ID_PERSON": "141"
     },
     {
-        "Given_Name": "Nicol\u00f2",
-        "Surname": "de Benvenutis",
+        "Appellation": "Nicol\u00f2 de Benvenutis",
         "ID_PERSON": "142"
     },
     {
-        "Given_Name": "Jacques",
-        "Surname": "Du\u00e8ze",
+        "Appellation": "Jacques Du\u00e8ze",
         "ID_PERSON": "143"
     },
     {
-        "Given_Name": "Piero",
-        "Surname": "Tomacelli",
+        "Appellation": "Piero Tomacelli",
         "ID_PERSON": "144"
     },
     {
-        "Given_Name": "Gabriele",
-        "Surname": "Condulmer",
+        "Appellation": "Gabriele Condulmer",
         "ID_PERSON": "145"
     },
     {
-        "Given_Name": "Antonio",
-        "Surname": "de Lusciano",
+        "Appellation": "Antonio de Lusciano",
         "ID_PERSON": "146"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Nani",
+        "Appellation": "Pietro Nani",
         "ID_PERSON": "147"
     },
     {
-        "Given_Name": "Agostino",
-        "Surname": "Barbarigo",
+        "Appellation": "Agostino Barbarigo",
         "ID_PERSON": "148"
     },
     {
-        "Given_Name": "Friedrich",
-        "Surname": "Habsburg",
+        "Appellation": "Friedrich Habsburg",
         "ID_PERSON": "149"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Foscari ",
+        "Appellation": "Francesco Foscari",
         "ID_PERSON": "150"
     },
     {
-        "Given_Name": "Cristoforo",
-        "Surname": "Moro",
+        "Appellation": "Cristoforo Moro",
         "ID_PERSON": "151"
     },
     {
-        "Given_Name": "Antonio",
-        "Surname": "Muzzani",
+        "Appellation": "Antonio Muzzani",
         "ID_PERSON": "152"
     },
     {
-        "Given_Name": "Domenico",
-        "Surname": "Graziussi",
+        "Appellation": "Domenico Graziussi",
         "ID_PERSON": "153"
     },
     {
-        "Given_Name": "Angelo",
-        "Surname": "Seguso",
+        "Appellation": "Angelo Seguso",
         "ID_PERSON": "154"
     },
     {
-        "Given_Name": null,
-        "Surname": "Fondo territoriale",
+        "Appellation": " Fondo territoriale",
         "ID_PERSON": "155"
     },
     {
-        "Given_Name": "John {Giovanni}",
-        "Surname": "Palaiologos {Paleologo}",
+        "Appellation": "John {Giovanni} Palaiologos",
         "ID_PERSON": "156"
     },
     {
-        "Given_Name": "Maria",
-        "Surname": "Priuli",
+        "Appellation": "Maria Priuli",
         "ID_PERSON": "157"
     },
     {
-        "Given_Name": "Amadea {Amedea}",
-        "Surname": "Palaiologos {Paleologa}",
+        "Appellation": "Amadea {Amedea} Palaiologos",
         "ID_PERSON": "158"
     },
     {
-        "Given_Name": "Ercole",
-        "Surname": "d'Este",
+        "Appellation": "Ercole d'Este",
         "ID_PERSON": "159"
     },
     {
-        "Given_Name": "Leonardo",
-        "Surname": "Loredan",
+        "Appellation": "Leonardo Loredan",
         "ID_PERSON": "160"
     },
     {
-        "Given_Name": "Matth\u00e4us {Matteo}",
-        "Surname": "Schinner {Schiner}",
+        "Appellation": "Matth\u00e4us {Matteo} Schinner",
         "ID_PERSON": "161"
     },
     {
-        "Given_Name": "Egidio",
-        "Surname": "Antonini",
+        "Appellation": "Egidio Antonini",
         "ID_PERSON": "163"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Gritti",
+        "Appellation": "Andrea Gritti",
         "ID_PERSON": "164"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Sforza",
+        "Appellation": "Francesco Sforza",
         "ID_PERSON": "165"
     },
     {
-        "Given_Name": "Francesco Maria",
-        "Surname": "della Rovere",
+        "Appellation": "Francesco Maria della Rovere",
         "ID_PERSON": "166"
     },
     {
-        "Given_Name": "Gaetano",
-        "Surname": "dei Conti di Thiene",
+        "Appellation": "Gaetano dei Conti di Thiene",
         "ID_PERSON": "167"
     },
     {
-        "Given_Name": "Gian Pietro",
-        "Surname": "Carafa",
+        "Appellation": "Gian Pietro Carafa",
         "ID_PERSON": "168"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Contarini",
+        "Appellation": "Andrea Contarini",
         "ID_PERSON": "169"
     },
     {
-        "Given_Name": null,
-        "Surname": "Vendramin",
+        "Appellation": " Vendramin",
         "ID_PERSON": "170"
     },
     {
-        "Given_Name": "Piero",
-        "Surname": "Vallaresso",
+        "Appellation": "Piero Vallaresso",
         "ID_PERSON": "171"
     },
     {
-        "Given_Name": "Alessandro",
-        "Surname": "Pesaro",
+        "Appellation": "Alessandro Pesaro",
         "ID_PERSON": "172"
     },
     {
-        "Given_Name": "Sebastiano",
-        "Surname": "Giustinian",
+        "Appellation": "Sebastiano Giustinian",
         "ID_PERSON": "173"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Polani",
+        "Appellation": "Pietro Polani",
         "ID_PERSON": "174"
     },
     {
-        "Given_Name": "Pierre",
-        "Surname": "Roger",
+        "Appellation": "Pierre Roger",
         "ID_PERSON": "175"
     },
     {
-        "Given_Name": "Alessandro",
-        "Surname": "de Strigis",
+        "Appellation": "Alessandro de Strigis",
         "ID_PERSON": "176"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "Tirinello",
+        "Appellation": "Giovanni Tirinello",
         "ID_PERSON": "177"
     },
     {
-        "Given_Name": "Francesco",
-        "Surname": "Lazzaroni",
+        "Appellation": "Francesco Lazzaroni",
         "ID_PERSON": "178"
     },
     {
-        "Given_Name": "Giovanni",
-        "Surname": "Fornareto",
+        "Appellation": "Giovanni Fornareto",
         "ID_PERSON": "179"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Mocenigo",
+        "Appellation": "Andrea Mocenigo",
         "ID_PERSON": "180"
     },
     {
-        "Given_Name": "Agostino",
-        "Surname": "Correggio",
+        "Appellation": "Agostino Correggio",
         "ID_PERSON": "181"
     },
     {
-        "Given_Name": "Girolamo",
-        "Surname": "Lando",
+        "Appellation": "Girolamo Lando",
         "ID_PERSON": "182"
     },
     {
-        "Given_Name": "Gianfrancesco",
-        "Surname": "Barbarigo",
+        "Appellation": "Gianfrancesco Barbarigo",
         "ID_PERSON": "183"
     },
     {
-        "Given_Name": null,
-        "Surname": "Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}",
+        "Appellation": " Camaldolese monks of Monte Rua",
         "ID_PERSON": "184"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Lorenzetto",
+        "Appellation": "Pietro Lorenzetto",
         "ID_PERSON": "185"
     },
     {
-        "Given_Name": "Zuanne",
-        "Surname": "Lumi",
+        "Appellation": "Zuanne Lumi",
         "ID_PERSON": "186"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Brozio",
+        "Appellation": "Andrea Brozio",
         "ID_PERSON": "187"
     },
     {
-        "Given_Name": "Todero",
-        "Surname": "Balbi",
+        "Appellation": "Todero Balbi",
         "ID_PERSON": "189"
     },
     {
-        "Given_Name": "Marco",
-        "Surname": "Basaiti",
+        "Appellation": "Marco Basaiti",
         "ID_PERSON": "190"
     },
     {
-        "Given_Name": "Andrea",
-        "Surname": "Surian",
+        "Appellation": "Andrea Surian",
         "ID_PERSON": "191"
     },
     {
-        "Given_Name": null,
-        "Surname": "Hermits of Santa Giustina in Padua {Eremitani di Santa Giustina a Padova}",
+        "Appellation": " Hermits of Santa Giustina in Padua",
         "ID_PERSON": "192"
     },
     {
-        "Given_Name": null,
-        "Surname": "Friars of Santissima Trinit\u00e0 in Brondolo",
+        "Appellation": " Friars of Santissima Trinit\u00e0 in Brondolo",
         "ID_PERSON": "193"
     },
     {
-        "Given_Name": "Pietro",
-        "Surname": "Maffei",
+        "Appellation": "Pietro Maffei",
         "ID_PERSON": "194"
     },
     {
-        "Given_Name": null,
-        "Surname": "Benedictine monks of San Giorgio Maggiore {Monaci benedettini di San Giorgio Maggiore} ",
+        "Appellation": " Benedictine monks of San Giorgio Maggiore",
         "ID_PERSON": "195"
     },
     {
-        "Given_Name": "Giulio Zanobi",
-        "Surname": "Medici",
+        "Appellation": "Giulio Zanobi Medici",
         "ID_PERSON": "196"
     },
     {
-        "Given_Name": null,
-        "Surname": "Benedictine nuns of Corpus Domini",
+        "Appellation": " Benedictine nuns of Corpus Domini",
         "ID_PERSON": "197"
     },
     {
-        "Given_Name": "Bartolomeo",
-        "Surname": "Gualtierotti",
+        "Appellation": "Bartolomeo Gualtierotti",
         "ID_PERSON": "198"
     },
     {
-        "Given_Name": "Bartolomeo",
-        "Surname": "da Ferrara",
+        "Appellation": "Bartolomeo da Ferrara",
         "ID_PERSON": "199"
     },
     {
-        "Given_Name": null,
-        "Surname": "Carthusian monks of Sant'Andrea della Certosa",
+        "Appellation": " Carthusian monks of Sant'Andrea della Certosa",
         "ID_PERSON": "200"
     },
     {
-        "Given_Name": "Daria",
-        "Surname": "Querini",
+        "Appellation": "Daria Querini",
         "ID_PERSON": "201"
     },
     {
-        "Given_Name": null,
-        "Surname": "Secular confraternity of San Diego {Scuola di San Diego}",
+        "Appellation": " Secular confraternity of San Diego",
         "ID_PERSON": "202"
     }
 ]

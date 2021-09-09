@@ -10,28 +10,19 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/183>
-        a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/183/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/183/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/183/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/183/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Barbarigo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/183/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "183" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/183/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/183/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Gianfrancesco"@it ;
+        rdfs:label       "Gianfrancesco Barbarigo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/183>
+        a                        crm:E39_Actor ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/183/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/183/appellation> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .

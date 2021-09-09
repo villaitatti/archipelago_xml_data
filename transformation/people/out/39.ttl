@@ -22,21 +22,12 @@
         a           crm:E42_Identifier ;
         rdfs:label  "39" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/39/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Mauro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/39>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/39/activity/300025001> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/39/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/39/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/39/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/39/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/39/appellation> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/39/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/39/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Niccolò"@it ;
+        rdfs:label       "Niccolò Mauro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

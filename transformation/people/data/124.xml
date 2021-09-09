@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>124</ID_PERSON>
-	<Given_Name/>
-	<Surname>Magistrate for Health {Provveditori e Sopraprovveditori alla Sanità}</Surname>
+	<Appellation> Magistrate for Health</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

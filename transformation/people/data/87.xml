@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>87</ID_PERSON>
-	<Given_Name/>
-	<Surname>Milizia da Mar</Surname>
+	<Appellation> Milizia da Mar</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

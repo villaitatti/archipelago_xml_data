@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>54</ID_PERSON>
-	<Given_Name>Raffaele</Given_Name>
-	<Surname>Riva</Surname>
+	<Appellation>Raffaele Riva</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025756</aat>

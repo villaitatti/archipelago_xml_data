@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>112</ID_PERSON>
-	<Given_Name/>
-	<Surname>Bencio</Surname>
+	<Appellation> Bencio</Appellation>
 	<Titles>
 		<Title>
 			<aat>300162118</aat>

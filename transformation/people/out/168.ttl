@@ -18,11 +18,6 @@ aat:300025774  a         crm:E41_Appellation ;
         rdfs:label       "Sacerdote"@it , "Priest"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/168/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Carafa"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -42,19 +37,15 @@ aat:300025773  a         crm:E41_Appellation ;
 geonames:3169070  a  crm:E53_Place ;
         rdfs:label  "Rome"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/168/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/168/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Gian Pietro"@it ;
+        rdfs:label       "Gian Pietro Carafa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/300025774> , <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/300025773> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/168/surname> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/168/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/168/given_name> , aat:300025773 , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/168/identifier> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/168/appellation> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/168/alias> , aat:300025773 , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/168/identifier> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/168/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -86,12 +77,12 @@ aat:300025758  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
+        a       crm:E21_Person .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/168/activity/300025773>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Pope"@en , "Papa"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
-        a       crm:E21_Person .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/death/date>
         a                            crm:E52_Time-Span ;

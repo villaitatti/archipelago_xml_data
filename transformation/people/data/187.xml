@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>187</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Brozio</Surname>
+	<Appellation>Andrea Brozio</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025454</aat>

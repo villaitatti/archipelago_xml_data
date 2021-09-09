@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>144</ID_PERSON>
-	<Given_Name>Piero</Given_Name>
-	<Surname>Tomacelli</Surname>
+	<Appellation>Piero Tomacelli</Appellation>
 	<Alias>
 		<ita>Papa Bonifacio IX</ita>
 		<eng>Pope Boniface IX</eng>

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>120</ID_PERSON>
-	<Given_Name>Antonio Girolamo</Given_Name>
-	<Surname>Vestri</Surname>
+	<Appellation>Antonio Girolamo Vestri</Appellation>
 	<Activities>
 		<Activity>
 			<aat>OCC340003</aat>

@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/26/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Filippo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/26/biography>
         a                crm:E73_Information_Object ;
         rdfs:label       "La sua casa si trovava vicino al rio della Zecca, all'angolo dei Magazzini di Terranova"@it , "His house was located near the rio della Zecca, at the corner with the Terranova warehouses"@en ;
@@ -44,17 +39,13 @@ aat:300025471  a         crm:E41_Appellation ;
         a           crm:E42_Identifier ;
         rdfs:label  "26" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/26/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Tron"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/26>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/26/activity/OCC340030> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/26/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/26/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/26/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/26/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/26/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/26/biography> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/26/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Filippo Tron"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

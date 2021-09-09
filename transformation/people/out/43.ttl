@@ -10,6 +10,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/43/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Giovanni da Zon"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/43/biography>
         a                crm:E73_Information_Object ;
         rdfs:label       "Era in contatto con i frati di San Domenico di Castello a Venezia. Il suo corpo è seppellito all'interno della chiesa domenicana"@it , "He was in contact with the friars of San Domenico di Castello in Venice. His body is buried in the Dominican church"@en ;
@@ -22,11 +27,6 @@
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/43/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "da Zon"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43/death>
         a                     crm:E69_Death ;
@@ -55,19 +55,10 @@ aat:300024987  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/43>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/43/activity/OCC340037> , <https://archipelago.itatti.harvard.edu/resource/actor/43/activity/300024987> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/43/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/43/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/43/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/43/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/43/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/43/biography> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/43/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/43/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Giovanni"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

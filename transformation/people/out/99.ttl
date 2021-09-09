@@ -13,12 +13,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/99>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/99/activity/OCC340051> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/99/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/99/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/99/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/99/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Porta"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/99/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/99/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -28,14 +23,14 @@ aat:300266789  a         crm:E41_Appellation ;
         rdfs:label       "Frate"@it , "Friar"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/99/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Domenico Porta"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/99/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Domenico"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/99/activity/OCC340051>
         a           frbr:F51_Pursuit ;
@@ -44,7 +39,3 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/99/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "99" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

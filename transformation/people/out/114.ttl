@@ -10,22 +10,17 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/114/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "da Santacroce"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 geonames:3167875  a  crm:E53_Place ;
         rdfs:label  "San Pellegrino Terme"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/114/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Girolamo da Santacroce"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/114/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Girolamo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/114/death>
         a                     crm:E69_Death ;
@@ -60,7 +55,7 @@ geonames:3167875  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/114>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/114/activity/300025136> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/114/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/114/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/114/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/114/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/114/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/114/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/114/birth> ;
@@ -71,10 +66,6 @@ geonames:3167875  a  crm:E53_Place ;
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/114/birth/date> ;
         crm:P7_took_place_at  geonames:3167875 .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>201</ID_PERSON>
-	<Given_Name>Daria</Given_Name>
-	<Surname>Querini</Surname>
+	<Appellation>Daria Querini</Appellation>
 	<Occupation>
 		<aat>300236548</aat>
 		<ita>Nobildonna</ita>

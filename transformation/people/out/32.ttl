@@ -14,10 +14,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/32/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/32/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Morani"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Pietro Morani"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/32/identifier>
         a           crm:E42_Identifier ;
@@ -29,17 +29,8 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/32>
         a                           crm:E39_Actor ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/32/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/32/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/32/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/32/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/32/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/32/biography> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/32/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pietro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/32/biography>
         a                crm:E73_Information_Object ;

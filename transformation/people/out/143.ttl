@@ -10,71 +10,22 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/143/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Jacques"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
-aat:300025773  a         crm:E41_Appellation ;
-        rdfs:label       "Papa"@it , "Pope"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/death/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1334-12-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/activity/300025758>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Cardinal"@en , "Cardinale"@it .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/143>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/OCC340045> , <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/OCC340044> ;
-        crm:P1_is_identified_by  aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/143/surname> , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/143/identifier> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/143/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/143/given_name> ;
+        crm:P1_is_identified_by  aat:300025756 , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/143/identifier> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/143/appellation> , <https://archipelago.itatti.harvard.edu/resource/actor/143/alias> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/143/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/143/death> .
 
-aat:300025758  a         crm:E41_Appellation ;
-        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/alias>
-        a           crm:E41_Appellation ;
-        rdfs:label  "Papa Giovanni XXII"@it , "Pope John XXII"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/activity/OCC340045>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Bishop of Avignon"@en , "Vescovo di Avignone"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1244-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/143/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "143" .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/143/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/143/birth/date> .
 
-aat:300025756  a         crm:E41_Appellation ;
-        rdfs:label       "Vescovo"@it , "Bishop"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/OCC340044>
         a           frbr:F51_Pursuit ;
@@ -84,11 +35,51 @@ aat:300025756  a         crm:E41_Appellation ;
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/143/death/date> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/143/alias>
+        a           crm:E41_Appellation ;
+        rdfs:label  "Papa Giovanni XXII"@it , "Pope John XXII"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "143" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/activity/OCC340045>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Bishop of Avignon"@en , "Vescovo di Avignone"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1244-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+aat:300025758  a         crm:E41_Appellation ;
+        rdfs:label       "Cardinale"@it , "Cardinal"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1334-12-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/activity/300025758>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Cardinal"@en , "Cardinale"@it .
+
+aat:300025773  a         crm:E41_Appellation ;
+        rdfs:label       "Papa"@it , "Pope"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/143/activity/300025773>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Pope"@en , "Papa"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/143/surname>
+aat:300025756  a         crm:E41_Appellation ;
+        rdfs:label       "Vescovo"@it , "Bishop"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/143/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Duèze"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Jacques Duèze"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

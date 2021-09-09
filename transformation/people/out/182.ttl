@@ -10,28 +10,19 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
-        a           crm:E55_Type ;
-        rdfs:label  "Preferred Name"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/182/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "182" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/182/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/182/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Lando"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/182/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Girolamo"@it ;
+        rdfs:label       "Girolamo Lando"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/182>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/182/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/182/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/182/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/182/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/182/appellation> .

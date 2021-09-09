@@ -26,10 +26,10 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/71/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/71/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Emo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Angelo Emo"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/71/identifier>
         a           crm:E42_Identifier ;
@@ -38,7 +38,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/71>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/71/activity/OCC340046> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/71/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/71/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/71/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/71/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/71/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/71/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -48,15 +48,6 @@
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/71/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/71/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Angelo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

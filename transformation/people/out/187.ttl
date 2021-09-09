@@ -18,25 +18,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/187/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/187/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Brozio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/187/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Andrea"@it ;
+        rdfs:label       "Andrea Brozio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/187/activity/300025454>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Notary"@en , "Notaio"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/187>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/187/activity/300025454> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/187/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/187/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/187/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/187/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/187/appellation> .

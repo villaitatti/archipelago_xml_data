@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>161</ID_PERSON>
-	<Given_Name>Matthäus {Matteo}</Given_Name>
-	<Surname>Schinner {Schiner}</Surname>
+	<Appellation>Matthäus {Matteo} Schinner</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025758</aat>

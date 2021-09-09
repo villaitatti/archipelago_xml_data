@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>183</ID_PERSON>
-	<Given_Name>Gianfrancesco</Given_Name>
-	<Surname>Barbarigo</Surname>
+	<Appellation>Gianfrancesco Barbarigo</Appellation>
 	<Occupation>
 		<aat>300236547</aat>
 		<ita>Nobiluomo</ita>

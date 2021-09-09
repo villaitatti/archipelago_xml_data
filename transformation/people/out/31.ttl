@@ -10,24 +10,19 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/31/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Ferri"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/31/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/31/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Elisabetta Graziosa"@it ;
+        rdfs:label       "Elisabetta Graziosa Ferri"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/31>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/31/activity/300115251> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/31/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/31/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/31/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/31/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/31/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/31/biography> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/31/death> .
@@ -52,10 +47,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/31/death>
         a                     crm:E69_Death ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

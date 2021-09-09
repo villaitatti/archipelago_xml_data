@@ -17,7 +17,7 @@ aat:300025774  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/111>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/300417572> , <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/OCC340019> , <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/300025774> ;
-        crm:P1_is_identified_by  aat:300417572 , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/111/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/111/given_name> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/111/surname> , aat:300025756 ;
+        crm:P1_is_identified_by  aat:300417572 , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/111/appellation> , <https://archipelago.itatti.harvard.edu/resource/actor/111/identifier> , aat:300025774 , aat:300025756 ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/111/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -42,10 +42,6 @@ aat:300417572  a         crm:E41_Appellation ;
 geonames:3169070  a  crm:E53_Place ;
         rdfs:label  "Rome"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/111/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1680-10-19T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -53,6 +49,11 @@ geonames:3169070  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/OCC340019>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Bishop of Aversa"@en , "Vescovo di Aversa"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/111/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Carlo Carafa della Spina"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/111/identifier>
         a           crm:E42_Identifier ;
@@ -73,11 +74,6 @@ aat:300025758  a         crm:E41_Appellation ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/111/death/date> ;
         crm:P7_took_place_at  geonames:3169070 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/111/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Carlo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
@@ -85,11 +81,6 @@ aat:300025758  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/111/activity/300025774>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Priest"@en , "Sacerdote"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/111/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Carafa della Spina"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .

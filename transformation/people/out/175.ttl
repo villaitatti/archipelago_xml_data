@@ -14,11 +14,6 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1291-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/175/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Roger"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/175/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1352-12-06T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -47,7 +42,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/175>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/175/activity/300025773> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/175/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/175/alias> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/175/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/175/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/175/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/175/alias> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/175/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/175/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -56,6 +51,11 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/175/activity/300025773>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Pope"@en , "Papa"@it .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/175/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Pierre Roger"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/175/death>
         a                     crm:E69_Death ;
@@ -67,12 +67,3 @@
 aat:300025773  a         crm:E41_Appellation ;
         rdfs:label       "Papa"@it , "Pope"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/175/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pierre"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

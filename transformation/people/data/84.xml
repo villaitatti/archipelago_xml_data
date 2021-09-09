@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>84</ID_PERSON>
-	<Given_Name>Baldassare</Given_Name>
-	<Surname>Longhena</Surname>
+	<Appellation>Baldassare Longhena</Appellation>
 	<Titles>
 		<Title>
 			<aat>300024987</aat>

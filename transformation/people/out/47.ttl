@@ -10,6 +10,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/47/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Angelo Bragadin"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/47/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/47/death/date> ;
@@ -34,7 +39,7 @@ aat:300000645  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/47>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/OCC340017> , <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/OCC340016> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/47/identifier> , aat:300025756 , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/47/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/47/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/47/identifier> , aat:300025756 , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/47/appellation> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/47/death> .
 
@@ -49,24 +54,10 @@ aat:300000645  a         crm:E41_Appellation ;
 geonames:3164419  a  crm:E53_Place ;
         rdfs:label  "Vicenza"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/47/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bragadin"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 aat:300025756  a         crm:E41_Appellation ;
         rdfs:label       "Vescovo"@it , "Bishop"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/47/activity/OCC340017>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Bishop of Vicenza"@en , "Vescovo di Vicenza"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/47/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Angelo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

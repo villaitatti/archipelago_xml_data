@@ -29,22 +29,13 @@ aat:300000645  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/194>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/194/activity/OCC340069> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/194/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/194/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/194/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/194/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/194/appellation> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/194/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/194/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Maffei"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Pietro Maffei"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/194/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pietro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

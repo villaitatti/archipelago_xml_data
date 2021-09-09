@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>28</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Guardi</Surname>
+	<Appellation>Francesco Guardi</Appellation>
 	<Patronymic>
 		<eng>Domenico</eng>
 	</Patronymic>

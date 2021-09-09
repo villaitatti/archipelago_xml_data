@@ -10,6 +10,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/46/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Vincenzo Maria Coronelli"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/46/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1718-12-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -46,11 +51,6 @@ aat:300266789  a         crm:E41_Appellation ;
         a           frbr:F51_Pursuit ;
         rdfs:label  "Friar"@en , "Frate"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/46/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Coronelli"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/46/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/46/birth/date> ;
@@ -59,15 +59,6 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/300236518>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Cosmographer"@en , "Cosmografo"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/46/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Vincenzo Maria"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/46/death>
         a                     crm:E69_Death ;
@@ -80,7 +71,7 @@ geonames:3164603  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/46>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/300025593> , <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/300266789> , <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/300025539> , <https://archipelago.itatti.harvard.edu/resource/actor/46/activity/300236518> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/46/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/46/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/46/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/46/appellation> , <https://archipelago.itatti.harvard.edu/resource/actor/46/identifier> , aat:300266789 ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/46/birth> ;
         crm:P93i_was_taken_out_of_existence_by

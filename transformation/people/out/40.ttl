@@ -10,10 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/40/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Napoléon"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+<https://archipelago.itatti.harvard.edu/resource/actor/40/activity/OCC340011>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Emperor of the French  (1815)"@en , "Emperor of the French"@en , "Imperatore dei francesi"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/birth>
         a                     crm:E67_Birth ;
@@ -32,22 +31,22 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1769-08-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-aat:300025480  a         crm:E41_Appellation ;
-        rdfs:label       "Imperatore"@it , "Emperor"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/40/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/40/death/date> .
 
+aat:300025480  a         crm:E41_Appellation ;
+        rdfs:label       "Imperatore"@it , "Emperor"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/40/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Napoléon Bonaparte"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/OCC340012>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Monarch of Italy"@en , "Re d'Italia"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bonaparte"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -56,7 +55,7 @@ aat:300025480  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/40>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/OCC340012> , <https://archipelago.itatti.harvard.edu/resource/actor/40/activity/OCC340011> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/40/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/40/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/40/surname> , aat:300025480 , aat:300025481 , <https://archipelago.itatti.harvard.edu/resource/actor/40/identifier> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/40/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/40/appellation> , aat:300025480 , aat:300025481 , <https://archipelago.itatti.harvard.edu/resource/actor/40/identifier> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/40/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -72,14 +71,6 @@ aat:300025481  a         crm:E41_Appellation ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/40/activity/OCC340011>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Emperor of the French  (1815)"@en , "Emperor of the French"@en , "Imperatore dei francesi"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/40/alias>
         a           crm:E41_Appellation ;

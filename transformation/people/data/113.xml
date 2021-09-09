@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>113</ID_PERSON>
-	<Given_Name>Giuseppe</Given_Name>
-	<Surname>Porta</Surname>
+	<Appellation>Giuseppe Porta</Appellation>
 	<Alias>
 		<eng>il Salviati</eng>
 	</Alias>

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>122</ID_PERSON>
-	<Given_Name>Augusto</Given_Name>
-	<Surname>Denaix</Surname>
+	<Appellation>Augusto Denaix</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025063</aat>

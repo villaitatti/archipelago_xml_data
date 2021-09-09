@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>102</ID_PERSON>
-	<Given_Name/>
-	<Surname>Lateran Canons of Santa Maria della Carità {Canonici lateranensi di Santa Maria della Carità}</Surname>
+	<Appellation> Lateran Canons of Santa Maria della Carità</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

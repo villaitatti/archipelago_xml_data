@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/118/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "de Comminelles"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -22,7 +17,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/118>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/118/activity/OCC340040> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/118/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/118/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/118/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/118/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/118/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/118/activity/OCC340040>
         a           frbr:F51_Pursuit ;
@@ -32,11 +27,7 @@
         a           crm:E42_Identifier ;
         rdfs:label  "118" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/118/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/118/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Hugues"@it ;
+        rdfs:label       "Hugues de Comminelles"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

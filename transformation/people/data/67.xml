@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>67</ID_PERSON>
-	<Given_Name>Cristoforo</Given_Name>
-	<Surname>Sabbadino</Surname>
+	<Appellation>Cristoforo Sabbadino</Appellation>
 	<Titles>
 		<Title>
 			<ita>Proto</ita>

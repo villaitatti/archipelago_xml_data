@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>45</ID_PERSON>
-	<Given_Name>Gerardino</Given_Name>
-	<Surname>da Villanova</Surname>
+	<Appellation>Gerardino da Villanova</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300230871</aat>

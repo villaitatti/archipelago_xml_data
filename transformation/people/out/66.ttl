@@ -22,7 +22,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/66>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/66/activity/300025732> , <https://archipelago.itatti.harvard.edu/resource/actor/66/activity/300025574> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/66/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/66/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/66/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/66/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/66/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/66/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -45,14 +45,10 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1750-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/66/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/66/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Domenico"@it ;
+        rdfs:label       "Domenico Lovisa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/66/activity/300025574>
         a           frbr:F51_Pursuit ;
@@ -64,8 +60,3 @@ geonames:3164603  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/66/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1690-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/66/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Lovisa"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

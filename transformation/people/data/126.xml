@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>126</ID_PERSON>
-	<Given_Name>Girolamo</Given_Name>
-	<Surname>Capivaccio</Surname>
+	<Appellation>Girolamo Capivaccio</Appellation>
 	<Alias>
 		<eng>Capodivacca</eng>
 	</Alias>

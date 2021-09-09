@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/136/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "da Selva di Boggion"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -30,8 +25,13 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/136>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/136/activity/300230871> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/136/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/136/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/136/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/136/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/136/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/136/biography> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/136/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Imizza da Selva di Boggion"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/136/activity/300230871>
         a           frbr:F51_Pursuit ;
@@ -41,12 +41,3 @@
         a                crm:E73_Information_Object ;
         rdfs:label       "Era la vedova di Leone da Selva di Boggion"@it , "She was the widow of Leone da Selva di Boggion"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/136/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Imizza"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

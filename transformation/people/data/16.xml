@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>16</ID_PERSON>
-	<Given_Name/>
-	<Surname>Baffo family {Famiglia Baffo}</Surname>
+	<Appellation> Baffo family</Appellation>
 	<Occupation>
 		<aat>300236022</aat>
 		<ita>Famiglia nobiliare</ita>

@@ -16,7 +16,7 @@ geonames:3176959  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/121>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/121/activity/OCC340003> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/121/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/121/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/121/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/121/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/121/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/121/birth> .
 
@@ -24,23 +24,14 @@ geonames:3176959  a  crm:E53_Place ;
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/121/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/121/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Sebastiano"@it ;
+        rdfs:label       "Sebastiano Alberti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/121/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Alberti"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/121/activity/OCC340003>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Lagoon surveyor"@en , "Perito alla laguna"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/121/birth>
         a                     crm:E67_Birth ;

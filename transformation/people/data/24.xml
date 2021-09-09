@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>24</ID_PERSON>
-	<Given_Name/>
-	<Surname>Canons regular of Santo Spirito {Canonici regolari di Santo Spirito}</Surname>
+	<Appellation> Canons regular of Santo Spirito</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

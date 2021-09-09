@@ -10,15 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/77/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Albrizzi"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/77>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/77/activity/300025732> , <https://archipelago.itatti.harvard.edu/resource/actor/77/activity/300025574> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/77/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/77/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/77/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/77/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/77/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/77/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -36,14 +31,14 @@
         a           crm:E42_Identifier ;
         rdfs:label  "77" .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/77/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Giovanni Battista Albrizzi"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/77/activity/300025574>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Publisher"@en , "Editore"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/77/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Giovanni Battista"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/77/activity/300025732>
         a           frbr:F51_Pursuit ;
@@ -51,10 +46,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

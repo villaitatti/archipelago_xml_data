@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>176</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>de Strigis</Surname>
+	<Appellation>Alessandro de Strigis</Appellation>
 	<Titles>
 		<Title>
 			<aat>300250804</aat>

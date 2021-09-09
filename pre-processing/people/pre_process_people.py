@@ -37,6 +37,7 @@ regex_date = r'\([0-9\-]+\)'
 key_row = 'ROW'
 key_id_person = 'ID_PERSON'
 key_given_name = 'Given_Name'
+key_appellation = 'Appellation'
 key_surname = 'Surname'
 key_alias = 'Alias'
 key_title = 'Title'
@@ -85,6 +86,7 @@ ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
 tags = root.findall(f'ns:{key_row}', ns)
 
 all_people = []
+
 
 def explode_text(s, parent, current, id=None):
 
@@ -176,13 +178,18 @@ for row in tags:
     #TODO Actor type
 
     # given name 
-    given_name = et.SubElement(new_row, key_given_name)
-    given_name.text = row.find(f'ns:{key_given_name}', ns).text
+    
+    given_name = row.find(f'ns:{key_given_name}', ns).text
+    if given_name is None:
+      given_name = ""
 
     # surname
-    surname = et.SubElement(new_row, key_surname)
-    surname.text = row.find(f'ns:{key_surname}', ns).text
+    surname = row.find(f'ns:{key_surname}', ns).text
+    surname = re.sub(regex_ita, '', surname).rstrip()
 
+    appellation = et.SubElement(new_row, key_appellation)
+    appellation.text = f'{given_name} {surname}'.rstrip()
+    
     # alias
     explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)
 
@@ -262,8 +269,7 @@ for row in tags:
     explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
 
     all_people.append({
-      key_given_name: given_name.text,
-      key_surname: surname.text,
+      key_appellation: appellation.text,
       key_id_person: id_person.text 
     })
 

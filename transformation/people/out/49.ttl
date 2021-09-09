@@ -29,7 +29,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/49>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/49/activity/OCC340015> , <https://archipelago.itatti.harvard.edu/resource/actor/49/activity/OCC340067> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/49/given_name> , aat:300025772 , aat:300162118 , <https://archipelago.itatti.harvard.edu/resource/actor/49/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/49/identifier> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/49/identifier> , aat:300025772 , aat:300162118 , <https://archipelago.itatti.harvard.edu/resource/actor/49/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/49/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -53,11 +53,6 @@ aat:300025772  a         crm:E41_Appellation ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/49/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/49/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Trevisan"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
@@ -70,14 +65,10 @@ aat:300162118  a         crm:E41_Appellation ;
         a           frbr:F51_Pursuit ;
         rdfs:label  "Abbott of San Cipriano in Murano"@en , "Abate di San Cipriano di Murano"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/49/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/49/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Giovanni"@it ;
+        rdfs:label       "Giovanni Trevisan"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

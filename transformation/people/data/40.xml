@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>40</ID_PERSON>
-	<Given_Name>Napoléon</Given_Name>
-	<Surname>Bonaparte</Surname>
+	<Appellation>Napoléon Bonaparte</Appellation>
 	<Alias>
 		<eng>Napoleon</eng>
 	</Alias>

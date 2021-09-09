@@ -21,22 +21,13 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/138>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/138/activity/300230871> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/138/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/138/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/138/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/138/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/138/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/138/activity/300230871>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Landowner"@en , "Proprietario terriero"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/138/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/138/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Spadaro"@it ;
+        rdfs:label       "Spadaro Litaldo"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/138/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Litaldo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

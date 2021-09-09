@@ -10,10 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/133/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/133/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Canons regular of San Clemente {Canonici regolari di San Clemente}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Canons regular of San Clemente"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/133/birth>
         a                     crm:E67_Birth ;
@@ -21,7 +25,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/133>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/133/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/133/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/133/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/133/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/133/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -34,10 +38,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/133/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "133" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

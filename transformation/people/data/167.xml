@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>167</ID_PERSON>
-	<Given_Name>Gaetano</Given_Name>
-	<Surname>dei Conti di Thiene</Surname>
+	<Appellation>Gaetano dei Conti di Thiene</Appellation>
 	<Alias>
 		<ita>San Gaetano</ita>
 		<eng>Saint Cajetan</eng>

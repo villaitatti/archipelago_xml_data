@@ -10,15 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/25/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Andrea"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/25>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/25/activity/OCC340014> , <https://archipelago.itatti.harvard.edu/resource/actor/25/activity/OCC340013> , <https://archipelago.itatti.harvard.edu/resource/actor/25/activity/OCC340015> ;
-        crm:P1_is_identified_by     aat:300000645 , aat:300025772 , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/25/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/25/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/25/surname> ;
+        crm:P1_is_identified_by     aat:300000645 , aat:300025772 , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/25/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/25/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/25/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/25/birth> ;
@@ -34,6 +29,11 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/25/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Andrea Bondumier"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
 
@@ -42,18 +42,14 @@ geonames:3164603  a  crm:E53_Place ;
         crm:P7_took_place_at  geonames:3164603 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/25/death>
-        a                     crm:E69_Death ;
-        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/25/death/date> ;
-        crm:P7_took_place_at  geonames:3164603 .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/25/activity/OCC340015>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Patriarch of Venice"@en , "Patriarca di Venezia"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/25/death>
+        a                     crm:E69_Death ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/25/death/date> ;
+        crm:P7_took_place_at  geonames:3164603 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/25/death/date>
         a                            crm:E52_Time-Span ;
@@ -82,11 +78,6 @@ aat:300000645  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/25/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bondumier"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 aat:300025757  a         crm:E41_Appellation ;
         rdfs:label       "Canonico"@it , "Canon"@en ;

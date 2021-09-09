@@ -13,7 +13,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/174>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/174/activity/OCC340005> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/174/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/174/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/174/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/174/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/174/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/174/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -53,23 +53,14 @@ aat:300025463  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/174/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/174/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Polani"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/174/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pietro"@it ;
+        rdfs:label       "Pietro Polani"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/174/activity/OCC340005>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Doge of Venice"@en , "Doge di Venezia"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>108</ID_PERSON>
-	<Given_Name>Alvise</Given_Name>
-	<Surname>Foscarini</Surname>
+	<Appellation>Alvise Foscarini</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025471</aat>

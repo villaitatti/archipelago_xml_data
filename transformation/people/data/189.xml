@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>189</ID_PERSON>
-	<Given_Name>Todero</Given_Name>
-	<Surname>Balbi</Surname>
+	<Appellation>Todero Balbi</Appellation>
 	<Occupation>
 		<aat>300236547</aat>
 		<ita>Nobiluomo</ita>

@@ -13,11 +13,6 @@
 geonames:3176746  a  crm:E53_Place ;
         rdfs:label  "Forlì"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/125/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Mercuriale"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/125/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/125/birth/date> ;
@@ -51,7 +46,7 @@ geonames:3176746  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/125>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/125/activity/300025809> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/125/identifier> , aat:300025809 , <https://archipelago.itatti.harvard.edu/resource/actor/125/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/125/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/125/identifier> , aat:300025809 , <https://archipelago.itatti.harvard.edu/resource/actor/125/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/125/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -65,11 +60,7 @@ aat:300025809  a         crm:E41_Appellation ;
         rdfs:label       "Medico"@it , "Physician"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/125/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/125/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Girolamo"@it ;
+        rdfs:label       "Girolamo Mercuriale"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

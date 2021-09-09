@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>32</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Morani</Surname>
+	<Appellation>Pietro Morani</Appellation>
 	<Place_of_birth>
 		<label/>
 	</Place_of_birth>

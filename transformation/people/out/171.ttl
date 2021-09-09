@@ -18,10 +18,10 @@
         a           crm:E42_Identifier ;
         rdfs:label  "171" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/171/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/171/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Vallaresso"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Piero Vallaresso"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/171/birth>
         a                    crm:E67_Birth ;
@@ -30,17 +30,8 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/171/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Piero"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/171>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/171/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/171/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/171/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/171/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/171/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/171/birth> .

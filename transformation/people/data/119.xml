@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>119</ID_PERSON>
-	<Given_Name>Nicolò</Given_Name>
-	<Surname>dal Cortivo</Surname>
+	<Appellation>Nicolò dal Cortivo</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025593</aat>

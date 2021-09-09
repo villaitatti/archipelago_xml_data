@@ -10,6 +10,11 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/90/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Venetian Senate"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/90/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "90" .
@@ -23,26 +28,21 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1229-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/90/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1797-05-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/90>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/90/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/90/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/90/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/90/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/90/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/90/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/90/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Venetian Senate {Senato veneziano}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

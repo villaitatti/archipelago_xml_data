@@ -79,7 +79,7 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>Given_Name</relation>
+                        <relation>Appellation</relation>
                     </source_relation>
                     <target_relation>
                         <if>
@@ -89,14 +89,14 @@
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>Given_Name</source_node>
+                    <source_node>Appellation</source_node>
                     <target_node>
                         <if>
                             <exists>text()</exists>
                         </if>
                         <entity>
                             <type>crm:E41_Appellation</type>
-                            <instance_generator name="311-actor-identifier-name">
+                            <instance_generator name="310a-actor-appellation">
                                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                             </instance_generator>
                             <label_generator name="Literal">
@@ -115,53 +115,6 @@
                                     </instance_generator>
                                     <label_generator name="Constant">
                                         <arg name="text" type="constant">Preferred Name</arg>
-                                        <arg name="language" type="constant">en</arg>
-                                    </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Surname</relation>
-                    </source_relation>
-                    <target_relation>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <relationship>crm:P1_is_identified_by</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Surname</source_node>
-                    <target_node>
-                        <if>
-                            <exists>text()</exists>
-                        </if>
-                        <entity>
-                            <type>crm:E41_Appellation</type>
-                            <instance_generator name="312-actor-identifier-surname">
-                                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">text()</arg>
-                                <arg name="language" type="constant">it</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>crm:P2_has_type</relationship>
-                                <entity>
-                                    <type>crm:E55_Type</type>
-                                    <instance_info>
-                                        <constant>Surname</constant>
-                                    </instance_info>
-                                    <instance_generator name="000-type">
-                                        <arg name="type_id" type="constant">surname</arg>
-                                    </instance_generator>
-                                    <label_generator name="Constant">
-                                        <arg name="text" type="constant">Surname</arg>
                                         <arg name="language" type="constant">en</arg>
                                     </label_generator>
                                 </entity>

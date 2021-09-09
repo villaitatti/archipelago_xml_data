@@ -44,27 +44,18 @@ geonames:3171573  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/65>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/65/activity/300025136> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/65/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/65/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/65/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/65/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/65/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/65/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/65/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/65/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bison"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/65/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/65/birth/date> ;
         crm:P7_took_place_at  geonames:3171573 .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/65/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/65/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Giuseppe Bernardino"@it ;
+        rdfs:label       "Giuseppe Bernardino Bison"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

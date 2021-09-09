@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>116</ID_PERSON>
-	<Given_Name>Lorenzo</Given_Name>
-	<Surname>Giustinian</Surname>
+	<Appellation>Lorenzo Giustinian</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025772</aat>

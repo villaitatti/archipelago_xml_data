@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>76</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Cominelli</Surname>
+	<Appellation>Andrea Cominelli</Appellation>
 	<Titles>
 		<Title>
 			<aat>300024987</aat>

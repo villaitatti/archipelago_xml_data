@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>57</ID_PERSON>
-	<Given_Name>Guglielmo</Given_Name>
-	<Surname>Stella</Surname>
+	<Appellation>Guglielmo Stella</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>

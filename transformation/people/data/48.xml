@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>48</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Buonconsiglio</Surname>
+	<Appellation>Giovanni Buonconsiglio</Appellation>
 	<Alias>
 		<eng>Marescalco</eng>
 	</Alias>

@@ -10,15 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/126/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Girolamo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/126>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/126/activity/OCC340018> , <https://archipelago.itatti.harvard.edu/resource/actor/126/activity/300025809> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/126/given_name> , aat:300025533 , <https://archipelago.itatti.harvard.edu/resource/actor/126/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/126/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/126/alias> , aat:300025809 ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/126/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/126/alias> , aat:300025533 , aat:300025809 , <https://archipelago.itatti.harvard.edu/resource/actor/126/appellation> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/126/death> .
 
@@ -29,11 +24,6 @@
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/126/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Capivaccio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/126/birth>
         a       crm:E67_Birth .
@@ -66,10 +56,11 @@ aat:300025533  a         crm:E41_Appellation ;
         a           crm:E41_Appellation ;
         rdfs:label  "Capodivacca"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/126/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Girolamo Capivaccio"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 aat:300025809  a         crm:E41_Appellation ;
         rdfs:label       "Medico"@it , "Physician"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

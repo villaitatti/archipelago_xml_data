@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/70/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Ruzzini"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/70/birth/date> ;
@@ -32,7 +27,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/70>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/70/activity/OCC340005> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/70/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/70/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/70/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/70/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/70/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -41,6 +36,11 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/70/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "70" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/70/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Carlo Ruzzini"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/70/birth/date>
         a                            crm:E52_Time-Span ;
@@ -58,11 +58,6 @@ aat:300025463  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/70/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Carlo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
@@ -70,10 +65,6 @@ aat:300025463  a         crm:E41_Appellation ;
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/70/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

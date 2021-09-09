@@ -22,11 +22,6 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1630-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/176/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "de Strigis"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/176/activity/OCC340009>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Ambassador of the Duke of Mantua and Nevers Carlo Gonzaga"@en , "Ambasciatore del duca di Mantova e Nevers Carlo Gonzaga"@it .
@@ -34,6 +29,11 @@
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Alessandro de Strigis"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 aat:300250804  a         crm:E41_Appellation ;
         rdfs:label       "Marchese"@it , "Marquis"@en ;
@@ -47,18 +47,9 @@ aat:300188587  a         crm:E41_Appellation ;
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/176/death/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/176>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/176/activity/OCC340009> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/176/identifier> , aat:300188587 , aat:300250804 , <https://archipelago.itatti.harvard.edu/resource/actor/176/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/176/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/176/identifier> , aat:300188587 , aat:300250804 , <https://archipelago.itatti.harvard.edu/resource/actor/176/appellation> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/176/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Alessandro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

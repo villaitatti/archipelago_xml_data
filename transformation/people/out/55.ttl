@@ -14,15 +14,15 @@ aat:300025765  a         crm:E41_Appellation ;
         rdfs:label       "Monaco"@it , "Monk"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/55/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/55/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Zaccaria"@it ;
+        rdfs:label       "Zaccaria da Luni"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/55>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/55/activity/OCC340006> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/55/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/55/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/55/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/55/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/55/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/55/birth>
         a       crm:E67_Birth .
@@ -42,12 +42,3 @@ aat:300025765  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/55/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "da Luni"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

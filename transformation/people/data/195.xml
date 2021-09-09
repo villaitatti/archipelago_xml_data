@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>195</ID_PERSON>
-	<Given_Name/>
-	<Surname>Benedictine monks of San Giorgio Maggiore {Monaci benedettini di San Giorgio Maggiore} </Surname>
+	<Appellation> Benedictine monks of San Giorgio Maggiore</Appellation>
 	<Occupation>
 		<aat>300411986</aat>
 		<ita>Ecclesiastico</ita>

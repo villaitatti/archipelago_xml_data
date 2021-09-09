@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>129</ID_PERSON>
-	<Given_Name>Bernardino</Given_Name>
-	<Surname>Paterno</Surname>
+	<Appellation>Bernardino Paterno</Appellation>
 	<Place_of_birth>
 		<label/>
 	</Place_of_birth>

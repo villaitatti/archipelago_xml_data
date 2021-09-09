@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>77</ID_PERSON>
-	<Given_Name>Giovanni Battista</Given_Name>
-	<Surname>Albrizzi</Surname>
+	<Appellation>Giovanni Battista Albrizzi</Appellation>
 	<Patronymic>
 		<eng>Girolamo</eng>
 	</Patronymic>

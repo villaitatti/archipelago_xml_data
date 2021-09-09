@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>145</ID_PERSON>
-	<Given_Name>Gabriele</Given_Name>
-	<Surname>Condulmer</Surname>
+	<Appellation>Gabriele Condulmer</Appellation>
 	<Alias>
 		<ita>Papa Eugenio IV</ita>
 		<eng>Pope Eugene IV</eng>

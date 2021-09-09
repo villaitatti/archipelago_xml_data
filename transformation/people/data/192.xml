@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>192</ID_PERSON>
-	<Given_Name/>
-	<Surname>Hermits of Santa Giustina in Padua {Eremitani di Santa Giustina a Padova}</Surname>
+	<Appellation> Hermits of Santa Giustina in Padua</Appellation>
 	<Place_of_birth>
 		<label>Padua</label>
 	</Place_of_birth>

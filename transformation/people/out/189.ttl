@@ -10,10 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/189/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/189/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Balbi"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Todero Balbi"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/189/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "189" .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -21,17 +25,4 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/189>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/189/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/189/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/189/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/189/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Todero"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/189/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "189" .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/189/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/189/appellation> .

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>182</ID_PERSON>
-	<Given_Name>Girolamo</Given_Name>
-	<Surname>Lando</Surname>
+	<Appellation>Girolamo Lando</Appellation>
 	<Occupation>
 		<aat>300236547</aat>
 		<ita>Nobiluomo</ita>

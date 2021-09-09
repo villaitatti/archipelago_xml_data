@@ -14,11 +14,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/142/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Nicolò"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 aat:300025757  a         crm:E41_Appellation ;
         rdfs:label       "Canonico"@it , "Canon"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
@@ -35,16 +30,12 @@ aat:300025757  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/142/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "de Benvenutis"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/142>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/142/activity/OCC340039> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/142/identifier> , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/142/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/142/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/142/identifier> , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/142/appellation> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/142/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Nicolò de Benvenutis"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/108/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Alvise"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 aat:300025471  a         crm:E41_Appellation ;
         rdfs:label       "Procuratore"@it , "Procurator"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
@@ -27,11 +22,6 @@ aat:300025471  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/108/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Foscarini"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/108/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "108" .
@@ -39,11 +29,12 @@ aat:300025471  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/108>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/108/activity/OCC340030> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/108/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/108/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/108/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/108/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/108/appellation> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/108/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Alvise Foscarini"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/108/activity/OCC340030>
         a           frbr:F51_Pursuit ;

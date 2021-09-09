@@ -12,7 +12,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/94/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/94/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/94/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/94/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/94/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -22,22 +22,22 @@
         a           crm:E42_Identifier ;
         rdfs:label  "94" .
 
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/94/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1797-05-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/94/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/94/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Procurators of St Mark's de supra {Procuratori di San Marco de supra}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Procurators of St Mark's de supra"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94/birth>
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94/death>
         a                     crm:E69_Death ;

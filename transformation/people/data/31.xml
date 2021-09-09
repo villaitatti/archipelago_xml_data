@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>31</ID_PERSON>
-	<Given_Name>Elisabetta Graziosa</Given_Name>
-	<Surname>Ferri</Surname>
+	<Appellation>Elisabetta Graziosa Ferri</Appellation>
 	<Occupation>
 		<aat>300236548</aat>
 		<ita>Nobildonna</ita>

@@ -22,19 +22,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/131/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/131/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Nicolò"@it ;
+        rdfs:label       "Nicolò Massa"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/131/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Massa"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/131/birth/date>
         a                            crm:E52_Time-Span ;
@@ -51,7 +46,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/131>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/131/activity/300025809> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/131/identifier> , aat:300025809 , <https://archipelago.itatti.harvard.edu/resource/actor/131/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/131/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/131/identifier> , aat:300025809 , <https://archipelago.itatti.harvard.edu/resource/actor/131/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/131/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -64,7 +59,3 @@ aat:300025809  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/131/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "131" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

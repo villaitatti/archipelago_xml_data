@@ -14,6 +14,11 @@
         a           frbr:F51_Pursuit ;
         rdfs:label  "Lithographer"@en , "Litografo"@it .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/60/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Marco Moro"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/60/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/60/death/date> ;
@@ -22,11 +27,6 @@
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/60/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Moro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/60/identifier>
         a           crm:E42_Identifier ;
@@ -47,20 +47,11 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/60>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/60/activity/300025175> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/60/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/60/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/60/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/60/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/60/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/60/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/60/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/60/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Marco"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

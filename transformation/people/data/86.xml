@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>86</ID_PERSON>
-	<Given_Name/>
-	<Surname>Venice Municipality {Comune di Venezia}</Surname>
+	<Appellation> Venice Municipality</Appellation>
 	<Place_of_birth>
 		<label/>
 	</Place_of_birth>

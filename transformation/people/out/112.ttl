@@ -10,10 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/112/surname>
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/112/appellation>
         a                crm:E41_Appellation ;
         rdfs:label       "Bencio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -27,10 +31,6 @@ aat:300162118  a         crm:E41_Appellation ;
         a           crm:E42_Identifier ;
         rdfs:label  "112" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/112>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/112/identifier> , aat:300162118 , <https://archipelago.itatti.harvard.edu/resource/actor/112/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/112/identifier> , aat:300162118 , <https://archipelago.itatti.harvard.edu/resource/actor/112/appellation> .

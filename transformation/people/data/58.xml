@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>58</ID_PERSON>
-	<Given_Name>Jacopo</Given_Name>
-	<Surname>de' Barbari</Surname>
+	<Appellation>Jacopo de' Barbari</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>

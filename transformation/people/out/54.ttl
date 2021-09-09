@@ -22,6 +22,11 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/54/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Raffaele Riva"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/54/death/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1611-07-19T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -41,29 +46,15 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/54>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/54/activity/OCC340055> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/54/identifier> , aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/54/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/54/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/54/identifier> , aat:300025756 , <https://archipelago.itatti.harvard.edu/resource/actor/54/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/54/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/54/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/54/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Riva"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 aat:300025756  a         crm:E41_Appellation ;
         rdfs:label       "Vescovo"@it , "Bishop"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/54/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Raffaele"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

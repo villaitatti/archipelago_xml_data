@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>157</ID_PERSON>
-	<Given_Name>Maria</Given_Name>
-	<Surname>Priuli</Surname>
+	<Appellation>Maria Priuli</Appellation>
 	<Alias>
 		<eng>Dogaressa Foscari</eng>
 	</Alias>

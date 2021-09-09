@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>172</ID_PERSON>
-	<Given_Name>Alessandro</Given_Name>
-	<Surname>Pesaro</Surname>
+	<Appellation>Alessandro Pesaro</Appellation>
 	<Occupation>
 		<aat>300236547</aat>
 		<ita>Nobiluomo</ita>

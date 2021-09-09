@@ -18,25 +18,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/120/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/120/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Antonio Girolamo"@it ;
+        rdfs:label       "Antonio Girolamo Vestri"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/120/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Vestri"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/120>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/120/activity/OCC340003> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/120/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/120/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/120/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/120/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/120/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/120/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "120" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

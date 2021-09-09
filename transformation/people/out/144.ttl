@@ -13,11 +13,6 @@
 geonames:3172394  a  crm:E53_Place ;
         rdfs:label  "Naples"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/144/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Piero"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/144/activity/300025773>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Pope"@en , "Papa"@it .
@@ -35,11 +30,6 @@ geonames:3169070  a  crm:E53_Place ;
         crm:P7_took_place_at  geonames:3172394 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/144/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Tomacelli"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/144/birth/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1350-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -51,7 +41,7 @@ geonames:3169070  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/144>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/144/activity/300025773> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/144/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/144/alias> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/144/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/144/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/144/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/144/alias> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/144/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/144/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -81,6 +71,7 @@ aat:300025773  a         crm:E41_Appellation ;
         rdfs:label       "Papa"@it , "Pope"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/144/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Piero Tomacelli"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

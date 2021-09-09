@@ -10,14 +10,14 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/141/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Egidio da Ferrara"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/141/activity/OCC340035>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Patriarch of Grado"@en , "Patriarca di Grado"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/141/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Egidio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
@@ -26,7 +26,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/141>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/141/activity/OCC340036> , <https://archipelago.itatti.harvard.edu/resource/actor/141/activity/OCC340035> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/141/identifier> , aat:300025772 , <https://archipelago.itatti.harvard.edu/resource/actor/141/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/141/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/141/identifier> , aat:300025772 , <https://archipelago.itatti.harvard.edu/resource/actor/141/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/141/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -35,11 +35,6 @@
 aat:300025772  a         crm:E41_Appellation ;
         rdfs:label       "Patriarca"@it , "Patriarch"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/141/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "da Ferrara"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141/death/date>
         a                            crm:E52_Time-Span ;
@@ -63,10 +58,6 @@ geonames:3177090  a  crm:E53_Place ;
 <https://archipelago.itatti.harvard.edu/resource/actor/141/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "141" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141/death>
         a                     crm:E69_Death ;

@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/139/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Litaldo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -27,16 +22,12 @@
         a           crm:E42_Identifier ;
         rdfs:label  "139" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/139/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Pietro Litaldo"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/139>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/139/activity/300230871> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/139/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/139/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/139/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/139/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pietro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/139/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/139/appellation> .

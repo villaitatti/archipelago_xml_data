@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>42</ID_PERSON>
-	<Given_Name/>
-	<Surname>Dominican friars of San Secondo {Frati domenicani di San Secondo}</Surname>
+	<Appellation> Dominican friars of San Secondo</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

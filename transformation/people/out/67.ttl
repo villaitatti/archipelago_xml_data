@@ -22,11 +22,6 @@ aat:300025063  a         crm:E41_Appellation ;
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1560-03-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/67/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Sabbadino"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -56,27 +51,23 @@ geonames:3178784  a  crm:E53_Place ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/67/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/67>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/OCC340001> , <https://archipelago.itatti.harvard.edu/resource/actor/67/activity/300025063> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/67/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/67/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/67/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/67/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/67/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/67/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/67/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/67/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Cristoforo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
+<https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/67/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Cristoforo Sabbadino"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

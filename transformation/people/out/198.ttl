@@ -23,19 +23,14 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/198/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/198/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Gualtierotti"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Bartolomeo Gualtierotti"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/198/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Bartolomeo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 aat:300188587  a         crm:E41_Appellation ;
         rdfs:label       "Ambasciatore"@it , "Ambassador"@en ;
@@ -45,14 +40,10 @@ aat:300188587  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Biography"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/198>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/198/activity/OCC340070> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/198/identifier> , aat:300188587 , <https://archipelago.itatti.harvard.edu/resource/actor/198/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/198/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/198/identifier> , aat:300188587 , <https://archipelago.itatti.harvard.edu/resource/actor/198/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/198/biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/198/activity/OCC340070>

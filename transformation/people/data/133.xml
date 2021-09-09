@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>133</ID_PERSON>
-	<Given_Name/>
-	<Surname>Canons regular of San Clemente {Canonici regolari di San Clemente}</Surname>
+	<Appellation> Canons regular of San Clemente</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

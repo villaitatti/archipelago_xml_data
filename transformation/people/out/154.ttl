@@ -18,11 +18,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/154/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Seguso"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
@@ -31,20 +26,16 @@
         a           crm:E42_Identifier ;
         rdfs:label  "154" .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/154/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Angelo Seguso"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 aat:300024987  a         crm:E41_Appellation ;
         rdfs:label       "Architetto"@it , "Architect"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/154/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Angelo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/154>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/154/activity/300386353> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/154/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/154/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/154/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/154/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/154/appellation> .

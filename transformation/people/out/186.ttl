@@ -18,25 +18,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/186/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/186/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Lumi"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Zuanne Lumi"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/186>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/186/activity/300025039> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/186/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/186/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/186/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/186/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/186/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/186/activity/300025039>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Stonecutter"@en , "Scalpellino"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/186/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Zuanne"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

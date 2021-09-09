@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>169</ID_PERSON>
-	<Given_Name>Andrea</Given_Name>
-	<Surname>Contarini</Surname>
+	<Appellation>Andrea Contarini</Appellation>
 	<Patronymic>
 		<eng>Alvise Minotto</eng>
 	</Patronymic>

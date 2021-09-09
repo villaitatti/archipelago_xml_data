@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>90</ID_PERSON>
-	<Given_Name/>
-	<Surname>Venetian Senate {Senato veneziano}</Surname>
+	<Appellation> Venetian Senate</Appellation>
 	<Activities>
 		<Activity>
 			<eng>Venetian Office</eng>

@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/146/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "de Lusciano"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 aat:300000645  a         crm:E41_Appellation ;
         rdfs:label       "Priore"@it , "Prior"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
@@ -26,7 +21,7 @@ aat:300000645  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/146>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/146/activity/OCC340028> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/146/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/146/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/146/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/146/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/146/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/146/activity/OCC340028>
         a           frbr:F51_Pursuit ;
@@ -40,11 +35,7 @@ aat:300000645  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/146/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/146/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Antonio"@it ;
+        rdfs:label       "Antonio de Lusciano"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

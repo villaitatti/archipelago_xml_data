@@ -10,13 +10,17 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/17/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Holy See"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/17/birth>
         a       crm:E67_Birth .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/17/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Holy See {Santa Sede}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17/identifier>
         a           crm:E42_Identifier ;
@@ -24,8 +28,4 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/17/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/17/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/17/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/17/appellation> .

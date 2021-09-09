@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>134</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>Polani</Surname>
+	<Appellation>Giovanni Polani</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025756</aat>

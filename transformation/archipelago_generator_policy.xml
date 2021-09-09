@@ -151,6 +151,9 @@
 	<generator name="310-actor-identifier" prefix="arc">
 		<pattern>actor/{actor_id}/identifier</pattern>
 	</generator>
+  <generator name="310a-actor-appellation" prefix="arc">
+		<pattern>actor/{actor_id}/appellation</pattern>
+	</generator>
 	<generator name="311-actor-identifier-name" prefix="arc">
 		<pattern>actor/{actor_id}/given_name</pattern>
 	</generator>

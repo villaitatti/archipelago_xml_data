@@ -10,10 +10,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/29/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Daniele Danieli"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/29>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/29/activity/OCC340038> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/29/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/29/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/29/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/29/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/29/appellation> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/29/death> .
 
@@ -41,19 +46,5 @@ aat:300266789  a         crm:E41_Appellation ;
         a           crm:E42_Identifier ;
         rdfs:label  "29" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/29/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Danieli"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/29/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Daniele"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

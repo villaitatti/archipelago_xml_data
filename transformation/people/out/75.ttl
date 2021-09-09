@@ -21,25 +21,16 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/75>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/75/activity/300025245> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/75/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/75/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/75/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/75/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/75/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Gattilesso"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/75/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/75/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/75/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/75/activity/300025245>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Merchant"@en , "Mercante"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/75/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/75/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Pietro"@it ;
+        rdfs:label       "Pietro Gattilesso"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/75/alias>
         a           crm:E41_Appellation ;

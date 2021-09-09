@@ -10,19 +10,19 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/195/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/195/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Benedictine monks of San Giorgio Maggiore {Monaci benedettini di San Giorgio Maggiore}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Benedictine monks of San Giorgio Maggiore"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/195>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/195/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/195/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/195/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/195/appellation> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/195/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "195" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

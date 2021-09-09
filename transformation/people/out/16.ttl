@@ -10,13 +10,22 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/16/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Baffo family"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/16/birth>
         a                     crm:E67_Birth ;
         crm:P7_took_place_at  geonames:3165185 .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/16>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/16/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/16/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/16/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/16/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/16/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -33,14 +42,5 @@ geonames:3165185  a  crm:E53_Place ;
         a           crm:E42_Identifier ;
         rdfs:label  "16" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/16/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Baffo family {Famiglia Baffo}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

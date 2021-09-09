@@ -10,11 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/164/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Gritti"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 geonames:3182364  a  crm:E53_Place ;
         rdfs:label  "Bardolino"@en .
 
@@ -45,7 +40,7 @@ aat:300025463  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/164>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/164/activity/OCC340005> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/164/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/164/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/164/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/164/identifier> , aat:300025463 , <https://archipelago.itatti.harvard.edu/resource/actor/164/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/164/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -69,14 +64,10 @@ aat:300025463  a         crm:E41_Appellation ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/164/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/164/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/164/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Andrea"@it ;
+        rdfs:label       "Andrea Gritti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .

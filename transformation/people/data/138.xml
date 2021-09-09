@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>138</ID_PERSON>
-	<Given_Name>Spadaro</Given_Name>
-	<Surname>Litaldo</Surname>
+	<Appellation>Spadaro Litaldo</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300230871</aat>

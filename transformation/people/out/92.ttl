@@ -17,12 +17,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/92>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/92/activity/OCC340051> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/92/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/92/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/92/given_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/92/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Scutari"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/92/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/92/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/92/activity/OCC340051>
         a           frbr:F51_Pursuit ;
@@ -40,11 +35,7 @@ aat:300266789  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/92/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/92/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Vincenzo"@it ;
+        rdfs:label       "Vincenzo Scutari"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

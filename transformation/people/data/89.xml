@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>89</ID_PERSON>
-	<Given_Name/>
-	<Surname>Savi ed esecutori alle acque</Surname>
+	<Appellation> Savi ed esecutori alle acque</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

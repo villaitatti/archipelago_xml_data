@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>170</ID_PERSON>
-	<Given_Name/>
-	<Surname>Vendramin</Surname>
+	<Appellation> Vendramin</Appellation>
 	<Patronymic>
 		<eng>Luca</eng>
 	</Patronymic>

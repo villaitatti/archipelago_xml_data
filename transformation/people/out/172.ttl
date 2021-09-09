@@ -14,11 +14,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/172/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pesaro"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/172/activity/300236171>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Captain"@en , "Capitano"@it .
@@ -26,17 +21,13 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/172>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/172/activity/300236171> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/172/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/172/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/172/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/172/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/172/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/172/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "172" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/172/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/172/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Alessandro"@it ;
+        rdfs:label       "Alessandro Pesaro"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

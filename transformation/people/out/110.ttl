@@ -17,7 +17,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/110>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/110/activity/OCC340030> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/110/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/110/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/110/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/110/identifier> , aat:300025471 , <https://archipelago.itatti.harvard.edu/resource/actor/110/appellation> .
 
 aat:300025471  a         crm:E41_Appellation ;
         rdfs:label       "Procuratore"@it , "Procurator"@en ;
@@ -27,23 +27,14 @@ aat:300025471  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/110/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/110/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Andrea"@it ;
+        rdfs:label       "Andrea Pisani"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
         rdfs:label  "Title"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/110/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Pisani"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/110/identifier>
         a           crm:E42_Identifier ;

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>196</ID_PERSON>
-	<Given_Name>Giulio Zanobi</Given_Name>
-	<Surname>Medici</Surname>
+	<Appellation>Giulio Zanobi Medici</Appellation>
 	<Alias>
 		<ita>Papa Clemente VII</ita>
 		<eng>Pope Clement VII</eng>

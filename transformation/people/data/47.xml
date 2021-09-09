@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>47</ID_PERSON>
-	<Given_Name>Angelo</Given_Name>
-	<Surname>Bragadin</Surname>
+	<Appellation>Angelo Bragadin</Appellation>
 	<Titles>
 		<Title>
 			<aat>300000645</aat>

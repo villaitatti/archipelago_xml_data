@@ -14,22 +14,12 @@
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/20/death/date> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/20/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Museo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 geonames:3165201  a  crm:E53_Place ;
         rdfs:label  "Treviso"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/20/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Agostino"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 aat:300266789  a         crm:E41_Appellation ;
         rdfs:label       "Frate"@it , "Friar"@en ;
@@ -38,7 +28,7 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/20>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/20/activity/OCC340061> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/20/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/20/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/20/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/20/identifier> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/20/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/20/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/20/birth> ;
@@ -70,6 +60,11 @@ aat:300266789  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Biography"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/20/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Agostino Museo"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/20/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/20/birth/date> ;
@@ -78,7 +73,3 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/20/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "20" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .

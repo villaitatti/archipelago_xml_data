@@ -15,11 +15,6 @@
         rdfs:label       "Insieme all'arcivescovo di Firenze Antonino Pierozzi fu mediatore nella pace di Lodi. è seppellito nella chiesa di San Pietro di Castello"@it , "Together with the Arcibishop of Florenze, Antonino Pierozzi, he played as mediator in the peace of Lodi. He is buried in the church of San Pietro di Castello"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/116/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Lorenzo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -36,19 +31,19 @@ aat:300025772  a         crm:E41_Appellation ;
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1381-07-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/116>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/116/activity/OCC340015> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/116/identifier> , aat:300025772 , <https://archipelago.itatti.harvard.edu/resource/actor/116/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/116/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/116/identifier> , aat:300025772 , <https://archipelago.itatti.harvard.edu/resource/actor/116/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/116/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/116/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/116/death> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/type/biography>
         a           crm:E55_Type ;
@@ -67,11 +62,6 @@ aat:300025772  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/116/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Giustinian"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/116/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/116/death/date> ;
@@ -81,9 +71,10 @@ aat:300025772  a         crm:E41_Appellation ;
         a           crm:E42_Identifier ;
         rdfs:label  "116" .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/116/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Lorenzo Giustinian"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

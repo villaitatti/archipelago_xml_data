@@ -19,15 +19,15 @@
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/113/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/113/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/113/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Giuseppe"@it ;
+        rdfs:label       "Giuseppe Porta"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/113/activity/300025136> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/113/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/113/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/113/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/113/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/113/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/113/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/113/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/113/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -56,15 +56,6 @@
 
 geonames:3179523  a  crm:E53_Place ;
         rdfs:label  "Castelnuovo di Garfagnana"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/113/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Porta"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/113/identifier>
         a           crm:E42_Identifier ;

@@ -10,88 +10,79 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/death/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1789-06-14T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+aat:300025063  a         crm:E41_Appellation ;
+        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/biography>
-        a                crm:E73_Information_Object ;
-        rdfs:label       "Fu nipote dell'architetto Giovanni Antonio Scalfurotto"@it , "He was the nephew of the architect Giovanni Antonio Scalfurotto"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
+<https://archipelago.itatti.harvard.edu/resource/actor/38/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Tommaso Temanza"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/38/birth/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1705-03-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Temanza"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-geonames:3164603  a  crm:E53_Place ;
-        rdfs:label  "Venice"@en .
-
-aat:300025063  a         crm:E41_Appellation ;
-        rdfs:label       "Ingegnere"@it , "Engineer"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/38>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300025541> , <https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300024987> , <https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300025063> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/38/identifier> , aat:300024987 , <https://archipelago.itatti.harvard.edu/resource/actor/38/given_name> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/38/surname> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/38/identifier> , aat:300024987 , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/38/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/38/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/38/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/38/death> .
 
-aat:300024987  a         crm:E41_Appellation ;
-        rdfs:label       "Architetto"@it , "Architect"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+<https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300024987>
+        a           frbr:F51_Pursuit ;
+        rdfs:label  "Architect"@en , "Architetto"@it .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/38/birth>
         a                     crm:E67_Birth ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/38/birth/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300025541>
-        a           frbr:F51_Pursuit ;
-        rdfs:label  "Art historian"@en , "Storico dell'arte"@it .
+<https://archipelago.itatti.harvard.edu/resource/actor/38/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "38" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/38/death/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1789-06-14T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/type/title>
+        a           crm:E55_Type ;
+        rdfs:label  "Title"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/38/biography>
+        a                crm:E73_Information_Object ;
+        rdfs:label       "Fu nipote dell'architetto Giovanni Antonio Scalfurotto"@it , "He was the nephew of the architect Giovanni Antonio Scalfurotto"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/biography> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/38/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/38/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "38" .
-
 <https://archipelago.itatti.harvard.edu/resource/type/biography>
         a           crm:E55_Type ;
         rdfs:label  "Biography"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/title>
-        a           crm:E55_Type ;
-        rdfs:label  "Title"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300025063>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Engineer"@en , "Ingegnere"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Tommaso"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+aat:300024987  a         crm:E41_Appellation ;
+        rdfs:label       "Architetto"@it , "Architect"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300024987>
+<https://archipelago.itatti.harvard.edu/resource/actor/38/activity/300025541>
         a           frbr:F51_Pursuit ;
-        rdfs:label  "Architect"@en , "Architetto"@it .
+        rdfs:label  "Art historian"@en , "Storico dell'arte"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/38/birth/date>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1705-03-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+geonames:3164603  a  crm:E53_Place ;
+        rdfs:label  "Venice"@en .

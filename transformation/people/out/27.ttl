@@ -42,9 +42,10 @@ aat:300025773  a         crm:E41_Appellation ;
 geonames:3169070  a  crm:E53_Place ;
         rdfs:label  "Rome"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/27/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Fabio Chigi"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth>
         a                     crm:E67_Birth ;
@@ -77,16 +78,11 @@ aat:300025758  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/27>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340023> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340024> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025774> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/27/surname> , aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/27/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/27/alias> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/27/given_name> , aat:300025756 , aat:300025773 ;
+        crm:P1_is_identified_by  aat:300025758 , <https://archipelago.itatti.harvard.edu/resource/actor/27/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/27/alias> , aat:300025774 , <https://archipelago.itatti.harvard.edu/resource/actor/27/appellation> , aat:300025756 , aat:300025773 ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/27/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/27/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/27/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Chigi"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/300025773>
         a           frbr:F51_Pursuit ;
@@ -95,11 +91,6 @@ aat:300025758  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/27/activity/OCC340023>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Bishop of Nardò  (1635)"@en , "Vescovo di Nardò"@it .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/27/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Fabio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 aat:300025756  a         crm:E41_Appellation ;
         rdfs:label       "Vescovo"@it , "Bishop"@en ;

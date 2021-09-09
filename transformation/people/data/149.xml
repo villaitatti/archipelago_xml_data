@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>149</ID_PERSON>
-	<Given_Name>Friedrich</Given_Name>
-	<Surname>Habsburg</Surname>
+	<Appellation>Friedrich Habsburg</Appellation>
 	<Alias>
 		<ita>Federico III</ita>
 		<eng>Frederick III</eng>

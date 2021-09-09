@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>43</ID_PERSON>
-	<Given_Name>Giovanni</Given_Name>
-	<Surname>da Zon</Surname>
+	<Appellation>Giovanni da Zon</Appellation>
 	<Titles>
 		<Title>
 			<ita>Proto</ita>

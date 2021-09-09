@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>64</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>Battaglioli</Surname>
+	<Appellation>Francesco Battaglioli</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>

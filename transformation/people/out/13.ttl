@@ -14,15 +14,10 @@
         a           frbr:F51_Pursuit ;
         rdfs:label  "Patriarch of Venice"@en , "Patriarca di Venezia"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/13/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Contarini"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/13>
         a                        crm:E39_Actor ;
-        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/13/activity/OCC340031> , <https://archipelago.itatti.harvard.edu/resource/actor/13/activity/OCC340015> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/13/given_name> , <https://archipelago.itatti.harvard.edu/resource/actor/13/surname> , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/13/identifier> , aat:300025772 ;
+        crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/13/activity/OCC340015> , <https://archipelago.itatti.harvard.edu/resource/actor/13/activity/OCC340031> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/13/identifier> , aat:300025772 , aat:300025757 , <https://archipelago.itatti.harvard.edu/resource/actor/13/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/13/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -36,14 +31,14 @@ aat:300025757  a         crm:E41_Appellation ;
         rdfs:label       "Canonico"@it , "Canon"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/13/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Antonio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 aat:300025772  a         crm:E41_Appellation ;
         rdfs:label       "Patriarca"@it , "Patriarch"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/13/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Antonio Contarini"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
         a           crm:E55_Type ;
@@ -70,10 +65,6 @@ aat:300025772  a         crm:E41_Appellation ;
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/13/death/date> ;
         crm:P7_took_place_at  geonames:3164603 .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/13/identifier>
         a           crm:E42_Identifier ;

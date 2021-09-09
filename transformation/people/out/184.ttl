@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
+        a           crm:E55_Type ;
+        rdfs:label  "Preferred Name"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/184/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "184" .
@@ -18,20 +22,16 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1530-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/184/surname>
+<https://archipelago.itatti.harvard.edu/resource/actor/184/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Camaldolese monks of Monte Rua"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184>
         a                        crm:E39_Actor ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/184/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/184/surname> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/184/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/184/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184/birth>
         a                     crm:E67_Birth ;

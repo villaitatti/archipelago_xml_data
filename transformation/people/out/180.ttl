@@ -10,15 +10,19 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/180/surname>
+aat:300025765  a         crm:E41_Appellation ;
+        rdfs:label       "Monaco"@it , "Monk"@en ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/180/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Mocenigo"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
+        rdfs:label       "Andrea Mocenigo"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/180/activity/OCC340060> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/180/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/180/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/180/given_name> .
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/180/identifier> , aat:300025765 , <https://archipelago.itatti.harvard.edu/resource/actor/180/appellation> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/180/activity/OCC340060>
         a           frbr:F51_Pursuit ;
@@ -35,16 +39,3 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/180/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "180" .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-aat:300025765  a         crm:E41_Appellation ;
-        rdfs:label       "Monaco"@it , "Monk"@en ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/180/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Andrea"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .

@@ -14,6 +14,11 @@
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1712-10-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/28/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Francesco Guardi"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
+
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
@@ -36,15 +41,10 @@
         a           crm:E42_Identifier ;
         rdfs:label  "28" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/28/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Guardi"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/28>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/28/activity/300025136> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/28/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/28/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/28/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/28/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/28/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/28/birth> ;
         crm:P93i_was_taken_out_of_existence_by
@@ -52,15 +52,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/28/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Francesco"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/28/death>
         a                     crm:E69_Death ;

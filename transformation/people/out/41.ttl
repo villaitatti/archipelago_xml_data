@@ -14,14 +14,14 @@ aat:300000645  a         crm:E41_Appellation ;
         rdfs:label       "Priore"@it , "Prior"@en ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/title> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/41/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Domenico"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/41/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Domenico Codagli"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/41/activity/300025496>
         a           frbr:F51_Pursuit ;
@@ -60,23 +60,14 @@ aat:300000645  a         crm:E41_Appellation ;
 geonames:3171869  a  crm:E53_Place ;
         rdfs:label  "Orzinuovi"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/41>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/41/activity/300025496> , <https://archipelago.itatti.harvard.edu/resource/actor/41/activity/OCC340025> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/41/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/41/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/41/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/41/identifier> , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/41/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/41/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/41/death> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/41/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Codagli"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

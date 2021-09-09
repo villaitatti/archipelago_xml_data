@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>34</ID_PERSON>
-	<Given_Name>Carlo</Given_Name>
-	<Surname>Gella</Surname>
+	<Appellation>Carlo Gella</Appellation>
 	<Alias>
 		<eng>Domenico Maria del Rosario</eng>
 	</Alias>

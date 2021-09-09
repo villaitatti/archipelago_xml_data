@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>73</ID_PERSON>
-	<Given_Name/>
-	<Surname>Candian friars of Santo Spirito {Frati minori osservanti della Provincia di Candia stabiliti a Santo Spirito}</Surname>
+	<Appellation> Candian friars of Santo Spirito</Appellation>
 	<Place_of_birth>
 		<label>Heraklion</label>
 	</Place_of_birth>

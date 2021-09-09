@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>156</ID_PERSON>
-	<Given_Name>John {Giovanni}</Given_Name>
-	<Surname>Palaiologos {Paleologo}</Surname>
+	<Appellation>John {Giovanni} Palaiologos</Appellation>
 	<Alias>
 		<ita>Giovanni VIII Paleologo</ita>
 		<eng>John VIII Palaiologos</eng>

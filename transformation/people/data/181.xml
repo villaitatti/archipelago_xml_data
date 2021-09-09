@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>181</ID_PERSON>
-	<Given_Name>Agostino</Given_Name>
-	<Surname>Correggio</Surname>
+	<Appellation>Agostino Correggio</Appellation>
 	<Patronymic>
 		<eng>Orazio</eng>
 	</Patronymic>

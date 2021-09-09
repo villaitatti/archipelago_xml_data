@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>158</ID_PERSON>
-	<Given_Name>Amadea {Amedea}</Given_Name>
-	<Surname>Palaiologos {Paleologa}</Surname>
+	<Appellation>Amadea {Amedea} Palaiologos</Appellation>
 	<Alias>
 		<eng>Amadea Palaiologina of Montferrat</eng>
 	</Alias>

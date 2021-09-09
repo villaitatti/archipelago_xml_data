@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>17</ID_PERSON>
-	<Given_Name/>
-	<Surname>Holy See {Santa Sede}</Surname>
+	<Appellation> Holy See</Appellation>
 	<Place_of_birth>
 		<label>Vatican City</label>
 	</Place_of_birth>

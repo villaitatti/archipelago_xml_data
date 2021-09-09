@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>175</ID_PERSON>
-	<Given_Name>Pierre</Given_Name>
-	<Surname>Roger</Surname>
+	<Appellation>Pierre Roger</Appellation>
 	<Alias>
 		<ita>Papa Clemente VI</ita>
 		<eng>Pope Clement VI</eng>

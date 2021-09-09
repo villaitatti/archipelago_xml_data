@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>65</ID_PERSON>
-	<Given_Name>Giuseppe Bernardino</Given_Name>
-	<Surname>Bison</Surname>
+	<Appellation>Giuseppe Bernardino Bison</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025136</aat>

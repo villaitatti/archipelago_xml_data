@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>46</ID_PERSON>
-	<Given_Name>Vincenzo Maria</Given_Name>
-	<Surname>Coronelli</Surname>
+	<Appellation>Vincenzo Maria Coronelli</Appellation>
 	<Titles>
 		<Title>
 			<aat>300266789</aat>

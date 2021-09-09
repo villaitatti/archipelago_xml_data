@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>75</ID_PERSON>
-	<Given_Name>Pietro</Given_Name>
-	<Surname>Gattilesso</Surname>
+	<Appellation>Pietro Gattilesso</Appellation>
 	<Alias>
 		<eng>Raubato</eng>
 	</Alias>

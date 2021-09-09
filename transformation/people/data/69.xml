@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>69</ID_PERSON>
-	<Given_Name>Benedetto</Given_Name>
-	<Surname>Bordone</Surname>
+	<Appellation>Benedetto Bordone</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300025593</aat>

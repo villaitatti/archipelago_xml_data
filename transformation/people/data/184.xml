@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>184</ID_PERSON>
-	<Given_Name/>
-	<Surname>Camaldolese monks of Monte Rua {Monaci camaldolesi del Monte Rua}</Surname>
+	<Appellation> Camaldolese monks of Monte Rua</Appellation>
 	<Place_of_birth>
 		<label>Padua</label>
 	</Place_of_birth>

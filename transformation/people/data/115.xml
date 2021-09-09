@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>115</ID_PERSON>
-	<Given_Name>Francesco</Given_Name>
-	<Surname>da Santacroce</Surname>
+	<Appellation>Francesco da Santacroce</Appellation>
 	<Patronymic>
 		<eng>Girolamo</eng>
 	</Patronymic>

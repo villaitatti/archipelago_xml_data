@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>29</ID_PERSON>
-	<Given_Name>Daniele</Given_Name>
-	<Surname>Danieli</Surname>
+	<Appellation>Daniele Danieli</Appellation>
 	<Titles>
 		<Title>
 			<aat>300266789</aat>

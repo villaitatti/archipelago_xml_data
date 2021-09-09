@@ -40,7 +40,7 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/145>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/OCC340027> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/OCC340029> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/300025773> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/300025758> , <https://archipelago.itatti.harvard.edu/resource/actor/145/activity/OCC340028> ;
-        crm:P1_is_identified_by     aat:300025757 , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/145/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/145/given_name> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/145/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/145/surname> ;
+        crm:P1_is_identified_by     aat:300025757 , aat:300000645 , <https://archipelago.itatti.harvard.edu/resource/actor/145/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/145/appellation> , aat:300025773 , <https://archipelago.itatti.harvard.edu/resource/actor/145/alias> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/145/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/145/birth> ;
@@ -60,15 +60,6 @@ geonames:3164603  a  crm:E53_Place ;
 
 geonames:3169070  a  crm:E53_Place ;
         rdfs:label  "Rome"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/145/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Condulmer"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/death/date>
         a                            crm:E52_Time-Span ;
@@ -102,9 +93,9 @@ aat:300025757  a         crm:E41_Appellation ;
         a           frbr:F51_Pursuit ;
         rdfs:label  "Prior of San Clemente"@en , "Priore di San Clemente"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/145/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Gabriele"@it ;
+        rdfs:label       "Gabriele Condulmer"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/alias>

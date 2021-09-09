@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>137</ID_PERSON>
-	<Given_Name>Daniele</Given_Name>
-	<Surname>da Selva di Boggion</Surname>
+	<Appellation>Daniele da Selva di Boggion</Appellation>
 	<Activities>
 		<Activity>
 			<aat>300230871</aat>

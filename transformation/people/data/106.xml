@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>106</ID_PERSON>
-	<Given_Name/>
-	<Surname>Council of Ten {Consiglio dei Dieci}</Surname>
+	<Appellation> Council of Ten</Appellation>
 	<Place_of_birth>
 		<geo>3164603</geo>
 		<label>Venice</label>

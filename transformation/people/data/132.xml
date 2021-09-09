@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>132</ID_PERSON>
-	<Given_Name>Giovan Battista</Given_Name>
-	<Surname>Luran</Surname>
+	<Appellation>Giovan Battista Luran</Appellation>
 	<Titles>
 		<Title>
 			<ita>Proto</ita>

@@ -39,11 +39,6 @@
         a           crm:E41_Appellation ;
         rdfs:label  "Marescalco"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/48/given_name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Giovanni"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/48/activity/300025136>
         a           frbr:F51_Pursuit ;
         rdfs:label  "Painter"@en , "Pittore"@it .
@@ -51,20 +46,16 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/48>
         a                        crm:E39_Actor ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/48/activity/300025136> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/48/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/48/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/48/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/48/given_name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/48/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/48/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/48/appellation> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/48/birth> ;
         crm:P93i_was_taken_out_of_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/48/death> .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/48/appellation>
+        a                crm:E41_Appellation ;
+        rdfs:label       "Giovanni Buonconsiglio"@it ;
+        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/48/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Buonconsiglio"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .

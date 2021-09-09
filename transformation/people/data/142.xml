@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <ROW>
 	<ID_PERSON>142</ID_PERSON>
-	<Given_Name>Nicolò</Given_Name>
-	<Surname>de Benvenutis</Surname>
+	<Appellation>Nicolò de Benvenutis</Appellation>
 	<Titles>
 		<Title>
 			<aat>300025757</aat>

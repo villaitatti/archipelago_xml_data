@@ -22,9 +22,9 @@ aat:300025063  a         crm:E41_Appellation ;
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/79/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/79/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Francesco"@it ;
+        rdfs:label       "Francesco Alberti"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/title>
@@ -48,17 +48,8 @@ aat:300025063  a         crm:E41_Appellation ;
         a           frbr:F51_Pursuit ;
         rdfs:label  "Expert to the Provveditori sopra beni inculti"@en , "Perito dei Provveditori sopra beni inculti"@it , "Lagoon chief surveyor"@en , "Proto alla laguna"@it .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/79/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Alberti"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
-
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/79>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/79/activity/300025063> , <https://archipelago.itatti.harvard.edu/resource/actor/79/activity/OCC340001> ;
-        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/79/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/79/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/79/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/79/identifier> , aat:300025063 , <https://archipelago.itatti.harvard.edu/resource/actor/79/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/79/biography> .

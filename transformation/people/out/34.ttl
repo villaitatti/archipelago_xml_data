@@ -14,9 +14,9 @@
         a           crm:E41_Appellation ;
         rdfs:label  "Domenico Maria del Rosario"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/34/given_name>
+<https://archipelago.itatti.harvard.edu/resource/actor/34/appellation>
         a                crm:E41_Appellation ;
-        rdfs:label       "Carlo"@it ;
+        rdfs:label       "Carlo Gella"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/preferred_name>
@@ -55,7 +55,7 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/34>
         a                           crm:E39_Actor ;
         crm:P14i_performed          <https://archipelago.itatti.harvard.edu/resource/actor/34/activity/OCC340038> ;
-        crm:P1_is_identified_by     aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/34/surname> , <https://archipelago.itatti.harvard.edu/resource/actor/34/alias> , <https://archipelago.itatti.harvard.edu/resource/actor/34/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/34/given_name> ;
+        crm:P1_is_identified_by     <https://archipelago.itatti.harvard.edu/resource/actor/34/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/34/alias> , aat:300266789 , <https://archipelago.itatti.harvard.edu/resource/actor/34/appellation> ;
         crm:P67i_is_referred_to_by  <https://archipelago.itatti.harvard.edu/resource/actor/34/biography> ;
         crm:P92i_was_brought_into_existence_by
                 <https://archipelago.itatti.harvard.edu/resource/actor/34/birth> ;
@@ -69,14 +69,5 @@ aat:300266789  a         crm:E41_Appellation ;
 <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__>
         a       crm:E21_Person .
 
-<https://archipelago.itatti.harvard.edu/resource/type/surname>
-        a           crm:E55_Type ;
-        rdfs:label  "Surname"@en .
-
 geonames:3164603  a  crm:E53_Place ;
         rdfs:label  "Venice"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/34/surname>
-        a                crm:E41_Appellation ;
-        rdfs:label       "Gella"@it ;
-        crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/surname> .
