@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/33/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1661-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/33/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "33" .
@@ -17,10 +21,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/Architect%20in%20charged%20of%20the%20inventory/event/33/role>
         a           crm:E55_Type ;
         rdfs:label  "Architect in charged of the inventory"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/84>
         a       crm:E39_Actor .
@@ -32,9 +32,9 @@
 <https://archipelago.itatti.harvard.edu/resource/event/33>
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/33/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/33/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/33/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/33/name> , <https://archipelago.itatti.harvard.edu/resource/event/33/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/33/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/33/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/33/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/33/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/33/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/84/event/33> .
 
@@ -47,15 +47,7 @@
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/33/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
-
 geonames:7910746  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/33/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/84/event/33>
         a                            crmpc:PC14_carried_out_by ;

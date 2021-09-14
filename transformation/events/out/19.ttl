@@ -26,20 +26,12 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resource/event/19/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/84/event/19>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/84> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/19/role> .
 
 geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/19/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
@@ -56,13 +48,13 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/84>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/19/event/19>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/19> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Construction%20worker/event/19/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/84>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/event/19/identifier>
         a           crm:E42_Identifier ;
@@ -74,6 +66,10 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/source/90/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/19/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1672-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/19/role>
         a           crm:E55_Type ;
@@ -93,14 +89,10 @@ geonames:3230839  a  crm:E53_Place .
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_017> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/19/name> , <https://archipelago.itatti.harvard.edu/resource/event/19/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/19/typology> , <https://archipelago.itatti.harvard.edu/resource/event/19/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/19/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/19/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/19/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/90> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/19/event/19> , <https://archipelago.itatti.harvard.edu/resource/actor/84/event/19> .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_017>
         a       crm:E22_Man-Made_Object .

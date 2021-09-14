@@ -10,9 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/13/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1631-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/13/synopsis>
         a           crm:E73_Information_Object ;
@@ -23,10 +23,6 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/105> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/13/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/13/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/13>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
@@ -35,11 +31,11 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
+geonames:3230839  a  crm:E53_Place .
+
 <https://archipelago.itatti.harvard.edu/resource/event/13/source/90/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Restoration of the public shelter for boats"@en .
-
-geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/13/role>
         a           crm:E55_Type ;
@@ -59,10 +55,6 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/105>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/event/13/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/13/role>
         a           crm:E55_Type ;
@@ -86,7 +78,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_014> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/13/name> , <https://archipelago.itatti.harvard.edu/resource/event/13/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/13/typology> , <https://archipelago.itatti.harvard.edu/resource/event/13/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/13/century> , <https://archipelago.itatti.harvard.edu/resource/event/13/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/13/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/90> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/105/event/13> , <https://archipelago.itatti.harvard.edu/resource/actor/42/event/13> .

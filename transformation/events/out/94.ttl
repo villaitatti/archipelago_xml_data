@@ -18,18 +18,18 @@
         a           crm:E55_Type ;
         rdfs:label  "Office involved"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/94>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/94/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/94/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/94/typology> , <https://archipelago.itatti.harvard.edu/resource/event/94/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/94/century> , <https://archipelago.itatti.harvard.edu/resource/event/94/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/94/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/90/event/94> , <https://archipelago.itatti.harvard.edu/resource/actor/124/event/94> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/94/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1490-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/124>
         a       crm:E39_Actor .
@@ -63,15 +63,7 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/90> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/94/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/94/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
 geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/94/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/94/identifier>
         a           crm:E42_Identifier ;

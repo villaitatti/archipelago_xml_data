@@ -9,7 +9,7 @@
 	<End>1838-12-31</End>
 	<Name>Pontile</Name>
 	<SHP_Lenght>30.2128088199057</SHP_Lenght>
-	<SHP_Area>41.080799802548206</SHP_Area>
+	<SHP_Area>41.08079980254821</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Wood</eng>
@@ -44,21 +44,21 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Venetian Republic</ID_PERSON>
+			<ID_PERSON>88</ID_PERSON>
 			<Start_Owner>1777-01-01</Start_Owner>
 			<End_Owner>1797-05-11</End_Owner>
 		</Owner>
 	</Owners>
 	<Tenants>
 		<Tenant pos="1">
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 			<Start_Tenant>1777-01-01</Start_Tenant>
 			<End_Tenant>1806-07-27</End_Tenant>
 		</Tenant>
 	</Tenants>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Office of the Savi ed esecutori alle acque</ID_PERSON>
+			<ID_PERSON>89</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

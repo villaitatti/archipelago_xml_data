@@ -10,25 +10,17 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/32/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1657-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/32/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/32/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
-
 <https://archipelago.itatti.harvard.edu/resource/event/32/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/32/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/32/identifier>
         a           crm:E42_Identifier ;
@@ -61,7 +53,7 @@ geonames:7910746  a  crm:E53_Place .
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/32/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/32/name> , <https://archipelago.itatti.harvard.edu/resource/event/32/identifier> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/32/typology> , <https://archipelago.itatti.harvard.edu/resource/event/32/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/32/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/32/century> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/32/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/32/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/32/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/84/event/32> .

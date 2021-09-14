@@ -795,6 +795,90 @@
             </link>
         </mapping>
         <mapping>
+          <domain>
+              <source_node>/row/Functions/Function</source_node>
+              <target_node>
+                  <entity>
+                      <type>crm:E5_Event</type>
+                      <instance_generator name="140-built_work-function">
+                        <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                        <arg name="func_id" type="xpathPosition">.</arg>
+                      </instance_generator>
+                  </entity>
+              </target_node>
+          </domain>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>Start_Function</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>Start_Function</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="143-built_work-function-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="func_id" type="xpath">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:P82a_begin_of_the_begin</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Lower</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>End_Function</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>End_Function</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="143-built_work-function-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="func_id" type="xpath">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:P82b_end_of_the_end</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Upper</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+      </mapping>
+        <mapping>
             <domain>
                 <source_node>//Typology</source_node>
                 <target_node>

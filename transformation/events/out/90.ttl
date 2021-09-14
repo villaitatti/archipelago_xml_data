@@ -15,14 +15,6 @@
         rdfs:label       "The island is definitively abandoned"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/90/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002/identifier>
         a       crm:E42_Identifier .
 
@@ -30,19 +22,19 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/90/name> , <https://archipelago.itatti.harvard.edu/resource/event/90/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/90/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/90/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/90/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/90/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/90/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002> ;
         crm:P7_took_place_at       geonames:7910746 .
 
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resource/event/90/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0002/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/90/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1965-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/90/identifier>
         a           crm:E42_Identifier ;

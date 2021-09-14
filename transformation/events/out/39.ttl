@@ -10,15 +10,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/39/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1608-08-06T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resource/event/39/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/39/typology>
         a           crm:E55_Type ;
@@ -52,7 +52,7 @@
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_017> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/39/name> , <https://archipelago.itatti.harvard.edu/resource/event/39/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/39/typology> , <https://archipelago.itatti.harvard.edu/resource/event/39/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/39/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/39/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/39> .

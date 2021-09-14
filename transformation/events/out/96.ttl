@@ -14,21 +14,14 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/96/name> , <https://archipelago.itatti.harvard.edu/resource/event/96/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/96/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/96/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/96/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/96/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/96/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resource/event/96/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/96/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Photographic campaign on the church"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier>
-        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/event/96/subtypology>
         a           crm:E55_Type ;
@@ -38,19 +31,18 @@
         a           crm:E42_Identifier ;
         rdfs:label  "96" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/96/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/event/96/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/96/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1938-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;

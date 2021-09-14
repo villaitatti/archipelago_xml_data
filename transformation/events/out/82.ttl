@@ -15,13 +15,13 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/84> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Surveyor/event/82/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/82/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/82/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/82/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1657-06-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Surveyor/event/82/role>
         a           crm:E55_Type ;
@@ -51,7 +51,7 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/82/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/82/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/82/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/82/typology> , <https://archipelago.itatti.harvard.edu/resource/event/82/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/82/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/82/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/135> ;
         crm:P7_took_place_at       geonames:7910746 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/84/event/82> .

@@ -15,10 +15,6 @@
         rdfs:label       "The island becomes property of the Venetian Municipality"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/98/typology>
         a           crm:E55_Type ;
         rdfs:label  "Urban"@en .
@@ -31,9 +27,9 @@
         a           crm:E42_Identifier ;
         rdfs:label  "98" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/98/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
+<https://archipelago.itatti.harvard.edu/resource/event/98/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1992-09-08T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .
@@ -42,13 +38,9 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/98/name> , <https://archipelago.itatti.harvard.edu/resource/event/98/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/98/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/98/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/98/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/98/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/98/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resource/event/98/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .
 

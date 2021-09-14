@@ -15,10 +15,6 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Artist%20involved%20in%20the%20church%27s%20decoration/event/25/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/25/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
-
 <https://archipelago.itatti.harvard.edu/resource/event/25/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
@@ -38,9 +34,9 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/23>
         a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resource/event/25/century>
+<https://archipelago.itatti.harvard.edu/resource/event/25/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
+        crm:P82a_begin_of_the_begin  "Unknown-Format"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 geonames:7910746  a  crm:E53_Place .
 
@@ -49,13 +45,9 @@ geonames:7910746  a  crm:E53_Place .
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/25/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/25/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/25/name> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/25/typology> , <https://archipelago.itatti.harvard.edu/resource/event/25/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/25/century> , <https://archipelago.itatti.harvard.edu/resource/event/25/century_fraction> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/25/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/23/event/25> , <https://archipelago.itatti.harvard.edu/resource/actor/21/event/25> .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/25/synopsis>
         a           crm:E73_Information_Object ;

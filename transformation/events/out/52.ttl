@@ -21,17 +21,13 @@
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/52/name> , <https://archipelago.itatti.harvard.edu/resource/event/52/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/52/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/52/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/52/century> , <https://archipelago.itatti.harvard.edu/resource/event/52/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/52/date> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/52> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/52/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "52" .
-
-<https://archipelago.itatti.harvard.edu/resource/event/52/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/52/subtypology>
         a           crm:E55_Type ;
@@ -47,20 +43,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/42/event/52>
-        a                    crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/42> .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/52/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1630-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/52/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The French ambassador leaves his palace in Venice to go to the island of San Secondo in oder to escape the plague."@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/52/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/42/event/52>
+        a                    crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/42> .
 
 geonames:3230839  a  crm:E53_Place .

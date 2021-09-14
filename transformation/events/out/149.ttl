@@ -15,7 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/149/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/149/name> , <https://archipelago.itatti.harvard.edu/resource/event/149/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/149/typology> , <https://archipelago.itatti.harvard.edu/resource/event/149/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/149/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/149/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/124/event/149> , <https://archipelago.itatti.harvard.edu/resource/actor/172/event/149> .
@@ -23,10 +23,6 @@
 <https://archipelago.itatti.harvard.edu/resource/event/149/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "149" .
-
-<https://archipelago.itatti.harvard.edu/resource/event/149/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Recovered%20person/event/149/role>
         a           crm:E55_Type ;
@@ -48,6 +44,10 @@
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/149/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1522-06-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/124>
         a       crm:E39_Actor .

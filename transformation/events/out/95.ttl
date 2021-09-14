@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/95/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/124/event/95>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/124> ;
@@ -45,7 +41,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/95/name> , <https://archipelago.itatti.harvard.edu/resource/event/95/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/95/typology> , <https://archipelago.itatti.harvard.edu/resource/event/95/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/95/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/95/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0037> ;
         crm:P7_took_place_at       geonames:12172719 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/90/event/95> , <https://archipelago.itatti.harvard.edu/resource/actor/124/event/95> .
@@ -68,6 +64,10 @@
         rdfs:label  "Public deliberation"@en .
 
 geonames:12172719  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/95/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1504-07-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/95/typology>
         a           crm:E55_Type ;

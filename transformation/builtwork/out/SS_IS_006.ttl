@@ -44,13 +44,18 @@
         crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_006/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1806-07-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_006/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "SS_IS_006" .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_006/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_006/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_006/destruction>
         a                     crm:E6_Destruction ;

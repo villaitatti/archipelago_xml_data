@@ -18,14 +18,10 @@
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/102/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/102/name> , <https://archipelago.itatti.harvard.edu/resource/event/102/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/102/typology> , <https://archipelago.itatti.harvard.edu/resource/event/102/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/102/century> , <https://archipelago.itatti.harvard.edu/resource/event/102/century_fraction> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/102/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/102/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/102/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/102/name>
         a                crm:E41_Appellation ;
@@ -36,9 +32,9 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The formal dismission is issued by the Unità Sanitaria Locale (deliberation n. 1099)."@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/102/century>
+<https://archipelago.itatti.harvard.edu/resource/event/102/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
+        crm:P82a_begin_of_the_begin  "1992-05-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/102/identifier>
         a           crm:E42_Identifier ;
@@ -56,7 +52,3 @@ geonames:3168468  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/102/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .

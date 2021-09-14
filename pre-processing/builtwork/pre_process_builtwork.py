@@ -6,7 +6,7 @@ import os
 import re
 import json
 
-buildings = 'SS_BLDGS'
+buildings = 'SS_BLDGS_ordered'
 buildings_ext = '.tsv'
 
 # TODO pass the file as arg

@@ -18,10 +18,6 @@
         a           crm:E73_Information_Object ;
         rdfs:label  "The Fondo territoriale was the owner of the island."@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/155>
         a       crm:E39_Actor .
 
@@ -29,9 +25,9 @@
         a           crm:E42_Identifier ;
         rdfs:label  "132" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/132/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
+<https://archipelago.itatti.harvard.edu/resource/event/132/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1858-05-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132>
         a                            crmpc:PC14_carried_out_by ;
@@ -54,14 +50,10 @@
 <https://archipelago.itatti.harvard.edu/resource/event/132>
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/132/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/132/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/132/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/132/name> , <https://archipelago.itatti.harvard.edu/resource/event/132/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/132/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/132/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/132/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/132/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/132/date> ;
         crm:P7_took_place_at     geonames:3168468 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/132/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .

@@ -17,7 +17,7 @@ aat:300115251  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "25.2535648289569" ;
+        crm:P90_has_value  "25.25356482895691" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/area>
@@ -27,6 +27,9 @@ aat:300115251  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
         rdfs:label  "Square meter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
 
 aat:300008553  a    crm:E55_Type ;
         rdfs:label  "Infrastrutture di servizio"@it , "Service"@en .
@@ -39,12 +42,12 @@ aat:300008553  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "27.153889890177304" ;
+        crm:P90_has_value  "27.15388989017732" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/construction/date>
@@ -55,9 +58,18 @@ aat:300008553  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/measurement/perimeter/dimension> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Private"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Private"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/function/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/18>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/measurement/area>
         a                           crm:E16_Measurement ;
@@ -74,16 +86,13 @@ aat:300008553  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20Nuns%20of%20San%20Secondo> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/construction>
         a                     crm:E12_Production ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/construction/date> ;
         crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/role_patron/1> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
@@ -133,9 +142,6 @@ aat:300011914  a    crm:E57_Material ;
         a                     crm:E5_Event ;
         crm:P2_has_type       aat:300008553 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_046/use/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20Nuns%20of%20San%20Secondo>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>
         a           crm:E55_Type ;

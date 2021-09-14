@@ -11,13 +11,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/2/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        crm:P82b_end_of_the_end      "1960-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+        crm:P82a_begin_of_the_begin  "1961-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/measurement/perimeter>
         a                           crm:E16_Measurement ;
@@ -32,6 +28,9 @@
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1797-05-11T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
@@ -39,21 +38,28 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/2>
         a                     crm:E5_Event ;
-        crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
+        crm:P2_has_type       aat:300008347 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/2/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/123>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/3>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/3/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/88>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/typology>
         a           crm:E55_Type ;
@@ -61,7 +67,8 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/3/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1866-10-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+        crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/measurement/area>
         a                           crm:E16_Measurement ;
@@ -69,23 +76,20 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/3/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1961-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+        crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1960-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/2/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        crm:P82b_end_of_the_end      "1866-10-20T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+        crm:P82a_begin_of_the_begin  "1866-10-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/1>
         a                     crm:E5_Event ;
         crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;
@@ -93,7 +97,7 @@ aat:300010463  a    crm:E57_Material ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/2>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/86> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/2/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/identifier>
@@ -105,27 +109,36 @@ aat:300010463  a    crm:E57_Material ;
         crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:p82b_end_of_the_end      "1806-07-28T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1777-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1849-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "46.82680031641561" ;
+        crm:P90_has_value  "46.82680031641558" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/86>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/2/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 aat:300120590  a    crm:E55_Type ;
         rdfs:label  "Militare"@it , "Military"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/typology/2/date>
         a                            crm:E52_Time-Span ;
@@ -169,12 +182,12 @@ aat:300100558  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/3>
         a                     crm:E5_Event ;
-        crm:P2_has_type       aat:300008347 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
+        crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/use/3/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/transfer_custody/1>
         a                            crm:E10_Transfer_of_Custody ;
-        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crm:P29_custody_received_by  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span         <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/transfer_custody/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/typology/1>
@@ -191,17 +204,15 @@ aat:300100558  a    crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/2>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/function/2/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "157.253618745244" ;
+        crm:P90_has_value  "157.25361874524376" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Venetian%20Republic>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_002/construction>
         a                     crm:E12_Production ;

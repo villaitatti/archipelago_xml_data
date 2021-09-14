@@ -14,6 +14,10 @@
 aat:300008347  a    crm:E55_Type ;
         rdfs:label  "Abbandonato"@it , "Abandoned"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_001/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1806-07-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_001/construction/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "2019-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -32,8 +36,9 @@ aat:300008347  a    crm:E55_Type ;
         rdfs:label  "Area"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_001/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_001/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/square_meter>
         a           crm:E58_Measurement_Unit ;

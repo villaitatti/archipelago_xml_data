@@ -5,7 +5,7 @@ import ast
 import uuid
 import urllib
 
-typology = 'people'
+typology = 'builtwork'
 
 key_usr = 'usr'
 key_psw = 'psw'

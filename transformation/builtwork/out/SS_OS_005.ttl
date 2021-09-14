@@ -60,6 +60,11 @@ aat:300115251  a    crm:E55_Type ;
 aat:300008553  a    crm:E55_Type ;
         rdfs:label  "Infrastrutture di servizio"@it , "Service"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1718-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1806-07-28T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/measurement/area>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/measurement/area/dimension> .
@@ -134,8 +139,9 @@ aat:300008553  a    crm:E55_Type ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_OS_005/acquisition/1>
         a                             crm:E8_Acquisition ;

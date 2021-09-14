@@ -14,21 +14,13 @@
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/107>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/107/name> , <https://archipelago.itatti.harvard.edu/resource/event/107/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/107/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/107/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/107/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/107/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/107/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resource/event/107/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/107/name>
         a                crm:E41_Appellation ;
@@ -39,10 +31,6 @@
         a           crm:E42_Identifier ;
         rdfs:label  "107" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/107/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
-
 <https://archipelago.itatti.harvard.edu/resource/event/107/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Survey"@en .
@@ -51,6 +39,10 @@
         a       crm:E42_Identifier .
 
 geonames:3168468  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/107/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1993-02-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;

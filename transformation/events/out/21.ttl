@@ -15,7 +15,7 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/21/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/21/name> , <https://archipelago.itatti.harvard.edu/resource/event/21/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/21/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/21/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/21/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/21/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/20/event/21> .
 
@@ -23,13 +23,13 @@
         a                    crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/20> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/21/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/21/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/21/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1542-11-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/21/identifier>
         a           crm:E42_Identifier ;
@@ -37,10 +37,6 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/20>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/event/21/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/21/name>
         a                crm:E41_Appellation ;
@@ -52,7 +48,3 @@ geonames:7910746  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/21/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The hermit preacher Agostino Museo teaches sacred writings and philosophy within the monastery."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .

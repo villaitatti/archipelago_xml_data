@@ -16,7 +16,7 @@ aat:300115251  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20Nuns%20of%20San%20Secondo> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/use/1>
@@ -45,7 +45,7 @@ aat:300115251  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/measurement/area/dimension> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20friars%20of%20San%20Secondo>
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
 aat:300008553  a    crm:E55_Type ;
@@ -63,12 +63,18 @@ aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Private"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Private"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/function/1/date> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/3>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/3/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/typology/1>
@@ -90,7 +96,7 @@ aat:300007700  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/2/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82a_begin_of_the_begin  "1534-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/typology/1/date>
@@ -98,9 +104,12 @@ aat:300007700  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/18>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/2>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20friars%20of%20San%20Secondo> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/2/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/identifier>
@@ -109,11 +118,8 @@ aat:300007700  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/3/date>
         a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1534-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
@@ -128,13 +134,13 @@ aat:300010463  a    crm:E57_Material ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "38.8536479159915" ;
+        crm:P90_has_value  "38.853647915991495" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>
@@ -146,9 +152,6 @@ aat:300010463  a    crm:E57_Material ;
         crm:P82a_begin_of_the_begin  "1500-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1788-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Benedectine%20Nuns%20of%20San%20Secondo>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/type/typology>
         a           crm:E55_Type ;
         rdfs:label  "Typology"@en .
@@ -156,7 +159,7 @@ aat:300010463  a    crm:E57_Material ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_048/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "27.7107714310967" ;
+        crm:P90_has_value  "27.71077143109667" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/meter>

@@ -8,18 +8,18 @@
 	<Start>1608-01-01</Start>
 	<End>1820-12-31</End>
 	<Name>Chiesa</Name>
-	<SHP_Lenght>65.1657669977359</SHP_Lenght>
-	<SHP_Area>226.71873019154302</SHP_Area>
+	<SHP_Lenght>65.16576699773586</SHP_Lenght>
+	<SHP_Area>226.71873019154305</SHP_Area>
 	<Materials>
-		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
 		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -56,19 +56,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
-			<Start_Owner>1608-01-01</Start_Owner>
-			<End_Owner>1806-07-27</End_Owner>
-		</Owner>
-		<Owner pos="2">
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

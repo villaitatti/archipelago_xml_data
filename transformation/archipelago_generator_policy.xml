@@ -49,6 +49,10 @@
 		<pattern>built_work/{bw_id}/function/{func_id}</pattern>
 	</generator>
 
+	<generator name="143-built_work-function-date" prefix="arc">
+		<pattern>built_work/{bw_id}/function/{func_id}/date</pattern>
+	</generator>
+
 	<generator name="150-built_work-use" prefix="arc">
 		<pattern>built_work/{bw_id}/use/{use_id}</pattern>
 	</generator>

@@ -14,16 +14,16 @@
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
 
+<https://archipelago.itatti.harvard.edu/resource/event/117/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1290-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/133/event/117>
         a                    crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range  <https://archipelago.itatti.harvard.edu/resource/actor/133> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
@@ -57,23 +57,15 @@
         a           crm:E55_Type ;
         rdfs:label  "Construction"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/117/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "13th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/117>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/117/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/117/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/117/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/117/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/117/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/117/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/117/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/117/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/133/event/117> , <https://archipelago.itatti.harvard.edu/resource/actor/141/event/117> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/117/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;

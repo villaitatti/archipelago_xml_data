@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
@@ -37,18 +33,22 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/125/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/125/name> , <https://archipelago.itatti.harvard.edu/resource/event/125/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/125/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/125/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/125/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/125/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/125/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0017> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/102/event/125> .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0017/identifier>
+        a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/125>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/125/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0017/identifier>
-        a       crm:E42_Identifier .
+<https://archipelago.itatti.harvard.edu/resource/event/125/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1490-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/125/role>
         a           crm:E55_Type ;
@@ -62,17 +62,9 @@
         a           crm:E55_Type ;
         rdfs:label  "Renovation"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/125/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/125/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
 
 geonames:3168468  a  crm:E53_Place .
 

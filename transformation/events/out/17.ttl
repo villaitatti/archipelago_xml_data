@@ -10,24 +10,21 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/17/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1531-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resource/built_work/11>
-        a       crm:E22_Man-Made_Object .
-
 <https://archipelago.itatti.harvard.edu/resource/event/17>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/17/synopsis> ;
-        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/11> ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/17/name> , <https://archipelago.itatti.harvard.edu/resource/event/17/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/17/typology> , <https://archipelago.itatti.harvard.edu/resource/event/17/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/17/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/17/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/17/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/17/event/17> , <https://archipelago.itatti.harvard.edu/resource/actor/18/event/17> .
@@ -36,10 +33,6 @@
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/17> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/17/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/17/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
@@ -51,19 +44,22 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/17/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Suppressed order"@en .
-
 geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/17/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Suppressed order"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/event/17/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "17" .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007>
+        a       crm:E22_Man-Made_Object .
 
 <https://archipelago.itatti.harvard.edu/resource/event/17/subtypology>
         a           crm:E55_Type ;
@@ -92,7 +88,3 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/event/17/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .

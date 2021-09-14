@@ -10,76 +10,17 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/41/event/53>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/41> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/42>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049>
-        a       crm:E22_Man-Made_Object .
-
-geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "53" .
-
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/41>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role>
+<https://archipelago.itatti.harvard.edu/resource/event/53/subtypology>
         a           crm:E55_Type ;
-        rdfs:label  "Chronicler"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53>
-        a                          crm:E5_Event ;
-        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/53/synopsis> ;
-        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/53/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/53/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/53/typology> , <https://archipelago.itatti.harvard.edu/resource/event/53/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/53/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/53/century> ;
-        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> ;
-        crm:P7_took_place_at       geonames:3230839 ;
-        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/53> , <https://archipelago.itatti.harvard.edu/resource/actor/41/event/53> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The restoration regards almost all the buildings of the monastery. Works will continue until 1751."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/7599>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Last quarter of the century (75-99)"@en .
+        rdfs:label  "Restoration"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/53/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Restoration of many buildings within the monastery"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/53/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/7599> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/53/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Restoration"@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/53>
         a                            crmpc:PC14_carried_out_by ;
@@ -89,3 +30,54 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/53/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Chronicler"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/53/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1682-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049>
+        a       crm:E22_Man-Made_Object .
+
+<https://archipelago.itatti.harvard.edu/resource/event/53>
+        a                          crm:E5_Event ;
+        crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/53/synopsis> ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/53/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/53/name> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/53/typology> , <https://archipelago.itatti.harvard.edu/resource/event/53/subtypology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/53/date> ;
+        crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> ;
+        crm:P7_took_place_at       geonames:3230839 ;
+        crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/53> , <https://archipelago.itatti.harvard.edu/resource/actor/41/event/53> .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/53/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patrons"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/53/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The restoration regards almost all the buildings of the monastery. Works will continue until 1751."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/41/event/53>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/41> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/53/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "53" .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/41>
+        a       crm:E39_Actor .
+
+geonames:3230839  a  crm:E53_Place .

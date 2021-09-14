@@ -44,19 +44,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
-			<Start_Owner>1563-01-01</Start_Owner>
-			<End_Owner>1806-07-27</End_Owner>
-		</Owner>
-		<Owner pos="2">
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

@@ -10,34 +10,23 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/176> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Quarantined%20person/event/154/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/154/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "The ambassador Alessandro de Strigis and his entourage are send to the Lazzaretto Vecchio"@it ;
-        crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resource/event/154/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Quarantined%20person/event/154/role>
+<https://archipelago.itatti.harvard.edu/resource/event/154/typology>
         a           crm:E55_Type ;
-        rdfs:label  "Quarantined person"@en .
+        rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/154/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/124>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/154/subtypology>
+        a           crm:E55_Type ;
+        rdfs:label  "Transfer (goods or people)"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/154/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "154" .
 
 geonames:7910520  a  crm:E53_Place .
 
@@ -45,43 +34,46 @@ geonames:7910520  a  crm:E53_Place .
         a           crm:E73_Information_Object ;
         rdfs:label  "The Marquis was sent by the Duke Carlo Gonzaga to Wien for signing the peace with the Emperor Ferdinand II. Because he comes from an infected city he is quarantined the lazzaretto."@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/124>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/154/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/176>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/event/154/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "154" .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/124/event/154>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/124> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/154/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/154/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1630-06-08T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176/event/154>
+        a                            crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/176> ;
+        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Quarantined%20person/event/154/role> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Quarantined%20person/event/154/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Quarantined person"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/154>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/154/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/154/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/154/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/154/typology> , <https://archipelago.itatti.harvard.edu/resource/event/154/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/154/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/154/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/154/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:7910520 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/176/event/154> , <https://archipelago.itatti.harvard.edu/resource/actor/124/event/154> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/154/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Transfer (goods or people)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/154/typology>
-        a           crm:E55_Type ;
-        rdfs:label  "Social"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/154/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "The ambassador Alessandro de Strigis and his entourage are send to the Lazzaretto Vecchio"@it ;
+        crm:P2_has_type  "preferred_name" .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/176>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/154/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Decision maker"@en .

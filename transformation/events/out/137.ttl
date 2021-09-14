@@ -17,25 +17,17 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/137/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/137/century>
+<https://archipelago.itatti.harvard.edu/resource/event/137/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "19th cent."@en .
+        crm:P82a_begin_of_the_begin  "1873-07-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/137/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/137/name>
         a                crm:E41_Appellation ;
@@ -50,7 +42,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/137/name> , <https://archipelago.itatti.harvard.edu/resource/event/137/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/137/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/137/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/137/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/137/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/137/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 .
 

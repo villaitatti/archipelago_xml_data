@@ -8,7 +8,7 @@
 	<Start>1848-01-01</Start>
 	<End>1851-12-31</End>
 	<Name>Vera da pozzo</Name>
-	<SHP_Lenght>5.07929236783034</SHP_Lenght>
+	<SHP_Lenght>5.079292367830339</SHP_Lenght>
 	<SHP_Area>1.6122491910238002</SHP_Area>
 	<Materials>
 		<Material>
@@ -44,14 +44,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Austrian Empire</ID_PERSON>
+			<ID_PERSON>123</ID_PERSON>
 			<Start_Owner>1814-04-20</Start_Owner>
 			<End_Owner>1866-10-20</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Austrian Empire</ID_PERSON>
+			<ID_PERSON>123</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

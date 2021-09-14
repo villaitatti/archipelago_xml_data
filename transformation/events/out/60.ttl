@@ -14,39 +14,31 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/60/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "12th cent."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/Blessing%20Patriarch/event/60/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Blessing Patriarch"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/60/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "60" .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Blessing%20Patriarch/event/60/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Blessing Patriarch"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/event/60>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/74> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Blessing%20Patriarch/event/60/role> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/60/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1141-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/60/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Celebration"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/60/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/60/name>
         a                crm:E41_Appellation ;
         rdfs:label       "Blessing of the new religious complex"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Mid-century (40-60)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74>
         a       crm:E39_Actor .
@@ -54,9 +46,9 @@
 <https://archipelago.itatti.harvard.edu/resource/event/60>
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/60/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/60/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/60/name> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/60/name> , <https://archipelago.itatti.harvard.edu/resource/event/60/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/60/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/60/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/60/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/60/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/60/date> ;
         crm:P7_took_place_at     geonames:3168468 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/74/event/60> .
 

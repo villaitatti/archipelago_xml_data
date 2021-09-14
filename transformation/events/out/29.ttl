@@ -20,15 +20,11 @@
 <https://archipelago.itatti.harvard.edu/resource/event/29>
         a                        crm:E5_Event ;
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/29/synopsis> ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/29/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/29/name> ;
-        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/29/typology> , <https://archipelago.itatti.harvard.edu/resource/event/29/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/29/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/29/century> ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/29/name> , <https://archipelago.itatti.harvard.edu/resource/event/29/identifier> ;
+        crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/29/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/29/typology> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/29/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/24/event/29> .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/7599>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Last quarter of the century (75-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/29/name>
         a                crm:E41_Appellation ;
@@ -50,10 +46,6 @@
 
 geonames:7910746  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resource/event/29/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/29/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "Consecration of the last four altars of the church."@en .
@@ -62,6 +54,6 @@ geonames:7910746  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Consecration"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/29/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/7599> .
+<https://archipelago.itatti.harvard.edu/resource/event/29/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1581-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

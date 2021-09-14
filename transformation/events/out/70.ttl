@@ -10,17 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/70/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/70/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "70" .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/70/subtypology>
         a           crm:E55_Type ;
@@ -29,20 +21,24 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/Donor%20for%20the%20restoration/event/70/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Donor for the restoration"@en .
+
 <https://archipelago.itatti.harvard.edu/resource/event/70>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/70/synopsis> ;
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/10> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/70/name> , <https://archipelago.itatti.harvard.edu/resource/event/70/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/70/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/70/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/70/century> , <https://archipelago.itatti.harvard.edu/resource/event/70/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/70/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/51/event/70> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Donor%20for%20the%20restoration/event/70/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Donor for the restoration"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/70/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1594-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/70/typology>
         a           crm:E55_Type ;
@@ -54,10 +50,6 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/70/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/51/event/70>
         a                            crmpc:PC14_carried_out_by ;

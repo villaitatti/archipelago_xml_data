@@ -10,20 +10,8 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/102>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/event/122/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/122/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/122/typology>
         a           crm:E55_Type ;
@@ -53,7 +41,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/122/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/122/name> , <https://archipelago.itatti.harvard.edu/resource/event/122/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/122/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/122/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/122/century> , <https://archipelago.itatti.harvard.edu/resource/event/122/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/122/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/157> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/145/event/122> , <https://archipelago.itatti.harvard.edu/resource/actor/102/event/122> .
@@ -74,6 +62,10 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/source/157/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resource/event/122/source/157/event> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/122/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1433-04-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/122/role>
         a           crm:E55_Type ;

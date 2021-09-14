@@ -15,7 +15,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/124/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/124/name> , <https://archipelago.itatti.harvard.edu/resource/event/124/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/124/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/124/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/124/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/124/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/147/event/124> .
@@ -41,6 +41,10 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/147> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Predictor%20and%20friar%20inhabiting%20the%20island/event/124/role> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/124/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1509-05-30T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/actor/147>
         a       crm:E39_Actor .
 
@@ -51,10 +55,6 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/Predictor%20and%20friar%20inhabiting%20the%20island/event/124/role>
         a           crm:E55_Type ;
         rdfs:label  "Predictor and friar inhabiting the island"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/124/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/124/subtypology>
         a           crm:E55_Type ;

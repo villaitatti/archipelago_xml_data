@@ -50,7 +50,7 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/118/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/118/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/118/typology> , <https://archipelago.itatti.harvard.edu/resource/event/118/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/118/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/118/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/156> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/141/event/118> , <https://archipelago.itatti.harvard.edu/resource/actor/133/event/118> .
@@ -58,14 +58,14 @@
 <https://archipelago.itatti.harvard.edu/resource/actor/133>
         a       crm:E39_Actor .
 
+<https://archipelago.itatti.harvard.edu/resource/event/118/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1314-07-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/source/156>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/source/156/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resource/event/118/source/156/event> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/118/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141>
         a       crm:E39_Actor .

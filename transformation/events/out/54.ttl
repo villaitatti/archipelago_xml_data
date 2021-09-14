@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/87>
         a       crm:E39_Actor .
 
@@ -25,9 +21,6 @@
         a                crm:E41_Appellation ;
         rdfs:label       "The Dominican Friars are exempt from the tansa degli ortolani"@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resource/built_work/11>
-        a       crm:E22_Man-Made_Object .
 
 <https://archipelago.itatti.harvard.edu/resource/event/54/typology>
         a           crm:E55_Type ;
@@ -43,10 +36,10 @@
 <https://archipelago.itatti.harvard.edu/resource/event/54>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/54/synopsis> ;
-        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/11> ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/54/name> , <https://archipelago.itatti.harvard.edu/resource/event/54/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/54/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/54/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/54/century> , <https://archipelago.itatti.harvard.edu/resource/event/54/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/54/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/81> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/87/event/54> , <https://archipelago.itatti.harvard.edu/resource/actor/42/event/54> .
@@ -58,26 +51,25 @@ geonames:3230839  a  crm:E53_Place .
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/source/81/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resource/event/54/source/81/event> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007>
+        a       crm:E22_Man-Made_Object .
+
 <https://archipelago.itatti.harvard.edu/resource/event/54/source/81/event>
         a           crm:E41_Appellation ;
         rdfs:label  "The Dominican Friars are exempt from the tansa degli ortolani"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/54/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1732-12-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/54/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Exemption"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/54/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/87/event/54>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/87> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/54/role> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/54/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/54>
         a                            crmpc:PC14_carried_out_by ;
@@ -88,9 +80,9 @@ geonames:3230839  a  crm:E53_Place .
         a           crm:E55_Type ;
         rdfs:label  "Beneficiary"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/source/81/identifier>
-        a       crm:E42_Identifier .
-
 <https://archipelago.itatti.harvard.edu/resource/event/54/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Dominican friars are exempt by the Collegio della Milizia da Mar from the payment of the tansa degli ortolani. They claimed the high costs of the maintenance of the public guest house located in the island."@en .
+
+<https://archipelago.itatti.harvard.edu/resource/source/81/identifier>
+        a       crm:E42_Identifier .

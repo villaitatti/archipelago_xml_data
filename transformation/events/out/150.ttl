@@ -10,11 +10,15 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/150/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1523-09-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/150>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/150/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/150/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/150/typology> , <https://archipelago.itatti.harvard.edu/resource/event/150/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/150/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/150/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150> .
@@ -63,7 +67,3 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier> .
 
 geonames:3168468  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/event/150/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .

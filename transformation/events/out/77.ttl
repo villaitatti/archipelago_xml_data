@@ -10,14 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/77/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/102>
         a       crm:E39_Actor .
 
@@ -54,7 +46,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/77/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/77/name> , <https://archipelago.itatti.harvard.edu/resource/event/77/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/77/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/77/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/77/century> , <https://archipelago.itatti.harvard.edu/resource/event/77/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/77/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> , <https://archipelago.itatti.harvard.edu/resource/source/157> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/102/event/77> , <https://archipelago.itatti.harvard.edu/resource/actor/145/event/77> .
@@ -75,9 +67,9 @@
         a           crm:E55_Type ;
         rdfs:label  "New owners"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/77/century>
+<https://archipelago.itatti.harvard.edu/resource/event/77/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
+        crm:P82a_begin_of_the_begin  "1432-12-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022>
         a                        crm:E31_Document ;

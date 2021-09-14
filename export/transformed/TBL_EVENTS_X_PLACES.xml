@@ -30,13 +30,13 @@
     <ROW MODID="4" RECORDID="7">
         <ID_EVENT_X_PLACE>5</ID_EVENT_X_PLACE>
         <ID_EVENT>41</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="8">
         <ID_EVENT_X_PLACE>6</ID_EVENT_X_PLACE>
         <ID_EVENT>42</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="4" RECORDID="9">
@@ -48,25 +48,25 @@
     <ROW MODID="3" RECORDID="10">
         <ID_EVENT_X_PLACE>8</ID_EVENT_X_PLACE>
         <ID_EVENT>44</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="11">
         <ID_EVENT_X_PLACE>9</ID_EVENT_X_PLACE>
         <ID_EVENT>45</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="13">
         <ID_EVENT_X_PLACE>10</ID_EVENT_X_PLACE>
         <ID_EVENT>48</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="14">
         <ID_EVENT_X_PLACE>11</ID_EVENT_X_PLACE>
         <ID_EVENT>8</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="4" RECORDID="15">
@@ -78,19 +78,19 @@
     <ROW MODID="3" RECORDID="16">
         <ID_EVENT_X_PLACE>13</ID_EVENT_X_PLACE>
         <ID_EVENT>16</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="17">
         <ID_EVENT_X_PLACE>14</ID_EVENT_X_PLACE>
         <ID_EVENT>17</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="4" RECORDID="18">
         <ID_EVENT_X_PLACE>15</ID_EVENT_X_PLACE>
         <ID_EVENT>18</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="5" RECORDID="19">
@@ -192,13 +192,13 @@
     <ROW MODID="4" RECORDID="36">
         <ID_EVENT_X_PLACE>32</ID_EVENT_X_PLACE>
         <ID_EVENT>40</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1789</Date>
     </ROW>
     <ROW MODID="4" RECORDID="37">
         <ID_EVENT_X_PLACE>33</ID_EVENT_X_PLACE>
         <ID_EVENT>54</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1789</Date>
     </ROW>
     <ROW MODID="4" RECORDID="38">
@@ -210,13 +210,13 @@
     <ROW MODID="4" RECORDID="39">
         <ID_EVENT_X_PLACE>35</ID_EVENT_X_PLACE>
         <ID_EVENT>57</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1789</Date>
     </ROW>
     <ROW MODID="3" RECORDID="40">
         <ID_EVENT_X_PLACE>36</ID_EVENT_X_PLACE>
         <ID_EVENT>80</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date></Date>
     </ROW>
     <ROW MODID="4" RECORDID="41">
@@ -246,7 +246,7 @@
     <ROW MODID="4" RECORDID="45">
         <ID_EVENT_X_PLACE>41</ID_EVENT_X_PLACE>
         <ID_EVENT>59</ID_EVENT>
-        <ID_PLACE>11</ID_PLACE>
+        <ID_PLACE>SS_IS_007</ID_PLACE>
         <Date>1500</Date>
     </ROW>
     <ROW MODID="3" RECORDID="46">

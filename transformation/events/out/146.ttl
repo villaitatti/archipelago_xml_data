@@ -10,12 +10,16 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/146/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1532-05-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/146>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/146/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/146/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/146/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/146/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/146/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/146/century> , <https://archipelago.itatti.harvard.edu/resource/event/146/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/146/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/166/event/146> .
@@ -51,29 +55,17 @@
         rdfs:label       "The Duke of Urbin, Francesco Maria I della Rovere, is received by Venetian noblemen in the island"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/146/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
+<https://archipelago.itatti.harvard.edu/resource/event/146/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "Coming from Chioggia, he stops in San Clemente but he is not received by the Doge."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/146/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "Coming from Chioggia, he stops in San Clemente but he is not received by the Doge."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/146/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 geonames:3168468  a  crm:E53_Place .
 

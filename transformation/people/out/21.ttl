@@ -16,9 +16,6 @@
         crm:P7_took_place_at  geonames:3170754 ;
         crm:P97_from_father   <https://archipelago.itatti.harvard.edu/resource/actor/__PLACEHOLDER__> .
 
-<urn:uuid:39718483-07a2-433b-990a-6fb338e833a8>
-        a       crm:E55_Type .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/21/death>
         a                     crm:E69_Death ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/actor/21/death/date> ;
@@ -28,26 +25,29 @@
         a           crm:E55_Type ;
         rdfs:label  "Preferred Name"@en .
 
-<urn:uuid:6a85223c-8ebf-47f7-9b6f-300fcddc00a1>
-        a                            crm:E52_Time-Span ;
-        crm:P82a_begin_of_the_begin  "1525"@en .
+<urn:uuid:99059f49-2346-49b3-9d69-068fffbcfa85>
+        a                     crm:E7_Activity ;
+        crm:P2_has_type       <urn:uuid:1b2b5bf1-3de0-4635-a706-ba15855169e7> ;
+        crm:P4_has_time-span  <urn:uuid:5c24b1b5-df7d-4388-ba53-ed067fb845e4> .
 
 geonames:3170754  a  crm:E53_Place ;
         rdfs:label  "Pieve di Cadore"@en .
+
+<urn:uuid:1b2b5bf1-3de0-4635-a706-ba15855169e7>
+        a       crm:E55_Type .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21/appellation>
         a                crm:E41_Appellation ;
         rdfs:label       "Tiziano Vecellio"@it ;
         crm:P2_has_type  <https://archipelago.itatti.harvard.edu/resource/type/preferred_name> .
 
-<urn:uuid:644f4f6f-c5b6-4ce8-9028-50d331339f10>
-        a                     crm:E7_Activity ;
-        crm:P2_has_type       <urn:uuid:39718483-07a2-433b-990a-6fb338e833a8> ;
-        crm:P4_has_time-span  <urn:uuid:6a85223c-8ebf-47f7-9b6f-300fcddc00a1> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/21/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "21" .
+
+<urn:uuid:5c24b1b5-df7d-4388-ba53-ed067fb845e4>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1525"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21/birth/date>
         a                            crm:E52_Time-Span ;
@@ -62,7 +62,7 @@ geonames:3170754  a  crm:E53_Place ;
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21>
         a                        crm:E39_Actor ;
-        crm:P12i_was_present_at  <urn:uuid:644f4f6f-c5b6-4ce8-9028-50d331339f10> ;
+        crm:P12i_was_present_at  <urn:uuid:99059f49-2346-49b3-9d69-068fffbcfa85> ;
         crm:P14i_performed       <https://archipelago.itatti.harvard.edu/resource/actor/21/activity/300025136> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/actor/21/identifier> , <https://archipelago.itatti.harvard.edu/resource/actor/21/appellation> ;
         crm:P92i_was_brought_into_existence_by

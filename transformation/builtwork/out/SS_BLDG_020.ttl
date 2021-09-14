@@ -30,7 +30,7 @@
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/use/1/date>
@@ -55,9 +55,12 @@
         crm:P82a_begin_of_the_begin  "1738-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/42>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 aat:300120364  a    crm:E55_Type ;
@@ -68,16 +71,21 @@ aat:300120364  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1738-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1738-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1806-07-27T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "919.2605345284669" ;
+        crm:P90_has_value  "919.2605345284668" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "178.312490467" ;
+        crm:P90_has_value  "178.3124904670001" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
@@ -87,9 +95,6 @@ aat:300120364  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/measurement/perimeter>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/measurement/perimeter/dimension> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Dominican%20Friars%20of%20San%20Secondo>
-        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/construction>
         a                     crm:E12_Production ;
@@ -132,8 +137,9 @@ aat:300011584  a    crm:E57_Material ;
         rdfs:label  "Typology"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Private"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Private"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_020/function/1/date> .
 
 aat:300115251  a    crm:E55_Type ;
         rdfs:label  "Patron"@en .

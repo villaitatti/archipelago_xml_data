@@ -7,7 +7,7 @@
 	<Synopsis>According to the chronicle by Enrico Dandolo, the wealthy merchant Pietro Gattilesso put up money to build a church and a pilgrim's hospital dedicated to St Clement Pope on the island that would henceforth bear his name. Both the church and hospital were put under the jurisdiction of the Patriarch of Grado, Enrico Dandolo.</Synopsis>
 	<Century>12th cent.</Century>
 	<Fraction_century fraction_id="2549">Second quarter of the century (25-49)</Fraction_century>
-	<Date_Earliest>1131-01-01T00:00:00</Date_Earliest>
+	<Date_Earliest>1131-01-01</Date_Earliest>
 	<Island>3168468</Island>
 	<People>
 		<Person>
@@ -53,7 +53,7 @@
 	</Bibliographic_Items>
 	<Places>
 		<Place>
-			<ID_PLACE>11</ID_PLACE>
+			<ID_PLACE>SS_IS_007</ID_PLACE>
 			<Date>1500</Date>
 		</Place>
 	</Places>

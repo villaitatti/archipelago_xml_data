@@ -10,6 +10,10 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://archipelago.itatti.harvard.edu/resource/event/83/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1544-12-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/83/typology>
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
@@ -23,13 +27,9 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/83/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/83/name> , <https://archipelago.itatti.harvard.edu/resource/event/83/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/83/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/83/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/83/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/117/event/83> , <https://archipelago.itatti.harvard.edu/resource/actor/21/event/83> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/83/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 geonames:7910746  a  crm:E53_Place .
 

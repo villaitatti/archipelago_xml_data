@@ -40,10 +40,10 @@ geonames:7910746  a  crm:E53_Place .
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/23/name> , <https://archipelago.itatti.harvard.edu/resource/event/23/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/23/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/23/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/23/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/23/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/25/event/23> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/23/century>
+<https://archipelago.itatti.harvard.edu/resource/event/23/date>
         a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
+        crm:P82a_begin_of_the_begin  "1425-12-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

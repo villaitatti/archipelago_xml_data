@@ -10,14 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/140/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/140/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0042>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0042/identifier> .
@@ -51,9 +43,9 @@ geonames:3168290  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/event/140>
         a                          crm:E5_Event ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/140/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/140/name> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/140/name> , <https://archipelago.itatti.harvard.edu/resource/event/140/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/140/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/140/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/140/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/140/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/140/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0042> ;
         crm:P7_took_place_at       geonames:3168290 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/156/event/140> .
@@ -61,9 +53,9 @@ geonames:3168290  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/actor/156>
         a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/140/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1439-09-06T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/140/role>
         a           crm:E55_Type ;

@@ -18,6 +18,10 @@
         a           crm:E42_Identifier ;
         rdfs:label  "156" .
 
+<https://archipelago.itatti.harvard.edu/resource/event/156/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1630-07-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
 
@@ -37,19 +41,11 @@
 <https://archipelago.itatti.harvard.edu/resource/event/156>
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/156/name> , <https://archipelago.itatti.harvard.edu/resource/event/156/identifier> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/156/typology> , <https://archipelago.itatti.harvard.edu/resource/event/156/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/156/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/156/century> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/156/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/156/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/156/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/176/event/156> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/156/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/156/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;
@@ -57,9 +53,5 @@
 
 <https://archipelago.itatti.harvard.edu/resource/actor/176>
         a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 geonames:3168468  a  crm:E53_Place .

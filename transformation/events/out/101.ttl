@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/101/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "20th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/101/typology>
         a           crm:E55_Type ;
         rdfs:label  "Artistic"@en .
@@ -22,14 +18,6 @@
         a                crm:E41_Appellation ;
         rdfs:label       "Artworks are transferred to the Galleria Franchetti (Ca' d'Oro), to the restoration laboratory in San Gregorio, and to the venues of the Venetian U.S.L."@it ;
         crm:P2_has_type  "preferred_name" .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/101/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/101/identifier>
         a           crm:E42_Identifier ;
@@ -42,9 +30,13 @@
         a                          crm:E5_Event ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/101/name> , <https://archipelago.itatti.harvard.edu/resource/event/101/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/101/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/101/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/101/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/101/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/101/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022> ;
         crm:P7_took_place_at       geonames:3168468 .
+
+<https://archipelago.itatti.harvard.edu/resource/event/101/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1992-05-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 geonames:3168468  a  crm:E53_Place .
 

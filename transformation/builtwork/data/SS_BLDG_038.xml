@@ -12,14 +12,14 @@
 	<SHP_Area>52.1430136735508</SHP_Area>
 	<Materials>
 		<Material>
-			<eng>Bricks</eng>
-			<ita>Mattone</ita>
-			<aat>300010463</aat>
-		</Material>
-		<Material>
 			<eng>Istrian marble</eng>
 			<ita>Pietra d'Istria</ita>
 			<aat>300011584</aat>
+		</Material>
+		<Material>
+			<eng>Bricks</eng>
+			<ita>Mattone</ita>
+			<aat>300010463</aat>
 		</Material>
 	</Materials>
 	<Functions>
@@ -49,14 +49,14 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Benedectine nuns of San Secondo</ID_PERSON>
+			<ID_PERSON>18</ID_PERSON>
 			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1531-12-31</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Baffo family</ID_PERSON>
+			<ID_PERSON>16</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

@@ -10,9 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/121/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
+<https://archipelago.itatti.harvard.edu/resource/event/121/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1431-03-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/121/identifier>
         a           crm:E42_Identifier ;
@@ -26,29 +26,21 @@
         a           crm:E55_Type ;
         rdfs:label  "Election"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/145>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/145/event/121>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/145> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Pope/event/121/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/121/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "15th cent."@en .
+<https://archipelago.itatti.harvard.edu/resource/actor/145>
+        a       crm:E39_Actor .
 
 geonames:12172719  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/121>
         a                        crm:E5_Event ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/121/name> , <https://archipelago.itatti.harvard.edu/resource/event/121/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/121/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/121/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/121/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/121/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/121/date> ;
         crm:P7_took_place_at     geonames:12172719 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/145/event/121> .
 

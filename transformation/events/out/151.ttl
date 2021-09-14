@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/151/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/151/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "He was asked to stay in the island for a few days."@en .
@@ -36,19 +32,15 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/151/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/151/name> , <https://archipelago.itatti.harvard.edu/resource/event/151/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/151/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/151/typology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/151/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/151/century> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/151/date> ;
         crm:P7_took_place_at     geonames:3168468 .
-
-<https://archipelago.itatti.harvard.edu/resource/event/151/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/151/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Temporary housing"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/151/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1528-04-14T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 geonames:3168468  a  crm:E53_Place .

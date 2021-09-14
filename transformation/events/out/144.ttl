@@ -45,10 +45,6 @@
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/160> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/144/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/144/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/160>
         a       crm:E39_Actor .
 
@@ -62,7 +58,7 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/144/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/144/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/144/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/144/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/144/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/144/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/144/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/163/event/144> , <https://archipelago.itatti.harvard.edu/resource/actor/160/event/144> .
@@ -84,3 +80,7 @@ geonames:3168468  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/144/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "144" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/144/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1519-06-08T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

@@ -14,10 +14,6 @@
         a           crm:E41_Appellation ;
         rdfs:label  "Foundation of the church and convent"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/15/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The Basso family sponsored the construction of a small church and convent to be entrusted to a group of Benedictine nuns. The island is dedicated to San Secondo and Sant'Erasmo."@en .
@@ -30,10 +26,6 @@
         rdfs:label       "Foundation of the church and convent"@it ;
         crm:P2_has_type  "preferred_name" .
 
-<https://archipelago.itatti.harvard.edu/resource/event/15/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
-
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
@@ -41,10 +33,6 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0010>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0010/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/15/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "11th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/16/event/15>
         a                            crmpc:PC14_carried_out_by ;
@@ -81,7 +69,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/1> , <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/15/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/15/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/15/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/15/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/15/century> , <https://archipelago.itatti.harvard.edu/resource/event/15/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/15/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0010> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0024> , <https://archipelago.itatti.harvard.edu/resource/source/29> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/16/event/15> , <https://archipelago.itatti.harvard.edu/resource/actor/18/event/15> .
@@ -92,6 +80,10 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/15/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "15" .
+
+<https://archipelago.itatti.harvard.edu/resource/event/15/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1034-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/source/29/identifier>
         a       crm:E42_Identifier .

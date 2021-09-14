@@ -10,14 +10,9 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/46/name>
-        a                crm:E41_Appellation ;
-        rdfs:label       "A fire destroys the roof of the church"@it ;
-        crm:P2_has_type  "preferred_name" .
+<https://archipelago.itatti.harvard.edu/resource/event/46/synopsis>
+        a           crm:E73_Information_Object ;
+        rdfs:label  "The fire destroys the roof of the church and some beams collapse on the altar of San Secondo. The altarpiece by Giovanni Buonconsiglio doesn't get damaged."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/46>
         a                          crm:E5_Event ;
@@ -25,62 +20,59 @@
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/1> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/46/name> , <https://archipelago.itatti.harvard.edu/resource/event/46/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/46/typology> , <https://archipelago.itatti.harvard.edu/resource/event/46/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/46/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/46/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/46/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/48/event/46> .
 
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
-        a                        crm:E31_Document ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/46/subtypology>
-        a           crm:E55_Type ;
-        rdfs:label  "Fire"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/48>
-        a       crm:E39_Actor .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Painter/event/46/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Painter"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/46/name>
+        a                crm:E41_Appellation ;
+        rdfs:label       "A fire destroys the roof of the church"@it ;
+        crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
-        a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resource/event/46/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
-geonames:3230839  a  crm:E53_Place .
-
-<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/46/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .
+<https://archipelago.itatti.harvard.edu/resource/built_work/1>
+        a       crm:E22_Man-Made_Object .
 
-<https://archipelago.itatti.harvard.edu/resource/event/46/synopsis>
-        a           crm:E73_Information_Object ;
-        rdfs:label  "The fire destroys the roof of the church and some beams collapse on the altar of San Secondo. The altarpiece by Giovanni Buonconsiglio doesn't get damaged."@en .
+<https://archipelago.itatti.harvard.edu/resource/event/46/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1539-06-24T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/46/typology>
+        a           crm:E55_Type ;
+        rdfs:label  "Urban"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
+        a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Painter/event/46/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Painter"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/48>
+        a       crm:E39_Actor .
+
+<https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
+        a                        crm:E31_Document ;
+        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/46/identifier>
+        a           crm:E42_Identifier ;
+        rdfs:label  "46" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/48/event/46>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/48> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Painter/event/46/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/46/identifier>
-        a           crm:E42_Identifier ;
-        rdfs:label  "46" .
+geonames:3230839  a  crm:E53_Place .
 
-<https://archipelago.itatti.harvard.edu/resource/built_work/1>
-        a       crm:E22_Man-Made_Object .
-
-<https://archipelago.itatti.harvard.edu/resource/event/46/typology>
+<https://archipelago.itatti.harvard.edu/resource/event/46/subtypology>
         a           crm:E55_Type ;
-        rdfs:label  "Urban"@en .
+        rdfs:label  "Fire"@en .

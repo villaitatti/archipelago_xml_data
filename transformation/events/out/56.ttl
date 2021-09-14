@@ -10,21 +10,13 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/2549>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Second quarter of the century (25-49)"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/56/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/56>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/56/synopsis> ;
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_001> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/56/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/56/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/56/typology> , <https://archipelago.itatti.harvard.edu/resource/event/56/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/56/century> , <https://archipelago.itatti.harvard.edu/resource/event/56/century_fraction> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/56/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/85> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/90/event/56> , <https://archipelago.itatti.harvard.edu/resource/actor/42/event/56> .
@@ -52,6 +44,10 @@
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Petitioners/event/56/role> .
 
 geonames:3230839  a  crm:E53_Place .
+
+<https://archipelago.itatti.harvard.edu/resource/event/56/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1734-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/56/identifier>
         a           crm:E42_Identifier ;
@@ -90,7 +86,3 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/56/source/85/event>
         a           crm:E41_Appellation ;
         rdfs:label  "The gunpowder preserved in the powderhouse is removed"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/56/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/2549> .

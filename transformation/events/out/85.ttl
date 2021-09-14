@@ -13,26 +13,14 @@
 <https://archipelago.itatti.harvard.edu/resource/event/85>
         a                          crm:E5_Event ;
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/22> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/85/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/85/name> ;
-        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/85/typology> , <https://archipelago.itatti.harvard.edu/resource/event/85/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/85/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/85/century> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/85/name> , <https://archipelago.itatti.harvard.edu/resource/event/85/identifier> ;
+        crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/85/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/85/typology> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/85/date> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/85> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/85/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/85/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "18th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/22>
         a       crm:E22_Man-Made_Object .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
@@ -45,6 +33,10 @@
 <https://archipelago.itatti.harvard.edu/resource/event/85/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/event/85/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1770-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/85/identifier>
         a           crm:E42_Identifier ;

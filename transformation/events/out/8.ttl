@@ -43,22 +43,19 @@
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resource/built_work/11>
-        a       crm:E22_Man-Made_Object .
-
 <https://archipelago.itatti.harvard.edu/resource/event/8/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "8" .
-
-<https://archipelago.itatti.harvard.edu/resource/event/8/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
+
+<https://archipelago.itatti.harvard.edu/resource/event/8/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1576-03-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 geonames:3230839  a  crm:E53_Place .
 
@@ -69,9 +66,8 @@ geonames:3230839  a  crm:E53_Place .
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/7599>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Last quarter of the century (75-99)"@en .
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007>
+        a       crm:E22_Man-Made_Object .
 
 <https://archipelago.itatti.harvard.edu/resource/source/80>
         a                        crm:E31_Document ;
@@ -85,17 +81,13 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/event/8>
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/8/synopsis> ;
-        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/11> ;
+        crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_IS_007> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/8/name> , <https://archipelago.itatti.harvard.edu/resource/event/8/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/8/subtypology> , <https://archipelago.itatti.harvard.edu/resource/event/8/typology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/8/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/8/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/8/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0011> , <https://archipelago.itatti.harvard.edu/resource/source/80> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/88/event/8> , <https://archipelago.itatti.harvard.edu/resource/actor/42/event/8> .
-
-<https://archipelago.itatti.harvard.edu/resource/event/8/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/7599> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Removed%20order/event/8/role>
         a           crm:E55_Type ;

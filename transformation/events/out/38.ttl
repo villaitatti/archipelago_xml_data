@@ -19,10 +19,6 @@
         a           crm:E55_Type ;
         rdfs:label  "Designer"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/event/38/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/38/role>
         a           crm:E55_Type ;
         rdfs:label  "Patrons"@en .
@@ -71,6 +67,10 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/actor/37>
         a       crm:E39_Actor .
 
+<https://archipelago.itatti.harvard.edu/resource/event/38/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1607-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/event/38/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "38" .
@@ -83,9 +83,9 @@ geonames:3230839  a  crm:E53_Place .
         a                          crm:E5_Event ;
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/38/synopsis> ;
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/20> ;
-        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/38/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/38/name> ;
+        crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/38/name> , <https://archipelago.itatti.harvard.edu/resource/event/38/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/38/typology> , <https://archipelago.itatti.harvard.edu/resource/event/38/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/38/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/38/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015> , <https://archipelago.itatti.harvard.edu/resource/source/71> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/42/event/38> , <https://archipelago.itatti.harvard.edu/resource/actor/37/event/38> .

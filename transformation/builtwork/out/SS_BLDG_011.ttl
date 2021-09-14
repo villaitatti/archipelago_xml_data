@@ -19,13 +19,19 @@ aat:300115251  a    crm:E55_Type ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/construction/date> ;
         crmpc:P01_has_domain  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/role_patron/1> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1848-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1851-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/measurement/area>
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/measurement/area/dimension> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/area>
         a           crm:E55_Type ;
@@ -47,9 +53,6 @@ aat:300115251  a    crm:E55_Type ;
 aat:300007700  a    crm:E55_Type ;
         rdfs:label  "Deposito"@it , "Storage facility"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "SS_BLDG_011" .
@@ -57,7 +60,7 @@ aat:300007700  a    crm:E55_Type ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/perimeter> ;
-        crm:P90_has_value  "80.2826752103583" ;
+        crm:P90_has_value  "80.28267521035833" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/meter> .
 
 aat:300120590  a    crm:E55_Type ;
@@ -69,18 +72,21 @@ aat:300120590  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/acquisition/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/use/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1848-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1851-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/123>
+        a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
@@ -97,7 +103,7 @@ aat:300010463  a    crm:E57_Material ;
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_011/measurement/area/dimension>
         a                  crm:E54_Dimension ;
         crm:P2_has_type    <https://archipelago.itatti.harvard.edu/resource/type/area> ;
-        crm:P90_has_value  "370.854893239314" ;
+        crm:P90_has_value  "370.8548932393135" ;
         crm:P91_has_unit   <https://archipelago.itatti.harvard.edu/resource/type/square_meter> .
 
 <https://archipelago.itatti.harvard.edu/resource/type/use>

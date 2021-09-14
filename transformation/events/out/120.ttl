@@ -14,9 +14,9 @@
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/9099>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "End of the century (90-99)"@en .
+<https://archipelago.itatti.harvard.edu/resource/event/120/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1393-02-12T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018/identifier>
         a       crm:E42_Identifier .
@@ -33,22 +33,14 @@
         crm:P129i_is_subject_of    <https://archipelago.itatti.harvard.edu/resource/event/120/synopsis> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/120/identifier> , <https://archipelago.itatti.harvard.edu/resource/event/120/name> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/120/typology> , <https://archipelago.itatti.harvard.edu/resource/event/120/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/120/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/120/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/120/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018> ;
         crm:P7_took_place_at       geonames:3168468 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/144/event/120> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/120/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/9099> .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/120/role>
         a           crm:E55_Type ;
         rdfs:label  "Decision maker"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/120/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "14th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/120/identifier>
         a           crm:E42_Identifier ;

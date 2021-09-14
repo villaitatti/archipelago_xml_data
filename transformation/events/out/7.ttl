@@ -10,10 +10,6 @@
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://archipelago.itatti.harvard.edu/resource/event/7/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/5074> .
-
 <https://archipelago.itatti.harvard.edu/resource/event/7/identifier>
         a           crm:E42_Identifier ;
         rdfs:label  "7" .
@@ -32,6 +28,10 @@
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
+
+<https://archipelago.itatti.harvard.edu/resource/event/7/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1563-06-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/7>
         a                            crmpc:PC14_carried_out_by ;
@@ -57,10 +57,6 @@ geonames:3230839  a  crm:E53_Place .
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier>
         a       crm:E42_Identifier .
 
-<https://archipelago.itatti.harvard.edu/resource/event/7/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "16th cent."@en .
-
 <https://archipelago.itatti.harvard.edu/resource/actor/43/event/7>
         a                            crmpc:PC14_carried_out_by ;
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/43> ;
@@ -80,13 +76,13 @@ geonames:3230839  a  crm:E53_Place .
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/source/80/identifier> ;
         crm:P70_documents        <https://archipelago.itatti.harvard.edu/resource/event/7/source/80/event> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/7/role>
-        a           crm:E55_Type ;
-        rdfs:label  "Patrons"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/7/typology>
         a           crm:E55_Type ;
         rdfs:label  "Architectural"@en .
+
+<https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/7/role>
+        a           crm:E55_Type ;
+        rdfs:label  "Patrons"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/event/7>
         a                          crm:E5_Event ;
@@ -94,7 +90,7 @@ geonames:3230839  a  crm:E53_Place .
         crm:P15_was_influenced_by  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_049> ;
         crm:P1_is_identified_by    <https://archipelago.itatti.harvard.edu/resource/event/7/name> , <https://archipelago.itatti.harvard.edu/resource/event/7/identifier> ;
         crm:P2_has_type            <https://archipelago.itatti.harvard.edu/resource/event/7/typology> , <https://archipelago.itatti.harvard.edu/resource/event/7/subtypology> ;
-        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/7/century_fraction> , <https://archipelago.itatti.harvard.edu/resource/event/7/century> ;
+        crm:P4_has_time-span       <https://archipelago.itatti.harvard.edu/resource/event/7/date> ;
         crm:P70i_is_documented_in  <https://archipelago.itatti.harvard.edu/resource/source/80> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0020> , <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007> ;
         crm:P7_took_place_at       geonames:3230839 ;
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/43/event/7> , <https://archipelago.itatti.harvard.edu/resource/actor/42/event/7> .
@@ -104,7 +100,3 @@ geonames:3230839  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/source/80/identifier>
         a       crm:E42_Identifier .
-
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/5074>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Third quarter of the century (50-74)"@en .

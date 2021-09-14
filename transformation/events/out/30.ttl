@@ -31,16 +31,16 @@
         crm:P129i_is_subject_of  <https://archipelago.itatti.harvard.edu/resource/event/30/synopsis> ;
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/event/30/name> , <https://archipelago.itatti.harvard.edu/resource/event/30/identifier> ;
         crm:P2_has_type          <https://archipelago.itatti.harvard.edu/resource/event/30/typology> , <https://archipelago.itatti.harvard.edu/resource/event/30/subtypology> ;
-        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/30/century> , <https://archipelago.itatti.harvard.edu/resource/event/30/century_fraction> ;
+        crm:P4_has_time-span     <https://archipelago.itatti.harvard.edu/resource/event/30/date> ;
         crm:P7_took_place_at     geonames:7910746 ;
         crmpc:P01_has_domain     <https://archipelago.itatti.harvard.edu/resource/actor/24/event/30> , <https://archipelago.itatti.harvard.edu/resource/actor/27/event/30> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27>
         a       crm:E39_Actor .
 
-<https://archipelago.itatti.harvard.edu/resource/event/30/century_fraction>
-        a                        crm:E52_Time-Span ;
-        crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/time_appellation/4060> .
+<https://archipelago.itatti.harvard.edu/resource/event/30/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1656-04-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/event/30>
         a                            crmpc:PC14_carried_out_by ;
@@ -62,17 +62,9 @@ geonames:7910746  a  crm:E53_Place .
         crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/27> ;
         crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/30/role> .
 
-<https://archipelago.itatti.harvard.edu/resource/time_appellation/4060>
-        a           crm:E49_Time_Appellation ;
-        rdfs:label  "Mid-century (40-60)"@en .
-
 <https://archipelago.itatti.harvard.edu/resource/event/30/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
-
-<https://archipelago.itatti.harvard.edu/resource/event/30/century>
-        a                            crm:E52_Time-Span ;
-        crm:P82_at_some_time_within  "17th cent."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/30/role>
         a           crm:E55_Type ;

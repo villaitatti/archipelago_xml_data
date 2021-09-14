@@ -7,7 +7,7 @@
 	<Synopsis>Two bolts of lightning strike the bell tower, the sacristy, and the church. That day the Doge Carlo Ruzzini was guest in the public cavana within the island.</Synopsis>
 	<Century>18th cent.</Century>
 	<Fraction_century fraction_id="2549">Second quarter of the century (25-49)</Fraction_century>
-	<Date_Earliest>1734-07-15T00:00:00</Date_Earliest>
+	<Date_Earliest>1734-07-15</Date_Earliest>
 	<Island>3230839</Island>
 	<People>
 		<Person>
@@ -18,7 +18,7 @@
 	<Bibliographic_Items/>
 	<Places>
 		<Place>
-			<ID_PLACE>11</ID_PLACE>
+			<ID_PLACE>SS_IS_007</ID_PLACE>
 			<Date>1789</Date>
 		</Place>
 	</Places>

@@ -8,8 +8,8 @@
 	<Start>1500-01-01</Start>
 	<End>1788-12-31</End>
 	<Name>Deposito</Name>
-	<SHP_Lenght>27.7107714310967</SHP_Lenght>
-	<SHP_Area>38.8536479159915</SHP_Area>
+	<SHP_Lenght>27.71077143109667</SHP_Lenght>
+	<SHP_Area>38.853647915991495</SHP_Area>
 	<Materials>
 		<Material>
 			<eng>Bricks</eng>
@@ -44,24 +44,24 @@
 	</Typologies>
 	<Owners>
 		<Owner pos="1">
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
+			<ID_PERSON>42</ID_PERSON>
 			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1788-12-31</End_Owner>
 		</Owner>
 		<Owner pos="2">
-			<ID_PERSON>Dominican friars of San Secondo</ID_PERSON>
-			<Start_Owner>1500-01-01</Start_Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Start_Owner>1534-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 		<Owner pos="3">
-			<ID_PERSON>Dominican Friars of San Secondo</ID_PERSON>
-			<Start_Owner>1534-01-01</Start_Owner>
+			<ID_PERSON>42</ID_PERSON>
+			<Start_Owner>1500-01-01</Start_Owner>
 			<End_Owner>1806-07-27</End_Owner>
 		</Owner>
 	</Owners>
 	<Patrons>
 		<Patron>
-			<ID_PERSON>Benedectine Nuns of San Secondo</ID_PERSON>
+			<ID_PERSON>18</ID_PERSON>
 		</Patron>
 	</Patrons>
 </row>

@@ -165,7 +165,7 @@ do_events_x_places()
 do_events_x_sources()
 do_sources_x_people()
 
-with open('association_tables.json', 'w') as outfile:
+with open(os.path.join(dir_path, 'association_tables.json'), 'w') as outfile:
     json.dump(jason, outfile)
 
 print("\033[92mAll Done!")

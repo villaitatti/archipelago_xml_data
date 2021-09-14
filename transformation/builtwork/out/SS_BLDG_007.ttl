@@ -19,6 +19,11 @@ aat:300115251  a    crm:E55_Type ;
         crm:P82a_begin_of_the_begin  "1852-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         crm:P82b_end_of_the_end      "1945-09-08T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
+<https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/function/1/date>
+        a                            crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin  "1852-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        crm:P82b_end_of_the_end      "1981-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/construction>
         a                     crm:E12_Production ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/construction/date> ;
@@ -59,6 +64,9 @@ aat:300115251  a    crm:E55_Type ;
         crm:P2_has_type       aat:300120590 , <https://archipelago.itatti.harvard.edu/resource/type/use> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/use/1/date> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/86>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/destruction/date>
         a                        crm:E52_Time-Span ;
         crm:P82b_end_of_the_end  "1981-12-31T23:59:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -74,9 +82,6 @@ aat:300007700  a    crm:E55_Type ;
         a                           crm:E16_Measurement ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/measurement/perimeter/dimension> .
 
-<https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire>
-        a       crm:E39_Actor .
-
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/acquisition/1/date>
         a                            crm:E52_Time-Span ;
         crm:P82a_begin_of_the_begin  "1814-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
@@ -90,8 +95,9 @@ aat:300120590  a    crm:E55_Type ;
         crm:P40_observed_dimension  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/measurement/area/dimension> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/function/1>
-        a           crm:E5_Event ;
-        rdfs:label  "Public"@en .
+        a                     crm:E5_Event ;
+        rdfs:label            "Public"@en ;
+        crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/function/1/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/measurement/perimeter/dimension>
         a                  crm:E54_Dimension ;
@@ -101,7 +107,7 @@ aat:300120590  a    crm:E55_Type ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/acquisition/2>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/86> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/acquisition/2/date> .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/typology/1>
@@ -109,17 +115,17 @@ aat:300120590  a    crm:E55_Type ;
         crm:P2_has_type       aat:300007700 , <https://archipelago.itatti.harvard.edu/resource/type/typology> ;
         crm:P4_has_time-span  <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/typology/1/date> .
 
+<https://archipelago.itatti.harvard.edu/resource/actor/123>
+        a       crm:E39_Actor .
+
 <https://archipelago.itatti.harvard.edu/resource/type/perimeter>
         a           crm:E55_Type ;
         rdfs:label  "Perimeter"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/acquisition/1>
         a                             crm:E8_Acquisition ;
-        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crm:P22_transferred_title_to  <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crm:P4_has_time-span          <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/acquisition/1/date> .
-
-<https://archipelago.itatti.harvard.edu/resource/actor/Venice%20Municipality>
-        a       crm:E39_Actor .
 
 aat:300010463  a    crm:E57_Material ;
         rdfs:label  "Mattone"@it , "Bricks"@en .
@@ -148,7 +154,7 @@ aat:300010463  a    crm:E57_Material ;
 
 <https://archipelago.itatti.harvard.edu/resource/built_work/SS_BLDG_007/role_patron/1>
         a                           crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/Austrian%20Empire> ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/123> ;
         crmpc:P14.1_in_the_role_of  aat:300115251 .
 
 <https://archipelago.itatti.harvard.edu/resource/type/meter>
