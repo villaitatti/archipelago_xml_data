@@ -23,9 +23,9 @@
         rdfs:label  "Economic"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/141/event/118>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/141> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/118/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/141> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/118/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/118/role>
         a           crm:E55_Type ;
@@ -38,9 +38,9 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/133/event/118>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/118/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/118/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/118/subtypology>
         a           crm:E55_Type ;

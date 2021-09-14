@@ -43,9 +43,9 @@
         crm:P82a_begin_of_the_begin  "1656-04-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/event/30>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/30/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/30/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/30/subtypology>
         a           crm:E55_Type ;
@@ -58,9 +58,9 @@
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/27/event/30>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/27> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/30/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/27> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/30/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/30/typology>
         a           crm:E55_Type ;

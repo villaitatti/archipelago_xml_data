@@ -34,9 +34,9 @@
         crm:P82a_begin_of_the_begin  "1540-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/event/66>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/66/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/66/role> .
 
 geonames:7910746  a  crm:E53_Place .
 

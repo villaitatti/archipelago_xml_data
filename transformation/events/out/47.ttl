@@ -32,9 +32,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/47>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Tenant/event/47/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Tenant/event/47/role> .
 
 geonames:3230839  a  crm:E53_Place .
 
@@ -56,9 +56,9 @@ geonames:3230839  a  crm:E53_Place .
         rdfs:label  "47" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/90/event/47>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/90> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patron/event/47/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/90> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patron/event/47/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/source/85>
         a                        crm:E31_Document ;
@@ -69,9 +69,9 @@ geonames:3230839  a  crm:E53_Place .
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/event/47>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Owner/event/47/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Owner/event/47/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88>
         a       crm:E39_Actor .

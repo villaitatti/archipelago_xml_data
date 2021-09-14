@@ -508,7 +508,7 @@
                     <if>
                         <exists>text()</exists>
                     </if>
-                    <relationship>crmpc:PC14.1_in_the_role_of</relationship>
+                    <relationship>crmpc:P14.1_in_the_role_of</relationship>
                 </target_relation>
             </path>
             <range>

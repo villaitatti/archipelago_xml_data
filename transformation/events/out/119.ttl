@@ -14,9 +14,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/143/event/119>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/143> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Pope%20John%20XXII/event/119/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/143> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Pope%20John%20XXII/event/119/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/119/identifier>
         a           crm:E42_Identifier ;
@@ -60,9 +60,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/142/event/119>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/142> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20administrator%20of%20the%20island%20coming%20from%20Santo%20Spirito/event/119/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/142> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20administrator%20of%20the%20island%20coming%20from%20Santo%20Spirito/event/119/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;

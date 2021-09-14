@@ -30,9 +30,9 @@
         crm:P82a_begin_of_the_begin  "1858-05-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/155/event/132>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/155> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20owner/event/132/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/155> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20owner/event/132/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/132/name>
         a                crm:E41_Appellation ;

@@ -42,9 +42,9 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/125>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/125/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/125/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/125/date>
         a                            crm:E52_Time-Span ;

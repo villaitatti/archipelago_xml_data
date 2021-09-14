@@ -49,9 +49,9 @@
         rdfs:label  "Transfer (goods or people)"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/133/event/116>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/116/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/116/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/116/role>
         a           crm:E55_Type ;

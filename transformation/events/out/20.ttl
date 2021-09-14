@@ -14,9 +14,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21/event/20>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Painter/event/20/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Painter/event/20/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/20/date>
         a                            crm:E52_Time-Span ;
@@ -58,9 +58,9 @@ geonames:7910746  a  crm:E53_Place .
         rdfs:label  "Titian delivers the first version of the altarpiece Discesa dello Spirito Santo for the main chapel of the church."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/event/20>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/20/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/20/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21>
         a       crm:E39_Actor .

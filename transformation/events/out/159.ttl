@@ -63,8 +63,8 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/159>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Owners/event/159/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Owners/event/159/role> .
 
 geonames:3168468  a  crm:E53_Place .

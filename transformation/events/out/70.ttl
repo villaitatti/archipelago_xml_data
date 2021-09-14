@@ -52,9 +52,9 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/51/event/70>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/51> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor%20for%20the%20restoration/event/70/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/51> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor%20for%20the%20restoration/event/70/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/70/name>
         a                crm:E41_Appellation ;

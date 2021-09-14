@@ -30,9 +30,9 @@
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/17/event/17> , <https://archipelago.itatti.harvard.edu/resource/actor/18/event/17> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/17/event/17>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/17> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/17/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/17> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/17/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0015/identifier>
         a       crm:E42_Identifier .
@@ -66,9 +66,9 @@ geonames:3230839  a  crm:E53_Place .
         rdfs:label  "Religious order's suppression"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/event/17>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/17/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Suppressed%20order/event/17/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18>
         a       crm:E39_Actor .

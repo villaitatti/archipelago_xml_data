@@ -23,9 +23,9 @@
         rdfs:label  "60" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/event/60>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/74> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Blessing%20Patriarch/event/60/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/74> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Blessing%20Patriarch/event/60/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/60/date>
         a                            crm:E52_Time-Span ;

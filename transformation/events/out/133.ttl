@@ -40,9 +40,9 @@
         rdfs:label  "Engineer"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153/event/133>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/153> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Engineer/event/133/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/153> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Engineer/event/133/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/133/identifier>
         a           crm:E42_Identifier ;
@@ -69,9 +69,9 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/154/event/133>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/154> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/133/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/154> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/133/role> .
 
 geonames:3168468  a  crm:E53_Place .
 

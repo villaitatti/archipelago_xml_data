@@ -43,9 +43,9 @@
         rdfs:label  "Recovered person"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173/event/150>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/173> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recovered%20person/event/150/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/173> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recovered%20person/event/150/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/173>
         a       crm:E39_Actor .

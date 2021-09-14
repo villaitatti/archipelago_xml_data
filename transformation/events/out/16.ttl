@@ -28,9 +28,9 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/12/event/16>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/12> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Order%27s%20reformer/event/16/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/12> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Order%27s%20reformer/event/16/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/16/synopsis>
         a           crm:E73_Information_Object ;
@@ -77,9 +77,9 @@ geonames:3230839  a  crm:E53_Place .
         rdfs:label  "Social"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/event/16>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Reformed%20order/event/16/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Reformed%20order/event/16/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/16/subtypology>
         a           crm:E55_Type ;
@@ -90,6 +90,6 @@ geonames:3230839  a  crm:E53_Place .
         rdfs:label  "Reformed order"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/13/event/16>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/13> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/16/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/13> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/16/role> .

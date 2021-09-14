@@ -18,9 +18,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/event/41>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/41/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/41/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/41>
         a                          crm:E5_Event ;
@@ -68,9 +68,9 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/44/event/41>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/44> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor/event/41/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/44> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor/event/41/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/41/role>
         a           crm:E55_Type ;

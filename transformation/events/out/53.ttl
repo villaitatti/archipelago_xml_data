@@ -23,9 +23,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/53>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/53/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/53/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/53/typology>
         a           crm:E55_Type ;
@@ -65,9 +65,9 @@
         rdfs:label  "The restoration regards almost all the buildings of the monastery. Works will continue until 1751."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/41/event/53>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/41> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/41> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Chronicler/event/53/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/53/identifier>
         a           crm:E42_Identifier ;

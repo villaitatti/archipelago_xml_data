@@ -60,9 +60,9 @@
         crm:P82a_begin_of_the_begin  "1535-08-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/55/event/18>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/55> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Order%27s%20new%20vicary/event/18/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/55> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Order%27s%20new%20vicary/event/18/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Order%27s%20new%20vicary/event/18/role>
         a           crm:E55_Type ;

@@ -15,9 +15,9 @@
         rdfs:label  "The island is used as lazzaretto"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/88/event/8>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/8/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/88> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/8/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/8/role>
         a           crm:E55_Type ;
@@ -35,9 +35,9 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0011/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/8>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Removed%20order/event/8/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Removed%20order/event/8/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;

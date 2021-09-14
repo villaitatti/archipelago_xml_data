@@ -14,9 +14,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/126/event/92>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/126> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/126> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130>
         a       crm:E39_Actor .
@@ -62,23 +62,23 @@ geonames:12172719  a  crm:E53_Place .
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/127/event/92>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/127> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/127> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/125/event/92>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/125> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/125> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Professor%20at%20the%20University%20of%20Padua/event/92/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/92/typology>
         a           crm:E55_Type ;
         rdfs:label  "Social"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/130/event/92>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/130> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/92/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/130> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/92/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/128>
         a       crm:E39_Actor .
@@ -97,6 +97,6 @@ geonames:12172719  a  crm:E53_Place .
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/128/event/92>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/128> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/128> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Physician/event/92/role> .

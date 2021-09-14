@@ -16,9 +16,9 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/139/event/113>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/139> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/113/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/139> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/113/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/113>
         a                          crm:E5_Event ;
@@ -47,9 +47,9 @@
         rdfs:label  "Recipient"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/133/event/113>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/113/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/133> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Recipient/event/113/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/113/subtypology>
         a           crm:E55_Type ;
@@ -64,9 +64,9 @@
         rdfs:label  "113" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/138/event/113>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/138> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/113/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/138> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donator/event/113/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;

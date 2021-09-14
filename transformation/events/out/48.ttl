@@ -26,9 +26,9 @@
         rdfs:label  "Transferred order"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/48>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Transferred%20order/event/48/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Transferred%20order/event/48/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007>
         a                        crm:E31_Document ;

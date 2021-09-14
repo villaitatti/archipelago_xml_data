@@ -21,9 +21,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/189/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/189> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/189> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/189>
         a       crm:E39_Actor .
@@ -66,23 +66,23 @@
         rdfs:label  "Francesco Lazzaroni together with other Venetians noblemen mediates between the Lateran Canons of Carità and the Camaldolese monks of Monte Rua for the island's sale"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/182/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/182> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/182> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/164/subtypology>
         a           crm:E55_Type ;
         rdfs:label  "Religious order's transfer"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/181> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/181> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Potential%20sellers/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Potential%20sellers/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/164>
         a                          crm:E5_Event ;
@@ -94,9 +94,9 @@
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/183/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/189/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/178/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/181/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/102/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/184/event/164> , <https://archipelago.itatti.harvard.edu/resource/actor/182/event/164> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/184> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Potential%20buyers/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/184> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Potential%20buyers/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/164/name>
         a                crm:E41_Appellation ;
@@ -104,9 +104,9 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/183/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/183> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/183> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
 
 geonames:3168468  a  crm:E53_Place .
 
@@ -115,9 +115,9 @@ geonames:3168468  a  crm:E53_Place .
         rdfs:label  "Potential buyers"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/178/event/164>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/178> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/178> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mediator/event/164/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184>
         a       crm:E39_Actor .

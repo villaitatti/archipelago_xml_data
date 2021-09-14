@@ -5,7 +5,7 @@ import ast
 import uuid
 import urllib
 
-typology = 'builtwork'
+typology = 'events'
 
 key_usr = 'usr'
 key_psw = 'psw'

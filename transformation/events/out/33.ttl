@@ -50,9 +50,9 @@
 geonames:7910746  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/84/event/33>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/84> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect%20in%20charged%20of%20the%20inventory/event/33/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/84> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect%20in%20charged%20of%20the%20inventory/event/33/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/33/typology>
         a           crm:E55_Type ;

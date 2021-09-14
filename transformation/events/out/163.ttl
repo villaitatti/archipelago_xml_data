@@ -15,9 +15,9 @@
         rdfs:label  "163" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/187/event/163>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/187> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Notary/event/163/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/187> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Notary/event/163/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/163/subtypology>
         a           crm:E55_Type ;
@@ -36,9 +36,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/184/event/163>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/184> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20owners/event/163/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/184> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20owners/event/163/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/163/typology>
         a           crm:E55_Type ;
@@ -56,9 +56,9 @@
         crm:P82a_begin_of_the_begin  "1645-10-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/181/event/163>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/181> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Nominal%20buyer/event/163/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/181> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Nominal%20buyer/event/163/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Notary/event/163/role>
         a           crm:E55_Type ;

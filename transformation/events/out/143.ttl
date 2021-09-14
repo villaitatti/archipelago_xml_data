@@ -26,9 +26,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/event/143>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/160> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/143/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/160> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/143/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0044/identifier>
         a       crm:E42_Identifier .
@@ -54,9 +54,9 @@
         rdfs:label  "Social"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/161/event/143>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/161> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/143/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/161> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/143/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;

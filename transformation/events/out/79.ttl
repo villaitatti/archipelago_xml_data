@@ -52,9 +52,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/99/event/79>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/99> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guardian%20of%20the%20monastery/event/79/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/99> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guardian%20of%20the%20monastery/event/79/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/79/name>
         a                crm:E41_Appellation ;
@@ -67,9 +67,9 @@ geonames:7910746  a  crm:E53_Place .
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/94/event/79>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/94> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mandating%20office/event/79/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/94> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Mandating%20office/event/79/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/79/identifier>
         a           crm:E42_Identifier ;

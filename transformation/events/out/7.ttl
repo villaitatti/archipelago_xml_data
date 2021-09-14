@@ -34,9 +34,9 @@
         crm:P82a_begin_of_the_begin  "1563-06-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/7>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/7/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/7/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42>
         a       crm:E39_Actor .
@@ -58,9 +58,9 @@ geonames:3230839  a  crm:E53_Place .
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/43/event/7>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/43> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/7/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/43> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/7/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/7/name>
         a                crm:E41_Appellation ;

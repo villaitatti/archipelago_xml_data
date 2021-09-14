@@ -26,9 +26,9 @@
         rdfs:label  "26" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/24/event/26>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/26/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/24> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/26/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/26/date>
         a                            crm:E52_Time-Span ;
@@ -39,9 +39,9 @@
         rdfs:label  "Commission"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/21/event/26>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Artisted%20appointed/event/26/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/21> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Artisted%20appointed/event/26/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/26/role>
         a           crm:E55_Type ;

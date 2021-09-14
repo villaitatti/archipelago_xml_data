@@ -18,9 +18,9 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/73/event/73>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/73> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guardian%20of%20the%20monastery%20who%20reported%20the%20damages/event/73/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/73> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guardian%20of%20the%20monastery%20who%20reported%20the%20damages/event/73/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/73/synopsis>
         a           crm:E73_Information_Object ;

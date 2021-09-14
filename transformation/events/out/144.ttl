@@ -41,17 +41,17 @@
         rdfs:label  "The Cardinal asks to spend the entire day in the island."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160/event/144>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/160> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/144/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/160> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/144/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/160>
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/163/event/144>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/163> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/144/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/163> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/144/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/144>
         a                          crm:E5_Event ;

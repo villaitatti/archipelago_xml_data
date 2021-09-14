@@ -65,9 +65,9 @@ geonames:3168468  a  crm:E53_Place .
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/102/event/126> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/126>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/126/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/126/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/126/synopsis>
         a           crm:E73_Information_Object ;

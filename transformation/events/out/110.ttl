@@ -51,18 +51,18 @@
         crm:P2_has_type  "preferred_name" .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/134/event/110>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/134> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Bishop%20of%20Castello/event/110/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/134> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Bishop%20of%20Castello/event/110/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Bishop%20of%20Castello/event/110/role>
         a           crm:E55_Type ;
         rdfs:label  "Bishop of Castello"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/74/event/110>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/74> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20administrator/event/110/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/74> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Island%27s%20administrator/event/110/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/110>
         a                          crm:E5_Event ;

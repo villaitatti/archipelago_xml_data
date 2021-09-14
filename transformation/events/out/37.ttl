@@ -55,18 +55,18 @@ geonames:3230839  a  crm:E53_Place .
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/37>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/37/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/37/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/37/source/57/event>
         a           crm:E41_Appellation ;
         rdfs:label  "Design of a second private shelter for boats"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/38/event/37>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/38> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/37/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/38> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/37/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/37/role>
         a           crm:E55_Type ;

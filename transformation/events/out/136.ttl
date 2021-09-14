@@ -15,9 +15,9 @@
         rdfs:label  "Architect"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/154/event/136>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/154> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/136/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/154> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Architect/event/136/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/136/name>
         a                crm:E41_Appellation ;
@@ -61,9 +61,9 @@
         a       crm:E39_Actor .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/153/event/136>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/153> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Engineer/event/136/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/153> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Engineer/event/136/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0018>
         a                        crm:E31_Document ;

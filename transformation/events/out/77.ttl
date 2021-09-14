@@ -32,9 +32,9 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/145/event/77>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/145> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/77/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/145> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Decision%20maker/event/77/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/source/157>
         a                        crm:E31_Document ;
@@ -52,9 +52,9 @@
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/102/event/77> , <https://archipelago.itatti.harvard.edu/resource/actor/145/event/77> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/77>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20owners/event/77/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/New%20owners/event/77/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0022/identifier>
         a       crm:E42_Identifier .

@@ -15,9 +15,9 @@
         rdfs:label  "The work for the new refectory located in the eastern side of the island will last until the 1738."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/11>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/11/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/11/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/11/role>
         a           crm:E55_Type ;

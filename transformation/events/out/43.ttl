@@ -31,9 +31,9 @@
         rdfs:label  "Donation"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/45/event/43>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/45> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor/event/43/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/45> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Donor/event/43/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/43/role>
         a           crm:E55_Type ;
@@ -57,9 +57,9 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0007/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/event/43>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/43/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/43/role> .
 
 geonames:3230839  a  crm:E53_Place .
 

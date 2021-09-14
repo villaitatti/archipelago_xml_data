@@ -37,14 +37,14 @@
         rdfs:label  "Doge"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/150/event/128>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/150> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/128/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/150> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/128/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/102/event/128>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Host/event/128/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/102> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Host/event/128/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/128>
         a                          crm:E5_Event ;
@@ -86,9 +86,9 @@
 geonames:3168468  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/149/event/128>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/149> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Holy%20Roman%20Emperor%20visiting%20Venice/event/128/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/149> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Holy%20Roman%20Emperor%20visiting%20Venice/event/128/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/150>
         a       crm:E39_Actor .

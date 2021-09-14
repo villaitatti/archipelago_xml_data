@@ -51,9 +51,9 @@
         crmpc:P01_has_domain       <https://archipelago.itatti.harvard.edu/resource/actor/167/event/147> , <https://archipelago.itatti.harvard.edu/resource/actor/168/event/147> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/167/event/147>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/167> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/147/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/167> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/147/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/147/date>
         a                            crm:E52_Time-Span ;
@@ -77,6 +77,6 @@
 geonames:3168468  a  crm:E53_Place .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/168/event/147>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/168> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/147/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/168> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Guest/event/147/role> .

@@ -44,9 +44,9 @@
         crm:P1_is_identified_by  <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0045/identifier> .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/174/event/152>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/174> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/152/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/174> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Doge/event/152/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/bibliographic_item/Bibl0045/identifier>
         a       crm:E42_Identifier .

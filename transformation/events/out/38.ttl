@@ -27,18 +27,18 @@
         a       crm:E42_Identifier .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/37/event/38>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/37> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Designer/event/38/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/37> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Designer/event/38/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/38/synopsis>
         a           crm:E73_Information_Object ;
         rdfs:label  "The loggia facing the garden of the friars is reconstructed following the design provided by friar Alessandro Malerba."@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/42/event/38>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/38/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/42> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Patrons/event/38/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/38/source/71/event>
         a           crm:E41_Appellation ;

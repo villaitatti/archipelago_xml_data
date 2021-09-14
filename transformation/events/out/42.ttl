@@ -30,9 +30,9 @@
         rdfs:label  "Economic"@en .
 
 <https://archipelago.itatti.harvard.edu/resource/actor/18/event/42>
-        a                            crmpc:PC14_carried_out_by ;
-        crmpc:P02_has_range          <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
-        crmpc:PC14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/42/role> .
+        a                           crmpc:PC14_carried_out_by ;
+        crmpc:P02_has_range         <https://archipelago.itatti.harvard.edu/resource/actor/18> ;
+        crmpc:P14.1_in_the_role_of  <https://archipelago.itatti.harvard.edu/resource/actor/Beneficiary/event/42/role> .
 
 <https://archipelago.itatti.harvard.edu/resource/event/42>
         a                          crm:E5_Event ;
