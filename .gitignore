@@ -4,3 +4,6 @@
 knowledge_patterns
 .config
 .env
+
+out/
+data/
