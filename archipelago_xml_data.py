@@ -7,11 +7,12 @@ import upload.script as upload
 @click.option('-e', '--extraction', 'exec_extraction', is_flag=True, help="Execute the extraction")
 @click.option('-p', '--preprocessing', 'exec_preprocessing', is_flag=True, help="Execute the pre-processing")
 @click.option('-t', '--transformation', 'exec_transformation', is_flag=True, help="Execute the transformation")
-@click.option('-u', '--upload', 'exec_upload', is_flag=True, help="Execute the upload")
+@click.option('-u', '--upload', 'exec_upload', is_flag=True, help="Execute the upload", default=False)
+@click.option('-d', '--delete', 'exec_delete', is_flag=True, help="Execute the delete", default=False)
 @click.option('-a', required=True, multiple=True, help="Types to iterate")
 @click.option('-l', '--limit', help="Number of files to execute", default=None)
 
-def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, exec_upload, a, limit):
+def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, exec_upload, exec_delete, a, limit):
 
   if limit:
     print(f'A limit of {limit} as been passed.')
@@ -37,10 +38,10 @@ def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, e
       transformation.execute(file, limit)
       print('Done transformation.\n')
 
-    if(exec_upload):
-      print('Executing upload...')
-      upload.execute(file, limit)
-      print('Done upload.\n')
+    if exec_upload or exec_delete:
+      print('Calling RS graph api...')
+      upload.execute(file, limit, exec_delete, exec_upload)
+      print('Done.\n')
 
 if __name__ == '__main__':
     execute_pipeline()

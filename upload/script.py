@@ -6,7 +6,7 @@ import uuid
 import urllib
 
 
-def execute(typology, limit):
+def execute(typology, limit, d=None, u=None):
 
   key_usr = 'usr'
   key_psw = 'psw'
@@ -23,17 +23,20 @@ def execute(typology, limit):
       if limit and cnt == int(limit):
         break
 
-      graph_uri = urllib.parse.quote(f"http://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
+      graph_uri = urllib.parse.quote(f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
       request_url = f'https://archipelago.itatti.harvard.edu/rdf-graph-store?graph={graph_uri}'
 
       print(f'### {filename} ###')
+
       #DEL
-      command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
-      print(f'DEL\t\t{os.system(command)}')
+      if d:
+        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
+        print(f'DEL\t\t{os.system(command)}')
 
       #POST
-      command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'
-      print(f'POST\t\t{os.system(command)}')
+      if u:
+        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'
+        print(f'POST\t\t{os.system(command)}')
 
       print('\n')
       cnt+=1

@@ -141,7 +141,7 @@ def execute(limit):
 
   # Geonames dictionary
   geonames_dict = json.load(open(os.path.join(dir_path, os.path.pardir, os.path.pardir, 'utils', 'geonames', 'geonames.json'), 'r'))
-  people_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'people', 'people.json'), 'r'))
+  people_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'actor', 'people.json'), 'r'))
 
   bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
   bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
