@@ -75,7 +75,8 @@
                 <target_node>
                     <entity>
                         <type>crm:E22_Man-Made_Object</type>
-                        <instance_generator name="100-built_work">
+                        <type>arc:Builtwork</type>
+                        <instance_generator name="100-builtwork">
                             <arg name="bw_id" type="xpath">BW_ID/text()</arg>
                         </instance_generator>
                         <label_generator name="Literal">
@@ -98,7 +99,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E42_Identifier</type>
-                            <instance_generator name="110-built_work-identifier">
+                            <instance_generator name="110-builtwork-identifier">
                                 <arg name="bw_id" type="xpath">text()</arg>
                             </instance_generator>
                             <label_generator name="Literal">
@@ -120,7 +121,7 @@
                         <relationship>crm:P13i_was_destroyed_by</relationship>
                         <entity>
                             <type>crm:E6_Destruction</type>
-                            <instance_generator name="130-built_work-destruction">
+                            <instance_generator name="130-builtwork-destruction">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -164,7 +165,7 @@
                         <relationship>crm:P108i_was_produced_by</relationship>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-built_work-construction">
+                            <instance_generator name="120-builtwork-construction">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -179,7 +180,7 @@
                         </if>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="123-built_work-construction-date">
+                            <instance_generator name="123-builtwork-construction-date">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                             <additional>
@@ -219,7 +220,7 @@
                         </if>
                         <entity>
                             <type>crm:E41_Appellation</type>
-                            <instance_generator name="111-built_work-name">
+                            <instance_generator name="111-builtwork-name">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                             <additional>
@@ -281,7 +282,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E5_Event</type>
-                            <instance_generator name="140-built_work-function">
+                            <instance_generator name="140-builtwork-function">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="func_id" type="xpathPosition">.</arg>
                             </instance_generator>
@@ -307,7 +308,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E5_Event</type>
-                            <instance_generator name="150-built_work-use">
+                            <instance_generator name="150-builtwork-use">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="use_id" type="xpathPosition">.</arg>
                             </instance_generator>
@@ -365,7 +366,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E5_Event</type>
-                            <instance_generator name="160-built_work-typology">
+                            <instance_generator name="160-builtwork-typology">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="typology_id" type="xpathPosition">.</arg>
                             </instance_generator>
@@ -421,7 +422,7 @@
                         <relationship>crm:P39i_was_measured_by</relationship>
                         <entity>
                             <type>crm:E16_Measurement</type>
-                            <instance_generator name="170-built_work-measurement">
+                            <instance_generator name="170-builtwork-measurement">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                 <arg name="m_id" type="constant">height</arg>
                             </instance_generator>
@@ -437,7 +438,7 @@
                         </if>
                         <entity>
                             <type>crm:E54_Dimension</type>
-                            <instance_generator name="171-built_work-measurement-dimension">
+                            <instance_generator name="171-builtwork-measurement-dimension">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                 <arg name="m_id" type="constant">height</arg>
                             </instance_generator>
@@ -476,7 +477,7 @@
                                     <instance_info>
                                         <constant/>
                                     </instance_info>
-                                    <instance_generator name="172-built_work-measurement-unit">
+                                    <instance_generator name="172-builtwork-measurement-unit">
                                         <arg name="unit" type="constant">meter</arg>
                                     </instance_generator>
                                     <label_generator name="Constant">
@@ -503,7 +504,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E10_Transfer_of_Custody</type>
-                            <instance_generator name="1A0-built_work-transfer_custody">
+                            <instance_generator name="1A0-builtwork-transfer_custody">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="tf_id" type="xpathPosition">.</arg>
                             </instance_generator>
@@ -525,7 +526,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E8_Acquisition</type>
-                                <instance_generator name="190-built_work-acquisition">
+                                <instance_generator name="190-builtwork-acquisition">
                                     <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                     <arg name="acquisition_id" type="xpath">./@pos</arg>
                                 </instance_generator>
@@ -547,7 +548,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-built_work-construction">
+                            <instance_generator name="120-builtwork-construction">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -568,7 +569,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-built_work-construction">
+                            <instance_generator name="120-builtwork-construction">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -589,7 +590,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E16_Measurement</type>
-                            <instance_generator name="170-built_work-measurement">
+                            <instance_generator name="170-builtwork-measurement">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                 <arg name="m_id" type="constant">perimeter</arg>
                             </instance_generator>
@@ -597,7 +598,7 @@
                                 <relationship>crm:P40_observed_dimension</relationship>
                                 <entity>
                                     <type>crm:E54_Dimension</type>
-                                    <instance_generator name="171-built_work-measurement-dimension">
+                                    <instance_generator name="171-builtwork-measurement-dimension">
                                         <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                         <arg name="m_id" type="constant">perimeter</arg>
                                     </instance_generator>
@@ -656,7 +657,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E16_Measurement</type>
-                            <instance_generator name="170-built_work-measurement">
+                            <instance_generator name="170-builtwork-measurement">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                 <arg name="m_id" type="constant">area</arg>
                             </instance_generator>
@@ -664,7 +665,7 @@
                                 <relationship>crm:P40_observed_dimension</relationship>
                                 <entity>
                                     <type>crm:E54_Dimension</type>
-                                    <instance_generator name="171-built_work-measurement-dimension">
+                                    <instance_generator name="171-builtwork-measurement-dimension">
                                         <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                                         <arg name="m_id" type="constant">area</arg>
                                     </instance_generator>
@@ -716,7 +717,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E5_Event</type>
-                        <instance_generator name="150-built_work-use">
+                        <instance_generator name="150-builtwork-use">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             <arg name="use_id" type="xpathPosition">.</arg>
                         </instance_generator>
@@ -737,7 +738,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="153-built_work-use-date">
+                            <instance_generator name="153-builtwork-use-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="use_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -772,7 +773,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="153-built_work-use-date">
+                            <instance_generator name="153-builtwork-use-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="use_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -800,7 +801,7 @@
               <target_node>
                   <entity>
                       <type>crm:E5_Event</type>
-                      <instance_generator name="140-built_work-function">
+                      <instance_generator name="140-builtwork-function">
                         <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                         <arg name="func_id" type="xpathPosition">.</arg>
                       </instance_generator>
@@ -821,7 +822,7 @@
                   <target_node>
                       <entity>
                           <type>crm:E52_Time-Span</type>
-                          <instance_generator name="143-built_work-function-date">
+                          <instance_generator name="143-builtwork-function-date">
                               <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                               <arg name="func_id" type="xpath">../@pos</arg>
                           </instance_generator>
@@ -856,7 +857,7 @@
                   <target_node>
                       <entity>
                           <type>crm:E52_Time-Span</type>
-                          <instance_generator name="143-built_work-function-date">
+                          <instance_generator name="143-builtwork-function-date">
                               <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                               <arg name="func_id" type="xpath">../@pos</arg>
                           </instance_generator>
@@ -884,7 +885,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E5_Event</type>
-                        <instance_generator name="160-built_work-typology">
+                        <instance_generator name="160-builtwork-typology">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             <arg name="typology_id" type="xpathPosition">.</arg>
                         </instance_generator>
@@ -905,7 +906,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="163-built_work-typology-date">
+                            <instance_generator name="163-builtwork-typology-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="typology_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -940,7 +941,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="163-built_work-typology-date">
+                            <instance_generator name="163-builtwork-typology-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="typology_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -968,7 +969,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E10_Transfer_of_Custody</type>
-                        <instance_generator name="1A0-built_work-transfer_custody">
+                        <instance_generator name="1A0-builtwork-transfer_custody">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             <arg name="tf_id" type="xpathPosition">.</arg>
                         </instance_generator>
@@ -1010,7 +1011,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="1A3-built_work-transfer_custody-date">
+                            <instance_generator name="1A3-builtwork-transfer_custody-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="tf_id" type="xpathPosition">../@pos</arg>
                             </instance_generator>
@@ -1045,7 +1046,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="1A3-built_work-transfer_custody-date">
+                            <instance_generator name="1A3-builtwork-transfer_custody-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="tf_id" type="xpathPosition">../@pos</arg>
                             </instance_generator>
@@ -1073,7 +1074,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E8_Acquisition</type>
-                        <instance_generator name="190-built_work-acquisition">
+                        <instance_generator name="190-builtwork-acquisition">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             <arg name="acquisition_id" type="xpath">./@pos</arg>
                         </instance_generator>
@@ -1115,7 +1116,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="193-built_work-acquisition-date">
+                            <instance_generator name="193-builtwork-acquisition-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="acquisition_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -1150,7 +1151,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="193-built_work-acquisition-date">
+                            <instance_generator name="193-builtwork-acquisition-date">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="acquisition_id" type="xpath">../@pos</arg>
                             </instance_generator>
@@ -1178,7 +1179,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E12_Production</type>
-                        <instance_generator name="120-built_work-construction">
+                        <instance_generator name="120-builtwork-construction">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                         </instance_generator>
                     </entity>
@@ -1198,7 +1199,7 @@
                     <target_node>
                         <entity>
                             <type>crmpc:PC14_carried_out_by</type>
-                            <instance_generator name="125-built_work-role">
+                            <instance_generator name="125-builtwork-role">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="role_name" type="constant">patron</arg>
                                 <arg name="role_id" type="xpathPosition">../</arg>
@@ -1242,7 +1243,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E12_Production</type>
-                        <instance_generator name="120-built_work-construction">
+                        <instance_generator name="120-builtwork-construction">
                             <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                         </instance_generator>
                     </entity>
@@ -1262,7 +1263,7 @@
                     <target_node>
                         <entity>
                             <type>crmpc:PC14_carried_out_by</type>
-                            <instance_generator name="125-built_work-role">
+                            <instance_generator name="125-builtwork-role">
                                 <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
                                 <arg name="role_name" type="constant">architect</arg>
                                 <arg name="role_id" type="xpathPosition">../</arg>

@@ -70,6 +70,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E39_Actor</type>
+                        <type>arc:Actor</type>
                         <instance_generator name="300-actor">
                             <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
                         </instance_generator>
