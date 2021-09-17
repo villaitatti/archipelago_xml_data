@@ -1,46 +1,57 @@
+# java -jar x3ml-engine-1.9.0-exejar.jar -i data/166.xml -x archipelago.x3ml -policy ../../archipelago_generator_policy.xml -o output.ttl -f text/turtle
+
 import os
 import sys
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+
 def base_path(name):
     return os.path.join(dir_path, name)
 
-# python script.py [table names]
-# Table is a CLI param
-table_folder = base_path(sys.argv[-1])
 
-table_folder_in = os.path.join(table_folder, 'data')
-table_folder_out = os.path.join(table_folder, 'out')
+def execute(table_folder, limit):
 
-engine = base_path('x3ml-engine-1.9.0-exejar.jar')
-policy = base_path('archipelago_generator_policy.xml')
-ext = 'text/turtle'
+    table_folder_in = os.path.join(dir_path, table_folder, 'data')
+    table_folder_out = os.path.join(
+        dir_path, '..', 'upload', table_folder, 'out')
 
-mapping_x3ml = os.path.join(table_folder, 'mapping.x3ml')
+    engine = base_path('x3ml-engine-1.9.0-exejar.jar')
+    policy = base_path('archipelago_generator_policy.xml')
+    ext = 'text/turtle'
 
-for root, dirs, src_files in os.walk(table_folder_in):
+    mapping_x3ml = os.path.join(dir_path, table_folder, 'mapping.x3ml')
 
-    total = len(src_files)
-    cnt = 1
+    for root, dirs, src_files in os.walk(table_folder_in):
 
-    src_files = sorted(src_files)
+        total = len(src_files)
+        cnt = 1
+        print(f'Found {total} file to transform in {table_folder}')
 
-    for src_file in src_files:
+        if limit:
+          limit = int(limit)
+          total = limit
 
-        src_file_full = os.path.join(table_folder_in, src_file)
+        src_files = sorted(src_files)
 
-        if os.path.isfile(src_file_full): 
+        for src_file in src_files:
 
-            out_file = src_file.replace('xml', 'ttl')
+            if limit and cnt == limit+1:
+                break
 
-            if not os.path.exists(table_folder_out):
-                os.mkdir(table_folder_out)
+            src_file_full = os.path.join(table_folder_in, src_file)
 
-            out_file_full = os.path.join(table_folder_out, out_file)
+            if os.path.isfile(src_file_full):
 
-            print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
-            os.system(f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}')
+                out_file = src_file.replace('xml', 'ttl')
 
-            cnt += 1
-'java -jar x3ml-engine-1.9.0-exejar.jar -i data/166.xml -x archipelago.x3ml -policy ../../archipelago_generator_policy.xml -o output.ttl -f text/turtle'
+                if not os.path.exists(table_folder_out):
+                    os.mkdir(table_folder_out)
+
+                out_file_full = os.path.join(table_folder_out, out_file)
+
+                print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
+                os.system(
+                    f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}')
+
+                cnt += 1
