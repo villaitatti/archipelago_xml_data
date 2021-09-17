@@ -1,18 +1,20 @@
-## Archipelago Generator Policy
+Activate conda env:
+```
+conda env create -f archipelago_env.yml
+```
 
-### Main categories 
 
-* 00x --> Type
-* 01x --> Built Work
-* 02x --> Event
-* 03x --> Person
-* 04x --> Source
-* 05x --> Bibliographic Item
-* 06x --> Place
+Execute the python script with these options. E.g. `python archipelago_xml_data.py -a event -p -u`
+```
+Usage: archipelago_xml_data.py [OPTIONS]
 
-### Sub Categories
-
-* xx1 --> start timespan 
-* xx2 --> end timespan
-* xx3 --> date
-
+Options:
+  -e, --extraction      Execute the extraction
+  -p, --preprocessing   Execute the pre-processing
+  -t, --transformation  Execute the transformation
+  -u, --upload          Execute the upload
+  -d, --delete          Execute the delete
+  -a TEXT               Types to iterate  [required]
+  -l, --limit TEXT      Number of files to execute
+  --help                Show this message and exit.
+```
