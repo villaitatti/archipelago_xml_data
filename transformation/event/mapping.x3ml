@@ -73,6 +73,7 @@
                     </if>
                     <entity>
                         <type>crm:E5_Event</type>
+                        <type>arc:Event</type>
                         <instance_generator name="200-event">
                             <arg name="event_id" type="xpath">./ID_EVENT/text()</arg>
                         </instance_generator>
