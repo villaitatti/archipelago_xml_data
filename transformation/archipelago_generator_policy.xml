@@ -13,96 +13,96 @@
 
 	<!-- Built Work-->
 
-	<generator name="100-built_work" prefix="arc">
-		<pattern>built_work/{bw_id}</pattern>
+	<generator name="100-builtwork" prefix="arc">
+		<pattern>builtwork/{bw_id}</pattern>
 	</generator>
 
-	<generator name="110-built_work-identifier" prefix="arc">
-		<pattern>built_work/{bw_id}/identifier</pattern>
+	<generator name="110-builtwork-identifier" prefix="arc">
+		<pattern>builtwork/{bw_id}/identifier</pattern>
 	</generator>
 
-	<generator name="111-built_work-name" prefix="arc">
-		<pattern>built_work/{bw_id}/name</pattern>
+	<generator name="111-builtwork-name" prefix="arc">
+		<pattern>builtwork/{bw_id}/name</pattern>
 	</generator>
 
-	<generator name="120-built_work-construction" prefix="arc">
-		<pattern>built_work/{bw_id}/construction</pattern>
+	<generator name="120-builtwork-construction" prefix="arc">
+		<pattern>builtwork/{bw_id}/construction</pattern>
 	</generator>
 
-	<generator name="123-built_work-construction-date" prefix="arc">
-		<pattern>built_work/{bw_id}/construction/date</pattern>
+	<generator name="123-builtwork-construction-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/construction/date</pattern>
 	</generator>
 
-	<generator name="125-built_work-role" prefix="arc">
-		<pattern>built_work/{bw_id}/role_{role_name}/{role_id}</pattern>
+	<generator name="125-builtwork-role" prefix="arc">
+		<pattern>builtwork/{bw_id}/role_{role_name}/{role_id}</pattern>
 	</generator>
 
-	<generator name="130-built_work-destruction" prefix="arc">
-		<pattern>built_work/{bw_id}/destruction</pattern>
+	<generator name="130-builtwork-destruction" prefix="arc">
+		<pattern>builtwork/{bw_id}/destruction</pattern>
 	</generator>
 
 	<generator name="133-buil_work-destruction-date" prefix="arc">
-		<pattern>built_work/{bw_id}/destruction/date</pattern>
+		<pattern>builtwork/{bw_id}/destruction/date</pattern>
 	</generator>
 
-	<generator name="140-built_work-function" prefix="arc">
-		<pattern>built_work/{bw_id}/function/{func_id}</pattern>
+	<generator name="140-builtwork-function" prefix="arc">
+		<pattern>builtwork/{bw_id}/function/{func_id}</pattern>
 	</generator>
 
-	<generator name="143-built_work-function-date" prefix="arc">
-		<pattern>built_work/{bw_id}/function/{func_id}/date</pattern>
+	<generator name="143-builtwork-function-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/function/{func_id}/date</pattern>
 	</generator>
 
-	<generator name="150-built_work-use" prefix="arc">
-		<pattern>built_work/{bw_id}/use/{use_id}</pattern>
+	<generator name="150-builtwork-use" prefix="arc">
+		<pattern>builtwork/{bw_id}/use/{use_id}</pattern>
 	</generator>
 
-	<generator name="154-built_work-use-name" prefix="arc">
-		<pattern>built_work/{bw_id}/use/{use_id}/name</pattern>
+	<generator name="154-builtwork-use-name" prefix="arc">
+		<pattern>builtwork/{bw_id}/use/{use_id}/name</pattern>
 	</generator>
 
-	<generator name="153-built_work-use-date" prefix="arc">
-		<pattern>built_work/{bw_id}/use/{use_id}/date</pattern>
+	<generator name="153-builtwork-use-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/use/{use_id}/date</pattern>
 	</generator>
 
-	<generator name="160-built_work-typology" prefix="arc">
-		<pattern>built_work/{bw_id}/typology/{typology_id}</pattern>
+	<generator name="160-builtwork-typology" prefix="arc">
+		<pattern>builtwork/{bw_id}/typology/{typology_id}</pattern>
 	</generator>
 
-	<generator name="163-built_work-typology-date" prefix="arc">
-		<pattern>built_work/{bw_id}/typology/{typology_id}/date</pattern>
+	<generator name="163-builtwork-typology-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/typology/{typology_id}/date</pattern>
 	</generator>
 
-	<generator name="164-built_work-typology-name" prefix="arc">
-		<pattern>built_work/{bw_id}/typology/{typology_id}/name</pattern>
+	<generator name="164-builtwork-typology-name" prefix="arc">
+		<pattern>builtwork/{bw_id}/typology/{typology_id}/name</pattern>
 	</generator>
 
-	<generator name="170-built_work-measurement" prefix="arc">
-		<pattern>built_work/{bw_id}/measurement/{m_id}</pattern>
+	<generator name="170-builtwork-measurement" prefix="arc">
+		<pattern>builtwork/{bw_id}/measurement/{m_id}</pattern>
 	</generator>
 
-	<generator name="171-built_work-measurement-dimension" prefix="arc">
-		<pattern>built_work/{bw_id}/measurement/{m_id}/dimension</pattern>
+	<generator name="171-builtwork-measurement-dimension" prefix="arc">
+		<pattern>builtwork/{bw_id}/measurement/{m_id}/dimension</pattern>
 	</generator>
 
-	<generator name="172-built_work-measurement-unit" prefix="arc">
+	<generator name="172-builtwork-measurement-unit" prefix="arc">
 		<pattern>/measurement_unit/{unit}</pattern>
 	</generator>
 
-	<generator name="190-built_work-acquisition" prefix="arc">
-		<pattern>built_work/{bw_id}/acquisition/{acquisition_id}</pattern>
+	<generator name="190-builtwork-acquisition" prefix="arc">
+		<pattern>builtwork/{bw_id}/acquisition/{acquisition_id}</pattern>
 	</generator>
 
-	<generator name="193-built_work-acquisition-date" prefix="arc">
-		<pattern>built_work/{bw_id}/acquisition/{acquisition_id}/date</pattern>
+	<generator name="193-builtwork-acquisition-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/acquisition/{acquisition_id}/date</pattern>
 	</generator>
 
-	<generator name="1A0-built_work-transfer_custody" prefix="arc">
-		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}</pattern>
+	<generator name="1A0-builtwork-transfer_custody" prefix="arc">
+		<pattern>builtwork/{bw_id}/transfer_custody/{tf_id}</pattern>
 	</generator>
 
-	<generator name="1A3-built_work-transfer_custody-date" prefix="arc">
-		<pattern>built_work/{bw_id}/transfer_custody/{tf_id}/date</pattern>
+	<generator name="1A3-builtwork-transfer_custody-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/transfer_custody/{tf_id}/date</pattern>
 	</generator>
 
 
@@ -388,7 +388,7 @@
 
   <!-- Place BW -->
 	<generator name="610-place" prefix="arc">
-		<pattern>built_work/{bw_id}</pattern>
+		<pattern>builtwork/{bw_id}</pattern>
 	</generator>
 
 	<!-- Time appellation -->
