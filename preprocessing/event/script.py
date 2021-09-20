@@ -127,7 +127,7 @@ def execute(limit):
         year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
         # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
         date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
-        date_earliest.text = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
+        date_earliest.text = f'{year_earliest}-{month_earliest}-{day_earliest}'
 
         # Island
         island_found = row.find(f'ns:{keys["island"]}', ns).text
