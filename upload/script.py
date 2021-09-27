@@ -6,7 +6,7 @@ import uuid
 import urllib
 
 
-def execute(typology, limit, d=None, u=None):
+def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.harvard.edu'):
 
   key_usr = 'usr'
   key_psw = 'psw'
@@ -24,7 +24,7 @@ def execute(typology, limit, d=None, u=None):
         break
 
       graph_uri = urllib.parse.quote(f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
-      request_url = f'https://archipelago.itatti.harvard.edu/rdf-graph-store?graph={graph_uri}'
+      request_url = f'{url}/rdf-graph-store?graph={graph_uri}'
 
       print(f'### {filename} ###')
 

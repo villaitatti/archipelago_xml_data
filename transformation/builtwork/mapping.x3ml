@@ -48,6 +48,12 @@
                     <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
                 </namespaces>
             </target_info>
+            <target_info>
+              <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+              <namespaces>
+                <namespace prefix="arconto" uri="https://archipelago.itatti.harvard.edu/arconto#"/>
+              </namespaces>
+            </target_info>
             <target_collection/>
         </target>
         <mapping_info>
@@ -75,7 +81,7 @@
                 <target_node>
                     <entity>
                         <type>crm:E22_Man-Made_Object</type>
-                        <type>arc:Builtwork</type>
+                        <type>arconto:Builtwork</type>
                         <instance_generator name="100-builtwork">
                             <arg name="bw_id" type="xpath">BW_ID/text()</arg>
                         </instance_generator>
