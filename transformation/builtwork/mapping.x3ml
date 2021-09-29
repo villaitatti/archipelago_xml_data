@@ -43,7 +43,7 @@
                 </namespaces>
             </target_info>
             <target_info>
-                <target_schema schema_file="https://www.w3.org/2002/07/owl.rdf" type="rdfs" version="1.1">CRMpc</target_schema>
+                <target_schema schema_file="https://www.w3.org/2002/07/owl.rdf" type="rdfs" version="1.1">owl</target_schema>
                 <namespaces>
                     <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
                 </namespaces>
@@ -171,7 +171,7 @@
                         <relationship>crm:P108i_was_produced_by</relationship>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-builtwork-construction">
+                            <instance_generator name="120-builtwork-production">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -186,7 +186,7 @@
                         </if>
                         <entity>
                             <type>crm:E52_Time-Span</type>
-                            <instance_generator name="123-builtwork-construction-date">
+                            <instance_generator name="123-builtwork-production-date">
                                 <arg name="bw_id" type="xpath">../BW_ID/text()</arg>
                             </instance_generator>
                             <additional>
@@ -277,17 +277,17 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>Functions/Function</relation>
+                        <relation>Functions/Function[1]</relation>
                     </source_relation>
                     <target_relation>
-                        <relationship>crm:P12i_was_present_at</relationship>
+                        <relationship>crm:P48_has_preferred_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>Functions/Function</source_node>
+                    <source_node>Functions/Function[1]</source_node>
                     <target_node>
                         <entity>
-                            <type>crm:E5_Event</type>
+                            <type>crm:E41_Appellation</type>
                             <instance_generator name="140-builtwork-function">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                                 <arg name="func_id" type="xpathPosition">.</arg>
@@ -296,10 +296,126 @@
                                 <arg name="text" type="xpath">Function/text()</arg>
                                 <arg name="language" type="constant">en</arg>
                             </label_generator>
+                            <additional>
+                              <relationship>crm:P2_has_type</relationship>
+                              <entity>
+                                  <type>crm:E55_Type</type>
+                                  <type>arconto:Type</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="000-type">
+                                      <arg name="type_id" type="constant">function</arg>
+                                  </instance_generator>
+                                  <label_generator name="Constant">
+                                      <arg name="text" type="constant">Function</arg>
+                                      <arg name="language" type="constant">en</arg>
+                                  </label_generator>
+                              </entity>
+                          </additional>
                         </entity>
                     </target_node>
                 </range>
             </link>
+            <link>
+              <path>
+                <source_relation>
+                  <relation>Functions/Function[not(position()=1)]</relation>
+                </source_relation>
+                <target_relation>
+                  <relationship>crm:P124i_was_transformed_by</relationship>
+                </target_relation>
+              </path>
+
+              <range>
+                  <source_node>Functions/Function[not(position()=1)]</source_node>
+                  <target_node>
+                    <entity>
+                      <type>crm:E81_Transformation</type>
+                      <instance_generator name="1B0-builtwork-transformation">
+                        <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                        <arg name="tf_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+                      </instance_generator>
+
+                      <!-- Link to new Function -->
+                      <additional>
+                        <relationship>crm:P123_resulted_in</relationship>
+                        <entity>
+                            <type>crm:E41_Appellation</type>
+                            <instance_info>
+                                <constant/>
+                            </instance_info>
+                            <instance_generator name="140-builtwork-function">
+                              <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                              <arg name="func_id" type="xpathPosition">.</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                              <arg name="text" type="xpath">Function/text()</arg>
+                              <arg name="language" type="constant">it</arg>
+                            </label_generator>
+                            <additional>
+                              <relationship>crm:P2_has_type</relationship>
+                              <entity>
+                                  <type>crm:E55_Type</type>
+                                  <type>arconto:Type</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="000-type">
+                                      <arg name="type_id" type="constant">function</arg>
+                                  </instance_generator>
+                                  <label_generator name="Constant">
+                                      <arg name="text" type="constant">Function</arg>
+                                      <arg name="language" type="constant">en</arg>
+                                  </label_generator>
+                              </entity>
+                          </additional>
+                        </entity>
+                      </additional>
+
+                      <!-- Link to old function -->
+                      <additional>
+                        <relationship>crm:P124_transformed</relationship>
+                        <entity>
+                          <type>crm:E41_Appellation</type>
+                          <instance_generator name="140-builtwork-function">
+                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                            <arg name="func_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
+
+                      <!-- Date -->
+                      <additional>
+                        <relationship>crm:P4_has_time-span</relationship>
+                        <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="1B3-builtwork-transformation-date">
+                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                            <arg name="tf_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+                          </instance_generator>
+
+                          <additional>
+                            <relationship>crm:P82a_begin_of_the_begin</relationship>
+                            <entity>
+                              <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                              <instance_info>
+                                  <constant/>
+                              </instance_info>
+                              <instance_generator name="GermanDateTime">
+                                  <arg name="bound" type="constant">Lower</arg>
+                                  <arg name="text" type="xpath">Start_Function/text()</arg>
+                              </instance_generator>
+                            </entity>
+                        </additional>
+
+                        </entity>
+                      </additional>
+
+                    </entity>
+                  </target_node>
+              </range>
+          </link>
             <link>
                 <path>
                     <source_relation>
@@ -554,7 +670,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-builtwork-construction">
+                            <instance_generator name="120-builtwork-production">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -575,7 +691,7 @@
                     <target_node>
                         <entity>
                             <type>crm:E12_Production</type>
-                            <instance_generator name="120-builtwork-construction">
+                            <instance_generator name="120-builtwork-production">
                                 <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
                             </instance_generator>
                         </entity>
@@ -801,15 +917,16 @@
                 </range>
             </link>
         </mapping>
-        <mapping>
+
+      <mapping>
           <domain>
-              <source_node>/row/Functions/Function</source_node>
+              <source_node>//Typology</source_node>
               <target_node>
                   <entity>
                       <type>crm:E5_Event</type>
-                      <instance_generator name="140-builtwork-function">
-                        <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                        <arg name="func_id" type="xpathPosition">.</arg>
+                      <instance_generator name="160-builtwork-typology">
+                          <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                          <arg name="typology_id" type="xpathPosition">.</arg>
                       </instance_generator>
                   </entity>
               </target_node>
@@ -817,20 +934,20 @@
           <link>
               <path>
                   <source_relation>
-                      <relation>Start_Function</relation>
+                      <relation>Start_Typology</relation>
                   </source_relation>
                   <target_relation>
                       <relationship>crm:P4_has_time-span</relationship>
                   </target_relation>
               </path>
               <range>
-                  <source_node>Start_Function</source_node>
+                  <source_node>Start_Typology</source_node>
                   <target_node>
                       <entity>
                           <type>crm:E52_Time-Span</type>
-                          <instance_generator name="143-builtwork-function-date">
+                          <instance_generator name="163-builtwork-typology-date">
                               <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                              <arg name="func_id" type="xpath">../@pos</arg>
+                              <arg name="typology_id" type="xpath">../@pos</arg>
                           </instance_generator>
                           <additional>
                               <relationship>crm:P82a_begin_of_the_begin</relationship>
@@ -852,20 +969,20 @@
           <link>
               <path>
                   <source_relation>
-                      <relation>End_Function</relation>
+                      <relation>End_Typology</relation>
                   </source_relation>
                   <target_relation>
                       <relationship>crm:P4_has_time-span</relationship>
                   </target_relation>
               </path>
               <range>
-                  <source_node>End_Function</source_node>
+                  <source_node>End_Typology</source_node>
                   <target_node>
                       <entity>
                           <type>crm:E52_Time-Span</type>
-                          <instance_generator name="143-builtwork-function-date">
+                          <instance_generator name="163-builtwork-typology-date">
                               <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                              <arg name="func_id" type="xpath">../@pos</arg>
+                              <arg name="typology_id" type="xpath">../@pos</arg>
                           </instance_generator>
                           <additional>
                               <relationship>crm:P82b_end_of_the_end</relationship>
@@ -885,428 +1002,366 @@
               </range>
           </link>
       </mapping>
-        <mapping>
-            <domain>
-                <source_node>//Typology</source_node>
-                <target_node>
-                    <entity>
-                        <type>crm:E5_Event</type>
-                        <instance_generator name="160-builtwork-typology">
-                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                            <arg name="typology_id" type="xpathPosition">.</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Start_Typology</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Start_Typology</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="163-builtwork-typology-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="typology_id" type="xpath">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:P82a_begin_of_the_begin</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Lower</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>End_Typology</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>End_Typology</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="163-builtwork-typology-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="typology_id" type="xpath">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:P82b_end_of_the_end</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Upper</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>/row/Tenants/Tenant</source_node>
-                <target_node>
-                    <entity>
-                        <type>crm:E10_Transfer_of_Custody</type>
-                        <instance_generator name="1A0-builtwork-transfer_custody">
-                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                            <arg name="tf_id" type="xpathPosition">.</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_PERSON</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P29_custody_received_by</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_PERSON</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E39_Actor</type>
-                            <instance_generator name="300-actor">
-                                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Start_Tenant</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Start_Tenant</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="1A3-builtwork-transfer_custody-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="tf_id" type="xpathPosition">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:P82a_begin_of_the_begin</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Lower</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>End_Tenant</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>End_Tenant</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="1A3-builtwork-transfer_custody-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="tf_id" type="xpathPosition">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:p82b_end_of_the_end</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Upper</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>//Owner</source_node>
-                <target_node>
-                    <entity>
-                        <type>crm:E8_Acquisition</type>
-                        <instance_generator name="190-builtwork-acquisition">
-                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                            <arg name="acquisition_id" type="xpath">./@pos</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_PERSON</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P22_transferred_title_to</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_PERSON</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E39_Actor</type>
-                            <instance_generator name="300-actor">
-                                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>Start_Owner</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>Start_Owner</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="193-builtwork-acquisition-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="acquisition_id" type="xpath">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:P82a_begin_of_the_begin</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Lower</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity> 
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>End_Owner</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crm:P4_has_time-span</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>End_Owner</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crm:E52_Time-Span</type>
-                            <instance_generator name="193-builtwork-acquisition-date">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="acquisition_id" type="xpath">../@pos</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crm:P82b_end_of_the_end</relationship>
-                                <entity>
-                                    <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="GermanDateTime">
-                                        <arg name="bound" type="constant">Upper</arg>
-                                        <arg name="text" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity> 
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>/row/Patrons/Patron</source_node>
-                <target_node>
-                    <entity>
-                        <type>crm:E12_Production</type>
-                        <instance_generator name="120-builtwork-construction">
-                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_PERSON</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crmpc:P01_has_domain</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_PERSON</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crmpc:PC14_carried_out_by</type>
-                            <instance_generator name="125-builtwork-role">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="role_name" type="constant">patron</arg>
-                                <arg name="role_id" type="xpathPosition">../</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crmpc:P02_has_range</relationship>
-                                <entity>
-                                    <type>crm:E39_Actor</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="300-actor">
-                                        <arg name="actor_id" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>crmpc:P14.1_in_the_role_of</relationship>
-                                <entity>
-                                    <type>crm:E55_Type</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
+      <mapping>
+          <domain>
+              <source_node>/row/Tenants/Tenant</source_node>
+              <target_node>
+                  <entity>
+                      <type>crm:E10_Transfer_of_Custody</type>
+                      <instance_generator name="1A0-builtwork-transfer_custody">
+                          <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                          <arg name="tf_id" type="xpathPosition">.</arg>
+                      </instance_generator>
+                  </entity>
+              </target_node>
+          </domain>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>ID_PERSON</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P29_custody_received_by</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>ID_PERSON</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E39_Actor</type>
+                          <instance_generator name="300-actor">
+                              <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                          </instance_generator>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>Start_Tenant</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>Start_Tenant</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="1A3-builtwork-transfer_custody-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="tf_id" type="xpathPosition">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:P82a_begin_of_the_begin</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Lower</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>End_Tenant</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>End_Tenant</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="1A3-builtwork-transfer_custody-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="tf_id" type="xpathPosition">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:p82b_end_of_the_end</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Upper</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+      </mapping>
+      <mapping>
+          <domain>
+              <source_node>//Owner</source_node>
+              <target_node>
+                  <entity>
+                      <type>crm:E8_Acquisition</type>
+                      <instance_generator name="190-builtwork-acquisition">
+                          <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                          <arg name="acquisition_id" type="xpath">./@pos</arg>
+                      </instance_generator>
+                  </entity>
+              </target_node>
+          </domain>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>ID_PERSON</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P22_transferred_title_to</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>ID_PERSON</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E39_Actor</type>
+                          <instance_generator name="300-actor">
+                              <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                          </instance_generator>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>Start_Owner</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>Start_Owner</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="193-builtwork-acquisition-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="acquisition_id" type="xpath">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:P82a_begin_of_the_begin</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Lower</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity> 
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>End_Owner</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crm:P4_has_time-span</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>End_Owner</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crm:E52_Time-Span</type>
+                          <instance_generator name="193-builtwork-acquisition-date">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="acquisition_id" type="xpath">../@pos</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crm:P82b_end_of_the_end</relationship>
+                              <entity>
+                                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="GermanDateTime">
+                                      <arg name="bound" type="constant">Upper</arg>
+                                      <arg name="text" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity> 
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+      </mapping>
+      <mapping>
+          <domain>
+              <source_node>/row/Patrons/Patron</source_node>
+              <target_node>
+                  <entity>
+                      <type>crm:E12_Production</type>
+                      <instance_generator name="120-builtwork-production">
+                          <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                      </instance_generator>
+                  </entity>
+              </target_node>
+          </domain>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>ID_PERSON</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crmpc:P01_has_domain</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>ID_PERSON</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crmpc:PC14_carried_out_by</type>
+                          <instance_generator name="125-builtwork-role">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="role_name" type="constant">patron</arg>
+                              <arg name="role_id" type="xpathPosition">../</arg>
+                          </instance_generator>
+                          <additional>
+                              <relationship>crmpc:P02_has_range</relationship>
+                              <entity>
+                                  <type>crm:E39_Actor</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="300-actor">
+                                      <arg name="actor_id" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+                          <additional>
+                              <relationship>crmpc:P14.1_in_the_role_of</relationship>
+                              <entity>
+                                  <type>crm:E55_Type</type>
+                                  <type>arconto:Type</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="010-type-aat">
+                                      <arg name="aat" type="xpath">300115251</arg>
+                                  </instance_generator>
+                                  <label_generator name="Literal">
+                                      <arg name="text" type="constant">Patron</arg>
+                                      <arg name="language" type="constant">en</arg>
+                                  </label_generator>
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+      </mapping>
+
+      <!-- Architect -->
+
+      <mapping>
+          <domain>
+              <source_node>/row/Architects/Architect</source_node>
+              <target_node>
+                  <entity>
+                      <type>crm:E12_Production</type>
+                      <instance_generator name="120-builtwork-production">
+                          <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
+                      </instance_generator>
+                  </entity>
+              </target_node>
+          </domain>
+          <link>
+              <path>
+                  <source_relation>
+                      <relation>ID_PERSON</relation>
+                  </source_relation>
+                  <target_relation>
+                      <relationship>crmpc:P01_has_domain</relationship>
+                  </target_relation>
+              </path>
+              <range>
+                  <source_node>ID_PERSON</source_node>
+                  <target_node>
+                      <entity>
+                          <type>crmpc:PC14_carried_out_by</type>
+                          <instance_generator name="125-builtwork-role">
+                              <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
+                              <arg name="role_name" type="constant">architect</arg>
+                              <arg name="role_id" type="xpathPosition">../</arg>
+                          </instance_generator>
+
+                          <additional>
+                              <relationship>crmpc:P02_has_range</relationship>
+                              <entity>
+                                  <type>crm:E39_Actor</type>
+                                  <type>arconto:Actor</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+                                  <instance_generator name="300-actor">
+                                      <arg name="actor_id" type="xpath">text()</arg>
+                                  </instance_generator>
+                              </entity>
+                          </additional>
+
+                          <additional>
+                              <relationship>crmpc:P14.1_in_the_role_of</relationship>
+                              <entity>
+                                  <type>crm:E55_Type</type>
+                                  <type>arconto:Role</type>
+                                  <instance_info>
+                                      <constant/>
+                                  </instance_info>
+
+                                  <instance_generator name="000-type">
+                                      <arg name="type_id" type="constant">architect</arg>
+                                  </instance_generator>
+                                  <label_generator name="Literal">
+                                      <arg name="text" type="constant">Architect</arg>
+                                      <arg name="language" type="constant">en</arg>
+                                  </label_generator>
+
+                                  <!--
+                                  <additional>
+                                    <relationship>owl:sameAs</relationship>
+                                    <entity>
+                                      <type>crm:E55_Type</type>
+                                    </entity>
                                     <instance_generator name="010-type-aat">
-                                        <arg name="aat" type="xpath">300115251</arg>
+                                      <arg name="aat" type="constant">300024987</arg>
                                     </instance_generator>
-                                    <label_generator name="Literal">
-                                        <arg name="text" type="constant">Patron</arg>
-                                        <arg name="language" type="constant">en</arg>
-                                    </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
-        <mapping>
-            <domain>
-                <source_node>/row/Architects/Architect</source_node>
-                <target_node>
-                    <entity>
-                        <type>crm:E12_Production</type>
-                        <instance_generator name="120-builtwork-construction">
-                            <arg name="bw_id" type="xpath">../../BW_ID/text()</arg>
-                        </instance_generator>
-                    </entity>
-                </target_node>
-            </domain>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_PERSON</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>crmpc:P01_has_domain</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_PERSON</source_node>
-                    <target_node>
-                        <entity>
-                            <type>crmpc:PC14_carried_out_by</type>
-                            <instance_generator name="125-builtwork-role">
-                                <arg name="bw_id" type="xpath">../../../BW_ID/text()</arg>
-                                <arg name="role_name" type="constant">architect</arg>
-                                <arg name="role_id" type="xpathPosition">../</arg>
-                            </instance_generator>
-                            <additional>
-                                <relationship>crmpc:P02_has_range</relationship>
-                                <entity>
-                                    <type>crm:E39_Actor</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="300-actor">
-                                        <arg name="actor_id" type="xpath">text()</arg>
-                                    </instance_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>crmpc:P14.1_in_the_role_of</relationship>
-                                <entity>
-                                    <type>crm:E55_Type</type>
-                                    <instance_info>
-                                        <constant/>
-                                    </instance_info>
-                                    <instance_generator name="010-type-aat">
-                                        <arg name="aat" type="constant">300024987</arg>
-                                    </instance_generator>
-                                    <label_generator name="Literal">
-                                        <arg name="text" type="constant">Architect</arg>
-                                        <arg name="language" type="constant">en</arg>
-                                    </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-        </mapping>
+                                  </additional>
+                                  -->
+
+                              </entity>
+                          </additional>
+                      </entity>
+                  </target_node>
+              </range>
+          </link>
+      </mapping>
     </mappings>
     
 </x3ml>
