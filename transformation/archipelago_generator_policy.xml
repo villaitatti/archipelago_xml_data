@@ -25,12 +25,12 @@
 		<pattern>builtwork/{bw_id}/name</pattern>
 	</generator>
 
-	<generator name="120-builtwork-construction" prefix="arc">
-		<pattern>builtwork/{bw_id}/construction</pattern>
+	<generator name="120-builtwork-production" prefix="arc">
+		<pattern>builtwork/{bw_id}/production</pattern>
 	</generator>
 
-	<generator name="123-builtwork-construction-date" prefix="arc">
-		<pattern>builtwork/{bw_id}/construction/date</pattern>
+	<generator name="123-builtwork-production-date" prefix="arc">
+		<pattern>builtwork/{bw_id}/production/date</pattern>
 	</generator>
 
 	<generator name="125-builtwork-role" prefix="arc">
@@ -103,6 +103,14 @@
 
 	<generator name="1A3-builtwork-transfer_custody-date" prefix="arc">
 		<pattern>builtwork/{bw_id}/transfer_custody/{tf_id}/date</pattern>
+	</generator>
+
+  <generator name="1B0-builtwork-transformation" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation/{tf_id}</pattern>
+	</generator>
+
+  <generator name="1B3-builtwork-transformation-date" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation/{tf_id}/date</pattern>
 	</generator>
 
 
