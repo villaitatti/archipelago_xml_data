@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from datetime import datetime
 import xml.dom.minidom as md
 import xml.etree.ElementTree as et
 import os
@@ -34,6 +35,7 @@ def execute(limit):
     text = str(text)
     if not text or re.match(r'^2019-12-31$', text):
       return
+
     tag = et.SubElement(parent, key)
     tag.text = text
 
@@ -188,19 +190,19 @@ def execute(limit):
   key_shape_area = 'SHP_Area'
 
   # Custom created keys
-  key_materials = 'Materials'
-  key_functions = 'Functions'
-  key_uses = 'Uses'
-  key_typologies = 'Typologies'
-  key_owners = 'Owners'
-  key_tenants = 'Tenants'
-  key_architects = 'Architects'
-  key_patrons = 'Patrons'
+  key_materials = 'materials'
+  key_functions = 'functions'
+  key_uses = 'uses'
+  key_typologies = 'typologies'
+  key_owners = 'owners'
+  key_tenants = 'tenants'
+  key_architects = 'architects'
+  key_patrons = 'patrons'
   key_eng = 'eng'
   key_ita = 'ita'
   key_aat = 'aat'
   key_geo = 'geo'
-  key_person_id = 'ID_PERSON'
+  key_person_id = 'person_id'
   key_position = 'pos'
 
   # JSON keys
@@ -405,11 +407,35 @@ def execute(limit):
     # Create the current row
     xml_row = et.Element(key_row)
 
+    st_volume = et.SubElement(xml_row, 'st_volume')
+
+    # Processing ST Volume
     # bw id
-    base_tag(xml_row, key_bw_id, bw_id)
+    base_tag(st_volume, key_bw_id, bw_id)
+
+    # Start_Earliest 
+    base_tag(st_volume, key_start,  bw.get(key_start))
+
+    # End_Latest 
+    base_tag(st_volume, key_end,  bw.get(key_end))
+
+    if bw.get(key_end) is not None:
+      year_end = datetime.strptime(bw.get(key_end), '%Y-%m-%d').year
+    else:
+      year_end = 'today'
+
+    year_start = datetime.strptime(bw.get(key_start), '%Y-%m-%d').year
+    st_volume_name = f'{bw.get(key_name)} of {get_bw_island(bw.get(key_islandname)).get(key_json_name)} from {year_start} to {year_end}'
+
+    base_tag(st_volume, 'label', st_volume_name)
+      
+
+    # Processing Building
+
+    builtwork = et.SubElement(xml_row, 'builtwork')
 
     # IslandName
-    island = et.SubElement(xml_row, key_islandname)
+    island = et.SubElement(builtwork, key_islandname)
 
     current_island = get_bw_island(bw.get(key_islandname))
 
@@ -417,27 +443,27 @@ def execute(limit):
     base_tag(island, key_geo,  current_island.get(key_json_geonames))
 
     # Start_Earliest 
-    base_tag(xml_row, key_start,  bw.get(key_start))
+    base_tag(builtwork, key_start,  bw.get(key_start))
 
     # End_Latest 
-    base_tag(xml_row, key_end,  bw.get(key_end))
+    base_tag(builtwork, key_end,  bw.get(key_end))
 
     # Name 
-    base_tag(xml_row, key_name,  bw.get(key_name))
+    base_tag(builtwork, key_name,  bw.get(key_name))
 
     # Height
-    base_tag(xml_row, key_height,  bw.get(key_height))
+    base_tag(builtwork, key_height,  bw.get(key_height))
 
     # SHP_Lenght
     # If is null
     try:
-      base_tag(xml_row, key_shape_lenght,  bw[key_shape_lenght])
+      base_tag(builtwork, key_shape_lenght,  bw[key_shape_lenght])
     except Exception:
       pass
 
     # SHP_Area
     try:
-      base_tag(xml_row, key_shape_area,  bw[key_shape_area])
+      base_tag(builtwork, key_shape_area,  bw[key_shape_area])
     except Exception:
       pass
 
@@ -448,7 +474,7 @@ def execute(limit):
       text_materials = bw.get(key_material)
 
       # Create the tag Materials
-      materials = et.SubElement(xml_row, key_materials)
+      materials = et.SubElement(builtwork, key_materials)
 
       for current_material in text_materials:
 
@@ -465,7 +491,7 @@ def execute(limit):
     # Functions
     if bw.get(key_function) is not None and len(bw.get(key_function)) > 0:
 
-      functions = et.SubElement(xml_row, key_functions)
+      functions = et.SubElement(builtwork, key_functions)
       for current_function in bw.get(key_function):
 
         function_tag = et.SubElement(functions, key_function)
@@ -478,7 +504,7 @@ def execute(limit):
     # Uses
     if bw.get(key_use) is not None and len(bw.get(key_use)) > 0:
 
-      uses = et.SubElement(xml_row, key_uses)
+      uses = et.SubElement(builtwork, key_uses)
       for current_use in bw.get(key_use):
 
         # create xml tag
@@ -498,7 +524,7 @@ def execute(limit):
     # Typologies
     if bw.get(key_typology) is not None and len(bw.get(key_typology)) > 0:
 
-      typologies = et.SubElement(xml_row, key_typologies)
+      typologies = et.SubElement(builtwork, key_typologies)
       for current_typology in bw.get(key_typology):
 
         # create xml tag
@@ -518,7 +544,7 @@ def execute(limit):
     # Owners
     if bw.get(key_owner) is not None and len(bw.get(key_owner)) > 0:
 
-      owners = et.SubElement(xml_row, key_owners)
+      owners = et.SubElement(builtwork, key_owners)
       for current_owner in bw.get(key_owner):
 
         # Create xml tag
@@ -533,7 +559,7 @@ def execute(limit):
     # Tenants
     if bw.get(key_tenant) is not None and len(bw.get(key_tenant)) > 0:
 
-      tenants = et.SubElement(xml_row, key_tenants)
+      tenants = et.SubElement(builtwork, key_tenants)
       for current_tenant in bw.get(key_tenant):
 
         # Create xml tag
@@ -547,16 +573,17 @@ def execute(limit):
     # Architects
     if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:  
 
-      architects = et.SubElement(xml_row, key_architects)
+      architects = et.SubElement(builtwork, key_architects)
       for current_architect in bw.get(key_architect):
         base_tag(et.SubElement(architects, key_architect), key_person_id, current_architect)
 
     # Patrons
     if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
       
-      patrons = et.SubElement(xml_row, key_patrons)
+      patrons = et.SubElement(builtwork, key_patrons)
       for current_patron in bw.get(key_patron):
         base_tag(et.SubElement(patrons, key_patron), key_person_id, current_patron)
+
 
     final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
