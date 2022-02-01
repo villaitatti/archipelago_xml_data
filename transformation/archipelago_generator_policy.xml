@@ -404,6 +404,14 @@
 		<pattern>time_appellation/{t_id}</pattern>
 	</generator>
 
+	<generator name="800-spacetime_volume-identifier" prefix="arc">
+		<pattern>spacetime_volume/{id}</pattern>
+	</generator>
+
+	<generator name="830-spacetime_volume-time_span" prefix="arc">
+		<pattern>spacetime_volume/{id}/time_span</pattern>
+	</generator>
+
 	<generator name="URIorUUID">
 		<custom generatorClass="gr.forth.URIorUUID">
 			<set-arg name="text"></set-arg>
