@@ -105,12 +105,28 @@
 		<pattern>builtwork/{bw_id}/transfer_custody/{tf_id}/date</pattern>
 	</generator>
 
-  <generator name="1B0-builtwork-transformation" prefix="arc" uuid="yes">
-		<pattern>builtwork/{bw_id}/transformation/{tf_id}</pattern>
+  <generator name="1B0-builtwork-transformation-function" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_function/{tf_id}</pattern>
 	</generator>
 
-  <generator name="1B3-builtwork-transformation-date" prefix="arc" uuid="yes">
-		<pattern>builtwork/{bw_id}/transformation/{tf_id}/date</pattern>
+  <generator name="1B3-builtwork-transformation-function-date" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_function/{tf_id}/date</pattern>
+	</generator>
+
+  <generator name="1C0-builtwork-transformation-use" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_use/{tf_id}</pattern>
+	</generator>
+
+  <generator name="1C3-builtwork-transformation-use-date" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_use/{tf_id}/date</pattern>
+	</generator>
+
+  <generator name="1D0-builtwork-transformation-typology" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_typology/{tf_id}</pattern>
+	</generator>
+
+  <generator name="1D3-builtwork-transformation-typology-date" prefix="arc" uuid="yes">
+		<pattern>builtwork/{bw_id}/transformation_typology/{tf_id}/date</pattern>
 	</generator>
 
 
@@ -410,6 +426,11 @@
 
 	<generator name="830-spacetime_volume-time_span" prefix="arc">
 		<pattern>spacetime_volume/{id}/time_span</pattern>
+	</generator>
+
+
+	<generator name="900-digital_object" prefix="arc">
+		<pattern>digital_object/{id}</pattern>
 	</generator>
 
 	<generator name="URIorUUID">

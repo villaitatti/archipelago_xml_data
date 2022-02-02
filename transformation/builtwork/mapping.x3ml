@@ -77,6 +77,8 @@
     <namespace prefix="aat" uri="http://vocab.getty.edu/aat/" />
   </namespaces>
   <mappings>
+
+    <!-- Space-Time Volume -->
     <mapping>
 
       <domain>
@@ -85,11 +87,52 @@
           <entity>
             <type>crm:E92_Spacetime_Volume</type>
             <instance_generator name="800-spacetime_volume-identifier">
-              <arg name="id" type="xpath">BW_ID/text()</arg>
+              <arg name="id" type="xpath">UUID/text()</arg>
             </instance_generator>
             <label_generator name="Literal">
               <arg name="text" type="xpath">label/text()</arg>
             </label_generator>
+
+            <!-- Link with 2D representation -->
+            <additional>
+              <relationship>crm:P67_is_referred_to_by</relationship>
+              <entity>
+                <type>crmdig:D1_Digital_Object</type>
+                <instance_generator name="900-digital_object">
+                  <arg name="id">BW_ID/text()</arg>
+                </instance_generator>
+                <label_generator name="Literal">
+                  <arg name="text" type="xpath">BW_ID/text()</arg>
+                </label_generator>
+
+                <additional>
+                  <relationship>crm:P2_has_type</relationship>
+                  <entity>
+                    <type>crm:E55_Type</type>
+                    <instance_generator name="000-type">
+                      <arg name="type_id" type="constant">bidimensional_representation</arg>
+                    </instance_generator>
+                    <label_generator name="Literal">
+                      <arg name="text" type="constant">Bidimensional Representation</arg>
+                    </label_generator>
+                  </entity>
+                </additional>
+
+              </entity>
+            </additional>
+
+            <!-- Link with Builtwork -->
+            <additional>
+              <relationship>crm:P129_is_about</relationship>
+              <entity>
+                <type>crm:E22_Man-Made_Object</type>
+                <type>arconto:Builtwork</type>
+                <instance_generator name="100-builtwork">
+                  <arg name="bw_id" type="xpath">../builtwork/UUID/text()</arg>
+                </instance_generator>
+              </entity>
+            </additional>
+
           </entity>
         </target_node>
       </domain>
@@ -174,6 +217,593 @@
         </range>
       </link>
 
+    </mapping>
+
+    <!-- Builtwork -->
+    <mapping>
+
+      <domain>
+        <source_node>//builtwork</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E22_Man-Made_Object</type>
+            <type>arconto:Builtwork</type>
+            <instance_generator name="100-builtwork">
+              <arg name="bw_id" type="xpath">UUID/text()</arg>
+            </instance_generator>
+            <label_generator name="Literal">
+              <arg name="text">Name/text()</arg>
+            </label_generator>
+
+          </entity>
+        </target_node>
+      </domain>
+
+      <!-- Construction -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>Start</relation>
+          </source_relation>
+          <target_relation>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <relationship>crm:P108i_was_produced_by</relationship>
+            <entity>
+              <type>crm:E12_Production</type>
+              <instance_generator name="120-builtwork-production">
+                <arg name="bw_id" type="xpath">../UUID/text()</arg>
+              </instance_generator>
+            </entity>
+            <relationship>crm:P4_has_time-span</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>Start</source_node>
+          <target_node>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <entity>
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="123-builtwork-production-date">
+                <arg name="bw_id" type="xpath">../UUID/text()</arg>
+              </instance_generator>
+              <additional>
+                <relationship>crm:P81a_end_of_the_begin</relationship>
+                <entity>
+                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="GermanDateTime">
+                    <arg name="bound" type="constant">Lower</arg>
+                    <arg name="text" type="xpath">text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Destruction -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>End</relation>
+          </source_relation>
+          <target_relation>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <relationship>crm:P13i_was_destroyed_by</relationship>
+            <entity>
+              <type>crm:E6_Destruction</type>
+              <instance_generator name="130-builtwork-destruction">
+                <arg name="bw_id" type="xpath">../UUID/text()</arg>
+              </instance_generator>
+            </entity>
+            <relationship>crm:P4_has_time-span</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>End</source_node>
+          <target_node>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <entity>
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="133-buil_work-destruction-date">
+                <arg name="bw_id" type="xpath">../UUID/text()</arg>
+              </instance_generator>
+              <additional>
+                <relationship>crm:P81b_begin_of_the_end</relationship>
+                <entity>
+                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                  <instance_generator name="GermanDateTime">
+                    <arg name="bound" type="constant">Upper</arg>
+                    <arg name="text" type="xpath">text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Function [1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>functions/Function[1]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P48_has_preferred_identifier</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>functions/Function[1]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="140-builtwork-function">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="func_id" type="xpathPosition">.</arg>
+              </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">ita/text()</arg>
+                <arg name="language" type="constant">it</arg>
+              </label_generator>
+
+              <!-- Type -->
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <type>arconto:Type</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">function</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Function</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Function [>1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>functions/Function[not(position()=1)]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P124i_was_transformed_by</relationship>
+          </target_relation>
+        </path>
+
+        <range>
+          <source_node>functions/Function[not(position()=1)]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E81_Transformation</type>
+              <instance_generator name="1C0-builtwork-transformation-function">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+              </instance_generator>
+
+              <!-- Link to new Function -->
+              <additional>
+                <relationship>crm:P123_resulted_in</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="140-builtwork-function">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="func_id" type="xpathPosition">.</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">eng/text()</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">ita/text()</arg>
+                    <arg name="language" type="constant">it</arg>
+                  </label_generator>
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>crm:E55_Type</type>
+                      <type>arconto:Type</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">function</arg>
+                      </instance_generator>
+                      <label_generator name="Constant">
+                        <arg name="text" type="constant">Function</arg>
+                        <arg name="language" type="constant">en</arg>
+                      </label_generator>
+                    </entity>
+                  </additional>
+                </entity>
+              </additional>
+
+              <!-- Link to old function -->
+              <additional>
+                <relationship>crm:P124_transformed</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_generator name="140-builtwork-function">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="func_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <!-- Date -->
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="1B3-builtwork-transformation-function-date">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">./preceding-sibling::Function[1]/@pos</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Start_Function/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Use [1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>uses/Use[1]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P48_has_preferred_identifier</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>uses/Use[1]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="150-builtwork-use">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="use_id" type="xpathPosition">.</arg>
+              </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">ita/text()</arg>
+                <arg name="language" type="constant">it</arg>
+              </label_generator>
+
+              <!-- Type -->
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <type>arconto:Type</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">use</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Use</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Use [>1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>uses/Use[not(position()=1)]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P124i_was_transformed_by</relationship>
+          </target_relation>
+        </path>
+
+        <range>
+          <source_node>uses/Use[not(position()=1)]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E81_Transformation</type>
+              <instance_generator name="1C0-builtwork-transformation-use">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">./preceding-sibling::Use[1]/@pos</arg>
+              </instance_generator>
+
+              <!-- Link to new Function -->
+              <additional>
+                <relationship>crm:P123_resulted_in</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="150-builtwork-use">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="use_id" type="xpathPosition">.</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">eng/text()</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">ita/text()</arg>
+                    <arg name="language" type="constant">it</arg>
+                  </label_generator>
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>crm:E55_Type</type>
+                      <type>arconto:Type</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">use</arg>
+                      </instance_generator>
+                      <label_generator name="Constant">
+                        <arg name="text" type="constant">Use</arg>
+                        <arg name="language" type="constant">en</arg>
+                      </label_generator>
+                    </entity>
+                  </additional>
+                </entity>
+              </additional>
+
+              <!-- Link to old function -->
+              <additional>
+                <relationship>crm:P124_transformed</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_generator name="150-builtwork-use">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="use_id" type="xpath">./preceding-sibling::Use[1]/@pos</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <!-- Date -->
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="1C3-builtwork-transformation-use-date">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">./preceding-sibling::Use[1]/@pos</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Start_Use/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Typology [1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>typologies/Typology[1]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P48_has_preferred_identifier</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>typologies/Typology[1]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="160-builtwork-typology">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="typology_id" type="xpathPosition">.</arg>
+              </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">ita/text()</arg>
+                <arg name="language" type="constant">it</arg>
+              </label_generator>
+
+              <!-- Type -->
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <type>arconto:Type</type>
+                  <instance_info>
+                    <constant />
+                  </instance_info>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">typology</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Typology</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Typology [>1] -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>typologies/Typology[not(position()=1)]</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P124i_was_transformed_by</relationship>
+          </target_relation>
+        </path>
+
+        <range>
+          <source_node>typologies/Typology[not(position()=1)]</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E81_Transformation</type>
+              <instance_generator name="1D0-builtwork-transformation-typology">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">./preceding-sibling::Typology[1]/@pos</arg>
+              </instance_generator>
+
+              <!-- Link to new Typology -->
+              <additional>
+                <relationship>crm:P123_resulted_in</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_generator name="160-builtwork-typology">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="typology_id" type="xpathPosition">.</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">eng/text()</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">ita/text()</arg>
+                    <arg name="language" type="constant">it</arg>
+                  </label_generator>
+
+                  <!-- Type -->
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>crm:E55_Type</type>
+                      <type>arconto:Type</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">typology</arg>
+                      </instance_generator>
+                      <label_generator name="Constant">
+                        <arg name="text" type="constant">Typology</arg>
+                        <arg name="language" type="constant">en</arg>
+                      </label_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+              <!-- Link to old function -->
+              <additional>
+                <relationship>crm:P124_transformed</relationship>
+                <entity>
+                  <type>crm:E41_Appellation</type>
+                  <instance_generator name="160-builtwork-typology">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="typology_id" type="xpath">./preceding-sibling::Typology[1]/@pos</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <!-- Date -->
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="1D3-builtwork-transformation-typology-date">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">./preceding-sibling::Typology[1]/@pos</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Start_Typology/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
 
     </mapping>
 
