@@ -6,6 +6,7 @@ import xml.etree.ElementTree as et
 import os
 import re
 import json
+import uuid
 
 def execute(limit):
 
@@ -204,6 +205,7 @@ def execute(limit):
   key_geo = 'geo'
   key_person_id = 'person_id'
   key_position = 'pos'
+  key_uuid = 'UUID'
 
   # JSON keys
   key_json_aat = 'AAT ID'
@@ -410,6 +412,11 @@ def execute(limit):
     st_volume = et.SubElement(xml_row, 'st_volume')
 
     # Processing ST Volume
+    
+    ## UUID
+    st_volume_uuid = uuid.uuid1()
+    base_tag(st_volume, key_uuid, st_volume_uuid)
+
     # bw id
     base_tag(st_volume, key_bw_id, bw_id)
 
@@ -433,6 +440,10 @@ def execute(limit):
     # Processing Building
 
     builtwork = et.SubElement(xml_row, 'builtwork')
+    
+    #UUID
+    builtwork_uuid = uuid.uuid1()
+    base_tag(builtwork, key_uuid, builtwork_uuid)
 
     # IslandName
     island = et.SubElement(builtwork, key_islandname)
@@ -497,7 +508,7 @@ def execute(limit):
         function_tag = et.SubElement(functions, key_function)
         function_tag.attrib[key_position] = str(bw.get(key_function).index(current_function) + 1)
 
-        base_tag(function_tag, key_function, current_function.get(key_function))
+        base_tag(function_tag, key_eng, current_function.get(key_function))
         base_tag(function_tag, key_function_start, current_function.get(key_function_start))
         base_tag(function_tag, key_function_end, current_function.get(key_function_end))
 

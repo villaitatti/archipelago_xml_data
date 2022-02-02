@@ -805,6 +805,83 @@
         </range>
       </link>
 
+      <!-- Owners -->
+      <link>
+
+        <path>
+          <source_relation>
+            <relation>//Owner</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P24i_changed_ownership_through</relationship>
+          </target_relation>
+        </path>
+
+        <range>
+          <source_node>//Owner</source_node>
+          <target_node>
+            <entity>
+
+              <type>crm:E8_Acquisition</type>
+              <instance_generator name="190-builtwork-acquisition">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="acquisition_id" type="xpath">./@pos</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>crm:P22_transferred_title_to</relationship>
+                <entity>
+                  <type>crm:E39_Actor</type>
+                  <instance_generator name="300-actor">
+                    <arg name="actor_id" type="xpath">person_id/text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <additional>
+                <relationship>crm:P23_transferred_title_from</relationship>
+                <entity>
+                  <type>crm:E39_Actor</type>
+                  <instance_generator name="300-actor">
+                    <arg name="actor_id" type="xpath">./preceding-sibling::Owner/person_id/text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="193-builtwork-acquisition-date">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="acquisition_id" type="xpathPosition">./@pos</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Start_Owner/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+
+      </link>
+
+      <!-- Tenants -->
+
     </mapping>
 
   </mappings>
