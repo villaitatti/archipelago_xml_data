@@ -133,7 +133,6 @@ def execute(limit):
   buildings_ext = '.tsv'
   data_dir = 'data'
 
-  # TODO pass the file as arg
   dir_path = os.path.dirname(os.path.realpath(__file__))
   filename = os.path.join(dir_path,data_dir, buildings + buildings_ext)
 
@@ -402,6 +401,8 @@ def execute(limit):
 
   # PRE-PROCESSING
   for bw_id, bw in builtworks.items():
+
+    print(bw_id)
 
     if limit and cnt == int(limit):
       break
