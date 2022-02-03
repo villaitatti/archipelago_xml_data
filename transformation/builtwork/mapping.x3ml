@@ -975,9 +975,9 @@
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
                   <type>crm:E52_Time-Span</type>
-                  <instance_generator name="193-builtwork-acquisition-date">
+                  <instance_generator name="1A3-builtwork-transfer_custody-date">
                     <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-                    <arg name="acquisition_id" type="xpathPosition">./@pos</arg>
+                    <arg name="tf_id" type="xpathPosition">./@pos</arg>
                   </instance_generator>
 
                   <additional>
