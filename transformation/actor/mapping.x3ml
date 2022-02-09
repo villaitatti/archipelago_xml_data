@@ -67,14 +67,14 @@
   </namespaces>
   <mappings>
 
-    <!-- Actor -->
+    <!-- Person -->
     <mapping>
 
       <domain>
-        <source_node>/ROW</source_node>
+        <source_node>/person</source_node>
         <target_node>
           <entity>
-            <type>crm:E39_Actor</type>
+            <type>crm:E21_Person</type>
             <type>arc:Actor</type>
             <instance_generator name="300-actor">
               <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
@@ -89,108 +89,26 @@
 
     </mapping>
 
-    <!-- Activities -->
+    <!-- Group -->
     <mapping>
+
       <domain>
-        <source_node>/ROW/Activities/Activity</source_node>
+        <source_node>/group</source_node>
         <target_node>
-          <if>
-            <exists>text()</exists>
-          </if>
           <entity>
-            <type>frbr:F51_Pursuit</type>
-            <instance_generator name="349-actor-activity-OOC">
-              <arg name="activity_id" type="xpath">aat/text()</arg>
+            <type>crm:E74_Group</type>
+            <type>arc:Actor</type>
+            <instance_generator name="300-actor">
+              <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
             </instance_generator>
-            <label_generator name="Literal">
-              <arg name="text" type="xpath">eng/text()</arg>
-              <arg name="language" type="constant">en</arg>
+            <label_generator name="Constant">
+              <arg name="text" type="xpath">Appellation/text()</arg>
+              <arg name="language" type="xpath">it</arg>
             </label_generator>
           </entity>
         </target_node>
       </domain>
-      <link>
-        <path>
-          <source_relation>
-            <relation>Start</relation>
-          </source_relation>
-          <target_relation>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <relationship>crm:P4_has_time-span</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>Start</source_node>
-          <target_node>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-              <instance_generator name="343-actor-activity-date">
-                <arg name="actor_id" type="xpath">../../../ID_PERSON/text()</arg>
-                <arg name="activity_id" type="xpath">../Id/text()</arg>
-              </instance_generator>
-              <additional>
-                <relationship>crm:P82a_begin_of_the_begin</relationship>
-                <entity>
-                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                  <instance_info>
-                    <constant>text()</constant>
-                  </instance_info>
-                  <instance_generator name="Literal">
-                    <arg name="text" type="xpath">text()</arg>
-                    <arg name="language" type="constant">en</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-      <link>
-        <path>
-          <source_relation>
-            <relation>End</relation>
-          </source_relation>
-          <target_relation>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <relationship>crm:P4_has_time-span</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>End</source_node>
-          <target_node>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-              <instance_generator name="343-actor-activity-date">
-                <arg name="actor_id" type="xpath">../../../ID_PERSON/text()</arg>
-                <arg name="activity_id" type="xpath">../Id/text()</arg>
-              </instance_generator>
-              <additional>
-                <relationship>crm:P82b_end_of_the_end</relationship>
-                <entity>
-                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                  <instance_info>
-                    <constant>text()</constant>
-                  </instance_info>
-                  <instance_generator name="Literal">
-                    <arg name="text" type="xpath">text()</arg>
-                    <arg name="language" type="constant">en</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-            </entity>
-          </target_node>
-        </range>
-      </link>
+
     </mapping>
   </mappings>
 

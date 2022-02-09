@@ -4,294 +4,302 @@ import os
 import re
 import json
 
+actor_group = [123, 16, 107, 184, 73, 133, 106, 42,
+               155, 17, 102, 87, 86, 94, 124, 95, 89, 88, 90]
+
 
 def execute(limit):
-    t = 'actor'
-
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
-    filename = os.path.join(dir_path, 'People.xml')
-
-    association_tables = json.load(open(os.path.join(
-        root_path, 'utils', 'association_tables', 'association_tables.json'), 'r'))
-
-    # Geonames dictionary
-    geonames_dict = json.load(
-        open(os.path.join(root_path, 'utils', 'geonames', 'geonames.json'), 'r'))
-
-    def write_file(row_id, text):
-
-        output_directory = os.path.join(root_path, 'transformation', t, 'data')
-
-        if not os.path.isdir(output_directory):
-            os.mkdir(output_directory)
-
-        output_filename = os.path.join(output_directory, f'{row_id}.xml')
-
-        with open(output_filename, 'w') as f:
-            f.write(text)
-
-    regex_square = r'[\[\]]'
-    regex_curly = r'[\{\}]'
-    regex_round = r'[\(\)]'
-
-    regex_aat = r'\[[A-Z0-9]+\]'
-    regex_ita = r'{.*}'
-    regex_date = r'\([0-9\-]+\)'
+  t = 'actor'
+
+  dir_path = os.path.dirname(os.path.realpath(__file__))
+  root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
+  filename = os.path.join(dir_path, 'People.xml')
+
+  association_tables = json.load(open(os.path.join(
+      root_path, 'utils', 'association_tables', 'association_tables.json'), 'r'))
+
+  # Geonames dictionary
+  geonames_dict = json.load(
+      open(os.path.join(root_path, 'utils', 'geonames', 'geonames.json'), 'r'))
+
+  def write_file(row_id, text):
+
+    output_directory = os.path.join(root_path, 'transformation', t, 'data')
+
+    if not os.path.isdir(output_directory):
+      os.mkdir(output_directory)
+
+    output_filename = os.path.join(output_directory, f'{row_id}.xml')
+
+    with open(output_filename, 'w') as f:
+      f.write(text)
+
+  regex_square = r'[\[\]]'
+  regex_curly = r'[\{\}]'
+  regex_round = r'[\(\)]'
+
+  regex_aat = r'\[[A-Z0-9]+\]'
+  regex_ita = r'{.*}'
+  regex_date = r'\([0-9\-]+\)'
 
-    # Input keys
-    key_row = 'ROW'
-    key_id_person = 'ID_PERSON'
-    key_given_name = 'Given_Name'
-    key_appellation = 'Appellation'
-    key_surname = 'Surname'
-    key_alias = 'Alias'
-    key_title = 'Title'
-    key_patronymic = 'Patronymic'
-    key_occuption = 'Occupation'
-    key_activities_role = 'Activities_Roles'
-    key_place_birth = 'Place_of_birth'
-    key_place_death = 'Place_of_death'
-    key_work_location = 'Work_location'
-    key_birthdate_earliest = 'Birth_Date_Earliest'
-    key_birthdate_latest = 'Birth_Date_Latest'
-    key_deathdate_earliest = 'Death_Date_Earliest'
-    key_deathdate_lastest = 'Death_Date_Latest'
-    key_marriage_date = 'Marriage_Date'
-    key_will_date = 'Will_Date'
-    key_century = 'Century'
-    key_fraction_century = 'Fraction_Century'
-    key_notes = 'Notes'
+  # Input keys
+  key_row = 'ROW'
+  key_id_person = 'ID_PERSON'
+  key_given_name = 'Given_Name'
+  key_appellation = 'Appellation'
+  key_surname = 'Surname'
+  key_alias = 'Alias'
+  key_title = 'Title'
+  key_patronymic = 'Patronymic'
+  key_occuption = 'Occupation'
+  key_activities_role = 'Activities_Roles'
+  key_place_birth = 'Place_of_birth'
+  key_place_death = 'Place_of_death'
+  key_work_location = 'Work_location'
+  key_birthdate_earliest = 'Birth_Date_Earliest'
+  key_birthdate_latest = 'Birth_Date_Latest'
+  key_deathdate_earliest = 'Death_Date_Earliest'
+  key_deathdate_lastest = 'Death_Date_Latest'
+  key_marriage_date = 'Marriage_Date'
+  key_will_date = 'Will_Date'
+  key_century = 'Century'
+  key_fraction_century = 'Fraction_Century'
+  key_notes = 'Notes'
 
-    # Custom created keys
-    key_titles = 'Titles'
-    key_activities = 'Activities'
-    key_activity = 'Activity'
-    key_id = 'Id'
-    key_start = 'Start'
-    key_end = 'End'
-    key_root = 'Root'
-    key_work_locations = 'Work_locations'
-    key_geo = 'geo'
-    key_label = 'label'
+  # Custom created keys
+  key_titles = 'Titles'
+  key_activities = 'Activities'
+  key_activity = 'Activity'
+  key_id = 'Id'
+  key_start = 'Start'
+  key_end = 'End'
+  key_root = 'Root'
+  key_work_locations = 'Work_locations'
+  key_geo = 'geo'
+  key_label = 'label'
 
-    key_aat = 'aat'
-    key_ita = 'ita'
-    key_eng = 'eng'
+  key_aat = 'aat'
+  key_ita = 'ita'
+  key_eng = 'eng'
 
-    key_events = "Events"
-    key_event = "Event"
-    key_role = "Role"
+  key_events = "Events"
+  key_event = "Event"
+  key_role = "Role"
 
-    tree = et.parse(filename)
-    root = tree.getroot()
+  tree = et.parse(filename)
+  root = tree.getroot()
 
-    ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
+  ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
 
-    tags = root.findall(f'ns:{key_row}', ns)
+  tags = root.findall(f'ns:{key_row}', ns)
 
-    all_people = []
+  all_people = []
 
-    def explode_text(s, parent, current, id=None):
+  def explode_text(s, parent, current, id=None):
 
-        if s is None:
-            return
+    if s is None:
+      return
 
-        tag = et.SubElement(parent, current)
+    tag = et.SubElement(parent, current)
 
-        # AAT
-        try:
-            if re.search(regex_square, s):
-                aat = re.findall(regex_aat, s)[0]
-                aat = re.sub(regex_square, '', aat, re.S)
+    # AAT
+    try:
+      if re.search(regex_square, s):
+        aat = re.findall(regex_aat, s)[0]
+        aat = re.sub(regex_square, '', aat, re.S)
 
-                new_aat = et.SubElement(tag, key_aat)
-                new_aat.text = aat.strip()
+        new_aat = et.SubElement(tag, key_aat)
+        new_aat.text = aat.strip()
 
-                s = re.sub(regex_aat, '', s)
+        s = re.sub(regex_aat, '', s)
 
-        except TypeError as err:
-            pass
+    except TypeError as err:
+      pass
 
-        # ITA
-        try:
-            if re.search(regex_curly, s):
-                ita = re.findall(regex_ita, s)[0]
-                ita = re.sub(regex_curly, '', ita)
+    # ITA
+    try:
+      if re.search(regex_curly, s):
+        ita = re.findall(regex_ita, s)[0]
+        ita = re.sub(regex_curly, '', ita)
 
-                new_ita = et.SubElement(tag, key_ita)
-                new_ita.text = ita.strip()
+        new_ita = et.SubElement(tag, key_ita)
+        new_ita.text = ita.strip()
 
-                s = re.sub(regex_ita, '', s)
+        s = re.sub(regex_ita, '', s)
 
-        except TypeError as err:
-            pass
+    except TypeError as err:
+      pass
 
-        # DATE
-        try:
-            if re.search(regex_date, s):
-                date = re.findall(regex_date, s)[0]
-                date = re.sub(regex_round, '', date)
+    # DATE
+    try:
+      if re.search(regex_date, s):
+        date = re.findall(regex_date, s)[0]
+        date = re.sub(regex_round, '', date)
 
-                dates = date.split('-')
+        dates = date.split('-')
 
-                new_start = et.SubElement(tag, key_start)
-                new_start.text = dates[0]
+        new_start = et.SubElement(tag, key_start)
+        new_start.text = dates[0]
 
-                new_end = et.SubElement(tag, key_end)
-                new_end.text = dates[1]
+        new_end = et.SubElement(tag, key_end)
+        new_end.text = dates[1]
 
-                s = re.sub(regex_date, '', s)
+        s = re.sub(regex_date, '', s)
 
-        except (TypeError, IndexError) as err:
-            pass
+    except (TypeError, IndexError) as err:
+      pass
 
-        # ENG
-        try:
-            eng = et.SubElement(tag, key_eng)
-            eng.text = s.strip()
+    # ENG
+    try:
+      eng = et.SubElement(tag, key_eng)
+      eng.text = s.strip()
 
-        except TypeError as err:
-            pass
+    except TypeError as err:
+      pass
 
-    def explode_place(parent, text):
-        try:
-            location_id = geonames_dict[text][0]["geoname_id"]
+  def explode_place(parent, text):
+    try:
+      location_id = geonames_dict[text][0]["geoname_id"]
 
-            place_birth_id = et.SubElement(parent, key_geo)
-            place_birth_id.text = location_id
-        except:
-            pass
+      place_birth_id = et.SubElement(parent, key_geo)
+      place_birth_id.text = location_id
+    except:
+      pass
 
-        place_birth_name = et.SubElement(parent, key_label)
-        place_birth_name.text = text
+    place_birth_name = et.SubElement(parent, key_label)
+    place_birth_name.text = text
 
-    cnt_total = 0
+  cnt_total = 0
 
-    # Iterate each ROW
-    for row in tags:
+  # Iterate each ROW
+  for row in tags:
 
-        if limit and cnt_total == int(limit):
-            break
+    if limit and cnt_total == int(limit):
+      break
 
-        # Copy the current row
-        new_row = et.Element(key_row)
-        row_id = row.find(f'ns:{key_id_person}', ns).text
+    row_id = row.find(f'ns:{key_id_person}', ns).text
 
-        # ID person
-        id_person = et.SubElement(new_row, key_id_person)
-        id_person.text = row_id
+    # Actor type
+    actor_type = "person"
+    if int(row_id) in actor_group:
+      actor_type = "group"
 
-        # TODO Actor type
+    # Copy the current row
+    new_row = et.Element(actor_type)
 
-        # given name
+    # ID person
+    id_person = et.SubElement(new_row, key_id_person)
+    id_person.text = row_id
 
-        given_name = row.find(f'ns:{key_given_name}', ns).text
-        if given_name is None:
-            given_name = ""
+    print(f'{row_id} is of type: {actor_type}')
 
-        # surname
-        surname = row.find(f'ns:{key_surname}', ns).text
-        surname = re.sub(regex_ita, '', surname).rstrip()
+    # given name
+    given_name = row.find(f'ns:{key_given_name}', ns).text
+    if given_name is None:
+      given_name = ""
 
-        appellation = et.SubElement(new_row, key_appellation)
-        appellation.text = f'{given_name} {surname}'.rstrip()
+    # surname
+    surname = row.find(f'ns:{key_surname}', ns).text
+    surname = re.sub(regex_ita, '', surname).rstrip()
 
-        # alias
-        explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)
+    appellation = et.SubElement(new_row, key_appellation)
+    appellation.text = f'{given_name} {surname}'.rstrip()
 
-        # Titles
-        # If the text is not empty
-        if row.find(f'ns:{key_title}', ns).text is not None:
-            val_titles = row.find(f'ns:{key_title}', ns)
-            val_titles = val_titles.text.split(';')
+    # alias
+    explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)
 
-            titles = et.SubElement(new_row, key_titles)
+    # Titles
+    # If the text is not empty
+    if row.find(f'ns:{key_title}', ns).text is not None:
+      val_titles = row.find(f'ns:{key_title}', ns)
+      val_titles = val_titles.text.split(';')
 
-            [explode_text(title, titles, key_title) for title in val_titles]
+      titles = et.SubElement(new_row, key_titles)
 
-        # patronymic
-        explode_text(row.find(f'ns:{key_patronymic}',
-                              ns).text, new_row, key_patronymic)
+      [explode_text(title, titles, key_title) for title in val_titles]
 
-        # occupation
-        explode_text(row.find(f'ns:{key_occuption}',
-                              ns).text, new_row, key_occuption)
+    # patronymic
+    explode_text(row.find(f'ns:{key_patronymic}',
+                          ns).text, new_row, key_patronymic)
 
-        # activities
-        if row.find(f'ns:{key_activities_role}', ns).text is not None:
-            val_activities = row.find(f'ns:{key_activities_role}', ns)
-            val_activities = val_activities.text.split(';')
+    # occupation
+    explode_text(row.find(f'ns:{key_occuption}',
+                          ns).text, new_row, key_occuption)
 
-            new_activities = et.SubElement(new_row, key_activities)
+    # activities
+    if row.find(f'ns:{key_activities_role}', ns).text is not None:
+      val_activities = row.find(f'ns:{key_activities_role}', ns)
+      val_activities = val_activities.text.split(';')
 
-            cnt = 1
+      new_activities = et.SubElement(new_row, key_activities)
 
-            for activity in val_activities:
+      cnt = 1
 
-                explode_text(activity, new_activities, key_activity)
-                cnt += 1
+      for activity in val_activities:
 
-        # place of birth
-        explode_place(et.SubElement(new_row, key_place_birth),
-                      row.find(f'ns:{key_place_birth}', ns).text)
+        explode_text(activity, new_activities, key_activity)
+        cnt += 1
 
-        # place of death
-        explode_place(et.SubElement(new_row, key_place_death),
-                      row.find(f'ns:{key_place_death}', ns).text)
+    # place of birth
+    explode_place(et.SubElement(new_row, key_place_birth),
+                  row.find(f'ns:{key_place_birth}', ns).text)
 
-        # work location
-        if row.find(f'ns:{key_work_location}', ns).text is not None:
+    # place of death
+    explode_place(et.SubElement(new_row, key_place_death),
+                  row.find(f'ns:{key_place_death}', ns).text)
 
-            work_locations = et.SubElement(new_row, key_work_locations)
+    # work location
+    if row.find(f'ns:{key_work_location}', ns).text is not None:
 
-            locations = row.find(f'ns:{key_work_location}', ns).text
-            locations = locations.split(';')
+      work_locations = et.SubElement(new_row, key_work_locations)
 
-            for location in locations:
-                explode_place(et.SubElement(work_locations,
-                                            key_work_location), location.strip())
+      locations = row.find(f'ns:{key_work_location}', ns).text
+      locations = locations.split(';')
 
-        # birthdate earliest
-        birthdate_earliest = et.SubElement(new_row, key_birthdate_earliest)
-        birthdate_earliest.text = row.find(
-            f'ns:{key_birthdate_earliest}', ns).text
+      for location in locations:
+        explode_place(et.SubElement(work_locations,
+                                    key_work_location), location.strip())
 
-        # deathdate earliest
-        deathdate_latest = et.SubElement(new_row, key_deathdate_lastest)
-        deathdate_latest.text = row.find(
-            f'ns:{key_deathdate_lastest}', ns).text
+    # birthdate earliest
+    birthdate_earliest = et.SubElement(new_row, key_birthdate_earliest)
+    birthdate_earliest.text = row.find(
+        f'ns:{key_birthdate_earliest}', ns).text
 
-        # marriage date
-        marriage_date = et.SubElement(new_row, key_marriage_date)
-        marriage_date.text = row.find(f'ns:{key_marriage_date}', ns).text
+    # deathdate earliest
+    deathdate_latest = et.SubElement(new_row, key_deathdate_lastest)
+    deathdate_latest.text = row.find(
+        f'ns:{key_deathdate_lastest}', ns).text
 
-        # will date
-        will_date = et.SubElement(new_row, key_will_date)
-        will_date.text = row.find(f'ns:{key_will_date}', ns).text
+    # marriage date
+    marriage_date = et.SubElement(new_row, key_marriage_date)
+    marriage_date.text = row.find(f'ns:{key_marriage_date}', ns).text
 
-        # century
-        century = et.SubElement(new_row, key_century)
-        century.text = row.find(f'ns:{key_century}', ns).text
+    # will date
+    will_date = et.SubElement(new_row, key_will_date)
+    will_date.text = row.find(f'ns:{key_will_date}', ns).text
 
-        # fraction century
-        fraction_century = et.SubElement(new_row, key_fraction_century)
-        fraction_century.text = row.find(f'ns:{key_fraction_century}', ns).text
+    # century
+    century = et.SubElement(new_row, key_century)
+    century.text = row.find(f'ns:{key_century}', ns).text
 
-        # notes
-        explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
+    # fraction century
+    fraction_century = et.SubElement(new_row, key_fraction_century)
+    fraction_century.text = row.find(f'ns:{key_fraction_century}', ns).text
 
-        all_people.append({
-            key_appellation: appellation.text,
-            key_id_person: id_person.text
-        })
+    # notes
+    explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
 
-        final = md.parseString(et.tostring(
-            new_row, method='xml')).toprettyxml()
+    all_people.append({
+        key_appellation: appellation.text,
+        key_id_person: id_person.text
+    })
 
-        write_file(row_id, final)
+    final = md.parseString(et.tostring(
+        new_row, method='xml')).toprettyxml()
 
-        cnt_total += 1
+    write_file(row_id, final)
 
-    open(os.path.join(dir_path, 'people.json'), 'w').write(
-        json.dumps(all_people, indent=4))
+    cnt_total += 1
+
+  open(os.path.join(dir_path, 'people.json'), 'w').write(
+      json.dumps(all_people, indent=4))
