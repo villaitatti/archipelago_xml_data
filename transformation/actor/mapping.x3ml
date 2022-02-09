@@ -35,7 +35,7 @@
       <target_info>
         <target_schema schema_file="FRBR2.4-draft___04-06-2020072535___12490.rdfs" type="rdfs" version="2.4">FRBR</target_schema>
         <namespaces>
-          <namespace prefix="frbr" uri="http://iflastandards.info/ns/fr/frbr/frbroo/" />
+          <namespace prefix="frbroo" uri="http://iflastandards.info/ns/fr/frbr/frbroo/" />
         </namespaces>
       </target_info>
       <target_info>
@@ -86,6 +86,134 @@
           </entity>
         </target_node>
       </domain>
+
+      <!-- Title -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//Title</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_indentified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//Title</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="314-actor-identifier-title">
+                <arg name="aat" type="xpath">aat/text()</arg>
+              </instance_generator>
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">ita/text()</arg>
+                <arg name="language" type="constant">it</arg>
+              </label_generator>
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">title</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Title</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Activity -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//Activity</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P14i_performed</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//Activity</source_node>
+          <target_node>
+
+            <entity>
+              <type>frbroo:F51_Pursuit</type>
+              <instance_generator name="349-actor-activity-OOC">
+                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
+                <arg name="activity_id" type="xpath">aat/text()</arg>
+              </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">ita/text()</arg>
+                <arg name="language" type="constant">it</arg>
+              </label_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Birth -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>/Birth_Date_Earliest</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P98i_was_born</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>/Birth_Date_Earliest</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E67_Birth</type>
+              <instance_generator name="320-actor-birth">
+                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E2_Time-Span</type>
+                  <instance_generator name="323-actor-birth-date">
+                    <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
 
     </mapping>
 
