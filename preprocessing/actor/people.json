@@ -38,5 +38,661 @@
     {
         "Appellation": "Jacopo Tatti",
         "ID_PERSON": "23"
+    },
+    {
+        "Appellation": " Canons regular of Santo Spirito",
+        "ID_PERSON": "24"
+    },
+    {
+        "Appellation": "Andrea Bondumier",
+        "ID_PERSON": "25"
+    },
+    {
+        "Appellation": "Filippo Tron",
+        "ID_PERSON": "26"
+    },
+    {
+        "Appellation": "Fabio Chigi",
+        "ID_PERSON": "27"
+    },
+    {
+        "Appellation": "Francesco Guardi",
+        "ID_PERSON": "28"
+    },
+    {
+        "Appellation": "Daniele Danieli",
+        "ID_PERSON": "29"
+    },
+    {
+        "Appellation": "Giacomo Guardi",
+        "ID_PERSON": "30"
+    },
+    {
+        "Appellation": "Elisabetta Graziosa Ferri",
+        "ID_PERSON": "31"
+    },
+    {
+        "Appellation": "Pietro Morani",
+        "ID_PERSON": "32"
+    },
+    {
+        "Appellation": "Domenico Maria Gella",
+        "ID_PERSON": "33"
+    },
+    {
+        "Appellation": "Carlo Gella",
+        "ID_PERSON": "34"
+    },
+    {
+        "Appellation": "Cherubino Zeli",
+        "ID_PERSON": "35"
+    },
+    {
+        "Appellation": "Jacometto Veneziano",
+        "ID_PERSON": "36"
+    },
+    {
+        "Appellation": "Alessandro Malerba",
+        "ID_PERSON": "37"
+    },
+    {
+        "Appellation": "Tommaso Temanza",
+        "ID_PERSON": "38"
+    },
+    {
+        "Appellation": "Niccol\u00f2 Mauro",
+        "ID_PERSON": "39"
+    },
+    {
+        "Appellation": "Napol\u00e9on Bonaparte",
+        "ID_PERSON": "40"
+    },
+    {
+        "Appellation": "Domenico Codagli",
+        "ID_PERSON": "41"
+    },
+    {
+        "Appellation": " Dominican friars of San Secondo",
+        "ID_PERSON": "42"
+    },
+    {
+        "Appellation": "Giovanni da Zon",
+        "ID_PERSON": "43"
+    },
+    {
+        "Appellation": "Vitale Falier",
+        "ID_PERSON": "44"
+    },
+    {
+        "Appellation": "Gerardino da Villanova",
+        "ID_PERSON": "45"
+    },
+    {
+        "Appellation": "Vincenzo Maria Coronelli",
+        "ID_PERSON": "46"
+    },
+    {
+        "Appellation": "Angelo Bragadin",
+        "ID_PERSON": "47"
+    },
+    {
+        "Appellation": "Giovanni Buonconsiglio",
+        "ID_PERSON": "48"
+    },
+    {
+        "Appellation": "Giovanni Trevisan",
+        "ID_PERSON": "49"
+    },
+    {
+        "Appellation": "Matteo Priuli",
+        "ID_PERSON": "50"
+    },
+    {
+        "Appellation": "Pietro Bon",
+        "ID_PERSON": "51"
+    },
+    {
+        "Appellation": "Angelo Baronio",
+        "ID_PERSON": "52"
+    },
+    {
+        "Appellation": "Girolamo Contarini",
+        "ID_PERSON": "53"
+    },
+    {
+        "Appellation": "Raffaele Riva",
+        "ID_PERSON": "54"
+    },
+    {
+        "Appellation": "Zaccaria da Luni",
+        "ID_PERSON": "55"
+    },
+    {
+        "Appellation": "Teodoro Viero",
+        "ID_PERSON": "56"
+    },
+    {
+        "Appellation": "Guglielmo Stella",
+        "ID_PERSON": "57"
+    },
+    {
+        "Appellation": "Jacopo de' Barbari",
+        "ID_PERSON": "58"
+    },
+    {
+        "Appellation": "Marco Moro",
+        "ID_PERSON": "60"
+    },
+    {
+        "Appellation": "Andrea Tirali",
+        "ID_PERSON": "61"
+    },
+    {
+        "Appellation": "Luigi Querena",
+        "ID_PERSON": "63"
+    },
+    {
+        "Appellation": "Francesco Battaglioli",
+        "ID_PERSON": "64"
+    },
+    {
+        "Appellation": "Giuseppe Bernardino Bison",
+        "ID_PERSON": "65"
+    },
+    {
+        "Appellation": "Domenico Lovisa",
+        "ID_PERSON": "66"
+    },
+    {
+        "Appellation": "Cristoforo Sabbadino",
+        "ID_PERSON": "67"
+    },
+    {
+        "Appellation": "Alessandro Spaziani",
+        "ID_PERSON": "68"
+    },
+    {
+        "Appellation": "Benedetto Bordone",
+        "ID_PERSON": "69"
+    },
+    {
+        "Appellation": "Carlo Ruzzini",
+        "ID_PERSON": "70"
+    },
+    {
+        "Appellation": "Angelo Emo",
+        "ID_PERSON": "71"
+    },
+    {
+        "Appellation": " Candian friars of Santo Spirito",
+        "ID_PERSON": "73"
+    },
+    {
+        "Appellation": "Enrico Dandolo",
+        "ID_PERSON": "74"
+    },
+    {
+        "Appellation": "Pietro Gattilesso",
+        "ID_PERSON": "75"
+    },
+    {
+        "Appellation": "Andrea Cominelli",
+        "ID_PERSON": "76"
+    },
+    {
+        "Appellation": "Giovanni Battista Albrizzi",
+        "ID_PERSON": "77"
+    },
+    {
+        "Appellation": "Pietro Chevalier",
+        "ID_PERSON": "78"
+    },
+    {
+        "Appellation": "Francesco Alberti",
+        "ID_PERSON": "79"
+    },
+    {
+        "Appellation": "Baldassare Longhena",
+        "ID_PERSON": "84"
+    },
+    {
+        "Appellation": " Venice Municipality",
+        "ID_PERSON": "86"
+    },
+    {
+        "Appellation": " Milizia da Mar",
+        "ID_PERSON": "87"
+    },
+    {
+        "Appellation": " Venetian Republic",
+        "ID_PERSON": "88"
+    },
+    {
+        "Appellation": " Savi ed esecutori alle acque",
+        "ID_PERSON": "89"
+    },
+    {
+        "Appellation": " Venetian Senate",
+        "ID_PERSON": "90"
+    },
+    {
+        "Appellation": "Francesco Tironi",
+        "ID_PERSON": "91"
+    },
+    {
+        "Appellation": "Vincenzo Scutari",
+        "ID_PERSON": "92"
+    },
+    {
+        "Appellation": "Bernardin Giacomazzi",
+        "ID_PERSON": "93"
+    },
+    {
+        "Appellation": " Procurators of St Mark's de supra",
+        "ID_PERSON": "94"
+    },
+    {
+        "Appellation": " Provveditori sopra monasteri",
+        "ID_PERSON": "95"
+    },
+    {
+        "Appellation": "Bonaventura Maria Valerio",
+        "ID_PERSON": "96"
+    },
+    {
+        "Appellation": "Stefano Codroipo",
+        "ID_PERSON": "97"
+    },
+    {
+        "Appellation": "Vincenzo Polani",
+        "ID_PERSON": "98"
+    },
+    {
+        "Appellation": "Domenico Porta",
+        "ID_PERSON": "99"
+    },
+    {
+        "Appellation": "Giambattista Maria Contarini",
+        "ID_PERSON": "101"
+    },
+    {
+        "Appellation": " Lateran Canons of Santa Maria della Carit\u00e0",
+        "ID_PERSON": "102"
+    },
+    {
+        "Appellation": " Council of Ten",
+        "ID_PERSON": "106"
+    },
+    {
+        "Appellation": "Alvise Foscarini",
+        "ID_PERSON": "108"
+    },
+    {
+        "Appellation": "Alvise Contarini",
+        "ID_PERSON": "109"
+    },
+    {
+        "Appellation": "Andrea Pisani",
+        "ID_PERSON": "110"
+    },
+    {
+        "Appellation": "Carlo Carafa della Spina",
+        "ID_PERSON": "111"
+    },
+    {
+        "Appellation": " Bencio",
+        "ID_PERSON": "112"
+    },
+    {
+        "Appellation": "Giuseppe Porta",
+        "ID_PERSON": "113"
+    },
+    {
+        "Appellation": "Girolamo da Santacroce",
+        "ID_PERSON": "114"
+    },
+    {
+        "Appellation": "Francesco da Santacroce",
+        "ID_PERSON": "115"
+    },
+    {
+        "Appellation": "Lorenzo Giustinian",
+        "ID_PERSON": "116"
+    },
+    {
+        "Appellation": "Alessandro Farnese",
+        "ID_PERSON": "117"
+    },
+    {
+        "Appellation": "Hugues de Comminelles",
+        "ID_PERSON": "118"
+    },
+    {
+        "Appellation": "Nicol\u00f2 dal Cortivo",
+        "ID_PERSON": "119"
+    },
+    {
+        "Appellation": "Antonio Girolamo Vestri",
+        "ID_PERSON": "120"
+    },
+    {
+        "Appellation": "Sebastiano Alberti",
+        "ID_PERSON": "121"
+    },
+    {
+        "Appellation": "Augusto Denaix",
+        "ID_PERSON": "122"
+    },
+    {
+        "Appellation": " Kingdom of Lombardy\u2013Venetia",
+        "ID_PERSON": "123"
+    },
+    {
+        "Appellation": " Magistrate for Health",
+        "ID_PERSON": "124"
+    },
+    {
+        "Appellation": "Girolamo Mercuriale",
+        "ID_PERSON": "125"
+    },
+    {
+        "Appellation": "Girolamo Capivaccio",
+        "ID_PERSON": "126"
+    },
+    {
+        "Appellation": "Mariano Stefanelli",
+        "ID_PERSON": "127"
+    },
+    {
+        "Appellation": "Niccol\u00f2 Corte",
+        "ID_PERSON": "128"
+    },
+    {
+        "Appellation": "Bernardino Paterno",
+        "ID_PERSON": "129"
+    },
+    {
+        "Appellation": "Alvise Mocenigo",
+        "ID_PERSON": "130"
+    },
+    {
+        "Appellation": "Nicol\u00f2 Massa",
+        "ID_PERSON": "131"
+    },
+    {
+        "Appellation": "Giovan Battista Luran",
+        "ID_PERSON": "132"
+    },
+    {
+        "Appellation": " Canons regular of San Clemente",
+        "ID_PERSON": "133"
+    },
+    {
+        "Appellation": "Giovanni Polani",
+        "ID_PERSON": "134"
+    },
+    {
+        "Appellation": "Alberico Lottario",
+        "ID_PERSON": "135"
+    },
+    {
+        "Appellation": "Imizza da Selva di Boggion",
+        "ID_PERSON": "136"
+    },
+    {
+        "Appellation": "Daniele da Selva di Boggion",
+        "ID_PERSON": "137"
+    },
+    {
+        "Appellation": "Spadaro Litaldo",
+        "ID_PERSON": "138"
+    },
+    {
+        "Appellation": "Pietro Litaldo",
+        "ID_PERSON": "139"
+    },
+    {
+        "Appellation": "Angelo Rosso",
+        "ID_PERSON": "140"
+    },
+    {
+        "Appellation": "Egidio da Ferrara",
+        "ID_PERSON": "141"
+    },
+    {
+        "Appellation": "Nicol\u00f2 de Benvenutis",
+        "ID_PERSON": "142"
+    },
+    {
+        "Appellation": "Jacques Du\u00e8ze",
+        "ID_PERSON": "143"
+    },
+    {
+        "Appellation": "Piero Tomacelli",
+        "ID_PERSON": "144"
+    },
+    {
+        "Appellation": "Gabriele Condulmer",
+        "ID_PERSON": "145"
+    },
+    {
+        "Appellation": "Antonio de Lusciano",
+        "ID_PERSON": "146"
+    },
+    {
+        "Appellation": "Pietro Nani",
+        "ID_PERSON": "147"
+    },
+    {
+        "Appellation": "Agostino Barbarigo",
+        "ID_PERSON": "148"
+    },
+    {
+        "Appellation": "Friedrich Habsburg",
+        "ID_PERSON": "149"
+    },
+    {
+        "Appellation": "Francesco Foscari",
+        "ID_PERSON": "150"
+    },
+    {
+        "Appellation": "Cristoforo Moro",
+        "ID_PERSON": "151"
+    },
+    {
+        "Appellation": "Antonio Muzzani",
+        "ID_PERSON": "152"
+    },
+    {
+        "Appellation": "Domenico Graziussi",
+        "ID_PERSON": "153"
+    },
+    {
+        "Appellation": "Angelo Seguso",
+        "ID_PERSON": "154"
+    },
+    {
+        "Appellation": " Fondo territoriale",
+        "ID_PERSON": "155"
+    },
+    {
+        "Appellation": "John {Giovanni} Palaiologos",
+        "ID_PERSON": "156"
+    },
+    {
+        "Appellation": "Maria Priuli",
+        "ID_PERSON": "157"
+    },
+    {
+        "Appellation": "Amadea {Amedea} Palaiologos",
+        "ID_PERSON": "158"
+    },
+    {
+        "Appellation": "Ercole d'Este",
+        "ID_PERSON": "159"
+    },
+    {
+        "Appellation": "Leonardo Loredan",
+        "ID_PERSON": "160"
+    },
+    {
+        "Appellation": "Matth\u00e4us {Matteo} Schinner",
+        "ID_PERSON": "161"
+    },
+    {
+        "Appellation": "Egidio Antonini",
+        "ID_PERSON": "163"
+    },
+    {
+        "Appellation": "Andrea Gritti",
+        "ID_PERSON": "164"
+    },
+    {
+        "Appellation": "Francesco Sforza",
+        "ID_PERSON": "165"
+    },
+    {
+        "Appellation": "Francesco Maria della Rovere",
+        "ID_PERSON": "166"
+    },
+    {
+        "Appellation": "Gaetano dei Conti di Thiene",
+        "ID_PERSON": "167"
+    },
+    {
+        "Appellation": "Gian Pietro Carafa",
+        "ID_PERSON": "168"
+    },
+    {
+        "Appellation": "Andrea Contarini",
+        "ID_PERSON": "169"
+    },
+    {
+        "Appellation": " Vendramin",
+        "ID_PERSON": "170"
+    },
+    {
+        "Appellation": "Piero Vallaresso",
+        "ID_PERSON": "171"
+    },
+    {
+        "Appellation": "Alessandro Pesaro",
+        "ID_PERSON": "172"
+    },
+    {
+        "Appellation": "Sebastiano Giustinian",
+        "ID_PERSON": "173"
+    },
+    {
+        "Appellation": "Pietro Polani",
+        "ID_PERSON": "174"
+    },
+    {
+        "Appellation": "Pierre Roger",
+        "ID_PERSON": "175"
+    },
+    {
+        "Appellation": "Alessandro de Strigis",
+        "ID_PERSON": "176"
+    },
+    {
+        "Appellation": "Giovanni Tirinello",
+        "ID_PERSON": "177"
+    },
+    {
+        "Appellation": "Francesco Lazzaroni",
+        "ID_PERSON": "178"
+    },
+    {
+        "Appellation": "Giovanni Fornareto",
+        "ID_PERSON": "179"
+    },
+    {
+        "Appellation": "Andrea Mocenigo",
+        "ID_PERSON": "180"
+    },
+    {
+        "Appellation": "Agostino Correggio",
+        "ID_PERSON": "181"
+    },
+    {
+        "Appellation": "Girolamo Lando",
+        "ID_PERSON": "182"
+    },
+    {
+        "Appellation": "Gianfrancesco Barbarigo",
+        "ID_PERSON": "183"
+    },
+    {
+        "Appellation": " Camaldolese monks of Monte Rua",
+        "ID_PERSON": "184"
+    },
+    {
+        "Appellation": "Pietro Lorenzetto",
+        "ID_PERSON": "185"
+    },
+    {
+        "Appellation": "Zuanne Lumi",
+        "ID_PERSON": "186"
+    },
+    {
+        "Appellation": "Andrea Brozio",
+        "ID_PERSON": "187"
+    },
+    {
+        "Appellation": "Todero Balbi",
+        "ID_PERSON": "189"
+    },
+    {
+        "Appellation": "Marco Basaiti",
+        "ID_PERSON": "190"
+    },
+    {
+        "Appellation": "Andrea Surian",
+        "ID_PERSON": "191"
+    },
+    {
+        "Appellation": " Hermits of Santa Giustina in Padua",
+        "ID_PERSON": "192"
+    },
+    {
+        "Appellation": " Friars of Santissima Trinit\u00e0 in Brondolo",
+        "ID_PERSON": "193"
+    },
+    {
+        "Appellation": "Pietro Maffei",
+        "ID_PERSON": "194"
+    },
+    {
+        "Appellation": " Benedictine monks of San Giorgio Maggiore",
+        "ID_PERSON": "195"
+    },
+    {
+        "Appellation": "Giulio Zanobi Medici",
+        "ID_PERSON": "196"
+    },
+    {
+        "Appellation": " Benedictine nuns of Corpus Domini",
+        "ID_PERSON": "197"
+    },
+    {
+        "Appellation": "Bartolomeo Gualtierotti",
+        "ID_PERSON": "198"
+    },
+    {
+        "Appellation": "Bartolomeo da Ferrara",
+        "ID_PERSON": "199"
+    },
+    {
+        "Appellation": " Carthusian monks of Sant'Andrea della Certosa",
+        "ID_PERSON": "200"
+    },
+    {
+        "Appellation": "Daria Querini",
+        "ID_PERSON": "201"
+    },
+    {
+        "Appellation": " Secular confraternity of San Diego",
+        "ID_PERSON": "202"
     }
 ]

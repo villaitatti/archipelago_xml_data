@@ -204,14 +204,7 @@
     <pattern>actor/{actor_id}/birth/date</pattern>
   </generator>
 
-
-  <generator name="325-actor-birth" prefix="arc">
-    <pattern>actor/{actor_id}/birth</pattern>
-  </generator>
-  <generator name="323-actor-birth-date" prefix="arc">
-    <pattern>actor/{actor_id}/birth/date</pattern>
-  </generator>
-  tion Actor's death -->
+  <!-- Actor's death -->
   <generator name="330-actor-death" prefix="arc">
     <pattern>actor/{actor_id}/death</pattern>
   </generator>
@@ -240,7 +233,7 @@
 
   <!-- Actor's will -->
   <generator name="360-actor-will" prefix="arc">
-    <pattern>actor/{actor_id}will</pattern>
+    <pattern>actor/{actor_id}/will</pattern>
   </generator>
   <generator name="363-actor-will-date" prefix="arc">
     <pattern>actor/{actor_id}/will/date</pattern>
