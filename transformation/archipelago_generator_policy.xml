@@ -406,9 +406,14 @@
 
 
 	<!-- Place -->
-	<generator name="600-place" prefix="geonames">
+	<generator name="600-place_geonames" prefix="geonames">
 		<pattern>{geonames_id}</pattern>
 	</generator>
+
+	<generator name="600-place" prefix="arc">
+		<pattern>place/{place_id}</pattern>
+	</generator>
+
 
   <!-- Place BW -->
 	<generator name="610-place" prefix="arc">
