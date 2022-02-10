@@ -220,6 +220,50 @@
         </range>
       </link>
 
+      <!-- Alias -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>Alias</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_indentified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>Alias</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="313-actor-identifier-alias">
+                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+              </instance_generator>
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">alias</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Alias</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
       <!-- Birth -->
       <link>
 
@@ -404,6 +448,128 @@
           </target_node>
         </range>
 
+      </link>
+
+      <!-- Marriage date -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>Marriage_Date</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P14i_performed</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>Marriage_Date</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E7_Activity</type>
+              <instance_generator name="350-actor-marriage">
+                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">marriage</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Marriage</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="353-actor-marriage-date">
+                    <arg name="actor_id" type="constant">../ID_PERSON/text()</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Will date -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>Will_Date</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P14i_performed</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>Will_Date</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E7_Activity</type>
+              <instance_generator name="360-actor-will">
+                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>crm:E55_Type</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">will</arg>
+                  </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="constant">Will</arg>
+                    <arg name="language" type="constant">en</arg>
+                  </label_generator>
+                </entity>
+              </additional>
+
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="363-actor-will-date">
+                    <arg name="actor_id" type="constant">../ID_PERSON/text()</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
       </link>
 
       <!-- Notes -->
