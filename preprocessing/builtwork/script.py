@@ -8,16 +8,19 @@ import re
 import json
 import uuid
 
+
 def execute(limit):
 
   def order_df(df):
     df = df.set_index(key_bw_id)
     df = df.sort_index()
-    df.to_csv(os.path.join(dir_path, f'{buildings}_ordered{buildings_ext}'), sep='\t')
+    df.to_csv(os.path.join(
+        dir_path, f'{buildings}_ordered{buildings_ext}'), sep='\t')
 
   def write_file(name, text, ext='xml'):
 
-    output_directory = os.path.join(dir_path, os.path.pardir, os.path.pardir, 'transformation', 'builtwork', data_dir)
+    output_directory = os.path.join(
+        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'builtwork', data_dir)
 
     if not os.path.isdir(output_directory):
       os.mkdir(output_directory)
@@ -41,20 +44,20 @@ def execute(limit):
     tag.text = text
 
   def get_bw_use(current_use):
-    
+
     if current_use.get(key_use) is not None:
-      name = current_use.get(key_use) 
-    
+      name = current_use.get(key_use)
+
     for bw_use in json.loads(bw_uses):
       if name == bw_use.get(key_json_name):
 
         try:
-            current_use[key_json_aat] = str(int(bw_use.get(key_json_aat)))
+          current_use[key_json_aat] = str(int(bw_use.get(key_json_aat)))
         except AttributeError:
           pass
         except TypeError:
           pass
-        
+
         try:
           current_use[key_json_ita] = bw_use.get(key_json_ita)
         except AttributeError:
@@ -72,12 +75,13 @@ def execute(limit):
         if name == bw_typology.get(key_json_name):
 
           try:
-            current_typology[key_json_aat] = str(int(bw_typology.get(key_json_aat)))
+            current_typology[key_json_aat] = str(
+                int(bw_typology.get(key_json_aat)))
           except AttributeError:
             pass
           except TypeError:
             pass
-          
+
           try:
             current_typology[key_json_ita] = bw_typology.get(key_json_ita)
           except AttributeError:
@@ -87,24 +91,25 @@ def execute(limit):
 
   def get_bw_material(current_material):
 
-    name =  current_material
+    name = current_material
     current_material = {key_material: current_material}
 
     for bw_material in json.loads(bw_materials):
 
       if name.lower() == bw_material.get(key_json_name).lower():
-        
+
         try:
-          current_material[key_json_aat] = str(int(bw_material.get(key_json_aat)))
+          current_material[key_json_aat] = str(
+              int(bw_material.get(key_json_aat)))
         except AttributeError:
           pass
         except TypeError:
           pass
-        
+
         try:
           current_material[key_json_ita] = bw_material.get(key_json_ita)
         except AttributeError:
-          pass 
+          pass
 
     return current_material
 
@@ -118,7 +123,7 @@ def execute(limit):
   def get_person(name):
     if name is not None:
       for person in people_dict:
-        current_name = re.sub(r'[\[{].*}','',person.get(key_surname)).strip()
+        current_name = re.sub(r'[\[{].*}', '', person.get(key_surname)).strip()
         if name.lower() == current_name.lower():
           return person
 
@@ -134,21 +139,28 @@ def execute(limit):
   data_dir = 'data'
 
   dir_path = os.path.dirname(os.path.realpath(__file__))
-  filename = os.path.join(dir_path,data_dir, buildings + buildings_ext)
+  filename = os.path.join(dir_path, data_dir, buildings + buildings_ext)
 
-  bw_typologies_filename = os.path.join(dir_path, data_dir, 'bw_typologies.tsv')
+  bw_typologies_filename = os.path.join(
+      dir_path, data_dir, 'bw_typologies.tsv')
   bw_uses_filename = os.path.join(dir_path, data_dir, 'bw_uses.tsv')
   bw_materials_filename = os.path.join(dir_path, data_dir, 'bw_materials.tsv')
   bw_islands_filename = os.path.join(dir_path, data_dir, 'bw_islands.tsv')
 
   # Geonames dictionary
-  geonames_dict = json.load(open(os.path.join(dir_path, os.path.pardir, os.path.pardir, 'utils', 'geonames', 'geonames.json'), 'r'))
-  people_dict = json.load(open(os.path.join(dir_path, os.path.pardir, 'actor', 'people.json'), 'r'))
+  geonames_dict = json.load(open(os.path.join(
+      dir_path, os.path.pardir, os.path.pardir, 'utils', 'geonames', 'geonames.json'), 'r'))
+  people_dict = json.load(
+      open(os.path.join(dir_path, os.path.pardir, 'actor', 'people.json'), 'r'))
 
-  bw_typologies = pd.read_csv(bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
-  bw_uses = pd.read_csv(bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
-  bw_materials = pd.read_csv(bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
-  bw_islands = pd.read_csv(bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
+  bw_typologies = pd.read_csv(
+      bw_typologies_filename, sep='\t').reset_index().to_json(orient='records')
+  bw_uses = pd.read_csv(
+      bw_uses_filename, sep='\t').reset_index().to_json(orient='records')
+  bw_materials = pd.read_csv(
+      bw_materials_filename, sep='\t').reset_index().to_json(orient='records')
+  bw_islands = pd.read_csv(
+      bw_islands_filename, sep='\t').reset_index().to_json(orient='records')
 
   # Input keys
   key_root = 'root'
@@ -193,6 +205,9 @@ def execute(limit):
   key_materials = 'materials'
   key_functions = 'functions'
   key_uses = 'uses'
+  key_transformation_use = 'transformation_use'
+  key_transformation_typology = 'transformation_typology'
+  key_transformation_function = 'transformation_function'
   key_typologies = 'typologies'
   key_owners = 'owners'
   key_tenants = 'tenants'
@@ -214,22 +229,23 @@ def execute(limit):
   key_json_geonames = 'Geonames ID'
   key_surname = 'Surname'
 
-  dtypes = {key_start:str, key_end:str, key_height:str, key_architect:str, key_patron: str, key_owner: str, key_tenant: str, key_shape_lenght:str, key_architects:str}
+  dtypes = {key_start: str, key_end: str, key_height: str, key_architect: str, key_patron: str,
+            key_owner: str, key_tenant: str, key_shape_lenght: str, key_architects: str}
   df = pd.read_csv(filename, sep='\t', dtype=dtypes)
 
   builtworks = {}
 
   def clear(val):
     # Clear nan words
-    if (type(val) is np.int64 or type(val) is np.float64 or type(val) is float) and np.isnan(val): 
+    if (type(val) is np.int64 or type(val) is np.float64 or type(val) is float) and np.isnan(val):
       return ''
-      
+
     return str(val)
 
   def add_to_set(key, bw_dict, id, val):
     if bw_dict[id].get(key) is None:
       bw_dict[id][key] = set()
-      
+
     bw_dict[id][key].add(val)
 
   def insert_in_list(l, to_insert):
@@ -242,13 +258,13 @@ def execute(limit):
       if to_insert == row:
         return
 
-    return  l.append(to_insert)
+    return l.append(to_insert)
 
-  # COLLAPSING ROWS 
+  # COLLAPSING ROWS
   for i, row in df.iterrows():
 
     row_id = row[key_bw_id]
-    
+
     # Instantiate dictionaries
     typology_dict = {}
     use_dict = {}
@@ -287,7 +303,7 @@ def execute(limit):
 
           if builtworks[row_id].get(key_function) is None:
             builtworks[row_id][key_function] = []
-          
+
           function_dict[key_function] = val
 
         elif col == key_function_start:
@@ -309,7 +325,7 @@ def execute(limit):
 
         elif col == key_typology_end:
           typology_dict[key_typology_end] = val
-        
+
         # Use
         elif col == key_use:
 
@@ -318,10 +334,10 @@ def execute(limit):
             builtworks[row_id][key_use] = []
 
           use_dict[key_use] = val
-        
+
         elif col == key_use_start:
           use_dict[key_use_start] = val
-        
+
         elif col == key_use_end:
           use_dict[key_use_end] = val
 
@@ -357,14 +373,14 @@ def execute(limit):
         elif col == key_architect:
           if builtworks[row_id].get(key_architect) is None:
             builtworks[row_id][key_architect] = set()
-          
+
           architect_set.add(val)
 
         # Patron
         elif col == key_patron:
           if builtworks[row_id].get(key_patron) is None:
             builtworks[row_id][key_patron] = set()
-          
+
           patron_set.add(val)
 
         # Residual columns
@@ -413,18 +429,18 @@ def execute(limit):
     st_volume = et.SubElement(xml_row, 'st_volume')
 
     # Processing ST Volume
-    
-    ## UUID
+
+    # UUID
     st_volume_uuid = uuid.uuid1()
     base_tag(st_volume, key_uuid, st_volume_uuid)
 
     # bw id
     base_tag(st_volume, key_bw_id, bw_id)
 
-    # Start_Earliest 
+    # Start_Earliest
     base_tag(st_volume, key_start,  bw.get(key_start))
 
-    # End_Latest 
+    # End_Latest
     base_tag(st_volume, key_end,  bw.get(key_end))
 
     if bw.get(key_end) is not None:
@@ -436,13 +452,12 @@ def execute(limit):
     st_volume_name = f'{bw.get(key_name)} of {get_bw_island(bw.get(key_islandname)).get(key_json_name)} from {year_start} to {year_end}'
 
     base_tag(st_volume, 'label', st_volume_name)
-      
 
     # Processing Building
 
     builtwork = et.SubElement(xml_row, 'builtwork')
-    
-    #UUID
+
+    # UUID
     builtwork_uuid = uuid.uuid1()
     base_tag(builtwork, key_uuid, builtwork_uuid)
 
@@ -454,13 +469,13 @@ def execute(limit):
     base_tag(island, key_ita,  current_island.get(key_json_name))
     base_tag(island, key_geo,  current_island.get(key_json_geonames))
 
-    # Start_Earliest 
+    # Start_Earliest
     base_tag(builtwork, key_start,  bw.get(key_start))
 
-    # End_Latest 
+    # End_Latest
     base_tag(builtwork, key_end,  bw.get(key_end))
 
-    # Name 
+    # Name
     base_tag(builtwork, key_name,  bw.get(key_name))
 
     # Height
@@ -496,7 +511,7 @@ def execute(limit):
         current_material = get_bw_material(current_material)
 
         # Set eng name
-        base_tag(material, key_eng, current_material.get(key_material))   
+        base_tag(material, key_eng, current_material.get(key_material))
         base_tag(material, key_ita, current_material.get(key_json_ita))
         base_tag(material, key_aat, current_material.get(key_json_aat))
 
@@ -504,24 +519,36 @@ def execute(limit):
     if bw.get(key_function) is not None and len(bw.get(key_function)) > 0:
 
       functions = et.SubElement(builtwork, key_functions)
-      for current_function in bw.get(key_function):
+      for i, current_function in enumerate(bw.get(key_function)):
 
         function_tag = et.SubElement(functions, key_function)
-        function_tag.attrib[key_position] = str(bw.get(key_function).index(current_function) + 1)
+        function_tag.attrib[key_position] = str(
+            bw.get(key_function).index(current_function) + 1)
 
         base_tag(function_tag, key_eng, current_function.get(key_function))
-        base_tag(function_tag, key_function_start, current_function.get(key_function_start))
-        base_tag(function_tag, key_function_end, current_function.get(key_function_end))
+        base_tag(function_tag, key_function_start,
+                 current_function.get(key_function_start))
+        base_tag(function_tag, key_function_end,
+                 current_function.get(key_function_end))
+
+        # Extract transformation
+        if i > 0:
+          transformation_function = et.SubElement(builtwork, key_transformation_function)
+          transformation_function.attrib['from'] = str(i)
+          transformation_function.attrib['to'] = str(i+1)
+          base_tag(transformation_function, key_function_start,
+                   current_function.get(key_function_start))
 
     # Uses
     if bw.get(key_use) is not None and len(bw.get(key_use)) > 0:
 
       uses = et.SubElement(builtwork, key_uses)
-      for current_use in bw.get(key_use):
+      for i, current_use in enumerate(bw.get(key_use)):
 
         # create xml tag
         use_tag = et.SubElement(uses, key_use)
-        use_tag.attrib[key_position] = str(bw.get(key_use).index(current_use) + 1)
+        use_tag.attrib[key_position] = str(
+            bw.get(key_use).index(current_use) + 1)
 
         # update current_use with data from uses list
         current_use = get_bw_use(current_use)
@@ -533,15 +560,24 @@ def execute(limit):
         base_tag(use_tag, key_use_start, current_use.get(key_use_start))
         base_tag(use_tag, key_use_end, current_use.get(key_use_end))
 
+        # Extract transformation
+        if i > 0:
+          transformation_use = et.SubElement(builtwork, key_transformation_use)
+          transformation_use.attrib['from'] = str(i)
+          transformation_use.attrib['to'] = str(i+1)
+          base_tag(transformation_use, key_use_start,
+                   current_use.get(key_use_start))
+
     # Typologies
     if bw.get(key_typology) is not None and len(bw.get(key_typology)) > 0:
 
       typologies = et.SubElement(builtwork, key_typologies)
-      for current_typology in bw.get(key_typology):
+      for i, current_typology in enumerate(bw.get(key_typology)):
 
         # create xml tag
         typology_tag = et.SubElement(typologies, key_typology)
-        typology_tag.attrib[key_position] = str(bw.get(key_typology).index(current_typology) + 1)
+        typology_tag.attrib[key_position] = str(
+            bw.get(key_typology).index(current_typology) + 1)
 
         # update current_typology with data from typology list
         current_typology = get_bw_typology(current_typology)
@@ -550,8 +586,19 @@ def execute(limit):
         base_tag(typology_tag, key_eng, current_typology.get(key_typology))
         base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
         base_tag(typology_tag, key_aat, current_typology.get(key_json_aat))
-        base_tag(typology_tag, key_typology_start, current_typology.get(key_typology_start))
-        base_tag(typology_tag, key_typology_end, current_typology.get(key_typology_end))
+        base_tag(typology_tag, key_typology_start,
+                 current_typology.get(key_typology_start))
+        base_tag(typology_tag, key_typology_end,
+                 current_typology.get(key_typology_end))
+
+        # Extract transformation
+        if i > 0:
+          transformation_typology = et.SubElement(
+              builtwork, key_transformation_typology)
+          transformation_typology.attrib['from'] = str(i)
+          transformation_typology.attrib['to'] = str(i+1)
+          base_tag(transformation_typology, key_typology_start,
+                   current_typology.get(key_typology_start))
 
     # Owners
     if bw.get(key_owner) is not None and len(bw.get(key_owner)) > 0:
@@ -562,10 +609,12 @@ def execute(limit):
         # Create xml tag
         owner_tag = et.SubElement(owners, key_owner)
         # Save owner position in list
-        owner_tag.attrib[key_position] = str(bw.get(key_owner).index(current_owner) + 1)
+        owner_tag.attrib[key_position] = str(
+            bw.get(key_owner).index(current_owner) + 1)
 
         base_tag(owner_tag, key_person_id, current_owner.get(key_owner))
-        base_tag(owner_tag, key_owner_start, current_owner.get(key_owner_start))
+        base_tag(owner_tag, key_owner_start,
+                 current_owner.get(key_owner_start))
         base_tag(owner_tag, key_owner_end, current_owner.get(key_owner_end))
 
     # Tenants
@@ -576,29 +625,33 @@ def execute(limit):
 
         # Create xml tag
         tenant_tag = et.SubElement(tenants, key_tenant)
-        tenant_tag.attrib[key_position] = str(bw.get(key_tenant).index(current_tenant) + 1)
+        tenant_tag.attrib[key_position] = str(
+            bw.get(key_tenant).index(current_tenant) + 1)
 
         base_tag(tenant_tag, key_person_id, current_tenant.get(key_tenant))
-        base_tag(tenant_tag, key_tenant_start, current_tenant.get(key_tenant_start))
-        base_tag(tenant_tag, key_tenant_end, current_tenant.get(key_tenant_end))
+        base_tag(tenant_tag, key_tenant_start,
+                 current_tenant.get(key_tenant_start))
+        base_tag(tenant_tag, key_tenant_end,
+                 current_tenant.get(key_tenant_end))
 
     # Architects
-    if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:  
+    if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:
 
       architects = et.SubElement(builtwork, key_architects)
       for current_architect in bw.get(key_architect):
-        base_tag(et.SubElement(architects, key_architect), key_person_id, current_architect)
+        base_tag(et.SubElement(architects, key_architect),
+                 key_person_id, current_architect)
 
     # Patrons
     if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
-      
+
       patrons = et.SubElement(builtwork, key_patrons)
       for current_patron in bw.get(key_patron):
-        base_tag(et.SubElement(patrons, key_patron), key_person_id, current_patron)
-
+        base_tag(et.SubElement(patrons, key_patron),
+                 key_person_id, current_patron)
 
     final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
     write_file(bw_id, final)
-  
-    cnt+=1
+
+    cnt += 1
