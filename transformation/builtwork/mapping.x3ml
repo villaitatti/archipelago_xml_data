@@ -990,7 +990,7 @@
                 <relationship>crmpc:P14.1_in_the_role_of</relationship>
                 <entity>
                   <type>crm:E55_Type</type>
-                  <type>arconto:Type</type>
+                  <type>arconto:Occupation</type>
                   <instance_info>
                     <constant />
                   </instance_info>
@@ -1060,7 +1060,7 @@
                 <relationship>crmpc:P14.1_in_the_role_of</relationship>
                 <entity>
                   <type>crm:E55_Type</type>
-                  <type>arconto:Role</type>
+                  <type>arconto:Occupation</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">architect</arg>
                   </instance_generator>
