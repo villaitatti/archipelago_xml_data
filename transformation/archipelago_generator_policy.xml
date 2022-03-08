@@ -11,6 +11,10 @@
     <pattern>{aat}</pattern>
   </generator>
 
+  <generator name="001-entry" prefix="arc">
+    <pattern>entry/{id}</pattern>
+  </generator>
+
   <!-- Built Work-->
 
   <generator name="100-builtwork" prefix="arc">

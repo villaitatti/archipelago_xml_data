@@ -50,8 +50,10 @@ def execute(table_folder, limit):
 
                 out_file_full = os.path.join(table_folder_out, out_file)
 
+                command = f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}'
                 print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
-                os.system(
-                    f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}')
+                print(command)
+                
+                os.system(command)
 
                 cnt += 1
