@@ -7,3 +7,5 @@ knowledge_patterns
 
 out/
 data/
+ __pycache__/
+ *.pyc
