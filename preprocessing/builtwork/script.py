@@ -221,6 +221,8 @@ def execute(limit):
   key_position = 'pos'
   key_uuid = 'UUID'
 
+  key_identifier = 'id'
+
   # JSON keys
   key_json_aat = 'AAT ID'
   key_json_name = 'NAME'
@@ -228,6 +230,9 @@ def execute(limit):
   key_json_ita = 'ITA'
   key_json_geonames = 'Geonames ID'
   key_surname = 'Surname'
+
+  def escape_uri(text):
+    return str(text).lower().replace(" ", "_")
 
   dtypes = {key_start: str, key_end: str, key_height: str, key_architect: str, key_patron: str,
             key_owner: str, key_tenant: str, key_shape_lenght: str, key_architects: str}
@@ -525,17 +530,21 @@ def execute(limit):
         function_tag.attrib[key_position] = str(
             bw.get(key_function).index(current_function) + 1)
 
+        identifier = escape_uri(current_function.get(key_function))
+
         base_tag(function_tag, key_eng, current_function.get(key_function))
         base_tag(function_tag, key_function_start,
                  current_function.get(key_function_start))
         base_tag(function_tag, key_function_end,
                  current_function.get(key_function_end))
+        base_tag(function_tag, key_identifier, identifier)
 
         # Extract transformation
         if i > 0:
           transformation_function = et.SubElement(builtwork, key_transformation_function)
-          transformation_function.attrib['from'] = str(i)
-          transformation_function.attrib['to'] = str(i+1)
+          transformation_function.attrib['uuid'] = str(uuid.uuid1())
+          transformation_function.attrib['from'] = escape_uri(bw.get(key_function)[i-1].get(key_function))
+          transformation_function.attrib['to'] = escape_uri(bw.get(key_function)[i].get(key_function))
           base_tag(transformation_function, key_function_start,
                    current_function.get(key_function_start))
 
@@ -553,18 +562,22 @@ def execute(limit):
         # update current_use with data from uses list
         current_use = get_bw_use(current_use)
 
+        identifier = escape_uri(current_use.get(key_use))
+
         # Set eng name
         base_tag(use_tag, key_eng, current_use.get(key_use))
         base_tag(use_tag, key_ita, current_use.get(key_json_ita))
         base_tag(use_tag, key_aat, current_use.get(key_json_aat))
         base_tag(use_tag, key_use_start, current_use.get(key_use_start))
         base_tag(use_tag, key_use_end, current_use.get(key_use_end))
+        base_tag(use_tag, key_identifier, identifier)
 
         # Extract transformation
         if i > 0:
           transformation_use = et.SubElement(builtwork, key_transformation_use)
-          transformation_use.attrib['from'] = str(i)
-          transformation_use.attrib['to'] = str(i+1)
+          transformation_use.attrib['uuid'] = str(uuid.uuid1())
+          transformation_use.attrib['from'] = escape_uri(bw.get(key_use)[i-1].get(key_use))
+          transformation_use.attrib['to'] = escape_uri(bw.get(key_use)[i].get(key_use))
           base_tag(transformation_use, key_use_start,
                    current_use.get(key_use_start))
 
@@ -582,6 +595,8 @@ def execute(limit):
         # update current_typology with data from typology list
         current_typology = get_bw_typology(current_typology)
 
+        identifier = escape_uri(current_typology.get(key_typology))
+
         # Set resulting elements
         base_tag(typology_tag, key_eng, current_typology.get(key_typology))
         base_tag(typology_tag, key_ita, current_typology.get(key_json_ita))
@@ -590,13 +605,15 @@ def execute(limit):
                  current_typology.get(key_typology_start))
         base_tag(typology_tag, key_typology_end,
                  current_typology.get(key_typology_end))
+        base_tag(typology_tag, key_identifier, identifier)
 
         # Extract transformation
         if i > 0:
           transformation_typology = et.SubElement(
               builtwork, key_transformation_typology)
-          transformation_typology.attrib['from'] = str(i)
-          transformation_typology.attrib['to'] = str(i+1)
+          transformation_typology.attrib['uuid'] = str(uuid.uuid1())
+          transformation_typology.attrib['from'] = escape_uri(bw.get(key_typology)[i-1].get(key_typology))
+          transformation_typology.attrib['to'] = escape_uri(bw.get(key_typology)[i].get(key_typology))
           base_tag(transformation_typology, key_typology_start,
                    current_typology.get(key_typology_start))
 
