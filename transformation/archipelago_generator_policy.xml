@@ -11,8 +11,8 @@
     <pattern>{aat}</pattern>
   </generator>
 
-  <generator name="001-entry" prefix="arc">
-    <pattern>entry/{id}</pattern>
+  <generator name="001-vocab" prefix="arc">
+    <pattern>vocab/{id}</pattern>
   </generator>
 
   <!-- Built Work-->

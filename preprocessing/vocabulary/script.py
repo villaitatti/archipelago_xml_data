@@ -1,14 +1,14 @@
 from contextlib import nullcontext
+from curses import keyname
 import os
 import pandas as pd
 import numpy as np
 import xml.etree.ElementTree as et
 import xml.dom.minidom as md
+import unidecode
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-dir_data = 'data'
-
-builtwork_filename = os.path.join(dir_path, dir_data, 'builtwork.csv')
+dir_data = os.path.join(dir_path, 'data')
 
 KEY_BASE = 'VOCAB_ENTRY'
 KEY_AAT = 'AAT ID'
@@ -16,57 +16,82 @@ KEY_NAME = 'NAME'
 KEY_URL = 'URL'
 KEY_ITA = 'ITA'
 KEY_PARENT = 'PARENT'
+KEY_COLLECTION = 'COLLECTION'
 
-def write_xml(name, text):
+def write_xml(dir_name, name, text):
   output_directory = os.path.join(
-        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocabulary', dir_data)
+        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocabulary', 'data')
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
-
+    
   output_filename = os.path.join(output_directory, f'{name}.xml')
 
   with open(output_filename, 'w') as f:
     f.write(text)
 
 def escape_uri(text):
-  return str(text).lower().replace(" ", "_")
 
-def execute(limit):
-  df_builtwork = pd.read_csv(builtwork_filename, dtype = str).fillna(value = 'None')
+  # Remove left and right whitespaces
+  text = text.strip()
 
-  for num, row in df_builtwork.iterrows():
+  # Replace accents 
+  text = str(unidecode.unidecode(text))
 
-    # XML root
-    root = et.Element(KEY_BASE)
+  # To lowercase
+  text = text.lower()
 
-    # identifier
-    name = escape_uri(row[KEY_NAME])
-    tag_identifier = et.SubElement(root, 'identifier')
-    tag_identifier.text = name
+  # Replace whitespaces with _
+  text = text.replace(" ", "_")
 
-    # label ita
-    ita = et.SubElement(root, 'ita')
-    ita.text = row[KEY_ITA]
+  return text
 
-    # label eng
-    eng = et.SubElement(root, 'eng')
-    eng.text = row[KEY_NAME]
+def execute(limit = -1):
 
-    # is root ?
-    parent = row[KEY_PARENT]
-    if parent != 'root':
-      parent_uri = escape_uri(parent)
-      tag_parent = et.SubElement(root, 'broader')
-      tag_parent.text = parent_uri
+  for file in os.listdir(dir_data):
+    
+    if file.endswith(".csv"):
+      file_path = os.path.join(dir_data, file)
+      dir_name = file.replace('.csv', '')
 
-    # URL optional
-    url = row[KEY_AAT]
-    if url != "None":
-      tag_url = et.SubElement(root, 'related')
-      tag_url.text = url
+      df_file = pd.read_csv(file_path, dtype = str).fillna(value = 'None')
 
-    # write XML
-    final = md.parseString(et.tostring(root, method='xml')).toprettyxml()
-    write_xml(name, final)
-    print(name)
+      for num, row in df_file.iterrows():
+
+        # XML root
+        root = et.Element(KEY_BASE)
+
+        # identifier
+        name = escape_uri(row[KEY_NAME])
+        tag_identifier = et.SubElement(root, 'identifier')
+        tag_identifier.text = name
+
+        # label ita
+        ita = et.SubElement(root, 'ita')
+        ita.text = row[KEY_ITA].strip()
+
+        # label eng
+        eng = et.SubElement(root, 'eng')
+        eng.text = row[KEY_NAME].strip()
+
+        # Collection
+        collection = et.SubElement(root, 'collection')
+        collection.text = row[KEY_COLLECTION].strip()
+
+        # is root ?
+        parent = row[KEY_PARENT]
+        if parent != 'None':
+          parent_uri = escape_uri(parent.strip())
+          tag_parent = et.SubElement(root, 'broader')
+          tag_parent.text = parent_uri
+
+        # URL optional
+        url = row[KEY_AAT]
+        if url != "None":
+          tag_url = et.SubElement(root, 'related')
+          tag_url.text = url
+
+        # write XML
+        final = md.parseString(et.tostring(root, method='xml')).toprettyxml()
+        write_xml(dir_name, name, final)
+        print(name)

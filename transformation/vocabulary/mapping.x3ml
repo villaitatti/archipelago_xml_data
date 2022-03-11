@@ -59,6 +59,12 @@
       <target_info>
         <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
         <namespaces>
+          <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#" />
+        </namespaces>
+      </target_info>
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
           <namespace prefix="gvp" uri="http://vocab.getty.edu/ontology#" />
         </namespaces>
       </target_info>
@@ -95,7 +101,8 @@
           <entity>
             <type>skos:Concept</type>
             <type>arconto:Entry</type>
-            <instance_generator name="001-entry">
+            <type>crm:E55_Type</type>
+            <instance_generator name="001-vocab">
               <arg name="id" type="xpath">identifier/text()</arg>
             </instance_generator>
 
@@ -133,8 +140,7 @@
             </if>
             <entity>
               <type>skos:Concept</type>
-              <type>arconto:Entry</type>
-              <instance_generator name="001-entry">
+              <instance_generator name="001-vocab">
                 <arg name="id">text()</arg>
               </instance_generator>
             </entity>
@@ -153,7 +159,7 @@
             <if>
               <exists>text()</exists>
             </if>
-            <relationship>skos:related</relationship>
+            <relationship>owl:equivalentClass</relationship>
           </target_relation>
         </path>
         <range>
@@ -172,6 +178,8 @@
           </target_node>
         </range>
       </link>
+
+      <!-- Collection -->
 
     </mapping>
 
