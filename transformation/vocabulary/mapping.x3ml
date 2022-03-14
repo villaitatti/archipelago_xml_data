@@ -180,6 +180,34 @@
       </link>
 
       <!-- Collection -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>collection</relation>
+          </source_relation>
+          <target_relation>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <relationship>arconto:collection</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>collection</source_node>
+          <target_node>
+            <if>
+              <exists>text()</exists>
+            </if>
+            <entity>
+              <type>arconto:Remove</type>
+              <instance_generator name="001-vocab">
+                <arg name="id">text()</arg>
+              </instance_generator>
+            </entity>
+
+          </target_node>
+        </range>
+      </link> 
 
     </mapping>
 
