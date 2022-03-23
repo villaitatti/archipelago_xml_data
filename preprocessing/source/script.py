@@ -1,8 +1,10 @@
 from xml.dom import minidom as md, getDOMImplementation
 import xml.etree.ElementTree as et
 import os
+import csv
 import json
 import dateutil.parser
+import pandas as pd
 from datetime import datetime
 
 def execute(limit):
@@ -28,6 +30,7 @@ def execute(limit):
       field = et.SubElement(new_row, input_key)
       field.text = row.find(f'ns:{input_key}', ns).text
 
+  KEY_PARENT = 'parents'
 
   keys = {
       "row": "ROW",
@@ -84,6 +87,12 @@ def execute(limit):
 
   #new_document_root = et.Element('FMPDSORESULT', ns)
 
+  archival_units = set()
+
+  def add_archival_unit(unit, type, parent):
+    if unit is not None:
+      archival_units.add((unit, parent, type))
+    
   # Iterate each ROW
   for row in tags:
       # Copy the current row
@@ -150,6 +159,78 @@ def execute(limit):
       date_latest = et.SubElement(new_row, custom_keys["date_latest"])
       date_latest.text = date_latest_pretty
 
+      archival_path = ''
+
+      # Archives
+      archive = row.find(f'ns:{keys["collection"]}', ns).text
+      if archive is not None:
+        archival_path += archive
+      
+      # Fonds
+      fond = row.find(f'ns:{keys["fondo"]}', ns).text 
+      if fond is not None:
+        archival_path += f' > {fond}'
+
+      # Folder
+      folder = row.find(f'ns:{keys["busta"]}', ns).text
+      if folder is not None:
+        archival_path += f' > {folder}'
+
+      # Filza
+      file = row.find(f'ns:{keys["filza"]}', ns).text
+      if file is not None:
+        archival_path += f' > {file}'
+      
+      # Folio
+      folio = row.find(f'ns:{keys["folio"]}', ns).text
+      if folio is not None:
+        archival_path += f' > {folio}'
+
+      # Drawing
+      drawing = row.find(f'ns:{keys["drawing"]}', ns).text
+      if drawing is not None:
+        archival_path += f' > {drawing}'
+
+      name = row.find(f'ns:{keys["title"]}', ns).text
+      archival_units.add((row_id, archival_path, name))
+
+
+      
+
+      """
+      # Archives
+      archive = row.find(f'ns:{keys["collection"]}', ns).text
+      parent = None
+      add_archival_unit(archive, 'https://archipelago.itatti.harvard.edu/resource/vocab/archive', parent)
+
+      # Fonds
+      fond = row.find(f'ns:{keys["fondo"]}', ns).text
+      parent = archive
+      add_archival_unit(fond, 'https://archipelago.itatti.harvard.edu/resource/vocab/fond', parent)
+
+      # Folder
+      folder = row.find(f'ns:{keys["busta"]}', ns).text
+      if fond is not None:
+        parent = fond
+      add_archival_unit(folder, 'https://archipelago.itatti.harvard.edu/resource/vocab/folder', parent)
+
+      # Filza
+      file = row.find(f'ns:{keys["filza"]}', ns).text
+      if folder is not None:
+        parent = folder
+      add_archival_unit(file, 'https://archipelago.itatti.harvard.edu/resource/vocab/archival_unit', parent)
+
+      # Folio and Drawing
+      if file is not None:
+        parent = file 
+
+      folio = row.find(f'ns:{keys["folio"]}', ns).text
+      add_archival_unit(folio, 'https://archipelago.itatti.harvard.edu/resource/vocab/folio', parent)
+
+      drawing = row.find(f'ns:{keys["drawing"]}', ns).text
+      add_archival_unit(drawing, 'https://archipelago.itatti.harvard.edu/resource/vocab/drawing', parent)
+      """
+
       """
       # Island
       island_found = row.find(f'ns:{keys["island"]}', ns).text
@@ -190,3 +271,8 @@ def execute(limit):
       #new_document_root.append(new_row)
       final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
       write_file(final)
+
+  df = pd.DataFrame(list(archival_units), columns=['id', 'path', 'name'])
+  df = df.set_index('id')
+  df = df.sort_values('path')
+  df.to_csv(os.path.join(dir_path, 'archival_units.csv'), quoting=csv.QUOTE_NONNUMERIC)
