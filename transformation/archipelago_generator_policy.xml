@@ -15,6 +15,18 @@
     <pattern>vocab/{id}</pattern>
   </generator>
 
+  <generator name="002-general" prefix="arc">
+    <pattern>{res}/{id}</pattern>
+  </generator>
+
+  <generator name="003-container" prefix="Platform">
+    <pattern>{container}</pattern>
+  </generator>
+
+  <generator name="002.1-general_container" prefix="arc">
+    <pattern>{res}/{id}/container</pattern>
+  </generator>
+
   <!-- Built Work-->
 
   <generator name="100-builtwork" prefix="arc">

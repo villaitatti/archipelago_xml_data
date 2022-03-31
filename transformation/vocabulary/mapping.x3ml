@@ -68,6 +68,28 @@
           <namespace prefix="gvp" uri="http://vocab.getty.edu/ontology#" />
         </namespaces>
       </target_info>
+
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
+          <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
+        </namespaces>
+      </target_info>
+
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
+          <namespace prefix="ldp" uri="http://www.w3.org/ns/ldp#" />
+        </namespaces>
+      </target_info>
+
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
+          <namespace prefix="provo" uri="http://www.w3.org/ns/prov#" />
+        </namespaces>
+      </target_info>
+
       <target_collection />
     </target>
     <mapping_info>
@@ -88,6 +110,7 @@
   <namespaces>
     <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/" />
     <namespace prefix="aat" uri="http://vocab.getty.edu/aat/" />
+    <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
   </namespaces>
 
 
@@ -102,7 +125,8 @@
             <type>skos:Concept</type>
             <type>arconto:Entry</type>
             <type>crm:E55_Type</type>
-            <instance_generator name="001-vocab">
+            <instance_generator name="002-general">
+              <arg name="res" type="constant">vocabulary</arg>
               <arg name="id" type="xpath">identifier/text()</arg>
             </instance_generator>
 
@@ -203,6 +227,66 @@
               <instance_generator name="001-vocab">
                 <arg name="id">text()</arg>
               </instance_generator>
+            </entity>
+
+          </target_node>
+        </range>
+      </link> 
+
+      <!-- Container -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>container</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>ldp:is_contained_in</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>container</source_node>
+          <target_node>
+            <entity>
+              <type>ldp:Container</type>
+              <instance_generator name="003-container">
+                <arg name="container">parent/text()</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>ldp:contains</relationship>
+                <entity>
+                  <type>ldp:Resource</type>
+                  <type>provo:Entity</type>
+                  <instance_generator name="002.1-general_container">
+                    <arg name="res" type="constant">archival_entity</arg>
+                    <arg name="id" type="xpath">../identifier/text()</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>provo:generatedAtTime</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Upper</arg>
+                        <arg name="text" type="xpath">time/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                  <additional>
+                    <relationship>provo:wasAttributedTo</relationship>
+                    <entity>
+                      <type>arconto:Remove</type>
+                      <instance_generator name="002-general">
+                        <arg name="res" type="constant">user</arg>
+                        <arg name="id">creator/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
             </entity>
 
           </target_node>

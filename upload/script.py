@@ -23,10 +23,12 @@ def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.har
       if limit and cnt == int(limit):
         break
 
-      graph_uri = urllib.parse.quote(f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/context", safe='') 
+      normal_uri = f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/container/context"
+      graph_uri = urllib.parse.quote(normal_uri, safe='') 
       request_url = f'{url}/rdf-graph-store?graph={graph_uri}'
 
-      print(f'### {filename} ###')
+      print(f'### {filename}')
+      print(f'### {normal_uri}')
 
       #DEL
       if d:
