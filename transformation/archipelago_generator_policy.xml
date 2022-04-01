@@ -11,7 +11,7 @@
     <pattern>{aat}</pattern>
   </generator>
 
-  <generator name="001-vocab" prefix="arc">
+  <generator name="001-rs-vocab" prefix="rs">
     <pattern>vocab/{id}</pattern>
   </generator>
 
@@ -23,6 +23,14 @@
     <pattern>{container}</pattern>
   </generator>
 
+  <generator name="002.2-vocab" prefix="arc">
+    <pattern>vocab/{res}/{id}</pattern>
+  </generator>
+
+  <generator name="002.2-vocab_container" prefix="arc">
+    <pattern>vocab/{res}/{id}/container</pattern>
+  </generator>
+  
   <generator name="002.1-general_container" prefix="arc">
     <pattern>{res}/{id}/container</pattern>
   </generator>

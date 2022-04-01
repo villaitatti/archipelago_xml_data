@@ -28,7 +28,6 @@ def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.har
       request_url = f'{url}/rdf-graph-store?graph={graph_uri}'
 
       print(f'### {filename}')
-      print(f'### {normal_uri}')
 
       #DEL
       if d:

@@ -50,7 +50,7 @@ def escape_uri(text):
 def execute(limit = -1):
 
   for file in os.listdir(dir_data):
-    
+
     if file.endswith(".csv"):
       file_path = os.path.join(dir_data, file)
       dir_name = file.replace('.csv', '')
@@ -59,11 +59,14 @@ def execute(limit = -1):
 
       for num, row in df_file.iterrows():
 
+        if limit is not None and int(limit) == num:
+          break
+
         # XML root
         root = et.Element(KEY_BASE)
 
         # identifier
-        name = escape_uri(row[KEY_ITA])
+        name = escape_uri(row[KEY_NAME])
         tag_identifier = et.SubElement(root, 'identifier')
         tag_identifier.text = name
 
@@ -76,21 +79,16 @@ def execute(limit = -1):
         collection = et.SubElement(root, 'collection')
         collection.text = row[KEY_COLLECTION].strip()
 
-
         # label ita
-        """
         ita = et.SubElement(root, 'ita')
         ita.text = row[KEY_ITA].strip()
-        """
 
         # is root ?
-        """
         parent = row[KEY_PARENT]
         if parent != 'None':
           parent_uri = escape_uri(parent.strip())
           tag_parent = et.SubElement(root, 'broader')
           tag_parent.text = parent_uri
-        """
 
         # URL optional
         url = row[KEY_AAT]
