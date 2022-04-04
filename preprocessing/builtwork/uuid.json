@@ -1,0 +1,250 @@
+{
+    "SS_BLDG_001": {
+        "bw_uuid": "131ede78-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "131edefa-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_002": {
+        "bw_uuid": "1320249a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132024e0-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_003": {
+        "bw_uuid": "132049c0-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13204a10-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_004": {
+        "bw_uuid": "13206982-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132069aa-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_005": {
+        "bw_uuid": "1321548c-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132155ae-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_006": {
+        "bw_uuid": "1321c2a0-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1321c2f0-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_007": {
+        "bw_uuid": "13225cec-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13225d28-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_008": {
+        "bw_uuid": "1323c51e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1323c62c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_009": {
+        "bw_uuid": "13245678-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132456e6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_010": {
+        "bw_uuid": "13259308-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13259c68-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_011": {
+        "bw_uuid": "13263ae2-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13263b50-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_012": {
+        "bw_uuid": "13276700-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132767aa-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_013": {
+        "bw_uuid": "13286e7a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13286ede-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_014": {
+        "bw_uuid": "1328c26c-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1328c2a8-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_015": {
+        "bw_uuid": "132ac44a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132ac562-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_016": {
+        "bw_uuid": "132aea6a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132aeace-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_017": {
+        "bw_uuid": "132b1378-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132b13aa-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_018": {
+        "bw_uuid": "132b345c-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132b3484-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_019": {
+        "bw_uuid": "132b923a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132b926c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_020": {
+        "bw_uuid": "132c1ca0-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132c1ce6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_021": {
+        "bw_uuid": "132c9644-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132c9676-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_022": {
+        "bw_uuid": "132cf5e4-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132cf648-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_023": {
+        "bw_uuid": "132d110a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132d113c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_024": {
+        "bw_uuid": "132d2e60-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132d2ea6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_025": {
+        "bw_uuid": "132d4a76-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132d4abc-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_026": {
+        "bw_uuid": "132d65ba-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132d65ec-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_027": {
+        "bw_uuid": "132d8a9a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132d8ae0-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_028": {
+        "bw_uuid": "132da822-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132da87c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_029": {
+        "bw_uuid": "132dc76c-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132dc7b2-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_030": {
+        "bw_uuid": "132de58a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132de5e4-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_031": {
+        "bw_uuid": "132e04a2-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e04fc-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_032": {
+        "bw_uuid": "132e2108-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e2144-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_033": {
+        "bw_uuid": "132e3ef4-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e3f4e-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_034": {
+        "bw_uuid": "132e5b14-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e5b46-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_035": {
+        "bw_uuid": "132e737e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e73ba-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_036": {
+        "bw_uuid": "132e8d1e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132e8daa-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_037": {
+        "bw_uuid": "132ea9a2-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132ea9ca-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_038": {
+        "bw_uuid": "132ec2e8-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132ec374-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_039": {
+        "bw_uuid": "132ede22-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132ede5e-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_040": {
+        "bw_uuid": "132f001e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f0078-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_041": {
+        "bw_uuid": "132f1c84-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f1cca-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_042": {
+        "bw_uuid": "132f3b38-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f3bf6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_043": {
+        "bw_uuid": "132f5816-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f5866-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_045": {
+        "bw_uuid": "132f7260-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f7292-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_046": {
+        "bw_uuid": "132f96c8-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132f9704-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_047": {
+        "bw_uuid": "132faece-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132faf00-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_048": {
+        "bw_uuid": "132fc738-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132fc76a-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_049": {
+        "bw_uuid": "132fe1e6-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "132fe27c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_BLDG_050": {
+        "bw_uuid": "133005f4-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13300630-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_001": {
+        "bw_uuid": "13302872-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "133028cc-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_002": {
+        "bw_uuid": "13303d26-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13303d58-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_003": {
+        "bw_uuid": "133053e2-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13305428-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_004": {
+        "bw_uuid": "13306828-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13306850-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_005": {
+        "bw_uuid": "1330807e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1330810a-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_006": {
+        "bw_uuid": "13309866-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "133098a2-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_IS_007": {
+        "bw_uuid": "1330ad7e-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1330ada6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_001": {
+        "bw_uuid": "1330c6e2-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1330c70a-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_002": {
+        "bw_uuid": "1330de2a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1330de52-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_003": {
+        "bw_uuid": "1330fb8a-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1330fbda-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_004": {
+        "bw_uuid": "13311b56-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13311ba6-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_005": {
+        "bw_uuid": "13313460-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "1331353c-b1cd-11ec-8799-3a5becfe4abe"
+    },
+    "SS_OS_006": {
+        "bw_uuid": "13314f86-b1cd-11ec-8799-3a5becfe4abe",
+        "st_uuid": "13314fcc-b1cd-11ec-8799-3a5becfe4abe"
+    }
+}

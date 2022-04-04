@@ -231,6 +231,10 @@ def execute(limit):
   key_json_geonames = 'Geonames ID'
   key_surname = 'Surname'
 
+  uuid_filename = os.path.join(dir_path, 'uuid.json')
+  uuid_bw = 'bw_uuid'
+  uuid_st = 'st_uuid'
+
   def escape_uri(text):
     return str(text).lower().replace(" ", "_")
 
@@ -419,12 +423,21 @@ def execute(limit):
     builtworks[row_id][key_patron] = patron_set
 
   cnt = 0
+  uuid_dict = {}
+  
+  if os.path.isfile(uuid_filename):
+    uuid_dict = json.load(open(uuid_filename))
+
 
   # PRE-PROCESSING
   for bw_id, bw in builtworks.items():
 
-    print(bw_id)
-
+    if bw_id not in uuid_dict:
+      uuid_dict[bw_id] = {
+        uuid_bw: str(uuid.uuid1()),
+        uuid_st: str(uuid.uuid1()),
+      }
+    
     if limit and cnt == int(limit):
       break
 
@@ -436,7 +449,7 @@ def execute(limit):
     # Processing ST Volume
 
     # UUID
-    st_volume_uuid = uuid.uuid1()
+    st_volume_uuid = uuid_dict[bw_id][uuid_st]
     base_tag(st_volume, key_uuid, st_volume_uuid)
 
     # bw id
@@ -463,7 +476,7 @@ def execute(limit):
     builtwork = et.SubElement(xml_row, 'builtwork')
 
     # UUID
-    builtwork_uuid = uuid.uuid1()
+    builtwork_uuid = uuid_dict[bw_id][uuid_st]
     base_tag(builtwork, key_uuid, builtwork_uuid)
 
     # IslandName
@@ -672,3 +685,6 @@ def execute(limit):
     write_file(bw_id, final)
 
     cnt += 1
+
+  with open(uuid_filename, 'w') as f:
+    f.write(json.dumps(uuid_dict, indent=4, sort_keys=True))
