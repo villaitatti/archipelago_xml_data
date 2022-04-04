@@ -10,6 +10,16 @@ import uuid
 
 
 def execute(limit):
+  
+  def get_type(filename):
+    if "BLDG" in filename:
+      return "building"
+
+    if "IS" in filename:
+      return "island"
+
+    if "OS" in filename:
+      return "open_space"
 
   def order_df(df):
     df = df.set_index(key_bw_id)
@@ -474,6 +484,10 @@ def execute(limit):
     # Processing Building
 
     builtwork = et.SubElement(xml_row, 'builtwork')
+
+    # Type
+    builtwork_type = et.SubElement(builtwork, 'type')
+    builtwork_type.text = get_type(bw_id)
 
     # UUID
     builtwork_uuid = uuid_dict[bw_id][uuid_st]
