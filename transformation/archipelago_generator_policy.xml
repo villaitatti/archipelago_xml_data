@@ -41,6 +41,10 @@
     <pattern>builtwork/{bw_id}</pattern>
   </generator>
 
+  <generator name="100.1-builtwork_container" prefix="arc">
+    <pattern>builtwork/{bw_id}/container</pattern>
+  </generator>
+
   <generator name="110-builtwork-identifier" prefix="arc">
     <pattern>builtwork/{bw_id}/identifier</pattern>
   </generator>
