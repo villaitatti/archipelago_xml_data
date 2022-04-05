@@ -1,0 +1,2 @@
+PREFIX arconto: <https://archipelago.itatti.harvard.edu/arconto#>
+delete {?s arconto:Remove ?o} where {?s arconto:Remove ?o}

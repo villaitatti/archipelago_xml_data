@@ -43,6 +43,8 @@ def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.har
       cnt+=1
 
   if u:
-    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove.sq")}\' {url}/sparql'
-    print(command)
-    print(f'DEL\t\t{os.system(command)}') 
+    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_type.sq")}\' {url}/sparql'
+    print(f'DEL ?s a arconto:Remove\t\t{os.system(command)}') 
+
+    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_prop.sq")}\' {url}/sparql'
+    print(f'DEL ?s arconto:Remove ?o\t{os.system(command)}') 
