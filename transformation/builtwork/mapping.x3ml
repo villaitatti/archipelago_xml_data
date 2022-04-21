@@ -56,6 +56,21 @@
           <namespace prefix="arconto" uri="https://archipelago.itatti.harvard.edu/arconto#" />
         </namespaces>
       </target_info>
+
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
+          <namespace prefix="ldp" uri="http://www.w3.org/ns/ldp#" />
+        </namespaces>
+      </target_info>
+
+      <target_info>
+        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <namespaces>
+          <namespace prefix="provo" uri="http://www.w3.org/ns/prov#" />
+        </namespaces>
+      </target_info>
+
       <target_collection />
     </target>
     <mapping_info>
@@ -75,6 +90,8 @@
   <namespaces>
     <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/" />
     <namespace prefix="aat" uri="http://vocab.getty.edu/aat/" />
+    <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
+    <namespace prefix="rs" uri="http://www.researchspace.org/resource/" />
   </namespaces>
   <mappings>
 
@@ -102,18 +119,29 @@
                   <arg name="id">BW_ID/text()</arg>
                 </instance_generator>
                 <label_generator name="Literal">
-                  <arg name="text" type="xpath">BW_ID/text()</arg>
+                  <arg name="text" type="xpath">dig_label/text()</arg>
                 </label_generator>
 
                 <additional>
                   <relationship>crm:P2_has_type</relationship>
                   <entity>
-                    <type>crm:E55_Type</type>
-                    <instance_generator name="000-type">
-                      <arg name="type_id" type="constant">bidimensional_representation</arg>
+                    <type>arconto:Remove</type>
+                    <instance_generator name="002.2-vocab">
+                      <arg name="res" type="constant">representation</arg>
+                      <arg name="id" type="constant">2d</arg>
+                    </instance_generator>
+                  </entity>
+                </additional>
+
+                <additional>
+                  <relationship>crm:P1_is_identified_by</relationship>
+                  <entity>
+                    <type>crm:E42_Identifier</type>
+                    <instance_generator name="801-spacetime_volume-identifier_class">
+                      <arg name="id">BW_ID/text()</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                      <arg name="text" type="constant">Bidimensional Representation</arg>
+                      <arg name="text" type="xpath">BW_ID/text()</arg>
                     </label_generator>
                   </entity>
                 </additional>
@@ -159,7 +187,7 @@
             <entity>
               <type>crm:E52_Time-Span</type>
               <instance_generator name="830-spacetime_volume-time_span">
-                <arg name="id" type="xpath">../BW_ID/text()</arg>
+                <arg name="id" type="xpath">UUID/text()</arg>
               </instance_generator>
               <additional>
                 <relationship>crm:P81b_begin_of_the_end</relationship>
@@ -199,7 +227,7 @@
             <entity>
               <type>crm:E52_Time-Span</type>
               <instance_generator name="830-spacetime_volume-time_span">
-                <arg name="id" type="xpath">../BW_ID/text()</arg>
+                <arg name="id" type="xpath">UUID/text()</arg>
               </instance_generator>
               <additional>
                 <relationship>crm:P81a_end_of_the_begin</relationship>
@@ -238,6 +266,68 @@
           </entity>
         </target_node>
       </domain>
+
+      <!-- LDP Container -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>container</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>arconto:Remove</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>container</source_node>
+          <target_node>
+            <entity>
+              <type>arconto:Remove</type>
+              <instance_generator name="003-container">
+                <arg name="container">parent/text()</arg>
+              </instance_generator>
+
+              <additional>
+                <relationship>ldp:contains</relationship>
+                <entity>
+                  <type>ldp:Resource</type>
+                  <type>provo:Entity</type>
+                  <instance_generator name="100.1-builtwork_container">
+                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                    <arg name="text">label/text()</arg>
+                  </label_generator>
+
+                  <additional>
+                    <relationship>provo:generatedAtTime</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Upper</arg>
+                        <arg name="text" type="xpath">time/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                  <additional>
+                    <relationship>provo:wasAttributedTo</relationship>
+                    <entity>
+                      <type>arconto:Remove</type>
+                      <instance_generator name="002-general">
+                        <arg name="res" type="constant">user</arg>
+                        <arg name="id">creator/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
 
       <!-- Construction -->
       <link>
@@ -334,32 +424,102 @@
         </range>
       </link>
 
-      <!-- Material-->
+      <!-- Functions -->
       <link>
         <path>
           <source_relation>
-            <relation>//Material</relation>
+            <relation>//Function</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P45_consists_of</relationship>
+            <relationship>arconto:has_function</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>//Material</source_node>
+          <source_node>//Function</source_node>
           <target_node>
             <entity>
-              <type>crm:E57_Material</type>
-              <instance_generator name="010-type-aat">
-                <arg name="aat" type="xpath">aat/text()</arg>
+              <type>arconto:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">builtwork_types</arg>
+                <arg name="id" type="xpath">id/text()</arg>
               </instance_generator>
-              <label_generator name="Literal">
-                <arg name="text" type="xpath">eng/text()</arg>
-                <arg name="language" type="constant">en</arg>
-              </label_generator>
-              <label_generator name="Literal">
-                <arg name="text" type="xpath">ita/text()</arg>
-                <arg name="language" type="constant">it</arg>
-              </label_generator>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+      <!-- transformation_function -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//transformation_function</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P124i_was_transformed_by</relationship>
+          </target_relation>
+        </path>
+
+        <range>
+          <source_node>//transformation_function</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E81_Transformation</type>
+              <instance_generator name="1B0-builtwork-transformation-function">
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">transformation_function_uuid/text()</arg>
+              </instance_generator>
+
+              <!-- Link to new Function -->
+              <additional>
+                <relationship>crm:P123_resulted_in</relationship>
+                <entity>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">to/text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <!-- Link to old function -->
+              <additional>
+                <relationship>crm:P124_transformed</relationship>
+                <entity>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">from/text()</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+              <!-- Date -->
+              <additional>
+                <relationship>crm:P4_has_time-span</relationship>
+                <entity>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="1B3-builtwork-transformation-function-date">
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">transformation_function_uuid/text()</arg>
+                  </instance_generator>
+
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Start_Function/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
+
+                </entity>
+              </additional>
+
             </entity>
           </target_node>
         </range>
@@ -379,9 +539,9 @@
           <source_node>//Use</source_node>
           <target_node>
             <entity>
-              <type>crm:E41_Appellation</type>
-              <type>arconto:Use</type>
-              <instance_generator name="001-entry">
+              <type>arconto:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">builtwork_types</arg>
                 <arg name="id" type="xpath">id/text()</arg>
               </instance_generator>
             </entity>
@@ -389,7 +549,7 @@
         </range>
       </link>
 
-      <!-- //transformation_use -->
+      <!-- transformation_use -->
       <link>
         <path>
           <source_relation>
@@ -406,17 +566,18 @@
             <entity>
               <type>crm:E81_Transformation</type>
               <instance_generator name="1C0-builtwork-transformation-use">
-                <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                <arg name="tf_id" type="xpath">@uuid</arg>
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">transformation_use_uuid/text()</arg>
               </instance_generator>
 
               <!-- Link to new -->
               <additional>
                 <relationship>crm:P123_resulted_in</relationship>
                 <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@to</arg>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">to/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -425,9 +586,10 @@
               <additional>
                 <relationship>crm:P124_transformed</relationship>
                 <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@from</arg>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">from/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -438,17 +600,14 @@
                 <entity>
                   <type>crm:E52_Time-Span</type>
                   <instance_generator name="1C3-builtwork-transformation-use-date">
-                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                    <arg name="tf_id" type="xpath">@uuid</arg>
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">transformation_use_uuid/text()</arg>
                   </instance_generator>
 
                   <additional>
                     <relationship>crm:P81a_end_of_the_begin</relationship>
                     <entity>
                       <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_info>
-                        <constant />
-                      </instance_info>
                       <instance_generator name="GermanDateTime">
                         <arg name="bound" type="constant">Lower</arg>
                         <arg name="text" type="xpath">Start_Use/text()</arg>
@@ -478,9 +637,9 @@
           <source_node>//Typology</source_node>
           <target_node>
             <entity>
-              <type>crm:E41_Appellation</type>
-              <type>arconto:Typology</type>
-              <instance_generator name="001-entry">
+              <type>arconto:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">builtwork_types</arg>
                 <arg name="id" type="xpath">id/text()</arg>
               </instance_generator>
             </entity>
@@ -488,7 +647,7 @@
         </range>
       </link>
 
-      <!-- //transformation_typology -->
+      <!-- transformation_typologies -->
       <link>
         <path>
           <source_relation>
@@ -505,28 +664,30 @@
             <entity>
               <type>crm:E81_Transformation</type>
               <instance_generator name="1D0-builtwork-transformation-typology">
-                <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                <arg name="tf_id" type="xpath">@uuid</arg>
+                <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                <arg name="tf_id" type="xpath">transformation_typology_uuid/text()</arg>
               </instance_generator>
 
-              <!-- Link to new Function -->
+              <!-- Link to new -->
               <additional>
                 <relationship>crm:P123_resulted_in</relationship>
                 <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@to</arg>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">to/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
 
-              <!-- Link to old function -->
+              <!-- Link to old -->
               <additional>
                 <relationship>crm:P124_transformed</relationship>
                 <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@from</arg>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="002.2-vocab">
+                    <arg name="res" type="constant">builtwork_types</arg>
+                    <arg name="id" type="xpath">from/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -537,17 +698,14 @@
                 <entity>
                   <type>crm:E52_Time-Span</type>
                   <instance_generator name="1D3-builtwork-transformation-typology-date">
-                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                    <arg name="tf_id" type="xpath">@uuid</arg>
+                    <arg name="bw_id" type="xpath">../../UUID/text()</arg>
+                    <arg name="tf_id" type="xpath">transformation_typology_uuid/text()</arg>
                   </instance_generator>
 
                   <additional>
                     <relationship>crm:P81a_end_of_the_begin</relationship>
                     <entity>
                       <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_info>
-                        <constant />
-                      </instance_info>
                       <instance_generator name="GermanDateTime">
                         <arg name="bound" type="constant">Lower</arg>
                         <arg name="text" type="xpath">Start_Typology/text()</arg>
@@ -563,100 +721,25 @@
         </range>
       </link>
 
-      <!-- Functions -->
+      <!-- Material-->
       <link>
         <path>
           <source_relation>
-            <relation>//Function</relation>
+            <relation>//Material</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:has_function</relationship>
+            <relationship>crm:P45_consists_of</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>//Function</source_node>
+          <source_node>//Material</source_node>
           <target_node>
             <entity>
-              <type>crm:E41_Appellation</type>
-              <type>arconto:Function</type>
-              <instance_generator name="001-entry">
+              <type>arconto:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">builtwork_materials</arg>
                 <arg name="id" type="xpath">id/text()</arg>
               </instance_generator>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-
-      <!-- //transformation_function -->
-      <link>
-        <path>
-          <source_relation>
-            <relation>//transformation_function</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P124i_was_transformed_by</relationship>
-          </target_relation>
-        </path>
-
-        <range>
-          <source_node>//transformation_function</source_node>
-          <target_node>
-            <entity>
-              <type>crm:E81_Transformation</type>
-              <instance_generator name="1B0-builtwork-transformation-function">
-                <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                <arg name="tf_id" type="xpath">@uuid</arg>
-              </instance_generator>
-
-              <!-- Link to new Function -->
-              <additional>
-                <relationship>crm:P123_resulted_in</relationship>
-                <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@to</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-
-              <!-- Link to old function -->
-              <additional>
-                <relationship>crm:P124_transformed</relationship>
-                <entity>
-                  <type>crm:E41_Appellation</type>
-                  <instance_generator name="001-entry">
-                    <arg name="id" type="xpath">@from</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-
-              <!-- Date -->
-              <additional>
-                <relationship>crm:P4_has_time-span</relationship>
-                <entity>
-                  <type>crm:E52_Time-Span</type>
-                  <instance_generator name="1B3-builtwork-transformation-function-date">
-                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
-                    <arg name="tf_id" type="xpath">@uuid</arg>
-                  </instance_generator>
-
-                  <additional>
-                    <relationship>crm:P81a_end_of_the_begin</relationship>
-                    <entity>
-                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_info>
-                        <constant />
-                      </instance_info>
-                      <instance_generator name="GermanDateTime">
-                        <arg name="bound" type="constant">Lower</arg>
-                        <arg name="text" type="xpath">Start_Function/text()</arg>
-                      </instance_generator>
-                    </entity>
-                  </additional>
-
-                </entity>
-              </additional>
-
             </entity>
           </target_node>
         </range>
@@ -667,7 +750,7 @@
 
         <path>
           <source_relation>
-            <relation>//Owner</relation>
+            <relation>//acquisition</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P24i_changed_ownership_through</relationship>
@@ -675,23 +758,22 @@
         </path>
 
         <range>
-          <source_node>//Owner</source_node>
+          <source_node>//acquisition</source_node>
           <target_node>
             <entity>
 
               <type>crm:E8_Acquisition</type>
               <instance_generator name="190-builtwork-acquisition">
                 <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-                <arg name="acquisition_id" type="xpath">./@pos</arg>
+                <arg name="acquisition_id" type="xpath">UUID/text()</arg>
               </instance_generator>
 
               <additional>
                 <relationship>crm:P22_transferred_title_to</relationship>
                 <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
+                  <type>arconto:Remove</type>
                   <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">person_id/text()</arg>
+                    <arg name="actor_id" type="xpath">to/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -699,10 +781,9 @@
               <additional>
                 <relationship>crm:P23_transferred_title_from</relationship>
                 <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
+                  <type>arconto:Remove</type>
                   <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">./preceding-sibling::Owner/person_id/text()</arg>
+                    <arg name="actor_id" type="xpath">from/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -713,7 +794,7 @@
                   <type>crm:E52_Time-Span</type>
                   <instance_generator name="193-builtwork-acquisition-date">
                     <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-                    <arg name="acquisition_id" type="xpathPosition">./@pos</arg>
+                    <arg name="acquisition_id" type="xpath">UUID/text()</arg>
                   </instance_generator>
 
                   <additional>
@@ -725,7 +806,7 @@
                       </instance_info>
                       <instance_generator name="GermanDateTime">
                         <arg name="bound" type="constant">Lower</arg>
-                        <arg name="text" type="xpath">Start_Owner/text()</arg>
+                        <arg name="text" type="xpath">Date/text()</arg>
                       </instance_generator>
                     </entity>
                   </additional>
@@ -752,13 +833,13 @@
         </range>
 
       </link>
-
+      
       <!-- Tenants -->
       <link>
 
         <path>
           <source_relation>
-            <relation>//Tenant</relation>
+            <relation>//custody</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P30i_custody_transferred_through</relationship>
@@ -766,22 +847,21 @@
         </path>
 
         <range>
-          <source_node>//Tenant</source_node>
+          <source_node>//custody</source_node>
           <target_node>
             <entity>
               <type>crm:E10_Transfer_of_Custody</type>
               <instance_generator name="1A0-builtwork-transfer_custody">
                 <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-                <arg name="tf_id" type="xpathPosition">.</arg>
+                <arg name="tf_id" type="xpath">UUID/text()</arg>
               </instance_generator>
 
               <additional>
                 <relationship>crm:P29_custody_received_by</relationship>
                 <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
+                  <type>arconto:Remove</type>
                   <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">person_id/text()</arg>
+                    <arg name="actor_id" type="xpath">from/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -789,10 +869,9 @@
               <additional>
                 <relationship>crm:P28_custody_surrendered_by</relationship>
                 <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
+                  <type>arconto:Remove</type>
                   <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">./preceding-sibling::Tenant/person_id/text()</arg>
+                    <arg name="actor_id" type="xpath">to/text()</arg>
                   </instance_generator>
                 </entity>
               </additional>
@@ -803,7 +882,7 @@
                   <type>crm:E52_Time-Span</type>
                   <instance_generator name="1A3-builtwork-transfer_custody-date">
                     <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-                    <arg name="tf_id" type="xpathPosition">./@pos</arg>
+                    <arg name="tf_id" type="xpath">UUID/text()</arg>
                   </instance_generator>
 
                   <additional>
@@ -815,21 +894,7 @@
                       </instance_info>
                       <instance_generator name="GermanDateTime">
                         <arg name="bound" type="constant">Lower</arg>
-                        <arg name="text" type="xpath">Start_Tenant/text()</arg>
-                      </instance_generator>
-                    </entity>
-                  </additional>
-
-                  <additional>
-                    <relationship>crm:P82a_being_of_the_end</relationship>
-                    <entity>
-                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_info>
-                        <constant />
-                      </instance_info>
-                      <instance_generator name="GermanDateTime">
-                        <arg name="bound" type="constant">Upper</arg>
-                        <arg name="text" type="xpath">End_Tenant/text()</arg>
+                        <arg name="text" type="xpath">Date/text()</arg>
                       </instance_generator>
                     </entity>
                   </additional>
@@ -842,146 +907,8 @@
         </range>
 
       </link>
+      
 
-    </mapping>
-
-    <!-- Builtwork Patrons -->
-    <mapping>
-      <domain>
-        <source_node>//Patron</source_node>
-        <target_node>
-          <entity>
-            <type>crm:E12_Production</type>
-            <instance_generator name="120-builtwork-production">
-              <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-            </instance_generator>
-          </entity>
-        </target_node>
-      </domain>
-
-      <link>
-
-        <path>
-          <source_relation>
-            <relation>person_id</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crmpc:P01_has_domain</relationship>
-          </target_relation>
-        </path>
-
-        <range>
-          <source_node>person_id</source_node>
-          <target_node>
-
-            <entity>
-              <type>crmpc:PC14_carried_out_by</type>
-              <instance_generator name="125-builtwork-role">
-                <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
-                <arg name="role_name" type="constant">patron</arg>
-                <arg name="role_id" type="xpathPosition">../</arg>
-              </instance_generator>
-
-              <additional>
-                <relationship>crmpc:P02_has_range</relationship>
-                <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
-                  <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">text()</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-
-              <additional>
-                <relationship>crmpc:P14.1_in_the_role_of</relationship>
-                <entity>
-                  <type>crm:E55_Type</type>
-                  <type>arconto:Occupation</type>
-                  <instance_info>
-                    <constant />
-                  </instance_info>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">patron</arg>
-                  </instance_generator>
-                  <label_generator name="Literal">
-                    <arg name="text" type="constant">Patron</arg>
-                    <arg name="language" type="constant">en</arg>
-                  </label_generator>
-                </entity>
-              </additional>
-
-            </entity>
-          </target_node>
-        </range>
-
-      </link>
-    </mapping>
-
-    <!-- Architect -->
-    <mapping>
-      <domain>
-        <source_node>//Architect</source_node>
-        <target_node>
-          <entity>
-            <type>crm:E12_Production</type>
-            <instance_generator name="120-builtwork-production">
-              <arg name="bw_id" type="xpath">../../UUID/text()</arg>
-            </instance_generator>
-          </entity>
-        </target_node>
-      </domain>
-
-      <link>
-        <path>
-          <source_relation>
-            <relation>person_id</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crmpc:P01_has_domain</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>person_id</source_node>
-          <target_node>
-            <entity>
-              <type>crmpc:PC14_carried_out_by</type>
-              <instance_generator name="125-builtwork-role">
-                <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
-                <arg name="role_name" type="constant">architect</arg>
-                <arg name="role_id" type="xpathPosition">../</arg>
-              </instance_generator>
-
-              <additional>
-                <relationship>crmpc:P02_has_range</relationship>
-                <entity>
-                  <type>crm:E39_Actor</type>
-                  <type>arconto:Actor</type>
-                  <instance_generator name="300-actor">
-                    <arg name="actor_id" type="xpath">text()</arg>
-                  </instance_generator>
-                </entity>
-              </additional>
-
-              <additional>
-                <relationship>crmpc:P14.1_in_the_role_of</relationship>
-                <entity>
-                  <type>crm:E55_Type</type>
-                  <type>arconto:Occupation</type>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">architect</arg>
-                  </instance_generator>
-                  <label_generator name="Literal">
-                    <arg name="text" type="constant">Architect</arg>
-                    <arg name="language" type="constant">en</arg>
-                  </label_generator>
-
-                </entity>
-              </additional>
-            </entity>
-          </target_node>
-        </range>
-      </link>
     </mapping>
 
   </mappings>

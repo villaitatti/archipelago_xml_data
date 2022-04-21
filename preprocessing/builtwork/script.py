@@ -216,8 +216,14 @@ def execute(limit):
   key_functions = 'functions'
   key_uses = 'uses'
   key_transformation_use = 'transformation_use'
+  key_transformation_uses = 'transformation_uses'
+
   key_transformation_typology = 'transformation_typology'
+  key_transformation_typologies = 'transformation_typologies'
+
   key_transformation_function = 'transformation_function'
+  key_transformation_functions = 'transformation_functions'
+
   key_typologies = 'typologies'
   key_owners = 'owners'
   key_tenants = 'tenants'
@@ -230,6 +236,9 @@ def execute(limit):
   key_person_id = 'person_id'
   key_position = 'pos'
   key_uuid = 'UUID'
+
+  key_from = 'from'
+  key_to = 'to'
 
   key_identifier = 'id'
 
@@ -454,32 +463,9 @@ def execute(limit):
     # Create the current row
     xml_row = et.Element(key_row)
 
-    st_volume = et.SubElement(xml_row, 'st_volume')
+    
 
-    # Processing ST Volume
-
-    # UUID
-    st_volume_uuid = uuid_dict[bw_id][uuid_st]
-    base_tag(st_volume, key_uuid, st_volume_uuid)
-
-    # bw id
-    base_tag(st_volume, key_bw_id, bw_id)
-
-    # Start_Earliest
-    base_tag(st_volume, key_start,  bw.get(key_start))
-
-    # End_Latest
-    base_tag(st_volume, key_end,  bw.get(key_end))
-
-    if bw.get(key_end) is not None:
-      year_end = datetime.strptime(bw.get(key_end), '%Y-%m-%d').year
-    else:
-      year_end = 'today'
-
-    year_start = datetime.strptime(bw.get(key_start), '%Y-%m-%d').year
-    st_volume_name = f'{bw.get(key_name)} of {get_bw_island(bw.get(key_islandname)).get(key_json_name)} from {year_start} to {year_end}'
-
-    base_tag(st_volume, 'label', st_volume_name)
+    
 
     #######################
     # Processing Building #
@@ -508,7 +494,7 @@ def execute(limit):
     time_container.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     # UUID
-    builtwork_uuid = uuid_dict[bw_id][uuid_st]
+    builtwork_uuid = uuid_dict[bw_id][uuid_bw]
     base_tag(builtwork, key_uuid, builtwork_uuid)
 
     # IslandName
@@ -560,12 +546,11 @@ def execute(limit):
 
         current_material = get_bw_material(current_material)
 
-        # Set eng name
-        base_tag(material, key_eng, current_material.get(key_material))
-        base_tag(material, key_ita, current_material.get(key_json_ita))
-        base_tag(material, key_aat, current_material.get(key_json_aat))
+        # Set identifier
+        base_tag(material, key_identifier, escape_uri(current_material.get(key_material)))
 
     # Functions
+    list_functions = []
     if bw.get(key_function) is not None and len(bw.get(key_function)) > 0:
 
       functions = et.SubElement(builtwork, key_functions)
@@ -585,15 +570,13 @@ def execute(limit):
         base_tag(function_tag, key_identifier, identifier)
 
         # Extract transformation
-        if i > 0:
-          transformation_function = et.SubElement(builtwork, key_transformation_function)
-          transformation_function.attrib['uuid'] = str(uuid.uuid1())
-          transformation_function.attrib['from'] = escape_uri(bw.get(key_function)[i-1].get(key_function))
-          transformation_function.attrib['to'] = escape_uri(bw.get(key_function)[i].get(key_function))
-          base_tag(transformation_function, key_function_start,
-                   current_function.get(key_function_start))
+        list_functions.append({
+          key_date: current_function.get(key_function_start),
+          key_name: current_function.get(key_function)
+        })
 
     # Uses
+    list_uses = []
     if bw.get(key_use) is not None and len(bw.get(key_use)) > 0:
 
       uses = et.SubElement(builtwork, key_uses)
@@ -618,15 +601,13 @@ def execute(limit):
         base_tag(use_tag, key_identifier, identifier)
 
         # Extract transformation
-        if i > 0:
-          transformation_use = et.SubElement(builtwork, key_transformation_use)
-          transformation_use.attrib['uuid'] = str(uuid.uuid1())
-          transformation_use.attrib['from'] = escape_uri(bw.get(key_use)[i-1].get(key_use))
-          transformation_use.attrib['to'] = escape_uri(bw.get(key_use)[i].get(key_use))
-          base_tag(transformation_use, key_use_start,
-                   current_use.get(key_use_start))
+        list_uses.append({
+          key_date: current_use.get(key_use_start),
+          key_name: current_use.get(key_use)
+        })
 
     # Typologies
+    list_typologies = []
     if bw.get(key_typology) is not None and len(bw.get(key_typology)) > 0:
 
       typologies = et.SubElement(builtwork, key_typologies)
@@ -652,49 +633,53 @@ def execute(limit):
                  current_typology.get(key_typology_end))
         base_tag(typology_tag, key_identifier, identifier)
 
-        # Extract transformation
-        if i > 0:
-          transformation_typology = et.SubElement(
-              builtwork, key_transformation_typology)
-          transformation_typology.attrib['uuid'] = str(uuid.uuid1())
-          transformation_typology.attrib['from'] = escape_uri(bw.get(key_typology)[i-1].get(key_typology))
-          transformation_typology.attrib['to'] = escape_uri(bw.get(key_typology)[i].get(key_typology))
-          base_tag(transformation_typology, key_typology_start,
-                   current_typology.get(key_typology_start))
+        list_typologies.append({
+          key_date: current_typology.get(key_typology_start),
+          key_name: current_typology.get(key_typology)
+        })
 
     # Owners
     if bw.get(key_owner) is not None and len(bw.get(key_owner)) > 0:
 
-      owners = et.SubElement(builtwork, key_owners)
-      for current_owner in bw.get(key_owner):
+      owners = et.SubElement(builtwork, 'acquisitions')
+      sorted_owners = sorted(bw.get(key_owner), key=lambda d: d[key_owner_start])
+
+      prev_owner = None
+      for current_owner in sorted_owners:
 
         # Create xml tag
-        owner_tag = et.SubElement(owners, key_owner)
-        # Save owner position in list
-        owner_tag.attrib[key_position] = str(
-            bw.get(key_owner).index(current_owner) + 1)
+        owner_tag = et.SubElement(owners, 'acquisition')
+        
+        base_tag(owner_tag, key_uuid, str(uuid.uuid1()))
+        base_tag(owner_tag, key_to, current_owner.get(key_owner))
 
-        base_tag(owner_tag, key_person_id, current_owner.get(key_owner))
-        base_tag(owner_tag, key_owner_start,
-                 current_owner.get(key_owner_start))
-        base_tag(owner_tag, key_owner_end, current_owner.get(key_owner_end))
+        if prev_owner is not None:
+          base_tag(owner_tag, key_from, prev_owner.get(key_owner))
+
+        base_tag(owner_tag, key_date, current_owner.get(key_owner_start))
+        prev_owner = current_owner
 
     # Tenants
     if bw.get(key_tenant) is not None and len(bw.get(key_tenant)) > 0:
 
-      tenants = et.SubElement(builtwork, key_tenants)
-      for current_tenant in bw.get(key_tenant):
+      tenants = et.SubElement(builtwork, 'custodies')
+      sorted_tenants = sorted(bw.get(key_tenant), key=lambda d: d[key_tenant_start])
+
+      prev_tenant = None
+      for current_tenant in sorted_tenants:
 
         # Create xml tag
-        tenant_tag = et.SubElement(tenants, key_tenant)
-        tenant_tag.attrib[key_position] = str(
-            bw.get(key_tenant).index(current_tenant) + 1)
+        tenant_tag = et.SubElement(tenants, 'custody')
 
-        base_tag(tenant_tag, key_person_id, current_tenant.get(key_tenant))
-        base_tag(tenant_tag, key_tenant_start,
-                 current_tenant.get(key_tenant_start))
-        base_tag(tenant_tag, key_tenant_end,
-                 current_tenant.get(key_tenant_end))
+        base_tag(tenant_tag, key_uuid, str(uuid.uuid1()))
+        base_tag(tenant_tag, key_to, current_tenant.get(key_tenant))
+
+        if prev_tenant is not None:
+          base_tag(tenant_tag, key_from, prev_tenant.get(key_tenant))
+
+        base_tag(tenant_tag, key_date, current_tenant.get(key_tenant_start))
+
+      prev_tenant = current_tenant
 
     # Architects
     if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:
@@ -711,6 +696,87 @@ def execute(limit):
       for current_patron in bw.get(key_patron):
         base_tag(et.SubElement(patrons, key_patron),
                  key_person_id, current_patron)
+    
+    # Transformation functions
+    if len(list_functions) > 1:
+      list_functions_sorted = sorted(list_functions, key=lambda d: d[key_date])
+      transformation_functions = et.SubElement(builtwork, key_transformation_functions)
+
+      for i, function in enumerate(list_functions_sorted):
+
+        transformation_function = et.SubElement(transformation_functions, key_transformation_function)
+
+        base_tag(transformation_function, 'transformation_function_uuid', str(uuid.uuid1()))
+        base_tag(transformation_function, 'pos', str(i))
+        base_tag(transformation_function, 'to', escape_uri(function[key_name]))
+        base_tag(transformation_function, key_function_start, function[key_date])
+
+        if i>0:
+          base_tag(transformation_function, 'from', escape_uri(list_functions_sorted[i-1][key_name]))
+
+    # Transformation uses
+    if len(list_uses) > 1:
+      list_uses_sorted = sorted(list_uses, key=lambda d: d[key_date]) 
+      transformation_uses = et.SubElement(builtwork, key_transformation_uses)
+
+      for i, use in enumerate(list_uses_sorted):
+        
+        transformation_use = et.SubElement(transformation_uses, key_transformation_use)
+
+        base_tag(transformation_use, 'transformation_use_uuid', str(uuid.uuid1()))
+        base_tag(transformation_use, 'pos', str(i))
+        base_tag(transformation_use, 'to', escape_uri(use[key_name]))
+        base_tag(transformation_use, key_use_start, use[key_date])
+
+        if i>0:
+          base_tag(transformation_use, 'from', escape_uri(list_uses_sorted[i-1][key_name]))
+
+    # Transformation typologies
+    if len(list_typologies) > 1:
+      list_typologies_sorted = sorted(list_typologies, key=lambda d: d[key_date])
+      transformation_typologies = et.SubElement(builtwork, key_transformation_typologies)
+
+      for i, typology in enumerate(list_typologies_sorted):
+
+        transformation_typology = et.SubElement(transformation_typologies, key_transformation_typology)
+
+        base_tag(transformation_typology, 'transformation_typology_uuid', str(uuid.uuid1()))
+        base_tag(transformation_typology, 'pos', str(i))
+        base_tag(transformation_typology, 'to', escape_uri(typology[key_name]))
+        base_tag(transformation_typology, key_typology_start, typology[key_date])
+      
+        if i>0:
+          base_tag(transformation_typology, 'from', escape_uri(list_typologies_sorted[i-1][key_name]))
+
+    ########################
+    # Processing ST Volume #
+    ########################
+
+    st_volume = et.SubElement(xml_row, 'st_volume')
+
+    # UUID
+    st_volume_uuid = uuid_dict[bw_id][uuid_st]
+    base_tag(st_volume, key_uuid, st_volume_uuid)
+
+    # bw id
+    base_tag(st_volume, key_bw_id, bw_id)
+
+    # Start_Earliest
+    base_tag(st_volume, key_start,  bw.get(key_start))
+
+    # End_Latest
+    base_tag(st_volume, key_end,  bw.get(key_end))
+
+    if bw.get(key_end) is not None:
+      year_end = datetime.strptime(bw.get(key_end), '%Y-%m-%d').year
+    else:
+      year_end = 'today'
+
+    year_start = datetime.strptime(bw.get(key_start), '%Y-%m-%d').year
+    st_volume_name = f'{bw.get(key_name)} ({get_bw_island(bw.get(key_islandname)).get(key_json_name)}) from {year_start} to {year_end}'
+
+    base_tag(st_volume, 'label', st_volume_name)
+    base_tag(st_volume, 'dig_label', f'Digital Object (2D representation) associated with {st_volume_name}') 
 
     final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 

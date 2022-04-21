@@ -456,6 +456,10 @@
     <pattern>spacetime_volume/{id}</pattern>
   </generator>
 
+  <generator name="801-spacetime_volume-identifier_class" prefix="arc">
+    <pattern>spacetime_volume/{id}/identifier</pattern>
+  </generator>
+
   <generator name="830-spacetime_volume-time_span" prefix="arc">
     <pattern>spacetime_volume/{id}/time_span</pattern>
   </generator>
