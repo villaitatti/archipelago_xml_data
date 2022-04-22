@@ -183,6 +183,13 @@ def execute(limit):
   key_end = 'End'
   key_name = 'Name'
 
+  key_production = 'production'
+  key_destruction = 'destruction'
+  key_role_patrons = 'role_patrons'
+  key_role_patron = 'role_patron'
+  key_role_architects = 'role_architects'
+  key_role_architect = 'role_architect'
+
   key_function = 'Function'
   key_function_start = 'Start_Function'
   key_function_end = 'End_Function'
@@ -505,11 +512,14 @@ def execute(limit):
     base_tag(island, key_ita,  current_island.get(key_json_name))
     base_tag(island, key_geo,  current_island.get(key_json_geonames))
 
-    # Start_Earliest
-    base_tag(builtwork, key_start,  bw.get(key_start))
+    # Production
+    production_tag = et.SubElement(builtwork, key_production)
+    base_tag(production_tag, key_date, bw.get(key_start))
 
-    # End_Latest
-    base_tag(builtwork, key_end,  bw.get(key_end))
+    # Destruction
+    if bw.get(key_end) is not None:
+      destruction_tag = et.SubElement(builtwork, key_destruction)
+      base_tag(destruction_tag, key_date,  bw.get(key_end))
 
     # Name
     base_tag(builtwork, key_name, name)
@@ -683,19 +693,27 @@ def execute(limit):
 
     # Architects
     if bw.get(key_architect) is not None and len(bw.get(key_architect)) > 0:
+      
+      role_architects_tag = et.SubElement(production_tag, key_role_architects)
 
-      architects = et.SubElement(builtwork, key_architects)
       for current_architect in bw.get(key_architect):
-        base_tag(et.SubElement(architects, key_architect),
-                 key_person_id, current_architect)
+        
+        role_architect_tag = et.SubElement(role_architects_tag, key_role_architect)
+
+        base_tag(role_architect_tag, key_uuid, str(uuid.uuid1()))
+        base_tag(role_architect_tag, key_person_id, current_architect)
 
     # Patrons
     if bw.get(key_patron) is not None and len(bw.get(key_patron)) > 0:
 
-      patrons = et.SubElement(builtwork, key_patrons)
+      role_patrons_tag = et.SubElement(production_tag, key_role_patrons)
+
       for current_patron in bw.get(key_patron):
-        base_tag(et.SubElement(patrons, key_patron),
-                 key_person_id, current_patron)
+
+        role_patron_tag = et.SubElement(role_patrons_tag, key_role_patron)
+
+        base_tag(role_patron_tag, key_uuid, str(uuid.uuid1()))
+        base_tag(role_patron_tag, key_person_id, current_patron)
     
     # Transformation functions
     if len(list_functions) > 1:

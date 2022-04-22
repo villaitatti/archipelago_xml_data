@@ -333,47 +333,46 @@
       <link>
         <path>
           <source_relation>
-            <relation>Start</relation>
+            <relation>production</relation>
           </source_relation>
           <target_relation>
-            <if>
-              <exists>text()</exists>
-            </if>
             <relationship>crm:P108i_was_produced_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>production</source_node>
+          <target_node>
             <entity>
               <type>crm:E12_Production</type>
               <instance_generator name="120-builtwork-production">
                 <arg name="bw_id" type="xpath">../UUID/text()</arg>
               </instance_generator>
-            </entity>
-            <relationship>crm:P4_has_time-span</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>Start</source_node>
-          <target_node>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-              <instance_generator name="123-builtwork-production-date">
-                <arg name="bw_id" type="xpath">../UUID/text()</arg>
-              </instance_generator>
+
+              <!-- Date -->
               <additional>
-                <relationship>crm:P81a_end_of_the_begin</relationship>
+                <relationship>crm:P4_has_time-span</relationship>
                 <entity>
-                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                  <instance_info>
-                    <constant />
-                  </instance_info>
-                  <instance_generator name="GermanDateTime">
-                    <arg name="bound" type="constant">Lower</arg>
-                    <arg name="text" type="xpath">text()</arg>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="123-builtwork-production-date">
+                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
                   </instance_generator>
+                  <additional>
+                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_info>
+                        <constant />
+                      </instance_info>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Lower</arg>
+                        <arg name="text" type="xpath">Date/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
-            </entity>
+
+            </entity> 
           </target_node>
         </range>
       </link>
@@ -382,44 +381,44 @@
       <link>
         <path>
           <source_relation>
-            <relation>End</relation>
+            <relation>destruction</relation>
           </source_relation>
           <target_relation>
-            <if>
-              <exists>text()</exists>
-            </if>
             <relationship>crm:P13i_was_destroyed_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>destruction</source_node>
+          <target_node>
             <entity>
               <type>crm:E6_Destruction</type>
               <instance_generator name="130-builtwork-destruction">
                 <arg name="bw_id" type="xpath">../UUID/text()</arg>
               </instance_generator>
-            </entity>
-            <relationship>crm:P4_has_time-span</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>End</source_node>
-          <target_node>
-            <if>
-              <exists>text()</exists>
-            </if>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-              <instance_generator name="133-buil_work-destruction-date">
-                <arg name="bw_id" type="xpath">../UUID/text()</arg>
-              </instance_generator>
+
+              <!-- Date -->
               <additional>
-                <relationship>crm:P82a_begin_of_the_end</relationship>
+                <relationship>crm:P4_has_time-span</relationship>
                 <entity>
-                  <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                  <instance_generator name="GermanDateTime">
-                    <arg name="bound" type="constant">Upper</arg>
-                    <arg name="text" type="xpath">text()</arg>
+                  <type>crm:E52_Time-Span</type>
+                  <instance_generator name="133-buil_work-destruction-date">
+                    <arg name="bw_id" type="xpath">../UUID/text()</arg>
                   </instance_generator>
+                  <additional>
+                    <relationship>crm:P82a_begin_of_the_end</relationship>
+                    <entity>
+                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
+                      <instance_generator name="GermanDateTime">
+                        <arg name="bound" type="constant">Upper</arg>
+                        <arg name="text" type="xpath">Date/text()</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
+
             </entity>
+            
           </target_node>
         </range>
       </link>
@@ -907,9 +906,137 @@
         </range>
 
       </link>
-      
 
     </mapping>
+
+    <!-- Patrons -->
+    <mapping>
+      <domain>
+        <source_node>//role_patron</source_node>
+        <target_node>
+          <entity>
+            <type>crmpc:PC14_carried_out_by</type>
+            <instance_generator name="125-builtwork-role">
+              <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
+              <arg name="role_name" type="constant">patron</arg>
+              <arg name="role_id" type="xpath">UUID/text()</arg>
+            </instance_generator>
+
+            <!-- Production --> 
+            <additional>
+              <relationship>crmpc:P01_has_domain</relationship>
+              <entity>
+                <type>crm:E12_Production</type>
+                <instance_generator name="120-builtwork-production">
+                  <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
+                </instance_generator>
+              </entity>
+            </additional>
+
+            <!-- Role -->
+            <additional>
+              <relationship>crmpc:P14.1_in_the_role_of</relationship>
+              <entity>
+                <type>arconto:Remove</type>
+                <instance_generator name="002.2-vocab">
+                  <arg name="res" type="constant">actor_types</arg>
+                  <arg name="id" type="constant">patron</arg>
+                </instance_generator>
+              </entity>
+            </additional>
+
+          </entity>
+        </target_node>
+      </domain>
+
+      <link>
+        <path>
+          <source_relation>
+            <relation>person_id</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crmpc:P02_has_range</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>person_id</source_node>
+          <target_node>
+            <entity>
+              <type>arconto:Remove</type>
+              <instance_generator name="300-actor">
+                <arg name="actor_id" type="xpath">text()</arg>
+              </instance_generator>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+    </mapping>
+
+    <!-- Architects -->
+    <mapping>
+      <domain>
+        <source_node>//role_architect</source_node>
+        <target_node>
+          <entity>
+            <type>crmpc:PC14_carried_out_by</type>
+            <instance_generator name="125-builtwork-role">
+              <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
+              <arg name="role_name" type="constant">architect</arg>
+              <arg name="role_id" type="xpath">UUID/text()</arg>
+            </instance_generator>
+
+            <!-- Production --> 
+            <additional>
+              <relationship>crmpc:P01_has_domain</relationship>
+              <entity>
+                <type>crm:E12_Production</type>
+                <instance_generator name="120-builtwork-production">
+                  <arg name="bw_id" type="xpath">../../../UUID/text()</arg>
+                </instance_generator>
+              </entity>
+            </additional>
+
+            <!-- Role -->
+            <additional>
+              <relationship>crmpc:P14.1_in_the_role_of</relationship>
+              <entity>
+                <type>arconto:Remove</type>
+                <instance_generator name="002.2-vocab">
+                  <arg name="res" type="constant">actor_types</arg>
+                  <arg name="id" type="constant">architect</arg>
+                </instance_generator>
+              </entity>
+            </additional>
+
+          </entity>
+        </target_node>
+      </domain>
+
+      <link>
+        <path>
+          <source_relation>
+            <relation>person_id</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crmpc:P02_has_range</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>person_id</source_node>
+          <target_node>
+            <entity>
+              <type>arconto:Remove</type>
+              <instance_generator name="300-actor">
+                <arg name="actor_id" type="xpath">text()</arg>
+              </instance_generator>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+    </mapping>
+    
 
   </mappings>
 
