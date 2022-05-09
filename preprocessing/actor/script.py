@@ -1,5 +1,8 @@
+from email.mime import base
 import xml.dom.minidom as md
 import xml.etree.ElementTree as et
+from datetime import datetime, timezone
+import uuid
 import os
 import re
 import json
@@ -7,13 +10,34 @@ import json
 actor_group = [123, 16, 107, 184, 73, 133, 106, 42,
                155, 17, 18, 102, 87, 86, 94, 124, 95, 89, 88, 90]
 
-
 def execute(limit):
+
+  def base_tag(parent, key, text):
+    # Block None text
+    if text is None:
+      return
+
+    # Block empty and wrong end
+    text = str(text)
+    if not text or re.match(r'^2019-12-31$', text):
+      return
+
+    tag = et.SubElement(parent, key)
+    tag.text = text
+
   t = 'actor'
 
   dir_path = os.path.dirname(os.path.realpath(__file__))
   root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
   filename = os.path.join(dir_path, 'People.xml')
+
+  uuid_filename = os.path.join(dir_path, 'uuid.json')
+  actor_uuid = 'actor_uuid'
+
+  uuid_dict = {}
+  if os.path.isfile(uuid_filename):
+    uuid_dict = json.load(open(uuid_filename))
+
 
   association_tables = json.load(open(os.path.join(
       root_path, 'utils', 'association_tables', 'association_tables.json'), 'r'))
@@ -66,11 +90,17 @@ def execute(limit):
   key_fraction_century = 'Fraction_Century'
   key_notes = 'Notes'
 
+  key_birth = 'birth'
+  key_death = 'death'
+  key_date = 'date'
+  key_place = 'place'
+
   # Custom created keys
   key_titles = 'Titles'
   key_activities = 'Activities'
   key_activity = 'Activity'
   key_id = 'Id'
+  key_uuid = 'UUID'
   key_start = 'Start'
   key_end = 'End'
   key_root = 'Root'
@@ -81,6 +111,7 @@ def execute(limit):
   key_aat = 'aat'
   key_ita = 'ita'
   key_eng = 'eng'
+
 
   key_events = "Events"
   key_event = "Event"
@@ -95,12 +126,12 @@ def execute(limit):
 
   all_people = []
 
-  def explode_text(s, parent, current, id=None):
+  def explode_text(s):
+
+    data = {}
 
     if s is None:
       return
-
-    tag = et.SubElement(parent, current)
 
     # AAT
     try:
@@ -108,8 +139,7 @@ def execute(limit):
         aat = re.findall(regex_aat, s)[0]
         aat = re.sub(regex_square, '', aat, re.S)
 
-        new_aat = et.SubElement(tag, key_aat)
-        new_aat.text = aat.strip()
+        data[key_aat] = aat.strip()
 
         s = re.sub(regex_aat, '', s)
 
@@ -122,8 +152,7 @@ def execute(limit):
         ita = re.findall(regex_ita, s)[0]
         ita = re.sub(regex_curly, '', ita)
 
-        new_ita = et.SubElement(tag, key_ita)
-        new_ita.text = ita.strip()
+        data[key_ita] = ita.strip()
 
         s = re.sub(regex_ita, '', s)
 
@@ -138,11 +167,8 @@ def execute(limit):
 
         dates = date.split('-')
 
-        new_start = et.SubElement(tag, key_start)
-        new_start.text = dates[0]
-
-        new_end = et.SubElement(tag, key_end)
-        new_end.text = dates[1]
+        data[key_start] = dates[0]
+        data[key_end] = dates[1]
 
         s = re.sub(regex_date, '', s)
 
@@ -151,11 +177,12 @@ def execute(limit):
 
     # ENG
     try:
-      eng = et.SubElement(tag, key_eng)
-      eng.text = s.strip()
+      data[key_eng] = s.strip()
 
     except TypeError as err:
       pass
+
+    return data
 
   def explode_place(parent, text):
     try:
@@ -168,6 +195,13 @@ def execute(limit):
 
     place_birth_name = et.SubElement(parent, key_label)
     place_birth_name.text = text
+
+  def escape_uri(text):
+    text = str(text).lower()
+    text = text.replace(' ', '_')
+    text = text.replace('.', '_')
+    text = text.replace('\'', '_')
+    return text
 
   cnt_total = 0
 
@@ -187,6 +221,13 @@ def execute(limit):
     # Copy the current row
     new_row = et.Element(actor_type)
 
+    if row_id not in uuid_dict:
+      uuid_dict[row_id] = {
+        actor_uuid: str(uuid.uuid1())
+      }
+
+    row_id = uuid_dict[row_id][actor_uuid]
+
     # ID person
     id_person = et.SubElement(new_row, key_id_person)
     id_person.text = row_id
@@ -202,52 +243,113 @@ def execute(limit):
     surname = row.find(f'ns:{key_surname}', ns).text
     surname = re.sub(regex_ita, '', surname).rstrip()
 
+    name = f'{given_name} {surname}'.rstrip()
+
     appellation = et.SubElement(new_row, key_appellation)
-    appellation.text = f'{given_name} {surname}'.rstrip()
+    appellation.text = name
+
+    # Container
+    tag_container = et.SubElement(new_row, 'container')
+
+    parent_container = et.SubElement(tag_container, 'parent')
+    parent_container.text = 'formContainer'
+
+    label_container = et.SubElement(tag_container, 'label')
+    label_container.text = f'LDP container of {name}'
+
+    creator_container = et.SubElement(tag_container, 'creator')
+    creator_container.text = 'admin'
+
+    time_container = et.SubElement(tag_container, 'time')
+    time_container.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     # alias
-    explode_text(row.find(f'ns:{key_alias}', ns).text, new_row, key_alias)
-
+    alias_text = row.find(f'ns:{key_alias}', ns).text
+    if alias_text is not None:
+      alias = explode_text(alias_text)
+      base_tag(new_row, key_alias, alias[key_eng])
+    
     # Titles
     # If the text is not empty
-    if row.find(f'ns:{key_title}', ns).text is not None:
-      val_titles = row.find(f'ns:{key_title}', ns)
-      val_titles = val_titles.text.split(';')
-
+    titles_text = row.find(f'ns:{key_title}', ns).text
+    if titles_text is not None:
       titles = et.SubElement(new_row, key_titles)
 
-      [explode_text(title, titles, key_title) for title in val_titles]
+      for title in titles_text.split(';'):
+        base_tag(titles, key_title, escape_uri(explode_text(title)[key_eng]))
 
     # patronymic
-    explode_text(row.find(f'ns:{key_patronymic}',
-                          ns).text, new_row, key_patronymic)
+    patronymic = row.find(f'ns:{key_patronymic}', ns).text
+    if patronymic is not None:
+      base_tag(new_row, key_patronymic, escape_uri(explode_text(patronymic)[key_eng]))
 
     # occupation
-    explode_text(row.find(f'ns:{key_occuption}',
-                          ns).text, new_row, key_occuption)
+    occupation = row.find(f'ns:{key_occuption}', ns).text
+    if occupation is not None:
+      base_tag(new_row, key_occuption, escape_uri(explode_text(occupation)[key_eng]))
 
     # activities
-    if row.find(f'ns:{key_activities_role}', ns).text is not None:
-      val_activities = row.find(f'ns:{key_activities_role}', ns)
-      val_activities = val_activities.text.split(';')
+    activities_text = row.find(f'ns:{key_activities_role}', ns).text
+    if activities_text is not None:
+      activities = et.SubElement(new_row, key_activities)
 
-      new_activities = et.SubElement(new_row, key_activities)
+      for activity in activities_text.split(';'):
+        text = explode_text(activity)
+        if key_aat in text:
+          base_tag(activities, key_activity,text[key_aat])
+        else:
+          base_tag(activities, key_activity, text[key_eng])
 
-      cnt = 1
 
-      for activity in val_activities:
+    # Birth
+    birth_place = row.find(f'ns:{key_place_birth}', ns).text
+    birth_date = row.find(f'ns:{key_birthdate_earliest}', ns).text
 
-        explode_text(activity, new_activities, key_activity)
-        cnt += 1
+    if birth_date is not None or birth_place is not None:
+      birth = et.SubElement(new_row, key_birth)
 
-    # place of birth
-    explode_place(et.SubElement(new_row, key_place_birth),
-                  row.find(f'ns:{key_place_birth}', ns).text)
+      if birth_date is not None:
+        # It may contain "ca."
+        birth_date = birth_date.replace('ca.','')
+        base_tag(birth, key_date, birth_date)
 
-    # place of death
-    explode_place(et.SubElement(new_row, key_place_death),
-                  row.find(f'ns:{key_place_death}', ns).text)
+      if birth_place is not None:
+        base_tag(birth, key_place, escape_uri(birth_place))
 
+    # Death
+    death_place = row.find(f'ns:{key_place_death}', ns).text
+    death_date = row.find(f'ns:{key_deathdate_lastest}', ns).text
+
+    if death_date is not None or death_place is not None:
+      death = et.SubElement(new_row, key_death)
+
+      if death_date is not None:
+        base_tag(death, key_date, death_date)
+
+      if death_place is not None:
+        base_tag(death, key_place, escape_uri(death_place))
+
+    # marriage
+    marriage_date = row.find(f'ns:{key_marriage_date}', ns).text
+    if marriage_date is not None:
+      base_tag(new_row, key_marriage_date, marriage_date)
+
+    # will
+    will_date = row.find(f'ns:{key_will_date}', ns).text
+    if will_date is not None:
+      base_tag(new_row, key_will_date, will_date)
+
+    # century
+    century = row.find(f'ns:{key_century}', ns).text
+    if century is not None:
+      base_tag(new_row, key_century, century)
+
+    # fraction century
+    fraction_century = row.find(f'ns:{key_fraction_century}', ns).text
+    if fraction_century is not None:
+      base_tag(new_row, key_fraction_century, fraction_century)
+
+    """
     # work location
     if row.find(f'ns:{key_work_location}', ns).text is not None:
 
@@ -259,35 +361,13 @@ def execute(limit):
       for location in locations:
         explode_place(et.SubElement(work_locations,
                                     key_work_location), location.strip())
-
-    # birthdate earliest
-    birthdate_earliest = et.SubElement(new_row, key_birthdate_earliest)
-    birthdate_earliest.text = row.find(
-        f'ns:{key_birthdate_earliest}', ns).text
-
-    # deathdate earliest
-    deathdate_latest = et.SubElement(new_row, key_deathdate_lastest)
-    deathdate_latest.text = row.find(
-        f'ns:{key_deathdate_lastest}', ns).text
-
-    # marriage date
-    marriage_date = et.SubElement(new_row, key_marriage_date)
-    marriage_date.text = row.find(f'ns:{key_marriage_date}', ns).text
-
-    # will date
-    will_date = et.SubElement(new_row, key_will_date)
-    will_date.text = row.find(f'ns:{key_will_date}', ns).text
-
-    # century
-    century = et.SubElement(new_row, key_century)
-    century.text = row.find(f'ns:{key_century}', ns).text
-
-    # fraction century
-    fraction_century = et.SubElement(new_row, key_fraction_century)
-    fraction_century.text = row.find(f'ns:{key_fraction_century}', ns).text
+    """
 
     # notes
-    explode_text(row.find(f'ns:{key_notes}', ns).text, new_row, key_notes)
+    notes = row.find(f'ns:{key_notes}', ns).text
+    if notes is not None:
+      notes = explode_text(notes)
+      base_tag(new_row, key_notes, notes[key_eng])
 
     all_people.append({
         key_appellation: appellation.text,
@@ -303,3 +383,6 @@ def execute(limit):
 
   open(os.path.join(dir_path, 'people.json'), 'w').write(
       json.dumps(all_people, indent=4))
+
+  with open(uuid_filename, 'w') as f:
+    f.write(json.dumps(uuid_dict, indent=4, sort_keys=True))
