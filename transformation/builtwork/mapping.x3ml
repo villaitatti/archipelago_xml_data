@@ -158,6 +158,16 @@
                 <instance_generator name="100-builtwork">
                   <arg name="bw_id" type="xpath">../../builtwork/UUID/text()</arg>
                 </instance_generator>
+
+                <additional>
+                  <relationship>crm:P129i_is_subject_of</relationship>
+                  <entity>
+                    <type>crm:E92_Spacetime_Volume</type>
+                    <instance_generator name="800-spacetime_volume-identifier">
+                      <arg name="id" type="xpath">UUID/text()</arg>
+                    </instance_generator>
+                  </entity> 
+                </additional>
               </entity>
             </additional>
 
@@ -763,6 +773,9 @@
                 <arg name="bw_id" type="xpath">../../UUID/text()</arg>
                 <arg name="acquisition_id" type="xpath">UUID/text()</arg>
               </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">label/text()</arg>
+              </label_generator>
 
               <additional>
                 <relationship>crm:P22_transferred_title_to</relationship>
