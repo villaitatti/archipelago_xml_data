@@ -456,10 +456,6 @@
     <pattern>spacetime_volume/{id}</pattern>
   </generator>
 
-  <generator name="801-spacetime_volume-identifier_class" prefix="arc">
-    <pattern>spacetime_volume/{id}/identifier</pattern>
-  </generator>
-
   <generator name="830-spacetime_volume-time_span" prefix="arc">
     <pattern>spacetime_volume/{id}/time_span</pattern>
   </generator>
@@ -467,6 +463,10 @@
 
   <generator name="900-digital_object" prefix="arc">
     <pattern>digital_object/{id}</pattern>
+  </generator>
+
+  <generator name="901-digital_object-identifier" prefix="arc">
+    <pattern>digital_object/{id}/identifier</pattern>
   </generator>
 
   <generator name="URIorUUID">

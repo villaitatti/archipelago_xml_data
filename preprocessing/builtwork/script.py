@@ -8,7 +8,6 @@ import re
 import json
 import uuid
 
-
 def execute(limit):
   
   def get_type(filename):
@@ -182,6 +181,7 @@ def execute(limit):
   key_start = 'Start'
   key_end = 'End'
   key_name = 'Name'
+  key_label = 'label'
 
   key_production = 'production'
   key_destruction = 'destruction'
@@ -257,6 +257,8 @@ def execute(limit):
   key_json_geonames = 'Geonames ID'
   key_surname = 'Surname'
 
+  key_st_volume = 'st_volume'
+
   uuid_filename = os.path.join(dir_path, 'uuid.json')
   uuid_bw = 'bw_uuid'
   uuid_st = 'st_uuid'
@@ -266,7 +268,7 @@ def execute(limit):
 
   dtypes = {key_start: str, key_end: str, key_height: str, key_architect: str, key_patron: str,
             key_owner: str, key_tenant: str, key_shape_lenght: str, key_architects: str}
-  df = pd.read_csv(filename, sep='\t', dtype=dtypes)
+  df = pd.read_csv(filename, sep='\t', dtype=dtypes, keep_default_na=False)
 
   builtworks = {}
 
@@ -296,157 +298,105 @@ def execute(limit):
     return l.append(to_insert)
 
   # COLLAPSING ROWS
+
+  def parse_entity_date(entity):
+
+    if col not in builtworks[bw_name]:
+      builtworks[bw_name][col] = [entity]
+
+    if entity not in builtworks[bw_name][col]:
+      builtworks[bw_name][col].append(entity)
+      
+
+
   for i, row in df.iterrows():
 
-    row_id = row[key_bw_id]
+    bw_name = row[key_name]
 
-    # Instantiate dictionaries
-    typology_dict = {}
-    use_dict = {}
-    function_dict = {}
-    owner_dict = {}
-    tenant_dict = {}
+    if bw_name not in builtworks:
+      builtworks[bw_name] = {}
 
-    material_set = set()
-    architect_set = set()
-    patron_set = set()
-
-    # create the current bw if not already in the main dict
-    if row_id not in builtworks:
-      builtworks[row_id] = {}
-
-    # iterate all columns
     for y in range(1, len(df.columns)):
 
       # save value and the column name
       val = clear(df.iloc[i, y])
       col = df.columns[y]
 
-      if val is not None and type(val) and val:
+      # Island Name is a single string
+      if col == key_islandname:
+        builtworks[bw_name][col] = val
 
-        # Material
-        if col == key_material:
+      # Name is a single string
+      if col == key_name:
+        builtworks[bw_name][col] = val
 
-          if builtworks[row_id].get(key_material) is None:
-            builtworks[row_id][key_material] = set()
+      # Save earliest start
+      if col == key_start:
+        if col not in builtworks[bw_name] or val < builtworks[bw_name][col]:
+          builtworks[bw_name][col] = val
 
-          for material in val.split(';'):
-            material_set.add(material.strip())
+      # Save latest end 
+      if col == key_end:
+        if col not in builtworks[bw_name] or val > builtworks[bw_name][col]:
+          builtworks[bw_name][col] = val
+      
+      # Function
+      if col == key_function and val:
+        parse_entity_date({
+          key_function: val,
+          key_function_start: row[key_function_start],
+          key_function_end: row[key_function_end]
+        })
 
-        # Function
-        elif col == key_function:
+      # Use
+      if col == key_use and val:
+        parse_entity_date({
+          key_use: val,
+          key_use_start: row[key_use_start],
+          key_use_end: row[key_use_end]
+        })
 
-          if builtworks[row_id].get(key_function) is None:
-            builtworks[row_id][key_function] = []
+      # Typology
+      if col == key_typology and val:
+        parse_entity_date({
+          key_typology: val,
+          key_typology_start: row[key_typology_start],
+          key_typology_end: row[key_typology_end]
+        })
 
-          function_dict[key_function] = val
+      # Owner
+      if col == key_owner and val:
+        parse_entity_date({
+          key_owner: val,
+          key_owner_start: row[key_owner_start],
+          key_owner_end: row[key_owner_end]
+        })
 
-        elif col == key_function_start:
-          function_dict[key_function_start] = val
+      # Owner
+      if col == key_tenant and val:
+        parse_entity_date({
+          key_tenant: val,
+          key_tenant_start: row[key_tenant_start],
+          key_tenant_end: row[key_tenant_end]
+        })
 
-        elif col == key_function_end:
-          function_dict[key_function_end] = val
+      if val and (col == key_material or col == key_patron):
+        if col not in builtworks[bw_name] or val not in builtworks[bw_name][col]:
+          builtworks[bw_name][col] = val
 
-        # Typology
-        elif col == key_typology:
+      # add ST Volume
 
-          if builtworks[row_id].get(key_typology) is None:
-            builtworks[row_id][key_typology] = []
+      st_volume = {
+        key_bw_id: row[key_bw_id],
+        key_start: row[key_start],
+        key_end: row[key_end]
+      }
 
-          typology_dict[key_typology] = val
+    if key_st_volume not in builtworks[bw_name]:
+      builtworks[bw_name][key_st_volume] = []
 
-        elif col == key_typology_start:
-          typology_dict[key_typology_start] = val
-
-        elif col == key_typology_end:
-          typology_dict[key_typology_end] = val
-
-        # Use
-        elif col == key_use:
-
-          # Create the list if doesn't exist
-          if builtworks[row_id].get(key_use) is None:
-            builtworks[row_id][key_use] = []
-
-          use_dict[key_use] = val
-
-        elif col == key_use_start:
-          use_dict[key_use_start] = val
-
-        elif col == key_use_end:
-          use_dict[key_use_end] = val
-
-        # Owner
-        elif col == key_owner:
-
-          if builtworks[row_id].get(key_owner) is None:
-            builtworks[row_id][key_owner] = []
-
-          owner_dict[key_owner] = val
-
-        elif col == key_owner_start:
-          owner_dict[key_owner_start] = val
-
-        elif col == key_owner_end:
-          owner_dict[key_owner_end] = val
-
-        # Tenant
-        elif col == key_tenant:
-
-          if builtworks[row_id].get(key_tenant) is None:
-            builtworks[row_id][key_tenant] = []
-
-          tenant_dict[key_tenant] = val
-
-        elif col == key_tenant_start:
-          tenant_dict[key_tenant_start] = val
-
-        elif col == key_tenant_end:
-          tenant_dict[key_tenant_end] = val
-
-        # Architect
-        elif col == key_architect:
-          if builtworks[row_id].get(key_architect) is None:
-            builtworks[row_id][key_architect] = set()
-
-          architect_set.add(val)
-
-        # Patron
-        elif col == key_patron:
-          if builtworks[row_id].get(key_patron) is None:
-            builtworks[row_id][key_patron] = set()
-
-          patron_set.add(val)
-
-        # Residual columns
-        else:
-          builtworks[row_id][col] = val
-
-    # Append dictionaries only if not equal
-    try:
-      insert_in_list(builtworks[row_id][key_typology], typology_dict)
-    except KeyError:
-      pass
-    try:
-      insert_in_list(builtworks[row_id][key_use], use_dict)
-    except KeyError:
-      pass
-    try:
-      insert_in_list(builtworks[row_id][key_function], function_dict)
-    except KeyError:
-      pass
-    try:
-      insert_in_list(builtworks[row_id][key_owner], owner_dict)
-    except KeyError:
-      pass
-    try:
-      insert_in_list(builtworks[row_id][key_tenant], tenant_dict)
-    except KeyError:
-      pass
-
-    builtworks[row_id][key_material] = material_set
-    builtworks[row_id][key_architect] = architect_set
-    builtworks[row_id][key_patron] = patron_set
+    if st_volume not in builtworks[bw_name][key_st_volume]:
+      builtworks[bw_name][key_st_volume].append(st_volume)
 
   cnt = 0
   uuid_dict = {}
@@ -454,14 +404,17 @@ def execute(limit):
   if os.path.isfile(uuid_filename):
     uuid_dict = json.load(open(uuid_filename))
 
+  ##############################################################################################################
+  ####################################### PRE-PROCESSING #######################################################
+  ##############################################################################################################
 
-  # PRE-PROCESSING
   for bw_id, bw in builtworks.items():
 
-    if bw_id not in uuid_dict:
-      uuid_dict[bw_id] = {
-        uuid_bw: str(uuid.uuid1()),
-        uuid_st: str(uuid.uuid1()),
+    name = f'{bw.get(key_name)} ({bw.get(key_islandname)})'
+
+    if name not in uuid_dict:
+      uuid_dict[name] = {
+        uuid_bw: str(uuid.uuid1())
       }
     
     if limit and cnt == int(limit):
@@ -470,17 +423,11 @@ def execute(limit):
     # Create the current row
     xml_row = et.Element(key_row)
 
-    
-
-    
-
     #######################
     # Processing Building #
     #######################
 
     builtwork = et.SubElement(xml_row, 'builtwork')
-
-    name = f'{bw.get(key_name)} ({bw.get(key_islandname)})'
 
     # Type
     builtwork_type = et.SubElement(builtwork, 'type')
@@ -501,7 +448,7 @@ def execute(limit):
     time_container.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     # UUID
-    builtwork_uuid = uuid_dict[bw_id][uuid_bw]
+    builtwork_uuid = uuid_dict[name][uuid_bw]
     base_tag(builtwork, key_uuid, builtwork_uuid)
 
     # IslandName
@@ -722,6 +669,7 @@ def execute(limit):
 
       for i, function in enumerate(list_functions_sorted):
 
+        label = 'Transformation of function '
         transformation_function = et.SubElement(transformation_functions, key_transformation_function)
 
         base_tag(transformation_function, 'transformation_function_uuid', str(uuid.uuid1()))
@@ -730,7 +678,11 @@ def execute(limit):
         base_tag(transformation_function, key_function_start, function[key_date])
 
         if i>0:
-          base_tag(transformation_function, 'from', escape_uri(list_functions_sorted[i-1][key_name]))
+          prev = list_functions_sorted[i-1][key_name]
+          base_tag(transformation_function, 'from', escape_uri(prev))
+          label += f'from {prev} '
+
+        base_tag(transformation_function, key_label, f'{label}to {function[key_name]} ({function[key_date]})')
 
     # Transformation uses
     if len(list_uses) > 1:
@@ -739,6 +691,7 @@ def execute(limit):
 
       for i, use in enumerate(list_uses_sorted):
         
+        label = 'Transformation of use '
         transformation_use = et.SubElement(transformation_uses, key_transformation_use)
 
         base_tag(transformation_use, 'transformation_use_uuid', str(uuid.uuid1()))
@@ -747,7 +700,11 @@ def execute(limit):
         base_tag(transformation_use, key_use_start, use[key_date])
 
         if i>0:
-          base_tag(transformation_use, 'from', escape_uri(list_uses_sorted[i-1][key_name]))
+          prev = list_uses_sorted[i-1][key_name]
+          base_tag(transformation_use, 'from', escape_uri(prev))
+          label += f'from {prev} '
+
+        base_tag(transformation_use, key_label, f'{label}to {use[key_name]} ({use[key_date]})')
 
     # Transformation typologies
     if len(list_typologies) > 1:
@@ -756,6 +713,7 @@ def execute(limit):
 
       for i, typology in enumerate(list_typologies_sorted):
 
+        label = 'Transformation of typology '
         transformation_typology = et.SubElement(transformation_typologies, key_transformation_typology)
 
         base_tag(transformation_typology, 'transformation_typology_uuid', str(uuid.uuid1()))
@@ -764,37 +722,52 @@ def execute(limit):
         base_tag(transformation_typology, key_typology_start, typology[key_date])
       
         if i>0:
-          base_tag(transformation_typology, 'from', escape_uri(list_typologies_sorted[i-1][key_name]))
+          prev = list_typologies_sorted[i-1][key_name]
+          base_tag(transformation_typology, 'from', escape_uri(prev))
+          label += f'from {prev} '
+        
+        base_tag(transformation_typology, key_label, f'{label}to {typology[key_name]} ({typology[key_date]})')
+
 
     ########################
     # Processing ST Volume #
     ########################
+    st_volumes = et.SubElement(xml_row, 'st_volumes')
 
-    st_volume = et.SubElement(xml_row, 'st_volume')
 
     # UUID
-    st_volume_uuid = uuid_dict[bw_id][uuid_st]
-    base_tag(st_volume, key_uuid, st_volume_uuid)
 
-    # bw id
-    base_tag(st_volume, key_bw_id, bw_id)
+    for st_volume_curr in bw.get(key_st_volume):
 
-    # Start_Earliest
-    base_tag(st_volume, key_start,  bw.get(key_start))
+      st_volume = et.SubElement(st_volumes, 'st_volume')
 
-    # End_Latest
-    base_tag(st_volume, key_end,  bw.get(key_end))
+      st_volume_id = st_volume_curr[key_bw_id]
 
-    if bw.get(key_end) is not None:
-      year_end = datetime.strptime(bw.get(key_end), '%Y-%m-%d').year
-    else:
-      year_end = 'today'
+      if st_volume_id not in uuid_dict[name]:
+        uuid_dict[name][st_volume_id] = str(uuid.uuid1())
 
-    year_start = datetime.strptime(bw.get(key_start), '%Y-%m-%d').year
-    st_volume_name = f'{bw.get(key_name)} ({get_bw_island(bw.get(key_islandname)).get(key_json_name)}) from {year_start} to {year_end}'
+      st_volume_uuid = uuid_dict[name][st_volume_id]
+      base_tag(st_volume, key_uuid, st_volume_uuid)
 
-    base_tag(st_volume, 'label', st_volume_name)
-    base_tag(st_volume, 'dig_label', f'Digital Object (2D representation) associated with {st_volume_name}') 
+      # bw id
+      base_tag(st_volume, key_bw_id, st_volume_id)
+
+      # Start_Earliest
+      base_tag(st_volume, key_start,  st_volume_curr.get(key_start))
+
+      # End_Latest
+      base_tag(st_volume, key_end,  st_volume_curr.get(key_end))
+
+      if bw.get(key_end) is not None:
+        year_end = datetime.strptime(st_volume_curr.get(key_end), '%Y-%m-%d').year
+      else:
+        year_end = 'today'
+
+      year_start = datetime.strptime(st_volume_curr.get(key_start), '%Y-%m-%d').year
+      st_volume_name = f'{name} from {year_start} to {year_end}'
+
+      base_tag(st_volume, 'label', st_volume_name)
+      base_tag(st_volume, 'dig_label', f'Digital Object (2D representation) associated with {st_volume_name}') 
 
     final = md.parseString(et.tostring(xml_row, method='xml')).toprettyxml()
 
