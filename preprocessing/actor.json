@@ -1,524 +1,698 @@
 {
     "101": {
+        "Name": "Giambattista Maria Contarini",
         "actor_uuid": "cb1d2480-cf78-11ec-88a8-3a5becfe4abd"
     },
     "102": {
+        "Name": " Lateran Canons of Santa Maria della Carit\u00e0",
         "actor_uuid": "cb1d2cc8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "106": {
+        "Name": " Council of Ten",
         "actor_uuid": "cb1d342a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "108": {
+        "Name": "Alvise Foscarini",
         "actor_uuid": "cb1d3bfa-cf78-11ec-88a8-3a5becfe4abd"
     },
     "109": {
+        "Name": "Alvise Contarini",
         "actor_uuid": "cb1d45d2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "110": {
+        "Name": "Andrea Pisani",
         "actor_uuid": "cb1d4df2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "111": {
+        "Name": "Carlo Carafa della Spina",
         "actor_uuid": "cb1d55b8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "112": {
+        "Name": " Bencio",
         "actor_uuid": "cb1d61f2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "113": {
+        "Name": "Giuseppe Porta",
         "actor_uuid": "cb1d69ae-cf78-11ec-88a8-3a5becfe4abd"
     },
     "114": {
+        "Name": "Girolamo da Santacroce",
         "actor_uuid": "cb1d720a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "115": {
+        "Name": "Francesco da Santacroce",
         "actor_uuid": "cb1d7b1a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "116": {
+        "Name": "Lorenzo Giustinian",
         "actor_uuid": "cb1d83c6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "117": {
+        "Name": "Alessandro Farnese",
         "actor_uuid": "cb1d8e84-cf78-11ec-88a8-3a5becfe4abd"
     },
     "118": {
+        "Name": "Hugues de Comminelles",
         "actor_uuid": "cb1d9af0-cf78-11ec-88a8-3a5becfe4abd"
     },
     "119": {
+        "Name": "Nicol\u00f2 dal Cortivo",
         "actor_uuid": "cb1da284-cf78-11ec-88a8-3a5becfe4abd"
     },
     "12": {
+        "Name": "Marina Celsi",
         "actor_uuid": "106cdd4a-cc5f-11ec-8c5f-3a5becfe4abd"
     },
     "120": {
+        "Name": "Antonio Girolamo Vestri",
         "actor_uuid": "cb1daa86-cf78-11ec-88a8-3a5becfe4abd"
     },
     "121": {
+        "Name": "Sebastiano Alberti",
         "actor_uuid": "cb1db18e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "122": {
+        "Name": "Augusto Denaix",
         "actor_uuid": "cb1db968-cf78-11ec-88a8-3a5becfe4abd"
     },
     "123": {
+        "Name": " Kingdom of Lombardy\u2013Venetia",
         "actor_uuid": "cb1dc214-cf78-11ec-88a8-3a5becfe4abd"
     },
     "124": {
+        "Name": " Magistrate for Health",
         "actor_uuid": "cb1dc994-cf78-11ec-88a8-3a5becfe4abd"
     },
     "125": {
+        "Name": "Girolamo Mercuriale",
         "actor_uuid": "cb1dd0c4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "126": {
+        "Name": "Girolamo Capivaccio",
         "actor_uuid": "cb1dd9b6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "127": {
+        "Name": "Mariano Stefanelli",
         "actor_uuid": "cb1de668-cf78-11ec-88a8-3a5becfe4abd"
     },
     "128": {
+        "Name": "Niccol\u00f2 Corte",
         "actor_uuid": "cb1dede8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "129": {
+        "Name": "Bernardino Paterno",
         "actor_uuid": "cb1df5ae-cf78-11ec-88a8-3a5becfe4abd"
     },
     "13": {
+        "Name": "Antonio Contarini",
         "actor_uuid": "b10a0f62-cc7c-11ec-a663-3a5becfe4abd"
     },
     "130": {
+        "Name": "Alvise Mocenigo",
         "actor_uuid": "cb1dfc0c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "131": {
+        "Name": "Nicol\u00f2 Massa",
         "actor_uuid": "cb1e06ac-cf78-11ec-88a8-3a5becfe4abd"
     },
     "132": {
+        "Name": "Giovan Battista Luran",
         "actor_uuid": "cb1e0f12-cf78-11ec-88a8-3a5becfe4abd"
     },
     "133": {
+        "Name": " Canons regular of San Clemente",
         "actor_uuid": "cb1e166a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "134": {
+        "Name": "Giovanni Polani",
         "actor_uuid": "cb1e1d9a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "135": {
+        "Name": "Alberico Lottario",
         "actor_uuid": "cb1e263c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "136": {
+        "Name": "Imizza da Selva di Boggion",
         "actor_uuid": "cb1e2e20-cf78-11ec-88a8-3a5becfe4abd"
     },
     "137": {
+        "Name": "Daniele da Selva di Boggion",
         "actor_uuid": "cb1e35fa-cf78-11ec-88a8-3a5becfe4abd"
     },
     "138": {
+        "Name": "Spadaro Litaldo",
         "actor_uuid": "cb1e3f1e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "139": {
+        "Name": "Pietro Litaldo",
         "actor_uuid": "cb1e46b2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "140": {
+        "Name": "Angelo Rosso",
         "actor_uuid": "cb1e4df6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "141": {
+        "Name": "Egidio da Ferrara",
         "actor_uuid": "cb1e5526-cf78-11ec-88a8-3a5becfe4abd"
     },
     "142": {
+        "Name": "Nicol\u00f2 de Benvenutis",
         "actor_uuid": "cb1e5eb8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "143": {
+        "Name": "Jacques Du\u00e8ze",
         "actor_uuid": "cb1e671e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "144": {
+        "Name": "Piero Tomacelli",
         "actor_uuid": "cb1e7358-cf78-11ec-88a8-3a5becfe4abd"
     },
     "145": {
+        "Name": "Gabriele Condulmer",
         "actor_uuid": "cb1e7e0c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "146": {
+        "Name": "Antonio de Lusciano",
         "actor_uuid": "cb1e8d16-cf78-11ec-88a8-3a5becfe4abd"
     },
     "147": {
+        "Name": "Pietro Nani",
         "actor_uuid": "cb1e94b4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "148": {
+        "Name": "Agostino Barbarigo",
         "actor_uuid": "cb1e9d06-cf78-11ec-88a8-3a5becfe4abd"
     },
     "149": {
+        "Name": "Friedrich Habsburg",
         "actor_uuid": "cb1ea6d4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "150": {
+        "Name": "Francesco Foscari",
         "actor_uuid": "cb1eb084-cf78-11ec-88a8-3a5becfe4abd"
     },
     "151": {
+        "Name": "Cristoforo Moro",
         "actor_uuid": "cb1eba48-cf78-11ec-88a8-3a5becfe4abd"
     },
     "152": {
+        "Name": "Antonio Muzzani",
         "actor_uuid": "cb1ec3e4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "153": {
+        "Name": "Domenico Graziussi",
         "actor_uuid": "cb1ecbaa-cf78-11ec-88a8-3a5becfe4abd"
     },
     "154": {
+        "Name": "Angelo Seguso",
         "actor_uuid": "cb1ed3e8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "155": {
+        "Name": " Fondo territoriale",
         "actor_uuid": "cb1edf1e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "156": {
+        "Name": "John {Giovanni} Palaiologos",
         "actor_uuid": "cb1ee6b2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "157": {
+        "Name": "Maria Priuli",
         "actor_uuid": "cb1ef0ee-cf78-11ec-88a8-3a5becfe4abd"
     },
     "158": {
+        "Name": "Amadea {Amedea} Palaiologos",
         "actor_uuid": "cb1efa12-cf78-11ec-88a8-3a5becfe4abd"
     },
     "159": {
+        "Name": "Ercole d'Este",
         "actor_uuid": "cb1f03c2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "16": {
+        "Name": " Baffo family",
         "actor_uuid": "b10a243e-cc7c-11ec-a663-3a5becfe4abd"
     },
     "160": {
+        "Name": "Leonardo Loredan",
         "actor_uuid": "cb1f0d86-cf78-11ec-88a8-3a5becfe4abd"
     },
     "161": {
+        "Name": "Matth\u00e4us {Matteo} Schinner",
         "actor_uuid": "cb1f16f0-cf78-11ec-88a8-3a5becfe4abd"
     },
     "163": {
+        "Name": "Egidio Antonini",
         "actor_uuid": "cb1f20aa-cf78-11ec-88a8-3a5becfe4abd"
     },
     "164": {
+        "Name": "Andrea Gritti",
         "actor_uuid": "cb1f2d70-cf78-11ec-88a8-3a5becfe4abd"
     },
     "165": {
+        "Name": "Francesco Sforza",
         "actor_uuid": "cb1f372a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "166": {
+        "Name": "Francesco Maria della Rovere",
         "actor_uuid": "cb1f4152-cf78-11ec-88a8-3a5becfe4abd"
     },
     "167": {
+        "Name": "Gaetano dei Conti di Thiene",
         "actor_uuid": "cb1f4cba-cf78-11ec-88a8-3a5becfe4abd"
     },
     "168": {
+        "Name": "Gian Pietro Carafa",
         "actor_uuid": "cb1f5822-cf78-11ec-88a8-3a5becfe4abd"
     },
     "169": {
+        "Name": "Andrea Contarini",
         "actor_uuid": "cb1f652e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "17": {
+        "Name": " Holy See",
         "actor_uuid": "b10a2f10-cc7c-11ec-a663-3a5becfe4abd"
     },
     "170": {
+        "Name": " Vendramin",
         "actor_uuid": "cb1f6ca4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "171": {
+        "Name": "Piero Vallaresso",
         "actor_uuid": "cb1f75f0-cf78-11ec-88a8-3a5becfe4abd"
     },
     "172": {
+        "Name": "Alessandro Pesaro",
         "actor_uuid": "cb1f7cf8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "173": {
+        "Name": "Sebastiano Giustinian",
         "actor_uuid": "cb1f84b4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "174": {
+        "Name": "Pietro Polani",
         "actor_uuid": "cb1f8e64-cf78-11ec-88a8-3a5becfe4abd"
     },
     "175": {
+        "Name": "Pierre Roger",
         "actor_uuid": "cb1f97a6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "176": {
+        "Name": "Alessandro de Strigis",
         "actor_uuid": "cb1fa1d8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "177": {
+        "Name": "Giovanni Tirinello",
         "actor_uuid": "cb1faaf2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "178": {
+        "Name": "Francesco Lazzaroni",
         "actor_uuid": "cb1fb2c2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "179": {
+        "Name": "Giovanni Fornareto",
         "actor_uuid": "cb1fbbbe-cf78-11ec-88a8-3a5becfe4abd"
     },
     "18": {
+        "Name": " Benedectine Nuns of San Secondo",
         "actor_uuid": "b10a36ea-cc7c-11ec-a663-3a5becfe4abd"
     },
     "180": {
+        "Name": "Andrea Mocenigo",
         "actor_uuid": "cb1fc58c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "181": {
+        "Name": "Agostino Correggio",
         "actor_uuid": "cb1fce60-cf78-11ec-88a8-3a5becfe4abd"
     },
     "182": {
+        "Name": "Girolamo Lando",
         "actor_uuid": "cb1fd892-cf78-11ec-88a8-3a5becfe4abd"
     },
     "183": {
+        "Name": "Gianfrancesco Barbarigo",
         "actor_uuid": "cb1fdfcc-cf78-11ec-88a8-3a5becfe4abd"
     },
     "184": {
+        "Name": " Camaldolese monks of Monte Rua",
         "actor_uuid": "cb1fe6de-cf78-11ec-88a8-3a5becfe4abd"
     },
     "185": {
+        "Name": "Pietro Lorenzetto",
         "actor_uuid": "cb1fee2c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "186": {
+        "Name": "Zuanne Lumi",
         "actor_uuid": "cb1ff598-cf78-11ec-88a8-3a5becfe4abd"
     },
     "187": {
+        "Name": "Andrea Brozio",
         "actor_uuid": "cb1ffcd2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "189": {
+        "Name": "Todero Balbi",
         "actor_uuid": "cb200420-cf78-11ec-88a8-3a5becfe4abd"
     },
     "19": {
+        "Name": "Angelo Gavan",
         "actor_uuid": "b10a4086-cc7c-11ec-a663-3a5becfe4abd"
     },
     "190": {
+        "Name": "Marco Basaiti",
         "actor_uuid": "cb200b64-cf78-11ec-88a8-3a5becfe4abd"
     },
     "191": {
+        "Name": "Andrea Surian",
         "actor_uuid": "cb2013de-cf78-11ec-88a8-3a5becfe4abd"
     },
     "192": {
+        "Name": " Hermits of Santa Giustina in Padua",
         "actor_uuid": "cb202126-cf78-11ec-88a8-3a5becfe4abd"
     },
     "193": {
+        "Name": " Friars of Santissima Trinit\u00e0 in Brondolo",
         "actor_uuid": "cb202860-cf78-11ec-88a8-3a5becfe4abd"
     },
     "194": {
+        "Name": "Pietro Maffei",
         "actor_uuid": "cb202f18-cf78-11ec-88a8-3a5becfe4abd"
     },
     "195": {
+        "Name": " Benedictine monks of San Giorgio Maggiore",
         "actor_uuid": "cb203710-cf78-11ec-88a8-3a5becfe4abd"
     },
     "196": {
+        "Name": "Giulio Zanobi Medici",
         "actor_uuid": "cb203d6e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "197": {
+        "Name": " Benedictine nuns of Corpus Domini",
         "actor_uuid": "cb204818-cf78-11ec-88a8-3a5becfe4abd"
     },
     "198": {
+        "Name": "Bartolomeo Gualtierotti",
         "actor_uuid": "cb204ec6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "199": {
+        "Name": "Bartolomeo da Ferrara",
         "actor_uuid": "cb205722-cf78-11ec-88a8-3a5becfe4abd"
     },
     "20": {
+        "Name": "Agostino Museo",
         "actor_uuid": "b10a4b3a-cc7c-11ec-a663-3a5becfe4abd"
     },
     "200": {
+        "Name": " Carthusian monks of Sant'Andrea della Certosa",
         "actor_uuid": "cb205efc-cf78-11ec-88a8-3a5becfe4abd"
     },
     "201": {
+        "Name": "Daria Querini",
         "actor_uuid": "cb2065c8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "202": {
+        "Name": " Secular confraternity of San Diego",
         "actor_uuid": "cb206cda-cf78-11ec-88a8-3a5becfe4abd"
     },
     "21": {
+        "Name": "Tiziano Vecellio",
         "actor_uuid": "b10a5652-cc7c-11ec-a663-3a5becfe4abd"
     },
     "22": {
+        "Name": "Antonio Visentini",
         "actor_uuid": "b10a5fc6-cc7c-11ec-a663-3a5becfe4abd"
     },
     "23": {
+        "Name": "Jacopo Tatti",
         "actor_uuid": "b10a6994-cc7c-11ec-a663-3a5becfe4abd"
     },
     "24": {
+        "Name": " Canons regular of Santo Spirito",
         "actor_uuid": "cb1a9fda-cf78-11ec-88a8-3a5becfe4abd"
     },
     "25": {
+        "Name": "Andrea Bondumier",
         "actor_uuid": "cb1aa886-cf78-11ec-88a8-3a5becfe4abd"
     },
     "26": {
+        "Name": "Filippo Tron",
         "actor_uuid": "cb1ab4ca-cf78-11ec-88a8-3a5becfe4abd"
     },
     "27": {
+        "Name": "Fabio Chigi",
         "actor_uuid": "cb1ac078-cf78-11ec-88a8-3a5becfe4abd"
     },
     "28": {
+        "Name": "Francesco Guardi",
         "actor_uuid": "cb1ace2e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "29": {
+        "Name": "Daniele Danieli",
         "actor_uuid": "cb1ad75c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "30": {
+        "Name": "Giacomo Guardi",
         "actor_uuid": "cb1ae09e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "31": {
+        "Name": "Elisabetta Graziosa Ferri",
         "actor_uuid": "cb1ae9c2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "32": {
+        "Name": "Pietro Morani",
         "actor_uuid": "cb1af35e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "33": {
+        "Name": "Domenico Maria Gella",
         "actor_uuid": "cb1afaac-cf78-11ec-88a8-3a5becfe4abd"
     },
     "34": {
+        "Name": "Carlo Gella",
         "actor_uuid": "cb1b04fc-cf78-11ec-88a8-3a5becfe4abd"
     },
     "35": {
+        "Name": "Cherubino Zeli",
         "actor_uuid": "cb1b1802-cf78-11ec-88a8-3a5becfe4abd"
     },
     "36": {
+        "Name": "Jacometto Veneziano",
         "actor_uuid": "cb1b2068-cf78-11ec-88a8-3a5becfe4abd"
     },
     "37": {
+        "Name": "Alessandro Malerba",
         "actor_uuid": "cb1b2996-cf78-11ec-88a8-3a5becfe4abd"
     },
     "38": {
+        "Name": "Tommaso Temanza",
         "actor_uuid": "cb1b3206-cf78-11ec-88a8-3a5becfe4abd"
     },
     "39": {
+        "Name": "Niccol\u00f2 Mauro",
         "actor_uuid": "cb1b3ca6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "40": {
+        "Name": "Napol\u00e9on Bonaparte",
         "actor_uuid": "cb1b4476-cf78-11ec-88a8-3a5becfe4abd"
     },
     "41": {
+        "Name": "Domenico Codagli",
         "actor_uuid": "cb1b5042-cf78-11ec-88a8-3a5becfe4abd"
     },
     "42": {
+        "Name": " Dominican friars of San Secondo",
         "actor_uuid": "cb1b5aa6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "43": {
+        "Name": "Giovanni da Zon",
         "actor_uuid": "cb1b624e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "44": {
+        "Name": "Vitale Falier",
         "actor_uuid": "cb1b6e74-cf78-11ec-88a8-3a5becfe4abd"
     },
     "45": {
+        "Name": "Gerardino da Villanova",
         "actor_uuid": "cb1b7860-cf78-11ec-88a8-3a5becfe4abd"
     },
     "46": {
+        "Name": "Vincenzo Maria Coronelli",
         "actor_uuid": "cb1b801c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "47": {
+        "Name": "Angelo Bragadin",
         "actor_uuid": "cb1b8aee-cf78-11ec-88a8-3a5becfe4abd"
     },
     "48": {
+        "Name": "Giovanni Buonconsiglio",
         "actor_uuid": "cb1b94b2-cf78-11ec-88a8-3a5becfe4abd"
     },
     "49": {
+        "Name": "Giovanni Trevisan",
         "actor_uuid": "cb1b9dea-cf78-11ec-88a8-3a5becfe4abd"
     },
     "50": {
+        "Name": "Matteo Priuli",
         "actor_uuid": "cb1ba88a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "51": {
+        "Name": "Pietro Bon",
         "actor_uuid": "cb1bb30c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "52": {
+        "Name": "Angelo Baronio",
         "actor_uuid": "cb1bbf3c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "53": {
+        "Name": "Girolamo Contarini",
         "actor_uuid": "cb1bc950-cf78-11ec-88a8-3a5becfe4abd"
     },
     "54": {
+        "Name": "Raffaele Riva",
         "actor_uuid": "cb1bd332-cf78-11ec-88a8-3a5becfe4abd"
     },
     "55": {
+        "Name": "Zaccaria da Luni",
         "actor_uuid": "cb1bdc42-cf78-11ec-88a8-3a5becfe4abd"
     },
     "56": {
+        "Name": "Teodoro Viero",
         "actor_uuid": "cb1be570-cf78-11ec-88a8-3a5becfe4abd"
     },
     "57": {
+        "Name": "Guglielmo Stella",
         "actor_uuid": "cb1bef0c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "58": {
+        "Name": "Jacopo de' Barbari",
         "actor_uuid": "cb1bf86c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "60": {
+        "Name": "Marco Moro",
         "actor_uuid": "cb1c01b8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "61": {
+        "Name": "Andrea Tirali",
         "actor_uuid": "cb1c0c26-cf78-11ec-88a8-3a5becfe4abd"
     },
     "63": {
+        "Name": "Luigi Querena",
         "actor_uuid": "cb1c1504-cf78-11ec-88a8-3a5becfe4abd"
     },
     "64": {
+        "Name": "Francesco Battaglioli",
         "actor_uuid": "cb1c1d38-cf78-11ec-88a8-3a5becfe4abd"
     },
     "65": {
+        "Name": "Giuseppe Bernardino Bison",
         "actor_uuid": "cb1c258a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "66": {
+        "Name": "Domenico Lovisa",
         "actor_uuid": "cb1c2db4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "67": {
+        "Name": "Cristoforo Sabbadino",
         "actor_uuid": "cb1c367e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "68": {
+        "Name": "Alessandro Spaziani",
         "actor_uuid": "cb1c402e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "69": {
+        "Name": "Benedetto Bordone",
         "actor_uuid": "cb1c49e8-cf78-11ec-88a8-3a5becfe4abd"
     },
     "70": {
+        "Name": "Carlo Ruzzini",
         "actor_uuid": "cb1c54c4-cf78-11ec-88a8-3a5becfe4abd"
     },
     "71": {
+        "Name": "Angelo Emo",
         "actor_uuid": "cb1c5eec-cf78-11ec-88a8-3a5becfe4abd"
     },
     "73": {
+        "Name": " Candian friars of Santo Spirito",
         "actor_uuid": "cb1c67b6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "74": {
+        "Name": "Enrico Dandolo",
         "actor_uuid": "cb1c6f54-cf78-11ec-88a8-3a5becfe4abd"
     },
     "75": {
+        "Name": "Pietro Gattilesso",
         "actor_uuid": "cb1c799a-cf78-11ec-88a8-3a5becfe4abd"
     },
     "76": {
+        "Name": "Andrea Cominelli",
         "actor_uuid": "cb1c8192-cf78-11ec-88a8-3a5becfe4abd"
     },
     "77": {
+        "Name": "Giovanni Battista Albrizzi",
         "actor_uuid": "cb1c8afc-cf78-11ec-88a8-3a5becfe4abd"
     },
     "78": {
+        "Name": "Pietro Chevalier",
         "actor_uuid": "cb1c948e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "79": {
+        "Name": "Francesco Alberti",
         "actor_uuid": "cb1c9ff6-cf78-11ec-88a8-3a5becfe4abd"
     },
     "84": {
+        "Name": "Baldassare Longhena",
         "actor_uuid": "cb1ca9b0-cf78-11ec-88a8-3a5becfe4abd"
     },
     "86": {
+        "Name": " Venice Municipality",
         "actor_uuid": "cb1cb39c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "87": {
+        "Name": " Milizia da Mar",
         "actor_uuid": "cb1cba5e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "88": {
+        "Name": " Venetian Republic",
         "actor_uuid": "cb1cc1ac-cf78-11ec-88a8-3a5becfe4abd"
     },
     "89": {
+        "Name": " Savi ed esecutori alle acque",
         "actor_uuid": "cb1cc904-cf78-11ec-88a8-3a5becfe4abd"
     },
     "90": {
+        "Name": " Venetian Senate",
         "actor_uuid": "cb1cd034-cf78-11ec-88a8-3a5becfe4abd"
     },
     "91": {
+        "Name": "Francesco Tironi",
         "actor_uuid": "cb1cd926-cf78-11ec-88a8-3a5becfe4abd"
     },
     "92": {
+        "Name": "Vincenzo Scutari",
         "actor_uuid": "cb1ce240-cf78-11ec-88a8-3a5becfe4abd"
     },
     "93": {
+        "Name": "Bernardin Giacomazzi",
         "actor_uuid": "cb1ceb14-cf78-11ec-88a8-3a5becfe4abd"
     },
     "94": {
+        "Name": " Procurators of St Mark's de supra",
         "actor_uuid": "cb1cf58c-cf78-11ec-88a8-3a5becfe4abd"
     },
     "95": {
+        "Name": " Provveditori sopra monasteri",
         "actor_uuid": "cb1cfcee-cf78-11ec-88a8-3a5becfe4abd"
     },
     "96": {
+        "Name": "Bonaventura Maria Valerio",
         "actor_uuid": "cb1d0450-cf78-11ec-88a8-3a5becfe4abd"
     },
     "97": {
+        "Name": "Stefano Codroipo",
         "actor_uuid": "cb1d0d2e-cf78-11ec-88a8-3a5becfe4abd"
     },
     "98": {
+        "Name": "Vincenzo Polani",
         "actor_uuid": "cb1d1544-cf78-11ec-88a8-3a5becfe4abd"
     },
     "99": {
+        "Name": "Domenico Porta",
         "actor_uuid": "cb1d1ca6-cf78-11ec-88a8-3a5becfe4abd"
     }
 }

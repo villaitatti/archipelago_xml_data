@@ -259,8 +259,11 @@ def execute(limit):
 
   key_st_volume = 'st_volume'
 
-  uuid_filename = os.path.join(dir_path, 'uuid.json')
+  uuid_filename = os.path.join(dir_path, os.pardir, 'builtwork.json')
+  actor_filename = os.path.join(dir_path, os.pardir, 'actor.json')
+
   uuid_bw = 'bw_uuid'
+  uuid_actor = 'actor_uuid'
   uuid_st = 'st_uuid'
 
   def escape_uri(text):
@@ -372,7 +375,7 @@ def execute(limit):
           key_owner_end: row[key_owner_end]
         })
 
-      # Owner
+      # Tenant
       if col == key_tenant and val:
         parse_entity_date({
           key_tenant: val,
@@ -380,9 +383,20 @@ def execute(limit):
           key_tenant_end: row[key_tenant_end]
         })
 
-      if val and (col == key_material or col == key_patron):
+      if val and col == key_patron:
         if col not in builtworks[bw_name] or val not in builtworks[bw_name][col]:
           builtworks[bw_name][col] = val
+
+      if val and col == key_material:
+        if col not in builtworks[bw_name]:
+          builtworks[bw_name][col] = []
+        
+        materials = val.split(';')
+
+        for material in materials:
+          material = material.strip()
+          if material not in builtworks[bw_name][col]:
+            builtworks[bw_name][col].append(material)
 
       # add ST Volume
 
@@ -400,9 +414,13 @@ def execute(limit):
 
   cnt = 0
   uuid_dict = {}
+  actor_dict = {}
   
   if os.path.isfile(uuid_filename):
     uuid_dict = json.load(open(uuid_filename))
+
+  if os.path.isfile(actor_filename):
+    actor_dict = json.load(open(actor_filename))
 
   ##############################################################################################################
   ####################################### PRE-PROCESSING #######################################################
@@ -470,22 +488,6 @@ def execute(limit):
 
     # Name
     base_tag(builtwork, key_name, name)
-
-    # Height
-    base_tag(builtwork, key_height,  bw.get(key_height))
-
-    # SHP_Lenght
-    # If is null
-    try:
-      base_tag(builtwork, key_shape_lenght,  bw[key_shape_lenght])
-    except Exception:
-      pass
-
-    # SHP_Area
-    try:
-      base_tag(builtwork, key_shape_area,  bw[key_shape_area])
-    except Exception:
-      pass
 
     # Materials
     if bw.get(key_material) is not None and len(bw.get(key_material)) > 0:
@@ -604,16 +606,27 @@ def execute(limit):
       prev_owner = None
       for current_owner in sorted_owners:
 
+        label = 'Change of ownership '
+
         # Create xml tag
         owner_tag = et.SubElement(owners, 'acquisition')
+
+        actor = actor_dict[current_owner.get(key_owner)]
         
         base_tag(owner_tag, key_uuid, str(uuid.uuid1()))
-        base_tag(owner_tag, key_to, current_owner.get(key_owner))
+        base_tag(owner_tag, key_to, actor[uuid_actor])
 
         if prev_owner is not None:
-          base_tag(owner_tag, key_from, prev_owner.get(key_owner))
+          prev_actor = actor_dict[prev_owner.get(key_owner)]
+          label += f'from {prev_actor[key_name].strip()} '
 
+          base_tag(owner_tag, key_from, prev_actor[uuid_actor])
+
+        label += f'to {actor[key_name].strip()} ({current_owner.get(key_owner_start)})'
+
+        base_tag(owner_tag, key_label, label)
         base_tag(owner_tag, key_date, current_owner.get(key_owner_start))
+
         prev_owner = current_owner
 
     # Tenants
@@ -625,15 +638,25 @@ def execute(limit):
       prev_tenant = None
       for current_tenant in sorted_tenants:
 
+        label = 'Change of custody '
+
         # Create xml tag
         tenant_tag = et.SubElement(tenants, 'custody')
 
+        actor = actor_dict[current_tenant.get(key_tenant)]
+
         base_tag(tenant_tag, key_uuid, str(uuid.uuid1()))
-        base_tag(tenant_tag, key_to, current_tenant.get(key_tenant))
+        base_tag(tenant_tag, key_to, actor[uuid_actor])
 
         if prev_tenant is not None:
-          base_tag(tenant_tag, key_from, prev_tenant.get(key_tenant))
+          prev_actor = actor_dict[prev_owner.get(key_owner)]
+          label += f'from {prev_actor[key_name].strip()} '
 
+          base_tag(tenant_tag, key_from, prev_actor[uuid_actor])
+
+        label += f'to {actor[key_name].strip()} ({current_tenant.get(key_tenant_start)})'
+
+        base_tag(tenant_tag, key_label, label)
         base_tag(tenant_tag, key_date, current_tenant.get(key_tenant_start))
 
       prev_tenant = current_tenant

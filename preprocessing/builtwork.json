@@ -1,0 +1,152 @@
+{
+    "Batteria (San Secondo)": {
+        "SS_BLDG_003": "459bb948-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_015": "459bbc22-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459b869e-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Campanile (San Secondo)": {
+        "SS_BLDG_025": "45a39e24-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_032": "45a3a0d6-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a37174-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Campo (San Secondo)": {
+        "SS_OS_001": "45a9dd52-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a9caba-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Caneva (San Secondo)": {
+        "SS_BLDG_030": "45a619d8-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a60902-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Cavana (San Secondo)": {
+        "SS_BLDG_014": "459e9898-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_021": "459e9b72-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459e6828-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Chiesa (San Secondo)": {
+        "SS_BLDG_017": "45a002dc-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_035": "45a005a2-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459fdaf0-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Cortile (San Secondo)": {
+        "SS_OS_004": "45ab2c3e-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45ab1924-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Cucina (San Secondo)": {
+        "SS_BLDG_033": "45a72184-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a7003c-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Deposito (San Secondo)": {
+        "SS_BLDG_004": "459c83b4-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_005": "459c868e-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_006": "459c8904-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_007": "459c8b66-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_010": "459c8dc8-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_011": "459c9020-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_012": "459c926e-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_013": "459c94bc-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_048": "459c970a-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459c5d08-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Dormitorio (San Secondo)": {
+        "SS_BLDG_031": "45a67bf8-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_039": "45a67e8c-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a658b2-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Dormitorio ; Refettorio (San Secondo)": {
+        "SS_BLDG_020": "45a210ea-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a1f074-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Foresteria (San Secondo)": {
+        "SS_BLDG_024": "45a31a76-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a2f6ea-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Giardino (San Secondo)": {
+        "SS_OS_002": "45aa3400-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45aa1ed4-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Isola di San Secondo (San Secondo)": {
+        "SS_IS_001": "aa58b76e-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_002": "aa591786-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_003": "aa591a2e-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_004": "aa591c9a-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_005": "aa591efc-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_006": "aa592154-d06d-11ec-8a9d-3a5becfe4abc",
+        "SS_IS_007": "aa5923ac-d06d-11ec-8a9d-3a5becfe4abc",
+        "bw_uuid": "e4642418-d06b-11ec-bbd7-3a5becfe4abc"
+    },
+    "Lavatorio (San Secondo)": {
+        "SS_BLDG_026": "45a447a2-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a431cc-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Legnaia (San Secondo)": {
+        "SS_BLDG_027": "45a4af80-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_034": "45a4b214-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a49450-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Loggia (San Secondo)": {
+        "SS_BLDG_019": "45a17f40-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a15cc2-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Magazzino (San Secondo)": {
+        "SS_BLDG_016": "459f56fc-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459f3938-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Monastero (San Secondo)": {
+        "SS_BLDG_036": "45a7a492-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_037": "45a7a726-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_049": "45a7a974-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a7785a-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Muro di cinta (San Secondo)": {
+        "SS_BLDG_002": "459a50da-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_042": "459a55da-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_043": "459a5828-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_047": "459a5a62-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_050": "459a5e90-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459a1502-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Orto (San Secondo)": {
+        "SS_OS_003": "45aa9922-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_OS_005": "45aa9bb6-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45aa7938-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Polveriera (San Secondo)": {
+        "SS_BLDG_001": "45992552-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "4598f712-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Pontile (San Secondo)": {
+        "SS_BLDG_028": "45a54e90-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_029": "45a5512e-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_041": "45a55386-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_046": "45a555c0-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a52a1e-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Portico (San Secondo)": {
+        "SS_OS_006": "45ab804e-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45ab702c-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Professorio (San Secondo)": {
+        "SS_BLDG_049": "45a8bfda-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a89e74-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Rastello (San Secondo)": {
+        "SS_BLDG_023": "45a281b0-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_045": "45a2844e-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a26536-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Refettorio (San Secondo)": {
+        "SS_BLDG_040": "45a85428-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a83b5a-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Sacrestia (San Secondo)": {
+        "SS_BLDG_018": "45a0c672-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_038": "45a0c94c-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "45a098aa-d112-11ec-b3c8-3a5becfe4abc"
+    },
+    "Vera da pozzo (San Secondo)": {
+        "SS_BLDG_008": "459d9ec0-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_009": "459da1ae-d112-11ec-b3c8-3a5becfe4abc",
+        "SS_BLDG_022": "459da410-d112-11ec-b3c8-3a5becfe4abc",
+        "bw_uuid": "459d6dba-d112-11ec-b3c8-3a5becfe4abc"
+    }
+}

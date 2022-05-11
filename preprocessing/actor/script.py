@@ -31,7 +31,7 @@ def execute(limit):
   root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
   filename = os.path.join(dir_path, 'People.xml')
 
-  uuid_filename = os.path.join(dir_path, 'uuid.json')
+  uuid_filename = os.path.join(dir_path, os.pardir, 'actor.json')
   actor_uuid = 'actor_uuid'
 
   uuid_dict = {}
@@ -72,6 +72,7 @@ def execute(limit):
   key_given_name = 'Given_Name'
   key_appellation = 'Appellation'
   key_surname = 'Surname'
+  key_name = 'Name'
   key_alias = 'Alias'
   key_title = 'Title'
   key_patronymic = 'Patronymic'
@@ -221,19 +222,6 @@ def execute(limit):
     # Copy the current row
     new_row = et.Element(actor_type)
 
-    if row_id not in uuid_dict:
-      uuid_dict[row_id] = {
-        actor_uuid: str(uuid.uuid1())
-      }
-
-    row_id = uuid_dict[row_id][actor_uuid]
-
-    # ID person
-    id_person = et.SubElement(new_row, key_id_person)
-    id_person.text = row_id
-
-    print(f'{row_id} is of type: {actor_type}')
-
     # given name
     given_name = row.find(f'ns:{key_given_name}', ns).text
     if given_name is None:
@@ -244,6 +232,20 @@ def execute(limit):
     surname = re.sub(regex_ita, '', surname).rstrip()
 
     name = f'{given_name} {surname}'.rstrip()
+
+    if row_id not in uuid_dict:
+      uuid_dict[row_id] = {
+        actor_uuid: str(uuid.uuid1()),
+        key_name: name
+      }
+
+    row_id = uuid_dict[row_id][actor_uuid]
+
+    # ID person
+    id_person = et.SubElement(new_row, key_id_person)
+    id_person.text = row_id
+
+    print(f'{row_id} is of type: {actor_type}')
 
     appellation = et.SubElement(new_row, key_appellation)
     appellation.text = name
