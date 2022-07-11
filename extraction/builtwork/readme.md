@@ -1,8 +1,9 @@
-create `.env` file and fill the following lines
+Create a `database.ini` in this folder with the following structure:
+
 ```
-export POSTGRES_HOST="some-host.com"
-export POSTGRES_PORT="5432"
-export POSTGRES_DATABASE="some_database"
-export POSTGRES_USERNAME="some_user"
-export POSTGRES_PASSWORD="some_password"
+[postgresql]
+host=localhost
+database=main
+user=user
+password=password
 ```
