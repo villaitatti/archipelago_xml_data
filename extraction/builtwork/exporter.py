@@ -1,3 +1,5 @@
+from ast import Try
+from calendar import c
 import psycopg2
 import os
 from configparser import ConfigParser
@@ -12,12 +14,14 @@ def config(filename=os.path.join(curr_dir, 'database.ini'), section='postgresql'
 
     # get section, default to postgresql
     db = {}
-    if parser.has_section(section):
-        params = parser.items(section)
-        for param in params:
-            db[param[0]] = param[1]
-    else:
-        raise Exception('Section {0} not found in the {1} file'.format(section, filename))
+
+    try:
+      params = parser.items(section)
+      for param in params:
+          db[param[0]] = param[1]
+
+    except Exception as e:
+      print(e)
 
     return db
 
