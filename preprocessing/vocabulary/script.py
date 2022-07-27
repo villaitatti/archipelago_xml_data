@@ -44,6 +44,9 @@ def escape_uri(text):
 
   # Replace whitespaces with _
   text = text.replace(" ", "_")
+  
+  text = text.replace("(", "")
+  text = text.replace(")", "")
 
   return text
 
