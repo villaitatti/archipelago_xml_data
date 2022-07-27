@@ -26,9 +26,13 @@ def execute(limit):
           f.write(text)
 
 
-  def add_clean_field(input_key):
+  def add_clean_field(input_key, tag=None):
+    if tag is None:
       field = et.SubElement(new_row, input_key)
-      field.text = row.find(f'ns:{input_key}', ns).text
+    else:
+      field = et.SubElement(new_row, tag)
+
+    field.text = row.find(f'ns:{input_key}', ns).text
 
   KEY_PARENT = 'parents'
 
@@ -93,184 +97,196 @@ def execute(limit):
     if unit is not None:
       archival_units.add((unit, parent, type))
     
+
+  cnt = 0
+
   # Iterate each ROW
   for row in tags:
-      # Copy the current row
-      new_row = et.Element(keys["row"])
 
-      # ROW ID
-      row_id = row.find(f'ns:{keys["id_source"]}', ns).text
-      id_source = et.SubElement(new_row, keys["id_source"])
-      id_source.text = row_id
+    if limit and cnt == int(limit):
+      break
 
-      # Add clean fields
-      add_clean_field(keys["title"])
-      add_clean_field(keys["island"])
-      add_clean_field(keys["typology"])
-      add_clean_field(keys["format"])
-      add_clean_field(keys["language"])
-      add_clean_field(keys["author_surname_name"])
-      add_clean_field(keys["role_author"])
-      add_clean_field(keys["original_title"])
-      add_clean_field(keys["century"])
-      add_clean_field(keys["fraction_century"])
-      add_clean_field(keys["collection"])
-      add_clean_field(keys["acronym"])
-      add_clean_field(keys["fondo"])
-      add_clean_field(keys["busta"])
-      add_clean_field(keys["filza"])
-      add_clean_field(keys["title_filza"])
-      add_clean_field(keys["folio"])
-      add_clean_field(keys["drawing"])
-      add_clean_field(keys["location"])
-      add_clean_field(keys["medium"])
-      add_clean_field(keys["dimensions"])
-      add_clean_field(keys["synopsis"])
-      add_clean_field(keys["trascription"])
+    # Copy the current row
+    new_row = et.Element(keys["row"])
 
-      # Add Custom Fields
-      # Date_Earliest
-      day_earliest = row.find(f'ns:{keys["day_earliest"]}', ns).text
-      if day_earliest is None:
-          day_earliest = "01"
-      month_earliest = row.find(f'ns:{keys["month_earliest"]}', ns).text
-      if month_earliest is None:
-          month_earliest = "01"
-      year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
-      date_earliest_pretty = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
-      if year_earliest is None:
-          date_earliest_pretty = ""
-      # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
-      date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
-      date_earliest.text = date_earliest_pretty
+    # ROW ID
+    row_id = row.find(f'ns:{keys["id_source"]}', ns).text
+    id_source = et.SubElement(new_row, keys["id_source"])
+    id_source.text = row_id
 
-      # Date_Latest
-      day_latest = row.find(f'ns:{keys["day_latest"]}', ns).text
-      if day_latest is None:
-          day_latest = "01"
-      month_latest = row.find(f'ns:{keys["month_latest"]}', ns).text
-      if month_latest is None:
-          month_latest = "01"
-      year_latest = row.find(f'ns:{keys["year_latest"]}', ns).text
-      date_latest_pretty = f'{year_latest}-{month_latest}-{day_latest}T00:00:00'
-      if year_latest is None:
-          date_latest_pretty = ""
-      # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
-      date_latest = et.SubElement(new_row, custom_keys["date_latest"])
-      date_latest.text = date_latest_pretty
+    # Add clean fields
+    add_clean_field(keys["title"], 'attributed_title')
+    #add_clean_field(keys["island"])
+    #add_clean_field(keys["typology"])
+    add_clean_field(keys["format"], 'typology')
 
-      archival_path = ''
+    #add_clean_field(keys["author_surname_name"])
+    add_clean_field(keys["role_author"])
 
-      # Archives
-      archive = row.find(f'ns:{keys["collection"]}', ns).text
-      if archive is not None:
-        archival_path += archive
-      
-      # Fonds
-      fond = row.find(f'ns:{keys["fondo"]}', ns).text 
-      if fond is not None:
-        archival_path += f' > {fond}'
+    add_clean_field(keys["original_title"])
+    add_clean_field(keys["language"])
 
-      # Folder
-      folder = row.find(f'ns:{keys["busta"]}', ns).text
-      if folder is not None:
-        archival_path += f' > {folder}'
+    #add_clean_field(keys["century"])
+    #add_clean_field(keys["fraction_century"])
+    #add_clean_field(keys["collection"])
+    #add_clean_field(keys["acronym"])
+    #add_clean_field(keys["fondo"])
+    #add_clean_field(keys["busta"])
+    #add_clean_field(keys["filza"])
+    #add_clean_field(keys["title_filza"])
+    #add_clean_field(keys["folio"])
+    #add_clean_field(keys["drawing"])
+    #add_clean_field(keys["location"])
+    #add_clean_field(keys["medium"])
+    #add_clean_field(keys["dimensions"])
+    add_clean_field(keys["synopsis"])
+    add_clean_field(keys["trascription"])
 
-      # Filza
-      file = row.find(f'ns:{keys["filza"]}', ns).text
-      if file is not None:
-        archival_path += f' > {file}'
-      
-      # Folio
-      folio = row.find(f'ns:{keys["folio"]}', ns).text
-      if folio is not None:
-        archival_path += f' > {folio}'
+    # Add Custom Fields
+    # Date_Earliest
+    day_earliest = row.find(f'ns:{keys["day_earliest"]}', ns).text
+    if day_earliest is None:
+        day_earliest = "01"
+    month_earliest = row.find(f'ns:{keys["month_earliest"]}', ns).text
+    if month_earliest is None:
+        month_earliest = "01"
+    year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
+    date_earliest_pretty = f'{year_earliest}-{month_earliest}-{day_earliest}T00:00:00'
+    if year_earliest is None:
+        date_earliest_pretty = ""
+    # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
+    date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
+    date_earliest.text = date_earliest_pretty
 
-      # Drawing
-      drawing = row.find(f'ns:{keys["drawing"]}', ns).text
-      if drawing is not None:
-        archival_path += f' > {drawing}'
+    # Date_Latest
+    day_latest = row.find(f'ns:{keys["day_latest"]}', ns).text
+    if day_latest is None:
+        day_latest = "01"
+    month_latest = row.find(f'ns:{keys["month_latest"]}', ns).text
+    if month_latest is None:
+        month_latest = "01"
+    year_latest = row.find(f'ns:{keys["year_latest"]}', ns).text
+    date_latest_pretty = f'{year_latest}-{month_latest}-{day_latest}T00:00:00'
+    if year_latest is None:
+        date_latest_pretty = ""
+    # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
+    date_latest = et.SubElement(new_row, custom_keys["date_latest"])
+    date_latest.text = date_latest_pretty
 
-      name = row.find(f'ns:{keys["title"]}', ns).text
-      archival_units.add((row_id, archival_path, name))
+    archival_path = ''
+
+    # Archives
+    archive = row.find(f'ns:{keys["collection"]}', ns).text
+    if archive is not None:
+      archival_path += archive
+    
+    # Fonds
+    fond = row.find(f'ns:{keys["fondo"]}', ns).text 
+    if fond is not None:
+      archival_path += f' > {fond}'
+
+    # Folder
+    folder = row.find(f'ns:{keys["busta"]}', ns).text
+    if folder is not None:
+      archival_path += f' > {folder}'
+
+    # Filza
+    file = row.find(f'ns:{keys["filza"]}', ns).text
+    if file is not None:
+      archival_path += f' > {file}'
+    
+    # Folio
+    folio = row.find(f'ns:{keys["folio"]}', ns).text
+    if folio is not None:
+      archival_path += f' > {folio}'
+
+    # Drawing
+    drawing = row.find(f'ns:{keys["drawing"]}', ns).text
+    if drawing is not None:
+      archival_path += f' > {drawing}'
+
+    name = row.find(f'ns:{keys["title"]}', ns).text
+    archival_units.add((row_id, archival_path, name))
 
 
-      
+    
 
-      """
-      # Archives
-      archive = row.find(f'ns:{keys["collection"]}', ns).text
-      parent = None
-      add_archival_unit(archive, 'https://archipelago.itatti.harvard.edu/resource/vocab/archive', parent)
+    """
+    # Archives
+    archive = row.find(f'ns:{keys["collection"]}', ns).text
+    parent = None
+    add_archival_unit(archive, 'https://archipelago.itatti.harvard.edu/resource/vocab/archive', parent)
 
-      # Fonds
-      fond = row.find(f'ns:{keys["fondo"]}', ns).text
-      parent = archive
-      add_archival_unit(fond, 'https://archipelago.itatti.harvard.edu/resource/vocab/fond', parent)
+    # Fonds
+    fond = row.find(f'ns:{keys["fondo"]}', ns).text
+    parent = archive
+    add_archival_unit(fond, 'https://archipelago.itatti.harvard.edu/resource/vocab/fond', parent)
 
-      # Folder
-      folder = row.find(f'ns:{keys["busta"]}', ns).text
-      if fond is not None:
-        parent = fond
-      add_archival_unit(folder, 'https://archipelago.itatti.harvard.edu/resource/vocab/folder', parent)
+    # Folder
+    folder = row.find(f'ns:{keys["busta"]}', ns).text
+    if fond is not None:
+      parent = fond
+    add_archival_unit(folder, 'https://archipelago.itatti.harvard.edu/resource/vocab/folder', parent)
 
-      # Filza
-      file = row.find(f'ns:{keys["filza"]}', ns).text
-      if folder is not None:
-        parent = folder
-      add_archival_unit(file, 'https://archipelago.itatti.harvard.edu/resource/vocab/archival_unit', parent)
+    # Filza
+    file = row.find(f'ns:{keys["filza"]}', ns).text
+    if folder is not None:
+      parent = folder
+    add_archival_unit(file, 'https://archipelago.itatti.harvard.edu/resource/vocab/archival_unit', parent)
 
-      # Folio and Drawing
-      if file is not None:
-        parent = file 
+    # Folio and Drawing
+    if file is not None:
+      parent = file 
 
-      folio = row.find(f'ns:{keys["folio"]}', ns).text
-      add_archival_unit(folio, 'https://archipelago.itatti.harvard.edu/resource/vocab/folio', parent)
+    folio = row.find(f'ns:{keys["folio"]}', ns).text
+    add_archival_unit(folio, 'https://archipelago.itatti.harvard.edu/resource/vocab/folio', parent)
 
-      drawing = row.find(f'ns:{keys["drawing"]}', ns).text
-      add_archival_unit(drawing, 'https://archipelago.itatti.harvard.edu/resource/vocab/drawing', parent)
-      """
+    drawing = row.find(f'ns:{keys["drawing"]}', ns).text
+    add_archival_unit(drawing, 'https://archipelago.itatti.harvard.edu/resource/vocab/drawing', parent)
+    """
 
-      """
-      # Island
-      island_found = row.find(f'ns:{keys["island"]}', ns).text
-      if island_found is None:
-              isl_geoname_id = ""
-      else:
-          if island_found not in geonames_dict:
-              island_found = exceptions[island_found]
-          isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
-      island = et.SubElement(new_row, keys["island"])
-      island.text = isl_geoname_id
-      """
+    """
+    # Island
+    island_found = row.find(f'ns:{keys["island"]}', ns).text
+    if island_found is None:
+            isl_geoname_id = ""
+    else:
+        if island_found not in geonames_dict:
+            island_found = exceptions[island_found]
+        isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
+    island = et.SubElement(new_row, keys["island"])
+    island.text = isl_geoname_id
+    """
 
-      #ASSOCIATIONS
+    #ASSOCIATIONS
 
-      #Events
-      events = et.SubElement(new_row, "EVENTS")
-      if row_id in association_tables['sources']:
-          for k,v in association_tables['sources'][row_id]['events'].items():
-              event = et.SubElement(events, "EVENT")
-              event_id = et.SubElement(event, "ID_EVENT")
-              event_id.text = k
-              event_description = et.SubElement(event, "Event")
-              event_description.text = v["Event"]
+    #Events
+    events = et.SubElement(new_row, "EVENTS")
+    if row_id in association_tables['sources']:
+        for k,v in association_tables['sources'][row_id]['events'].items():
+            event = et.SubElement(events, "EVENT")
+            event_id = et.SubElement(event, "ID_EVENT")
+            event_id.text = k
+            event_description = et.SubElement(event, "Event")
+            event_description.text = v["Event"]
 
-      #People
-      people = et.SubElement(new_row, "PEOPLE")
-      if row_id in association_tables['sources']:
-          for k,v in association_tables['sources'][row_id]['people'].items():
-              person = et.SubElement(people, "PERSON")
-              person_id = et.SubElement(person, "ID_PERSON")
-              person_id.text = k
-              name = et.SubElement(person, "Name")
-              name.text = v["Name"]
-              surname = et.SubElement(person, "Surname")
-              surname.text = v["Surname"]
+    #People
+    people = et.SubElement(new_row, "PEOPLE")
+    if row_id in association_tables['sources']:
+        for k,v in association_tables['sources'][row_id]['people'].items():
+            person = et.SubElement(people, "PERSON")
+            person_id = et.SubElement(person, "ID_PERSON")
+            person_id.text = k
+            name = et.SubElement(person, "Name")
+            name.text = v["Name"]
+            surname = et.SubElement(person, "Surname")
+            surname.text = v["Surname"]
 
-      #new_document_root.append(new_row)
-      final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
-      write_file(final)
+    #new_document_root.append(new_row)
+    final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
+    write_file(final)
+
+    cnt += 1
 
   df = pd.DataFrame(list(archival_units), columns=['id', 'path', 'name'])
   df = df.set_index('id')
