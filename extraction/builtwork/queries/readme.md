@@ -17,9 +17,9 @@ WHERE pg_stat_activity.datname = 'database_name'
   AND pid <> pg_backend_pid();
 ```
 
-## San Secondo
+## Wed 20 Jul 2022
 
-### Wed 20 Jul 2022
+### San Secondo
 
 Execute the query in sansecondo_buildings.sql
 
@@ -29,3 +29,14 @@ Moreover, the query fixes two errors:
 
 * removes the feature with id `SS_BLDG_052` with the wrong `end_boe` (the one in 1838 is right)
 * removes the feature with id `SS_BLDG_001` with the wrong `end_boe` (the one without any is right)
+
+## Wed 27 Jul 2022
+
+### San Secondo
+
+The table `sansecondo_buildings` has been renamed `__sansecondo_buildings` (also the others now follow the same behavior). In this way it's easier to find them among the others (such as the old ones etc).
+
+The process have been extended to `__sansecondo_island` and `__sansecondo_openspaces`.
+
+Also, two other columns have been added. **t** is the type such as `Buildings`, `Island`, `Open Spaces`. While **z** is the order to follow in order to draw features. The idea is to keep 0 as the water level and have **1 for islands**, **2 for open spaces and buildings** and so on. According to this, **waterways and canals should be -1**.
+
