@@ -1,6 +1,6 @@
-Activate conda env:
+Add requirements with:
 ```
-conda env create -f archipelago_env.yml
+pip3 install to-requirements.txt
 ```
 
 
