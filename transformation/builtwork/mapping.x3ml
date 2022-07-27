@@ -112,7 +112,7 @@
 
             <!-- Link with 2D representation -->
             <additional>
-              <relationship>crm:P67_is_referred_to_by</relationship>
+              <relationship>crm:P67i_is_referred_to_by</relationship>
               <entity>
                 <type>crmdig:D1_Digital_Object</type>
                 <instance_generator name="900-digital_object">
