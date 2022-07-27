@@ -4,7 +4,6 @@ import transformation.script as transformation
 import upload.script as upload
 
 @click.command()
-@click.option('-e', '--extraction', 'exec_extraction', is_flag=True, help="Execute the extraction")
 @click.option('-p', '--preprocessing', 'exec_preprocessing', is_flag=True, help="Execute the pre-processing")
 @click.option('-t', '--transformation', 'exec_transformation', is_flag=True, help="Execute the transformation")
 @click.option('-u', '--upload', 'exec_upload', is_flag=True, help="Execute the upload", default=False)
@@ -13,7 +12,7 @@ import upload.script as upload
 @click.option('-a', required=True, multiple=True, help="Types to iterate")
 @click.option('-l', '--limit', help="Number of files to execute", default=None)
 
-def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, exec_upload, exec_delete, a, limit, host):
+def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_delete, a, limit, host):
 
   if limit:
     print(f'A limit of {limit} as been passed.')
@@ -22,7 +21,7 @@ def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, e
 
     print(f'\n{file}')
 
-    if(exec_preprocessing):
+    if exec_preprocessing:
       try:
         print('Executing preprocessing ...')
         mod = importlib.import_module(f'preprocessing.{file}.script')
@@ -34,7 +33,7 @@ def execute_pipeline(exec_extraction, exec_preprocessing, exec_transformation, e
 
       print()
 
-    if(exec_transformation):
+    if exec_transformation:
       print('Executing transformation ...')
       transformation.execute(file, limit)
       print('Done transformation.\n')

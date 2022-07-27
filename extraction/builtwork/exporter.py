@@ -7,9 +7,7 @@ from configparser import ConfigParser
 curr_dir = os.path.dirname(os.path.realpath(__file__))
 
 def config(filename=os.path.join(curr_dir, 'database.ini'), section='postgresql'):
-    # create a parser
     parser = ConfigParser()
-    # read config file
     parser.read(filename)
 
     # get section, default to postgresql
