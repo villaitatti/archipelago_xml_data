@@ -36,7 +36,7 @@ def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.har
 
       #POST
       if u:
-        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(dir_output,filename)}\' {request_url}'
+        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(root,filename)}\' {request_url}'
         print(f'POST\t\t{os.system(command)}')
 
       print('\n')

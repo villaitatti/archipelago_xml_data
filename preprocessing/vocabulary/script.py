@@ -21,7 +21,7 @@ KEY_COLLECTION = 'COLLECTION'
 
 def write_xml(dir_name, name, text):
   output_directory = os.path.join(
-        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocabulary', 'data')
+        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocabulary', 'data', dir_name)
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
@@ -89,15 +89,26 @@ def execute(limit = -1):
         # is root ?
         parent = row[KEY_PARENT]
         if parent != 'None':
-          parent_uri = escape_uri(parent.strip())
-          tag_parent = et.SubElement(root, 'broader')
-          tag_parent.text = parent_uri
+          def execute_parent(parent):
+            parent_uri = escape_uri(parent.strip())
+            tag_parent = et.SubElement(root, 'broader')
+            tag_parent.text = parent_uri
+            
+          if ',' in parent:
+            for parent in parent.split(','):
+              execute_parent(parent)
+          else:
+            execute_parent(parent)
 
         # URL optional
-        url = row[KEY_AAT]
-        if url != "None":
-          tag_url = et.SubElement(root, 'related')
-          tag_url.text = url
+        try:
+          url = row[KEY_AAT]
+          if url != "None":
+            tag_url = et.SubElement(root, 'related')
+            tag_url.text = url
+
+        except Exception as ex:
+          print(ex)
 
         # LDP data for Researchspace
         tag_container = et.SubElement(root, 'container')

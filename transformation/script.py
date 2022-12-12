@@ -24,9 +24,11 @@ def execute(table_folder, limit):
 
     for root, dirs, src_files in os.walk(table_folder_in):
 
+        current_folder = root.split(os.path.sep).pop()
+
         total = len(src_files)
         cnt = 1
-        print(f'Found {total} file to transform in {table_folder}')
+        print(f'Found {total} file to transform in {current_folder}')
 
         if limit:
           limit = int(limit)
@@ -39,7 +41,7 @@ def execute(table_folder, limit):
             if limit and cnt == limit+1:
                 break
 
-            src_file_full = os.path.join(table_folder_in, src_file)
+            src_file_full = os.path.join(root, src_file)
 
             if os.path.isfile(src_file_full):
 
@@ -48,7 +50,14 @@ def execute(table_folder, limit):
                 if not os.path.exists(table_folder_out):
                     os.mkdir(table_folder_out)
 
-                out_file_full = os.path.join(table_folder_out, out_file)
+                if table_folder == "vocabulary":
+                    out_file_full = os.path.join(table_folder_out, current_folder,out_file)
+                else:
+                    out_file_full = os.path.join(table_folder_out, out_file)
+
+                # Create parent folder if not exist
+                if not os.path.exists(os.path.dirname(out_file_full)):
+                  os.mkdir(os.path.dirname(out_file_full))
 
                 command = f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}'
                 print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
