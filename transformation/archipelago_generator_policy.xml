@@ -302,8 +302,8 @@
   <generator name="410-source-identifier" prefix="arc">
     <pattern>source/{source_id}/identifier</pattern>
   </generator>
-  <generator name="411-source-title" prefix="arc">
-    <pattern>source/{source_id}/title</pattern>
+  <generator name="411-source-attributed_title" prefix="arc">
+    <pattern>source/{source_id}/attributed_title</pattern>
   </generator>
   <generator name="420-source-typology" prefix="arc">
     <pattern>source/{source_id}/typology</pattern>
