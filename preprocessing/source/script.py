@@ -153,14 +153,9 @@ def execute(limit):
     synopsis = get_value_from_key(KEY_IN_SYNOPSIS)
     base_tag(new_row, KEY_OUT_SYNOPSIS, synopsis)
 
-    # Transcription and Language
-    tag_transcription = et.SubElement(new_row, KEY_OUT_TRANSCRIPTION)
-
+    # Transcription
     transcription = get_value_from_key(KEY_IN_TRANSCRIPTION)
-    base_tag(tag_transcription, KEY_OUT_LABEL, transcription)
-
-    language = get_value_from_key(KEY_IN_LANGUAGE)
-    base_tag(tag_transcription, KEY_OUT_LANGUAGE, language)
+    base_tag(new_row, KEY_OUT_TRANSCRIPTION, transcription)
 
     # Typology
     typology = get_id_from_typology(get_value_from_key(KEY_IN_TYPOLOGY))

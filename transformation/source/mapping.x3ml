@@ -166,6 +166,115 @@
         </range>
       </link>
 
+      <!-- Typology -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//typology</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>arconto:has_typology</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//typology</source_node>
+          <target_node>
+
+            <entity>
+              <type>arconto:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">source_typologies</arg>
+                <arg name="id" type="xpath">text()</arg>
+              </instance_generator>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link> 
+
+      <!-- Transcription -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//trascription</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P67i_is_referred_to_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//trascription</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E33_Linguistic_Object</type>
+              <instance_generator name="483-source-transcription">
+                <arg name="source_id" type="xpath">../id_source/text()</arg>
+              </instance_generator>
+
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">./text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+
+              <additional>
+                <relationship>crm:P103_was_intended_for</relationship>
+                <entity>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">source_transcription</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>  
+
+      <!-- Synopsis -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//synopsis</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P67i_is_referred_to_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//synopsis</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E33_Linguistic_Object</type>
+              <instance_generator name="482-source-synopsis">
+                <arg name="source_id" type="xpath">../id_source/text()</arg>
+              </instance_generator>
+
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">./text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+
+              <additional>
+                <relationship>crm:P103_was_intended_for</relationship>
+                <entity>
+                  <type>arconto:Remove</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">source_synopsis</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>  
+
     </mapping>
 
   </mappings>
