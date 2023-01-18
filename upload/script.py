@@ -4,18 +4,35 @@ import json
 import ast
 import uuid
 import urllib
+import configparser
 
 
-def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.harvard.edu'):
+def execute(typology, limit, d=None, u=None, config='archipelago'):
 
-  key_usr = 'usr'
-  key_psw = 'psw'
-  dir_out = 'out'
+  def _get_credentials(type):
+    config = configparser.ConfigParser()
+    try:
+      path = os.path.join(dir_path, 'config.ini')
+      config.read(path)
+
+      return {
+        KEY_USERNAME: config.get(type, KEY_USERNAME),
+        KEY_PASSWORD: config.get(type, KEY_PASSWORD),
+        KEY_ENDPOINT: config.get(type, KEY_ENDPOINT)
+      }
+      
+    except Exception as ex:
+      print('Error. Have you created the psw.ini file? see readme.md')
 
   dir_path = os.path.dirname(os.path.realpath(__file__))
-  dir_output = os.path.join(dir_path, typology, dir_out)
+  dir_output = os.path.join(dir_path, typology, 'out')
+  
+  KEY_USERNAME = 'username'
+  KEY_PASSWORD = 'password'
+  KEY_ENDPOINT = 'endpoint'
+  
+  credentials = _get_credentials(config)
 
-  auth = json.load(open(os.path.join(dir_path, '.config'),'r'))
   for root, dirs, src_files in os.walk(dir_output):
     cnt = 0
     for filename in src_files:
@@ -25,26 +42,26 @@ def execute(typology, limit, d=None, u=None, url='https://archipelago.itatti.har
 
       normal_uri = f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/container/context"
       graph_uri = urllib.parse.quote(normal_uri, safe='') 
-      request_url = f'{url}/rdf-graph-store?graph={graph_uri}'
+      request_url = f'{credentials[KEY_ENDPOINT]}/rdf-graph-store?graph={graph_uri}'
 
       print(f'### {filename}')
 
       #DEL
       if d:
-        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
+        command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
         print(f'DEL\t\t{os.system(command)}')
 
       #POST
       if u:
-        command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(root,filename)}\' {request_url}'
+        command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(root,filename)}\' {request_url}'
         print(f'POST\t\t{os.system(command)}')
 
       print('\n')
       cnt+=1
 
   if u:
-    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_type.sq")}\' {url}/sparql'
+    command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_type.sq")}\' {credentials[KEY_ENDPOINT]}/sparql'
     print(f'DEL ?s a arconto:Remove\t\t{os.system(command)}') 
 
-    command = f'curl -u {auth.get(key_usr)}:{auth.get(key_psw)} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_prop.sq")}\' {url}/sparql'
+    command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_prop.sq")}\' {credentials[KEY_ENDPOINT]}/sparql'
     print(f'DEL ?s arconto:Remove ?o\t{os.system(command)}') 
