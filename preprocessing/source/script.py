@@ -22,12 +22,8 @@ def execute(limit):
     os.mkdir(output_directory)
 
   # File with all UUIDs
-  uuid_filename = os.path.join(dir_path, 'source.json')
-  actor_filename = os.path.join(dir_path, 'actor.json')
-
-  # Store association tables
-  association_tables = json.load(open(os.path.join(
-      dir_path, os.pardir, os.pardir, 'utils', 'association_tables', 'association_tables.json'), 'r'))
+  uuid_filename = os.path.join(dir_path, os.pardir, 'source.json')
+  actors_filename = os.path.join(dir_path, os.pardir, 'actor.json')
 
   # Method called to write data file
   def write_file(text):
@@ -58,10 +54,25 @@ def execute(limit):
   def get_id_from_typology(typology):
     typology = str(typology).replace(' ', '_')
     return typology.lower()
+  
+  # Method returning actor by name
+  def get_actor_id_by_name(name):
+
+    # Check actor name for each actor
+    for actor_id in actors_dict:
+      actor = actors_dict[actor_id]
+
+      if actor[KEY_RELATION_NAME] and actor[KEY_RELATION_NAME] == name:
+        return actor_id
+    
+    return None
 
   # List of KEYS
 
   KEY_UUID_SOURCE = 'uuid_source'
+  KEY_RELATION_NAME = 'Name'
+
+  KEY_IN_ROW = 'ROW'
   KEY_OUT_ROW = 'source'
   KEY_OUT_LABEL = 'label'
 
@@ -74,6 +85,7 @@ def execute(limit):
   KEY_IN_TYPOLOGY = 'Typology'
   KEY_IN_MEDIUM = 'Medium'
   KEY_IN_DIMENSIONS = 'Dimensions'
+  KEY_IN_AUTHOR = 'Author_Surname_Name'
 
   KEY_OUT_ID = KEY_IN_ID.lower()
   KEY_OUT_TITLE = KEY_IN_TITLE.lower()
@@ -84,41 +96,7 @@ def execute(limit):
   KEY_OUT_TYPOLOGY = KEY_IN_TYPOLOGY.lower()
   KEY_OUT_MEDIUM = KEY_IN_MEDIUM.lower()
   KEY_OUT_DIMENSIONS = KEY_IN_DIMENSIONS.lower()
-
-  keys = {
-      "row": "ROW",
-      "id_source": "ID_SOURCE",
-      "title": "Title",
-      "island": "Island",
-      "typology": "Typology",
-      "format": "Format",
-      "language": "Language",
-      "author_surname_name": "Author_Surname_Name",
-      "role_author": "Role_Author",
-      "original_title": "Original_Title",
-      "century": "Century",
-      "fraction_century": "Fraction_Century",
-      "collection": "Collection",
-      "acronym": "Acronym",
-      "fondo": "Fondo",
-      "busta": "Busta",
-      "filza": "Filza",
-      "title_filza": "Title_Filza",
-      "folio": "Folio",
-      "drawing": "Drawing",
-      "location": "Location",
-      "medium": "Medium",
-      "dimensions": "Dimensions",
-      "synopsis": "Synopsis",
-      "trascription": "Trascription",
-      "image_container": "Image_Container",
-      "year_earliest": "Year_Earliest",
-      "month_earliest": "Month_Earliest",
-      "day_earliest": "Day_Earliest",
-      "year_latest": "Year_Latest",
-      "month_latest": "Month_Latest",
-      "day_latest": "Day_Latest"
-  }
+  KEY_OUT_AUTHOR = KEY_IN_AUTHOR.lower()
 
   # Read file
   tree = et.parse(filename)
@@ -129,16 +107,16 @@ def execute(limit):
   uuid_dict = {}
   if os.path.isfile(uuid_filename):
     uuid_dict = json.load(open(uuid_filename))
-
-  actor_dict = {}
-  if os.path.isfile(actor_filename):
-    actor_dict = json.load(open(actor_filename))
+  
+  actors_dict = {}
+  if os.path.isfile(actors_filename):
+    actors_dict = json.load(open(actors_filename))
 
   ##############################################################################################################
   ####################################### PRE-PROCESSING #######################################################
   ##############################################################################################################
   cnt = 0
-  tags = root.findall(f'ns:{keys["row"]}', ns)
+  tags = root.findall(f'ns:{KEY_IN_ROW}', ns)
 
   for row in tags:
 
@@ -197,7 +175,17 @@ def execute(limit):
     base_tag(new_row, KEY_OUT_DIMENSIONS, dimensions)
 
     # TODO parse actor name to retrieve its UUID
+    author_name = get_value_from_key(KEY_IN_AUTHOR)
+    author_id = get_actor_id_by_name(author_name)
 
+    if author_id:
+      base_tag(new_row, KEY_OUT_AUTHOR, author_id)
+    
+    print(id_source)
+    print(row_id)
+    print(attributed_title)
+    print()
+    
     final = md.parseString(et.tostring(new_row, method='xml')).toprettyxml()
     write_file(final)
 
