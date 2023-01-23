@@ -51,21 +51,21 @@
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
         <namespaces>
-          <namespace prefix="arconto" uri="https://archipelago.itatti.harvard.edu/arconto#" />
+          <namespace prefix="veniss_ontology" uri="https://veniss.net/ontology#" />
         </namespaces>
       </target_info>
 
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
         <namespaces>
           <namespace prefix="ldp" uri="http://www.w3.org/ns/ldp#" />
         </namespaces>
       </target_info>
 
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
         <namespaces>
           <namespace prefix="provo" uri="http://www.w3.org/ns/prov#" />
         </namespaces>
@@ -88,7 +88,7 @@
     </example_data_info>
   </info>
   <namespaces>
-    <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/" />
+    <namespace prefix="veniss" uri="https://veniss.net/resource/" />
     <namespace prefix="aat" uri="http://vocab.getty.edu/aat/" />
     <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
     <namespace prefix="rs" uri="http://www.researchspace.org/resource/" />
@@ -125,7 +125,7 @@
                 <additional>
                   <relationship>crm:P2_has_type</relationship>
                   <entity>
-                    <type>arconto:Remove</type>
+                    <type>veniss_ontology:Remove</type>
                     <instance_generator name="002.2-vocab">
                       <arg name="res" type="constant">representation</arg>
                       <arg name="id" type="constant">2d</arg>
@@ -154,7 +154,7 @@
               <relationship>crm:P129_is_about</relationship>
               <entity>
                 <type>crm:E22_Man-Made_Object</type>
-                <type>arconto:Builtwork</type>
+                <type>veniss_ontology:Builtwork</type>
                 <instance_generator name="100-builtwork">
                   <arg name="bw_id" type="xpath">../../builtwork/UUID/text()</arg>
                 </instance_generator>
@@ -253,7 +253,7 @@
         <target_node>
           <entity>
             <type>crm:E22_Man-Made_Object</type>
-            <type>arconto:Builtwork</type>
+            <type>veniss_ontology:Builtwork</type>
             <instance_generator name="100-builtwork">
               <arg name="bw_id" type="xpath">UUID/text()</arg>
             </instance_generator>
@@ -272,14 +272,14 @@
             <relation>container</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:Remove</relationship>
+            <relationship>veniss_ontology:Remove</relationship>
           </target_relation>
         </path>
         <range>
           <source_node>container</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="003-container">
                 <arg name="container">parent/text()</arg>
               </instance_generator>
@@ -310,7 +310,7 @@
                   <additional>
                     <relationship>provo:wasAttributedTo</relationship>
                     <entity>
-                      <type>arconto:Remove</type>
+                      <type>veniss_ontology:Remove</type>
                       <instance_generator name="002-general">
                         <arg name="res" type="constant">user</arg>
                         <arg name="id">creator/text()</arg>
@@ -428,14 +428,14 @@
             <relation>//Function</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:has_function</relationship>
+            <relationship>veniss_ontology:has_function</relationship>
           </target_relation>
         </path>
         <range>
           <source_node>//Function</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="constant">builtwork_types</arg>
                 <arg name="id" type="xpath">id/text()</arg>
@@ -473,7 +473,7 @@
               <additional>
                 <relationship>crm:P123_resulted_in</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">to/text()</arg>
@@ -485,7 +485,7 @@
               <additional>
                 <relationship>crm:P124_transformed</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">from/text()</arg>
@@ -532,14 +532,14 @@
             <relation>//Use</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:has_use</relationship>
+            <relationship>veniss_ontology:has_use</relationship>
           </target_relation>
         </path>
         <range>
           <source_node>//Use</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="constant">builtwork_types</arg>
                 <arg name="id" type="xpath">id/text()</arg>
@@ -577,7 +577,7 @@
               <additional>
                 <relationship>crm:P123_resulted_in</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">to/text()</arg>
@@ -589,7 +589,7 @@
               <additional>
                 <relationship>crm:P124_transformed</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">from/text()</arg>
@@ -633,14 +633,14 @@
             <relation>//Typology</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:has_typology</relationship>
+            <relationship>veniss_ontology:has_typology</relationship>
           </target_relation>
         </path>
         <range>
           <source_node>//Typology</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="constant">builtwork_types</arg>
                 <arg name="id" type="xpath">id/text()</arg>
@@ -678,7 +678,7 @@
               <additional>
                 <relationship>crm:P123_resulted_in</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">to/text()</arg>
@@ -690,7 +690,7 @@
               <additional>
                 <relationship>crm:P124_transformed</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="002.2-vocab">
                     <arg name="res" type="constant">builtwork_types</arg>
                     <arg name="id" type="xpath">from/text()</arg>
@@ -741,7 +741,7 @@
           <source_node>//Material</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="constant">builtwork_materials</arg>
                 <arg name="id" type="xpath">id/text()</arg>
@@ -780,7 +780,7 @@
               <additional>
                 <relationship>crm:P22_transferred_title_to</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="300-actor">
                     <arg name="actor_id" type="xpath">to/text()</arg>
                   </instance_generator>
@@ -790,7 +790,7 @@
               <additional>
                 <relationship>crm:P23_transferred_title_from</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="300-actor">
                     <arg name="actor_id" type="xpath">from/text()</arg>
                   </instance_generator>
@@ -868,7 +868,7 @@
               <additional>
                 <relationship>crm:P29_custody_received_by</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="300-actor">
                     <arg name="actor_id" type="xpath">from/text()</arg>
                   </instance_generator>
@@ -878,7 +878,7 @@
               <additional>
                 <relationship>crm:P28_custody_surrendered_by</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="300-actor">
                     <arg name="actor_id" type="xpath">to/text()</arg>
                   </instance_generator>
@@ -947,7 +947,7 @@
             <additional>
               <relationship>crmpc:P14.1_in_the_role_of</relationship>
               <entity>
-                <type>arconto:Remove</type>
+                <type>veniss_ontology:Remove</type>
                 <instance_generator name="002.2-vocab">
                   <arg name="res" type="constant">actor_types</arg>
                   <arg name="id" type="constant">patron</arg>
@@ -972,7 +972,7 @@
           <source_node>person_id</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="300-actor">
                 <arg name="actor_id" type="xpath">text()</arg>
               </instance_generator>
@@ -1011,7 +1011,7 @@
             <additional>
               <relationship>crmpc:P14.1_in_the_role_of</relationship>
               <entity>
-                <type>arconto:Remove</type>
+                <type>veniss_ontology:Remove</type>
                 <instance_generator name="002.2-vocab">
                   <arg name="res" type="constant">actor_types</arg>
                   <arg name="id" type="constant">architect</arg>
@@ -1036,7 +1036,7 @@
           <source_node>person_id</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="300-actor">
                 <arg name="actor_id" type="xpath">text()</arg>
               </instance_generator>

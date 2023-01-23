@@ -38,9 +38,9 @@
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
-          <namespace prefix="arconto" uri="https://archipelago.itatti.harvard.edu/arconto#"/>
+          <namespace prefix="veniss_ontology" uri="https://veniss.net/veniss_ontology#"/>
         </namespaces>
       </target_info>
       <target_info>
@@ -66,7 +66,7 @@
     </example_data_info>
   </info>
   <namespaces>
-    <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/"/>
+    <namespace prefix="veniss" uri="https://veniss.net/resource/"/>
     <namespace uri="http://www.geonames.org/" prefix="geonames"/>
   </namespaces>
 
@@ -78,7 +78,7 @@
         <target_node>
           <entity>
             <type>crm:E22_Man-Made_Object</type>
-            <type>arconto:Source</type>
+            <type>veniss_ontology:Source</type>
             <instance_generator name="400-source">
               <arg name="source_id" type="xpath">id_source/text()</arg>
             </instance_generator>
@@ -113,7 +113,7 @@
               <additional>
                 <relationship>crm:P2_has_type</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">attributed_title</arg>
                   </instance_generator>
@@ -153,7 +153,7 @@
               <additional>
                 <relationship>crm:P2_has_type</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">original_title</arg>
                   </instance_generator>
@@ -173,7 +173,7 @@
             <relation>//typology</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:has_typology</relationship>
+            <relationship>veniss_ontology:has_typology</relationship>
           </target_relation>
         </path>
         <range>
@@ -181,7 +181,7 @@
           <target_node>
 
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="constant">source_typologies</arg>
                 <arg name="id" type="xpath">text()</arg>
@@ -221,7 +221,7 @@
               <additional>
                 <relationship>crm:P103_was_intended_for</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">source_transcription</arg>
                   </instance_generator>
@@ -262,7 +262,7 @@
               <additional>
                 <relationship>crm:P103_was_intended_for</relationship>
                 <entity>
-                  <type>arconto:Remove</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">source_synopsis</arg>
                   </instance_generator>
