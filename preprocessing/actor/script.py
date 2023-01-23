@@ -38,10 +38,6 @@ def execute(limit):
   if os.path.isfile(uuid_filename):
     uuid_dict = json.load(open(uuid_filename))
 
-
-  association_tables = json.load(open(os.path.join(
-      root_path, 'utils', 'association_tables', 'association_tables.json'), 'r'))
-
   # Geonames dictionary
   geonames_dict = json.load(
       open(os.path.join(root_path, 'utils', 'geonames', 'geonames.json'), 'r'))
@@ -231,13 +227,16 @@ def execute(limit):
     surname = row.find(f'ns:{key_surname}', ns).text
     surname = re.sub(regex_ita, '', surname).rstrip()
 
-    name = f'{given_name} {surname}'.rstrip()
+    name = str(f'{surname}, {given_name}').strip()
 
     if row_id not in uuid_dict:
       uuid_dict[row_id] = {
         actor_uuid: str(uuid.uuid1()),
         key_name: name
       }
+
+    elif not uuid_dict[row_id][key_name]:
+      uuid_dict[row_id][key_name] = name
 
     row_id = uuid_dict[row_id][actor_uuid]
 
