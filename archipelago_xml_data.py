@@ -8,7 +8,7 @@ import upload.script as upload
 @click.option('-t', '--transformation', 'exec_transformation', is_flag=True, help="Execute the transformation")
 @click.option('-u', '--upload', 'exec_upload', is_flag=True, help="Execute the upload", default=False)
 @click.option('-d', '--delete', 'exec_delete', is_flag=True, help="Execute the delete", default=False)
-@click.option('-c', '--config', 'config', help="configuration option", default='archipelago')
+@click.option('-c', '--config', 'config', help="configuration option", default='veniss')
 @click.option('-a', required=True, multiple=True, help="Types to iterate")
 @click.option('-l', '--limit', help="Number of files to execute", default=None)
 

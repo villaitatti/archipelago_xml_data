@@ -7,7 +7,7 @@ import urllib
 import configparser
 
 
-def execute(typology, limit, d=None, u=None, config='archipelago'):
+def execute(typology, limit, d=None, u=None, config_param='veniss'):
 
   def _get_credentials(type):
     config = configparser.ConfigParser()
@@ -18,7 +18,8 @@ def execute(typology, limit, d=None, u=None, config='archipelago'):
       return {
         KEY_USERNAME: config.get(type, KEY_USERNAME),
         KEY_PASSWORD: config.get(type, KEY_PASSWORD),
-        KEY_ENDPOINT: config.get(type, KEY_ENDPOINT)
+        KEY_ENDPOINT: config.get(type, KEY_ENDPOINT),
+        KEY_PREFIX: config.get(type, KEY_PREFIX)
       }
       
     except Exception as ex:
@@ -30,8 +31,9 @@ def execute(typology, limit, d=None, u=None, config='archipelago'):
   KEY_USERNAME = 'username'
   KEY_PASSWORD = 'password'
   KEY_ENDPOINT = 'endpoint'
+  KEY_PREFIX = 'graph_prefix'
   
-  credentials = _get_credentials(config)
+  credentials = _get_credentials(config_param)
 
   for root, dirs, src_files in os.walk(dir_output):
     cnt = 0
@@ -40,11 +42,15 @@ def execute(typology, limit, d=None, u=None, config='archipelago'):
       if limit and cnt == int(limit):
         break
 
-      normal_uri = f"https://archipelago.itatti.harvard.edu/resource/{typology}/{filename.replace('.ttl','')}/container/context"
+      graph_prefix = credentials[KEY_ENDPOINT]
+      if KEY_PREFIX in credentials:
+        graph_prefix = credentials[KEY_PREFIX]
+
+      normal_uri = f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"
       graph_uri = urllib.parse.quote(normal_uri, safe='') 
       request_url = f'{credentials[KEY_ENDPOINT]}/rdf-graph-store?graph={graph_uri}'
 
-      print(f'### {filename}')
+      print(f'### {normal_uri}')
 
       #DEL
       if d:
