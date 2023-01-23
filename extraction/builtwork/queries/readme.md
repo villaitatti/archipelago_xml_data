@@ -40,3 +40,12 @@ The process have been extended to `__sansecondo_island` and `__sansecondo_opensp
 
 Also, two other columns have been added. **t** is the type such as `Buildings`, `Island`, `Open Spaces`. While **z** is the order to follow in order to draw features. The idea is to keep 0 as the water level and have **1 for islands**, **2 for open spaces and buildings** and so on. According to this, **waterways and canals should be -1**.
 
+### documentation
+
+```
+delete from __sansecondo_buildings
+where identifier = 'SS_BLDG_052' and end_boe = '1788-12-31';
+
+delete from __sansecondo_buildings
+where identifier = 'SS_BLDG_001' and end_boe = '2019-12-31';
+```

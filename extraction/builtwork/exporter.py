@@ -6,6 +6,9 @@ from configparser import ConfigParser
 
 curr_dir = os.path.dirname(os.path.realpath(__file__))
 
+
+get_sansecondo_buildings = 'get_sansecondo_buildings.sql'
+
 def config(filename=os.path.join(curr_dir, 'database.ini'), section='postgresql'):
     parser = ConfigParser()
     parser.read(filename)
@@ -23,7 +26,7 @@ def config(filename=os.path.join(curr_dir, 'database.ini'), section='postgresql'
 
     return db
 
-def connect():
+def retrieve_builtwork():
   """ Connect to the PostgreSQL database server """
   conn = None
   try:
@@ -36,14 +39,19 @@ def connect():
 
     # create a cursor
     cur = conn.cursor()
+    
+    query_file = open(os.path.join(curr_dir, 'queries'))
       
     # execute a statement
     print('PostgreSQL database version:')
-    cur.execute('SELECT version()')
+    cur.execute('')
 
     # display the PostgreSQL database server version
-    db_version = cur.fetchone()
-    print(db_version)
+    data = cur.fetchone()
+    print(data)
+    
+    
+
       
     # close the communication with the PostgreSQL
     cur.close()
@@ -56,4 +64,4 @@ def connect():
       print('Database connection closed.')
 
 if __name__ == '__main__':
-    connect()
+    retrieve_builtwork()
