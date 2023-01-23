@@ -20,4 +20,4 @@ setuptools==50.3.0.post20201006
 six==1.15.0
 toml==0.10.1
 urllib3==1.26.5
-wheel==0.35.1
+wheel==0.38.1
