@@ -28,9 +28,10 @@ It sould be constructed as following:
 
 ```
 [online]
-username = USERNAME #replace with your username
-password = PASSWORD #replace with your password
-endpoint = ENDPOINT #replace with your endpoint
+username = USERNAME   #replace with your username
+password = PASSWORD   #replace with your password
+endpoint = ENDPOINT   #replace with your endpoint
+graph_prefix = PREFIX #replace with the prefix the graphs should have
 ```
 
 In this case, please add parameter `-c online` when running the script. **Note:** -c parameter must match the configuration parameter, in this case "online".
