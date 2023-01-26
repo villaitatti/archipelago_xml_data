@@ -40,7 +40,7 @@
       <target_info>
         <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
-          <namespace prefix="veniss_ontology" uri="https://veniss.net/veniss_ontology#"/>
+          <namespace prefix="veniss_ontology" uri="https://veniss.net/ontology#"/>
         </namespaces>
       </target_info>
       <target_info>
