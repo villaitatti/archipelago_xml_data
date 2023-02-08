@@ -213,8 +213,8 @@
   <generator name="311-actor-identifier-name" prefix="veniss">
     <pattern>actor/{actor_id}/given_name</pattern>
   </generator>
-  <generator name="312-actor-identifier-surname" prefix="veniss">
-    <pattern>actor/{actor_id}/surname</pattern>
+  <generator name="312-actor-identifier-family_name" prefix="veniss">
+    <pattern>actor/{actor_id}/family_name</pattern>
   </generator>
   <generator name="313-actor-identifier-alias" prefix="veniss">
     <pattern>actor/{actor_id}/alias</pattern>

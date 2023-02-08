@@ -246,8 +246,13 @@ def execute(limit):
 
     print(f'{row_id} is of type: {actor_type}')
 
-    appellation = et.SubElement(new_row, key_appellation)
-    appellation.text = name
+    # given name
+    node_given_name = et.SubElement(new_row, key_given_name)
+    node_given_name.text = given_name
+
+    # surname
+    node_surname = et.SubElement(new_row, key_surname)
+    node_surname.text = surname
 
     # Container
     tag_container = et.SubElement(new_row, 'container')
@@ -371,7 +376,7 @@ def execute(limit):
       base_tag(new_row, key_notes, notes[key_eng])
 
     all_people.append({
-        key_appellation: appellation.text,
+        key_appellation: name,
         key_id_person: id_person.text
     })
 
