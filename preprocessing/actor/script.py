@@ -227,7 +227,10 @@ def execute(limit):
     surname = row.find(f'ns:{key_surname}', ns).text
     surname = re.sub(regex_ita, '', surname).rstrip()
 
-    name = str(f'{surname}, {given_name}').strip()
+    if given_name:
+      name = str(f'{surname}, {given_name}').strip()
+    else:
+      name = surname.strip()
 
     if row_id not in uuid_dict:
       uuid_dict[row_id] = {
@@ -246,13 +249,29 @@ def execute(limit):
 
     print(f'{row_id} is of type: {actor_type}')
 
-    # given name
-    node_given_name = et.SubElement(new_row, key_given_name)
-    node_given_name.text = given_name
+    if actor_type == "person":
+      # given name
+      node_given_name = et.SubElement(new_row, key_given_name)
+      node_given_name.text = given_name
 
-    # surname
-    node_surname = et.SubElement(new_row, key_surname)
-    node_surname.text = surname
+      # surname
+      node_surname = et.SubElement(new_row, key_surname)
+      node_surname.text = surname
+      
+      # alias
+      alias_text = row.find(f'ns:{key_alias}', ns).text
+      if alias_text is not None:
+        alias = explode_text(alias_text)
+        base_tag(new_row, key_alias, alias[key_eng])
+
+      # patronymic
+      patronymic = row.find(f'ns:{key_patronymic}', ns).text
+      if patronymic is not None:
+        base_tag(new_row, key_patronymic, escape_uri(explode_text(patronymic)[key_eng]))
+
+    else:
+      node_appellation = et.SubElement(new_row, key_appellation)
+      node_appellation.text = name
 
     # Container
     tag_container = et.SubElement(new_row, 'container')
@@ -269,12 +288,6 @@ def execute(limit):
     time_container = et.SubElement(tag_container, 'time')
     time_container.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
-    # alias
-    alias_text = row.find(f'ns:{key_alias}', ns).text
-    if alias_text is not None:
-      alias = explode_text(alias_text)
-      base_tag(new_row, key_alias, alias[key_eng])
-    
     # Titles
     # If the text is not empty
     titles_text = row.find(f'ns:{key_title}', ns).text
@@ -283,11 +296,6 @@ def execute(limit):
 
       for title in titles_text.split(';'):
         base_tag(titles, key_title, escape_uri(explode_text(title)[key_eng]))
-
-    # patronymic
-    patronymic = row.find(f'ns:{key_patronymic}', ns).text
-    if patronymic is not None:
-      base_tag(new_row, key_patronymic, escape_uri(explode_text(patronymic)[key_eng]))
 
     # occupation
     occupation = row.find(f'ns:{key_occuption}', ns).text

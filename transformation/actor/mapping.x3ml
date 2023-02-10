@@ -61,7 +61,7 @@
       <target_info>
         <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
-          <namespace prefix="veniss_ontology" uri="https://archipelago.itatti.harvard.edu/veniss_ontology#" />
+          <namespace prefix="veniss_ontology" uri="https://veniss.net/ontology#" />
         </namespaces>
       </target_info>
 
@@ -106,6 +106,8 @@
         <target_node>
           <entity>
             <type>veniss_ontology:Person</type>
+            <type>veniss_ontology:Actor</type>
+            <type>crm:E39_Actor</type>
             <instance_generator name="300-actor">
               <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
             </instance_generator>
@@ -256,99 +258,18 @@
         </range>
       </link>
       
-      <!-- Title -->
-      <link>
-        <path>
-          <source_relation>
-            <relation>//Title</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>veniss_ontology:title</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>//Title</source_node>
-          <target_node>
-
-            <entity>
-              <type>veniss_ontology:Remove</type>
-              <instance_generator name="002.2-vocab">
-                <arg name="res" type="constant">actor_types</arg>
-                <arg name="id" type="xpath">text()</arg>
-              </instance_generator>
-              
-
-            </entity>
-
-          </target_node>
-        </range>
-      </link>
-
-      <!-- 
-      <link>
-        <path>
-          <source_relation>
-            <relation>//Occupation</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>sari:SRP2_had_occupation</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>Occupation</source_node>
-          <target_node>
-
-            <entity>
-              <type>veniss_ontology:Remove</type>
-              <instance_generator name="002.2-vocab">
-                <arg name="res" type="constant">actor_types</arg>
-                <arg name="id" type="xpath">text()</arg>
-              </instance_generator>
-            </entity>
-
-          </target_node>
-        </range>
-      </link>
-      -->
-
-      <!-- Activity -->
-      <link>
-        <path>
-          <source_relation>
-            <relation>//Activity</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P14i_performed</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>//Activity</source_node>
-          <target_node>
-
-            <entity>
-              <type>veniss_ontology:Remove</type>
-              <instance_generator name="002.2-vocab">
-                <arg name="res" type="constant">actor_occupation</arg>
-                <arg name="id" type="xpath">text()</arg>
-              </instance_generator>
-            </entity>
-
-          </target_node>
-        </range>
-      </link>
-
       <!-- Alias -->
       <link>
         <path>
           <source_relation>
-            <relation>Alias</relation>
+            <relation>//Alias</relation>
           </source_relation>
           <target_relation>
-            <relationship>veniss_ontology:alias</relationship>
+            <relationship>crm:P1_is_identified_by</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>Alias</source_node>
+          <source_node>//Alias</source_node>
           <target_node>
 
             <entity>
@@ -364,17 +285,79 @@
               <additional>
                 <relationship>crm:P2_has_type</relationship>
                 <entity>
-                  <type>crm:E55_Type</type>
+                  <type>veniss_ontology:Remove</type>
                   <instance_generator name="000-type">
                     <arg name="type_id" type="constant">alias</arg>
                   </instance_generator>
-                  <label_generator name="Constant">
-                    <arg name="text" type="constant">Alias</arg>
-                    <arg name="language" type="constant">en</arg>
-                  </label_generator>
                 </entity>
               </additional>
 
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Patronymic -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//Patronymic</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_identified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//Patronymic</source_node>
+          <target_node>
+
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="313-actor-identifier-alias">
+                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+              </instance_generator>
+              <label_generator name="Constant">
+                <arg name="text" type="xpath">eng/text()</arg>
+                <arg name="language" type="constant">en</arg>
+              </label_generator>
+
+              <additional>
+                <relationship>crm:P2_has_type</relationship>
+                <entity>
+                  <type>veniss_ontology:Remove</type>
+                  <instance_generator name="000-type">
+                    <arg name="type_id" type="constant">patronymic</arg>
+                  </instance_generator>
+                </entity>
+              </additional>
+
+            </entity>
+
+          </target_node>
+        </range>
+      </link>
+
+      <!-- Title -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//Title</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_identified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>//Title</source_node>
+          <target_node>
+
+            <entity>
+              <type>veniss_ontology:Remove</type>
+              <instance_generator name="002.2-vocab">
+                <arg name="res" type="constant">actor_types</arg>
+                <arg name="id" type="xpath">text()</arg>
+              </instance_generator>
             </entity>
 
           </target_node>
@@ -399,7 +382,7 @@
 
             <entity>
               <type>crm:E67_Birth</type>
-              <instance_generator name="320-actor-birth">
+              <instance_generator name="320a-person-birth">
                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
               </instance_generator>
 
@@ -408,7 +391,7 @@
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
                   <type>crm:E2_Time-Span</type>
-                  <instance_generator name="323-actor-birth-date">
+                  <instance_generator name="323a-person-birth-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 
@@ -463,7 +446,7 @@
 
             <entity>
               <type>crm:E69_Death</type>
-              <instance_generator name="330-actor-death">
+              <instance_generator name="330a-person-death">
                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
               </instance_generator>
 
@@ -472,7 +455,7 @@
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
                   <type>crm:E2_Time-Span</type>
-                  <instance_generator name="333-actor-death-date">
+                  <instance_generator name="333a-person-death-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 
@@ -509,7 +492,7 @@
 
       </link>
 
-      <!-- Marriage date -->
+      <!--
       <link>
         <path>
           <source_relation>
@@ -570,7 +553,6 @@
         </range>
       </link>
 
-      <!-- Will date -->
       <link>
         <path>
           <source_relation>
@@ -631,7 +613,6 @@
         </range>
       </link>
 
-      <!-- Notes -->
       <link>
         <path>
           <source_relation>
@@ -677,6 +658,7 @@
           </target_node>
         </range>
       </link>
+      -->
 
     </mapping>
 
@@ -687,7 +669,9 @@
         <source_node>/group</source_node>
         <target_node>
           <entity>
+            <type>veniss_ontology:Group</type>
             <type>veniss_ontology:Actor</type>
+            <type>crm:E39_Actor</type>
             <instance_generator name="300-actor">
               <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
             </instance_generator>
@@ -772,32 +756,6 @@
           </target_node>
         </range>
       </link>
-            
-      <!-- Occupation -->
-      <link>
-        <path>
-          <source_relation>
-            <relation>//Occupation</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>sari:SRP2_had_occupation</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>Occupation</source_node>
-          <target_node>
-
-            <entity>
-              <type>veniss_ontology:Remove</type>
-              <instance_generator name="002.2-vocab">
-                <arg name="res" type="constant">actor_types</arg>
-                <arg name="id" type="xpath">text()</arg>
-              </instance_generator>
-            </entity>
-
-          </target_node>
-        </range>
-      </link>
       
       <!-- Birth -->
       <link>
@@ -817,7 +775,7 @@
 
             <entity>
               <type>crm:E66_Formation</type>
-              <instance_generator name="320-actor-birth">
+              <instance_generator name="320b-group-formation">
                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
               </instance_generator>
 
@@ -826,7 +784,7 @@
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
                   <type>crm:E2_Time-Span</type>
-                  <instance_generator name="323-actor-birth-date">
+                  <instance_generator name="323b-group-formation-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 
@@ -881,7 +839,7 @@
 
             <entity>
               <type>crm:E68_Dissolution</type>
-              <instance_generator name="330-actor-death">
+              <instance_generator name="330a-group-dissolution">
                 <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
               </instance_generator>
 
@@ -890,7 +848,7 @@
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
                   <type>crm:E2_Time-Span</type>
-                  <instance_generator name="333-actor-death-date">
+                  <instance_generator name="333a-group-dissolution-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 

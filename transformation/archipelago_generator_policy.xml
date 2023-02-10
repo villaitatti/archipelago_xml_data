@@ -220,24 +220,40 @@
     <pattern>actor/{actor_id}/alias</pattern>
   </generator>
 
-  <generator name="314-actor-identifier-title" prefix="aat">
+  <generator name="314-actor-identifier-patronymic" prefix="veniss">
+    <pattern>actor/{actor_id}/patronymic</pattern>
+  </generator>
+
+  <generator name="315-actor-identifier-title" prefix="aat">
     <pattern>{aat}</pattern>
   </generator>
 
-  <!-- Actor's birth -->
-  <generator name="320-actor-birth" prefix="veniss">
+  <!-- Actor begin of existence -->
+  <generator name="320a-person-birth" prefix="veniss">
     <pattern>actor/{actor_id}/birth</pattern>
   </generator>
-  <generator name="323-actor-birth-date" prefix="veniss">
+  <generator name="323a-person-birth-date" prefix="veniss">
     <pattern>actor/{actor_id}/birth/date</pattern>
   </generator>
+  <generator name="320b-group-formation" prefix="veniss">
+    <pattern>actor/{actor_id}/formation</pattern>
+  </generator>
+  <generator name="323b-group-formation-date" prefix="veniss">
+    <pattern>actor/{actor_id}/formation/date</pattern>
+  </generator>
 
-  <!-- Actor's death -->
-  <generator name="330-actor-death" prefix="veniss">
+  <!-- Actor end of the existence -->
+  <generator name="330a-person-death" prefix="veniss">
     <pattern>actor/{actor_id}/death</pattern>
   </generator>
-  <generator name="333-actor-death-date" prefix="veniss">
+  <generator name="333a-person-death-date" prefix="veniss">
     <pattern>actor/{actor_id}/death/date</pattern>
+  </generator>
+  <generator name="330a-group-dissolution" prefix="veniss">
+    <pattern>actor/{actor_id}/dissolution</pattern>
+  </generator>
+  <generator name="333a-group-dissolution-date" prefix="veniss">
+    <pattern>actor/{actor_id}/dissolution/date</pattern>
   </generator>
 
   <!-- Actor's activity -->

@@ -1,0 +1,698 @@
+[
+    {
+        "Appellation": "Celsi, Marina",
+        "ID_PERSON": "106cdd4a-cc5f-11ec-8c5f-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Contarini, Antonio",
+        "ID_PERSON": "b10a0f62-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Baffo family",
+        "ID_PERSON": "b10a243e-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Holy See",
+        "ID_PERSON": "b10a2f10-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Benedectine Nuns of San Secondo",
+        "ID_PERSON": "b10a36ea-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gavan, Angelo",
+        "ID_PERSON": "b10a4086-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Museo, Agostino",
+        "ID_PERSON": "b10a4b3a-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Vecellio, Tiziano",
+        "ID_PERSON": "b10a5652-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Visentini, Antonio",
+        "ID_PERSON": "b10a5fc6-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tatti, Jacopo",
+        "ID_PERSON": "b10a6994-cc7c-11ec-a663-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Canons regular of Santo Spirito",
+        "ID_PERSON": "cb1a9fda-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bondumier, Andrea",
+        "ID_PERSON": "cb1aa886-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tron, Filippo",
+        "ID_PERSON": "cb1ab4ca-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Chigi, Fabio",
+        "ID_PERSON": "cb1ac078-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Guardi, Francesco",
+        "ID_PERSON": "cb1ace2e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Danieli, Daniele",
+        "ID_PERSON": "cb1ad75c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Guardi, Giacomo",
+        "ID_PERSON": "cb1ae09e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Ferri, Elisabetta Graziosa",
+        "ID_PERSON": "cb1ae9c2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Morani, Pietro",
+        "ID_PERSON": "cb1af35e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gella, Domenico Maria",
+        "ID_PERSON": "cb1afaac-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gella, Carlo",
+        "ID_PERSON": "cb1b04fc-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Zeli, Cherubino",
+        "ID_PERSON": "cb1b1802-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Veneziano, Jacometto",
+        "ID_PERSON": "cb1b2068-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Malerba, Alessandro",
+        "ID_PERSON": "cb1b2996-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Temanza, Tommaso",
+        "ID_PERSON": "cb1b3206-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Mauro, Niccol\u00f2",
+        "ID_PERSON": "cb1b3ca6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bonaparte, Napol\u00e9on",
+        "ID_PERSON": "cb1b4476-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Codagli, Domenico",
+        "ID_PERSON": "cb1b5042-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Dominican friars of San Secondo",
+        "ID_PERSON": "cb1b5aa6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Zon, Giovanni",
+        "ID_PERSON": "cb1b624e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Falier, Vitale",
+        "ID_PERSON": "cb1b6e74-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Villanova, Gerardino",
+        "ID_PERSON": "cb1b7860-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Coronelli, Vincenzo Maria",
+        "ID_PERSON": "cb1b801c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bragadin, Angelo",
+        "ID_PERSON": "cb1b8aee-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Buonconsiglio, Giovanni",
+        "ID_PERSON": "cb1b94b2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Trevisan, Giovanni",
+        "ID_PERSON": "cb1b9dea-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Priuli, Matteo",
+        "ID_PERSON": "cb1ba88a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bon, Pietro",
+        "ID_PERSON": "cb1bb30c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Baronio, Angelo",
+        "ID_PERSON": "cb1bbf3c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Contarini, Girolamo",
+        "ID_PERSON": "cb1bc950-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Riva, Raffaele",
+        "ID_PERSON": "cb1bd332-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Luni, Zaccaria",
+        "ID_PERSON": "cb1bdc42-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Viero, Teodoro",
+        "ID_PERSON": "cb1be570-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Stella, Guglielmo",
+        "ID_PERSON": "cb1bef0c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "de' Barbari, Jacopo",
+        "ID_PERSON": "cb1bf86c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Moro, Marco",
+        "ID_PERSON": "cb1c01b8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tirali, Andrea",
+        "ID_PERSON": "cb1c0c26-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Querena, Luigi",
+        "ID_PERSON": "cb1c1504-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Battaglioli, Francesco",
+        "ID_PERSON": "cb1c1d38-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bison, Giuseppe Bernardino",
+        "ID_PERSON": "cb1c258a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lovisa, Domenico",
+        "ID_PERSON": "cb1c2db4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Sabbadino, Cristoforo",
+        "ID_PERSON": "cb1c367e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Spaziani, Alessandro",
+        "ID_PERSON": "cb1c402e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bordone, Benedetto",
+        "ID_PERSON": "cb1c49e8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Ruzzini, Carlo",
+        "ID_PERSON": "cb1c54c4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Emo, Angelo",
+        "ID_PERSON": "cb1c5eec-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Candian friars of Santo Spirito",
+        "ID_PERSON": "cb1c67b6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Dandolo, Enrico",
+        "ID_PERSON": "cb1c6f54-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gattilesso, Pietro",
+        "ID_PERSON": "cb1c799a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Cominelli, Andrea",
+        "ID_PERSON": "cb1c8192-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Albrizzi, Giovanni Battista",
+        "ID_PERSON": "cb1c8afc-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Chevalier, Pietro",
+        "ID_PERSON": "cb1c948e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Alberti, Francesco",
+        "ID_PERSON": "cb1c9ff6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Longhena, Baldassare",
+        "ID_PERSON": "cb1ca9b0-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Venice Municipality",
+        "ID_PERSON": "cb1cb39c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Milizia da Mar",
+        "ID_PERSON": "cb1cba5e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Venetian Republic",
+        "ID_PERSON": "cb1cc1ac-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Savi ed esecutori alle acque",
+        "ID_PERSON": "cb1cc904-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Venetian Senate",
+        "ID_PERSON": "cb1cd034-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tironi, Francesco",
+        "ID_PERSON": "cb1cd926-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Scutari, Vincenzo",
+        "ID_PERSON": "cb1ce240-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Giacomazzi, Bernardin",
+        "ID_PERSON": "cb1ceb14-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Procurators of St Mark's de supra",
+        "ID_PERSON": "cb1cf58c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Provveditori sopra monasteri",
+        "ID_PERSON": "cb1cfcee-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Valerio, Bonaventura Maria",
+        "ID_PERSON": "cb1d0450-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Codroipo, Stefano",
+        "ID_PERSON": "cb1d0d2e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Polani, Vincenzo",
+        "ID_PERSON": "cb1d1544-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Porta, Domenico",
+        "ID_PERSON": "cb1d1ca6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Contarini, Giambattista Maria",
+        "ID_PERSON": "cb1d2480-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lateran Canons of Santa Maria della Carit\u00e0",
+        "ID_PERSON": "cb1d2cc8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Council of Ten",
+        "ID_PERSON": "cb1d342a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Foscarini, Alvise",
+        "ID_PERSON": "cb1d3bfa-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Contarini, Alvise",
+        "ID_PERSON": "cb1d45d2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Pisani, Andrea",
+        "ID_PERSON": "cb1d4df2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Carafa della Spina, Carlo",
+        "ID_PERSON": "cb1d55b8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Bencio",
+        "ID_PERSON": "cb1d61f2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Porta, Giuseppe",
+        "ID_PERSON": "cb1d69ae-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Santacroce, Girolamo",
+        "ID_PERSON": "cb1d720a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Santacroce, Francesco",
+        "ID_PERSON": "cb1d7b1a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Giustinian, Lorenzo",
+        "ID_PERSON": "cb1d83c6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Farnese, Alessandro",
+        "ID_PERSON": "cb1d8e84-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "de Comminelles, Hugues",
+        "ID_PERSON": "cb1d9af0-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "dal Cortivo, Nicol\u00f2",
+        "ID_PERSON": "cb1da284-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Vestri, Antonio Girolamo",
+        "ID_PERSON": "cb1daa86-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Alberti, Sebastiano",
+        "ID_PERSON": "cb1db18e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Denaix, Augusto",
+        "ID_PERSON": "cb1db968-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Kingdom of Lombardy\u2013Venetia",
+        "ID_PERSON": "cb1dc214-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Magistrate for Health",
+        "ID_PERSON": "cb1dc994-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Mercuriale, Girolamo",
+        "ID_PERSON": "cb1dd0c4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Capivaccio, Girolamo",
+        "ID_PERSON": "cb1dd9b6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Stefanelli, Mariano",
+        "ID_PERSON": "cb1de668-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Corte, Niccol\u00f2",
+        "ID_PERSON": "cb1dede8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Paterno, Bernardino",
+        "ID_PERSON": "cb1df5ae-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Mocenigo, Alvise",
+        "ID_PERSON": "cb1dfc0c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Massa, Nicol\u00f2",
+        "ID_PERSON": "cb1e06ac-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Luran, Giovan Battista",
+        "ID_PERSON": "cb1e0f12-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Canons regular of San Clemente",
+        "ID_PERSON": "cb1e166a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Polani, Giovanni",
+        "ID_PERSON": "cb1e1d9a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lottario, Alberico",
+        "ID_PERSON": "cb1e263c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Selva di Boggion, Imizza",
+        "ID_PERSON": "cb1e2e20-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Selva di Boggion, Daniele",
+        "ID_PERSON": "cb1e35fa-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Litaldo, Spadaro",
+        "ID_PERSON": "cb1e3f1e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Litaldo, Pietro",
+        "ID_PERSON": "cb1e46b2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Rosso, Angelo",
+        "ID_PERSON": "cb1e4df6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Ferrara, Egidio",
+        "ID_PERSON": "cb1e5526-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "de Benvenutis, Nicol\u00f2",
+        "ID_PERSON": "cb1e5eb8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Du\u00e8ze, Jacques",
+        "ID_PERSON": "cb1e671e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tomacelli, Piero",
+        "ID_PERSON": "cb1e7358-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Condulmer, Gabriele",
+        "ID_PERSON": "cb1e7e0c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "de Lusciano, Antonio",
+        "ID_PERSON": "cb1e8d16-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Nani, Pietro",
+        "ID_PERSON": "cb1e94b4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Barbarigo, Agostino",
+        "ID_PERSON": "cb1e9d06-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Habsburg, Friedrich",
+        "ID_PERSON": "cb1ea6d4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Foscari, Francesco",
+        "ID_PERSON": "cb1eb084-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Moro, Cristoforo",
+        "ID_PERSON": "cb1eba48-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Muzzani, Antonio",
+        "ID_PERSON": "cb1ec3e4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Graziussi, Domenico",
+        "ID_PERSON": "cb1ecbaa-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Seguso, Angelo",
+        "ID_PERSON": "cb1ed3e8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Fondo territoriale",
+        "ID_PERSON": "cb1edf1e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Palaiologos, John {Giovanni}",
+        "ID_PERSON": "cb1ee6b2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Priuli, Maria",
+        "ID_PERSON": "cb1ef0ee-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Palaiologos, Amadea {Amedea}",
+        "ID_PERSON": "cb1efa12-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "d'Este, Ercole",
+        "ID_PERSON": "cb1f03c2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Loredan, Leonardo",
+        "ID_PERSON": "cb1f0d86-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Schinner, Matth\u00e4us {Matteo}",
+        "ID_PERSON": "cb1f16f0-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Antonini, Egidio",
+        "ID_PERSON": "cb1f20aa-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gritti, Andrea",
+        "ID_PERSON": "cb1f2d70-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Sforza, Francesco",
+        "ID_PERSON": "cb1f372a-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "della Rovere, Francesco Maria",
+        "ID_PERSON": "cb1f4152-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "dei Conti di Thiene, Gaetano",
+        "ID_PERSON": "cb1f4cba-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Carafa, Gian Pietro",
+        "ID_PERSON": "cb1f5822-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Contarini, Andrea",
+        "ID_PERSON": "cb1f652e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Vendramin",
+        "ID_PERSON": "cb1f6ca4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Vallaresso, Piero",
+        "ID_PERSON": "cb1f75f0-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Pesaro, Alessandro",
+        "ID_PERSON": "cb1f7cf8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Giustinian, Sebastiano",
+        "ID_PERSON": "cb1f84b4-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Polani, Pietro",
+        "ID_PERSON": "cb1f8e64-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Roger, Pierre",
+        "ID_PERSON": "cb1f97a6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "de Strigis, Alessandro",
+        "ID_PERSON": "cb1fa1d8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Tirinello, Giovanni",
+        "ID_PERSON": "cb1faaf2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lazzaroni, Francesco",
+        "ID_PERSON": "cb1fb2c2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Fornareto, Giovanni",
+        "ID_PERSON": "cb1fbbbe-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Mocenigo, Andrea",
+        "ID_PERSON": "cb1fc58c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Correggio, Agostino",
+        "ID_PERSON": "cb1fce60-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lando, Girolamo",
+        "ID_PERSON": "cb1fd892-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Barbarigo, Gianfrancesco",
+        "ID_PERSON": "cb1fdfcc-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Camaldolese monks of Monte Rua",
+        "ID_PERSON": "cb1fe6de-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lorenzetto, Pietro",
+        "ID_PERSON": "cb1fee2c-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Lumi, Zuanne",
+        "ID_PERSON": "cb1ff598-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Brozio, Andrea",
+        "ID_PERSON": "cb1ffcd2-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Balbi, Todero",
+        "ID_PERSON": "cb200420-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Basaiti, Marco",
+        "ID_PERSON": "cb200b64-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Surian, Andrea",
+        "ID_PERSON": "cb2013de-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Hermits of Santa Giustina in Padua",
+        "ID_PERSON": "cb202126-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Friars of Santissima Trinit\u00e0 in Brondolo",
+        "ID_PERSON": "cb202860-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Maffei, Pietro",
+        "ID_PERSON": "cb202f18-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Benedictine monks of San Giorgio Maggiore",
+        "ID_PERSON": "cb203710-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Medici, Giulio Zanobi",
+        "ID_PERSON": "cb203d6e-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Benedictine nuns of Corpus Domini",
+        "ID_PERSON": "cb204818-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Gualtierotti, Bartolomeo",
+        "ID_PERSON": "cb204ec6-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "da Ferrara, Bartolomeo",
+        "ID_PERSON": "cb205722-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Carthusian monks of Sant'Andrea della Certosa",
+        "ID_PERSON": "cb205efc-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Querini, Daria",
+        "ID_PERSON": "cb2065c8-cf78-11ec-88a8-3a5becfe4abd"
+    },
+    {
+        "Appellation": "Secular confraternity of San Diego",
+        "ID_PERSON": "cb206cda-cf78-11ec-88a8-3a5becfe4abd"
+    }
+]
