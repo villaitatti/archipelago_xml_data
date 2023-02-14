@@ -32,6 +32,7 @@ def execute(limit):
   filename = os.path.join(dir_path, 'People.xml')
 
   uuid_filename = os.path.join(dir_path, os.pardir, 'actor.json')
+  occp_filename = os.path.join(dir_path, 'actor_occupation.json')
   actor_uuid = 'actor_uuid'
 
   uuid_dict = {}
@@ -96,6 +97,10 @@ def execute(limit):
   key_titles = 'Titles'
   key_activities = 'Activities'
   key_activity = 'Activity'
+  key_activity_subject = "subject"
+  key_activity_place = "place"
+  key_activity_date = "date"
+  key_activity_note = "note"
   key_id = 'Id'
   key_uuid = 'UUID'
   key_start = 'Start'
@@ -202,6 +207,10 @@ def execute(limit):
 
   cnt_total = 0
 
+  occp_dict = {}
+  if os.path.exists(occp_filename):
+    occp_dict = json.load(open(occp_filename))
+
   # Iterate each ROW
   for row in tags:
 
@@ -307,12 +316,25 @@ def execute(limit):
     if activities_text is not None:
       activities = et.SubElement(new_row, key_activities)
 
+      if row_id not in occp_dict:
+        occp_dict[row_id] = []
+
       for activity in activities_text.split(';'):
         text = explode_text(activity)
-        if key_aat in text:
-          base_tag(activities, key_activity,text[key_aat])
-        else:
-          base_tag(activities, key_activity, text[key_eng])
+          
+        # Generate new entry in dictionary
+        e = { key_eng: text[key_eng] }
+        if key_ita in text:
+          e[key_ita] = text[key_ita]
+          
+          occp_dict[row_id].append(e)
+        """
+        # In any case, store in xml
+        activity = et.SubElement(activities, key_activity)
+        
+        subject = et.SubElement(activity, key_activity_subject)
+        subject.text = escape_uri(occp_dict[key_aat])
+        """
 
 
     # Birth
@@ -397,6 +419,9 @@ def execute(limit):
 
   open(os.path.join(dir_path, 'people.json'), 'w').write(
       json.dumps(all_people, indent=4))
+
+  with open(occp_filename, 'w') as f:
+    f.write(json.dumps(occp_dict, indent=4, sort_keys=True))
 
   with open(uuid_filename, 'w') as f:
     f.write(json.dumps(uuid_dict, indent=4, sort_keys=True))
