@@ -492,6 +492,71 @@
 
       </link>
 
+      <!-- Activities -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>//Activity</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P14i_performed</relationship>
+          </target_relation>
+        </path> 
+
+        <range>
+          <source_node>//Activity</source_node>
+          <target_node>
+            <entity>
+              <type>frbroo:F51_Pursuit</type>
+              <instance_generator name="340-actor-activity">
+                <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
+                <arg name="activity_id" type="xpath">UUID/text()</arg>
+              </instance_generator> 
+
+              <!-- subject -->
+              <additional>
+                <relationship>frbroo:R59_had_typical_subject</relationship> 
+                <entity>
+                  <type>veniss_ontology:Remove</type>
+                    <instance_generator name="002.2-vocab">
+                      <arg name="res" type="constant">actor_types</arg>
+                      <arg name="id" type="xpath">subject/text()</arg>
+                    </instance_generator> 
+                </entity>
+              </additional>
+
+              <!-- Notes -->
+              <additional>
+                <relationship>crm:P67i_is_referred_to_by</relationship> 
+                <entity>
+                  <type>crm:E89_Propositional_Object</type>
+                    <instance_generator name="349-actor-activity-note">
+                      <arg name="actor_id" type="xpath">../../ID_PERSON/text()</arg>
+                      <arg name="activity_id" type="xpath">UUID/text()</arg>
+                    </instance_generator> 
+                    <label_generator name="Literal">
+                      <arg name="text" type="xpath">note/text()</arg>
+                    </label_generator>
+
+                    <additional>
+                      <relationship>crm:P2_has_type</relationship> 
+                      <entity>
+                        <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type-id" type="constant">note</arg>
+                          </instance_generator> 
+                      </entity>
+                    </additional>
+
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
+
       <!--
       <link>
         <path>
@@ -679,17 +744,6 @@
               <arg name="text" type="xpath">Appellation/text()</arg>
               <arg name="language" type="xpath">it</arg>
             </label_generator>
-
-            <additional>
-              <relationship>crm:P2_has_type</relationship>
-              <entity>
-                <type>veniss_ontology:Remove</type>
-                <instance_generator name="002.2-vocab">
-                  <arg name="res" type="constant">actor_types</arg>
-                  <arg name="id" type="constant">group</arg>
-                </instance_generator> 
-              </entity>
-            </additional>
 
           </entity>
         </target_node>

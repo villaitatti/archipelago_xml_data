@@ -33,6 +33,7 @@ def execute(limit):
 
   uuid_filename = os.path.join(dir_path, os.pardir, 'actor.json')
   occp_filename = os.path.join(dir_path, 'actor_occupation.json')
+  occp_filename_processed = os.path.join(dir_path, 'actor_occupation-manual_processed.json')
   actor_uuid = 'actor_uuid'
 
   uuid_dict = {}
@@ -211,6 +212,10 @@ def execute(limit):
   if os.path.exists(occp_filename):
     occp_dict = json.load(open(occp_filename))
 
+  occp_dict_processed = {}
+  if os.path.exists(occp_filename_processed):
+    occp_dict_processed = json.load(open(occp_filename_processed))
+
   # Iterate each ROW
   for row in tags:
 
@@ -311,11 +316,9 @@ def execute(limit):
     if occupation is not None:
       base_tag(new_row, key_occuption, escape_uri(explode_text(occupation)[key_eng]))
 
-    # activities
+    # Save activities in dict
     activities_text = row.find(f'ns:{key_activities_role}', ns).text
     if activities_text is not None:
-      activities = et.SubElement(new_row, key_activities)
-
       if row_id not in occp_dict:
         occp_dict[row_id] = []
 
@@ -328,14 +331,31 @@ def execute(limit):
           e[key_ita] = text[key_ita]
           
           occp_dict[row_id].append(e)
-        """
-        # In any case, store in xml
-        activity = et.SubElement(activities, key_activity)
-        
-        subject = et.SubElement(activity, key_activity_subject)
-        subject.text = escape_uri(occp_dict[key_aat])
-        """
 
+    # Save activities in xml
+    if occp_dict_processed and row_id in occp_dict_processed:
+      node_activities = et.SubElement(new_row, key_activities)
+
+      for current_activity in occp_dict_processed[row_id]:
+        node_activity = et.SubElement(node_activities, key_activity)
+
+        node_activity_id = et.SubElement(node_activity, key_uuid)
+        node_activity_id.text = str(uuid.uuid1())
+        
+        node_activity_subject = et.SubElement(node_activity, key_activity_subject)
+        node_activity_subject.text = escape_uri(current_activity[key_activity_subject])
+        
+        if key_activity_place in current_activity:
+          node_activity_place = et.SubElement(node_activity, key_activity_place)
+          node_activity_place.text = escape_uri(current_activity[key_activity_place])
+
+        if key_activity_date in current_activity:
+          node_activity_date = et.SubElement(node_activity, key_activity_date)
+          node_activity_date.text = current_activity[key_activity_date]
+        
+        if key_activity_note in current_activity:
+          node_activity_note = et.SubElement(node_activity, key_activity_note)
+          node_activity_note.text = current_activity[key_activity_note]
 
     # Birth
     birth_place = row.find(f'ns:{key_place_birth}', ns).text
