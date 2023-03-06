@@ -6,6 +6,7 @@ import uuid
 import urllib
 import configparser
 
+out_dir = 'out'
 
 def execute(typology, limit, d=None, u=None, config_param='veniss'):
 
@@ -26,7 +27,7 @@ def execute(typology, limit, d=None, u=None, config_param='veniss'):
       print('Error. Have you created the psw.ini file? see readme.md')
 
   dir_path = os.path.dirname(os.path.realpath(__file__))
-  dir_output = os.path.join(dir_path, typology, 'out')
+  dir_output = os.path.join(dir_path, typology, out_dir)
   
   KEY_USERNAME = 'username'
   KEY_PASSWORD = 'password'
@@ -37,6 +38,8 @@ def execute(typology, limit, d=None, u=None, config_param='veniss'):
 
   for root, dirs, src_files in os.walk(dir_output):
     cnt = 0
+    sa = os.path.basename(os.path.normpath(root))
+
     for filename in src_files:
 
       if limit and cnt == int(limit):
@@ -46,7 +49,12 @@ def execute(typology, limit, d=None, u=None, config_param='veniss'):
       if KEY_PREFIX in credentials:
         graph_prefix = credentials[KEY_PREFIX]
 
-      normal_uri = f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"
+
+      if sa != out_dir:
+        normal_uri =  f"{graph_prefix}/resource/{typology}/{sa}/{filename.replace('.ttl','')}/container/context"
+      else:
+        normal_uri =  f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"
+      
       graph_uri = urllib.parse.quote(normal_uri, safe='') 
       request_url = f'{credentials[KEY_ENDPOINT]}/rdf-graph-store?graph={graph_uri}'
 

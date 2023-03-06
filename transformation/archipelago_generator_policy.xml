@@ -263,8 +263,8 @@
   <generator name="343-actor-activity-date" prefix="veniss">
     <pattern>actor/{actor_id}/activity/{activity_id}/date</pattern>
   </generator>
-  <generator name="349-actor-activity-OOC" prefix="veniss">
-    <pattern>actor/{actor_id}/activity/{activity_id}</pattern>
+  <generator name="349-actor-activity-note" prefix="veniss">
+    <pattern>actor/{actor_id}/activity/{activity_id}/note</pattern>
   </generator>
 
   <!-- Actor's marriage -->

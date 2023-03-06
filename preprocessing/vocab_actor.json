@@ -1,0 +1,326 @@
+{
+    "abbess": {
+        "uuid_vocab": "c55a7e7c-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "abbot": {
+        "uuid_vocab": "c55a6568-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "ambassador": {
+        "uuid_vocab": "c559fa7e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "apostolic_nuncio": {
+        "uuid_vocab": "c55c199e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "archbishop": {
+        "uuid_vocab": "c55a4bc8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "architect": {
+        "uuid_vocab": "c55bbada-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "archive_institution": {
+        "uuid_vocab": "c5566ecc-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "art_collector": {
+        "uuid_vocab": "c563c7de-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "art_historian": {
+        "uuid_vocab": "c5644164-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "bishop": {
+        "uuid_vocab": "c55a321e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "canon": {
+        "uuid_vocab": "c55b2d36-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "canon_regular": {
+        "uuid_vocab": "c55b4582-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "captain": {
+        "uuid_vocab": "c563dee0-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "cardinal": {
+        "uuid_vocab": "c55a1810-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "carpenter": {
+        "uuid_vocab": "c55da214-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "cartographer": {
+        "uuid_vocab": "c560d132-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "charitable_institution": {
+        "uuid_vocab": "c5569190-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "chronicler": {
+        "uuid_vocab": "c562d694-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "cittadino": {
+        "uuid_vocab": "c55606f8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "common_person": {
+        "uuid_vocab": "c5562a2a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "construction_worker": {
+        "uuid_vocab": "c55d8b76-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "cosmographer": {
+        "uuid_vocab": "c560e79e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "count": {
+        "uuid_vocab": "c559b046-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "countess": {
+        "uuid_vocab": "c559d27e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "craft_guild": {
+        "uuid_vocab": "c556b3f0-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "critic": {
+        "uuid_vocab": "c5642b66-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "designer": {
+        "uuid_vocab": "c55d1f7e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "diplomat": {
+        "uuid_vocab": "c563faa6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "dogaressa": {
+        "uuid_vocab": "c5584706-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "doge": {
+        "uuid_vocab": "c5617a9c-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "doge_of_venice": {
+        "uuid_vocab": "c5581ff6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "duchess": {
+        "uuid_vocab": "c5595e84-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "duke": {
+        "uuid_vocab": "c5594426-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "ecclesiastic": {
+        "uuid_vocab": "c5564bfe-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "emperor": {
+        "uuid_vocab": "c5589760-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "empress": {
+        "uuid_vocab": "c558b6c8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "engineer": {
+        "uuid_vocab": "c55bd48e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "engraver": {
+        "uuid_vocab": "c5609ea6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "expert": {
+        "uuid_vocab": "c55de512-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "farmer": {
+        "uuid_vocab": "c5631884-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "friar": {
+        "uuid_vocab": "c55ac81e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "gardener": {
+        "uuid_vocab": "c5632f18-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "group": {
+        "uuid_vocab": "c5551220-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "guardian": {
+        "uuid_vocab": "c5635b50-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "guardian_grando": {
+        "uuid_vocab": "c55cb912-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "historian": {
+        "uuid_vocab": "c562c0e6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "illustrator": {
+        "uuid_vocab": "c560fdec-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "king": {
+        "uuid_vocab": "c558d572-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "knight": {
+        "uuid_vocab": "c55c337a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "landowner": {
+        "uuid_vocab": "c563029a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "lay_procurator": {
+        "uuid_vocab": "c55b86dc-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "lecturer": {
+        "uuid_vocab": "c563b2f8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "lithographer": {
+        "uuid_vocab": "c56113c2-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "marchioness": {
+        "uuid_vocab": "c559952a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "marquis": {
+        "uuid_vocab": "c5597932-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "master_builder": {
+        "uuid_vocab": "c564145a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "mercenary_captain": {
+        "uuid_vocab": "c55e12a8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "merchant": {
+        "uuid_vocab": "c5638594-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "miniaturist": {
+        "uuid_vocab": "c55e56b4-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "monk": {
+        "uuid_vocab": "c55afbf4-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "monsignor": {
+        "uuid_vocab": "c55c8bfe-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "museum": {
+        "uuid_vocab": "c556d966-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "noble": {
+        "uuid_vocab": "c555db92-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "notary": {
+        "uuid_vocab": "c5639d7c-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "nun": {
+        "uuid_vocab": "c55b149a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "occupation": {
+        "uuid_vocab": "c55ccf2e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "painter": {
+        "uuid_vocab": "c55e3f62-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "patriarch": {
+        "uuid_vocab": "c55ba0ea-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "person": {
+        "uuid_vocab": "c557e770-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "photographer": {
+        "uuid_vocab": "c56162dc-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "physician": {
+        "uuid_vocab": "c55c02d8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "political_body": {
+        "uuid_vocab": "c556fc52-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "pope": {
+        "uuid_vocab": "c55872c6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "preacher": {
+        "uuid_vocab": "c562a994-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "priest": {
+        "uuid_vocab": "c55ae092-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "prince": {
+        "uuid_vocab": "c5590d8a-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "princess": {
+        "uuid_vocab": "c559287e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "printer": {
+        "uuid_vocab": "c5614874-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "printmaker": {
+        "uuid_vocab": "c560b9c2-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "prior": {
+        "uuid_vocab": "c55a9704-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "prioress": {
+        "uuid_vocab": "c55aafe6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "procurator": {
+        "uuid_vocab": "c55b67c4-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "professor": {
+        "uuid_vocab": "c55bec26-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "proto": {
+        "uuid_vocab": "c55c4ab8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "publisher": {
+        "uuid_vocab": "c5612bbe-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "queen": {
+        "uuid_vocab": "c558f1d8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "religious_institution": {
+        "uuid_vocab": "c557ab0c-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "savio": {
+        "uuid_vocab": "c55c7600-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "sculptor": {
+        "uuid_vocab": "c55d391e-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "scuola_grande": {
+        "uuid_vocab": "c5571f16-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "scuola_piccola": {
+        "uuid_vocab": "c5574180-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "secretary_religious": {
+        "uuid_vocab": "c5634598-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "senate": {
+        "uuid_vocab": "c56370ae-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "senator": {
+        "uuid_vocab": "c5619310-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "smith": {
+        "uuid_vocab": "c55db858-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "social_status": {
+        "uuid_vocab": "c555adc0-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "society": {
+        "uuid_vocab": "c55769f8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "sovereign_state": {
+        "uuid_vocab": "c5578b68-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "stonecutter": {
+        "uuid_vocab": "c55d7474-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "stonemason": {
+        "uuid_vocab": "c55d5d04-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "superintender": {
+        "uuid_vocab": "c55e28d8-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "surveyor": {
+        "uuid_vocab": "c55dce56-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "theologian": {
+        "uuid_vocab": "c562ecf6-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "title": {
+        "uuid_vocab": "c5580520-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "venetian_office": {
+        "uuid_vocab": "c557c9c0-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "venetian_officer": {
+        "uuid_vocab": "c561a990-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "vicar": {
+        "uuid_vocab": "c55ca292-b1f3-11ed-bf2f-3a5becfe4abe"
+    },
+    "vice_proto": {
+        "uuid_vocab": "c55c607a-b1f3-11ed-bf2f-3a5becfe4abe"
+    }
+}

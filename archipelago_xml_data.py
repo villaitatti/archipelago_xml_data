@@ -10,9 +10,10 @@ import upload.script as upload
 @click.option('-d', '--delete', 'exec_delete', is_flag=True, help="Execute the delete", default=False)
 @click.option('-c', '--config', 'config', help="configuration option", default='veniss')
 @click.option('-a', required=True, multiple=True, help="Types to iterate")
+@click.option('-sa', required=True, multiple=True, help="Sub types to iterate")
 @click.option('-l', '--limit', help="Number of files to execute", default=None)
 
-def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_delete, a, limit, config):
+def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_delete, a, sa, limit, config):
 
   if limit:
     print(f'A limit of {limit} as been passed.')
@@ -25,7 +26,7 @@ def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_
       try:
         print('Executing preprocessing ...')
         mod = importlib.import_module(f'preprocessing.{file}.script')
-        mod.execute(limit)
+        mod.execute(sa, limit)
         print('Done preprocessing.')
       
       except ImportError as err:

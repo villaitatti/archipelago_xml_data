@@ -50,7 +50,7 @@ def execute(table_folder, limit):
                 if not os.path.exists(table_folder_out):
                     os.mkdir(table_folder_out)
 
-                if table_folder == "vocabulary":
+                if table_folder == "vocab":
                     out_file_full = os.path.join(table_folder_out, current_folder,out_file)
                 else:
                     out_file_full = os.path.join(table_folder_out, out_file)

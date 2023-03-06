@@ -108,7 +108,7 @@
   </info>
 
   <namespaces>
-    <namespace prefix="arc" uri="https://archipelago.itatti.harvard.edu/resource/" />
+    <namespace prefix="veniss" uri="https://veniss.net/resource/" />
     <namespace prefix="aat" uri="http://vocab.getty.edu/aat/" />
     <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
     <namespace prefix="rs" uri="http://www.researchspace.org/resource/" />
@@ -226,8 +226,9 @@
             </if>
             <entity>
               <type>arconto:Remove</type>
-              <instance_generator name="001-rs-vocab">
-                <arg name="id">text()</arg>
+              <instance_generator name="002-general">
+                <arg name="res" type="constant">vocab</arg>
+                <arg name="id" type="constant">actor</arg>
               </instance_generator>
             </entity>
 

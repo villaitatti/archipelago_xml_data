@@ -1,6 +1,8 @@
 from contextlib import nullcontext
 from curses import keyname
+import json
 import os
+import uuid
 import pandas as pd
 import numpy as np
 import xml.etree.ElementTree as et
@@ -10,6 +12,8 @@ import datetime
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_data = os.path.join(dir_path, 'data')
+
+KEY_UUID_VOCABULARY = 'uuid_vocab'
 
 KEY_BASE = 'VOCAB_ENTRY'
 KEY_AAT = 'AAT ID'
@@ -21,7 +25,7 @@ KEY_COLLECTION = 'COLLECTION'
 
 def write_xml(dir_name, name, text):
   output_directory = os.path.join(
-        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocabulary', 'data', dir_name)
+        dir_path, os.path.pardir, os.path.pardir, 'transformation', 'vocab', 'data', dir_name)
 
   if not os.path.isdir(output_directory):
     os.mkdir(output_directory)
@@ -50,19 +54,29 @@ def escape_uri(text):
 
   return text
 
-def execute(limit = -1):
+def execute(sa=None, limit = -1):
 
   for file in os.listdir(dir_data):
 
-    if file.endswith(".csv"):
+    # Check if file is CSV and selected for pipeline
+    if file.endswith(".csv") and sa and os.path.splitext(file)[0] in sa:
+      
       file_path = os.path.join(dir_data, file)
-      dir_name = file.replace('.csv', '')
+      dir_name = os.path.splitext(file)[0]
+      
+      uuid_vocab_filename = os.path.join(dir_path, os.pardir, f'vocab_{dir_name}.json')
+      uuid_vocab_dict = {}
+      
+      if os.path.exists(uuid_vocab_filename):
+        uuid_vocab_dict = json.load(open(uuid_vocab_filename))
 
+      ##############################################################################################################
+      ####################################### PRE-PROCESSING #######################################################
+      ##############################################################################################################
       df_file = pd.read_csv(file_path, dtype = str).fillna(value = 'None')
-
       for num, row in df_file.iterrows():
 
-        if limit is not None and int(limit) == num:
+        if limit and int(limit) == num:
           break
 
         # XML root
@@ -70,9 +84,17 @@ def execute(limit = -1):
 
         # identifier
         name = escape_uri(row[KEY_NAME])
+        
+        if name not in uuid_vocab_dict:
+          uuid_vocab_dict[name] = {
+            KEY_UUID_VOCABULARY: str(uuid.uuid1())
+          }
+        
+        current_uuid = uuid_vocab_dict[name][KEY_UUID_VOCABULARY]
+        
+        # UUID
         tag_identifier = et.SubElement(root, 'identifier')
-        tag_identifier.text = name
-
+        tag_identifier.text = current_uuid
 
         # label eng
         eng = et.SubElement(root, 'eng')
@@ -91,8 +113,9 @@ def execute(limit = -1):
         if parent != 'None':
           def execute_parent(parent):
             parent_uri = escape_uri(parent.strip())
-            tag_parent = et.SubElement(root, 'broader')
-            tag_parent.text = parent_uri
+            if parent_uri in uuid_vocab_dict:
+              tag_parent = et.SubElement(root, 'broader')
+              tag_parent.text = uuid_vocab_dict[parent_uri][KEY_UUID_VOCABULARY]
             
           if ',' in parent:
             for parent in parent.split(','):
@@ -128,5 +151,9 @@ def execute(limit = -1):
         
         # write XML
         final = md.parseString(et.tostring(root, method='xml')).toprettyxml()
-        write_xml(dir_name, name, final)
+        write_xml(dir_name, current_uuid, final)
         print(name)
+
+  # Write uuic dict file
+  with open(uuid_vocab_filename, "w") as f:
+    f.write(json.dumps(uuid_vocab_dict, indent=4, sort_keys=True))
