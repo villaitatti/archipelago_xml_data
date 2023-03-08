@@ -740,14 +740,46 @@
             <instance_generator name="300-actor">
               <arg name="actor_id" type="xpath">ID_PERSON/text()</arg>
             </instance_generator>
-            <label_generator name="Constant">
-              <arg name="text" type="xpath">Appellation/text()</arg>
-              <arg name="language" type="xpath">it</arg>
-            </label_generator>
 
           </entity>
         </target_node>
       </domain>
+
+      <link>
+        <path>
+          <source_relation>
+            <relation>Appellation</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_identified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>Appellation</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E41_Appellation</type>
+              <instance_generator name="310a-actor-appellation">
+                <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+              </instance_generator>
+              <label_generator name="Literal">
+                <arg name="text" type="xpath">text()</arg>
+              </label_generator>
+
+              <additional>
+                <relationship>crm:P2_has_type</relationship> 
+                <entity>
+                  <type>veniss_ontology:Remove</type>
+                    <instance_generator name="000-type">
+                      <arg name="type_id" type="constant">appellation</arg>
+                    </instance_generator> 
+                </entity>
+              </additional>
+
+            </entity>
+          </target_node>
+        </range>
+      </link>
 
       <!-- LDP Container -->
       <link>

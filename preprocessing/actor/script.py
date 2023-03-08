@@ -10,7 +10,7 @@ import json
 actor_group = [123, 16, 107, 184, 73, 133, 106, 42,
                155, 17, 18, 102, 87, 86, 94, 124, 95, 89, 88, 90]
 
-def execute(limit):
+def execute(limit, sa=None):
 
   def base_tag(parent, key, text):
     # Block None text
