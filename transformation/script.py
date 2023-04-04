@@ -10,7 +10,7 @@ def base_path(name):
     return os.path.join(dir_path, name)
 
 
-def execute(table_folder, limit):
+def execute(table_folder, limit, sa):
 
     table_folder_in = os.path.join(dir_path, table_folder, 'data')
     table_folder_out = os.path.join(
@@ -26,43 +26,45 @@ def execute(table_folder, limit):
 
         current_folder = root.split(os.path.sep).pop()
 
-        total = len(src_files)
-        cnt = 1
-        print(f'Found {total} file to transform in {current_folder}')
+        if sa and current_folder in sa:
 
-        if limit:
-          limit = int(limit)
-          total = limit
+          total = len(src_files)
+          cnt = 1
+          print(f'Found {total} file to transform in {current_folder}')
 
-        src_files = sorted(src_files)
+          if limit:
+            limit = int(limit)
+            total = limit
 
-        for src_file in src_files:
+          src_files = sorted(src_files)
 
-            if limit and cnt == limit+1:
-                break
+          for src_file in src_files:
 
-            src_file_full = os.path.join(root, src_file)
+              if limit and cnt == limit+1:
+                  break
 
-            if os.path.isfile(src_file_full):
+              src_file_full = os.path.join(root, src_file)
 
-                out_file = src_file.replace('xml', 'ttl')
+              if os.path.isfile(src_file_full):
 
-                if not os.path.exists(table_folder_out):
-                    os.mkdir(table_folder_out)
+                  out_file = src_file.replace('xml', 'ttl')
 
-                if table_folder == "vocab":
-                    out_file_full = os.path.join(table_folder_out, current_folder,out_file)
-                else:
-                    out_file_full = os.path.join(table_folder_out, out_file)
+                  if not os.path.exists(table_folder_out):
+                      os.mkdir(table_folder_out)
 
-                # Create parent folder if not exist
-                if not os.path.exists(os.path.dirname(out_file_full)):
-                  os.mkdir(os.path.dirname(out_file_full))
+                  if table_folder == "vocab":
+                      out_file_full = os.path.join(table_folder_out, current_folder,out_file)
+                  else:
+                      out_file_full = os.path.join(table_folder_out, out_file)
 
-                command = f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}'
-                print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
-                print(command)
-                
-                os.system(command)
+                  # Create parent folder if not exist
+                  if not os.path.exists(os.path.dirname(out_file_full)):
+                    os.mkdir(os.path.dirname(out_file_full))
 
-                cnt += 1
+                  command = f'java -jar {engine} -i {src_file_full} -x {mapping_x3ml} -p {policy} -o {out_file_full} -f {ext}'
+                  print(f'\n{out_file}\n\nRunning => {cnt}/{total}')
+                  print(command)
+                  
+                  os.system(command)
+
+                  cnt += 1

@@ -36,7 +36,7 @@ def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_
 
     if exec_transformation:
       print('Executing transformation ...')
-      transformation.execute(file, limit)
+      transformation.execute(file, limit, sa)
       print('Done transformation.\n')
 
     if exec_upload or exec_delete:

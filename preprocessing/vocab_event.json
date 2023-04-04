@@ -1,0 +1,185 @@
+{
+    "abandonment_of_an_island": {
+        "uuid_vocab": "8afe7878-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "adaptive_reuse_i.e._as_lazaretto": {
+        "uuid_vocab": "8affa6ee-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "addition": {
+        "uuid_vocab": "8afbe216-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "architectural": {
+        "uuid_vocab": "137e180c-d2c9-11ed-9a62-3a5becfe4abc"
+    },
+    "artistic": {
+        "uuid_vocab": "137ee638-d2c9-11ed-9a62-3a5becfe4abc"
+    },
+    "bombardment": {
+        "uuid_vocab": "8b00ec8e-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "building_ceremony": {
+        "uuid_vocab": "8afef6d6-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "celebration": {
+        "uuid_vocab": "8afedf02-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "collapse": {
+        "uuid_vocab": "8b00d758-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "commission": {
+        "uuid_vocab": "8afc7d70-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "consecration": {
+        "uuid_vocab": "8afe9312-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "conservation": {
+        "uuid_vocab": "8afd0592-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "construction": {
+        "uuid_vocab": "8afa3e8e-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "demolition": {
+        "uuid_vocab": "8afaccc8-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "design_review": {
+        "uuid_vocab": "8afb7e48-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "destruction_artwork": {
+        "uuid_vocab": "8afcc64a-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "donation": {
+        "uuid_vocab": "8afe0230-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "earthquake": {
+        "uuid_vocab": "8b006480-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "economic": {
+        "uuid_vocab": "137f0f8c-d2c9-11ed-9a62-3a5becfe4abc"
+    },
+    "election_pope,_prior,_bishop": {
+        "uuid_vocab": "8aff6544-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "enlargement": {
+        "uuid_vocab": "8afc3e32-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "escavation_canal_or_lagoon": {
+        "uuid_vocab": "8afc596c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "establishment": {
+        "uuid_vocab": "8aff30f6-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "exemption": {
+        "uuid_vocab": "8afe5e4c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "fire": {
+        "uuid_vocab": "8b007e20-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "flood": {
+        "uuid_vocab": "8b009572-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "foundation": {
+        "uuid_vocab": "8afbc01a-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "freezing_of_the_lagoon": {
+        "uuid_vocab": "8b010462-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "installation": {
+        "uuid_vocab": "8afd4188-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "land_reclamation": {
+        "uuid_vocab": "8afc02f0-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "lightning": {
+        "uuid_vocab": "8b00abca-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "loan": {
+        "uuid_vocab": "8afdab64-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "loan_agreement": {
+        "uuid_vocab": "8afe24fe-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "meeting": {
+        "uuid_vocab": "8affe492-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "presence_of_a_person/people": {
+        "uuid_vocab": "8aff4b54-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "production": {
+        "uuid_vocab": "8afca5fc-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "project_management": {
+        "uuid_vocab": "8afb5dbe-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "public_deliberation_decision_making": {
+        "uuid_vocab": "8aff7e4e-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "reconstruction": {
+        "uuid_vocab": "8afaf4dc-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "regime_change": {
+        "uuid_vocab": "8aff1436-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "religious_order's_suppression": {
+        "uuid_vocab": "8b00303c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "religious_order's_transfer": {
+        "uuid_vocab": "8afead5c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "religious_reform": {
+        "uuid_vocab": "8b004b80-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "renovation": {
+        "uuid_vocab": "8afb1782-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "rent": {
+        "uuid_vocab": "8afd9142-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "replacement": {
+        "uuid_vocab": "8afb9ed2-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "report": {
+        "uuid_vocab": "8b001782-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "restoration": {
+        "uuid_vocab": "8afb3cbc-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "sale": {
+        "uuid_vocab": "8afd5c40-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "social": {
+        "uuid_vocab": "137f350c-d2c9-11ed-9a62-3a5becfe4abc"
+    },
+    "sold_at_auction": {
+        "uuid_vocab": "8afd766c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "spread_of_the_plague": {
+        "uuid_vocab": "8b00c18c-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "survey": {
+        "uuid_vocab": "8afc20e6-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "temporary_housing": {
+        "uuid_vocab": "8affc976-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "theft": {
+        "uuid_vocab": "8afffe6e-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "transfer_goods": {
+        "uuid_vocab": "8afdc5e0-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "transfer_property": {
+        "uuid_vocab": "8afddfd0-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "urban": {
+        "uuid_vocab": "137f5884-d2c9-11ed-9a62-3a5becfe4abc"
+    },
+    "usufruct": {
+        "uuid_vocab": "8afe407e-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "visit_of_state": {
+        "uuid_vocab": "8afec76a-d2c8-11ed-95ee-3a5becfe4abc"
+    },
+    "work_of_art's_transportation": {
+        "uuid_vocab": "8afce7ba-d2c8-11ed-95ee-3a5becfe4abc"
+    }
+}

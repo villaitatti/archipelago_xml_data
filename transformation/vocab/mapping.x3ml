@@ -164,7 +164,7 @@
               <exists>text()</exists>
             </if>
             <entity>
-              <type>skos:Concept</type>
+              <type>arconto:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="xpath">../collection/text()</arg>
                 <arg name="id" type="xpath">text()</arg>
@@ -228,7 +228,7 @@
               <type>arconto:Remove</type>
               <instance_generator name="002-general">
                 <arg name="res" type="constant">vocab</arg>
-                <arg name="id" type="constant">actor</arg>
+                <arg name="id" type="xpath">text()</arg>
               </instance_generator>
             </entity>
 
@@ -264,6 +264,9 @@
                     <arg name="res" type="xpath">../collection/text()</arg>
                     <arg name="id" type="xpath">../identifier/text()</arg>
                   </instance_generator>
+                  <label_generator name="Literal">
+                    <arg name="text" type="xpath">label/text()</arg>
+                  </label_generator>
 
                   <additional>
                     <relationship>provo:generatedAtTime</relationship>
