@@ -54,7 +54,7 @@ def escape_uri(text):
 
   return text
 
-def execute(sa=None, limit = -1):
+def execute(limit = -1, sa=None):
 
   for file in os.listdir(dir_data):
 
@@ -154,6 +154,6 @@ def execute(sa=None, limit = -1):
         write_xml(dir_name, current_uuid, final)
         print(name)
 
-  # Write uuic dict file
-  with open(uuid_vocab_filename, "w") as f:
-    f.write(json.dumps(uuid_vocab_dict, indent=4, sort_keys=True))
+      # Write uuic dict file
+      with open(uuid_vocab_filename, "w") as f:
+        f.write(json.dumps(uuid_vocab_dict, indent=4, sort_keys=True))
