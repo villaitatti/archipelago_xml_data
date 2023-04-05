@@ -26,7 +26,7 @@ def execute(table_folder, limit, sa):
 
         current_folder = root.split(os.path.sep).pop()
 
-        if sa and current_folder in sa:
+        if not sa or (sa and current_folder in sa):
 
           total = len(src_files)
           cnt = 1

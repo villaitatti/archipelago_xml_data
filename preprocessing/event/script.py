@@ -1,195 +1,180 @@
 from xml.dom import minidom as md, getDOMImplementation
 import xml.etree.ElementTree as et
+from datetime import datetime, timezone
 import os
 import json
-import re
+import uuid
 
 
-def execute(limit):
-    t = 'event'
+def _write_file(row_id, text):
+  output_directory = os.path.join(root_path, 'transformation', t, 'data')
+  if not os.path.isdir(output_directory):
+    os.mkdir(output_directory)
+  output_filename = os.path.join(output_directory, f'{row_id}.xml')
+  with open(output_filename, 'w') as f:
+    f.write(text)
 
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
-    filename = os.path.join(dir_path, 'Events.xml')
-    # Geonames dictionary
-    geonames_dict = json.load(
-        open(os.path.join(root_path, 'utils', 'geonames', 'geonames.json'), 'r'))
-    association_tables = json.load(open(os.path.join(
-        root_path, 'utils', 'association_tables', 'association_tables.json'), 'r'))
 
-    def write_file(text):
-        output_directory = os.path.join(root_path, 'transformation', t, 'data')
-        if not os.path.isdir(output_directory):
-            os.mkdir(output_directory)
-        output_filename = os.path.join(output_directory, f'{row_id}.xml')
-        with open(output_filename, 'w') as f:
-            f.write(text)
+t = 'event'
 
-    def add_clean_field(input_key):
-        field = et.SubElement(new_row, input_key)
-        field.text = row.find(f'ns:{input_key}', ns).text
+dir_path = os.path.dirname(os.path.realpath(__file__))
+root_path = os.path.join(dir_path, os.path.pardir, os.path.pardir)
+dir_extraction = os.path.join(root_path, 'extraction', 'transformed')
 
-    regex_century_id = r'[0-9]{2}-[0-9]{2}'
+filename = os.path.join(dir_path, 'Events.xml')
+uuid_filename = os.path.join(dir_path, os.pardir, 'events.json')
 
-    keys = {
-        "row": "ROW",
-        "id_event": "ID_EVENT",
-        "name_event": "Name_Event",
-        "typology": "Typology",
-        "subtypology": "Subtypology",
-        "island": "Island",
-        "synopsis": "Synopsis",
-        "century": "Century",
-        "fraction_century": "Fraction_century",
-        "year_earliest": "Year_Earliest",
-        "month_earliest": "Month_Earliest",
-        "day_earliest": "Day_Earliest",
 
-        "people": "People",
-        "person": "Person",
-        "id_person": "ID_PERSON",
-        "role": "Role",
+####### KEYS ###########
+KEY_ROW = 'ROW'
+KEY_UUID = "UUID"
 
-        "bibliographic_items": "Bibliographic_Items",
-        "bibliographic_item": "Bibliographic_Item",
-        "id_bibliography": "ID_BIBLIOGRAPHY",
-        "date": "Date",
-        "pages": "Pages",
+KEY_ID_BIBLIOGRAPHY = 'ID_BIBLIOGRAPHY'
+KEY_ID_PERSON = 'ID_PERSON'
+KEY_ID_ACTOR = 'ID_ACTOR'
+KEY_ID_PLACE = 'ID_PLACE'
+KEY_ID_SOURCE = 'ID_SOURCE'
 
-        "places": "Places",
-        "place": "Place",
-        "id_place": "ID_PLACE",
 
-        "sources": "Sources",
-        "source": "Source",
-        "id_source": "ID_SOURCE",
-        "event": "Event",
+# INPUT
+IN_KEY_EVENT_ID = 'ID_EVENT'
+IN_KEY_EVENT_NAME = 'Name_Event'
+IN_KEY_EVENT_TYPOLOGY = 'Subtypology'
+IN_KEY_EVENT_SYNOPSIS = 'Synopsis'
+IN_KEY_EVENT_DATE_EARLIEST = 'Date_Earliest'
+IN_KEY_EVENT_CENTURY = 'Century'
+IN_KEY_EVENT_FRACTION_CENTURY = 'Fraction_century'
 
-        "fraction_id": "fraction_id",
-    }
 
-    custom_keys = {
-        "date_earliest": "Date_Earliest"
-    }
+# OUTPUT
+OUT_KEY_EVENT_ID = IN_KEY_EVENT_ID.lower()
+OUT_KEY_EVENT_NAME = IN_KEY_EVENT_NAME.lower()
+OUT_KEY_EVENT_TYPOLOGY = IN_KEY_EVENT_TYPOLOGY.lower()
+OUT_KEY_EVENT_SYNOPSIS = IN_KEY_EVENT_SYNOPSIS.lower()
 
-    exceptions = {
-        "Lagoon": "Venetian Lagoon",
-        "San Giorgio Maggiore": "Isola di San Giorgio Maggiore"
-    }
+OUT_KEY_EVENT_BIBLIOGRAPHIC_ITEMS = 'related_bibitems'
+OUT_KEY_EVENT_BIBLIOGRAPHIC_ITEM = 'related_bibitem'
 
-    tree = et.parse(filename)
-    root = tree.getroot()
-    ns = {'ns': 'http://www.filemaker.com/fmpdsoresult'}
+OUT_KEY_EVENT_SOURCES = 'related_sources'
+OUT_KEY_EVENT_ACTORS = 'related_actors'
+OUT_KEY_EVENT_SOURCE = 'related_source'
+OUT_KEY_EVENT_ACTOR = 'related_actor'
 
-    tags = root.findall(f'ns:{keys["row"]}', ns)
+OUT_KEY_EVENT_DATE_NOTE = 'note'
+OUT_KEY_EVENT_DATE = 'date'
+OUT_KEY_EVENT_DAY = 'day'
+OUT_KEY_EVENT_MONTH = 'month'
+OUT_KEY_EVENT_YEAR = 'year'
 
-    doc = md.Document()
+vocab_event = json.load(
+    open(os.path.join(dir_path, os.pardir, 'vocab_event.json')))
 
-    cnt_total = 0
 
-    # Iterate each ROW
-    for row in tags:
+def execute(limit, sa=None):
 
-        if limit and cnt_total == int(cnt_total):
-            break
+  tree = et.parse(filename)
+  tags = tree.getroot().findall(KEY_ROW)
 
-        # Copy the current row
-        new_row = et.Element(keys["row"])
+  uuid_dict = {}
+  if os.path.exists(uuid_filename):
+    uuid_dict = json.load(open(uuid_filename))
 
-        # ROW ID
-        row_id = row.find(f'ns:{keys["id_event"]}', ns).text
-        id_event = et.SubElement(new_row, keys["id_event"])
-        id_event.text = row_id
+  cnt_total = 0
 
-        # Add clean fields
-        add_clean_field(keys["name_event"])
-        add_clean_field(keys["typology"])
-        add_clean_field(keys["subtypology"])
-        add_clean_field(keys["synopsis"])
-        add_clean_field(keys["century"])
+  # Iterate each ROW
+  for row in tags:
 
-        century_fraction = row.find(f'ns:{keys["fraction_century"]}', ns).text
-        if century_fraction is not None and re.search(regex_century_id, str(century_fraction)):
-            f_century = et.SubElement(new_row, keys["fraction_century"])
-            f_century.text = century_fraction
+    if limit and cnt_total == int(limit):
+      break
 
-            r = re.search(regex_century_id, str(century_fraction))[0]
-            f_century.attrib[keys['fraction_id']] = r.replace('-', '')
+    # Copy the current row
+    new_row = et.Element(KEY_ROW)
 
-        # Add Custom Fields
-        # Date_Earliest
-        day_earliest = row.find(f'ns:{keys["day_earliest"]}', ns).text
-        if day_earliest is None:
-            day_earliest = "01"
-        month_earliest = row.find(f'ns:{keys["month_earliest"]}', ns).text
-        if month_earliest is None:
-            month_earliest = "01"
-        year_earliest = row.find(f'ns:{keys["year_earliest"]}', ns).text
-        # Date format: YYYY-MM-DDThh:mm:ss (xsd:datetime)
-        date_earliest = et.SubElement(new_row, custom_keys["date_earliest"])
-        date_earliest.text = f'{year_earliest}-{month_earliest}-{day_earliest}'
+    # Stora row id and its UUID
+    row_id = row.find(IN_KEY_EVENT_ID).text
 
-        # Island
-        island_found = row.find(f'ns:{keys["island"]}', ns).text
-        # TODO: better management of exceptions?
-        if island_found not in geonames_dict:
-            island_found = exceptions[island_found]
-        isl_geoname_id = geonames_dict[island_found][0]["geoname_id"]
-        island = et.SubElement(new_row, keys["island"])
-        island.text = isl_geoname_id
+    if row_id not in uuid_dict:
+      uuid_dict[row_id] = {
+          KEY_UUID: str(uuid.uuid1())
+      }
 
-        # ASSOCIATIONS
+    row_uuid = uuid_dict[row_id][KEY_UUID]
 
-        # People
-        people = et.SubElement(new_row, keys["people"])
-        if row_id in association_tables['events']:
-            for k, v in association_tables['events'][row_id]['people'].items():
-                person = et.SubElement(people, keys["person"])
-                person_id = et.SubElement(person, keys["id_person"])
-                person_id.text = k
-                role = et.SubElement(person, keys["role"])
-                role.text = v[keys['role']]
+    # Row ID
+    node_event_id = et.SubElement(new_row, OUT_KEY_EVENT_ID)
+    node_event_id.text = row_uuid
 
-        # Bibliograpic items
-        bibliographic_items = et.SubElement(
-            new_row, keys["bibliographic_items"])
-        if row_id in association_tables['events']:
-            for k, v in association_tables['events'][row_id]['bibliography'].items():
-                bibliographic_item = et.SubElement(
-                    bibliographic_items, keys["bibliographic_item"])
-                bibliography_id = et.SubElement(
-                    bibliographic_item, keys["id_bibliography"])
-                bibliography_id.text = k
-                date = et.SubElement(bibliographic_item, keys["date"])
-                date.text = v[keys['date']]
-                pages = et.SubElement(bibliographic_item, keys["pages"])
-                pages.text = v[keys['pages']]
+    # Name Event
+    event_name = row.find(IN_KEY_EVENT_NAME).text
+    node_event_name = et.SubElement(new_row, OUT_KEY_EVENT_NAME)
+    node_event_name.text = event_name
 
-        # Places
-        places = et.SubElement(new_row, keys["places"])
-        if row_id in association_tables['events']:
-            for k, v in association_tables['events'][row_id]['places'].items():
-                place = et.SubElement(places, keys["place"])
-                place_id = et.SubElement(place, keys["id_place"])
-                place_id.text = k
+    # Typology
+    event_typology = row.find(IN_KEY_EVENT_TYPOLOGY).text.lower()
+    if event_typology in vocab_event:
+      node_event_typology = et.SubElement(new_row, OUT_KEY_EVENT_TYPOLOGY)
+      node_event_typology.text = vocab_event[event_typology]['uuid_vocab']
 
-                date = et.SubElement(place, keys["date"])
-                date.text = v[keys['date']]
+    # Synopsis
+    event_synopsis = row.find(IN_KEY_EVENT_SYNOPSIS)
+    node_event_synopsis = et.SubElement(new_row, OUT_KEY_EVENT_SYNOPSIS)
+    node_event_synopsis.text = event_synopsis
 
-        # Sources
-        sources = et.SubElement(new_row, keys["sources"])
-        if row_id in association_tables['events']:
-            for k, v in association_tables['events'][row_id]['sources'].items():
-                source = et.SubElement(sources, keys["source"])
-                source_id = et.SubElement(source, keys["id_source"])
-                source_id.text = k
+    # Date
+    date_total = row.find(IN_KEY_EVENT_DATE_EARLIEST).text
+    date_parse = datetime.strptime(date_total, '%Y-%m-%d')
 
-                event = et.SubElement(source, keys["event"])
-                event.text = v[keys['event']]
+    node_event_date = et.SubElement(new_row, OUT_KEY_EVENT_DATE)
 
-        # new_document_root.append(new_row)
+    if date_parse.year:
+      node_event_year = et.SubElement(node_event_date, OUT_KEY_EVENT_YEAR)
+      node_event_year.text = str(date_parse.year)
 
-        final = md.parseString(et.tostring(
-            new_row, method='xml')).toprettyxml()
-        write_file(final)
-        cnt_total += 1
+    if date_parse.month:
+      node_event_month = et.SubElement(node_event_date, OUT_KEY_EVENT_MONTH)
+      node_event_month.text = str(date_parse.month)
+
+    if date_parse.day:
+      node_event_day = et.SubElement(node_event_date, OUT_KEY_EVENT_DAY)
+      node_event_day.text = str(date_parse.day)
+
+    century = row.find(IN_KEY_EVENT_CENTURY).text
+    century_fraction = row.find(IN_KEY_EVENT_FRACTION_CENTURY).text
+
+    notes = ''
+    
+    if century is not None:
+      notes = notes + century + ' '
+    if century_fraction is not None:
+      notes = notes + century_fraction
+
+    if notes:
+      node_notes = et.SubElement(node_event_date, OUT_KEY_EVENT_DATE_NOTE)
+      node_notes.text = notes
+    
+
+    # Container
+    tag_container = et.SubElement(new_row, 'container')
+
+    parent_container = et.SubElement(tag_container, 'parent')
+    parent_container.text = 'formContainer'
+
+    label_container = et.SubElement(tag_container, 'label')
+    label_container.text = f'LDP container of Event {row_id}'
+
+    creator_container = et.SubElement(tag_container, 'creator')
+    creator_container.text = 'admin'
+
+    time_container = et.SubElement(tag_container, 'time')
+    time_container.text = datetime.now(
+        tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+
+    # Save files
+    final = md.parseString(et.tostring(
+        new_row, method='xml')).toprettyxml()
+    _write_file(row_uuid, final)
+
+    with open(uuid_filename, 'w') as f:
+      f.write(json.dumps(uuid_dict, indent=4, sort_keys=True))
+
+    cnt_total += 1
