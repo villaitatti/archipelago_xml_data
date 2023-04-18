@@ -1,2 +1,2 @@
 PREFIX veniss_ontology: <https://veniss.net/ontology#>
-delete {?s a arconto:Remove} where {?s a arconto:Remove}
+delete {?s a veniss_ontology:Remove} where {?s a veniss_ontology:Remove}

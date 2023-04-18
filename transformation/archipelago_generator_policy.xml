@@ -183,6 +183,18 @@
   <generator name="263-event-date" prefix="veniss">
     <pattern>event/{event_id}/date</pattern>
   </generator>
+  <generator name="264-event-year" prefix="veniss">
+    <pattern>event/{event_id}/time_primitive_year</pattern>
+  </generator>
+  <generator name="265-event-month" prefix="veniss">
+    <pattern>event/{event_id}/time_primitive_month</pattern>
+  </generator>
+  <generator name="266-event-day" prefix="veniss">
+    <pattern>event/{event_id}/time_primitive_day</pattern>
+  </generator>
+  <generator name="267-event-note" prefix="veniss">
+    <pattern>event/{event_id}/time_primitive_note</pattern>
+  </generator>
   <generator name="270-event-century" prefix="veniss">
     <pattern>event/{event_id}/century</pattern>
   </generator>
