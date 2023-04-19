@@ -147,8 +147,9 @@
                 <entity>
                   <type>ldp:Resource</type>
                   <type>provo:Entity</type>
-                  <instance_generator name="100.1-builtwork_container">
-                    <arg name="bw_id" type="xpath">../id_event/text()</arg>
+                  <instance_generator name="002.1-general_container">
+                    <arg name="res" type="constant">event</arg>
+                    <arg name="id" type="xpath">../id_event/text()</arg>
                   </instance_generator>
                   <label_generator name="Literal">
                     <arg name="text">label/text()</arg>
@@ -269,7 +270,7 @@
               </instance_generator>
 
               <additional>
-                <relationship>crm:P67i_is_referred_to_by</relationship>
+                <relationship>crm:P170i_time_is_defined_by</relationship>
                 <entity>
                   <type>crm:E61_Time-Primitive</type>
                   <instance_generator name="264-event-year">
@@ -318,7 +319,7 @@
               </instance_generator>
 
               <additional>
-                <relationship>crm:P67i_is_referred_to_by</relationship>
+                <relationship>crm:P170i_time_is_defined_by</relationship>
                 <entity>
                   <type>crm:E61_Time-Primitive</type>
                   <instance_generator name="265-event-month">
@@ -366,7 +367,7 @@
               </instance_generator>
 
               <additional>
-                <relationship>crm:P67i_is_referred_to_by</relationship>
+                <relationship>crm:P170i_time_is_defined_by</relationship>
                 <entity>
                   <type>crm:E61_Time-Primitive</type>
                   <instance_generator name="266-event-day">
@@ -415,7 +416,7 @@
               </instance_generator> 
 
               <additional>
-                <relationship>crm:P67i_is_referred_to_by</relationship>
+                <relationship>crm:P170i_time_is_defined_by</relationship>
                 <entity>
                   <type>crm:E61_Time-Primitive</type>
                   <instance_generator name="267-event-note">
