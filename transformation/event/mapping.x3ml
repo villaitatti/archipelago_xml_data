@@ -255,7 +255,7 @@
             <relation>//year</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P170i_time_is_defined_by</relationship>
+            <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
@@ -263,24 +263,34 @@
           <target_node>
 
             <entity>
-              <type>crm:E61_Time-Primitive</type>
-              <instance_generator name="264-event-year">
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="263-event-date">
                 <arg name="event_id" type="xpath">../../id_event/text()</arg>
               </instance_generator>
 
-              <label_generator name="Constant">
-                <arg name="text" type="xpath">./text()</arg>
-              </label_generator>
-
               <additional>
-                <relationship>crm:P2_has_type</relationship>
+                <relationship>crm:P67i_is_referred_to_by</relationship>
                 <entity>
-                  <type>veniss_ontology:Remove</type>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">time_primitive_year</arg>
+                  <type>crm:E61_Time-Primitive</type>
+                  <instance_generator name="264-event-year">
+                    <arg name="event_id" type="xpath">../../id_event/text()</arg>
                   </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="xpath">./text()</arg>
+                  </label_generator>
+    
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>veniss_ontology:Remove</type>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">time_primitive_year</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
+
             </entity>
 
           </target_node>
@@ -294,7 +304,7 @@
             <relation>//month</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P170i_time_is_defined_by</relationship>
+            <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
@@ -302,22 +312,31 @@
           <target_node>
 
             <entity>
-              <type>crm:E61_Time-Primitive</type>
-              <instance_generator name="265-event-month">
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="263-event-date">
                 <arg name="event_id" type="xpath">../../id_event/text()</arg>
               </instance_generator>
 
-              <label_generator name="Constant">
-                <arg name="text" type="xpath">./text()</arg>
-              </label_generator>
-
               <additional>
-                <relationship>crm:P2_has_type</relationship>
+                <relationship>crm:P67i_is_referred_to_by</relationship>
                 <entity>
-                  <type>veniss_ontology:Remove</type>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">time_primitive_month</arg>
+                  <type>crm:E61_Time-Primitive</type>
+                  <instance_generator name="265-event-month">
+                    <arg name="event_id" type="xpath">../../id_event/text()</arg>
                   </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="xpath">./text()</arg>
+                  </label_generator>
+
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>veniss_ontology:Remove</type>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">time_primitive_month</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
             </entity>
@@ -333,7 +352,7 @@
             <relation>//day</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P170i_time_is_defined_by</relationship>
+            <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
@@ -341,22 +360,32 @@
           <target_node>
 
             <entity>
-              <type>crm:E61_Time-Primitive</type>
-              <instance_generator name="266-event-day">
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="263-event-date">
                 <arg name="event_id" type="xpath">../../id_event/text()</arg>
               </instance_generator>
 
-              <label_generator name="Constant">
-                <arg name="text" type="xpath">./text()</arg>
-              </label_generator>
-
               <additional>
-                <relationship>crm:P2_has_type</relationship>
+                <relationship>crm:P67i_is_referred_to_by</relationship>
                 <entity>
-                  <type>veniss_ontology:Remove</type>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">time_primitive_day</arg>
+                  <type>crm:E61_Time-Primitive</type>
+                  <instance_generator name="266-event-day">
+                    <arg name="event_id" type="xpath">../../id_event/text()</arg>
                   </instance_generator>
+    
+                  <label_generator name="Constant">
+                    <arg name="text" type="xpath">./text()</arg>
+                  </label_generator>
+    
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>veniss_ontology:Remove</type>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">time_primitive_day</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
             </entity>
@@ -372,7 +401,7 @@
             <relation>//note</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P170i_time_is_defined_by</relationship>
+            <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
@@ -380,22 +409,31 @@
           <target_node>
 
             <entity>
-              <type>crm:E61_Time-Primitive</type>
-              <instance_generator name="267-event-note">
+              <type>crm:E52_Time-Span</type>
+              <instance_generator name="263-event-date">
                 <arg name="event_id" type="xpath">../../id_event/text()</arg>
-              </instance_generator>
-
-              <label_generator name="Constant">
-                <arg name="text" type="xpath">./text()</arg>
-              </label_generator>
+              </instance_generator> 
 
               <additional>
-                <relationship>crm:P2_has_type</relationship>
+                <relationship>crm:P67i_is_referred_to_by</relationship>
                 <entity>
-                  <type>veniss_ontology:Remove</type>
-                  <instance_generator name="000-type">
-                    <arg name="type_id" type="constant">time_primitive_note</arg>
+                  <type>crm:E61_Time-Primitive</type>
+                  <instance_generator name="267-event-note">
+                    <arg name="event_id" type="xpath">../../id_event/text()</arg>
                   </instance_generator>
+                  <label_generator name="Constant">
+                    <arg name="text" type="xpath">./text()</arg>
+                  </label_generator>
+    
+                  <additional>
+                    <relationship>crm:P2_has_type</relationship>
+                    <entity>
+                      <type>veniss_ontology:Remove</type>
+                      <instance_generator name="000-type">
+                        <arg name="type_id" type="constant">time_primitive_note</arg>
+                      </instance_generator>
+                    </entity>
+                  </additional>
                 </entity>
               </additional>
             </entity>
