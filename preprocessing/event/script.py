@@ -5,6 +5,8 @@ import os
 import json
 import uuid
 
+import unidecode
+
 
 def _write_file(row_id, text):
   output_directory = os.path.join(root_path, 'transformation', t, 'data')
@@ -14,6 +16,20 @@ def _write_file(row_id, text):
   with open(output_filename, 'w') as f:
     f.write(text)
 
+def escape_uri(text):
+
+  # Remove left and right whitespaces
+  text = text.strip()
+  # Replace accents 
+  text = str(unidecode.unidecode(text))
+  # To lowercase
+  text = text.lower()
+  # Replace whitespaces with _
+  text = text.replace(" ", "_")
+  text = text.replace("(", "")
+  text = text.replace(")", "")
+
+  return text
 
 t = 'event'
 
@@ -111,10 +127,11 @@ def execute(limit, sa=None):
 
     # Typology
     event_typology = row.find(IN_KEY_EVENT_TYPOLOGY).text
-    if event_typology and event_typology in vocab_event:
-      event_typology = event_typology.lower()
-      node_event_typology = et.SubElement(new_row, OUT_KEY_EVENT_TYPOLOGY)
-      node_event_typology.text = vocab_event[event_typology]['uuid_vocab']
+    if event_typology:
+      event_typology_escaped = escape_uri(event_typology) 
+      if event_typology_escaped in vocab_event:
+        node_event_typology = et.SubElement(new_row, OUT_KEY_EVENT_TYPOLOGY)
+        node_event_typology.text = vocab_event[event_typology_escaped]['uuid_vocab']
 
     # Synopsis
     event_synopsis = row.find(IN_KEY_EVENT_SYNOPSIS)
