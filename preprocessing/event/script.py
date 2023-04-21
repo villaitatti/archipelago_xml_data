@@ -110,8 +110,9 @@ def execute(limit, sa=None):
     node_event_name.text = event_name
 
     # Typology
-    event_typology = row.find(IN_KEY_EVENT_TYPOLOGY).text.lower()
-    if event_typology in vocab_event:
+    event_typology = row.find(IN_KEY_EVENT_TYPOLOGY).text
+    if event_typology and event_typology in vocab_event:
+      event_typology = event_typology.lower()
       node_event_typology = et.SubElement(new_row, OUT_KEY_EVENT_TYPOLOGY)
       node_event_typology.text = vocab_event[event_typology]['uuid_vocab']
 
@@ -121,36 +122,40 @@ def execute(limit, sa=None):
     node_event_synopsis.text = event_synopsis
 
     # Date
-    date_total = row.find(IN_KEY_EVENT_DATE_EARLIEST).text
-    date_parse = datetime.strptime(date_total, '%Y-%m-%d')
 
-    node_event_date = et.SubElement(new_row, OUT_KEY_EVENT_DATE)
+    try:
+      date_total = row.find(IN_KEY_EVENT_DATE_EARLIEST).text
+      date_parse = datetime.strptime(date_total, '%Y-%m-%d')
 
-    if date_parse.year:
-      node_event_year = et.SubElement(node_event_date, OUT_KEY_EVENT_YEAR)
-      node_event_year.text = str(date_parse.year)
+      node_event_date = et.SubElement(new_row, OUT_KEY_EVENT_DATE)
 
-    if date_parse.month:
-      node_event_month = et.SubElement(node_event_date, OUT_KEY_EVENT_MONTH)
-      node_event_month.text = str(date_parse.month)
+      if date_parse.year:
+        node_event_year = et.SubElement(node_event_date, OUT_KEY_EVENT_YEAR)
+        node_event_year.text = str(date_parse.year)
 
-    if date_parse.day:
-      node_event_day = et.SubElement(node_event_date, OUT_KEY_EVENT_DAY)
-      node_event_day.text = str(date_parse.day)
+      if date_parse.month:
+        node_event_month = et.SubElement(node_event_date, OUT_KEY_EVENT_MONTH)
+        node_event_month.text = str(date_parse.month)
 
-    century = row.find(IN_KEY_EVENT_CENTURY).text
-    century_fraction = row.find(IN_KEY_EVENT_FRACTION_CENTURY).text
+      if date_parse.day:
+        node_event_day = et.SubElement(node_event_date, OUT_KEY_EVENT_DAY)
+        node_event_day.text = str(date_parse.day)
 
-    notes = ''
-    
-    if century is not None:
-      notes = notes + century + ' '
-    if century_fraction is not None:
-      notes = notes + century_fraction
+      century = row.find(IN_KEY_EVENT_CENTURY).text
+      century_fraction = row.find(IN_KEY_EVENT_FRACTION_CENTURY).text
 
-    if notes:
-      node_notes = et.SubElement(node_event_date, OUT_KEY_EVENT_DATE_NOTE)
-      node_notes.text = notes
+      notes = ''
+      
+      if century is not None:
+        notes = notes + century + ' '
+      if century_fraction is not None:
+        notes = notes + century_fraction
+
+      if notes:
+        node_notes = et.SubElement(node_event_date, OUT_KEY_EVENT_DATE_NOTE)
+        node_notes.text = notes
+    except ValueError as err:
+      print(err)
     
 
     # Container
