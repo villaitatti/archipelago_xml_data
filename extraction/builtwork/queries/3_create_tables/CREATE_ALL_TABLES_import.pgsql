@@ -1,3 +1,58 @@
+-- Madonna del monte
+DROP TABLE IF EXISTS PUBLIC.__madonnadelmonte_buildings;
+CREATE TABLE PUBLIC.__madonnadelmonte_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+DROP TABLE IF EXISTS PUBLIC.__madonnadelmonte_islands;
+CREATE TABLE PUBLIC.__madonnadelmonte_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
+  "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+
+-- San clemente
+DROP TABLE IF EXISTS PUBLIC.__sanclemente_buildings;
+CREATE TABLE PUBLIC.__sanclemente_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
+  "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+DROP TABLE IF EXISTS PUBLIC.__sanclemente_islands;
+CREATE TABLE PUBLIC.__sanclemente_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
+  "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+DROP TABLE IF EXISTS PUBLIC.__sanclemente_openspaces;
+CREATE TABLE PUBLIC.__sanclemente_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+
+-- San giorgio in alga
+DROP TABLE IF EXISTS PUBLIC.__sangiorgioinalga_buildings;
+CREATE TABLE PUBLIC.__sangiorgioinalga_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "2023" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+DROP TABLE IF EXISTS PUBLIC.__sangiorgioinalga_islands;
+CREATE TABLE PUBLIC.__sangiorgioinalga_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "2023" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1931" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1944" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+
+-- San secondo
 DROP TABLE IF EXISTS PUBLIC.__sansecondo_buildings;
 CREATE TABLE PUBLIC.__sansecondo_buildings(
   identifier VARCHAR(100) NOT NULL,
@@ -29,25 +84,26 @@ CREATE TABLE PUBLIC.__sansecondo_islands(
   geometry GEOMETRY
 );
 
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_buildings;
-CREATE TABLE PUBLIC.__sanclemente_buildings(
+-- San servolo
+DROP TABLE IF EXISTS PUBLIC.__sanservolo_buildings;
+CREATE TABLE PUBLIC.__sanservolo_buildings(
   identifier VARCHAR(100) NOT NULL,
-  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
 
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_islands;
-CREATE TABLE PUBLIC.__sanclemente_islands(
+-- Santo spirito
+DROP TABLE IF EXISTS PUBLIC.__santospirito_buildings;
+CREATE TABLE PUBLIC.__santospirito_buildings(
   identifier VARCHAR(100) NOT NULL,
-  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_openspaces;
-CREATE TABLE PUBLIC.__sanclemente_openspaces(
+DROP TABLE IF EXISTS PUBLIC.__santospirito_islands;
+CREATE TABLE PUBLIC.__santospirito_islands(
   identifier VARCHAR(100) NOT NULL,
+  "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1841" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
