@@ -1,24 +1,275 @@
-
--- Table containing the combination (feature_id, year)
-DROP TABLE IF EXISTS PUBLIC.feature_years;
-CREATE TABLE PUBLIC.feature_years(
+-- ########################################################################################
+-- ############################# 01 Burano ################################################
+-- ########################################################################################
+DROP TABLE IF EXISTS PUBLIC.qgis_burano_buildings;
+CREATE TABLE PUBLIC.qgis_burano_buildings(
   identifier VARCHAR(100) NOT NULL,
-  "year" VARCHAR(255)
-);
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+DROP TABLE IF EXISTS PUBLIC.qgis_burano_islands;
+CREATE TABLE PUBLIC.qgis_burano_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+DROP TABLE IF EXISTS PUBLIC.qgis_burano_openspaces;
+CREATE TABLE PUBLIC.qgis_burano_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+-- ########################################################################################
+-- ############################# 02 Chioggia ##############################################
+-- ########################################################################################
+DROP TABLE IF EXISTS PUBLIC.qgis_chioggia_buildings;
+CREATE TABLE PUBLIC.qgis_chioggia_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+DROP TABLE IF EXISTS PUBLIC.qgis_chioggia_islands;
+CREATE TABLE PUBLIC.qgis_chioggia_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+DROP TABLE IF EXISTS PUBLIC.qgis_chioggia_openspaces;
+CREATE TABLE PUBLIC.qgis_chioggia_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
 
--- Function updating the year for a feature
-CREATE OR REPLACE FUNCTION ALL_year() RETURNS TRIGGER AS $ALL_year$
+-- ########################################################################################
+-- ############################# 03 Giudecca ##############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 04 Lido ##################################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 05 Murano ################################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 06 Mazzorbo ##############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 07 Pellestrina ###########################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 08 Sant'Erasmo ###########################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 09 Torcello ##############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 10 Vignole ###############################################
+-- ########################################################################################
+
+
+-- ########################################################################################
+-- ############################# 01 Campalto ##############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 02 Certosa ###############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 03 Le Grazie #############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 04 Lazzaretto Nuovo ######################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 05 Lazzaretto Vecchio ####################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 06 Madonna del Monte #####################################
+-- ########################################################################################
+DROP TABLE IF EXISTS PUBLIC.qgis_madonnadelmonte_buildings;
+CREATE TABLE PUBLIC.qgis_madonnadelmonte_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_buildings
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_madonnadelmonte_islands;
+CREATE TABLE PUBLIC.qgis_madonnadelmonte_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_islands
+FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_islands
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_madonnadelmonte_openspaces;
+CREATE TABLE PUBLIC.qgis_madonnadelmonte_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_openspaces
+FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_madonnadelmonte_openspaces
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+-- ########################################################################################
+-- ############################# 07 Monte dell'Oro ########################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 08 Poveglia ##############################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 08 San Clemente ##########################################
+-- ########################################################################################
+DROP TABLE IF EXISTS PUBLIC.qgis_sanclemente_buildings;
+CREATE TABLE PUBLIC.qgis_sanclemente_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanclemente_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanclemente_buildings
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sanclemente_islands;
+CREATE TABLE PUBLIC.qgis_sanclemente_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanclemente_islands
+FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanclemente_islands
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sanclemente_openspaces;
+CREATE TABLE PUBLIC.qgis_sanclemente_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanclemente_openspaces
+FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanclemente_openspaces
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+-- ########################################################################################
+-- ############################# 09 San Francesco del Deserto #############################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 10 San Giacomo in Paludo #################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 11 San Giorgio in Alga ###################################
+-- ########################################################################################
+CREATE OR REPLACE FUNCTION SGA_ALL_year() RETURNS TRIGGER AS $ALL_year$
    BEGIN
       INSERT INTO PUBLIC.feature_years(identifier, "year") 
       VALUES (new.identifier, 
         CASE
           WHEN new."Today" IS TRUE THEN 'Today'
-		  WHEN new."1982: Ortofoto" IS TRUE THEN '1982: Ortofoto'
-		  WHEN new."1943-45: RAF" IS TRUE THEN '1943-45: RAF'
-		  WHEN new."1850: Direzione genio militare" IS TRUE THEN '1850: Direzione genio militare'
-		  WHEN new."1838-41: Censo Stabile, Mappe Austriache - rettifica" IS TRUE THEN '1838-41: Censo Stabile, Mappe Austriache - rettifica'
-		  WHEN new."1830-31: Censo Stabile, Mappe Austriache" IS TRUE THEN '1830-31: Censo Stabile, Mappe Austriache'
-      WHEN new."1807-10: Censo Stabile, Mappe Napoleoniche" IS TRUE THEN '1807-10: Censo Stabile, Mappe Napoleoniche'
+          WHEN new."1982: Ortofoto" IS TRUE THEN '1982: Ortofoto'
+          WHEN new."1943-45: RAF" IS TRUE THEN '1943-45: RAF'
+          WHEN new."1931" IS TRUE THEN '1931'
+          WHEN new."1850: Direzione genio militare" IS TRUE THEN '1850: Direzione genio militare'
+          WHEN new."1838-41: Censo Stabile, Mappe Austriache - rettifica" IS TRUE THEN '1838-41: Censo Stabile, Mappe Austriache - rettifica'
+          WHEN new."1830-31: Censo Stabile, Mappe Austriache" IS TRUE THEN '1830-31: Censo Stabile, Mappe Austriache'
+          WHEN new."1807-10: Censo Stabile, Mappe Napoleoniche" IS TRUE THEN '1807-10: Censo Stabile, Mappe Napoleoniche'
           ELSE NULL
         END 
       );
@@ -26,34 +277,99 @@ CREATE OR REPLACE FUNCTION ALL_year() RETURNS TRIGGER AS $ALL_year$
    END;
 $ALL_year$ LANGUAGE plpgsql;
 
--- Table containing all the features. The query is going to be executed on this
-DROP TABLE IF EXISTS PUBLIC.veniss_data;
-CREATE TABLE PUBLIC.veniss_data(
+DROP TABLE IF EXISTS PUBLIC.qgis_sangiorgioinalga_buildings;
+CREATE TABLE PUBLIC.qgis_sangiorgioinalga_buildings(
   identifier VARCHAR(100) NOT NULL,
-  t VARCHAR(255),
-  z INTEGER,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1931" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_buildings
+FOR EACH ROW EXECUTE PROCEDURE SGA_ALL_year();
 
--- Function adding buildings 
-CREATE OR REPLACE FUNCTION ALL_BLDG_feature() RETURNS TRIGGER AS $ALL_BLDG_feature$
+DROP TABLE IF EXISTS PUBLIC.qgis_sangiorgioinalga_islands;
+CREATE TABLE PUBLIC.qgis_sangiorgioinalga_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1931" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_islands
+FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_islands
+FOR EACH ROW EXECUTE PROCEDURE SGA_ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sangiorgioinalga_openspaces;
+CREATE TABLE PUBLIC.qgis_sangiorgioinalga_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1931" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_openspaces
+FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sangiorgioinalga_openspaces
+FOR EACH ROW EXECUTE PROCEDURE SGA_ALL_year();
+
+-- ########################################################################################
+-- ############################# 12 San Giorgio Maggiore ##################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 13 San Giuliano ##########################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 14 San Lazzaro degli Armeni ##############################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 15 San Michele ###########################################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 16 San Secondo ###########################################
+-- ########################################################################################
+CREATE OR REPLACE FUNCTION SS_ALL_year() RETURNS TRIGGER AS $ALL_year$
    BEGIN
-      INSERT INTO PUBLIC.veniss_data(identifier, t, z, geometry) 
-      VALUES (new.identifier, 'Buildings', 1, new.geometry);
+      INSERT INTO PUBLIC.feature_years(identifier, "year") 
+      VALUES (new.identifier, 
+        CASE
+          WHEN new."Today" IS TRUE THEN 'Today'
+          WHEN new."1982: Ortofoto" IS TRUE THEN '1982: Ortofoto'
+          WHEN new."1943-45: RAF" IS TRUE THEN '1943-45: RAF'
+          WHEN new."1850: Direzione genio militare" IS TRUE THEN '1850: Direzione genio militare'
+          WHEN new."1838-41: Censo Stabile, Mappe Austriache - rettifica" IS TRUE THEN '1838-41: Censo Stabile, Mappe Austriache - rettifica'
+          WHEN new."1830-31: Censo Stabile, Mappe Austriache" IS TRUE THEN '1830-31: Censo Stabile, Mappe Austriache'
+          WHEN new."1807-10: Censo Stabile, Mappe Napoleoniche" IS TRUE THEN '1807-10: Censo Stabile, Mappe Napoleoniche'
+          WHEN new."1789" IS TRUE THEN '1789'
+          ELSE NULL
+        END 
+      );
       RETURN NEW;
    END;
-$ALL_BLDG_feature$ LANGUAGE plpgsql;
+$ALL_year$ LANGUAGE plpgsql;
 
--- Function adding islands
-CREATE OR REPLACE FUNCTION ALL_IS_feature() RETURNS TRIGGER AS $ALL_IS_feature$
-   BEGIN
-      INSERT INTO PUBLIC.veniss_data(identifier, t, z, geometry) 
-      VALUES (new.identifier, 'Island', 0, new.geometry);
-      RETURN NEW;
-   END;
-$ALL_IS_feature$ LANGUAGE plpgsql;
-
--- San Secondo buildings
 DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_buildings;
 CREATE TABLE PUBLIC.qgis_sansecondo_buildings(
   identifier VARCHAR(100) NOT NULL,
@@ -64,14 +380,16 @@ CREATE TABLE PUBLIC.qgis_sansecondo_buildings(
   "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
   "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
   "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 ); 
-CREATE TRIGGER SS_BLDG_INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
-FOR EACH ROW EXECUTE PROCEDURE ALL_BLDG_feature();
-CREATE TRIGGER SS_BLDG_INSERT_year AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
-FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
+FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
+FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
 
--- San Secondo islands
 DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_islands;
 CREATE TABLE PUBLIC.qgis_sansecondo_islands(
   identifier VARCHAR(100) NOT NULL,
@@ -82,13 +400,99 @@ CREATE TABLE PUBLIC.qgis_sansecondo_islands(
   "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
   "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
   "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 ); 
-CREATE TRIGGER SS_BLDG_INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
-FOR EACH ROW EXECUTE PROCEDURE ALL_IS_feature();
-CREATE TRIGGER SS_BLDG_INSERT_year AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
+FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
+CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
+FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
+FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_openspaces;
+CREATE TABLE PUBLIC.qgis_sansecondo_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
+FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
+CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
+FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
+FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
+
+-- ########################################################################################
+-- ############################# 17 San Servolo ###########################################
+-- ########################################################################################
+DROP TABLE IF EXISTS PUBLIC.qgis_sanservolo_buildings;
+CREATE TABLE PUBLIC.qgis_sanservolo_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanservolo_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanservolo_buildings
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sanservolo_islands;
+CREATE TABLE PUBLIC.qgis_sanservolo_islands(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanservolo_islands
+FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanservolo_islands
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
+DROP TABLE IF EXISTS PUBLIC.qgis_sanservolo_openspaces;
+CREATE TABLE PUBLIC.qgis_sanservolo_openspaces(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+); 
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sanservolo_openspaces
+FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_sanservolo_openspaces
 FOR EACH ROW EXECUTE PROCEDURE ALL_year();
 
 
--- Madonna del 
+-- ########################################################################################
+-- ############################# 18 Sant'Andrea ###########################################
+-- ########################################################################################
 
+-- ########################################################################################
+-- ############################# 19 Sant'Angelo della Polvere #############################
+-- ########################################################################################
+
+-- ########################################################################################
+-- ############################# 20 Santo Spirito #########################################
+-- ########################################################################################

@@ -1,12 +1,12 @@
 -- Madonna del monte
-DROP TABLE IF EXISTS PUBLIC.__madonnadelmonte_buildings;
-CREATE TABLE PUBLIC.__madonnadelmonte_buildings(
+DROP TABLE IF EXISTS IMPORTED.__madonnadelmonte_buildings;
+CREATE TABLE IMPORTED.__madonnadelmonte_buildings(
   identifier VARCHAR(100) NOT NULL,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__madonnadelmonte_islands;
-CREATE TABLE PUBLIC.__madonnadelmonte_islands(
+DROP TABLE IF EXISTS IMPORTED.__madonnadelmonte_islands;
+CREATE TABLE IMPORTED.__madonnadelmonte_islands(
   identifier VARCHAR(100) NOT NULL,
   "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
@@ -14,36 +14,36 @@ CREATE TABLE PUBLIC.__madonnadelmonte_islands(
 );
 
 -- San clemente
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_buildings;
-CREATE TABLE PUBLIC.__sanclemente_buildings(
+DROP TABLE IF EXISTS IMPORTED.__sanclemente_buildings;
+CREATE TABLE IMPORTED.__sanclemente_buildings(
   identifier VARCHAR(100) NOT NULL,
   "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_islands;
-CREATE TABLE PUBLIC.__sanclemente_islands(
+DROP TABLE IF EXISTS IMPORTED.__sanclemente_islands;
+CREATE TABLE IMPORTED.__sanclemente_islands(
   identifier VARCHAR(100) NOT NULL,
   "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__sanclemente_openspaces;
-CREATE TABLE PUBLIC.__sanclemente_openspaces(
+DROP TABLE IF EXISTS IMPORTED.__sanclemente_openspaces;
+CREATE TABLE IMPORTED.__sanclemente_openspaces(
   identifier VARCHAR(100) NOT NULL,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
 
 -- San giorgio in alga
-DROP TABLE IF EXISTS PUBLIC.__sangiorgioinalga_buildings;
-CREATE TABLE PUBLIC.__sangiorgioinalga_buildings(
+DROP TABLE IF EXISTS IMPORTED.__sangiorgioinalga_buildings;
+CREATE TABLE IMPORTED.__sangiorgioinalga_buildings(
   identifier VARCHAR(100) NOT NULL,
   "2023" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__sangiorgioinalga_islands;
-CREATE TABLE PUBLIC.__sangiorgioinalga_islands(
+DROP TABLE IF EXISTS IMPORTED.__sangiorgioinalga_islands;
+CREATE TABLE IMPORTED.__sangiorgioinalga_islands(
   identifier VARCHAR(100) NOT NULL,
   "2023" BOOLEAN NOT NULL DEFAULT FALSE,
   "1982" BOOLEAN NOT NULL DEFAULT FALSE,
@@ -53,8 +53,8 @@ CREATE TABLE PUBLIC.__sangiorgioinalga_islands(
 );
 
 -- San secondo
-DROP TABLE IF EXISTS PUBLIC.__sansecondo_buildings;
-CREATE TABLE PUBLIC.__sansecondo_buildings(
+DROP TABLE IF EXISTS IMPORTED.__sansecondo_buildings;
+CREATE TABLE IMPORTED.__sansecondo_buildings(
   identifier VARCHAR(100) NOT NULL,
   "1500" BOOLEAN NOT NULL DEFAULT FALSE,
   "1697" BOOLEAN NOT NULL DEFAULT FALSE,
@@ -68,8 +68,8 @@ CREATE TABLE PUBLIC.__sansecondo_buildings(
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__sansecondo_islands;
-CREATE TABLE PUBLIC.__sansecondo_islands(
+DROP TABLE IF EXISTS IMPORTED.__sansecondo_islands;
+CREATE TABLE IMPORTED.__sansecondo_islands(
   identifier VARCHAR(100) NOT NULL,
   "1500" BOOLEAN NOT NULL DEFAULT FALSE,
   "1697" BOOLEAN NOT NULL DEFAULT FALSE,
@@ -85,22 +85,22 @@ CREATE TABLE PUBLIC.__sansecondo_islands(
 );
 
 -- San servolo
-DROP TABLE IF EXISTS PUBLIC.__sanservolo_buildings;
-CREATE TABLE PUBLIC.__sanservolo_buildings(
+DROP TABLE IF EXISTS IMPORTED.__sanservolo_buildings;
+CREATE TABLE IMPORTED.__sanservolo_buildings(
   identifier VARCHAR(100) NOT NULL,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
 
 -- Santo spirito
-DROP TABLE IF EXISTS PUBLIC.__santospirito_buildings;
-CREATE TABLE PUBLIC.__santospirito_buildings(
+DROP TABLE IF EXISTS IMPORTED.__santospirito_buildings;
+CREATE TABLE IMPORTED.__santospirito_buildings(
   identifier VARCHAR(100) NOT NULL,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 );
-DROP TABLE IF EXISTS PUBLIC.__santospirito_islands;
-CREATE TABLE PUBLIC.__santospirito_islands(
+DROP TABLE IF EXISTS IMPORTED.__santospirito_islands;
+CREATE TABLE IMPORTED.__santospirito_islands(
   identifier VARCHAR(100) NOT NULL,
   "1982" BOOLEAN NOT NULL DEFAULT FALSE,
   "2019" BOOLEAN NOT NULL DEFAULT FALSE,
