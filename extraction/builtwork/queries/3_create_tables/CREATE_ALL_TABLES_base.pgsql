@@ -1,3 +1,21 @@
+-- Table containing the start and end of a single "time snap(?)"
+DROP TABLE IF EXISTS PUBLIC.years_dates;
+CREATE TABLE PUBLIC.years_dates(
+  "year" VARCHAR(255) NOT NULL PRIMARY KEY,
+  "start" integer,
+  "end" integer
+);
+
+INSERT INTO PUBLIC.years_dates
+VALUES 
+	('Today', 9999, 9999), 
+	('1982: Ortofoto', 1982, 1982),
+	('1943-45: RAF', 1943, 1945),
+	('1850: Direzione genio militare', 1850, 1850),
+	('1838-41: Censo Stabile, Mappe Austriache - rettifica', 1838, 1841),
+	('1830-31: Censo Stabile, Mappe Austriache', 1830, 1831),
+	('1807-10: Censo Stabile, Mappe Napoleoniche', 1807, 1810);
+
 -- Table containing the combination (feature_id, year)
 DROP TABLE IF EXISTS PUBLIC.feature_years;
 CREATE TABLE PUBLIC.feature_years(
@@ -68,11 +86,3 @@ CREATE OR REPLACE FUNCTION INSERT_WV_feature() RETURNS TRIGGER AS $INSERT_WV_fea
       RETURN NEW;
    END;
 $INSERT_WV_feature$ LANGUAGE plpgsql;
-
-CREATE OR REPLACE FUNCTION REMOVE_feature() RETURNS TRIGGER AS $REMOVE_feature$
-   BEGIN
-      DELETE FROM PUBLIC.veniss_data
-      WHERE identifier = OLD.identifier
-      RETURN OLD;
-   END;
-$REMOVE_feature$ LANGUAGE plpgsql;

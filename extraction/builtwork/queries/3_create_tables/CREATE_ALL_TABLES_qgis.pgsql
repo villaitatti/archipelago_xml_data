@@ -363,6 +363,10 @@ CREATE OR REPLACE FUNCTION SS_ALL_year() RETURNS TRIGGER AS $ALL_year$
           WHEN new."1830-31: Censo Stabile, Mappe Austriache" IS TRUE THEN '1830-31: Censo Stabile, Mappe Austriache'
           WHEN new."1807-10: Censo Stabile, Mappe Napoleoniche" IS TRUE THEN '1807-10: Censo Stabile, Mappe Napoleoniche'
           WHEN new."1789" IS TRUE THEN '1789'
+          WHEN new."1697" IS TRUE THEN '1697'
+          -- to remove
+          WHEN new."1500" IS TRUE THEN '1500'
+          WHEN new."1717" IS TRUE THEN '1717'
           ELSE NULL
         END 
       );
@@ -381,12 +385,16 @@ CREATE TABLE PUBLIC.qgis_sansecondo_buildings(
   "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
   "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
   "1789" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
+  -- to remove
+  "1500" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1717" BOOLEAN NOT NULL DEFAULT FALSE,
+
   geometry GEOMETRY
 ); 
 CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
 FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
-CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
-FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+
 CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
 FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
 
@@ -400,13 +408,16 @@ CREATE TABLE PUBLIC.qgis_sansecondo_islands(
   "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
   "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
   "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
   "1789" BOOLEAN NOT NULL DEFAULT FALSE,
+    -- to remove
+  "1500" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1717" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 ); 
 CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
 FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
-CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
-FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+
 CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
 FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
 
@@ -420,15 +431,22 @@ CREATE TABLE PUBLIC.qgis_sansecondo_openspaces(
   "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
   "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
   "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
   "1789" BOOLEAN NOT NULL DEFAULT FALSE,
   geometry GEOMETRY
 ); 
 CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
 FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
-CREATE TRIGGER REMOVE_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
-FOR EACH ROW EXECUTE PROCEDURE REMOVE_feature();
+
 CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
 FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
+
+INSERT INTO PUBLIC.years_dates
+VALUES ('1789', 1789, 1789), ('1697', 1697, 1697)
+
+-- to remove
+, ('1500', 1500, 1500), ('1717', 1717, 1717);
+
 
 -- ########################################################################################
 -- ############################# 17 San Servolo ###########################################
