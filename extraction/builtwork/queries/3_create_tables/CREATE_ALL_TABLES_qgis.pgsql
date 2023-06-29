@@ -130,6 +130,23 @@ CREATE TABLE PUBLIC.qgis_chioggia_openspaces(
 -- ############################# 05 Lazzaretto Vecchio ####################################
 -- ########################################################################################
 
+DROP TABLE IF EXISTS PUBLIC.qgis_lazzarettovecchio_buildings;
+CREATE TABLE PUBLIC.qgis_lazzarettovecchio_buildings(
+  identifier VARCHAR(100) NOT NULL,
+  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
+  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
+  geometry GEOMETRY
+);
+CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_lazzarettovecchio_buildings
+FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
+CREATE TRIGGER INSERT_year AFTER INSERT ON PUBLIC.qgis_lazzarettovecchio_buildings
+FOR EACH ROW EXECUTE PROCEDURE ALL_year();
+
 -- ########################################################################################
 -- ############################# 06 Madonna del Monte #####################################
 -- ########################################################################################
@@ -346,106 +363,6 @@ FOR EACH ROW EXECUTE PROCEDURE SGA_ALL_year();
 -- ########################################################################################
 -- ############################# 15 San Michele ###########################################
 -- ########################################################################################
-
--- ########################################################################################
--- ############################# 16 San Secondo ###########################################
--- ########################################################################################
-CREATE OR REPLACE FUNCTION SS_ALL_year() RETURNS TRIGGER AS $ALL_year$
-   BEGIN
-      INSERT INTO PUBLIC.feature_years(identifier, "year") 
-      VALUES (new.identifier, 
-        CASE
-          WHEN new."Today" IS TRUE THEN 'Today'
-          WHEN new."1982: Ortofoto" IS TRUE THEN '1982: Ortofoto'
-          WHEN new."1943-45: RAF" IS TRUE THEN '1943-45: RAF'
-          WHEN new."1850: Direzione genio militare" IS TRUE THEN '1850: Direzione genio militare'
-          WHEN new."1838-41: Censo Stabile, Mappe Austriache - rettifica" IS TRUE THEN '1838-41: Censo Stabile, Mappe Austriache - rettifica'
-          WHEN new."1830-31: Censo Stabile, Mappe Austriache" IS TRUE THEN '1830-31: Censo Stabile, Mappe Austriache'
-          WHEN new."1807-10: Censo Stabile, Mappe Napoleoniche" IS TRUE THEN '1807-10: Censo Stabile, Mappe Napoleoniche'
-          WHEN new."1789" IS TRUE THEN '1789'
-          WHEN new."1697" IS TRUE THEN '1697'
-          -- to remove
-          WHEN new."1500" IS TRUE THEN '1500'
-          WHEN new."1717" IS TRUE THEN '1717'
-          ELSE NULL
-        END 
-      );
-      RETURN NEW;
-   END;
-$ALL_year$ LANGUAGE plpgsql;
-
-DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_buildings;
-CREATE TABLE PUBLIC.qgis_sansecondo_buildings(
-  identifier VARCHAR(100) NOT NULL,
-  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
-  -- to remove
-  "1500" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1717" BOOLEAN NOT NULL DEFAULT FALSE,
-
-  geometry GEOMETRY
-); 
-CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
-FOR EACH ROW EXECUTE PROCEDURE INSERT_BLDG_feature();
-
-CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_buildings
-FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
-
-DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_islands;
-CREATE TABLE PUBLIC.qgis_sansecondo_islands(
-  identifier VARCHAR(100) NOT NULL,
-  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
-    -- to remove
-  "1500" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1717" BOOLEAN NOT NULL DEFAULT FALSE,
-  geometry GEOMETRY
-); 
-CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
-FOR EACH ROW EXECUTE PROCEDURE INSERT_IS_feature();
-
-CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_islands
-FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
-
-DROP TABLE IF EXISTS PUBLIC.qgis_sansecondo_openspaces;
-CREATE TABLE PUBLIC.qgis_sansecondo_openspaces(
-  identifier VARCHAR(100) NOT NULL,
-  "Today" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1982: Ortofoto" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1943-45: RAF" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1850: Direzione genio militare" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1838-41: Censo Stabile, Mappe Austriache - rettifica" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1830-31: Censo Stabile, Mappe Austriache" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1807-10: Censo Stabile, Mappe Napoleoniche" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1697" BOOLEAN NOT NULL DEFAULT FALSE,
-  "1789" BOOLEAN NOT NULL DEFAULT FALSE,
-  geometry GEOMETRY
-); 
-CREATE TRIGGER INSERT_feature AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
-FOR EACH ROW EXECUTE PROCEDURE INSERT_OS_feature();
-
-CREATE TRIGGER SS_ALL_year AFTER INSERT ON PUBLIC.qgis_sansecondo_openspaces
-FOR EACH ROW EXECUTE PROCEDURE SS_ALL_year();
-
-INSERT INTO PUBLIC.years_dates
-VALUES ('1789', 1789, 1789), ('1697', 1697, 1697)
-
--- to remove
-, ('1500', 1500, 1500), ('1717', 1717, 1717);
 
 
 -- ########################################################################################
