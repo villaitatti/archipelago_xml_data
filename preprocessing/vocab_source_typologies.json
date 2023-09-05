@@ -1,0 +1,116 @@
+{
+    "account_book": {
+        "uuid_vocab": "b8a01202-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "agreement": {
+        "uuid_vocab": "b8a02436-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "architectural_drawing": {
+        "uuid_vocab": "b8a0361a-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "book_of_island": {
+        "uuid_vocab": "b8a0687e-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "building_costs": {
+        "uuid_vocab": "b8a046fa-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "building_permit": {
+        "uuid_vocab": "b8a057e4-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "census": {
+        "uuid_vocab": "b8a07bb6-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "chronicle": {
+        "uuid_vocab": "b8a08c14-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "concession": {
+        "uuid_vocab": "b8a09d44-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "contract": {
+        "uuid_vocab": "b8a0ad5c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "credit_record": {
+        "uuid_vocab": "b8a0be8c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "deed_register": {
+        "uuid_vocab": "b8a0cfb2-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "deliberation": {
+        "uuid_vocab": "b8a0e1c8-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "drawing": {
+        "uuid_vocab": "b8a0f302-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "drawing_book": {
+        "uuid_vocab": "b8a103ec-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "estimate": {
+        "uuid_vocab": "b8a114b8-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "fees": {
+        "uuid_vocab": "b8a126d8-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "inventory": {
+        "uuid_vocab": "b8a137f4-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "letter": {
+        "uuid_vocab": "b8a14b40-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "license": {
+        "uuid_vocab": "b8a15c34-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "loan_agreement_lease": {
+        "uuid_vocab": "b8a16cce-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "mariegola": {
+        "uuid_vocab": "b8a17e6c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "notary_deed": {
+        "uuid_vocab": "b8a18fba-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "painting": {
+        "uuid_vocab": "b8a1a02c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "petition": {
+        "uuid_vocab": "b8a1b04e-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "photograph": {
+        "uuid_vocab": "b8a1c03e-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "print": {
+        "uuid_vocab": "b8a1d09c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "project": {
+        "uuid_vocab": "b8a1e08c-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "rental_contract": {
+        "uuid_vocab": "b8a1f0a4-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "report": {
+        "uuid_vocab": "b8a202ce-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "survey": {
+        "uuid_vocab": "b8a2260a-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "tax_record": {
+        "uuid_vocab": "b8a238ca-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "technical_report": {
+        "uuid_vocab": "b8a24aa4-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "testimony": {
+        "uuid_vocab": "b8a25d14-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "textual_source": {
+        "uuid_vocab": "b89fba0a-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "trial": {
+        "uuid_vocab": "b8a26e62-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "visual_source": {
+        "uuid_vocab": "b8a00032-4c01-11ee-b7c3-3a5becfe4abd"
+    },
+    "will": {
+        "uuid_vocab": "b8a27f10-4c01-11ee-b7c3-3a5becfe4abd"
+    }
+}

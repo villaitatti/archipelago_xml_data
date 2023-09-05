@@ -8,7 +8,7 @@ import configparser
 
 out_dir = 'out'
 
-def execute(typology, limit, d=None, u=None, config_param='veniss'):
+def execute(typology, limit, d=None, u=None, config_param='veniss', sa=None):
 
   def _get_credentials(type):
     config = configparser.ConfigParser()
@@ -37,41 +37,41 @@ def execute(typology, limit, d=None, u=None, config_param='veniss'):
   credentials = _get_credentials(config_param)
 
   for root, dirs, src_files in os.walk(dir_output):
-    cnt = 0
-    sa = os.path.basename(os.path.normpath(root))
 
-    for filename in src_files:
+    # Execute if SA is not set, or it is set and current folder is in SA
+    current_folder = os.path.basename(root)
+    if sa is None or (sa is not None and current_folder in sa):
+      cnt = 0
 
-      if limit and cnt == int(limit):
-        break
+      for filename in src_files:
 
-      graph_prefix = credentials[KEY_ENDPOINT]
-      if KEY_PREFIX in credentials:
-        graph_prefix = credentials[KEY_PREFIX]
+        if limit and cnt == int(limit):
+          break
 
+        graph_prefix = credentials[KEY_ENDPOINT] if KEY_PREFIX in credentials else credentials[KEY_PREFIX]
 
-      if sa != out_dir:
-        normal_uri =  f"{graph_prefix}/resource/{typology}/{sa}/{filename.replace('.ttl','')}/container/context"
-      else:
-        normal_uri =  f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"
-      
-      graph_uri = urllib.parse.quote(normal_uri, safe='') 
-      request_url = f'{credentials[KEY_ENDPOINT]}/rdf-graph-store?graph={graph_uri}'
+        if sa is not None:
+          normal_uri =  f"{graph_prefix}/resource/{typology}/{current_folder}/{filename.replace('.ttl','')}/container/context"
+        else:
+          normal_uri =  f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"
+        
+        graph_uri = urllib.parse.quote(normal_uri, safe='') 
+        request_url = f'{credentials[KEY_ENDPOINT]}/rdf-graph-store?graph={graph_uri}'
 
-      print(f'### {normal_uri}')
+        print(f'### {normal_uri}')
 
-      #DEL
-      if d:
-        command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
-        print(f'DEL\t\t{os.system(command)}')
+        #DEL
+        if d:
+          command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X DELETE -H \'Content-Type: text/turtle\' {request_url}'
+          print(f'DEL\t\t{os.system(command)}')
 
-      #POST
-      if u:
-        command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(root,filename)}\' {request_url}'
-        print(f'POST\t\t{os.system(command)}')
+        #POST
+        if u:
+          command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -X POST -H \'Content-Type: text/turtle\' --data-binary \'@{os.path.join(root,filename)}\' {request_url}'
+          print(f'POST\t\t{os.system(command)}')
 
-      print('\n')
-      cnt+=1
+        print('\n')
+        cnt+=1
 
   if u:
     command = f'curl -u {credentials[KEY_USERNAME]}:{credentials[KEY_PASSWORD]} -H \'Content-Type: application/sparql-update; charset=UTF-8\' -H \'Accept: text/boolean\' -d \'@{os.path.join(dir_path, "remove_type.sq")}\' {credentials[KEY_ENDPOINT]}/sparql'

@@ -1,0 +1,65 @@
+{
+    "black_ink": {
+        "uuid_vocab": "e505fa9c-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "blue_paper": {
+        "uuid_vocab": "835bdc02-4bf7-11ee-bbc1-3a5becfe4abd"
+    },
+    "brown_ink": {
+        "uuid_vocab": "e5060a8c-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "canvas": {
+        "uuid_vocab": "835bef80-4bf7-11ee-bbc1-3a5becfe4abd"
+    },
+    "cardboard": {
+        "uuid_vocab": "e506b1d0-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "chalk": {
+        "uuid_vocab": "e506495c-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "charcoal": {
+        "uuid_vocab": "e5063994-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "fabric": {
+        "uuid_vocab": "e506dec6-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "ink": {
+        "uuid_vocab": "e505e89a-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "iron_gall_ink": {
+        "uuid_vocab": "e5062ab2-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "leather": {
+        "uuid_vocab": "e5069362-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "panel": {
+        "uuid_vocab": "835c013c-4bf7-11ee-bbc1-3a5becfe4abd"
+    },
+    "paper": {
+        "uuid_vocab": "835b93dc-4bf7-11ee-bbc1-3a5becfe4abd"
+    },
+    "parchment": {
+        "uuid_vocab": "835c12e4-4bf7-11ee-bbc1-3a5becfe4abd"
+    },
+    "pasterboard": {
+        "uuid_vocab": "e506c062-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "pencil": {
+        "uuid_vocab": "e5065802-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "red_ink": {
+        "uuid_vocab": "e5061b9e-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "tempera": {
+        "uuid_vocab": "e50682d2-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "vellum": {
+        "uuid_vocab": "e506a29e-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "watercolor": {
+        "uuid_vocab": "e5066694-4bfb-11ee-a9b1-3a5becfe4abd"
+    },
+    "wood": {
+        "uuid_vocab": "e506cee0-4bfb-11ee-a9b1-3a5becfe4abd"
+    }
+}

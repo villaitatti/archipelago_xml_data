@@ -45,46 +45,46 @@
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
-          <namespace prefix="arconto" uri="https://archipelago.itatti.harvard.edu/arconto#" />
+          <namespace prefix="veniss_ontology" uri="https://veniss.net/ontology#" />
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="skos" uri="http://www.w3.org/2008/05/skos#" />
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#" />
         </namespaces>
       </target_info>
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="gvp" uri="http://vocab.getty.edu/ontology#" />
         </namespaces>
       </target_info>
 
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="Platform" uri="http://www.researchspace.org/resource/system/" />
         </namespaces>
       </target_info>
 
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="ldp" uri="http://www.w3.org/ns/ldp#" />
         </namespaces>
       </target_info>
 
       <target_info>
-        <target_schema schema_file="arconto.rdf" type="rdf" version="0.0.1">ARConto</target_schema>
+        <target_schema schema_file="veniss_ontology.rdf" type="rdf" version="0.0.1">veniss_ontology</target_schema>
         <namespaces>
           <namespace prefix="provo" uri="http://www.w3.org/ns/prov#" />
         </namespaces>
@@ -124,7 +124,7 @@
         <target_node>
           <entity>
             <type>skos:Concept</type>
-            <type>arconto:Entry</type>
+            <type>veniss_ontology:Entry</type>
             <type>crm:E55_Type</type>
             <instance_generator name="002.2-vocab">
               <arg name="res" type="xpath">collection/text()</arg>
@@ -164,7 +164,7 @@
               <exists>text()</exists>
             </if>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
                 <arg name="res" type="xpath">../collection/text()</arg>
                 <arg name="id" type="xpath">text()</arg>
@@ -225,7 +225,7 @@
               <exists>text()</exists>
             </if>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="002-general">
                 <arg name="res" type="constant">vocab</arg>
                 <arg name="id" type="xpath">text()</arg>
@@ -236,21 +236,21 @@
         </range>
       </link> 
 
-      <!-- Container -->
+      <!-- LDP Container -->
       <link>
         <path>
           <source_relation>
             <relation>container</relation>
           </source_relation>
           <target_relation>
-            <relationship>arconto:Remove</relationship>
+            <relationship>veniss_ontology:Remove</relationship>
           </target_relation>
         </path>
         <range>
           <source_node>container</source_node>
           <target_node>
             <entity>
-              <type>arconto:Remove</type>
+              <type>veniss_ontology:Remove</type>
               <instance_generator name="003-container">
                 <arg name="container">parent/text()</arg>
               </instance_generator>
@@ -282,7 +282,7 @@
                   <additional>
                     <relationship>provo:wasAttributedTo</relationship>
                     <entity>
-                      <type>arconto:Remove</type>
+                      <type>veniss_ontology:Remove</type>
                       <instance_generator name="002-general">
                         <arg name="res" type="constant">user</arg>
                         <arg name="id">creator/text()</arg>

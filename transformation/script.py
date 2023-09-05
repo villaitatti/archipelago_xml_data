@@ -52,6 +52,9 @@ def execute(table_folder, limit, sa):
                   if not os.path.exists(table_folder_out):
                       os.mkdir(table_folder_out)
 
+
+                  # if table folder is vocab, then create subfolder for each table
+                  # if else create only one folder for all tables
                   if table_folder == "vocab":
                       out_file_full = os.path.join(table_folder_out, current_folder,out_file)
                   else:

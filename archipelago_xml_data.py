@@ -41,7 +41,7 @@ def execute_pipeline(exec_preprocessing, exec_transformation, exec_upload, exec_
 
     if exec_upload or exec_delete:
       print('Calling RS graph api...')
-      upload.execute(file, limit, exec_delete, exec_upload, config)
+      upload.execute(file, limit, exec_delete, exec_upload, config, sa)
       print('Done.\n')
 
 if __name__ == '__main__':
