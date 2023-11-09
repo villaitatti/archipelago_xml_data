@@ -497,6 +497,10 @@
     <pattern>digital_object/{id}/identifier</pattern>
   </generator>
 
+  <generator name="A00-relation" prefix="veniss">
+    <pattern>relation/{id}</pattern>
+  </generator>
+
   <generator name="URIorUUID">
     <custom generatorClass="gr.forth.URIorUUID">
       <set-arg name="text"></set-arg>

@@ -40,7 +40,7 @@ def execute(typology, limit, d=None, u=None, config_param='veniss', sa=None):
 
     # Execute if SA is not set, or it is set and current folder is in SA
     current_folder = os.path.basename(root)
-    if sa is None or (sa is not None and current_folder in sa):
+    if (sa is None or len(sa) == 0) or (sa is not None and current_folder in sa):
       cnt = 0
 
       for filename in src_files:
@@ -50,7 +50,7 @@ def execute(typology, limit, d=None, u=None, config_param='veniss', sa=None):
 
         graph_prefix = credentials[KEY_ENDPOINT] if KEY_PREFIX in credentials else credentials[KEY_PREFIX]
 
-        if sa is not None:
+        if (sa is not None and len(sa) > 0):
           normal_uri =  f"{graph_prefix}/resource/{typology}/{current_folder}/{filename.replace('.ttl','')}/container/context"
         else:
           normal_uri =  f"{graph_prefix}/resource/{typology}/{filename.replace('.ttl','')}/container/context"

@@ -34,6 +34,7 @@ def execute(limit, sa=None):
   uuid_filename = os.path.join(dir_path, os.pardir, 'actor.json')
   occp_filename = os.path.join(dir_path, 'actor_occupation.json')
   occp_filename_processed = os.path.join(dir_path, 'actor_occupation-manual_processed.json')
+  vocab_actor_types = os.path.join(dir_path, os.pardir, 'vocab_actor_types.json')
   actor_uuid = 'actor_uuid'
 
   uuid_dict = {}
@@ -216,6 +217,8 @@ def execute(limit, sa=None):
   if os.path.exists(occp_filename_processed):
     occp_dict_processed = json.load(open(occp_filename_processed))
 
+  vocab_actor_types_dict = json.load(open(vocab_actor_types)) 
+
   # Iterate each ROW
   for row in tags:
 
@@ -309,7 +312,9 @@ def execute(limit, sa=None):
       titles = et.SubElement(new_row, key_titles)
 
       for title in titles_text.split(';'):
-        base_tag(titles, key_title, escape_uri(explode_text(title)[key_eng]))
+        title_name = escape_uri(explode_text(title)[key_eng])
+        if title_name in vocab_actor_types_dict:
+          base_tag(titles, key_title, vocab_actor_types_dict[title_name]['uuid_vocab'])
 
     # occupation
     occupation = row.find(f'ns:{key_occuption}', ns).text
@@ -342,8 +347,11 @@ def execute(limit, sa=None):
         node_activity_id = et.SubElement(node_activity, key_uuid)
         node_activity_id.text = str(uuid.uuid1())
         
-        node_activity_subject = et.SubElement(node_activity, key_activity_subject)
-        node_activity_subject.text = escape_uri(current_activity[key_activity_subject])
+        # Subject must be the uuid of the actor_type
+        entry = escape_uri(current_activity[key_activity_subject])
+        if entry in vocab_actor_types_dict:
+          node_activity_subject = et.SubElement(node_activity, key_activity_subject)
+          node_activity_subject.text = vocab_actor_types_dict[entry]['uuid_vocab']
         
         if key_activity_place in current_activity:
           node_activity_place = et.SubElement(node_activity, key_activity_place)
