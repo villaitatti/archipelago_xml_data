@@ -93,6 +93,9 @@ def execute(limit, sa=None):
   key_birth = 'birth'
   key_death = 'death'
   key_date = 'date'
+  key_date_year = 'year'
+  key_date_month = 'month'
+  key_date_day = 'day'
   key_place = 'place'
 
   # Custom created keys
@@ -375,7 +378,23 @@ def execute(limit, sa=None):
       if birth_date is not None:
         # It may contain "ca."
         birth_date = birth_date.replace('ca.','')
-        base_tag(birth, key_date, birth_date)
+        node_birth_date = et.SubElement(birth, key_date) 
+
+        # Cast birth_date to date and extract year, month and day
+        if '-' in birth_date:
+          birth_date = datetime.strptime(birth_date, '%Y-%m-%d')
+          
+          if birth_date.year:
+            base_tag(node_birth_date, key_date_year, birth_date.year)
+
+          if birth_date.month:
+            base_tag(node_birth_date, key_date_month, birth_date.month)
+          
+          if birth_date.day:
+            base_tag(node_birth_date, key_date_day, birth_date.day)
+        # Only year in date
+        else:
+          base_tag(node_birth_date, key_date_year, birth_date) 
 
       if birth_place is not None:
         base_tag(birth, key_place, escape_uri(birth_place))
@@ -388,7 +407,25 @@ def execute(limit, sa=None):
       death = et.SubElement(new_row, key_death)
 
       if death_date is not None:
-        base_tag(death, key_date, death_date)
+        # It may contain "ca."
+        death_date = death_date.replace('ca.','')
+        node_death_date = et.SubElement(death, key_date) 
+
+        # Cast death_date to date and extract year, month and day
+        if '-' in death_date:
+          death_date = datetime.strptime(death_date, '%Y-%m-%d')
+          
+          if death_date.year:
+            base_tag(node_death_date, key_date_year, death_date.year)
+
+          if death_date.month:
+            base_tag(node_death_date, key_date_month, death_date.month)
+          
+          if death_date.day:
+            base_tag(node_death_date, key_date_day, death_date.day)
+        # Only year in date
+        else:
+          base_tag(node_death_date, key_date_year, death_date) 
 
       if death_place is not None:
         base_tag(death, key_place, escape_uri(death_place))

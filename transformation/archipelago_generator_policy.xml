@@ -247,6 +247,9 @@
   <generator name="323a-person-birth-date" prefix="veniss">
     <pattern>actor/{actor_id}/birth/date</pattern>
   </generator>
+  <generator name="323a1-person-birth-date_primitive" prefix="veniss">
+    <pattern>actor/{actor_id}/birth/date/time_primitive_{type}</pattern>
+  </generator>
   <generator name="320b-group-formation" prefix="veniss">
     <pattern>actor/{actor_id}/formation</pattern>
   </generator>
@@ -260,6 +263,9 @@
   </generator>
   <generator name="333a-person-death-date" prefix="veniss">
     <pattern>actor/{actor_id}/death/date</pattern>
+  </generator>
+  <generator name="333a1-person-death-date_primitive" prefix="veniss">
+    <pattern>actor/{actor_id}/death/date/time_primitive_{type}</pattern>
   </generator>
   <generator name="330a-group-dissolution" prefix="veniss">
     <pattern>actor/{actor_id}/dissolution</pattern>
