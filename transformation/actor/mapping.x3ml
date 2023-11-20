@@ -144,7 +144,7 @@
                 <entity>
                   <type>ldp:Resource</type>
                   <type>provo:Entity</type>
-                  <instance_generator name="100.1-builtwork_container">
+                  <instance_generator name="300.1-actor_container">
                     <arg name="bw_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
                   <label_generator name="Literal">
@@ -166,9 +166,8 @@
                     <relationship>provo:wasAttributedTo</relationship>
                     <entity>
                       <type>veniss_ontology:Remove</type>
-                      <instance_generator name="002-general">
-                        <arg name="res" type="constant">user</arg>
-                        <arg name="id">creator/text()</arg>
+                      <instance_generator name="rs-curator">
+                        <arg name="user_id">creator/text()</arg>
                       </instance_generator>
                     </entity>
                   </additional>

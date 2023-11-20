@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <generator_policy>
 
+  <!-- RS Curator -->
+
+  <generator name="rs-curator" prefix="rs">
+    <pattern>user/{user_id}</pattern>
+  </generator>
+
   <!-- Type -->
 
   <generator name="000-type" prefix="veniss">
@@ -213,6 +219,10 @@
   <!-- Actor -->
   <generator name="300-actor" prefix="veniss">
     <pattern>actor/{actor_id}</pattern>
+  </generator>
+
+  <generator name="300.1-actor_container" prefix="veniss">
+    <pattern>actor/{bw_id}/container</pattern>
   </generator>
 
   <!-- identify actors -->

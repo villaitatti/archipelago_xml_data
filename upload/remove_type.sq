@@ -1,2 +1,3 @@
+PREFIX ontology: <http://dbpedia.org/ontology/>
 PREFIX veniss_ontology: <https://veniss.net/ontology#>
 delete {?s a veniss_ontology:Remove} where {?s a veniss_ontology:Remove}
