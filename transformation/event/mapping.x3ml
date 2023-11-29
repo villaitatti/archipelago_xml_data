@@ -123,6 +123,30 @@
         </target_node>
       </domain>
 
+      <!-- Island -->
+      <link>
+        <path>
+          <source_relation>
+            <relation>island</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>veniss_ontology:has_island</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>island</source_node>
+          <target_node>
+            <entity>
+              <type>veniss_ontology:Remove</type>
+              <instance_generator name="002-general">
+                <arg name="res" type="constant">builtwork</arg>
+                <arg name="id" type="xpath">text()</arg>
+              </instance_generator>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+
       <!-- LDP Container -->
       <link>
         <path>
@@ -202,7 +226,7 @@
             <entity>
               <type>veniss_ontology:Remove</type>
               <instance_generator name="002.2-vocab">
-                <arg name="res" type="constant">event</arg>
+                <arg name="res" type="constant">event_types</arg>
                 <arg name="id" type="xpath">text()</arg>
               </instance_generator>
             </entity>

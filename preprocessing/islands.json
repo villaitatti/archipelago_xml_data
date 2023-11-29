@@ -1,0 +1,31 @@
+{
+  "3230839": {
+    "label": "San Secondo",
+    "code": "SSC",
+    "uri": "a5e52321-ac31-4ebe-8642-6031b0206d33"
+  },
+  "3175329": {
+    "label": "Certosa",
+    "code": "CRT",
+    "uri": "8dfab08d-cd4f-4072-b0ae-5eac78f2c7c7"
+  },
+  "7910746": {
+    "label": "Santo Spirito",
+    "code": "SSP",
+    "uri": "d654e054-dd23-419a-baab-ee40342694ae"
+  },
+  "3168468": {
+    "label": "San Clemente",
+    "code": "SCL",
+    "uri": "352e7ac2-a050-4862-b3cf-be9aae83cbd1"
+  },
+  "3168290": {
+    "label": "San Giorgio Maggiore",
+    "code": "SGM"
+  },
+  "7910520": {
+    "label": "Lazzaretto Vecchio",
+    "code": "LZV",
+    "uri": "eaa5f557-40fd-422e-a81d-52c86c4f6ba1"
+  }
+}
