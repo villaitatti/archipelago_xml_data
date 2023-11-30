@@ -40,7 +40,7 @@ def execute(typology, limit, d=None, u=None, config_param='veniss', sa=None):
 
     # Execute if SA is not set, or it is set and current folder is in SA
     current_folder = os.path.basename(root)
-    if sa is None or (sa is not None and current_folder in sa):
+    if sa is None or not sa or (sa is not None and current_folder in sa):
       cnt = 0
 
       for filename in src_files:
