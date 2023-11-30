@@ -144,7 +144,7 @@
                 <entity>
                   <type>ldp:Resource</type>
                   <type>provo:Entity</type>
-                  <instance_generator name="100.1-builtwork_container">
+                  <instance_generator name="300.1-actor_container">
                     <arg name="bw_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
                   <label_generator name="Literal">
@@ -166,9 +166,8 @@
                     <relationship>provo:wasAttributedTo</relationship>
                     <entity>
                       <type>veniss_ontology:Remove</type>
-                      <instance_generator name="002-general">
-                        <arg name="res" type="constant">user</arg>
-                        <arg name="id">creator/text()</arg>
+                      <instance_generator name="rs-curator">
+                        <arg name="user_id">creator/text()</arg>
                       </instance_generator>
                     </entity>
                   </additional>
@@ -390,19 +389,86 @@
               <additional>
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
-                  <type>crm:E2_Time-Span</type>
+                  <type>crm:E52_Time-Span</type>
                   <instance_generator name="323a-person-birth-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 
+                  <!-- Year -->
                   <additional>
-                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
                     <entity>
-                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_generator name="GermanDateTime">
-                        <arg name="bound" type="constant">Lower</arg>
-                        <arg name="text" type="xpath">date/text()</arg>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="323a1-person-birth-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">year</arg>
                       </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/year/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_year</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
+                    </entity>
+                  </additional>
+
+                  <!-- Month -->
+                  <additional>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
+                    <entity>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="323a1-person-birth-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">month</arg>
+                      </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/month/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_month</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
+                    </entity>
+                  </additional>
+
+                  <!-- Day -->
+                  <additional>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
+                    <entity>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="323a1-person-birth-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">day</arg>
+                      </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/day/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_day</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
                     </entity>
                   </additional>
 
@@ -454,19 +520,86 @@
               <additional>
                 <relationship>crm:P4_has_time-span</relationship>
                 <entity>
-                  <type>crm:E2_Time-Span</type>
+                  <type>crm:E52_Time-Span</type>
                   <instance_generator name="333a-person-death-date">
                     <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
                   </instance_generator>
 
+                  <!-- Year -->
                   <additional>
-                    <relationship>crm:P81a_end_of_the_begin</relationship>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
                     <entity>
-                      <type>http://www.w3.org/2001/XMLSchema#dateTime</type>
-                      <instance_generator name="GermanDateTime">
-                        <arg name="bound" type="constant">Lower</arg>
-                        <arg name="text" type="xpath">date/text()</arg>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="333a1-person-death-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">year</arg>
                       </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/year/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_year</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
+                    </entity>
+                  </additional>
+
+                  <!-- Month -->
+                  <additional>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
+                    <entity>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="333a1-person-death-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">month</arg>
+                      </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/month/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_month</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
+                    </entity>
+                  </additional>
+
+                  <!-- Day -->
+                  <additional>
+                    <relationship>crm:P170i_time_is_defined_by</relationship>
+                    <entity>
+                      <type>crm:E61_Time-Primitive</type>
+                      <instance_generator name="333a1-person-death-date_primitive">
+                        <arg name="actor_id" type="xpath">../ID_PERSON/text()</arg>
+                        <arg name="type" type="constant">day</arg>
+                      </instance_generator>
+
+                      <label_generator name="Constant">
+                        <arg name="text" type="xpath">date/day/text()</arg>
+                      </label_generator>
+
+                      <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                          <type>veniss_ontology:Remove</type>
+                          <instance_generator name="000-type">
+                            <arg name="type_id" type="constant">time_primitive_day</arg>
+                          </instance_generator>
+                        </entity>
+                      </additional>
                     </entity>
                   </additional>
 

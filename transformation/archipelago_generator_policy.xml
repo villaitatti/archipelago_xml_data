@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <generator_policy>
 
+  <!-- RS Curator -->
+
+  <generator name="rs-curator" prefix="rs">
+    <pattern>user/{user_id}</pattern>
+  </generator>
+
   <!-- Type -->
 
   <generator name="000-type" prefix="veniss">
@@ -215,6 +221,10 @@
     <pattern>actor/{actor_id}</pattern>
   </generator>
 
+  <generator name="300.1-actor_container" prefix="veniss">
+    <pattern>actor/{bw_id}/container</pattern>
+  </generator>
+
   <!-- identify actors -->
   <generator name="310-actor-identifier" prefix="veniss">
     <pattern>actor/{actor_id}/identifier</pattern>
@@ -247,6 +257,9 @@
   <generator name="323a-person-birth-date" prefix="veniss">
     <pattern>actor/{actor_id}/birth/date</pattern>
   </generator>
+  <generator name="323a1-person-birth-date_primitive" prefix="veniss">
+    <pattern>actor/{actor_id}/birth/date/time_primitive_{type}</pattern>
+  </generator>
   <generator name="320b-group-formation" prefix="veniss">
     <pattern>actor/{actor_id}/formation</pattern>
   </generator>
@@ -260,6 +273,9 @@
   </generator>
   <generator name="333a-person-death-date" prefix="veniss">
     <pattern>actor/{actor_id}/death/date</pattern>
+  </generator>
+  <generator name="333a1-person-death-date_primitive" prefix="veniss">
+    <pattern>actor/{actor_id}/death/date/time_primitive_{type}</pattern>
   </generator>
   <generator name="330a-group-dissolution" prefix="veniss">
     <pattern>actor/{actor_id}/dissolution</pattern>
@@ -495,6 +511,10 @@
 
   <generator name="901-digital_object-identifier" prefix="veniss">
     <pattern>digital_object/{id}/identifier</pattern>
+  </generator>
+
+  <generator name="A00-relation" prefix="veniss">
+    <pattern>relation/{id}</pattern>
   </generator>
 
   <generator name="URIorUUID">

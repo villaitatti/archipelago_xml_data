@@ -39,6 +39,7 @@ dir_extraction = os.path.join(root_path, 'extraction', 'transformed')
 
 filename = os.path.join(dir_path, 'Events.xml')
 uuid_filename = os.path.join(dir_path, os.pardir, 'events.json')
+islands_filename = os.path.join(dir_path, os.pardir, 'islands.json')
 
 
 ####### KEYS ###########
@@ -82,8 +83,10 @@ OUT_KEY_EVENT_DAY = 'day'
 OUT_KEY_EVENT_MONTH = 'month'
 OUT_KEY_EVENT_YEAR = 'year'
 
+ISLANDS_DICT_URI = 'uri'
+
 vocab_event = json.load(
-    open(os.path.join(dir_path, os.pardir, 'vocab_event.json')))
+    open(os.path.join(dir_path, os.pardir, 'vocab_event_types.json')))
 
 
 def execute(limit, sa=None):
@@ -94,6 +97,8 @@ def execute(limit, sa=None):
   uuid_dict = {}
   if os.path.exists(uuid_filename):
     uuid_dict = json.load(open(uuid_filename))
+  
+  islands_dict = json.load(open(islands_filename))
 
   cnt_total = 0
 
@@ -132,6 +137,13 @@ def execute(limit, sa=None):
       if event_typology_escaped in vocab_event:
         node_event_typology = et.SubElement(new_row, OUT_KEY_EVENT_TYPOLOGY)
         node_event_typology.text = vocab_event[event_typology_escaped]['uuid_vocab']
+
+    # Island
+    event_island = row.find('Island').text
+    if event_island in islands_dict and ISLANDS_DICT_URI in islands_dict[event_island]:
+      node_event_island = et.SubElement(new_row, 'island')
+      node_event_island.text = islands_dict[event_island][ISLANDS_DICT_URI]
+
 
     # Synopsis
     event_synopsis = row.find(IN_KEY_EVENT_SYNOPSIS)

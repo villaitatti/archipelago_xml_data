@@ -1,0 +1,47 @@
+{
+    "archival_item": {
+        "uuid_vocab": "360fd62e-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "archival_source": {
+        "uuid_vocab": "360e9af2-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "archival_unit": {
+        "uuid_vocab": "360fa1cc-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "archive": {
+        "uuid_vocab": "360ee61a-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "bundle": {
+        "uuid_vocab": "360f8cc8-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "document_container": {
+        "uuid_vocab": "360f3048-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "drawing": {
+        "uuid_vocab": "361007ac-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "file": {
+        "uuid_vocab": "360fb392-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "folder": {
+        "uuid_vocab": "360f4416-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "folio": {
+        "uuid_vocab": "360fe6aa-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "fond": {
+        "uuid_vocab": "360ef9b6-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "parchment": {
+        "uuid_vocab": "360ff780-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "register": {
+        "uuid_vocab": "360f7a9e-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "series": {
+        "uuid_vocab": "360f0bf4-4cb5-11ee-9292-3a5becfe4abd"
+    },
+    "sub-series": {
+        "uuid_vocab": "360f1d42-4cb5-11ee-9292-3a5becfe4abd"
+    }
+}

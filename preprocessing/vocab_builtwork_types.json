@@ -1,0 +1,188 @@
+{
+    "abandoned": {
+        "uuid_vocab": "bb81743e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "accomodation": {
+        "uuid_vocab": "bb81892e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "aisle": {
+        "uuid_vocab": "bb824332-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "apse_chapel": {
+        "uuid_vocab": "bb82599e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "bell_tower": {
+        "uuid_vocab": "bb826cd6-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "breeding": {
+        "uuid_vocab": "bb81ae72-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "bridge": {
+        "uuid_vocab": "bb827f3c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "cemetery": {
+        "uuid_vocab": "bb8290da-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "chapel": {
+        "uuid_vocab": "bb82a28c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "chapter_house": {
+        "uuid_vocab": "bb82b4b6-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "chicken_house": {
+        "uuid_vocab": "bb82c618-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "choir": {
+        "uuid_vocab": "bb82da54-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "church": {
+        "uuid_vocab": "bb82eb70-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "cloister": {
+        "uuid_vocab": "bb82fc0a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "convent": {
+        "uuid_vocab": "bb830c90-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "courtyard": {
+        "uuid_vocab": "bb831d2a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "dock": {
+        "uuid_vocab": "bb832e32-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "dormitory": {
+        "uuid_vocab": "bb833e40-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "food_supply": {
+        "uuid_vocab": "bb82055c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "fort": {
+        "uuid_vocab": "bb834db8-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "function": {
+        "uuid_vocab": "bb85831c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "garden": {
+        "uuid_vocab": "bb835d4e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "granary": {
+        "uuid_vocab": "bb836cc6-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "guest_house": {
+        "uuid_vocab": "bb837c0c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "infirmary": {
+        "uuid_vocab": "bb838b20-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "kitchen": {
+        "uuid_vocab": "bb83a970-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "kitchen_pantry": {
+        "uuid_vocab": "bb83c3ec-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "lazaretto": {
+        "uuid_vocab": "bb83d850-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "library": {
+        "uuid_vocab": "bb83ea8e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "loggia": {
+        "uuid_vocab": "bb83fbe6-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "military": {
+        "uuid_vocab": "bb819c34-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "military_battery": {
+        "uuid_vocab": "bb840c9e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "monastery": {
+        "uuid_vocab": "bb841d24-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "narthex": {
+        "uuid_vocab": "bb842d64-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "nave": {
+        "uuid_vocab": "bb843d9a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "oratory": {
+        "uuid_vocab": "bb844dbc-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "orchard": {
+        "uuid_vocab": "bb845dca-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "portico": {
+        "uuid_vocab": "bb846de2-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "powderhouse": {
+        "uuid_vocab": "bb84811a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "prison": {
+        "uuid_vocab": "bb849178-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "private": {
+        "uuid_vocab": "bb85946a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "private_house": {
+        "uuid_vocab": "bb84a1a4-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "public": {
+        "uuid_vocab": "bb85a8e2-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "refectory": {
+        "uuid_vocab": "bb84b180-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "religious": {
+        "uuid_vocab": "bb81bfb6-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "residential": {
+        "uuid_vocab": "bb81d0d2-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "sacristy": {
+        "uuid_vocab": "bb84c15c-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "sanitary": {
+        "uuid_vocab": "bb81e1a8-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "service": {
+        "uuid_vocab": "bb81f4c2-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "shelter_for_boats": {
+        "uuid_vocab": "bb84d106-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "side_chapel": {
+        "uuid_vocab": "bb84e02e-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "storage_facility": {
+        "uuid_vocab": "bb84f00a-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "transept": {
+        "uuid_vocab": "bb850068-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "typology": {
+        "uuid_vocab": "bb8226a4-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "use": {
+        "uuid_vocab": "bb812510-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "vegetable_garden": {
+        "uuid_vocab": "bb8510b2-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "walls": {
+        "uuid_vocab": "bb8522b4-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "warehouse": {
+        "uuid_vocab": "bb853344-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "washhouse": {
+        "uuid_vocab": "bb854618-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "water_supply": {
+        "uuid_vocab": "bb8215ec-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "wellhead": {
+        "uuid_vocab": "bb8558ec-4e40-11ee-ae1e-3a5becfe4abc"
+    },
+    "woodshed": {
+        "uuid_vocab": "bb857034-4e40-11ee-ae1e-3a5becfe4abc"
+    }
+}
